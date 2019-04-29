@@ -8,7 +8,7 @@ import org.testng.annotations.AfterTest;
 
 public class NewTest {
 	WebDriver driver;
-	public String test="Hi";
+	
 	
   @Test
   public void f() {
