@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "49928",
+    "ThreadId": "15364",
+    "Html": "\r\nI have been trying this source kit out for a few days now and I keep running into problems that i hope may be resolved by the kind help of you guys here :) My problem is basically the ASPNETDB.mdf file is not being created, I can run it in development mode from Visual Web Express and log in etc and have edited the connection string so it finds the clubDB.mdf file. I load up the asp.net web configurator and can see all the user settings etc that come with the starter kit but they arent being created into the ASPNETDB.mdf  file that I should see in the app_data folder. I have since installed the full version of Video Studio 2005 and its the same problem, the site runs but only in development mode. As soon as I host it on my IIS machine I have running on my home network it fails to load, I have two other small projects working fine, one of them is the personal web starter. I am using SQL Express. Thanks in advance.<br />",
+    "PostedDate": "2007-09-19T09:59:15.74-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "51203",
+    "ThreadId": "15364",
+    "Html": "\r\nThe table that you would fine in the ASPNETDB.mdf is incorporated in the ClubDB.mdf. If you install the Microsoft SQL Server 2005 Express Edition with Advanced Services SP 2 andattach the ClubDB database you will see the following table <br />aspnet_Applications<br />aspnet_Membership<br />aspnet_Paths<br />aspnet_PersonalizationAllUsers<br />aspnet_PersonalizationPerUser<br />aspnet_Profile<br />aspnet_Roles<br />aspnet_SchemaVersions<br />aspnet_Users<br />aspnet_UsersInRoles<br />aspnet<i>WebEvent</i>Events<br /><br />which is the content of a normal ASPNET db. I have the ClubStarterKit running fine on IIS on my Vista pc.<br /><br />Hope this answer your question<br /><br />What error are you getting when you load the app in IIS?<br /><br />Cheers<br />",
+    "PostedDate": "2007-09-29T05:42:04.993-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

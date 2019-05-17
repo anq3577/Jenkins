@@ -1,0 +1,95 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-08-04T14:43:08.277-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I've downloaded ClubStarterKit-3782, everytime I try to delete a blog it comes up with the following problem\n \nSubSonic.DataService.ExecuteQuery(cmd) \"This is Highlighted in Lime Green\"\n \nThen when you click on it the following pop up\n \nSqlException was unhandled by user code\nMust declare the scalar variable \"@postid()\"\n \nI know somewhat about asp.net and sql, but I still consider myself a beginer can some one please help",
+    "LastUpdatedDate": "2013-05-15T23:46:31.383-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-08-01T07:03:03.887-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Problem with blog",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 2943
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "What routine is that? Sounds like it could be refactored.",
+      "PostedDate": "2007-08-01T11:35:42.39-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "The following error happen in the Blogs/Post.aspx.vb Dim cmd As New SubSonic.QueryCommand(sql)        SubSonic.DataService.ExecuteQuery(cmd)\r\n\r\nThe SubSonic.DataService is the part that is highlighted.",
+      "PostedDate": "2007-08-01T16:08:06.237-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Yes, but what line? That gives me nothing.",
+      "PostedDate": "2007-08-02T05:36:43.737-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "They are line 43 and 44, But only 44 is the one that comes up highlighted when you try to delete a blog.",
+      "PostedDate": "2007-08-02T07:01:06.947-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Hmm... can you paste in the whole routine? I don't think this applies to v3 beta 1.",
+      "PostedDate": "2007-08-03T15:47:46.65-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Protected Sub HyperLink2_Click(ByVal sender As Object, ByVal e As System.EventArgs)        Dim qry As New Query(Tables.BlogPosts)        qry.AddWhere(BlogPosts.Columns.Postid, Request(\"id\"))        qry.QueryType = QueryType.Delete\r\n\r\n        Dim commqry As New Query(Tables.BlogComments)        commqry.QueryType = QueryType.Delete        commqry.AddWhere(BlogComments.Columns.Postid, Request(\"id\"))\r\n\r\n        Dim sql As String = qry.GetSql()        sql += \"\\r\\n\"        sql += commqry.GetSql()\r\n\r\n        Dim cmd As New SubSonic.QueryCommand(sql)        SubSonic.DataService.ExecuteQuery(cmd)\r\n\r\n        Response.Redirect(\"~/blogs/default.aspx\")    End Sub",
+      "PostedDate": "2007-08-04T08:07:46.723-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Put this in there instead.\r\n\r\nBlogPosts.Delete(BlogPosts.Columns.ID, Request(\"ID\"))BlogComments.Delete(BlogComments.Columns.Postid, Request(\"id\"))Response.Redirect(\"~/blogs/default.aspx\")",
+      "PostedDate": "2007-08-04T14:30:47.357-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-08-04T14:31:16.297-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Resolved with changeset 3923.",
+      "PostedDate": "2007-08-04T14:43:08.277-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:13.47-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:31.383-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

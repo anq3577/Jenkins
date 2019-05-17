@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "39872",
+    "ThreadId": "12255",
+    "Html": "\r\nWhen you register you can enter your name, address, telephone number and e-mail address.  Most people dont want everyone knowing their telephone number and address which is on display to all registered members.  They of course have theoption not to fill it out but this info could be handy for administrators.  Is there a way, in version 3, that \"sensitive\" information can be hid from public view?<br />",
+    "PostedDate": "2007-07-06T02:14:28.623-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39925",
+    "ThreadId": "12255",
+    "Html": "\r\nYea... I will update the documentation once v3 beta 1 is out. What you can do is add a statement for the register button click to test if the user puts in their phone number. If they don't, make it something like <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=none\">none</a>. Also, you might need to take out the validator.<br />",
+    "PostedDate": "2007-07-06T07:51:30.447-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40002",
+    "ThreadId": "12255",
+    "Html": "\r\nDazalock, I've hidden the membership completely because of just that issue. I just restricted it to admins only. <br />",
+    "PostedDate": "2007-07-06T16:36:19.62-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40045",
+    "ThreadId": "12255",
+    "Html": "\r\nyeah I see what you mean, however, a lot of my members want to share their e-mail addresses but not everything else.<br />",
+    "PostedDate": "2007-07-07T08:21:40.917-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40049",
+    "ThreadId": "12255",
+    "Html": "\r\nThen couldn't you move the existing details to \"admin only\" and make another memberlist with only the names and email? <br /><br />I'd think that would be fairly a simple \"copy, paste, cut\" kind of thing. <br /><br /> I see what you mean though. It would be nice to  have a way to control those fields from the database based on user preference. <br />",
+    "PostedDate": "2007-07-07T09:27:38.54-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

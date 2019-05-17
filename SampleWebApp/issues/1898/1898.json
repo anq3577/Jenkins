@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-28T07:52:51.587-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I will create content pages that the \"editor\" can create/delete/modify. The content pages will be thrown through a URL Rewriter. The origional url will be ~/contentpages/page.aspx?pagettl=FOO  The new URL will be ~/content/foo.aspx",
+    "LastUpdatedDate": "2013-05-15T23:46:39.68-07:00",
+    "PlannedForRelease": "Club Starter Kit 2.0 Final",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-28T07:18:58.773-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Create Content Pages",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 1898
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 1706.",
+      "PostedDate": "2007-04-28T07:52:51.587-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:24.12-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:39.68-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

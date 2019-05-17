@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "38150",
+    "ThreadId": "11755",
+    "Html": "\r\nI am new to asp.net,  I used the clubsite to setup my new website which is hosted by godaddy.com.  I finally have everything working except the forums.  Users can post to the forum, but then the post cannot be seen.  If I look in the ms sql database I can see the post.  I have had others look at this, but to no avail.  Please help.  <br /><br />If you need to view this the site is www.carolinaskappaclub.com<br />",
+    "PostedDate": "2007-06-24T16:05:44.82-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38165",
+    "ThreadId": "11755",
+    "Html": "\r\nHave you entered all the required fields? It should work. If you want, you can ZIP up your source and I can take a look.<br />",
+    "PostedDate": "2007-06-24T20:58:48.67-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38565",
+    "ThreadId": "11755",
+    "Html": "\r\nI think part of my problem has to do with this post:  http://www.codeplex.com/Thread/View.aspx?ProjectName=ClubStarterKit&amp;ThreadId=10323 .  Has anyone found a fix for the permissions problems when uploading the sheme to goDaddy?  Also, I just found today that the addAttendance Stored Procedure did not load.  I think my major issue is that I am missing several Stored Procedures, but I need help getting them to load properly.<br /><br />Thanks in advance.<br />",
+    "PostedDate": "2007-06-26T21:53:38.637-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

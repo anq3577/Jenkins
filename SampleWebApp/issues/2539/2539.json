@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-06-23T16:55:09.653-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Add the individual blog feature and a profile table in the database so that someone can add a profile (bio, signature) for blogs and forums.",
+    "LastUpdatedDate": "2013-05-15T23:46:35.027-07:00",
+    "PlannedForRelease": "Version 3 Beta 1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-06-21T13:59:30.04-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Profile and Individual Blog",
+    "Type": {
+      "Name": "Task",
+      "Id": 2
+    },
+    "VoteCount": 1,
+    "Id": 2539
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 3294.",
+      "PostedDate": "2007-06-23T16:55:09.653-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:17.793-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:35.027-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

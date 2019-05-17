@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "55795",
+    "ThreadId": "17177",
+    "Html": "\r\nOK, I unzipped the files, changed the connection string and was able to login as the admin and change the name of the site. However, if I try and change anything else such as the slogan there are not updates applied. I have ensured the App_Data folder has plenty of permission's as I was able to update the title just not anything else.<br /><br />Recommendations to try next?<br /><br />Thanks,<br />Tim<br />",
+    "PostedDate": "2007-10-30T19:16:20.347-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "34997",
+    "ThreadId": "10799",
+    "Html": "\r\nHi,<br />I have been searching this discussion forum and other places with no luck.<br />I did change some of the things in the club starter kit (the 2.0 version) and when I felt I had something interesting I decided to put it on the hosting server. <br />Copied all files, changed connection string, generated scripts from my local database, removed all references to dbo, took the GOTO lines to the previous line, fixed minor script errors and run the scripts...<br />Now I have a partially functioning site - everything except the login works. When I try to login – I get 'dbo.aspnet_CheckSchemaVersion' . I have double and triple checked all connection strings, etc. <br /><br />I have tried many different solutions but to no luck. <br /><br />To confirm that the problem is on my side - I used the scripts and the source for the Club Site 2.0 to try to run them on my hosting provider and stopped at the schema.sql ... fixed it a bit, but now I get the zowens error. There was a discussion on this one too, but it does not seem to come up with any definite answer.<br />Has anyone had any luck with these issues?<br />I think it will be very nice if one of the team members works up a step by step instruction of how to install the site on hosting environment. <br />I am willing to put small donation on a paypal account on one of the developers on the team for a working installation instruction, if this would speed things up.<br />Nikolay<br />",
+    "PostedDate": "2007-05-30T00:23:06.313-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36327",
+    "ThreadId": "10799",
+    "Html": "\r\nDid you really need to remove the dbo stuff? I would try it with dbo in there.<br />",
+    "PostedDate": "2007-06-10T13:33:44.727-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36448",
+    "ThreadId": "10799",
+    "Html": "\r\nYou were correct! <br />I simply overdid the replacement of the dbo.<br />It works fine now!<br />Thanks again!<br />N<br />",
+    "PostedDate": "2007-06-11T15:43:59.667-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

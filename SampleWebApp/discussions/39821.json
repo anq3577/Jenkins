@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "132181",
+    "ThreadId": "39821",
+    "Html": "Filling in all required fields and updating seems to work but none of the fields actually save.&nbsp; My thought was that the datalayer was not regenerated and is not completeling.&nbsp; Anyone have any ideas for this one?<br>\r\n",
+    "PostedDate": "2008-11-12T18:33:28.093-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "141839",
+    "ThreadId": "39821",
+    "Html": "Did you find a solution for this?\r\n",
+    "PostedDate": "2008-12-19T06:21:56.083-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "142344",
+    "ThreadId": "39821",
+    "Html": "No I didn't and have all but given up on this application.&nbsp; The claims that it's constantly being updated and that the code is evolving is completely false which was announced but silly me for thinking the released code actually worked.&nbsp; I have been waiting for the 3.0 spin off but haven't been able to find anything on it.<br>\r\n",
+    "PostedDate": "2008-12-22T06:20:29.13-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "143213",
+    "ThreadId": "39821",
+    "Html": "I can certainly understand the frustration you feel. One of my sites, <a href=\"http://www.RenegadeSprints.org\">www.RenegadeSprints.org</a> was originally based on CSK V2.0 and was listed on the home page of this site as a sample CSK application. Unfortunately, there has been little or no development of the CSK for over a year and virtually no support for those trying to make it work.<br>\r\n<br>\r\nFor those reasons and others, I have converted <a href=\"http://www.RenegadeSprints.org\">www.RenegadeSprints.org</a> to the DotNetNuke platform and haven't looked back! DNN is a very robust ASP.net application and is supported by a large community of users, developers and third party vendors. Like the CSK, it is Open Source and free to download and use. I suggest that anyone having problems with the CSK and wanting to work with an ASP.net application, do yourself a favor and take a look at <a href=\"http://www.dotnetnuke.com/\">http://www.dotnetnuke.com/</a>.<br>\r\n<br>\r\nThere are lots of sites out there with support information on DNN, including the Forum pages of the DNN home page above. One other support site that I have found extremely helpful in setting up a DNN site is <a href=\"http://www.mitchelsellers.com/default.aspx\">http://www.mitchelsellers.com/default.aspx</a>. Mr. Sellers has several install and upgrade guides in his blog that are very thorough and easy to understand.<br>\r\n<br>\r\nIf this forum is still moderated, I suspect this post will be deleted soon, but for those that read it and are dissatisfied with CSK support, you might find DNN a viable alternative.<br>\r\n<br>\r\n(Disclaimer - I am not affiliated with DNN in any way, just a satisfied user)<br>\r\n<br>\r\nHappy New Year!<br>\r\nEd\r\n",
+    "PostedDate": "2008-12-28T09:22:11.697-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "150507",
+    "ThreadId": "39821",
+    "Html": "Just a quick follow-up to my last post regarding DotNetNuke. The DNN team released two new versions on Christmas day, 2008. Version 5.0 is a major release and appears to NOT be stable at this time. I do not recommend that anyone try to install that version or upgrade to V5.0 from a previous version until some of the bugs have been worked out. Version 4.9.1, the other Christmas day release is much more stable, even though I have found a couple of relatively minor problems with it. I realize this is a CSK forum, not DNN and I only post this because I had recommended that platform to anyone having problems with CSK. <br>\r\n<br>\r\nThe CSK, as originally provided by Microsoft, was developed as an example of what could be done with ASP.net and never really intended to be used as a production website. As I understand it, Mr. Zack Owens, a high school student if I'm not mistaken, took that original Microsoft product and turned it into the mess that it is today. For whatever reason, he seems to have abandoned the project, I suspect because he got in way over his head and doesn't have a clue how to get out, or maybe he just discovered girls, who knows, but in any case, his version of the CSK project seems to be dead at this time.<br>\r\n<br>\r\nI can only urge people that want to build a production website to find another solution. DNN is one option, but may not be suitable for everyone. There are many others to choose from. <br>\r\n<br>\r\nGood Luck,<br>\r\nEd \r\n",
+    "PostedDate": "2009-01-24T04:57:00.523-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "28661",
+    "ThreadId": "8772",
+    "Html": "\r\nI cannot load this website. Error:<br /><br />Server Error in '/2.0-RC1' Application.<br />--------------------------------------------------------------------------------<br /><br />Compilation Error <br />Description: An error occurred during the compilation of a resource required to service this request. Please review the following specific error details and modify your source code appropriately. <br /><br />Compiler Error Message: BC30002: Type 'DataSetTableAdapters.MemberInfoTableAdapter' is not defined.<br /><br />Source Error:<br /><br /><br /><br />Line 7:      Public Shared Function Getmembers(ByVal Filter As String) As Generic.List(Of MemberDetails)<br />Line 8:          Dim l As New Generic.List(Of MemberDetails)<br />Line 9:          Dim da As New DataSetTableAdapters.MemberInfoTableAdapter<br />Line 10:         Dim members As DataSet.MemberInfoDataTable = da.GetMemberList()<br />Line 11:         For Each user As MembershipUser In Membership.GetAllUsers<br /><br /><br />Source File: C:\\Documents and Settings\\Jerry Dean\\Desktop\\2.0-RC1\\App_Code\\MemberDetails.vb    Line: 9 <br />",
+    "PostedDate": "2007-04-02T16:30:40.19-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "28663",
+    "ThreadId": "8772",
+    "Html": "\r\nThis is probably a database issue. Are you using SQL Express straight out of the box?<br />",
+    "PostedDate": "2007-04-02T16:47:41.657-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "28666",
+    "ThreadId": "8772",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />This is probably a database issue. Are you using SQL Express straight out of the box?<br /><br /></div><br />Noe this error is coming up:<br /><br />Parser Error <br />Description: An error occurred during the parsing of a resource required to service this request. Please review the following specific parse error details and modify your source file appropriately. <br /><br />Parser Error Message: Unknown server tag 'Club:RolloverButton'.<br /><br />Source Error: <br /><br /><br />Line 91:                                     &lt;p&gt;<br />Line 92:                                     &lt;/p&gt;<br />Line 93:                                     &lt;Club:RolloverButton runat=\"server\" ValidationGroup=\"Login1\" Text=\"Login\" ID=\"LoginButton\"<br />Line 94:                                         CommandName=\"Login\" /&gt;<br />Line 95:                                     &lt;p&gt;<br /><br /><br />Source File: /2.0-RC1/Default.aspx    Line: 93 <br />",
+    "PostedDate": "2007-04-02T17:05:52.067-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "28669",
+    "ThreadId": "8772",
+    "Html": "\r\nWell I got by all of the above but am now getting this error:<br />I can test and get a successful connection in the database explorer window.<br /><br /><br /><br />Server Error in '/2.0-RC1' Application.<br />--------------------------------------------------------------------------------<br /><br />An error has occurred while establishing a connection to the server.  When connecting to SQL Server 2005, this failure may be caused by the fact that under the default settings SQL Server does not allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified) <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />Exception Details: System.Data.SqlClient.SqlException: An error has occurred while establishing a connection to the server.  When connecting to SQL Server 2005, this failure may be caused by the fact that under the default settings SQL Server does not allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)<br /><br />Source Error: <br /><br /><br />Line 59:             end if<br />Line 60:             <br />Line 61:             throw<br />Line 62:             <br />Line 63:         end try<br /><br /><br />Source File: C:\\Documents and Settings\\Jerry Dean\\My Documents\\Visual Studio 2005\\WebSites\\2.0-RC1\\UserControls\\WebContent.ascx    Line: 61 <br />",
+    "PostedDate": "2007-04-02T17:43:36.113-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "28685",
+    "ThreadId": "8772",
+    "Html": "\r\nI have this problem fixed. Thanks<br />",
+    "PostedDate": "2007-04-02T21:46:48.32-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

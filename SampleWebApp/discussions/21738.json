@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "72443",
+    "ThreadId": "21738",
+    "Html": "\r\nI am running CSK 2 on Godaddy hosted environment.  Albums display pictures with poor quality.  Is there a setting somewhere that I need to change.  Any advice would be appreciated.  Thanks.<br />",
+    "PostedDate": "2008-02-07T12:53:03.853-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "72745",
+    "ThreadId": "21738",
+    "Html": "\r\nIt might be that they are resized. That is just by design. Is the actual photos bad looking while in the album view?<br />",
+    "PostedDate": "2008-02-08T21:33:07.793-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "72843",
+    "ThreadId": "21738",
+    "Html": "\r\nThe pictures have sort of a speckled look to them.  The actual pictures look good, but when viewing album view they look bad.  All of the pictures were 2 - 3 Mb pictures straight from digital camera.  I tested uploading a modified picture in MS Picture Manager (Size was about 200 Kb).  The 200 Kb picture looks better than the resized 2 - 3 Mb picture.  Is there some specific size pictures that should be uploaded for albums?  Thanks.<br />",
+    "PostedDate": "2008-02-09T20:15:14.01-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "fixed in v3 preview",
+    "ClosedDate": "2009-12-08T22:20:22.043-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "As an anonymous visitor I get an System.NullReferenceException on line 244 (thread.aspx) when I try to open an existing thread\n--> Dim CurrentGUID As Guid = Membership.GetUser().ProviderUserKey() throws",
+    "LastUpdatedDate": "2013-05-15T23:46:30.55-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-08-06T03:47:23.4-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Anonymous access to threads fails",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 2990
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I'm having the same problem! but it's not only doing that in anonymous access, it's also doing it for every user except administrators.. The only way to view threads is logged in as administrator.. \r\n\r\n ERROR:   Object reference not set to an instance of an object.\r\n\r\n--->   Dim CurrentGUID As Guid = Membership.GetUser().ProviderUserKey() throws\r\n\r\nLn 270 Col 9 Ch 9 \r\n\r\nVisual Studio ProfessionalClub Starter Kit 3 beta 1",
+      "PostedDate": "2007-08-20T16:03:20.213-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I don't use the forums, but here is the fix for the anonymous access failing.\r\n\r\nreplace the lineDim CurrentGUID as Guid = Membership.GetUser().ProviderUserKey() With:Dim CurrentGUID as Guid Try     CurrentGUID = Membership.GetUser().ProviderUserKey()Catch     Return FalseEnd Try\r\n\r\nAll this function is trying to do is see if the user viewing the thread is the person that started the thread.  So if the user is anonymous, it is safe to return False.  The reason it is throwing an exception is that the line is trying to check the current users GUID through the database.  If they are anonymous, they will not be in the database so ProviderUserKey is a null reference.",
+      "PostedDate": "2007-08-22T05:05:44.363-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-12-08T22:20:22.043-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:12.5-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:30.55-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

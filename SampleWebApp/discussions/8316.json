@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "27110",
+    "ThreadId": "8316",
+    "Html": "\r\nI am trying to change the text size and color as well as the positioning of the Club name and slogan. Is there anyone that can tell me where in the stylesheet this can be done.<br />",
+    "PostedDate": "2007-03-17T13:03:19.017-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27112",
+    "ThreadId": "8316",
+    "Html": "\r\n#poster h2 (About line 65)<br />also changing #poster might do the trick when editing the text location.<br />",
+    "PostedDate": "2007-03-17T13:38:46.657-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27118",
+    "ThreadId": "8316",
+    "Html": "\r\nbear in mind that, you need to change the styles in the file css\\Stylesheet.css . And then copy all the contents to the Stylesheet.css, too, which lies on the root of the project.<br /><br />(There are two Stylesheet.css files.)<br /><br />(Btw, z2bass, why are there two stylesheet.css's files? :))<br />",
+    "PostedDate": "2007-03-17T15:30:25.27-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

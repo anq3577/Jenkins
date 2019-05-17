@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "29061",
+    "ThreadId": "8895",
+    "Html": "\r\nI love this new release, but I have two question:<br /><br />A) How do I delete a photo album?<br /><br />B) Everytime I try to publish the SQL scripts I get the error that it cannot read the foreign key constraint. <br />  I get this error: <br />Could not drop object 'dbo.aspnet_Roles' because it is referenced by a FOREIGN KEY constraint.<br /><br /><br /><br />Any help for either of these would be great.<br /><br />Thanks again,<br /><br />dpr00<br />",
+    "PostedDate": "2007-04-05T10:42:02.763-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "29088",
+    "ThreadId": "8895",
+    "Html": "\r\nWe haven't put in A... I think this shouldn't be too dificult to do.<br /><br />For #2, are you using SQL 2000 or 2005?<br />",
+    "PostedDate": "2007-04-05T13:57:42.32-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "29107",
+    "ThreadId": "8895",
+    "Html": "\r\nI am using SQL 2000. <br /><br />Thanks<br />",
+    "PostedDate": "2007-04-05T20:37:46.093-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "29117",
+    "ThreadId": "8895",
+    "Html": "\r\nDo you know how to generate 2000 scripts. The tool I use (Publish to Provider) really doesn't do the trick and I have no way of testing it. Try plugging in the 2005 script.<br />",
+    "PostedDate": "2007-04-06T03:43:51.707-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "29144",
+    "ThreadId": "8895",
+    "Html": "\r\nI am fairly new to VB and SQL. I don't know how to generate scripts. I gave the SQL 2005 scripts a try and I got this error: Invalid object name 'sys.foreign_keys'.<br /><br />Any other ideas? <br />",
+    "PostedDate": "2007-04-06T08:24:40.17-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "29169",
+    "ThreadId": "8895",
+    "Html": "\r\nI was wondering which database tables could manually be restored to zero records without breaking anything? In particular, I could like to delete all records in Albums, BlogComments, BlogPosts, Links, PollQuestions, PollAnswers, PollReactions, PollVotes and maybe a couple more if it doesn't cause a problem.<br /><br />Thanks,<br />Ed<br />",
+    "PostedDate": "2007-04-06T12:31:17.403-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "29176",
+    "ThreadId": "8895",
+    "Html": "\r\nThat reminds me, I need to delete the poll stuff in the database. SQL 2000 might not allow photo objects... not sure. I always recommend a hoster with SQL 2005.<br />",
+    "PostedDate": "2007-04-06T13:10:09.777-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

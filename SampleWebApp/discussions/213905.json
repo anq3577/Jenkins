@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "447609",
+    "ThreadId": "213905",
+    "Html": "<p>I'm running the V3 preview.</p>\r\n<p>I was having trouble entering content in a number of areas.&nbsp; After looking in the database I noticed that the content lenght on many of the tables (Announcement, Blog, ContentSection, etc) is limited to 255.&nbsp; Once I reduced the length of the text it would save properly.&nbsp; 255 characters seems a bit limiting considering HTML tags are being stored as well.</p>\r\n<p>Can I just increase that limitation in the database?&nbsp; Or is there a reason for only allowing 255 characters?</p>",
+    "PostedDate": "2010-05-26T06:17:28.673-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "447695",
+    "ThreadId": "213905",
+    "Html": "You might want to make this change on the NHibernate mappings... they will more than likely not allow you to save more than 255 characters. Other than that, there's no reason why you can't increase the number of characters.",
+    "PostedDate": "2010-05-26T08:25:08.32-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  }
+]

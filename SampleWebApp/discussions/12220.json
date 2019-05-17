@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "39744",
+    "ThreadId": "12220",
+    "Html": "\r\nok, what am I not doing here?<br /><br />Compilation Error <br />Description: An error occurred during the compilation of a resource required to service this request. Please review the following specific error details and modify your source code appropriately. <br /><br />Compiler Error Message: BC30002: Type 'ForumTopicInfo' is not defined.<br /><br />Source Error:<br /><br /><br /><br />Line 40:         Public Const MAXRECENTMESSAGEAGEHOURS As Integer = 24<br />Line 41: <br />Line 42:         Public Shared Function GetTopicInfo(ByVal topicid As Integer) As ForumTopicInfo<br />Line 43:             Dim ti As New ForumTopicInfo<br />Line 44:             Dim qry As New Query(Tables.Topics)<br /><br /><br />Source File: C:\\websites\\changeset3446\\ClubStarterKit\\ClubStarterKit.Web\\App_Code\\Forum.vb    Line: 42 <br /><br />",
+    "PostedDate": "2007-07-05T08:49:53.237-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39752",
+    "ThreadId": "12220",
+    "Html": "\r\nYou might need to recompile ClubStarterKit.Data. That is where ForumTopicInfo is defined.<br />",
+    "PostedDate": "2007-07-05T09:18:55.92-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39783",
+    "ThreadId": "12220",
+    "Html": "\r\nIm sorry but Im struggling to understand how these folders work in conjunction with the .web folder, Im just opening up the .web  folder in VWD Express, changing the connectionstrings.config, registering subsonic, and bang, get this error.  How do I recompile Clubstarterkit.data, and what do I do when I get this on a hosting site, do I copy up all the directories in the chnageset?  <br /><br />Thanks<br /><br />Confused UK<br />",
+    "PostedDate": "2007-07-05T12:13:12.713-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39787",
+    "ThreadId": "12220",
+    "Html": "\r\nDo you have VB Express? All you should have to do is open the ClubStarterKit.Data project in VB Express, compile, and copy the stuff in the bin directory into ClubStarterKit.Web/bin. Sorry about that.... we will have a build that just has the website and not the other projects at beta time.<br />",
+    "PostedDate": "2007-07-05T12:43:07.357-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39797",
+    "ThreadId": "12220",
+    "Html": "\r\nOk, got as far as Compile but I dont see a compile command anywhere, the debug button is greyed out and I have the following in the errors ..... hohum<br /><br />Warning\t1\tThe element 'PropertyGroup' in namespace 'http://schemas.microsoft.com/developer/msbuild/2003' has invalid child element 'SccProjectName' in namespace 'http://schemas.microsoft.com/developer/msbuild/2003'. List of possible elements expected: 'Property' in namespace 'http://schemas.microsoft.com/developer/msbuild/2003'.\tC:\\websites\\changeset3446\\ClubStarterKit\\ClubStarterKit.Data\\ClubStarterKit.Data.vbproj\t13\t6\tMiscellaneous Files<br />",
+    "PostedDate": "2007-07-05T13:48:16.98-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39832",
+    "ThreadId": "12220",
+    "Html": "\r\nYou might need to delete the reference to the ClubStarterKit.Data project and copy the assembly that ClubStarterKit.Data builds.<br />",
+    "PostedDate": "2007-07-05T17:19:14.197-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

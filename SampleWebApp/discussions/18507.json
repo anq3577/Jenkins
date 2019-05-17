@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "60525",
+    "ThreadId": "18507",
+    "Html": "\r\nI am needing assistance in just getting the site up and running<br /><br /><br />Have Visual Studio 2005 standard and cute ftp<br /><br />Have the standard clubsite for VS version 3 beta 1<br /><br />There are four folders... what do I need to put up on the server to view the site?<br /><br />I have already put up the sql DB<br /><br />",
+    "PostedDate": "2007-11-29T17:45:23.307-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "60528",
+    "ThreadId": "18507",
+    "Html": "\r\nUse the publish feature on VS 2005... it should work better for you. It does all the FTP work for you along with precompilation (which will save your website's performance).<br />",
+    "PostedDate": "2007-11-29T18:35:26.907-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "60752",
+    "ThreadId": "18507",
+    "Html": "\r\nI tried using the publish via ftp and the build started and failed with this error on the Page.aspx.vb:<br /><br /><br />Error\t102\t'Section' is not a member of 'System.Web.UI.UserControl'.\tC:\\Documents and Settings\\Hello18\\Desktop\\ClubStarterKit.Web\\ContentPages\\Page.aspx.vb\t9\t<br /><br /><br /><br /><br />Partial Class ContentPages_Page<br />    Inherits System.Web.UI.Page<br /><br />    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load<br />        If CStr(Request(\"page\")) Is Nothing Then<br />            Response.Redirect(\"~/default.aspx\")<br />        Else<br />            WebContent1.Section = CStr(Request(\"page\"))<br />        End If<br />    End Sub<br />End Class<br /><br /><br /><br />Any ideas?<br />",
+    "PostedDate": "2007-12-01T13:15:43.04-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "655484",
+    "ThreadId": "268442",
+    "Html": "\r\n<p>In the home page of&nbsp;clubstarterkit v3 preview we can see 5 records but what if we want to make it more or less. &nbsp;<br>\r\nI have gone through all these projects code:&nbsp;ClubStarterKit.Core , ClubStarterKit.Infrastructure,&nbsp;ClubStarterKit.Data.NHibernate, &nbsp;ClubStarterKit.Domain,&nbsp;ClubStarterKit.Tests,&nbsp;ClubStarterKit.Web and commented almost all the code but\r\n with no change.</p>\r\n<p>Where queries code&nbsp;are located OR are the setting located in UI? I have tried all but no success?</p>\r\n<p>&nbsp;</p>\r\n<p>Akbar</p>\r\n",
+    "PostedDate": "2011-08-09T14:10:43.277-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

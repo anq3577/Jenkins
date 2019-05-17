@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:35:26.787-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Been playing around with ConfirmButtonExtender with Submitterbutton with RSVP in Events (View).\n \nI also would like to see a Mgbox with some text (idealy referring to the Event) and OK button only confirming the user that he has just submitted his attendance.\n \nI have been looking at Javascript Alert but can't find any examples in Threads or the Web that invoke a Msgbox in this way (always via a Button Attribute, but since this is to be invoked in another way i have no clue) Anybody?",
+    "LastUpdatedDate": "2013-05-15T23:46:42.537-07:00",
+    "PlannedForRelease": "v2 RC1",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:35:25.333-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Confirmation/Alert  with RSVP",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 1295
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "ConfirmButtonExtender is the best way to accomplish this.",
+      "PostedDate": "2007-04-25T14:35:26.003-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:35:26.787-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:27.193-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:42.537-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

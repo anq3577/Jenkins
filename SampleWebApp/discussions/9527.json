@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "31006",
+    "ThreadId": "9527",
+    "Html": "\r\nWhen I click on one of the RSS links while viewing my site with IE7, a proper page is displayed. When clicking the same link from the same page while viewing with FireFox 1.5.0.11, the data is not displayed properly and this note is at the top of the page:<br /><br />This XML file does not appear to have any style information associated with it. The document tree is shown below.<br /><br />Is this a FF problem or is there a workaround?<br /><br />Ed<br /><a href=\"http://test.renegadesprints.org\" class=\"externalLink\">http://test.renegadesprints.org<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a><br />",
+    "PostedDate": "2007-04-24T05:04:38.513-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31082",
+    "ThreadId": "9527",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />efrazier wrote:<br />When I click on one of the RSS links while viewing my site with IE7, a proper page is displayed. When clicking the same link from the same page while viewing with FireFox 1.5.0.11, the data is not displayed properly and this note is at the top of the page:<br /><br />This XML file does not appear to have any style information associated with it. The document tree is shown below.<br /><br />Is this a FF problem or is there a workaround?<br /><br /><br />It works out of the box in FF... that's what everything is tested in. Have you modified the DB?<br />Ed<br /><a href=\"http://test.renegadesprints.org\" class=\"externalLink\">http://test.renegadesprints.org<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a><br /><br /></div>",
+    "PostedDate": "2007-04-24T14:02:18.953-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31089",
+    "ThreadId": "9527",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />efrazier wrote:<br />When I click on one of the RSS links while viewing my site with IE7, a proper page is displayed. When clicking the same link from the same page while viewing with FireFox 1.5.0.11, the data is not displayed properly and this note is at the top of the page:<br /><br />This XML file does not appear to have any style information associated with it. The document tree is shown below.<br /><br />Is this a FF problem or is there a workaround?<br /><br /><br />It works out of the box in FF... that's what everything is tested in. Have you modified the DB?<br />Ed<br /><a href=\"http://test.renegadesprints.org\" class=\"externalLink\">http://test.renegadesprints.org<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a><br /><br /></div><br /></div>Hmmm... No DB changes that I can remember and I get the same error when running the unaltered version of RC1 on my development server with FF. Is there a setting in FF that could be causing this? I also got the error when running the Boy Scout sample site on your Home page. Maybe my download of RC1 is broken because I'm still having CSS issues with Printer Friendly pages also.<br />Ed<br />",
+    "PostedDate": "2007-04-24T14:29:32.76-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31563",
+    "ThreadId": "9527",
+    "Html": "\r\nThe problem, I think, is that you didn't change the ClubURL application setting in the web.config.  Try fixing that.<br />",
+    "PostedDate": "2007-04-28T08:28:02.023-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31694",
+    "ThreadId": "9527",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />The problem, I think, is that you didn't change the ClubURL application setting in the web.config.  Try fixing that.<br /><br /></div>I wasn't sure what should be inserted there. I put the URL of my live site, but it didn't change anything. I didn't alter the database structure, but did delete some of the records that were in the RC1 download. Is it possible that I deleted something that's causing this problem? <br />",
+    "PostedDate": "2007-04-30T08:13:36.783-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32241",
+    "ThreadId": "9527",
+    "Html": "\r\nNo, put in the URL that you are using. If you are on a dev machine testing it, make the ClubURL something like http://localhost:8587/ (You will have to run it to see. If you are on a live site, put in that URL (EX: http://clubsite.com/) Slash at the end is important.<br /><br />It should just work out-of-the-box with the only change being the ClubURL setting.<br />",
+    "PostedDate": "2007-05-05T06:06:06.873-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

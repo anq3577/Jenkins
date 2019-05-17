@@ -1,0 +1,75 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-28T08:14:50.79-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I downloaded and installed RC1 yesterday and tried to add a news item without a description.  It generated an error \" cannot convert dbnull to string\".\n \nThis is because the descriptionLabel's text has a truncate(CStr(Eval(\"description\"))) and bombs on the CStr function.\n \nMy fix was to create a FixNull() function:\n \nPublic Shared Function FixNull(ByVal maybeNull as Object) as Object\n   If IsDBNull(maybeNull) Then\n       return \"\" '-- got my string\n   End If\n   Return maybeNull\nEnd Function\n \nI then inserted this function after the Eval, before the rest of the string functions:\n \n  truncate(CStr(FixNull(Eval(\"description\"))))",
+    "LastUpdatedDate": "2013-05-15T23:46:49.683-07:00",
+    "PlannedForRelease": "Club Starter Kit 2.0 Final",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-18T13:35:09.737-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "List.aspx",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 173
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "The truncate function does have DBNull checking... so where does this fix apply?",
+      "PostedDate": "2007-04-18T13:51:18.55-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Since the CStr function occurs before the truncate function, there needs to be a check for the DBnull before it occurs.\r\n\r\nOf course, it might be possible to do it CStr(truncate(Eval(\"description\"))), but I didn't try that.",
+      "PostedDate": "2007-04-19T06:27:07.68-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I found replacing CStr() with Convert.ToString() works and does not require checking for DBNull.",
+      "PostedDate": "2007-04-21T22:16:21.993-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-28T08:13:35.117-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Resolved with changeset 1708.",
+      "PostedDate": "2007-04-28T08:14:50.79-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:36.28-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:49.683-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

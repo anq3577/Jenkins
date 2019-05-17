@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "47064",
+    "ThreadId": "14469",
+    "Html": "\r\n\"The upgrade from a v2 database to v3 requires more than just runing an upgrade script READ THE README.\" <br /><br />Should this not be removed as at this time there is no upgrade available? <br /><br />Or at least let users know that something that will work is in the works.<br /><br />Thank you.<br />",
+    "PostedDate": "2007-08-29T06:43:59.357-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

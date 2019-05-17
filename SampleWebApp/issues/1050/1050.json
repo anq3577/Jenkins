@@ -1,0 +1,115 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "out of current scope",
+    "ClosedDate": "2009-12-08T22:21:19.197-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I would like to propose the ability to edit the sitemap from the administration menu.\n \nThis would allow for new sections and pages to be added to the application without the need to edit and upload the sitemap.",
+    "LastUpdatedDate": "2013-05-15T23:46:43.773-07:00",
+    "PlannedForRelease": "ClubStarterKit v3",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:27:45.677-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Edit the SiteMap as an Administrator",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 3,
+    "Id": 1050
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Good idea",
+      "PostedDate": "2007-04-25T14:27:46.35-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "To do this I think we are going to have to move the SiteMap to the Database.  I'll look at ways we can do this",
+      "PostedDate": "2007-04-25T14:27:46.77-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "This was done in the \"Extended Club Starter Kit\"... we might just be able to convert it over to VB and just use their code (BTW... the owner, Brendon Schwartz, is now on the project ;)  )",
+      "PostedDate": "2007-04-25T14:27:47.147-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I agree with the database idea... we will need to add a custom sitemap provider... which shouldn't be too hard... there might be an article out there on this.",
+      "PostedDate": "2007-04-25T14:27:47.52-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I have this already done - along with the maintenance pages to administer it",
+      "PostedDate": "2007-04-25T14:27:47.96-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Really... cool... check it in when v2 is done.",
+      "PostedDate": "2007-04-25T14:27:48.317-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Are you able to check it in now?",
+      "PostedDate": "2007-05-20T05:08:16.853-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-17T15:12:43.11-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-14T10:19:12.92-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "What is the status?",
+      "PostedDate": "2007-08-22T14:34:25.267-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I have implemented this as a SqlSiteMapProvider in my own code, and I am going to integrate this in the the project proper.  Has anyone done any work here?  I am really not a great UI designer, so I wouldn't mind some work on the admin interface.  I will check in the code using a simple GridView and DetailView object.  If anyone has thoughts or already done work here (or anywhere) please let me know.",
+      "PostedDate": "2007-11-01T10:18:14.683-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "SqlSiteMapProvider? Does it use SubSonic? \r\n\r\nI have the code written out... I just need to implement.",
+      "PostedDate": "2007-11-02T14:11:16.45-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-12-08T22:21:19.197-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:29.157-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:43.773-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "32932",
+    "ThreadId": "10168",
+    "Html": "\r\nThe RSVP \"Current Signed Up\" total does not count the current user when they rsvp.  The \"Yes/No\" buttons give errors if they are clicked multiple times.<br />",
+    "PostedDate": "2007-05-11T13:51:50.333-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32935",
+    "ThreadId": "10168",
+    "Html": "\r\nHmmm.... looks like there needs to be a check to whether the user has signed-up or not.<br /><br />The # of guests needs to include them. No way arround it... it might be confusing, but there is a note in the documentation I am working on about that.<br />",
+    "PostedDate": "2007-05-11T14:38:16.897-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

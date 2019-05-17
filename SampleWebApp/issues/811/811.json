@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:20:36.817-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I think this would be the easiest way to allow a member to control if they get emails.  If you can accept the requirement that to be a member of the clubsite requires you to receive emails.  Which for what I am considering using this for it makes sense.  So I added the following code to Member\\Details.aspx\n \n1. The @Register at the top for the Ajax Control Toolkit.\n<%@ Register Assembly=\"AjaxControlToolkit\" Namespace=\"AjaxControlToolkit\" TagPrefix=\"cc1\" %>\n \n2. Added a section to the bottom of the page with the UI for deleting a member.  This uses the Ajax Control Toolkit just to give a confimation box.  \n \n            <div class=\"rightblock\">\n                <h2>\n                    Delete your membership\n                </h2>\n                <div class=\"dashedline\">\n                </div>\n                <p>\n                    You can cancel your membership in this club by clicking on the button below. If\n                    you cancel your membership, you will be removed from the roster and will no longer\n                    receive emails from the club leadership.\n                </p>\n                <asp:Button runat=\"server\" ID=\"btnCancel\" Text=\"Delete Membership\" OnClick=\"btnCancel_Click\" />\n                <cc1:ConfirmButtonExtender ID=\"ConfirmButtonExtender1\" runat=\"server\" TargetControlID=\"btnCancel\" ConfirmText=\"Are you sure you want to delete your membership?\">\n                </cc1:ConfirmButtonExtender>\n            </div>\n \n3. And finally the code for the cancel button click:\n    Protected Sub btnCancel_Click(ByVal sender As Object, ByVal e As System.EventArgs)\n        Dim user As MembershipUser = Membership.GetUser()\n        Dim da As New DataSetTableAdapters.MemberInfoTableAdapter\n        da.Delete(CType(user.ProviderUserKey, Guid))\n        Membership.DeleteUser(user.UserName, True)\n        FormsAuthentication.SignOut()\n        Response.Redirect(\"~/Default.aspx\")\n    End Sub\n \nI am also attaching the file.",
+    "LastUpdatedDate": "2013-05-15T23:46:45.513-07:00",
+    "PlannedForRelease": "v2 Beta 2",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:20:34.88-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Code to allow a member to delete themselves",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 811
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I think we can add some tags to web.config to put the club site to allow registering without email or with email. That would support both methods, and it's easy and quick to add.\r\n\r\nSample code (In C# but vb.net should not differ very much):\r\n\r\n<web.config:>\t\t<!--if IS_DEMO is set to yes, some features will be disabled. -->\t\t<!--acceptable values are \"yes\" or \"no\" -->\t\t<add key=\"IS_DEMO\" value=\"no\"/><default.aspx:>\r\n\r\n\t\t\t\t//if demo mode show demo message and fill username and password\t\t\t\tif(ConfigurationManager.AppSettings[\"IS_DEMO\"] != null)\t\t\t\t{\t\t\t\t\tif(ConfigurationManager.AppSettings[\"IS_DEMO\"] == \"yes\")\t\t\t\t\t{\t\t\t\t\t\tDemoLabel.Visible=true;\t\t\t\t\t\tDemoLabel.Text = \"This is the online demo version\";\t\t\t\t\t\ttxtPassWord.Text=\"admin\";\t\t\t\t\t}\t\t\t\t\telse\t\t\t\t\t{\t\t\t\t\t\tDemoLabel.Visible=false;\t\t\t\t\t}\t\t\t\t}",
+      "PostedDate": "2007-04-25T14:20:35.583-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "fc",
+      "PostedDate": "2007-04-25T14:20:36.02-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:20:36.817-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:31.613-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:45.513-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

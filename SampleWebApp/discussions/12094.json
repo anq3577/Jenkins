@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "39277",
+    "ThreadId": "12094",
+    "Html": "\r\nHello. I have a problem of Club Starter Kit. I would like to use the kit under Chinese Character, so I had made some restructure of code and DB.<br />1. I had changed all Database fileds which used \"varchar\" to \"nvarchar\".<br />2. I had changed dataset anistring to string. <br /><br />still can not be sloved.....cant see chinese in \"member/list.aspx\"<br /><br />As a result, the Chinsese character can not be show in membership page. the pictures of this problem:<br />http://img.rcfans.com/day<i>070703/20070703</i>955356cb3c862fb1533aFeHtKEqHMzYQ.jpg<br /><br />Regards,<br />Bamboo<br />",
+    "PostedDate": "2007-07-02T11:30:35.913-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39318",
+    "ThreadId": "12094",
+    "Html": "\r\nAre you using v2?<br />",
+    "PostedDate": "2007-07-02T14:36:15.537-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39355",
+    "ThreadId": "12094",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Are you using v2?<br /><br /></div><br />Hello.. im using 2.0 Final<br />",
+    "PostedDate": "2007-07-02T19:19:56.18-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39388",
+    "ThreadId": "12094",
+    "Html": "\r\nDid it work in version 1?<br /><br />I haven't really thought about Chinese as being a language that would use the starter kit. Is changing nvarchar to varchar the way this is acomplished?<br />",
+    "PostedDate": "2007-07-03T02:46:16.853-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39462",
+    "ThreadId": "12094",
+    "Html": "\r\n{quote} <br />z2bass wrote:<br />Did it work in version 1?<br /><br />I haven't really thought about Chinese as being a language that would use the starter kit. Is changing nvarchar to varchar the way this is acomplished?<br />{quote}Thanks for your replay. I had changed all \"varchar\" to \"nvarchar\" , furthermore I had changed all \"text\" to \"ntext\" in database. As a result, in \"member/list.aspx“ this page show membership info become wrong character(all chinese character became ???!!!).  I dont know why....maybe the store procedure problem or collation by letter problem?? help me pls....Regards<br />",
+    "PostedDate": "2007-07-03T09:54:51.883-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

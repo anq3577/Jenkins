@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "33370",
+    "ThreadId": "10303",
+    "Html": "\r\nWhy can't I delete images. Only albums can be deleted in v2 final version.<br />",
+    "PostedDate": "2007-05-15T09:32:57.34-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33396",
+    "ThreadId": "10303",
+    "Html": "\r\nWell, you might want the images restored if you didn't mean to delete the album. The dba or whoever has access to the DB can retrieve them. We will be puting them on the file system in v3.<br />",
+    "PostedDate": "2007-05-15T11:53:46.937-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33414",
+    "ThreadId": "10303",
+    "Html": "\r\nIt's a good thing that the images will be restored, but when I click on \"delete image\" nothing happens. When you delete a album you can't use the images that was stored in the deleted album. So my question is, how can I delete images without deleting the whole album? Forgive me for my poor english... hope you understand my question anyway.<br />",
+    "PostedDate": "2007-05-15T13:46:53.237-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "35700",
+    "ThreadId": "11013",
+    "Html": "\r\nDoes anyone have any experience using Subsonic in VWD?  I/ve been using it to develop and like the simplicicty.  I'd like to move forward with the development of the CSK using VWD.<br /><br />rhhanson<br />",
+    "PostedDate": "2007-06-04T20:20:56.57-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "35702",
+    "ThreadId": "11013",
+    "Html": "\r\nI don't recommend it. Try getting standard ed. <br /><br />http://www.learn2asp.net/<br />",
+    "PostedDate": "2007-06-04T21:15:00.63-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36099",
+    "ThreadId": "11013",
+    "Html": "\r\nZach,  When do you expect the first build useable in VWD?  <br />",
+    "PostedDate": "2007-06-07T08:09:01.913-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36281",
+    "ThreadId": "11013",
+    "Html": "\r\nYea. What I am going to do for the releases is take the generated folder from the ClubStarterKit.Data project and put it into the web project. The reason I didn't do that already is because I really like a binary rather than a lot of code files in an App_Code directory. So, yes, it will be optimized for VWD.<br />",
+    "PostedDate": "2007-06-09T08:24:44.85-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

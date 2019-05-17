@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "63101",
+    "ThreadId": "19185",
+    "Html": "\r\nI apologize in advance for this being such a simple question, but I have looked and looked and can't find an answer I understand (I have googled, looked on the FCKeditor site and studied page 12 of the Club Starter Kit documentation).<br /><br />How do I have users with editor privileges add new pages to our site and then provide navigation to these content pages? We now have about 200 content pages, some with pictures. This will continue to grow ... FCKeditor seems like a good start, but it is not clear from any documentation I can find how to set this up.<br /><br />Thanks for helping such a non-techie!<br /><br />Deborah (web master for Mid-Hudson Road Runners Club)<br />",
+    "PostedDate": "2007-12-14T14:13:53.82-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "64912",
+    "ThreadId": "19185",
+    "Html": "\r\nIt was easy and trivial. Just set up a link to the new content page. I added a new data table and then let authorized users add a new page.<br />",
+    "PostedDate": "2007-12-25T13:55:57.843-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

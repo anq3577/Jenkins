@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "35492",
+    "ThreadId": "10945",
+    "Html": "\r\nI just uploaded the Club site and got this error: <br /><br />Runtime Error <br />Description: An application error occurred on the server. The current custom error settings for this application prevent the details of the application error from being viewed remotely (for security reasons). It could, however, be viewed by browsers running on the local server machine. <br /><br />Details: To enable the details of this specific error message to be viewable on remote machines, please create a &lt;customErrors&gt; tag within a \"web.config\" configuration file located in the root directory of the current web application. This &lt;customErrors&gt; tag should then have its \"mode\" attribute set to \"Off\".<br /><br />&lt;!-- Web.Config Configuration File --&gt;<br /><br />&lt;configuration&gt;<br />    &lt;system.web&gt;<br />        &lt;customErrors mode=\"Off\"/&gt;<br />    &lt;/system.web&gt;<br />&lt;/configuration&gt; <br /><br /><br />So I made the changes as followed and reuploaded it as it has worked in the past. For some reason it will not go away. Any suggestions?<br /><br />dpr<br />",
+    "PostedDate": "2007-06-03T08:36:24.897-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36141",
+    "ThreadId": "10945",
+    "Html": "\r\nI just uploaded the Club site and got this error: <br /><br />Runtime Error <br />Description: An application error occurred on the server. The current custom error settings for this application prevent the details of the application error from being viewed remotely (for security reasons). It could, however, be viewed by browsers running on the local server machine. <br /><br />Details: To enable the details of this specific error message to be viewable on remote machines, please create a &lt;customErrors&gt; tag within a \"web.config\" configuration file located in the root directory of the current web application. This &lt;customErrors&gt; tag should then have its \"mode\" attribute set to \"Off\".<br /><br />&lt;!-- Web.Config Configuration File --&gt;<br /><br />&lt;configuration&gt;<br />    &lt;system.web&gt;<br />        &lt;customErrors mode=\"Off\"/&gt;<br />    &lt;/system.web&gt;<br />&lt;/configuration&gt; <br /><br /><br />So I made the changes as followed and reuploaded it as it has worked in the past. For some reason it will not go away. Any suggestions?<br /><br />dpr<br />",
+    "PostedDate": "2007-06-07T13:37:17.58-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37216",
+    "ThreadId": "10945",
+    "Html": "\r\nAre you still having this problem?<br />",
+    "PostedDate": "2007-06-16T19:26:38.017-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37252",
+    "ThreadId": "10945",
+    "Html": "\r\nNo - it just took some time to straighten itself out.  <br /><br />However, I am having other problems: <br /><br />My SQL Server is not creating the tables - I ran the Script Wizard and created a script to run against the server and only got the error: <br /><br />Incorrect Syntax near 'addAttendance'. <br /><br />I am using Godaddy and wonder what I can do to fix these errors. Does any body else using Godaddy have these errors? <br /><br />Thanks<br />",
+    "PostedDate": "2007-06-17T18:47:13.65-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37255",
+    "ThreadId": "10945",
+    "Html": "\r\nI don't use Godaddy.  That was based on reading about problems with them on the asp.net forums. <br /><br />With webhost4life, I know that my scripts that I use only have the CREATE Table... up to GO.  Not the extra stuff that SQL Server Management Studio Express likes to stick in the script.<br /><br />You may want to look in the CSK forum at asp.net.  I think they have one post with fixes for godaddy.<br />",
+    "PostedDate": "2007-06-17T19:09:23.793-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37309",
+    "ThreadId": "10945",
+    "Html": "\r\nCan somebody post the schema they used to set up the site (preferrably on Godaddy - but I want to try anything)?<br /><br />Thanks<br />",
+    "PostedDate": "2007-06-18T07:55:26.197-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37862",
+    "ThreadId": "10945",
+    "Html": "\r\nWhen I originally set up my site, I used the scripts that were included in the download.  I don't know if Zack still includes them in the download (look in the App_Data folder).  The only problem I had with the scripts is they had two images within the script that made the file huge, so huge it would lock up Notepad or whatever I was using to open them.  <br /><br />Now when I make changes to the database (in the local SQL Express db), I open SQL Server Management Express, right-click the table and choose Script (something.  I don't have it in front of me).  Then I copy the script to the Query Analyzer that the web host provides.<br /><br />Like I said above, I just copy the portion from CREATE down to GO.<br />",
+    "PostedDate": "2007-06-21T11:30:50.383-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37921",
+    "ThreadId": "10945",
+    "Html": "\r\nI always recommended that you generate your own scripts, to ensure acuracy (using either SQL Publish Wizard or SQL SMO). GoDaddy seems to have a problem with those scripts. Sounds like I need to figure out a solution with GoDaddy.<br />",
+    "PostedDate": "2007-06-21T20:33:56.493-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "33930",
+    "ThreadId": "10473",
+    "Html": "\r\nWhen trying to use the photo section I get this error:<br /><br />Multiple controls with the same ID 'Image2' were found. FindControl requires that controls have unique IDs.<br /><br />Is there a fix for this?<br /><br />Thank you<br />",
+    "PostedDate": "2007-05-19T11:33:06.357-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33943",
+    "ThreadId": "10473",
+    "Html": "\r\nChange one of the photos to a different name. It depends on which one, though.<br /><br />What page is it and what version/changeset?<br />",
+    "PostedDate": "2007-05-19T13:41:59.823-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33945",
+    "ThreadId": "10473",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Change one of the photos to a different name. It depends on which one, though.<br /><br />What page is it and what version/changeset?<br /><br /></div><br />2.0/RC1<br /><br />http://sahcinfo.org/photo/list.aspx<br /><br />Cannot open any of the albums, I was just testing to see if I wished to use it, at the time I am using JAlbum<br />",
+    "PostedDate": "2007-05-19T14:04:35.423-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33949",
+    "ThreadId": "10473",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />jerrysdean43 wrote:<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Change one of the photos to a different name. It depends on which one, though.<br /><br />What page is it and what version/changeset?<br /><br /></div><br />2.0/RC1<br /><br />http://sahcinfo.org/photo/list.aspx<br /><br />Cannot open any of the albums, I was just testing to see if I wished to use it, at the time I am using JAlbum<br /><br /><br /></div><br />I opened the database, deleted all the albums, logged into the website, created a new album, tried to open the album and receive the same error message.<br />",
+    "PostedDate": "2007-05-19T14:36:59.607-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33951",
+    "ThreadId": "10473",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />jerrysdean43 wrote:<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />jerrysdean43 wrote:<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Change one of the photos to a different name. It depends on which one, though.<br /><br />What page is it and what version/changeset?<br /><br /></div><br />2.0/RC1<br /><br />http://sahcinfo.org/photo/list.aspx<br /><br />Cannot open any of the albums, I was just testing to see if I wished to use it, at the time I am using JAlbum<br /><br /><br /></div><br />I opened the database, deleted all the albums, logged into the website, created a new album, tried to open the album and receive the same error message.<br /><br /></div><br />I now replaced the pages in the photo directory with pages from release 2, created an album, and was able to open it. But now the album was able to be deleted without signing in.<br />",
+    "PostedDate": "2007-05-19T14:55:52.9-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33986",
+    "ThreadId": "10473",
+    "Html": "\r\nReplacing the files from the photo directory will do the trick. I fixed it in time for the 2.0 launch, but not RC1.<br />",
+    "PostedDate": "2007-05-20T04:32:43.783-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

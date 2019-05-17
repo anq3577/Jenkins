@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "446831",
+    "ThreadId": "213690",
+    "Html": "<p>I have installed V3 preview.&nbsp; I was able to setup the databse and register users (I expreienced the same problem as described in Issue Tracker when registering a user: &nbsp;<a href=\"http://clubstarterkit.codeplex.com/WorkItem/View.aspx?WorkItemId=11422\">http://clubstarterkit.codeplex.com/WorkItem/View.aspx?WorkItemId=11422</a>).&nbsp; But I cannot log in.&nbsp; I briefly see &quot;loading...&quot; and two swirls displayed and then it goes to the genral error page for the site:&nbsp; Oops!&nbsp; Sorry an error has occured....&nbsp;</p>\r\n<p>I suspect an issue with Ajax or JQuery.&nbsp; The error function registered in jQuery.ajaxSetup() in forms.js is being called when I try to log in.&nbsp; I verified this by placing an alert() just before the window.location statement = &quot;/error&quot;;.</p>\r\n<p>I verified that both Ajax 3.5 and 4.0 are installed using reflection: GetType(&quot;System.Web.UI.ScriptManager, System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35, false);&nbsp;</p>\r\n<p>I don't have control over the server; I'm using a hosted site.&nbsp; I suspect a setup or configuration issue, but I'm not even sure what to request of the host.</p>\r\n<p>Has anyone encountered this or have a suggestion as to what is not configured correctly?</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-05-24T14:50:47.183-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "446909",
+    "ThreadId": "213690",
+    "Html": "<p>You don't need System.Web.UI... we don't use the ASP.NET AJAX stuff. Just Jquery. The problem actually doesn't involve jQuery... it's something on the server side. Are you running in debug mode?</p>",
+    "PostedDate": "2010-05-24T20:21:48.697-07:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "447116",
+    "ThreadId": "213690",
+    "Html": "<p><span style=\"color:black;font-size:10pt\">Thanks for the fast reply.&nbsp; I have tried both debug and release with the same results on the hosting server.&nbsp; I did have other issues on the server.&nbsp; It is a 64 bit system and did not support 32 bit applications.&nbsp; They changed that and then I was able to get the application to load.&nbsp; I wonder if the 64 bit issue could be the cause of the login problem as well.</span></p>\r\n<p><span style=\"color:black;font-size:10pt\">I also had to find and add the log4net.dll to the bin folder to get the application to work. It was not part of the downlaod package for the application.&nbsp; I was getting server error that it could not find/load this dll.&nbsp; I found it after a quick Internet search.&nbsp; Not sure if that would be contributing to the issue.</span></p>\r\n<p><span style=\"color:black;font-size:10pt\">I'm currently trying to run in debug and non-debug locally using the built in web server (not IIS) to see if I get&nbsp;the same thing.&nbsp; But I always run into a problem connecting to the database (cannot find the server or instance).&nbsp; That is whether it is the hosting company's database or a&nbsp;database on a&nbsp;local server.&nbsp; I can connect to both databases with SQL Management Studio but not with&nbsp;the web application.&nbsp; I am looking into firewall and other issues to address this.&nbsp; When the application is uploaded onto the hosting company's server I do not have any issues connecting to their database.&nbsp;So I am not too concerned with this problem (I know it&rsquo;s not an problem with the application).&nbsp; I have worked with ASP.NET 1.1/2.0 appliations and databases, but the MVC architecture and JQuery is new to me.</span></p>",
+    "PostedDate": "2010-05-25T07:36:10.583-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "447176",
+    "ThreadId": "213690",
+    "Html": "<p>Ok. I have some updated information.</p>\r\n<p>&nbsp;Even though it is redirecting to the error page after logging in, the user is being logged into the application. I was so worried about the error page that I wasn&rsquo;t paying attention to the menu.</p>\r\n<p>&nbsp;I looked up the error function for the jQuery.ajaxSetup() call. I added the parameters to it and the status text parameter was &lsquo;parseerror&rsquo;. I found a posting about someone having this error with Internet Explorer but it worked fine with Firefox.</p>\r\n<p>&nbsp;I tried Firefox and everything seems to work, so it seems related to Internet Explorer.</p>",
+    "PostedDate": "2010-05-25T09:25:54.787-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

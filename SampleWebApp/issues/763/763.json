@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:19:18.177-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When I open an event that is wired for RSVP, I can see the text Max Users: No limit. But when I add an RSVP-Yes, it returns Max Users: -1.",
+    "LastUpdatedDate": "2013-05-15T23:46:46.99-07:00",
+    "PlannedForRelease": "v2 Beta 2",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:19:16.35-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Small RSVP Error",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 763
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Yeah, because the code that sets that is in Page_Load under If Not IsPostBack.\r\n\r\nPut the following If Else block around line 175 of Events/View.aspx\r\n\r\nIf _totalAttendance = -1 Then    lblMaximum.Text = \"No limit set\"Else    lblMaximum.Text = _totalAttendance.ToStringEnd If\r\n\r\nGood catch!",
+      "PostedDate": "2007-04-25T14:19:17.003-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I mean replace line 175 with the code below.",
+      "PostedDate": "2007-04-25T14:19:17.38-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:19:18.177-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:33.17-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:46.99-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

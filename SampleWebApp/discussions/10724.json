@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "34742",
+    "ThreadId": "10724",
+    "Html": "\r\nHi there,<br /><br />I am trying to get the sending mail working. In the webconfig there are 2 places where mailservers and logon names/pwd are defined. On top in the appsettings and below in de system.net mailcofig settings.<br />Is there anybody who can explain the difference between the two and what I can do to prevent my (currently) relaying problems?<br />",
+    "PostedDate": "2007-05-27T01:42:23.62-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "34753",
+    "ThreadId": "10724",
+    "Html": "\r\nThe app settings in the web.config are for our use. They are pulled out when you send mail to members or someone makes a post onto a forum. The bottom one is for the ASP.NET membership provider to say \"hey... this is your forgot password request. heres your new password\".<br />",
+    "PostedDate": "2007-05-27T06:15:07.647-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2009-11-24T13:55:20.053-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "The Event Edit Cancel button does nothing except reshow the page",
+    "LastUpdatedDate": "2013-05-15T23:46:29.253-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-08-14T19:39:50.367-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Event Edit Cancel button error",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 3085
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I found the problem.\r\n\r\nThe news edit page uses a formview bound to the data to show the page and create the cancel button click event.The event edit page uses script to explictly set the values but it doesn;t set the navigateurl on the cancel button.\r\n\r\nI don't know why the two pages use different programming models.",
+      "PostedDate": "2007-08-17T00:04:56.997-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Probably because they were created by two different programmers.  The Club Starter Kit that we have is an improvement of the original MS supplied Kit.  A big improvement, but it still is based on that original kit.  If I remember correctly, the only things done to news and events pages were bug fixes.\r\n\r\nAlso remember that the events feed the calendar, while the news section doesn't have to.  So maybe the formview was an easier way to program it, but wasn't sufficient for the events.",
+      "PostedDate": "2007-08-22T05:11:00.86-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-11-24T13:55:20.053-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:10.737-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:29.253-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

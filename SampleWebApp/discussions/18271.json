@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "59681",
+    "ThreadId": "18271",
+    "Html": "\r\nI've been at this for 6 or 7 hours now and I'm still banging my head against the wall.  <br /><br />Starting with the Standard version 3b1.  I've installed the database on my providers SQL 2005 server and I changed the connectionstring.config file an the .data/webconfig files.  Both changes allow the site to run just fine on my local machine.<br /><br />I then changed the connectionstring.config file to map to my server and uploaded the .web/ contents up to the server.  Everything seems to run just fine until you go to login.  At that point I get an error indicating that aspnet_CheckSchemaVersion can't be found.  After working on this issue for a long time, downloading installaing and executing the subsonic tools, etc...  I dropped back and punted.<br /><br />I downloaded the Express(vb) version of the site.  I changed the connectionstring.config file and the site ran on my local machine just fine.  I changed the connectionstring.config file to match the needs of my server and replaced all of the code on the server with the express version (I left the database schema and data on the SQL server untouched.)<br /><br />Now when I request the default.aspx page I get the following error:<br />Server Error in '/' Application.<br />--------------------------------------------------------------------------------<br /><br />Compilation Error <br />Description: An error occurred during the compilation of a resource required to service this request. Please review the following specific error details and modify your source code appropriately. <br /><br />Compiler Error Message: BC30560: 'Tables' is ambiguous in the namespace 'ClubStarterKit.Data'.<br /><br />Source Error:<br /><br />Line 9:      Public Class Events<br />Line 10:         Public Shared Sub Delete(ByVal Id As String)<br />Line 11:             Dim eventqry As New Query(Tables.ClubEvent)<br />Line 12:             eventqry.QueryType = QueryType.Delete<br />Line 13:             eventqry.AddWhere(ClubEvent.Columns.ID, Id)<br /><br />Source File: D:\\Webs\\user12003f\\App_Code\\BLL\\Events.vb    Line: 11 <br /><br /><br />I think the issue lies with the subsonic generated code but I'm just not sure how to troubleshoot the issue at this point.  If anyone has any ideas or can point me towards a resource to help me figure the problem out I'd really appreciate it.<br /><br />Thanks,<br /><br />Jason<br />",
+    "PostedDate": "2007-11-24T17:59:41.263-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "59682",
+    "ThreadId": "18271",
+    "Html": "\r\nAre you able to regenerate your DAL? See the docs on how to do this. That would make sure your connection string is right. Did you change ANY thing else? Like the connection string name? Or the provider?<br />",
+    "PostedDate": "2007-11-24T18:38:20.327-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "60842",
+    "ThreadId": "18271",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Are you able to regenerate your DAL? See the docs on how to do this. That would make sure your connection <br /><br />string is right. Did you change ANY thing else? Like the connection string name? Or the provider?<br /><br /></div><br />Thanks for your reply.  <br />In order to verify that nothing else was changed, I started over from scratch.  I erased my local copy and downloaded a fresh copy of the express version from the distribution site.<br /><br />I changed the path to the .mdf file in the connectionstrings.config file and executed the site locally.  <br /><br />Everything seems to work great.<br /><br />Next, I went to the production server and wiped out all code and uploaded a new copy of the site.  I changed the connectionstrings.config file to:<br />&lt;connectionStrings&gt;<br />    &lt;add name=\"ClubSiteDB\" <br />      connectionString=\"Data Source=.\\SQLExpress;Integrated Security=SSPI;\"<br />      providerName=\"System.Data.SqlClient\"/&gt;<br />    &lt;/connectionStrings&gt;<br /><br />In this case, the actual connection string is a copy and paste from the providers instructions.  Of course, it's intended to be used from within their IIS host so I can't use it on my dev machine remotely.<br /><br />I used the instructions for generating the express Dal and requested the dev/generators.aspx page.<br /><br />I specified a folder under my account on the IIS machine under /app_code but access was denied (no surprise.)  <br /><br />I used a different folder under the root of the site and all of the files generated OK.  I then used FTP to move those files into the original /app_code/DAL/Generated folder and deleted them from the root level folder.<br /><br />At this point everything should be ready to go so I requested the default page.  It returned from the server just fine but when I tried to log in, I got the same error as before.  <br /><br />Could not find stored procedure 'dbo.aspnet_CheckSchemaVersion'.<br /><br />Next, I dropped all tables, views and stored procedures on the production SQL server and re-generated them using schema.sql and data.sql included with the express edition.<br /><br />No change.  I then re-created the DAL again against the new version of the database.<br /><br />Again, the site seems OK, but as soon as you request the default.aspx page the following error is returned. <br /><br /><br />Could not find stored procedure 'dbo.aspnet_CheckSchemaVersion'. <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />Exception Details: System.Data.SqlClient.SqlException: Could not find stored procedure 'dbo.aspnet_CheckSchemaVersion'.<br /><br />Source Error: <br /><br /><br />Line 236:                           &lt;asp:HyperLink ID=\"HyperLink1\" runat=\"server\" Text='&lt;%# Eval(\"Title\") %&gt;' NavigateUrl='&lt;%# \"~/blogs/post.aspx?id=\" &amp; Eval(\"postid\").ToString %&gt;'&gt;&lt;/asp:HyperLink&gt;&lt;/strong&gt;&lt;/td&gt;<br />Line 237:                        &lt;td style=\"width: 437px; height: 28px; text-align: right\"&gt;<br />Line 238:                            &nbsp;",
+    "PostedDate": "2007-12-02T15:01:33.81-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "63762",
+    "ThreadId": "18271",
+    "Html": "<b>Problems with DAL, we are at the beginning ...</b><br /><br />The choice of Subsonic seems great but it is now a part of the project and we (all users) need to know how to generate the DAL.<br />If you use sonic.exe to generate 'DAL source code' with the ClubDB.mdf you will not obtain the source code in ClubStarterKit.Data\\Generated differences are significatives !<br />You must know how to use SubSonic if you use the wrong command parameters you will not obtain the right code, like me during tree days.<br /><br /><b>News from DAL's problem :</b><br />I find the \"small gye\" ! Trying to solve problems with DAL, I found this connection string :<br /><br />connectionString=\"Data Source=.\\SQLExpress;Integrated Security=true;AttachDBFileName=C:\\Users\\Zack\\Documents\\ClubSK\\ClubStarterKit\\ClubStarterKit.Web\\App_Data\\ClubDB.mdf;User Instance=True\"<br /><br />In a ASP.NET 2.0 it is usfull to change it to the following connection string :<br />connectionString=\"Data Source=.\\SQLExpress;Integrated Security=true;AttachDBFileName=|DataDirectory|ClubDB.mdf;User Instance=True\"<br /><br />This make that the ClubDB works on Zack's computer but not on my computer !<br /><br /><b>I solve my problems with the DAL :</b><br /><br />During tree days I had use the following batch to generate DAL's code :<br />&gt;sonic generate /server .\\SQLExpress /db ClubDB.mdf /out ClubStarterKit.Data/Generated /generatedNamespace ClubStarterKit.Data /lang vb<br />&gt;pause<br /><br />I was asking my self why ! I do not obtain the right code. And I found the SubSonic commands !<br />Then I open the file ClubStarterKit.Data\\App.config it looks like Subsonic commands.<br />So I've tryed to apply this commands in my batch that is now looking like :<br /><br />&gt;sonic generate /server .\\SQLExpress /lang vb /db ClubDB.mdf /out ClubStarterKit.Data/Generated /generatedNamespace ClubStarterKit.Data /fixPluralClassNames false /spClassName SPs<br />&gt;pause<br /><br /><b>Then it works !!!!!!!!!!!!</b><br />",
+    "PostedDate": "2007-12-18T07:10:15.023-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "63768",
+    "ThreadId": "18271",
+    "Html": "\r\nRegards<br />",
+    "PostedDate": "2007-12-18T07:29:15.467-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "64307",
+    "ThreadId": "18271",
+    "Html": "\r\nSorry for the small gye that put 's' on objects it was only a Subsonic commands.<br /><br />I do forget a Subsonic command : /provider ClubStarterKitData<br /><br /><br />",
+    "PostedDate": "2007-12-20T04:14:37.843-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

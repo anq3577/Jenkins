@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "277391",
+    "ThreadId": "80897",
+    "Html": "<p>Hi,</p>\r\n<p>I am new to C# but would like to learn it but I am stuck trying to install the application. I have altered the web.config file with the name of the db I created in SQL Server 2005 and I have overriden the function within SessionBuilder.cs having ensured that line 42 in uncommented in the global.asax file. The code in SessionBuilder.cs is as follows:</p>\r\n<p>&nbsp;</p>\r\n<p>using System.Configuration;<br>using ClubStarterKit.Data.NHibernate;<br>using StructureMap;<br>using IBootstrapper = ClubStarterKit.Core.IBootstrapper;<br><br>namespace ClubStarterKit.Web.Infrastructure.Application<br>{<br>&nbsp;&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp; public class SessionBuilder : SessionBuilderBase<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public override FluentNHibernate.Cfg.Db.IPersistenceConfigurer DataConfiguration<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; get<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return FluentNHibernate.Cfg.Db.MsSqlConfiguration.MsSql2005<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .ConnectionString(ConnectionString);<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; protected override string ConnectionString<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; get <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return ConfigurationManager.ConnectionStrings[&quot;myDB&quot;].ConnectionString;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp; }<br><br>&nbsp;&nbsp;&nbsp; public class SessionBuilderBootstrapper : IBootstrapper<br>&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public void Bootstrap()<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ObjectFactory.Configure(x =&gt; x.ForRequestedType&lt;SessionBuilderBase&gt;()<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .TheDefaultIsConcreteType&lt;SessionBuilder&gt;());<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp; }<br>}</p>",
+    "PostedDate": "2010-01-14T16:43:37.633-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "277593",
+    "ThreadId": "80897",
+    "Html": "<p>The error I am getting is:</p>\r\n<p>Dialect does not support DbType.DateTimeOffset</p>",
+    "PostedDate": "2010-01-15T07:37:38.557-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "279241",
+    "ThreadId": "80897",
+    "Html": "<p>Me culpa on that one. You'll have to do a ReplaceAll on the entities to use DateTime instead of DateTimeOffset.... there might be some build errosr, which you could easily fix yourself, or I can help you fix. But that should take care of the error.</p>\r\n<p>&nbsp;</p>\r\n<p>Zack Owens</p>",
+    "PostedDate": "2010-01-19T16:41:08.87-08:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "279744",
+    "ThreadId": "80897",
+    "Html": "<p>Hi Zack,</p>\r\n<p>I've got 6 errors that I am hoping you can help me with....</p>\r\n<p>Error&nbsp;&nbsp; &nbsp;1&nbsp;&nbsp; &nbsp;'System.DateTime' does not contain a definition for 'UtcDateTime' and no extension method 'UtcDateTime' accepting a first argument of type 'System.DateTime' could be found (are you missing a using directive or an assembly reference?)&nbsp;&nbsp; &nbsp;C:\\Users\\Administrator\\Downloads\\clubstarterkit v3 jt\\ClubStarterKit.Infrastructure\\UI\\Calendar\\CalendarDay.cs&nbsp;&nbsp; &nbsp;56&nbsp;&nbsp; &nbsp;25&nbsp;&nbsp; &nbsp;ClubStarterKit.Infrastructure</p>\r\n<p>Error&nbsp;&nbsp; &nbsp;2&nbsp;&nbsp; &nbsp;The best overloaded method match for 'System.DateTime.DateTime(long)' has some invalid arguments&nbsp;&nbsp; &nbsp;c:\\users\\administrator\\downloads\\clubstarterkit v3 jt\\clubstarterkit.infrastructure\\ui\\calendar\\calendarmonth.cs&nbsp;&nbsp; &nbsp;59&nbsp;&nbsp; &nbsp;24&nbsp;&nbsp; &nbsp;ClubStarterKit.Infrastructure</p>\r\n<p>Error&nbsp;&nbsp; &nbsp;3&nbsp;&nbsp; &nbsp;Argument 1: cannot convert from 'System.DateTime' to 'long'&nbsp;&nbsp; &nbsp;c:\\users\\administrator\\downloads\\clubstarterkit v3 jt\\clubstarterkit.infrastructure\\ui\\calendar\\calendarmonth.cs&nbsp;&nbsp; &nbsp;59&nbsp;&nbsp; &nbsp;37&nbsp;&nbsp; &nbsp;ClubStarterKit.Infrastructure</p>\r\n<p>Error&nbsp;&nbsp; &nbsp;4&nbsp;&nbsp; &nbsp;Metadata file 'C:\\Users\\Administrator\\Downloads\\clubstarterkit v3 jt\\ClubStarterKit.Infrastructure\\bin\\Debug\\ClubStarterKit.Infrastructure.dll' could not be found&nbsp;&nbsp; &nbsp;ClubStarterKit.Web</p>\r\n<p>Error&nbsp;&nbsp; &nbsp;5&nbsp;&nbsp; &nbsp;Metadata file 'C:\\Users\\Administrator\\Downloads\\clubstarterkit v3 jt\\ClubStarterKit.Web\\bin\\ClubStarterKit.Web.dll' could not be found&nbsp;&nbsp; &nbsp;ClubStarterKit.Tests</p>\r\n<p>Error&nbsp;&nbsp; &nbsp;6&nbsp;&nbsp; &nbsp;Metadata file 'C:\\Users\\Administrator\\Downloads\\clubstarterkit v3 jt\\ClubStarterKit.Infrastructure\\bin\\Debug\\ClubStarterKit.Infrastructure.dll' could not be found&nbsp;&nbsp; &nbsp;ClubStarterKit.Tests</p>\r\n<p>&nbsp;</p>\r\n<p>Do you know if anyone has already created a SQL 2005 version of CSK Version 3 rar file? Thanks for your help.</p>\r\n<p>JT</p>",
+    "PostedDate": "2010-01-20T14:56:32.443-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "279813",
+    "ThreadId": "80897",
+    "Html": "<p>Ignore 4,5 and 6... those will be resolved when everything compiles.</p>\r\n<p>&nbsp;</p>\r\n<p>Change line 56 of Infrastructure\\UI\\Calendar\\CalendarDay.cs to return Date.UtcNow.ToShortDateString();</p>\r\n<p>Change line 59 of Infrastructure\\UI\\Calendar\\CalendarMonth.cs to var init = new DateTime(year, month, 1).ToFirstDayOfWeek();</p>\r\n<p>&nbsp;</p>\r\n<p>Those should make it compile... but no guarantees. SQL 2005 isn't going to be supported more than likely... this is because we have a lot of international users and DateTimeOffset is something that is in the right direction for supporting those people.</p>",
+    "PostedDate": "2010-01-20T18:36:12.45-08:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  }
+]

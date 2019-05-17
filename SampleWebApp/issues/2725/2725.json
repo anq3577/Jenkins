@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-07-06T13:45:17.497-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Put in multi-day calendar support as described on this page: http://forums.asp.net/p/959533/1187521.aspx#1187521",
+    "LastUpdatedDate": "2013-05-15T23:46:33.54-07:00",
+    "PlannedForRelease": "Version 3 Beta 1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-07-05T12:46:35.333-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Multi-day calendar support",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 2725
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 3491.",
+      "PostedDate": "2007-07-06T13:45:17.497-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:15.88-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:33.54-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

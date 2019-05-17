@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "38824",
+    "ThreadId": "11964",
+    "Html": "\r\nWhen I try and run the latest Changeset I get <br /><br />Error\t125\tReference required to assembly 'SubSonic, Version=2.0.1.0, Culture=neutral, PublicKeyToken=null' containing the base class 'SubSonic.ActiveRecord`1'. Add one to your project.\tC:\\websites\\changeset3294\\ClubStarterKit\\ClubStarterKit.Web\\App_Code\\Events.vb\t60\t34\tC:\\...\\ClubStarterKit.Web\\<br /><br />I think I have done everything in the Subsonic info page, all except getting the VWD standard, after 3 hours of mind numb free web casts, I find that us over here in good old blighty are not privy to these lovely US giveaways!!!!!<br />",
+    "PostedDate": "2007-06-28T08:48:53.323-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38867",
+    "ThreadId": "11964",
+    "Html": "\r\nLook at the references and check to see if the SubSonic reference is intact. <br /><br />So you have VWD? Or VS Standard? It should work out of the box (other than you have to setup the connection string... you might want to check that). <br />",
+    "PostedDate": "2007-06-28T13:46:58.647-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39079",
+    "ThreadId": "11964",
+    "Html": "\r\nHow do I check the references, Ive followed everything in the SubSonic instructions, I have changed the connection string in connectionstrings.config to point at my local databse.<br />",
+    "PostedDate": "2007-06-30T06:47:22.257-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39080",
+    "ThreadId": "11964",
+    "Html": "\r\nError\t102\tReference required to assembly 'SubSonic, Version=2.0.1.0, Culture=neutral, PublicKeyToken=null' containing the base class 'SubSonic.ActiveRecord`1'. Add one to your project.\tC:\\websites\\changeset3294\\ClubStarterKit\\ClubStarterKit.Web\\App_Code\\Blogs.vb\t14\t40\tC:\\...\\ClubStarterKit.Web\\<br /><br /><br />",
+    "PostedDate": "2007-06-30T06:55:08.837-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39081",
+    "ThreadId": "11964",
+    "Html": "\r\nAhh got it, sorry<br /><br />Incase anyone else has this<br /><br />go Website - add reference - browse - fing the subsonic dir and choose the dll.<br /><br />:-)<br />",
+    "PostedDate": "2007-06-30T07:01:47.34-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39102",
+    "ThreadId": "11964",
+    "Html": "\r\nThe SubSonic setup is sorta wierd. I need to probably do a webcast explaining how to do most of the SubSonic setup, just so people don't have to follow my written directions (which aren't easy to follow, I'm sure).<br />",
+    "PostedDate": "2007-06-30T16:41:09.653-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "33971",
+    "ThreadId": "10487",
+    "Html": "\r\nWhen trying to add Photo content using FCKeditor I get the above..<br /><br /><br />\".....   Suystem.InvalidOperationException: Using themed css files requires a header control on the page.<br /> (e.g. &lt;head runat+\"server%qu....\"<br />",
+    "PostedDate": "2007-05-19T23:54:55.207-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33976",
+    "ThreadId": "10487",
+    "Html": "\r\nTry this! In the file FCKeditor/filemanager/browser/default/connectors/aspx/connector.aspx add following:<br /><br />&lt;html&gt;<br />&lt;head runat=\"server\"&gt;&lt;/head&gt;<br />&lt;/html&gt;<br /><br />Works for me.<br />",
+    "PostedDate": "2007-05-20T01:12:11.843-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "34032",
+    "ThreadId": "10487",
+    "Html": "\r\nThanks BB,<br /><br />Tried that and it now allows browse and image upload<br />However  it provides this url to image <br />~/Files/Image/B1.jpg<br /><br />but does not display image ??<br /><br />",
+    "PostedDate": "2007-05-21T00:05:52.583-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "34042",
+    "ThreadId": "10487",
+    "Html": "\r\nRemoved ~/ allowed image display in browser<br />but not in FCKeditor itself<br />",
+    "PostedDate": "2007-05-21T02:32:34.443-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

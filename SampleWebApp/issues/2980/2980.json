@@ -1,0 +1,75 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-08-07T14:37:50.597-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Several broken image references in the MadTri Theme\n--> Copy the missing skin entries from the ClubSite Theme",
+    "LastUpdatedDate": "2013-05-15T23:46:31.237-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-08-05T14:05:33.88-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Images reference broken in MadTri theme - Beta1",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2980
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Could you put these in separate bugs? There is way too much in this for just 1 bug.",
+      "PostedDate": "2007-08-05T18:44:30.98-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-08-06T03:44:10.317-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-08-06T03:44:38.96-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-08-06T03:48:28.62-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Resolved with changeset 3961.",
+      "PostedDate": "2007-08-07T14:37:50.597-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:13.31-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:31.237-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "Id": "32318",
+    "ThreadId": "9943",
+    "Html": "\r\nCan you assist with this error??<br /><br /><br />\"Multiple controls with the same ID 'Image2' were found. FindControl requires that controls have unique IDs\"<br /><br />Occurs when attempting to view photo albums ???<br /><br />I do not experience this problem with  release           club<i>rtm</i>v1_vb <br /><br />Thanks<br />",
+    "PostedDate": "2007-05-07T04:25:46.247-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32409",
+    "ThreadId": "9943",
+    "Html": "\r\nYou can simply change one of the image2 tage to image3<br /><br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />HawkWeb wrote:<br />Can you assist with this error??<br /><br /><br />\"Multiple controls with the same ID 'Image2' were found. FindControl requires that controls have unique IDs\"<br /><br />Occurs when attempting to view photo albums ???<br /><br />I do not experience this problem with  release           club<i>rtm</i>v1_vb <br /><br />Thanks<br /><br /></div>",
+    "PostedDate": "2007-05-07T20:35:17.36-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32416",
+    "ThreadId": "9943",
+    "Html": "\r\nI can find references  to Image2 in several places on the code. <br />Not sure where to change this ???<br /><br />Can you help ??<br />",
+    "PostedDate": "2007-05-07T22:43:07.333-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32417",
+    "ThreadId": "9943",
+    "Html": "\r\nIt's OK.<br /><br /> Figured it out<br /><br />Thanks for your help<br />",
+    "PostedDate": "2007-05-07T23:01:39.137-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32505",
+    "ThreadId": "9943",
+    "Html": "\r\nWhat did you figure out?  I have the same error as I am sure many do.<br />What page hade the error? What was your solution?<br /><br />Regards,<br />Hotaling<br />",
+    "PostedDate": "2007-05-08T11:02:24.147-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32535",
+    "ThreadId": "9943",
+    "Html": "\r\nIt is only a naming problem... you can just change the name of the images.<br />",
+    "PostedDate": "2007-05-08T16:02:48.043-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32537",
+    "ThreadId": "9943",
+    "Html": "\r\n{quote} <br />z2bass wrote:<br />It is only a naming problem... you can just change the name of the images.<br /><br />{quote} I deleted the images out of the database (no images) and still get the error.<br />I must be missing something.<br /><br />",
+    "PostedDate": "2007-05-08T17:03:31.223-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32543",
+    "ThreadId": "9943",
+    "Html": "\r\nLook for the image name in your code and just change the name.<br /><br />What is the ASP.NET error page saying?<br />",
+    "PostedDate": "2007-05-08T18:44:14.37-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32579",
+    "ThreadId": "9943",
+    "Html": "\r\nThis worked for me<br /><br />Go to Photo/Contents.aspx<br /><br />line 257<br /><br />&lt;asp:Image ID=\"Image2\" runat=\"server\" SkinID=\"loading\" /&gt;<br /><br />Changed Imaghe 2 to Image 3.<br /><br /><br />Downloaded Change Set 1709                    Same Problem ???<br />",
+    "PostedDate": "2007-05-09T01:56:01.143-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

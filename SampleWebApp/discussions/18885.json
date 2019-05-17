@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "61989",
+    "ThreadId": "18885",
+    "Html": "\r\nHi Guys,<br />I am newbie with visual web developer and asp.net 2.0. I have to design a sports website for my club. I have downloaded the club starter kit 2.0 and am able to build it and view it in the browser.<br /><br />I have struggled for the past 6- 7 hours trying to change the poster and background color but am not getting anywhere. i have watched the tutorials and know that the styles need to be changed in the CCS file. In this project there seems to be more than one and which one is being used is hard to tell. I have deleted the poster.jpg file and replaced it with a poster of my own called poster.gif. <br /><br />From what i undestand this should work but the browser still opens the website with the old football poster even though ive deleted it from the images file. i am just stuck. Can someone please give me suggestiongs as to what i should try ? <br /><br />your quick response would be much appreaciated. Thank you in advance.<br /><br />Sunny<br />",
+    "PostedDate": "2007-12-09T15:34:18.68-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "62074",
+    "ThreadId": "18885",
+    "Html": "\r\nTry pressing CTRL-F5 to see it reflect when you deleted the file (CTRL-F5 will remove the cached files for the page), or just put another file with the same name. As long as the create date of the file is later than the previous cached file it will work.<br />",
+    "PostedDate": "2007-12-10T03:02:39.517-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

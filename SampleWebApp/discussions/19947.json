@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "66128",
+    "ThreadId": "19947",
+    "Html": "\r\nError\t2\t'PollQuestion' is ambiguous, imported from the namespaces or types 'ClubStarterKit.Web, ClubStarterKit.Data'.\tC:\\Documents and Settings\\mflickman\\My Documents\\Visual Studio 2008\\Projects\\frogsac\\Poll\\AddReaction.aspx.vb\t43\t<br /><br />I am running the beta 1 version 3 code in VWD<br />",
+    "PostedDate": "2008-01-04T11:48:55.553-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "126177",
+    "ThreadId": "19947",
+    "Html": "I'm having the same problem.&nbsp; I'm running Version 3 Beta 1 on XP.&nbsp;\r\n",
+    "PostedDate": "2008-10-19T15:05:39.113-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

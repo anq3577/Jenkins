@@ -1,0 +1,80 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2009-10-20T15:08:41.653-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I couldn't find reference to this in any other issue, but why doesn't checking \"Remember me next time\" do anything? Is there a way of create a cookie that isn't temporary?",
+    "LastUpdatedDate": "2013-05-15T23:46:24.61-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2008-06-28T12:10:03.67-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "\"Remember me next time\"",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 6548
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "You are right, checking \"Remember me next time\" doesn't work.\r\nThat is strange, because we use standard .Net LoginControl behaviour.\r\nYou only have to set the ID of the checkbox to \"RememberMe\", because additional controls with well known IDs are supported and will be automatically hooked up to the Login functionality.\r\n\r\nHave a look at http://quickstarts.asp.net/QuickStartv20/aspnet/doc/ctrlref/login/login.aspx\r\n--> Login Templates",
+      "PostedDate": "2008-08-25T05:13:19.647-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-08-25T05:13:24.223-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "In my opinion, that checkbox should be removed anyways. For useability it's better to have the browser remember it, firefox and ie offer good solutions for saving passwords, also it's a security risk.\r\nI've seen users respond to this like\r\n\"\" Hey i checked the checkbox to remember me, why is this asking me again if i want to remember the password \"\"\r\n\r\nThere is a lot of users that find it strange to have support for saving in a insecure cookie while there password manager can save the password.\r\n\r\nIf it was me deciding here i would close this item and remove the saving checkbox, however for this project it should be left in so someone could fix it...",
+      "PostedDate": "2008-09-26T09:53:38.817-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Thoze - any idea why this doesn't work? the cookie doesn't even get created. Not sure if the issue is with Zack's (teams) usage or what.",
+      "PostedDate": "2008-12-03T09:52:35.553-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I am aware that this issue exists with v3 beta 1. This will be fixed soon.",
+      "PostedDate": "2009-10-20T15:08:33.477-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-10-20T15:08:41.653-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:05.32-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:24.61-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

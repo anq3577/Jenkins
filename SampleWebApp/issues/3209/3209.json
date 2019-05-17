@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "issue was setting permissions on the folder for the appropriate user",
+    "ClosedDate": "2007-09-01T08:26:46.1-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Using webhost4life and I am trying to upload documetns.  I get the following error.  ANy thoughts?\n \nServer Error in '/' Application.\n--------------------------------------------------------------------------------\n \nAccess to the path 'd:\\hosting\\member\\rhhanson\\site1\\Documents\\10waystoimproveyourwebsite.pdf' is denied. \nDescription: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. \n \nException Details: System.UnauthorizedAccessException: Access to the path 'd:\\hosting\\member\\rhhanson\\site1\\Documents\\10waystoimproveyourwebsite.pdf' is denied. \n \nASP.NET is not authorized to access the requested resource. Consider granting access rights to the resource to the ASP.NET request identity. ASP.NET has a base process identity (typically {MACHINE}\\ASPNET on IIS 5 or Network Service on IIS 6) that is used if the application is not impersonating. If the application is impersonating via <identity impersonate=\"true\"/>, the identity will be the anonymous user (typically IUSR_MACHINENAME) or the authenticated request user. \n \nTo grant ASP.NET access to a file, right-click the file in Explorer, choose \"Properties\" and select the Security tab. Click \"Add\" to add the appropriate user or group. Highlight the ASP.NET account, and check the boxes for the desired access.\n \nSource Error: \n \n \nLine 9:          Dim strFile As String = FileUpload1.FileName.ToString()\nLine 10:         Dim StrLoc As String = Server.MapPath(\"~/Documents/\" & strFile)\nLine 11:         FileUpload1.PostedFile.SaveAs(StrLoc)\nLine 12:         SqlDataSource1.InsertParameters.Add(\"URL\", strFile)\nLine 13:         SqlDataSource1.InsertParameters.Add(\"Title\", TitleTXT.Text.ToString)\n \n \nSource File: d:\\hosting\\member\\rhhanson\\site1\\admin\\AddDownload.aspx    Line: 11 \n \nStack Trace: \n \n \n[UnauthorizedAccessException: Access to the path 'd:\\hosting\\member\\rhhanson\\site1\\Documents\\10waystoimproveyourwebsite.pdf' is denied.]\n   System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath) +1971539\n   System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy) +998\n   System.IO.FileStream..ctor(String path, FileMode mode) +65\n   System.Web.HttpPostedFile.SaveAs(String filename) +87\n   ASP.admin_adddownload_aspx.Button1_Click(Object sender, EventArgs e) in d:\\hosting\\member\\rhhanson\\site1\\admin\\AddDownload.aspx:11\n   System.Web.UI.WebControls.Button.OnClick(EventArgs e) +105\n   System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument) +107\n   System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument) +7\n   System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument) +11\n   System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData) +33\n   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +5102",
+    "LastUpdatedDate": "2013-05-15T23:46:28.583-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-08-29T19:04:59.9-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Upload Documents Error",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 3209
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

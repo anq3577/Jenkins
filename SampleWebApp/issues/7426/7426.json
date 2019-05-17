@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Use discussion board for such a question",
+    "ClosedDate": "2009-10-20T15:06:19.187-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi guys this is the error i encounter all the time[Server Error in '/' Application.\nThe database does not appear to contain WebContent table, this is a feature of the extended ClubSite, please ensure you have run WebContent.SQL against the database ]\nThe website works fine on my machine in dev mode..it's when i've uploaded it to my host discountasp.net that i encounter this problem ...i probably loaded it about 100 times and still the same thing...please please help",
+    "LastUpdatedDate": "2013-05-15T23:46:24.357-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2008-08-26T08:45:51.887-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Server error in app",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 7426
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Try to update your installation with the newest sources",
+      "PostedDate": "2008-08-28T05:54:52.177-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-10-20T15:06:19.187-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:04.837-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:24.357-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Will be fixed at a later time.",
+    "ClosedDate": "2009-10-20T15:10:03.507-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi to all group! I'm newest interested about CodePlex jobs (specially on Club Starter Kit) for develope a business web site of social community. I think wich this type of starter Kit is very quit, easy to use and realy open for other extension/customization! Good!\nSo, I've installed the template in VS2005 (like the topic about this cleary explain) but, when I try to hit F5 to lunch my new web site I receive the error indicate on title of this post! VS2005 don't recognize the namespace ClubStarterKit and don't get run! The db connection may be ok, but I receive the error in Member/login.aspx page and I can't proceed to lunch application for start my personal training on it!\nPlease look at me for some help!\n \nHowever, in the next future, I'm very happy if is possible to become a programmer to help this cause, for a ever better release of this simple and usefull starter kit!\n \nBye bye to all!\n \nDaniel",
+    "LastUpdatedDate": "2013-05-15T23:46:24.77-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2008-06-17T07:06:39.133-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "'Web' non è un membro di 'ClubStarterKit' (for english 'Web' is not a member of 'ClubStarterKit')",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6383
+  },
+  "FileAttachments": [
+    {
+      "FileId": 1563,
+      "FileName": "Errore_1.gif",
+      "DownloadUrl": ".\\1563"
+    }
+  ],
+  "Comments": []
+}

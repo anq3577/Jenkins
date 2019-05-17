@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "57391",
+    "ThreadId": "17595",
+    "Html": "\r\nHi Everyone,<br />I keep getting this error when you hit to logout on the loginbanner.ascx... you can login fine and register fine, but once you are logged in and hit log out you get this error:<br /><br />Server Error in '/' Application.<br />--------------------------------------------------------------------------------<br /><br />Count cannot be less than zero.<br />Parameter name: count <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />Exception Details: System.ArgumentOutOfRangeException: Count cannot be less than zero.<br />Parameter name: count<br /><br />Source Error: <br /><br /><br />Line 13:         st = str.Remove(0, 1)<br />Line 14:         count = st.IndexOf(\"/\"c)<br />Line 15:         st = st.Remove(0, count)<br />Line 16:         st = \"~\" &amp; st<br />Line 17:         Return st<br /><br /><br />Source File: d:\\hosting\\naturalgolf\\UserControls\\LoginBanner.ascx    Line: 15 <br /><br />Stack Trace: <br /><br /><br />[ArgumentOutOfRangeException: Count cannot be less than zero.<br />Parameter name: count]<br />   System.String.Remove(Int32 startIndex, Int32 count) +0<br />   ASP.LoginBanner.GetFileName(String str) in d:\\hosting\\naturalgolf\\UserControls\\LoginBanner.ascx:15<br />   ASP.LoginBanner.Logoutbtn_Click(Object sender, EventArgs e) in d:\\hosting\\naturalgolf\\UserControls\\LoginBanner.ascx:7<br />   System.Web.UI.WebControls.Button.OnClick(EventArgs e) +105<br />   System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument) +107<br />   System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument) +7<br />   System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument) +11<br />   System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData) +33<br />   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +5102<br /><br />Thanks in advance,<br />Lisa<br />",
+    "PostedDate": "2007-11-08T14:21:35.363-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "77816",
+    "ThreadId": "17595",
+    "Html": "\r\nHas anybody figured this out?  I am having th same problem.  Thanks<br />",
+    "PostedDate": "2008-03-03T07:13:39.09-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "92466",
+    "ThreadId": "17595",
+    "Html": "i changed the code as follows on the loginbanner.ascx<br>\r\n<br>\r\n    Private Function GetFileName(ByVal str As String) As String<br>\r\n        Dim st As String<br>\r\n        st = str<br>\r\n        st = &quot;~&quot; &amp; st<br>\r\n        Return st<br>\r\n    End Function<br>\r\n<a href=\"http://www.codeplex.com/ClubStarterKit/Thread/View.aspx?ThreadId=17595\"></a>\r\n",
+    "PostedDate": "2008-05-14T09:05:10.017-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

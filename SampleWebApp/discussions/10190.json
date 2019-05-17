@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "33015",
+    "ThreadId": "10190",
+    "Html": "\r\nWhat .Skin files are used in the project?<br /><br />It appears none are used any longer, should they be removed?<br /><br /><br />",
+    "PostedDate": "2007-05-12T16:50:59.673-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33016",
+    "ThreadId": "10190",
+    "Html": "\r\nThey are used... the loading images, rss, forums image... all from skins. They are used a lot, actually.<br />",
+    "PostedDate": "2007-05-12T18:18:52.93-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33017",
+    "ThreadId": "10190",
+    "Html": "\r\nTrying to get up to speed on changes.  Can you give me an example of one skin that is used?<br /><br />Every .skin file I have found reference the old \\images folder files which all but 4 have been removed.<br />If the Image.skin is referenced the image links would not be valid.<br /><br /><br />&lt;asp:Image runat=\"server\" SkinID=\"rss\" ImageUrl=\"images/rss.png\" AlternateText=\"rss-img\" CssClass=\"border-top-width: 0px; border-left-width: 0px; float: right; border-bottom-width: 0px; border-right-width: 0px; padding-top: 10px;\" /&gt;<br /><br />&lt;asp:Image runat=\"server\" SkinID=\"ImageThumbNail\" ImageUrl=\"images/news.jpg\" CssClass=\"photo\" BorderWidth=\"1\" /&gt;<br />&lt;asp:Image runat=\"server\" SkinID=\"loading\" ImageUrl=\"images/loading.gif\" style=\"text-align:center;\" /&gt;<br />&lt;asp:Image runat=\"server\" skinID=\"print\" ImageUrl=\"images/print.png\" AlternateText=\"print\" /&gt;<br />&lt;asp:Image runat=\"server\" SkinID=\"download\" AlternateText=\"Download\" ImageUrl=\"images/icon<i>download</i>event.gif\" width=\"15\" height=\"26\" /&gt;<br />&lt;asp:Image runat=\"server\" SkinID=\"preview\" CssClass=\"picture\" BorderWidth=\"1\" ImageUrl=\"images/nophoto.gif\" /&gt;<br /><br /><br />Here is the Forum.skin (all ImageUrl invalid)<br /><br />&lt;asp:Image runat=\"server\" skinID=\"topic\" ImageUrl=\"images/topic.gif\" /&gt; (MOVED)<br />&lt;asp:Image runat=\"server\" skinID=\"lockedtopic\" ImageUrl=\"images/lockedtopic.gif\" /&gt;  (MOVED)<br />&lt;asp:Image runat=\"server\" skinID=\"section\" ImageUrl=\"images/section.gif\" /&gt;  (MOVED)<br />&lt;asp:Image runat=\"server\" skinID=\"unread\" ImageUrl=\"images/unread.gif\" /&gt;  (MOVED)<br />&lt;asp:Image runat=\"server\" skinID=\"recent\" ImageUrl=\"images/recent.gif\" /&gt;  (MOVED)<br />&lt;asp:Image runat=\"server\" skinID=\"unwatch\" ImageUrl=\"images/unwatch.gif\" /&gt;  (MOVED)<br />&lt;asp:Image runat=\"server\" skinID=\"movedown\" ImageUrl=\"images/movedown.gif\" /&gt;  (MOVED)<br />&lt;asp:Image runat=\"server\" skinID=\"moveup\" ImageUrl=\"images/moveup.gif\" /&gt;  (MOVED)<br /><br />&lt;asp:Image runat=\"server\" skinID=\"threadlocktrue\" ImageUrl=\"images/threadlocktrue.gif\" /&gt;  <br />&lt;asp:Image runat=\"server\" skinID=\"threadlockfalse\" ImageUrl=\"images/threadlockfalse.gif\" /&gt;<br />&lt;asp:Image runat=\"server\" skinID=\"stickythreadlockedtrue\" ImageUrl=\"images/stickythreadlockedtrue.gif\" /&gt;<br />&lt;asp:Image runat=\"server\" skinID=\"stickythreadlockedfalse\" ImageUrl=\"images/stickythreadlockedfalsegif\" /&gt;<br /><br />&lt;asp:Image runat=\"server\" skinID=\"calendaricon\" ImageUrl=\"images/calendaricon.gif\" /&gt;  (MOVED)<br />&lt;asp:Image runat=\"server\" skinID=\"dropdownbtn\" ImageUrl=\"images/dropdownbtn.gif\" /&gt;  (MOVED)<br />&lt;asp:Image runat=\"server\" skinID=\"online\" ImageUrl=\"images/online.gif\" /&gt;  (MOVED)<br />&lt;asp:Image runat=\"server\" skinID=\"offline\" ImageUrl=\"images/offline.gif\" /&gt;  (MOVED)<br />",
+    "PostedDate": "2007-05-12T18:59:21.593-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33021",
+    "ThreadId": "10190",
+    "Html": "<br />Do the skins use realitive url's?<br />Could or have they been replaced by the style sheets?<br /><br />I noticed the 4 threadlock images appear in 3 image folders, both theme\\image folders and the \\image folder.<br /><br /><br />",
+    "PostedDate": "2007-05-12T20:09:50.03-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

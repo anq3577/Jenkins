@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:19:31.397-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi,\nTesting along here.\n \nLeaving title blanc errors out.\nUsing wide texts results in text overlapping the \"box\"\n \nPaste this in a blogpost to see what I mean: \n \nTesting...Testing...Testing...Testing...Testing...Testing...Testing...Testing...Testing...Testing...Testing...Testing...Testing...Testing...\n \nLex\n \n \n \n \nDelete This Post",
+    "LastUpdatedDate": "2013-05-15T23:46:46.66-07:00",
+    "PlannedForRelease": "v2 Beta 2",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:19:30.3-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Blog bug(gies)",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 774
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "Id": "40054",
+    "ThreadId": "12314",
+    "Html": "\r\nHello.<br /><br />Is it possible to replace the little red 'X' that appears in place of the lack of a photo?<br /><br />Any help would be gratefully appreciated.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-07-07T10:36:05.503-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40059",
+    "ThreadId": "12314",
+    "Html": "\r\nlocate the nophoto.gif and place it in the images directory or the themes/images directory.  It is just missing in one of the two I believe.<br />",
+    "PostedDate": "2007-07-07T12:01:19.463-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40064",
+    "ThreadId": "12314",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />rhhanson wrote:<br />locate the nophoto.gif and place it in the images directory or the themes/images directory.  It is just missing in one of the two I believe.<br /><br /></div><br />Hello rh.<br /><br />I copied the nophoto.gif file from App_Themes\\ClubSite\\Images to the Images folder.  That did not seem to change anything.  I still see the red X.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-07-07T12:40:49.877-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40273",
+    "ThreadId": "12314",
+    "Html": "\r\nSeems you get the red x in the membership list but in forums it shows the nophoto.gif.<br />",
+    "PostedDate": "2007-07-09T11:54:53.403-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40277",
+    "ThreadId": "12314",
+    "Html": "\r\nmake sure the code in your member/list.aspx is:<br /><br />&lt;script runat=\"server\"&gt;<br /><br />Public Function picit(ByVal content As String) As String<br />        If content Is Nothing Then<br />            Return \"../images/nophoto.gif\"<br />        Else<br />            Return content<br />        End If<br />    End Function<br />",
+    "PostedDate": "2007-07-09T12:18:01.843-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40296",
+    "ThreadId": "12314",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />rhhanson wrote:<br />make sure the code in your member/list.aspx is:<br /><br />&lt;script runat=\"server\"&gt;<br /><br />Public Function picit(ByVal content As String) As String<br />        If content Is Nothing Then<br />            Return \"../images/nophoto.gif\"<br />        Else<br />            Return content<br />        End If<br />    End Function<br /><br /></div><br />I didn't see how this would fix the problem, since there is no control calling this Function.  However, i put it in anyway and i was right.  It does not help.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-07-09T13:30:20.393-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40302",
+    "ThreadId": "12314",
+    "Html": "\r\nright click and get the properties on the Red X image.  That will tell you where it is trying to pull the image from.  You are getting this only on the Membership page, correct?<br />",
+    "PostedDate": "2007-07-09T13:56:36.84-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40307",
+    "ThreadId": "12314",
+    "Html": "\r\nwww............/member/<br /><br />",
+    "PostedDate": "2007-07-09T14:07:33.04-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40324",
+    "ThreadId": "12314",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />rhhanson wrote:<br />right click and get the properties on the Red X image.  That will tell you where it is trying to pull the image from.  You are getting this only on the Membership page, correct?<br /><br /></div><br />Yes only on the membership page.<br /><br />Address: (URL) http://localhost:1252/GirgentiWebSite/member/<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-07-09T14:38:49.917-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40363",
+    "ThreadId": "12314",
+    "Html": "\r\nThat's an odd place to pull the images from.  When I right click on my avatar image I get:<br /><br />AvatarImagefetch.ashx?Memberid=45edb9b6-a13f-4534-aa2c-4d526afdd82c.<br /><br />I would guess it is using the memberid to lookup in the tables and find the avatar image associated with the user.<br /><br />Users with no avatar phot are pulling:<br /><br />http://www.ogfutbol.org/images/nophoto.gif<br /><br />Do you have any users who having working avatar's?<br />",
+    "PostedDate": "2007-07-09T20:20:03.417-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40418",
+    "ThreadId": "12314",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />rhhanson wrote:<br />That's an odd place to pull the images from.  When I right click on my avatar image I get:<br /><br />AvatarImagefetch.ashx?Memberid=45edb9b6-a13f-4534-aa2c-4d526afdd82c.<br /><br />I would guess it is using the memberid to lookup in the tables and find the avatar image associated with the user.<br /><br />Users with no avatar phot are pulling:<br /><br />Users with an avatar photo show properties of <br /><br />http://www.ogfutbol.org/images/nophoto.gif<br /><br />Do you have any users who having working avatar's?<br /><br /></div><br />Users with an avatar photo show properties of AvatarImagefetch.ashx?Memberid=45edb9b6-a13f-4534-aa2c-4d526afdd82c just like yours does.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-07-10T06:18:34.643-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40482",
+    "ThreadId": "12314",
+    "Html": "\r\nI fixed it in the most recent changeset.<br />",
+    "PostedDate": "2007-07-10T11:21:22.327-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "48511",
+    "ThreadId": "14918",
+    "Html": "\r\nI am having an issue when trying to send an email to \"Registered Users\" this on on V2 and here is what i can getting. Any help would be great.<br /><br /><br /><br />Line 375:        Public Default ReadOnly Property Item(ByVal index As Integer) As MemberInfoRow<br />Line 376:            Get<br />Line 377:                Return CType(Me.Rows(index),MemberInfoRow)<br />Line 378:            End Get<br />Line 379:        End Property<br /><br /><br />Source File: C:\\WINDOWS\\Microsoft.NET\\Framework\\v2.0.50727\\Temporary ASP.NET Files\\root\\1096f3e4\\85893f34\\App_Code.tbwgz4dw.6.vb    Line: 377 <br />",
+    "PostedDate": "2007-09-09T20:49:50.013-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "52920",
+    "ThreadId": "14918",
+    "Html": "\r\nHi,<br /><br />I have the same problem have someone allready an answer for this problem.<br />Please let us Know<br /><br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />alafferty wrote:<br />I am having an issue when trying to send an email to \"Registered Users\" this on on V2 and here is what i can getting. Any help would be great.<br /><br /><br /><br />Line 375:        Public Default ReadOnly Property Item(ByVal index As Integer) As MemberInfoRow<br />Line 376:            Get<br />Line 377:                Return CType(Me.Rows(index),MemberInfoRow)<br />Line 378:            End Get<br />Line 379:        End Property<br /><br /><br />Source File: C:\\WINDOWS\\Microsoft.NET\\Framework\\v2.0.50727\\Temporary ASP.NET Files\\root\\1096f3e4\\85893f34\\App_Code.tbwgz4dw.6.vb    Line: 377 <br /><br /></div>",
+    "PostedDate": "2007-10-11T15:25:02.717-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "52981",
+    "ThreadId": "14918",
+    "Html": "\r\nHi,<br /><br />I solved the problem in the web.config I chanced<br /><br />    &lt;add key=\"ClubMailServer\" value=\"192.168.1.199\" /&gt;<br />    &lt;add key=\"ClubMailUsername\" value=\"\" /&gt;<br />    &lt;add key=\"ClubMailPassword\" /&gt;<br />to<br /><br />    &lt;add key=\"ClubMailServer\" value=\"192.168.1.199\" /&gt;<br />    &lt;add key=\"ClubMailUsername\" value=\"\" /&gt;<br />    &lt;add key=\"ClubMailPassword\" value=\"\"/&gt;<br /><br />Now it is working good<br /><br /><br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />pamakemi wrote:<br />Hi,<br /><br />I have the same problem have someone allready an answer for this problem.<br />Please let us Know<br /><br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />alafferty wrote:<br />I am having an issue when trying to send an email to \"Registered Users\" this on on V2 and here is what i can getting. Any help would be great.<br /><br /><br /><br />Line 375:        Public Default ReadOnly Property Item(ByVal index As Integer) As MemberInfoRow<br />Line 376:            Get<br />Line 377:                Return CType(Me.Rows(index),MemberInfoRow)<br />Line 378:            End Get<br />Line 379:        End Property<br /><br /><br />Source File: C:\\WINDOWS\\Microsoft.NET\\Framework\\v2.0.50727\\Temporary ASP.NET Files\\root\\1096f3e4\\85893f34\\App_Code.tbwgz4dw.6.vb    Line: 377 <br /><br /></div><br /></div>",
+    "PostedDate": "2007-10-12T03:58:56.94-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

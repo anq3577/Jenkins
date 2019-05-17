@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "35714",
+    "ThreadId": "11016",
+    "Html": "\r\nGetting the following error with 2952<br /><br />It is an error to use a section registered as allowDefinition='MachineToApplication' beyond application level.  This error can be caused by a virtual directory not being configured as an application in IIS. (Line 137)<br /><br />Line 135:      &lt;/controls&gt;<br />Line 136:    &lt;/pages&gt;<br />Line 137:    &lt;authentication mode=\"Forms\"&gt;<br />Line 138:      &lt;forms loginUrl=\"member/login.aspx\" defaultUrl=\"~/default.aspx\" /&gt;<br />Line 139:    &lt;/authentication&gt;<br /><br />All other releases worked ??<br />",
+    "PostedDate": "2007-06-04T23:58:18.013-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "35778",
+    "ThreadId": "11016",
+    "Html": "\r\nSo allowDefinition='MachineToApplication' is most likely the problem. It should work out of the box. Try deleting allowDefinition='MachineToApplication' and runing it.<br />",
+    "PostedDate": "2007-06-05T07:42:50.097-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "35885",
+    "ThreadId": "11016",
+    "Html": "\r\nThanks<br />Fixed It.<br /><br />Now getting 5 errors in Events.vb<br /><br />'ClubEvent' is not a member of 'ClubStarterKit.Data.Tables'.<br /><br />Line 17:             Dim reader As SqlDataReader<br />Line 18: <br />Line 19:             Dim qry As New Query(Tables.ClubEvent)<br />Line 20:             qry.SelectList = ClubEvent.Columns.Id &amp; \",\" &amp; ClubEvent.Columns.Starttime &amp; \",\" &amp; ClubEvent.Columns.Title &amp; \",\" &amp; ClubEvent.Columns.Description<br />Line 21: <br />",
+    "PostedDate": "2007-06-06T00:09:57.983-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

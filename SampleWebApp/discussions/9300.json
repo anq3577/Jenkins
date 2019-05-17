@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "30364",
+    "ThreadId": "9300",
+    "Html": "\r\nI downloaded the RC code, unzipped it into a new web application with host headers on port 80.  Hit the site and end up with <br /><br />Failed to update database C:\\Inetpub\\wwwstartersite\\app_data\\clubdb.mdf because the database is read-only.<br /><br />It appears that the user control HitCounter.ascx cannot write to the database.<br /><br />Do I need to update the schema on the clubdb with a script or something else?  I checked the physcial file, it's not marked as read-only.<br />",
+    "PostedDate": "2007-04-18T11:10:51.45-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "30382",
+    "ThreadId": "9300",
+    "Html": "\r\nIt might be the directory that is read-only. Try making the wwwstartsite directory not read-only. It might also be your IIS config. Try runing it in VS.<br />",
+    "PostedDate": "2007-04-18T13:50:19.087-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31418",
+    "ThreadId": "9300",
+    "Html": "\r\nI don't think that is the case only because I have the same thing happening to me.  I can mess around with the website all day long if I am using Visual Studio Web Developer Express to test the site using the local ASP.NET Development Web Server, but when I tried to use the Copy website tool and create a new web application with IIS, it gave me the \"database read-only\" (CLUBDB.MDF) when trying to load the web site from IE.  I then read up on how to access the database via named pipes and one of the settings said the database was set to \"Read-Only = True\".  Are you sure someone didn't inadvertently set this property?<br />",
+    "PostedDate": "2007-04-26T16:50:37.43-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31466",
+    "ThreadId": "9300",
+    "Html": "\r\nHere is the error you get if you try to open the CLUBDB.MDF and set the Read-Only property from \"True\" to \"False\":<br /><br />TITLE: Microsoft SQL Server Management Studio Express<br />------------------------------<br /><br />Alter failed for Database 'C:\\INETPUB\\WWWROOT\\COFFEE<i>CLUB2\\APP</i>DATA\\CLUBDB.MDF'.  (Microsoft.SqlServer.Express.Smo)<br /><br />For help, click: http://go.microsoft.com/fwlink?ProdName=Microsoft<u>SQL</u>Server&amp;ProdVer=9.00.3042.00&amp;EvtSrc=Microsoft.SqlServer.Management.Smo.ExceptionTemplates.FailedOperationExceptionText&amp;EvtID=Alter+Database&amp;LinkId=20476<br /><br />------------------------------<br />ADDITIONAL INFORMATION:<br /><br />An exception occurred while executing a Transact-SQL statement or batch. (Microsoft.SqlServer.Express.ConnectionInfo)<br /><br />------------------------------<br /><br />Unable to open the physical file \"C:\\Inetpub\\wwwroot\\coffee<i>club2\\App</i>Data\\ClubDB.mdf\". Operating system error 5: \"5(Access is denied.)\".<br />Unable to open the physical file \"C:\\Inetpub\\wwwroot\\coffee<i>club2\\App</i>Data\\ClubDB_log.ldf\". Operating system error 5: \"5(Access is denied.)\".<br />Database 'C:\\INETPUB\\WWWROOT\\COFFEE<i>CLUB2\\APP</i>DATA\\CLUBDB.MDF' cannot be opened due to inaccessible files or insufficient memory or disk space.  See the SQL Server errorlog for details.<br />ALTER DATABASE statement failed.<br />Nonqualified transactions are being rolled back. Estimated rollback completion: 100%.<br />File activation failure. The physical file name \"C:\\Inetpub\\wwwroot\\coffee<i>club2\\App</i>Data\\ClubDB_log.ldf\" may be incorrect. (Microsoft SQL Server, Error: 5120)<br /><br />For help, click: http://go.microsoft.com/fwlink?ProdName=Microsoft<u>SQL</u>Server&amp;ProdVer=09.00.3042&amp;EvtSrc=MSSQLServer&amp;EvtID=5120&amp;LinkId=20476<br /><br />------------------------------<br />BUTTONS:<br /><br />OK<br />------------------------------<br />",
+    "PostedDate": "2007-04-27T07:05:41.313-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31477",
+    "ThreadId": "9300",
+    "Html": "\r\nThis worked for me:<br />1) Make sure App_Data directory or any contained files does not have file system attribute Read-only set. (I had some files marked as Read-only)<br />2) Give user {machine name}\\ASPNET Modify control over the CLUBDB.MDF and CLUBDB.LDF<br />3) Give user {machine name}\\ASPNET  Modify control over the App_Data directory. <br />4) Run IISRESET to restart IIS to refresh its permissions.<br /><br />This is slightly different than the instructions I found here:<br /><br />http://www.tjitjing.com/blog/2006/05/failed-to-update-database-xxxmdf.html<br />",
+    "PostedDate": "2007-04-27T07:55:20.623-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

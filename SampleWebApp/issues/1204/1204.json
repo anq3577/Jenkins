@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:32:32.647-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Wishlistitem...\n \nAnimated gifs for Newsitems would be nice.\nIt works in News_view, but not with the repeater on default.aspx\nI also remember having trouble using a graphic with a transparent color.",
+    "LastUpdatedDate": "2013-05-15T23:46:43.07-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:32:30.223-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Animated Graphics",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 1204
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Little unsure why this would not work.  Could you upload an image here and I'll take a look",
+      "PostedDate": "2007-04-25T14:32:30.833-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "There is no problem with showing animated gifs in textboxes when you use FCK.The \"problem\" occurs in the ImageThumbnails.",
+      "PostedDate": "2007-04-25T14:32:31.443-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "For your transparency problem... are you by any chance using IE6? Try it in FF or IE7 and the transparency will work. I have done some searching and I have yet to find a working fix for the problem in IE6.",
+      "PostedDate": "2007-04-25T14:32:31.817-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:32:32.647-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:27.863-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:43.07-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "32672",
+    "ThreadId": "10070",
+    "Html": "\r\nIs it possible to add a re-occuring events feature to the new starter kit.  I have events that occur once a week and need an easier way of putting them on.<br /><br />Thanks<br />",
+    "PostedDate": "2007-05-09T13:24:35.173-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32938",
+    "ThreadId": "10070",
+    "Html": "\r\nNot at the moment. We will put something into v3. Bascally we will have you select some dates and then it will add the events individually based on the dates and the text and stuff you enter. I guess someone might be able to work on it for v2, but it wouldn't be in the final build in time. We should be releasing VERY soon.<br />",
+    "PostedDate": "2007-05-11T14:52:42.81-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

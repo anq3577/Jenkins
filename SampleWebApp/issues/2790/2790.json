@@ -1,0 +1,115 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-10-31T09:06:57.547-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When I try to delete a single photo from the album it dosen't delete it. When you hit  the delete button it changes the photo but the picture is still in the album. I've look through the Issue Tracker and could not find it thier can anyone help!",
+    "LastUpdatedDate": "2013-05-15T23:46:32.23-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-07-13T08:15:05.38-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Photo Album bug",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 2790
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Are you using changesets (which one) or v2?",
+      "PostedDate": "2007-07-13T17:19:08.357-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I think there are other issues with the photo album functionality. When you choose to edit a News item that has an attached album, it doesn't select the attached album. If you then save your changes without reselecting the album, it removes the association between the album and the news item. \r\n\r\nIn usercontrols/photo_albumpicker, I commented this out: 'Protected Sub albumselect_DataBinding(ByVal sender As Object, ByVal e As System.EventArgs)    '    '   albumselect.Items.Clear()    '    albumselect.Items.Add(New ListItem(\"No Album Selected\", \"0\"))    'End Sub\r\n\r\nand added this to the albumlist: <asp:ListItem Selected=\"True\" Value=\"0\">No Album Selected</asp:ListItem>               That helped. Now it's keeping the user selection, but it's displaying double the albums. So if I have an album called \"test\", it's showing No Album Selected, Test, Test. \r\n\r\nThe sp from which the data is pulled is properly returning only the one album so I'm not sure why it's duplicating. \r\n\r\nI'm using v2, but I looked at the latest code and it's the same except for the Sonic stuff. ",
+      "PostedDate": "2007-07-14T10:17:28.76-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "So that fixes the issue, Tina? I will check that in if it completely takes care of this issue.",
+      "PostedDate": "2007-07-14T10:24:16.283-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-14T10:28:38.867-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Nope. It's actually a different bug. I'm not convinced it fixes it either. :-( \r\n\r\nWhen adding a new record, now it auto selects the first album in the list. I don't know what's going on with it. Lemme keep plugging away at it.  ",
+      "PostedDate": "2007-07-14T10:57:56.137-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I'm using the Final release of the club starter kit 2.0",
+      "PostedDate": "2007-07-14T15:54:47.9-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Does this apply to v3? I thought I fixed that one.",
+      "PostedDate": "2007-07-14T21:22:48.317-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Okay. On this particular issue, using v2 code that I've already modified (so fair warning, you'll need to modify it for your needs), I did the following to fix the delete issue. \r\n\r\n1. Created a stored proc to remove the imageid from the dependent tables:ALTER PROCEDURE dbo.sp_DeleteImage \t@imageid int\tAS\r\n\r\nupdate announcements set photo = 0 where photo = @imageidupdate events set photo = 0 where photo = @imageid\r\n\r\ndelete from dbo.image where id = @imageid\r\n\r\n\t/* SET NOCOUNT ON */ \tRETURN\r\n\r\n2. Added code to appcode/imagehandling to delete it from the file system (I removed the option to store it in the database, so again, modify this for your needs): Public Shared Function deleteimage(ByVal imageid As Integer, Optional ByVal path As String = \"\") As Boolean\r\n\r\n        If Not Directory.Exists(path) Then            Directory.CreateDirectory(path)        End If\r\n\r\n        Dim connection As New SqlConnection(ConfigurationManager.ConnectionStrings(\"ClubSiteDB\").ConnectionString)\r\n\r\n        Dim query As String        query = \"SELECT imageFileName from image where id=@id\"        Dim command2 As New SqlCommand(query, connection)        Dim param02 As New Data.SqlClient.SqlParameter(\"@id\", Data.SqlDbType.Int)        param02.Value = imageid        command2.Parameters.Add(param02)        connection.Open()\r\n\r\n        Dim fileName As String = CType(command2.ExecuteScalar, String)        connection.Close()\r\n\r\n        IO.File.Delete(path & fileName)\r\n\r\n        'largeImage        IO.File.Delete(path & \"large\" & fileName)\r\n\r\n        'thumbnail        IO.File.Delete(path & \"tmb\" & fileName)\r\n\r\n        Dim command As New SqlCommand(\"exec sp_DeleteImage @imageid\", connection)\r\n\r\n        Dim param0 As New SqlParameter(\"@imageid\", System.Data.SqlDbType.Int)        param0.Value = imageid        command.Parameters.Add(param0)\r\n\r\n        connection.Open()\r\n\r\n        Dim result As Object = command.ExecuteScalar()        connection.Close()\r\n\r\n    End Function\r\n\r\n3. Add this to photo/contents.aspx: Protected Sub photo_delete(ByVal sender As Object, ByVal e As System.EventArgs)        '(ByVal source As Object, ByVal e As System.Web.UI.WebControls.DataListCommandEventArgs)        Dim picdeleted As Boolean = ImageUtils.deleteimage(CInt(FormView2.DataKey.Value), Server.MapPath(\"~\\Pictures\") & \"\\\")\r\n\r\n                ' Rebind the data to the DataList        DataList2.DataBind()        DataList2.SelectedIndex = DataList2.Items.Count - 1                    FormView2.DataBind()        FormView2.PageIndex = FormView2.PageCount - 1        ErrorLabel.Text = \"\"        imgTitle.Text = \"\"           End Sub   \r\n\r\n",
+      "PostedDate": "2007-07-15T18:04:59.48-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I also changed the delete button in photo/contents.aspx to the following:\r\n\r\n<Club:RolloverButton ID=\"delete\" Text=\"Delete Photo\" OnInit=\"BtnDelete_Init\" onClick=\"photo_delete\" runat=\"server\" />                            \r\n\r\nAnd added this at the top to give the user an alert:  Protected Sub BtnDelete_Init(ByVal sender As Object, ByVal e As EventArgs)        Dim BtnDelete As Button = CType(sender, Button)        BtnDelete.Attributes.Add(\"onclick\", \"javascript: return confirm('Are you sure you wish to delete this photo?');\")    End Sub\r\n\r\nI've done some unit testing, but I think it probably needs some more. This should, however, set you on the right track. If you don't store the images in the file system, all you may need is to add the stored procedure and the call to the stored procedure. It may just be the foreign key constraints that's keeping you from deleting the photo. That would be my guess... \r\n\r\nHope that helps. :)",
+      "PostedDate": "2007-07-15T18:33:34.543-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Close?",
+      "PostedDate": "2007-08-22T14:37:53.983-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-10-16T13:16:45.94-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Verified issue does not exist / no longer exists in both file system based image store and database image store.",
+      "PostedDate": "2007-10-31T09:06:57.547-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-12-07T22:52:17.143-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:14.59-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:32.23-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

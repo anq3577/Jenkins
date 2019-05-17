@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "38097",
+    "ThreadId": "11740",
+    "Html": "\r\nIf I change this<br /><br />&lt;deny users=\"*\"/&gt;<br /><br />to this<br /><br />&lt;deny users=\"?\"/&gt;<br /><br />will it allow logged in users to edit their forum posts and/or allow them to edit posts of other users. I just want them to edit their own posts.<br /><br />Thank you<br />",
+    "PostedDate": "2007-06-23T16:12:13.67-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38100",
+    "ThreadId": "11740",
+    "Html": "\r\nYea... that will work.<br />",
+    "PostedDate": "2007-06-23T16:21:14.163-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38101",
+    "ThreadId": "11740",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Yea... that will work.<br /><br /></div><br />I made the change, saved it and published it and I still cannot edit my post.<br />",
+    "PostedDate": "2007-06-23T16:50:36.3-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38102",
+    "ThreadId": "11740",
+    "Html": "\r\nThat's interesting. It should work. I will take a look at it.<br />",
+    "PostedDate": "2007-06-23T16:56:28.107-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38103",
+    "ThreadId": "11740",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />That's interesting. It should work. I will take a look at it.<br /><br /></div><br />Do I have to change the roles?<br />",
+    "PostedDate": "2007-06-23T17:02:16.93-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38112",
+    "ThreadId": "11740",
+    "Html": "\r\nNo... you might have to put something else in. I need to go looks at the Membership Provider docs. I should have a fix soon.<br />",
+    "PostedDate": "2007-06-23T19:16:49.67-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

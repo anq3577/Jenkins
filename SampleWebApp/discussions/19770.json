@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "65499",
+    "ThreadId": "19770",
+    "Html": "\r\nFinally, the Mid-Hudson Road Runner Club site based on the Club Starter Kit version 3, beta 1, is up for testing at: <br /><br /><a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=http%3a%2f%2fmhrrc.org.ultimahosts.net\">http://mhrrc.org.ultimahosts.net</a><br /><br />Many thanks to all the advice everyone gave me on these forums during the past six months of sometimes-painful development. I appreciate your patience and help when dealing with such a newbie.<br /><br />Also, I did not include the forums, blogging, polling because they were too buggy for our use. I spent several hours trying to get them to work, using the builds and discussion boards on this site, but all ended in failure (granted, my vb skills are not what they should be and I will take an online course next). These were \"nice to haves\" for our club; I hope to include them when a more stable version of the Club Starter Kit is available.<br /><br />I was afraid of getting this hosted, after reading all the difficulties on this forum. The folks at Ultima Hosting, as promised, were wonderful. They put up with all my questions about their DotNetPanel and my issues with my connection string and restoring the two databases on the site. <br /><br />Please give me feedback (I know there are a few bugs to fix) ... I am just trying to learn.<br /><br />Deborah<br />",
+    "PostedDate": "2007-12-31T05:03:49.9-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

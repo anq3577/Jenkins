@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "39127",
+    "ThreadId": "12051",
+    "Html": "\r\nHello.<br /><br />When i click the Update Info button on the Modify Contact Details page, the loading.gif image displays but never goes away.  It does the update, but the image stays on the screen.  This also happens in other areas of the web site.<br /><br />Is there any way to make this a more user friendly experience like display a message and stop the loading.gif image after the actual updating is done?<br /><br />Any help would be gratefully appreciated.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-07-01T04:59:09.233-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39141",
+    "ThreadId": "12051",
+    "Html": "\r\nYou are using v2, right? I think there is a div issue that caused that.<br /><br />v3 Beta 1 (few weeks) should fix that.<br />",
+    "PostedDate": "2007-07-01T11:08:15.123-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39220",
+    "ThreadId": "12051",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />You are using v2, right? I think there is a div issue that caused that.<br /><br />v3 Beta 1 (few weeks) should fix that.<br /><br /></div><br />Zack.<br /><br />Is there anywhere in CSK 2.0 where this <u>is</u> working?  Maybe i can look at it and see what changes need to be made to correct it temporarily.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-07-02T06:41:40.773-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39257",
+    "ThreadId": "12051",
+    "Html": "\r\nIt should be working everwhere. Is it not working on your dev machine or a production environment?<br />",
+    "PostedDate": "2007-07-02T09:14:08.987-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39263",
+    "ThreadId": "12051",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />It should be working everwhere. Is it not working on your dev machine or a production environment?<br /><br /></div><br />Zack.<br /><br />I'm not following your replies.  In your first reply to this post, \"I think there is a div issue that caused that\".<br /><br />Now you are saying \"It should be working everwhere\".<br /><br />It's not working in the \"Update Info button on the Modify Contact Details page\" on dev machine nor the production.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-07-02T09:32:55.223-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39315",
+    "ThreadId": "12051",
+    "Html": "\r\nWhat I'm saying is the problem is on the detail page. AJAX should work on the calendar and other places. The div issue is in the DETAILS PAGE ONLY!<br />",
+    "PostedDate": "2007-07-02T14:32:51.06-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

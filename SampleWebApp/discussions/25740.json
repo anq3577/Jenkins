@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "86181",
+    "ThreadId": "25740",
+    "Html": "\r\nWe are having problems getting the script to finish. It seems to create the tables but fails on the schema create with:<br /><br />I created the tables with the script so should have all permissions and ownership of the tables. I replaced the 'zowens' with mine 'rwilloughby' in the script.<br /><br />Msg 15007, Level 16, State 1, Line 42<br />'rwilloughby' is not a valid login or you do not have permission.<br />Msg 15151, Level 16, State 1, Line 1<br />Cannot find the user 'rwilloughby', because it does not exist or you do not have permission.<br />Msg 2759, Level 16, State 0, Line 1<br />CREATE SCHEMA failed due to previous errors. <br />",
+    "PostedDate": "2008-04-10T16:10:19.157-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

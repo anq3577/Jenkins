@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "32955",
+    "ThreadId": "10174",
+    "Html": "\r\n/Events/Edit.aspx<br />Still can't edit link field<br /><br />/ClubImp/FCKeditor/editor/images/smiley/msn/wink_smile.gif (still missing or reference broken).<br /><br />Logout Button<br />Event generates required filed indicators in links page followed by resource not found error.<br /><br />Logout Button<br />Events / News / Photos /Membership pages.<br />event generated resource not found error.<br /><br />Theme MadTri<br />RSS &amp; Print images (still missing or reference broken).<br /><br />Check for nophoto.gif (red x show if user does not have image) (still missing or reference broken).<br /><br />",
+    "PostedDate": "2007-05-11T19:15:19.923-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32958",
+    "ThreadId": "10174",
+    "Html": "\r\nclear your browser cache<br />",
+    "PostedDate": "2007-05-11T20:55:34.837-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32961",
+    "ThreadId": "10174",
+    "Html": "\r\nCleared browser cache - All errors remain.<br /><br />calendarIcon.png is not located in MadTri theme.<br />rss.png is not located in MadTri theme.<br />print.png is not located in MadTri theme.<br /><br /><br />/ClubImp/FCKeditor/editor/images/smiley/msn/wink_smile.gif (No such directory exist)<br /><br />New error, non users can delete photo album?<br /><br /><br />",
+    "PostedDate": "2007-05-11T22:09:33.94-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32963",
+    "ThreadId": "10174",
+    "Html": "<br />/photo/contents.aspx<br />On UploadFile_Click image title should be reset.<br /><br />",
+    "PostedDate": "2007-05-11T22:25:41.317-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32971",
+    "ThreadId": "10174",
+    "Html": "\r\n\\images\\nophoto.gif referanced in forum post and membership list.<br />Replied to formum thread - FileNotFound Exception was unhandled by user code \\images\\nophoto.gif.<br /><br />Forum Thread (Java script sort) missing moveup.gif (MadTri Theme)<br /><br />\\BLogs\\Post.aspx UpdatePanel1 ImageButton1 (SkinID property set to rssbutton) (missing or reference broken).<br />",
+    "PostedDate": "2007-05-12T00:03:43.007-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32974",
+    "ThreadId": "10174",
+    "Html": "\r\n\\Blogs\\Post.aspx.vb - Sub AddComment_Click<br /><br />SQLException was unhandled by user code.<br /><br />Cannot insert the value NULL into column 'Comment', table \\APP_DATA\\CLUBDB.MDF.dbo.BlogComments'; column does not allow nulls. INSERT fails. The statement has been terminated.<br /><br />",
+    "PostedDate": "2007-05-12T00:15:00.303-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33008",
+    "ThreadId": "10174",
+    "Html": "\r\npages have \"Logout\" button in the banner, the default.aspx (home page) shows \"Log off\" <br /><br />I would change the home page to match.<br />",
+    "PostedDate": "2007-05-12T12:58:23.823-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33011",
+    "ThreadId": "10174",
+    "Html": "\r\n/Locations/List.aspx <br /><br />/images/map.jpg (missing or reference broken).<br />",
+    "PostedDate": "2007-05-12T14:15:16.087-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

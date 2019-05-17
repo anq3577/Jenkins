@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "25578",
+    "ThreadId": "7828",
+    "Html": "\r\nHi,<br /><br />Can anybody suggest in the fewest lines of code, the quickest way of delimiting the home page events and news item feeds until the user has logged on. I can successfully delimit the menu items until the user has logged on but the feeds will still appear.<br /><br />Thanks in advance for any help here<br /><br />Regards<br /><br />MARK.<br />",
+    "PostedDate": "2007-03-05T05:59:37.397-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25655",
+    "ThreadId": "7828",
+    "Html": "\r\nPut this before the news div:<br />&lt;% If User.Identity.IsAuthenticated = True Then %&gt;<br /><br />and put this after:<br /><br />&lt;% End If %&gt;<br />",
+    "PostedDate": "2007-03-05T14:13:05.967-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "29538",
+    "ThreadId": "7828",
+    "Html": "\r\nHello Mark can you please explain to me how you were able to delimit the menu items?<br /><br />Thanks for the help<br /><br />John<br />",
+    "PostedDate": "2007-04-10T17:55:37.143-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "29565",
+    "ThreadId": "7828",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />BubbaJohn62 wrote:<br />Hello Mark can you please explain to me how you were able to delimit the menu items?<br /><br />Thanks for the help<br /><br />John<br /><br /></div><br />by using the code z2bass provided, you can delimit the menu items on user control UserContsols/LoginBanner.ascx<br />",
+    "PostedDate": "2007-04-11T00:47:54.783-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "29881",
+    "ThreadId": "7828",
+    "Html": "\r\nDid you put a redirect to the Login or to the Membership page?  I am going to add this same functionality and redirect everyone to the Membership page since you can log in from there also.  Thanks for the help Plaid.<br /><br />John<br />",
+    "PostedDate": "2007-04-13T15:24:50.107-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31566",
+    "ThreadId": "7828",
+    "Html": "\r\nThis doesn't redirect to the login page, it just hides it if the user isn't logged in.<br />",
+    "PostedDate": "2007-04-28T08:33:55.443-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

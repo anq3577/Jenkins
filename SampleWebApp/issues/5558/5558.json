@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Not really a work item",
+    "ClosedDate": "2008-03-18T16:54:35.373-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I'm new to the Forum.  Can anyone expalin the difference between Forum and Blog?\nAlso, I will be appreciated if anyone explain  when we are using \"Lock Thread.  Make Sticky,  Watch this Thread\".   Thanks.",
+    "LastUpdatedDate": "2013-05-15T23:46:25.883-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2008-03-03T06:41:54.92-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Forum->Thread",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 5558
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Implementation wise it's the same... but a blog is more of an informative means of discussing where a forum is a question-type of discussion.",
+      "PostedDate": "2008-03-18T16:55:41.497-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:06.943-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:25.883-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

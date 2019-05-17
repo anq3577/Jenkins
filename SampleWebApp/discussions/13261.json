@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "43329",
+    "ThreadId": "13261",
+    "Html": "\r\nI am trying to use the \"New Team\" link on the Statistics page to add a new team.  I am getting the following error: \"Conversion from string \"\" to type 'Integer' is not valid\".  The problem appears to be in the following piece of code.<br /><br />Public Shared Sub AddTeam(ByVal seasonid As String, ByVal teamname As String, ByVal coachmemkey As Object)<br />            Dim meminf As New MemberInfo(MemberInfo.Columns.Memberid, coachmemkey)<br />            Teams.Insert(teamname, seasonid, meminf.Memberid)<br />End Sub<br /><br />Here seasonid=\"\"  and the code in Teams.Insert() is trying to convert it to an Int.<br /><br />Has anyone ran into this issue?  Thanks!<br />",
+    "PostedDate": "2007-08-01T09:52:38.133-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43346",
+    "ThreadId": "13261",
+    "Html": "\r\nThere is actually an easy fix for that.<br /><br />Public Shared Sub AddTeam(ByVal seasonid As String, ByVal teamname As String, ByVal coachmemkey As Object)<br />Dim meminf As New MemberInfo(MemberInfo.Columns.Memberid, coachmemkey)<br />Teams.Insert(teamname, <b>Integer.Parse(seasonid)</b>, meminf.Memberid)<br />End Sub<br />",
+    "PostedDate": "2007-08-01T11:34:39.977-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43347",
+    "ThreadId": "13261",
+    "Html": "\r\nI know, I tried that only to discover that there is a  FOREIGN KEY constraint on \"FK<i>Teams</i>Seasons\"  that prevent inserting a team with seasonid=0.  The problem in fact is that seasonid=\"\" when it should not be.<br /><br />I can make it work, but I wanted to make sure this was not just me having the issue.  <br /><br />Thanks a lot for all the great work you are doing!<br />",
+    "PostedDate": "2007-08-01T11:45:07.387-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43371",
+    "ThreadId": "13261",
+    "Html": "\r\nSo you want to remove that dependency?<br /><br />To do so, crack open the Database in the Server Explorer. Open the Teams table and open \"relationships\" and remove the foreign key.<br />",
+    "PostedDate": "2007-08-01T14:35:50.4-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "418798",
+    "ThreadId": "13261",
+    "Html": "<blockquote style=\"border:solid .1em #ccc;font-style:italic;margin:.25em 1em 0 1em;padding:0 .25em 0 .25em\"><strong>chazim wrote:</strong><br> I know, I tried that only to discover that there is a  FOREIGN KEY constraint on &quot;FK<em>Teams</em>Seasons&quot;  that prevent inserting a team with seasonid=0.  The problem in fact is that seasonid=&quot;&quot; when it should not be.<br><br>I can make it work, but I wanted to make sure this was not just me having the issue.  <br><br>Thanks a lot for all the great work you are doing!<br></blockquote>\r\n<p>Hi chazim, did you ever figure out how to fix this error?&nbsp;</p>\r\n<p>I tried z2bass' suggest and have the same error.</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-03-16T10:56:36.377-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

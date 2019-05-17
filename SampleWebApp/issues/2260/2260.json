@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Unable to reproduce",
+    "ClosedDate": "2007-05-20T05:02:24.3-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When you attempt to update contact data the data is not updated.  In fact after adding two users there is no member data showing except that which was entered before my download.\n \nAlso, under manage users there should be a field to suggest that the member is approved.  I had to go into the database and manually set isapproved to true.",
+    "LastUpdatedDate": "2013-05-15T23:46:37.833-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-05-14T11:44:15.803-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Member Data and IsApproved issues",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2260
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "How is that possible? You are going to need to give me your db configuration on if you got the db out of the box or used the scripts.\r\n\r\nApproval is a different thing... that will be in v3.",
+      "PostedDate": "2007-05-14T13:53:56.97-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-20T05:02:24.3-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:21.86-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:37.833-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "39265",
+    "ThreadId": "12088",
+    "Html": "\r\nI believe I have a error on the string connection, I am not sure, and I am frustated.<br />hhtp://www.international.mariano-casanova.com<br />Can anyone help me?<br /><br />Thank you very much.<br /><br />Anselmo<br />",
+    "PostedDate": "2007-07-02T09:40:19.853-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39317",
+    "ThreadId": "12088",
+    "Html": "\r\nWhat version are you using? v2 or a recent build?<br />",
+    "PostedDate": "2007-07-02T14:35:24.743-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39422",
+    "ThreadId": "12088",
+    "Html": "\r\nI just downloaded it short time ago, so I believe is the most current one, I am not sure a about the version number.<br />using SQL 2005.<br /><br />Regards,<br /><br />Anselmo<br />",
+    "PostedDate": "2007-07-03T07:33:14.627-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39435",
+    "ThreadId": "12088",
+    "Html": "\r\nTry downloading the latest changeset from <a href=\"http://www.codeplex.com/ClubStarterKit/SourceControl/ListDownloadableCommits.aspx\" class=\"externalLink\">this page<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a> or <a href=\"http://www.codeplex.com/ClubStarterKit/Release/ProjectReleases.aspx?ReleaseId=1911\">Club Starter Kit 2.0 Final</a>.<br />",
+    "PostedDate": "2007-07-03T08:15:04.61-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

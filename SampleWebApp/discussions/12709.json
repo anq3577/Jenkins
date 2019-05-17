@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "41477",
+    "ThreadId": "12709",
+    "Html": "\r\nI am not sure if these should be issues (I am new) but a quick browse of a \"blank\" club site revealed<br />a) inconsistent use of \"New xxx\" - sometimes a button sometimes a link<br />b) inconsistent use of \"Cancel\" - sometimes there is no way to cancel a \"new xxx\"<br />c) manage users is misspelt<br />d) Next and Prev should grey out when at last and first of a list<br />",
+    "PostedDate": "2007-07-17T16:43:58.76-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41480",
+    "ThreadId": "12709",
+    "Html": "\r\nWe try... it's not going to be perfect... it never will be.<br /><br />I know d is fixed. C happens and a and b are sort of unavoidable.<br />",
+    "PostedDate": "2007-07-17T16:59:18.603-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41660",
+    "ThreadId": "12709",
+    "Html": "\r\nI wasn't criticising - I think the clubsite is excellent and intend to convert to it soon (from the MS version).<br /><br />When you say fixed do you mean in V3?<br /><br />What are a) and b) \"unavoidable\"?<br /><br />PS Where do you set the style settings (I want to add some)<br />",
+    "PostedDate": "2007-07-18T16:04:33.953-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41670",
+    "ThreadId": "12709",
+    "Html": "\r\ninconsistance of the \"new\" and \"cancel\" buttons... its inevitable.<br /><br />Yea, it is fixed in the most recent builds.<br /><br />Style settings are in App_Themes.<br />",
+    "PostedDate": "2007-07-18T17:24:24.007-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "42240",
+    "ThreadId": "12709",
+    "Html": "\r\nHi I tried a few things over the weekend just to learn how it all hangs together (still in V2)<br /><br />1) Replaced most hyperlink type \"buttons\" with rollover buttons/links (looks good)<br />2) Added loginbanner to all forum and blog pages so that they woork like news, events etc<br /><br />Noticed a few other \"oddities\"<br />1) The forum images e.g. read, sticky etc can't be skinned (limit of the imagetemplate control?)<br />2) The forum mail notification code has lots of hard coded mail parameters (doesn't use web.config?)<br /><br />Thanks for your efforts<br />",
+    "PostedDate": "2007-07-23T20:24:42.747-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "42243",
+    "ThreadId": "12709",
+    "Html": "\r\nThe email mod code shouldn't have been hard coded. I was sure that I removed that. No matter... it's fixed for v3.<br /><br />Do the forum images really need to be skined? Is it really THAT important?<br />",
+    "PostedDate": "2007-07-23T20:37:20.557-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "42372",
+    "ThreadId": "12709",
+    "Html": "\r\n1. The forum images don't need to be skinned. I was maily wondering if it was a limit of the control.<br />2. Excellent<br />3. Remember Me doesn't seem to do anything (just like in original). It has no code associated with it. I am missing something?<br /><br />Looking forward to V3 before I convert across from original (v2). Can I export current members from the old database to the new easily?<br />",
+    "PostedDate": "2007-07-24T16:31:51.047-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "42492",
+    "ThreadId": "12709",
+    "Html": "\r\nI am hoping to write an app that takes your current db data and pushes it into a new v3 database. I think a change script might not work as well... so I think I'm going to do what I do best.... write code!<br />",
+    "PostedDate": "2007-07-25T11:15:03.033-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

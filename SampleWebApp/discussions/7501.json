@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "24392",
+    "ThreadId": "7501",
+    "Html": "\r\nI just want to seperate this discussion out from the other one.<br /><br />I have uploaded the database, Club.zip.  If it still isn't working, I can zip up the whole thing and put it out on my website so you can get to it.<br />",
+    "PostedDate": "2007-02-22T02:33:49.327-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24498",
+    "ThreadId": "7501",
+    "Html": "\r\nGreat job on RSVP mnebinger!<br />",
+    "PostedDate": "2007-02-23T03:13:39.78-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24566",
+    "ThreadId": "7501",
+    "Html": "\r\nHi mnebinger, <br /><br />I would like the code to stop when you go over the limit. So I attempted a minor change.<br />Not sure if its totally ok though.<br />A nice Msgbox as reminder would be great too, ;-D<br />Please feel free to ignore it if you dislike it.<br />Regards,<br />Lex<br /><br /><br />Private Sub AddAttendance()<br /><br />        'Get the current and maximum # of guests for an event<br />        GetEventAttendance()<br /><br />        'Get the current # of guests this user has registered previously.<br />        Dim oldNumGuests As Integer = GetUserAttendance()<br /><br />        Dim num As Integer<br />        num = CInt(numofguests.Text)<br /><br />        Dim newCurrentAttendance As Integer = _currentAttendance + num - oldNumGuests<br /><br />        'Test to see if this will put us over the maximum # of guests for an event.<br />        If newCurrentAttendance &gt; _totalAttendance Then<br />            errorMsg.Text = \"Sorry, er kunnen nog maximaal \" &amp; _totalAttendance - _currentAttendance &amp; \" worden aangemeld.\"<br />           numofguests.Text = oldNumGuests.ToString<br />            errorMsg.Visible = True<br />        ElseIf _totalAttendance = -1 Then   '-1 means there isn't a maximum @ of guests set.<br />            'Insert into the database<br />            AddToAttendanceDatabase(num)<br />            UpdateEventsGuests(newCurrentAttendance)<br />            _currentAttendance = newCurrentAttendance<br />            _NumGuests = num<br />        Else<br />            'Insert into the database<br />            AddToAttendanceDatabase(num)<br />            UpdateEventsGuests(newCurrentAttendance)<br />            _currentAttendance = newCurrentAttendance<br />            _NumGuests = num<br />        End If<br /><br />    End Sub<br />",
+    "PostedDate": "2007-02-23T13:41:53.967-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24584",
+    "ThreadId": "7501",
+    "Html": "\r\nI don't know what your errorMsg.Text is saying.<br /><br />Are you trying to say if _totalAttendance is set at 75, and _currentAttendance is 73, then errorMsg.Text says Sorry, but there is only room for 2 more people?<br /><br />That would work.  But one thing I forgot to do is at the end of the If, before the ElseIf, there needs to be a return statement, so that the last 2 lines are not executed.  Or move those 2 lines to the end of the ElseIf and Else blocks.  I see you got that in your code.  I am going to make that change to my code.<br />",
+    "PostedDate": "2007-02-23T18:41:30.49-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24591",
+    "ThreadId": "7501",
+    "Html": "\r\nOkay, just fixed another bug with this.  The test for -1 has to be first.<br /><br />'First test to see if _totalAttendance is -1<br />        If _totalAttendance = -1 Then<br />            'Insert into the database<br />            AddToAttendanceDatabase(num)<br />            UpdateEventsGuests(newCurrentAttendance)<br />            _currentAttendance = newCurrentAttendance<br />            _NumGuests = num<br />            'Test to see if this will put us over the maximum # of guests for an event.<br />        ElseIf newCurrentAttendance &gt; _totalAttendance Then<br />            errorMsg.Text = \"Sorry, adding \" &amp; numofguests.Text &amp; \" to the event would put it over the limit!\"<br />            errorMsg.Visible = True<br />            Return<br />        Else<br />            'Insert into the database<br />            AddToAttendanceDatabase(num)<br />            UpdateEventsGuests(newCurrentAttendance)<br />            _currentAttendance = newCurrentAttendance<br />            _NumGuests = num<br />        End If<br />",
+    "PostedDate": "2007-02-23T18:55:03.737-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24592",
+    "ThreadId": "7501",
+    "Html": "\r\nThis discussion has been copied to <a href=\"http://www.codeplex.com/ClubStarterKit/WorkItem/View.aspx?WorkItemId=494\">Work Item 494</a>. You may wish to continue further discussion there.<br />",
+    "PostedDate": "2007-02-23T18:55:49.703-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

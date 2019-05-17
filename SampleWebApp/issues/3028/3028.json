@@ -1,0 +1,75 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-08-22T14:18:14.293-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "What do you think about a control to manage your sponsors?\n - Add their logo with a link\n - Create a text e.g. about their assistance (2nd page --> cms)\n - categories like bronze, silver, gold, platin sponsors\n - ...\n(wizzard)\n \nOn the home page we could use an adrotator control, which shows on each page request another sponsor. I would place it below the poll control.",
+    "LastUpdatedDate": "2013-05-15T23:46:30.24-07:00",
+    "PlannedForRelease": "ClubStarterKit v3",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-08-08T10:26:58.483-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Sponsor Control",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 3028
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Like a simple ad control?",
+      "PostedDate": "2007-08-08T11:13:00.137-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Yes, i don`t think, that it shoud be too complex.Control on e.g. home page and an overview page with all sponsors",
+      "PostedDate": "2007-08-08T11:32:31.933-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Hmm, I think a CMS page should suffice  :)",
+      "PostedDate": "2007-08-22T14:18:02.013-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-08-22T14:18:14.293-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Great idea.",
+      "PostedDate": "2008-01-26T13:58:25.493-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:11.933-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:30.24-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

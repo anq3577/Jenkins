@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "37432",
+    "ThreadId": "11536",
+    "Html": "\r\nHi, <br />Im trying to use the admin section to send out emails to registered users, im using the code that you have provided for club starter kit V2, where i just need to select the user type fill in the text box and send the email... when i click on send email i get this error...<br /><br />Object reference not set to an instance of an object.<br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.<br /><br />Exception Details: System.NullReferenceException: Object reference not set to an instance of an object.<br /><br />Source Error:<br /><br />Line 57: <br />Line 58:         Dim mem As MembershipUser = Membership.GetUser()<br /><b>Line 59:         Dim gui As New Guid(mem.ProviderUserKey.ToString)</b><br />Line 60:         Dim name As String = GetName(gui)<br />Line 61:         Dim msgFrom As New MailAddress(mem.Email.ToString(), name.ToString())<br /><br />Can sme one please help... :0(<br /><br />Thanks in advance <br />Dips<br />",
+    "PostedDate": "2007-06-19T03:39:39.813-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37447",
+    "ThreadId": "11536",
+    "Html": "\r\nAre you logged in? Or did you bypass the security?<br />",
+    "PostedDate": "2007-06-19T05:45:57.377-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37504",
+    "ThreadId": "11536",
+    "Html": "\r\ni bypass the security...<br />",
+    "PostedDate": "2007-06-19T11:02:29.453-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37506",
+    "ThreadId": "11536",
+    "Html": "\r\nI added it to the webconfig file and it works now...<br /><br />thanks...<br />",
+    "PostedDate": "2007-06-19T11:22:42.407-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

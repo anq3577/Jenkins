@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "27950",
+    "ThreadId": "8578",
+    "Html": "\r\nI don't believe this has been fixed but if it has then never mind.  If you delete a user that has posted in the forums you'll get an error in forumusers.vb.  What happens is the code tries to retrieve the user information with membership.getuser.  The net is the returned object is empty and the following code that attempts to copy out the object properties to forumuser object fails.  I ended up putting a catch there to allow the forumuser object to be set with values indicating that the user has been deleted.<br /><br />There might very well be a better way to do it but here is what the new code looks like:<br /><br />            Using conn As SqlConnection = New SqlConnection(ConnectionString)<br />                Try<br />                    _joined = memUser.CreationDate<br />                    _online = memUser.IsOnline<br />                    _email = memUser.Email<br />                    _loginname = memUser.UserName<br />                    _lastlogindate = memUser.LastLoginDate<br />                    Dim cmd As New SqlCommand(\"LoadForumUser\", conn)<br />                    cmd.CommandType = CommandType.StoredProcedure<br />                    cmd.Parameters.AddWithValue(\"@memberid\", _memberid)<br />                    conn.Open()<br />                    Dim reader As SqlDataReader = cmd.ExecuteReader()<br />                    If reader.HasRows() And reader.Read() Then<br />                        _displayname = reader.GetString(0)<br />                        _address = reader.GetString(1)<br />                        _phone = reader.GetString(2)<br />                        _posts = reader.GetInt32(3)<br />                        _lastpostdate = reader.GetDateTime(4)<br />                        _signature = reader.GetString(5)<br />                        _bio = reader.GetString(6)<br />                        _sortdesc = reader.GetBoolean(7)<br />                        _msgsperpage = reader.GetInt32(8)<br />                        _showavatars = reader.GetBoolean(9)<br />                        _showsignatures = reader.GetBoolean(10)<br />                        _sendwatchemails = reader.GetBoolean(11)<br />                        _showemail = reader.GetBoolean(12)<br />                    End If<br />                Catch<br />                    _joined = \"1/1/2000\"<br />                    _online = False<br />                    _email = \"N/A\"<br />                    _loginname = \"Deleted\"<br />                    _lastlogindate = \"1/1/2000\"<br />                    _displayname = \"Deleted User\"<br />                    _address = \"Nowheresville\"<br />                    _phone = \"\"<br />                    _posts = 0<br />                    _lastpostdate = \"1/1/2000\"<br />                    _signature = \"Gone Daddy Done!\"<br />                    _bio = \"Lost in time...\"<br />                    _sortdesc = False<br />                    _msgsperpage = 0<br />                    _showavatars = False<br />                    _showsignatures = False<br />                    _sendwatchemails = False<br />                    _showemail = False<br />                End Try<br />                conn.Close()<br /><br /><br />Hope that helps someone out.<br /><br />Michele<br />",
+    "PostedDate": "2007-03-26T17:59:06.387-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27955",
+    "ThreadId": "8578",
+    "Html": "\r\nSo this goes on ForumUser.vb? We will be redoing the forums for v3, but thanks for the fix for v2! I will check it out and make sure it works.<br />",
+    "PostedDate": "2007-03-26T20:30:51.573-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "28288",
+    "ThreadId": "8578",
+    "Html": "\r\nThanks for this great tip, really did save me a lot :)<br />",
+    "PostedDate": "2007-03-29T08:45:41.963-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "28303",
+    "ThreadId": "8578",
+    "Html": "\r\nAre you still single?  ;-))<br />",
+    "PostedDate": "2007-03-29T11:15:26.847-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "28329",
+    "ThreadId": "8578",
+    "Html": "\r\nHaven't been asked that in a while..... :-)<br />",
+    "PostedDate": "2007-03-29T14:05:59.81-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

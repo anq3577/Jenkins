@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "45467",
+    "ThreadId": "13973",
+    "Html": "\r\nI downloaded and installed the version 3.0 Beta 1. I ran the project and everything seems fine. I did notice that I dont see forums or blogs as part of the site I created. I am using VWD and I created a new web site from the Club Starter Kit template. Any thoughts?<br />",
+    "PostedDate": "2007-08-17T10:48:59.88-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "45486",
+    "ThreadId": "13973",
+    "Html": "\r\nDid you run the Data.sql file against your DB? That is, if you aren't using the DB from the App_Data folder.<br />",
+    "PostedDate": "2007-08-17T13:19:40.93-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "45489",
+    "ThreadId": "13973",
+    "Html": "\r\nNo I didn't know there was one. I am using the DB that came with the package. I see the file you are speaking about in the original download folder but I'm not sure how to run it. Also, I was reading the upgrade notice but I dont see how to run the Tablechanger app.<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Did you run the Data.sql file against your DB? That is, if you aren't using the DB from the App_Data folder.<br /><br /></div>",
+    "PostedDate": "2007-08-17T13:23:26.01-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "45509",
+    "ThreadId": "13973",
+    "Html": "\r\nI downloaded Sql Server Management Studio Express and ran the Data.sql script but I got a huge list of errors. As an FYI, I am just running this site on my laptop as it is not live yet. Found some other posts with similar problems. Since I originally downloaded the Version 3.0 Beta 1, I am assuming that I dont have to download the V2 to V3 Beta 1 Upgrade and I just have to run the Data.sql script from the original Version 3.0 beta 1 package download.<br />",
+    "PostedDate": "2007-08-17T18:57:26.933-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

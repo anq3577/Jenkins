@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "31681",
+    "ThreadId": "9754",
+    "Html": "\r\nI am currently testing the member list page with about 900 records. I noticed when the page first loads it loads all the members in the database. Is there a way to modify this so that this doesn't happen? I would like to show no records or just the first page. <br /><br />I am trying to get something similar to the paged news, album, etc but for members. (I would still like to load the data in the background so that once the letter is clicked it quickly gives the user what the need.<br />",
+    "PostedDate": "2007-04-30T04:50:08.37-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31702",
+    "ThreadId": "9754",
+    "Html": "\r\nNevermind. I found a way to do this with very little code required. I simple rewrote the memberdetails.vb function to look for a keyword (\"load\") and it doesn't display any records in that case.  I am still interested in making a paged member function but it is not as pressing now.<br />",
+    "PostedDate": "2007-04-30T08:49:48.077-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "37178",
+    "ThreadId": "11481",
+    "Html": "\r\nMy SQL Server is not creating the tables - I ran the Script Wizard and created a script to run against the server and only got the error: <br /><br />Incorrect Syntax near 'addAttendance'. <br /><br />I am using Godaddy and wonder what I can do to fix these errors.  Does any body else using Godaddy have these errors? <br /><br />Again, any help is appreciated!<br /><br />Thanks in advance.<br />dpr00<br />",
+    "PostedDate": "2007-06-16T10:22:26.497-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37184",
+    "ThreadId": "11481",
+    "Html": "\r\nEveryone that has GoDaddy has these same sort of issues. I would recommend working with GoDaddy, unless someone else can help you.<br />",
+    "PostedDate": "2007-06-16T11:43:20.047-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37262",
+    "ThreadId": "11481",
+    "Html": "\r\nI Spent a lot of time on this.... went through each line in order to make it work with the GoDaddy query analyer. If you use this (please click around on my website out and see if you might be able to help me with some of my errors, ex. blogs will not post, small pictures in albums cannot be clicked on, events do not show on home page, can't add downloadable files, etc.)  <a href=\"http://gotothebunny.com\" class=\"externalLink\">http://gotothebunny.com<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a><br /><br />Blog/Editor Test Account: <br />UserName: TestBlogEditor<br />Pwd: 1234567<br /><br />ALSO... make sure to replace CHANGETHISTOYOURSQLUSERNAME in the SQL script. (use CRTL-F)<br /><br />Here you go! :)  <br /><br /><a href=\"http://gotothebunny.com/ClubSpriptV3workingShare.rar\" class=\"externalLink\">http://gotothebunny.com/ClubSpriptV3workingShare.rar<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a><br /><br /><br />",
+    "PostedDate": "2007-06-18T00:08:59.107-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

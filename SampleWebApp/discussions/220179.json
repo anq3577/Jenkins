@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "469731",
+    "ThreadId": "220179",
+    "Html": "<p>In ClubStarterKit.Core.Extensions.StringExt.cs</p>\r\n<p>The static method like this<span style=\"font-size:x-small;font-family:Consolas\"><span style=\"font-size:x-small;font-family:Consolas\"><span style=\"font-size:x-small;font-family:Consolas\">&nbsp;</span></span></span>\r\n<p><span style=\"font-size:x-small;color:#0000ff;font-family:Consolas\"><span style=\"font-size:x-small;color:#0000ff;font-family:Consolas\"><span style=\"font-size:x-small;color:#0000ff;font-family:Consolas\">public</span></span></span><span style=\"font-size:x-small;font-family:Consolas\"><span style=\"font-size:x-small;font-family:Consolas\"> </span></span><span style=\"font-size:x-small;color:#0000ff;font-family:Consolas\"><span style=\"font-size:x-small;color:#0000ff;font-family:Consolas\"><span style=\"font-size:x-small;color:#0000ff;font-family:Consolas\">static</span></span></span><span style=\"font-size:x-small;font-family:Consolas\"><span style=\"font-size:x-small;font-family:Consolas\"> </span></span><span style=\"font-size:x-small;color:#0000ff;font-family:Consolas\"><span style=\"font-size:x-small;color:#0000ff;font-family:Consolas\"><span style=\"font-size:x-small;color:#0000ff;font-family:Consolas\">string</span></span></span><span style=\"font-size:x-small;font-family:Consolas\"><span style=\"font-size:x-small;font-family:Consolas\"> Truncate(</span></span><span style=\"font-size:x-small;color:#0000ff;font-family:Consolas\"><span style=\"font-size:x-small;color:#0000ff;font-family:Consolas\"><span style=\"font-size:x-small;color:#0000ff;font-family:Consolas\">this</span></span></span><span style=\"font-size:x-small;font-family:Consolas\"><span style=\"font-size:x-small;font-family:Consolas\"> </span></span><span style=\"font-size:x-small;color:#0000ff;font-family:Consolas\"><span style=\"font-size:x-small;color:#0000ff;font-family:Consolas\"><span style=\"font-size:x-small;color:#0000ff;font-family:Consolas\">string</span></span></span><span style=\"font-size:x-small;font-family:Consolas\"><span style=\"font-size:x-small;font-family:Consolas\"> text, </span></span><span style=\"font-size:x-small;color:#0000ff;font-family:Consolas\"><span style=\"font-size:x-small;color:#0000ff;font-family:Consolas\"><span style=\"font-size:x-small;color:#0000ff;font-family:Consolas\">int</span></span></span><span style=\"font-size:x-small;font-family:Consolas\"> <span style=\"font-size:x-small;font-family:Consolas\">maxLength)</span></span></p>\r\n<p><span style=\"font-size:x-small;font-family:Consolas\"><span style=\"font-size:x-small;font-family:Consolas\">It is intresting that&nbsp;<a></a>there is a&nbsp;&quot;this&quot; keyword before string, can anyone tell me the reason.</span></span></p>\r\n<p><span style=\"font-size:x-small;font-family:Consolas\"><span style=\"font-size:x-small;font-family:Consolas\">Does it mean point string text?</span></span></p>\r\n<p><span style=\"font-size:x-small;font-family:Consolas\"></span></p>\r\n</p>",
+    "PostedDate": "2010-07-20T08:07:36.773-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "470628",
+    "ThreadId": "220179",
+    "Html": "<p>I believe you are right, it is a pointer (or in VB byref)&nbsp;to the variable&quot; text&quot;</p>",
+    "PostedDate": "2010-07-21T18:53:44.66-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

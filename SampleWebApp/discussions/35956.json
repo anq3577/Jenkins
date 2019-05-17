@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "119478",
+    "ThreadId": "35956",
+    "Html": "I'm new to CSK (I've downloaded a later build - 15760) so sorry if this is a total noob question...<br>\r\n<br>\r\nI can compile and debug using the VS.NET test server on my dev box but when I try to publish to my IIS7 server I get a compile error during the pre-compilation.<br>\r\n<br>\r\n\\ClubStarterKit.Web\\ContentPages\\Page.aspx.vb(9,0): error BC30456: 'Section' is not a member of 'System.Web.UI.UserControl'<br>\r\n<br>\r\n&nbsp;&nbsp;&nbsp; Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If CStr(Request(&quot;page&quot;)) Is Nothing Then<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Response.Redirect(&quot;~/default.aspx&quot;)<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Else<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WebContent1.Section = CStr(Request(&quot;page&quot;))<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; End If<br>\r\n&nbsp;&nbsp;&nbsp; End Sub<br>\r\n<br>\r\nI'm a C# guy who does mostly WinForms so I'm not having a lot of luck figuring this out and any help is appreciated.<br>\r\n<br>\r\nThanks, <br>\r\ndon<br>\r\n<br>\r\n",
+    "PostedDate": "2008-09-18T19:54:47.373-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

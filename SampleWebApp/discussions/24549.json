@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "82324",
+    "ThreadId": "24549",
+    "Html": "\r\nWhen user register to be member of the club , the method to insert new info for them is:<br />MemberInfo.Insert(Addr.Text, Phone.Text, fname.Text, lname.Text, Nothing, CType(user.ProviderUserKey, Guid), NewsletterCheck.Checked)<br /><br />but in the deatail.asp file, this is how the new membership info being searched, or created<br /> Dim meminf As New MemberInfo(MemberInfo.Columns.Memberid, user.ProviderUserKey())<br />and <br />      MemberInfo.Insert(Addr.Text, Phone.Text, fname.Text, lname.Text, Nothing, user.ProviderUserKey(), NewsletterCheck.Checked)<br /><br />This is not right , isn't it. <br />Can anyone explain for me please,<br />thanks<br />",
+    "PostedDate": "2008-03-23T17:39:17.843-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

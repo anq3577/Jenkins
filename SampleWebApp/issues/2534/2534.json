@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-06-20T21:16:18.623-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I receive the following issue running the latest build:\n \nNo provider is defined with the name ClubStarterKitData \nDescription: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. \n \nException Details: System.Exception: No provider is defined with the name ClubStarterKitData\n \nSource Error: \n \n \nLine 108:\t\t\tIf (Not IsSchemaInitialized) Then\nLine 109:\t\t\t\t'Schema declaration\nLine 110:                Dim schema As TableSchema.Table = New TableSchema.Table(\"HitCounter\", TableType.Table, DataService.GetInstance(\"ClubStarterKitData\"))\nLine 111:\t\t\t\tschema.Columns = New TableSchema.TableColumnCollection()\nLine 112:\t\t\t\tschema.SchemaName = \"dbo\"\n \n \nSource File: D:\\Web Development\\ClubStarterKit\\ClubStarterKit.Data\\Generated\\HitCounter.vb    Line: 110 \n \nStack Trace: \n \n \n[Exception: No provider is defined with the name ClubStarterKitData]\n   SubSonic.DataService.GetInstance(String providerName) +164\n   ClubStarterKit.Data.HitCounter.GetTableSchema() in D:\\Web Development\\ClubStarterKit\\ClubStarterKit.Data\\Generated\\HitCounter.vb:110\n   ClubStarterKit.Data.HitCounter.SetSQLProps() in D:\\Web Development\\ClubStarterKit\\ClubStarterKit.Data\\Generated\\HitCounter.vb:94\n   ClubStarterKit.Data.HitCounter..ctor() in D:\\Web Development\\ClubStarterKit\\ClubStarterKit.Data\\Generated\\HitCounter.vb:185\n   ClubStarterKit.Data.HitCounter.Insert(DateTime varDteTime, String varPage, String varUsername) in D:\\Web Development\\ClubStarterKit\\ClubStarterKit.Data\\Generated\\HitCounter.vb:282\n   ASP.HitCounter.Page_Load(Object sender, EventArgs e) in D:\\Web Development\\ClubStarterKit\\ClubStarterKit.Web\\UserControls\\HitCounter.ascx:42\n   System.Web.UI.Control.OnLoad(EventArgs e) +99\n   System.Web.UI.Control.LoadRecursive() +47\n   System.Web.UI.Control.LoadRecursive() +131\n   System.Web.UI.Control.LoadRecursive() +131\n   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +1061",
+    "LastUpdatedDate": "2013-05-15T23:46:35.173-07:00",
+    "PlannedForRelease": "Version 3 Beta 1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-06-20T20:32:13.26-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "No provider is defined with the name ClubStarterKitData",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 2534
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Yea... I just figured that out when I was testing the latest build of SubSonic with CSK. I will fix this in a few minutes... sit tight.",
+      "PostedDate": "2007-06-20T21:12:05.493-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-20T21:12:10.633-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-20T21:12:23.633-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Resolved with changeset 3245.",
+      "PostedDate": "2007-06-20T21:16:18.623-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:17.973-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:35.173-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

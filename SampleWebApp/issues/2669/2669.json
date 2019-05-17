@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-06-28T14:40:16.193-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Add the ability to add threads that only administrator/editors can see.",
+    "LastUpdatedDate": "2013-05-15T23:46:34.487-07:00",
+    "PlannedForRelease": "Version 3 Beta 1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-06-27T16:22:42.413-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Admin Forum",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 2669
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 3388.",
+      "PostedDate": "2007-06-28T14:40:16.193-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "brilliant!",
+      "PostedDate": "2007-06-28T14:50:34.69-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:17.093-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:34.487-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

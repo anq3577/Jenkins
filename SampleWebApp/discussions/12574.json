@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "41021",
+    "ThreadId": "12574",
+    "Html": "\r\nI've moved to sql server from express. I'm trying to create a user and login for the web to use when I go production, hopefully sometime this weekend. <br /><br />My problem? I don't have a clue which security roles to assign, etc. What did you guys use? <br /><br />You can talk to me like I'm 5 on this one. I'm an oracle gal, and it was always handled by a dba. I've never done this on my own before. <br /><br />Thanks in advance!<br />",
+    "PostedDate": "2007-07-13T11:35:30.233-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41054",
+    "ThreadId": "12574",
+    "Html": "\r\nYou shouldn't really need to worry about \"roles\". The default dbo (\"database owner\") should work.<br />",
+    "PostedDate": "2007-07-13T17:15:59.31-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41058",
+    "ThreadId": "12574",
+    "Html": "\r\nSo there aren't any concerns about granting all that extra security to the web? I know we were always really locked down - only allowing select and so on. <br /><br />Then that should be fairly simple. Maybe I've been worrying for no reason. <br />",
+    "PostedDate": "2007-07-13T18:07:39.367-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41084",
+    "ThreadId": "12574",
+    "Html": "\r\nYep... it should just work under the default.<br />",
+    "PostedDate": "2007-07-14T09:33:26.66-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41258",
+    "ThreadId": "12574",
+    "Html": "\r\nAs an fyi to anyone who wishes to lock down their db a bit, you only need to grant db<i>reader, db</i>writer access, in addition to checking all the aspnet_ boxes for the membership providers, etc. <br /><br />Then you grant exec on all stored procs to your user. <br /><br />The problem with using db_owner is that it allows any web user smart enough to get through your security to be able to do some nasty things like dropping your entire database. <br />",
+    "PostedDate": "2007-07-16T11:26:26.393-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

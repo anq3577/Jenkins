@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "33712",
+    "ThreadId": "10397",
+    "Html": "\r\nHas anyone tried to logout from pages other than the default.aspx when logged in a admin?<br /><br />I created an issue, I would be interested if this is common to all installtions.<br />Please reply and vote in issue tracker so we can get this prioritzed.<br /><br />Thanks<br />",
+    "PostedDate": "2007-05-17T10:55:16.753-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33747",
+    "ThreadId": "10397",
+    "Html": "<br />The \"log off\" button on the home pages works because it returns to \\default.aspx<br /><br />All other \"logout\" buttons are returning to \\{currentpage}.aspx but they all have folders i.e. \\events\\calendar.aspx.<br /><br />Returns error resource not found \\calendar.aspx......<br /><br /><br /><br /><br />",
+    "PostedDate": "2007-05-17T14:47:39.1-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

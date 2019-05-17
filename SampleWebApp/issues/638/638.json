@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:15:23.63-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I don't have VS Team, so I am working on the source code without source control.\n \nI have made the following changes to the source code:\n \n1. In Events/List.aspx, corrected spelling on line 98 from Upcomming Events to Upcoming Events.\n2. In Member/List.aspx, finished the corrections from mannage to manage.\n     Line 53, 55, 80, 82 (twice).  One of those had already been changed, can't remember which one.",
+    "LastUpdatedDate": "2013-05-15T23:46:48.85-07:00",
+    "PlannedForRelease": "v2 Beta 2",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:15:22.27-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Fixed mispellings",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 638
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Other file",
+      "PostedDate": "2007-04-25T14:15:22.85-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:15:23.63-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:35.3-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:48.85-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

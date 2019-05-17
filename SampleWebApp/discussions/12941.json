@@ -1,0 +1,74 @@
+[
+  {
+    "Id": "42221",
+    "ThreadId": "12941",
+    "Html": "\r\nThis is a great resource and I am a newbie. Thank you for all of your hard work.<br /><br />I have downloaded the starter kit and am modifying for my running club. In both the original starter kit and in my modified version (changed master pages, css), I can add albums and photos. However, I can't seem to associate one of my pictures with my test news story (I keep getting broken picture links or just the picture that came with the starter kit). <br /><br />Is this a bug or do I just not understand the UI? How can I fix this?<br />",
+    "PostedDate": "2007-07-23T16:47:13.203-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "42242",
+    "ThreadId": "12941",
+    "Html": "\r\nHi, mhrrcweb.<br /><br />Could you be a little bit more specific as to the problem? Is it that the image isn't showing up or is it that it isn't associated with the news item? Maybe you linked it to a photo album and not a particular photo?<br /><br />Also, could you tell me if you are using v2 final or a recent build? (If you are using a recent build, which one?)<br />",
+    "PostedDate": "2007-07-23T20:35:14.087-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "42280",
+    "ThreadId": "12941",
+    "Html": "<br />Thanks for responding.<br /><br />I am using the May 11 version downloaded from the \"release\" tab on this site. Is there a way to easily incorporate more recent builds into my version, which now has many changes (mostly to css, added pages, master page)? I'd like to do that rather than try to solve bugs on my own ... each one takes me a very long time.<br /><br />I have set up a \"test album\" and then a \"test news story.\" I want to associate a photo from the test album with the test news story. When I click on \"existing image\", I can select the photo album and the image and then click \"use selection.\" However, the only image that can be associated with the news story is the blue 10 image that came with the starter kit.<br /><br />When I choose the test album, to associate with the news story, none of the thumbnail pictures from the album show on the left of the news story details.<br /><br />All of this is happening in the original starter kit May 11 version that I did modify in any way (except for a few obvious bugs, like the duplicate runat=\"server\" tag ...).<br /><br />As a newbie, some of the discussions and recent build descriptions are over my head. Thanks for all the work you do on this. Our Mid-Hudson Road Runners Club is anxious for me to get this working and to be able to get race results published on the new site.<br /><br />Deborah<br /><br /><br /><br />",
+    "PostedDate": "2007-07-24T05:58:08.597-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "42297",
+    "ThreadId": "12941",
+    "Html": "\r\nYou might want to wait for v3 beta 1, since you could probably make use of the league tracker. It should be out in a week or so, depending on when I can finish it!<br />",
+    "PostedDate": "2007-07-24T08:43:01.107-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "42330",
+    "ThreadId": "12941",
+    "Html": "<br />Fixing the links to the photos on news/view.aspx was trivial: <br /><br />Around line 147, fix the path to the imagefetch.ashx file should include \"../UserControls/imagefetch.ashx<br /><br />In the original starter kit, these ashx files were all over the place; it is much better now in one folder, but I guess some of the links need updating.  I'll wait for v3 beta 1 for to see how to fix the selecting of the photo for a news item. <br /><br />When v3 beta 1 is released, will there be some clue on what it does and how to merge v3 updates into existing v2 versions? Does league tracker include publishing race results to database?<br /><br />Deborah<br />",
+    "PostedDate": "2007-07-24T11:53:23.883-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "42493",
+    "ThreadId": "12941",
+    "Html": "\r\nv3 does include race results in the database.<br /><br />What you will have to do to for database upgrade in put in 2 connection strings: 1) your old v2 database and 2) a BLANK database with the v3 schema script ran on it<br /><br />I've done WAY too much with the database structure to write change scripts.<br />",
+    "PostedDate": "2007-07-25T11:17:48.593-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "42523",
+    "ThreadId": "12941",
+    "Html": "<br />You have made my day with having results in v3! Maybe even my month! Thank you!<br /><br />I don't really understand your instructions on how to add a BLANK database connection with the v3 schema script, but hopefully, that will be clearer in the instructions for v3. I apologize for my lack of technical expertise - I am working on it.<br /><br />I have spent days now updating v2 for our club. I hope it will be relatively painless to update to v3. It is not clear how to actually use the different \"builds\" - for example, build 3539 looks like it fixes the photo picker problem, but I don't know what to use from that build or how to use it. Is there a place for me to look to find out:<br /><br />1. What features and functions are in v3?<br />2. How to add fixes into my site?<br /><br />Thank you for all your hard and wonderful work and I will try to give you some peace to continue your work on v3. I know our Mid-Hudson Road Runners Club members are really looking forward to this.<br />",
+    "PostedDate": "2007-07-25T15:44:12.973-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "42581",
+    "ThreadId": "12941",
+    "Html": "\r\nv3 is really complex, compared to v2. v3 sports a whole new data structure. It will eventually be documented. For now, you can look at <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=SubSonic%20Info&amp;referringTitle=Home\" class=\"externalLink\">this page<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a> for instructions on how to setup SubSonic.<br /><br />I don't suggest adding new changesets to a production site unless you test is <b>thoroughly</b>. It can sometimes be a mess to fix if you don't. <br /><br />I have a question for you... do you have other tables in your database other than the tables that shipped with v2? Think of it as a survey... others can answer as well.<br />",
+    "PostedDate": "2007-07-26T00:27:03.937-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "42650",
+    "ThreadId": "12941",
+    "Html": "\r\nI do have other tables in my database as a road running club. I put all these in the original starter kit and now have to add them to this v2 version. I am waiting for v3 before I start the work because I don't want to conflict with your v3 work (and, the starter kit has wonderful ways of meeting my user requirements that are more useful than my simple stuff)<br /><br />Additional Tables<br /><br />Membership: kind of like a contract, users purchase a membership and renew (members get reduced prices on races, access to more functions on our site). Many users (in the same family) can be associated with a membership.<br /><br />Race: info on a particular race, more than just an event. I need things like race director, scorer, restrictions, fundraiser, disclaimer.<br /><br />Race event: race is made up of many events, such as 5K, half, marathon. Each event can have different prices, age divisions, course descriptions.<br /><br />Results (many-to-many between race event and user): includes data on time, pace, age on race day, etc. Will  look at the v3 results.<br /><br />We need to support users registering for races on the web as well as buying memberships. I have a request from the club to support financial reporting for each race.<br /><br />I wonder what everyone else uses. I'll study the SubSonic stuff ... it is not totally clear to me now.<br /><br />Deborah<br /><br /><br /><br /><br /><br /><br /><br />",
+    "PostedDate": "2007-07-26T09:18:43.41-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

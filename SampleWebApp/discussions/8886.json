@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "29043",
+    "ThreadId": "8886",
+    "Html": "\r\nCan someone help me with this error? The two pages require login. Thank you.<br /><br />String or binary data would be truncated.<br />The statement has been terminated. <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />Exception Details: System.Data.SqlClient.SqlException: String or binary data would be truncated.<br />The statement has been terminated.<br /><br />Source Error: <br /><br /><br />Line 29:             end if<br />Line 30:             <br />Line 31:             throw<br />Line 32:             <br />Line 33:         end try<br /><br /><br />Source File: C:\\Documents and Settings\\Jerry Dean\\My Documents\\Visual Studio 2005\\WebSites\\SAHC_club2.0-RC1\\UserControls\\HitCounter.ascx    Line: 31 <br />",
+    "PostedDate": "2007-04-05T08:37:38.487-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "29051",
+    "ThreadId": "8886",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />jerrysdean43 wrote:<br />Can someone help me with this error? The two pages require login. Thank you.<br /><br />String or binary data would be truncated.<br />The statement has been terminated. <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />Exception Details: System.Data.SqlClient.SqlException: String or binary data would be truncated.<br />The statement has been terminated.<br /><br />Source Error: <br /><br /><br />Line 29:             end if<br />Line 30:             <br />Line 31:             throw<br />Line 32:             <br />Line 33:         end try<br /><br /><br />Source File: C:\\Documents and Settings\\Jerry Dean\\My Documents\\Visual Studio 2005\\WebSites\\SAHC_club2.0-RC1\\UserControls\\HitCounter.ascx    Line: 31 <br /><br /></div><br />If I take the above page out of my membership folder and put it under the root, it works. I was trying to keep things clean by putting some of my pages in a folder. Anyone know why this fixed the problem? Thanks<br />",
+    "PostedDate": "2007-04-05T09:45:44.073-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "29052",
+    "ThreadId": "8886",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />jerrysdean43 wrote:<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />jerrysdean43 wrote:<br />Can someone help me with this error? The two pages require login. Thank you.<br /><br />String or binary data would be truncated.<br />The statement has been terminated. <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />My mistake, it still does not work, I think when it trys to bring up the login page it crashes.<br /><br />Exception Details: System.Data.SqlClient.SqlException: String or binary data would be truncated.<br />The statement has been terminated.<br /><br />Source Error: <br /><br /><br />Line 29:             end if<br />Line 30:             <br />Line 31:             throw<br />Line 32:             <br />Line 33:         end try<br /><br /><br />Source File: C:\\Documents and Settings\\Jerry Dean\\My Documents\\Visual Studio 2005\\WebSites\\SAHC_club2.0-RC1\\UserControls\\HitCounter.ascx    Line: 31 <br /><br /></div><br />If I take the above page out of my membership folder and put it under the root, it works. I was trying to keep things clean by putting some of my pages in a folder. Anyone know why this fixed the problem? Thanks<br /><br /></div>",
+    "PostedDate": "2007-04-05T09:49:22.56-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "29055",
+    "ThreadId": "8886",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />jerrysdean43 wrote:<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />jerrysdean43 wrote:<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />jerrysdean43 wrote:<br />Can someone help me with this error? The two pages require login. Thank you.<br /><br />String or binary data would be truncated.<br />The statement has been terminated. <br /><br />I placed the pages in the member folder and they are working. Thank you.<br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />My mistake, it still does not work, I think when it trys to bring up the login page it crashes.<br /><br />Exception Details: System.Data.SqlClient.SqlException: String or binary data would be truncated.<br />The statement has been terminated.<br /><br />Source Error: <br /><br /><br />Line 29:             end if<br />Line 30:             <br />Line 31:             throw<br />Line 32:             <br />Line 33:         end try<br /><br /><br />Source File: C:\\Documents and Settings\\Jerry Dean\\My Documents\\Visual Studio 2005\\WebSites\\SAHC_club2.0-RC1\\UserControls\\HitCounter.ascx    Line: 31 <br /><br /></div><br />If I take the above page out of my membership folder and put it under the root, it works. I was trying to keep things clean by putting some of my pages in a folder. Anyone know why this fixed the problem? Thanks<br /><br /></div><br /></div>",
+    "PostedDate": "2007-04-05T10:06:21.127-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

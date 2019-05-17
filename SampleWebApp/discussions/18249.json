@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "59619",
+    "ThreadId": "18249",
+    "Html": "\r\nServer Error in '/' Application.<br />--------------------------------------------------------------------------------<br /><br />Configuration Error <br />Description: An error occurred during the processing of a configuration file required to service this request. Please review the specific error details below and modify your configuration file appropriately. <br /><br />Parser Error Message: Sections must only appear once per config file.  See the help topic &lt;location&gt; for exceptions.<br /><br />Source Error: <br /><br /><br />Line 207:\t\t\t&lt;forms loginUrl=\"member/login.aspx\" defaultUrl=\"~/default.aspx\"/&gt;<br />Line 208:\t\t&lt;/authentication&gt;<br />Line 209:\t\t&lt;compilation debug=\"true\" strict=\"false\"&gt;<br />Line 210:\t\t\t&lt;assemblies&gt;<br />Line 211:\t\t\t\t&lt;add assembly=\"System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\"/&gt;<br /><br /><br />Source File: E:\\kunden\\homepages\\39\\d219922815\\web.config    Line: 209 <br /><br /><br />--------------------------------------------------------------------------------<br />Version Information: Microsoft .NET Framework Version:2.0.50727.42; ASP.NET Version:2.0.50727.210 <br /><br /><br /><br /><br /><br />I changed the SQL DB location in the ConnectionStrings.config<br /><br />&lt;connectionStrings&gt;<br />  &lt;add name=\"ClubSiteDB\" connectionString=\"Data Source=mssql07.1and1.com; initial catalog=dbXXXXXXXXX;uid=dboXXXXXX;pwd=XXXXXXX\"/&gt;<br /><br />  &lt;/connectionStrings&gt;<br /><br />Do I need to rebuild the site?<br />",
+    "PostedDate": "2007-11-23T17:23:25.57-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "59739",
+    "ThreadId": "18249",
+    "Html": "\r\nFigured this one out, I had added a custom error catch to it and didnt comment out the one that was already in the code.<br />",
+    "PostedDate": "2007-11-25T12:51:48.01-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

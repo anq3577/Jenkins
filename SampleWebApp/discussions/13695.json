@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "44646",
+    "ThreadId": "13695",
+    "Html": "\r\nHello, I'm from the Netherlands and i came across Microsoft's Visual Web Developer Express Edition with the starter kits. I was really amazed with how little knowledge i could make and change this site to a site for my Petanque (Jeu de boules) club. I started translating everything to the dutch language and started showing this to other club members. Now i missed the option to delete Photo Albums and started googeling this. It was then that i discovered this site and i don't want to start all over again with the translation.<br /><br />Is it (simply) possible to add the option to delete photo albums, events and locations? Without having to start all over again or updating the database?<br /><br />I hope it is, oh, you can check my site out at http://dehaan.mine.nu (temporary location)<br /><br />Rob.<br />",
+    "PostedDate": "2007-08-12T01:54:32.79-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44654",
+    "ThreadId": "13695",
+    "Html": "\r\nYes. Possibly v2. <br /><br />Would you mind being a translator? We are in the process of getting the CSK internationalized.<br />",
+    "PostedDate": "2007-08-12T06:02:33.79-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44659",
+    "ThreadId": "13695",
+    "Html": "\r\nSure, i'll be a translator, depending on how much work it is, i only have limited free time.<br /><br />Your solution wasn't really helpfull, but i guess it's better to start over with this improved version, because i'll have all the new stuff added by the members of this site. Thanks anyway.<br />",
+    "PostedDate": "2007-08-12T07:22:03.613-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

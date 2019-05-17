@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "45701",
+    "ThreadId": "14050",
+    "Html": "\r\nThanks for all your time and efforts on the club project. <br /><br />Please consider keeping those of us updated on the status of the database upgrade issue, so that we know an upgrade path from V2 to V3 is going to be possible. <br /><br />I for one would greatly appreciate this information. <br /><br />Thanks again.<br />",
+    "PostedDate": "2007-08-20T08:50:51.53-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "45750",
+    "ThreadId": "14050",
+    "Html": "\r\nWorkin on that :)<br /><br />Hopefully there will be a fool-proof method by v3 final (hopefully beta 2).<br />",
+    "PostedDate": "2007-08-20T13:17:28.98-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "45756",
+    "ThreadId": "14050",
+    "Html": "\r\nDo you have a timeline for V3 final? <br />Thanks.<br />",
+    "PostedDate": "2007-08-20T14:18:25.683-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "69335",
+    "ThreadId": "20843",
+    "Html": "\r\nInstalled the files on WebHost4Life.<br />(version: Club starter Kit 2.0 Release 1911 Source: source code, 4044K, uploaded May 11 2007 - 3760 downloads )<br />Ran the scripts for SQL.<br />Changed web.config for my connection.<br /><br />I now get the following error:<br /><br />Keyword not supported: 'provider'. <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />Exception Details: System.ArgumentException: Keyword not supported: 'provider'.<br />Source Error: <br /><br />Line 59:             end if<br />Line 60:             <br />Line 61:             throw<br />Line 62:             <br />Line 63:         end try<br /><br />Source File: c:\\hosting\\webhost4life\\member\\membername\\tbp\\UserControls\\WebContent.ascx    Line: 61 <br />",
+    "PostedDate": "2008-01-22T09:45:29.127-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "69338",
+    "ThreadId": "20843",
+    "Html": "\r\nOK - narrowing this down...<br /><br />My connection string provided by WebHost4Life for my SQL server was as follows:<br />    \"Provider=SQLOLEDB;<br />    Data Source=mssqlxxxx.mysite4now.com;<br />    User Id=MSSQLUserName;<br />    Password=MSSQLPassword;<br />    Initial catalog=MSSQLName;\"<br /><br /><b>Provider</b> is incorrect.<br /><br />Anyone have any clues as how to word the connection string for a SQL2k server on WebHost4Life account?<br />",
+    "PostedDate": "2008-01-22T10:12:50.233-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

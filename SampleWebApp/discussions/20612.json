@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "68436",
+    "ThreadId": "20612",
+    "Html": "\r\nWhen I update the Web content data I get the that is below (it does update the database)<br /><br />When I run debug in visual I get <br />FormatException was unhandled by user code The specified string is not in the form required fo an e-mail address<br />The section of code in cms.vb<br />Dim mail As New System.Net.Mail.MailMessage<br /><br /><br />In debug mode<br />The specified string is not in the form required for an e-mail address. <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />Exception Details: System.FormatException: The specified string is not in the form required for an e-mail address.<br /><br />Source Error: <br /><br /><br />Line 38: <br />Line 39:         Public Shared Sub ReportUpdate(ByVal OrigionalContent As String, ByVal NewContent As String, ByVal sectionname As String, ByVal IPAddress As String)<br />Line 40:             Dim mail As New System.Net.Mail.MailMessage<br />Line 41: <br />Line 42:             mail.To.Add(ClubStarterKit.Web.Settings.Webmaster())<br /><br /><br />Source File: c:\\Inetpub\\vhosts\\balsabashers.com\\httpdocs\\App_Code\\BLL\\CMS.vb    Line: 40 <br /><br />Stack Trace: <br /><br /><br /><a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=FormatException%3a%20The%20specified%20string%20is%20not%20in%20the%20form%20required%20for%20an%20e-mail%20address.\">FormatException: The specified string is not in the form required for an e-mail address.</a><br />   System.Net.Mime.MailBnfHelper.ReadMailAddress(String data, Int32&amp; offset, String&amp; displayName) +934335<br />   System.Net.Mail.MailAddress.ParseValue(String address) +245<br />   System.Net.Mail.MailAddress..ctor(String address, String displayName, Encoding displayNameEncoding) +87<br />   System.Net.Mail.MailMessage..ctor() +271<br />   ClubStarterKit.Web.CMS.ReportUpdate(String OrigionalContent, String NewContent, String sectionname, String IPAddress) in c:\\Inetpub\\vhosts\\balsabashers.com\\httpdocs\\App_Code\\BLL\\CMS.vb:40<br />   ASP.webcontent<i>editor</i>aspx.Button1_Click(Object sender, EventArgs e) in c:\\Inetpub\\vhosts\\balsabashers.com\\httpdocs\\WebContent\\Editor.aspx:53<br />   System.Web.UI.WebControls.Button.OnClick(EventArgs e) +105<br />   System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument) +107<br />   System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument) +7<br />   System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument) +11<br />   System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData) +33<br />   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +1746<br /><br /><br />",
+    "PostedDate": "2008-01-16T22:28:33.317-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "68440",
+    "ThreadId": "20612",
+    "Html": "\r\nWhen I go to send an email to administrators I get this error <br />Line 80<br />The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Must issue a STARTTLS command first d24sm2846329and.12 <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />Exception Details: System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Must issue a STARTTLS command first d24sm2846329and.12<br /><br />Source Error: <br /><br /><br />Line 78:         smtp.UseDefaultCredentials = False<br />Line 79:         smtp.Credentials = a<br />Line 80:         smtp.Send(msgMail)<br />Line 81:         Response.Redirect(\"~/default.aspx\")<br />Line 82:     End Sub<br /><br /><br />Source File: c:\\Inetpub\\vhosts\\balsabashers.com\\httpdocs\\Admin\\Email.aspx.vb    Line: 80 <br /><br />Stack Trace: <br /><br /><br /><a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=SmtpException%3a%20The%20SMTP%20server%20requires%20a%20secure%20connection%20or%20the%20client%20was%20not%20authenticated.%20The%20server%20response%20was%3a%205.7.0%20Must%20issue%20a%20STARTTLS%20command%20first%20d24sm2846329and.12\">SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Must issue a STARTTLS command first d24sm2846329and.12</a><br />   System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response) +881192<br />   System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, String from) +39<br />   System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, SmtpFailedRecipientException&amp; exception) +95<br />   System.Net.Mail.SmtpClient.Send(MailMessage message) +2004<br />   Admin<i>Email.btnSend</i>Click(Object sender, EventArgs e) in c:\\Inetpub\\vhosts\\balsabashers.com\\httpdocs\\Admin\\Email.aspx.vb:80<br />   System.Web.UI.WebControls.Button.OnClick(EventArgs e) +105<br />   System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument) +107<br />   System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument) +7<br />   System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument) +11<br />   System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData) +33<br />   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +1746<br /><br /><br /><br />",
+    "PostedDate": "2008-01-16T22:32:54.12-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "68441",
+    "ThreadId": "20612",
+    "Html": "\r\nMy web.config looks like this<br /><br />&lt;system.net&gt;<br />    &lt;mailSettings&gt;<br />      &lt;smtp from=\"mail.balsabashers.com\"&gt;<br />        &lt;network host=\"mail.balsabashers.com\" password=\"xxxxxxxx\" userName=\" xxxxxxx@balsabashers.com\"/&gt;<br />      &lt;/smtp&gt;<br />    &lt;/mailSettings&gt;<br />",
+    "PostedDate": "2008-01-16T22:33:36.417-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "68890",
+    "ThreadId": "20612",
+    "Html": "\r\nOne main question is do I edit the web.config as above?<br />second question is and also add in the site setup?<br /><br />How to get around spam selection then??<br />",
+    "PostedDate": "2008-01-19T17:30:07.16-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "68893",
+    "ThreadId": "20612",
+    "Html": "\r\nOk, The web config stays the same. No changes. <br />Edit the site setup.<br />The problem is the sites like gmail etc think that the email is sent as spam. How do we change that??<br />",
+    "PostedDate": "2008-01-19T17:58:06.373-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "68894",
+    "ThreadId": "20612",
+    "Html": "\r\nI think it was my hosting site.<br />Thank you for the views.<br />JIm<br />",
+    "PostedDate": "2008-01-19T18:54:25.133-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "47853",
+    "ThreadId": "14717",
+    "Html": "\r\nHas anyone been able to upgrade V2 to V3 successfully? <br /><br />Is there any progress update on the V2 to V3 database upgrade or are we destined to either staying with V2 or starting over with a new database which is not an option with me?<br /><br />Please consider giving V2 users some info on this issue.<br /><br />Thanks<br />",
+    "PostedDate": "2007-09-05T05:38:57.347-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "47859",
+    "ThreadId": "14717",
+    "Html": "\r\nI fully understand that the Club Starter Kit is meant to be just that, a Starter Kit; to demonstrate new features of ASP.NET. But if there is no reasonable upgrade path from one major revision to the other, maybe you should put a big splash screen at the beginning of the program to say \"DO NOT USE THIS CODE IN A REAL WEBSITE UNLESS YOU ARE PREPARED TO FULLY MAINTAIN IT YOURSELF\". (it wouldn't stop anyone, but at least they were warned)<br /><br />Actually I think I have read similar warnings in connection to Microsoft's Starter Kits someplace, but my point is that I agree with the above post. Considering the functionality and popularity of this particular program, and the method chosen by the developers to implement bug fixes, a more comprehensive way to upgrade a working site would be a welcome addition to the project. Even though no commitment to support prior revisions is stated, it would certainly make the project more viable in my opinion.<br /><br />Ed<br />",
+    "PostedDate": "2007-09-05T06:21:37.733-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "47969",
+    "ThreadId": "14717",
+    "Html": "\r\nIs there a reason why the developer of this project does not issue a statement in response of this post?<br />",
+    "PostedDate": "2007-09-05T20:37:25.697-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "48020",
+    "ThreadId": "14717",
+    "Html": "\r\nSeem to me after reading all the problems that folks are having now with this project may result from Subsonic.,sometimes when something is working it is best not to fix it.<br />",
+    "PostedDate": "2007-09-06T04:15:10.24-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "48022",
+    "ThreadId": "14717",
+    "Html": "\r\nI think the point is that this is a Beta.  I would never implement this as my production website until all the bugs were ironed out.<br /><br />Zack, I believe is busy with his life and has stated he will be back soon to continue the project.  <br />",
+    "PostedDate": "2007-09-06T04:24:15.25-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "48028",
+    "ThreadId": "14717",
+    "Html": "\r\nI think my point is that V2 cannot be upgraded to V3 at this point because of SubSonic. I don't think that I stated I wanted to or am using V3 as a production website. I am however using V2 final as a production website and am just trying to get some input on knowing if V2 is final for me because of the upgrade problem or is the problem being working on and there will be a future solution.  <br /><br />I for one appreciate this project very much but when the instructions on how to upgrade from V2 to V3 are still posted here knowing they do not work is kind of strange to me. There are posts on bug fixes in V3 but when we cannot get there is to take advantage of them, it really doesn't matter.<br /><br />Any kind of input would be appreciated. Folks just don't like to be ignored and left hanging.<br />",
+    "PostedDate": "2007-09-06T05:13:45.727-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

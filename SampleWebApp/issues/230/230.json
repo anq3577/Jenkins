@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Unable to reproduce",
+    "ClosedDate": "2007-05-20T05:08:34.527-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When printing from the Print Preview page, the portrait presentation cuts off the right hand side (Saturday) date portion.  You can see the Sat column heading, but not anything to the right of that.\n \nWhen printing in landscape, the footer scrolls to a seconf page.\n \nSuggested correction would be to adjust the portrait print to fit to page or to somehow set print landscape as default and adjust the size to print to one page.\n \nAny thoughts?",
+    "LastUpdatedDate": "2013-05-15T23:46:49.543-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-19T09:28:42.837-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Printing Events Calendar Width Issue",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 230
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

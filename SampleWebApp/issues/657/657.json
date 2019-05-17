@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:16:11.13-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi,\n \n \n \nI am currently testing the Beta ClubSite code on my UltimaHosts provider and have found a problem.\n \n \n \nSee bitmap.\n \n \n \nIt appears to relate to the textbox on the news page? When I apply the change it appears to corrupt \n \nthe news database. This, because all other links still seem to work apart from News and Home.\n \nI started with an empty database (deleted the existing test entries in the news page). I am using IE version 6.\n \nNote: the date icons do not appear either.\n \n \n \nhttp://www.worsleyparkgolf.mawhitfield.net/links/links.aspx\n \n \n \nWhen I click ignore the Javascript error on the news page, I cannot add text to the textbox provided. I add\n \nPhoto details anyway and apply the changes and both the Home page and News pages are rendered\n \nineffective probably because of the error that arises down to the Javascript error shown….\n \n \n \nIf there is any other help I can give, please email me….. \n \n \n \nThanks in advance \n \n \n \nRegards\n \n \n \nNonStopMark.",
+    "LastUpdatedDate": "2013-05-15T23:46:48.183-07:00",
+    "PlannedForRelease": "v2 Beta 2",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:16:09.66-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Length is Null or not an object - JavaScript Error For News Edit Page",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 657
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Have you tried this with the latest build (1664)?  Because Zack fixed a lot of the problems with the FCKeditor.  The error that you got was what I was seeing also.",
+      "PostedDate": "2007-04-25T14:16:10.3-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:16:11.13-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:34.48-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:48.183-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "48651",
+    "ThreadId": "14959",
+    "Html": "\r\nI have read multiple discussion refering to a bad upgrade from V2 to V3 B1. Is there a working upgrade? <br /><br />Thanks.<br />",
+    "PostedDate": "2007-09-10T15:00:29.733-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "48661",
+    "ThreadId": "14959",
+    "Html": "\r\nNot until Beta 2. Hopefully by then, I can find something that will work.<br />",
+    "PostedDate": "2007-09-10T16:34:28.793-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "53178",
+    "ThreadId": "14959",
+    "Html": "\r\nWhat is the release date for beta 2<br />",
+    "PostedDate": "2007-10-13T13:51:21.26-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

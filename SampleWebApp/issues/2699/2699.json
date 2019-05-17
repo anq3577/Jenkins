@@ -1,0 +1,110 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-07-14T11:52:58.387-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "With the changes that I am making for the different image storage location, I am using a setting in the web.config.  I think that we need an additional page in the admin area to enable settings changes without loading web.config in an editor.\n \nOr maybe just a first launch page, to be used the first time the site is installed.  Have it work like this:\n \n1. New site admin launches settings.aspx\n2. New site admin adjusts the site settings (club name, website address, etc).  They click Save.\n3. New site admin creates a user login that automatically gets added to Administrators.\n4. Page redirects to Default.aspx.\n5. Part of Page_Load for Default.aspx deletes settings.aspx if it is present.\n \nObviously, this is a one-time thing.  But that would make it easier for new sites to be configured, sortof runs right out of the box.",
+    "LastUpdatedDate": "2013-05-15T23:46:33.813-07:00",
+    "PlannedForRelease": "Version 3 Beta 1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-06-29T22:26:43.933-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Admin page for changing app settings",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 3,
+    "Id": 2699
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Yea. I think we should save settings into a file in the App_Data folder. The My Personal Site StarterKit generates a settings file which you can edit.",
+      "PostedDate": "2007-06-30T02:32:29.887-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-30T02:32:36.933-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-30T02:40:27.27-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "oops... I meant My Web Pages Starter Kit (http://www.codeplex.com/MyWebPagesStarterKit)",
+      "PostedDate": "2007-06-30T02:43:54.79-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Can't changes be made to the settings in the web.config?",
+      "PostedDate": "2007-06-30T10:37:08.653-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I don't think so. I haven't seen anything about editing it. The only tool I know of that can change the web.config is the ASP.NET Configuration manager.",
+      "PostedDate": "2007-06-30T15:37:16.03-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Resolved with changeset 3556.",
+      "PostedDate": "2007-07-11T09:12:51.953-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 7/11/2007 9:12 AM",
+      "PostedDate": "2007-07-11T12:57:37.773-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Oops",
+      "PostedDate": "2007-07-11T12:57:40.01-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-11T12:57:51.773-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-13T14:07:04.807-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Resolved with changeset 3594.",
+      "PostedDate": "2007-07-14T11:52:58.387-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:16.243-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:33.813-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "Id": "44453",
+    "ThreadId": "13634",
+    "Html": "\r\nHello; Just getting started with the club starter kit.  I downloaded the asp.net stuff cause it said that anyone can do it and its very easy.  I have a basic knowledge of web development but never used this program.<br /><br />How do i get started with this kit?  Is there a step by step direction?  I found some usefull information but i didnt find how to change the color of the background, the photo of gras and soccor ball on the header ect.<br /><br />I want to create a Hockey club site and want to change the soccer stuff to Hockey.<br /><br />thanks<br />",
+    "PostedDate": "2007-08-09T17:49:43.88-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44532",
+    "ThreadId": "13634",
+    "Html": "\r\nCSS files that control most formatting are found in the ClubStarterKit.Web\\App_Themes\\ClubSite folder. Since the file names have changed in V3 from the erlier version that I used, I'm not sure just which file will have the CSS you need to change, but it shouldn't be too hard to find.<br /><br />Good Luck with your website,<br />Ed<br /><a href=\"http://www.renegadesprints.org\" class=\"externalLink\">http://www.renegadesprints.org<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a><br />",
+    "PostedDate": "2007-08-10T08:48:41.643-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44553",
+    "ThreadId": "13634",
+    "Html": "\r\nThanks Ed. Iwill check that out. If anyone else has some help or a step by step on what to do, let me know.<br /><br />thanks<br />",
+    "PostedDate": "2007-08-10T12:46:55.823-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44570",
+    "ThreadId": "13634",
+    "Html": "\r\nthere is no such folder as App_Themes that i can see.  There is a clubsite.css by itself.  i<br />",
+    "PostedDate": "2007-08-10T15:06:41.177-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44604",
+    "ThreadId": "13634",
+    "Html": "\r\nSorry, I thought you were working with the CSK version available through this website. It looks like you probably have the original Microsoft download. The latest version available here has been modified extensively from the original and is what is discussed in this forum.<br /><br />If you just want to modify the graphic found at the top of the page, I think the file you want is images/poster.jpg. You can use any image editing program to make the changes or replace it entirely with a graphic of your own design. <br /><br />Open the images folder with your graphics editor and you should find all the graphics elements used to create the site. Other elements, like background colors, image sizes and placement are controlled by CSS. If you decide to change any of the graphics, it is best to NOT change their sizes unless you fully understand how those changes might interact with other elements or the CSS. It's easy to make a big mess of things if you are not careful and some knowledge of CSS is helpful.<br /><br />You might want to consider downloading one of the modified CSK versions available on this site as many improvements have been made by the talented folks working on this project and many bugs found in the original version have been fixed.<br /><br />Ed<br /><br />",
+    "PostedDate": "2007-08-11T06:54:00.843-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44610",
+    "ThreadId": "13634",
+    "Html": "\r\nThanks Ed, i will look into that download this weekend.<br />",
+    "PostedDate": "2007-08-11T08:29:43.56-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44624",
+    "ThreadId": "13634",
+    "Html": "\r\nYea, what Ed said :)<br />",
+    "PostedDate": "2007-08-11T14:46:46.303-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44627",
+    "ThreadId": "13634",
+    "Html": "<br />I'm new to this too, but have had some CSS experience. I have greatly changed the appearance of the site - but found that it is much easier to work in Expression Web for CSS changes than in Visual Web Developer Express Edition. CSS is tricky, but just changing the images is not hard. CSS does \"cascade\" so it is sometime difficult to see which style is setting the attributes. EW shows the hierarchy for each element and also shows which styles are used on a specific page.<br /><br />The starter kit from this site is greatly superior to the one on the Microsoft site, both functionally and bug-wise - although you will still find some bugs.<br />",
+    "PostedDate": "2007-08-11T15:52:01.8-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44637",
+    "ThreadId": "13634",
+    "Html": "\r\nmhrrcweb, this also applies to Visual Studio 2008 Beta 2.<br />",
+    "PostedDate": "2007-08-11T20:38:58.047-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44657",
+    "ThreadId": "13634",
+    "Html": "\r\nis there a download for Expression Web for CSS or mhrrcweb here? or can i find it somewhere else on the web? do you have a link?<br /><br />thanks<br />",
+    "PostedDate": "2007-08-12T07:12:18.72-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44658",
+    "ThreadId": "13634",
+    "Html": "\r\nEd (or anyone)  I want to take your advice about the CSK from this site.  I am confused on what i need to do.  I see links to these downloads;  <br />Club Starter Kit 2.0 Final <br /> v2 Beta 1 <br /> v2 Beta 2 <br /> v2 RC1 <br /> Version 3 Beta 1 <br /><br />Do i need to uninstall the current microsoft version i have first? or downloand one of these upgrades?<br /><br />Thanks for your help!!<br />Jeff<br />",
+    "PostedDate": "2007-08-12T07:18:59.817-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44660",
+    "ThreadId": "13634",
+    "Html": "\r\nDepends I suppose if you have a site running on the original or of this is a fresh site, either way you need the latest version which is version 3 beta 1.  This is going through deployment testing but you could play around with it and wait for the final V3 to come out.  That is what I did with V2.<br /><br />Just install it to a seperate folder, no need to uninstal the orginal.<br />",
+    "PostedDate": "2007-08-12T07:58:13.67-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

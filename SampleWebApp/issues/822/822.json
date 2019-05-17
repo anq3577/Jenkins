@@ -1,0 +1,95 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:21:09.13-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When I click to vote on a poll, I get this error:\n \nUnable to cast object of type 'System.Web.UI.LiteralControl' to type 'System.Web.UI.WebControls.RadioButtonList'\n \nSource File: c:\\hosting\\webhost4life\\member\\pack934\\App_Code\\PollControl.vb    Line: 203 \n \nAny ideas?",
+    "LastUpdatedDate": "2013-05-15T23:46:45.07-07:00",
+    "PlannedForRelease": "v2 RC1",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:21:04.943-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Poll error",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 822
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "And the fix:\r\n\r\nReplace the SubmitButton_Click Sub with the following:\r\n\r\n        Protected Sub SubmitButton_Click(ByVal sender As Object, ByVal e As EventArgs)            'Iterate throught the controls to find the RadioButtonList            GetRadioList()        End Sub\r\n\r\nAnd add this new subroutine\r\n\r\n        Private Sub GetRadioList()            For Each c As Control In Me.Controls                If c.GetType.ToString.Equals(\"'System.Web.UI.WebControls.RadioButtonList\") Then                    Poll.Vote(Question.PollId, New Guid((CType(c, RadioButtonList)).SelectedValue), New Guid(Membership.GetUser().ProviderUserKey.ToString()))\r\n\r\n                    Me.Controls.Clear()                    LoadAnswers()                    CreateControls()                End If            Next        End Sub",
+      "PostedDate": "2007-04-25T14:21:05.55-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Nice work.",
+      "PostedDate": "2007-04-25T14:21:05.927-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Shoot... it doesn't work. When you submit it doesn't change back to the poll view... it keeps the radio buttons.",
+      "PostedDate": "2007-04-25T14:21:06.287-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "That doesn't make much sense, since all I did was change it to make is search for the radiobuttonlist rather than assuming it was control(5)",
+      "PostedDate": "2007-04-25T14:21:06.66-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Should we try reinstalling?",
+      "PostedDate": "2007-04-25T14:21:07.05-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Let me see about getting it changed over to a usercontrol first.  I should have something for you to put in source this weekend.\r\n\r\nWhen are you freezing the source from additions, and just doing bug fixes?",
+      "PostedDate": "2007-04-25T14:21:07.41-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "No, I would just like the code that goes in by Sat. to be the Beta 2 code so our C# friends can get that version at the same time as the VB version... but I guess we could go right up until Wed. and just have the C# code ready when its ready.",
+      "PostedDate": "2007-04-25T14:21:07.88-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I made the executive decision and commented out the poll control so that it doesn't come out-of-the box in Beta 2.",
+      "PostedDate": "2007-04-25T14:21:08.27-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:21:09.13-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:31.093-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:45.07-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:16:18.52-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Since the Files folder for FCKeditor is in the Root shouldn't the <add key> look like this?  \n \n  <add key=\"FCKeditor:UserFilesPath\" value=\"/Files/\"/>\n \ninstead of:\n \n  <add key=\"FCKeditor:UserFilesPath\" value=\"~/Files/\"/>",
+    "LastUpdatedDate": "2013-05-15T23:46:48.043-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:16:15.787-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Web.config",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 661
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "That is the way it says to add it per the documentation.  ",
+      "PostedDate": "2007-04-25T14:16:16.49-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Yep, but for the kit should we not follow the documentation, hence placing the Files folder out of root?Since FCK is integrated in the builds, should we not adapt it(leaving tilde out) so it works out of the box.He, I could well be jumping to incorrect statements here. Yesterday I didn't even know what the ~ did. haha.\r\n\r\nLex",
+      "PostedDate": "2007-04-25T14:16:16.927-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I will try it out",
+      "PostedDate": "2007-04-25T14:16:17.287-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "it doesn't really matter b/c on every page with the FCKEditor, I put this code in the page_load\r\n\r\nSession(\"FCKeditor:UserFilesPath\") = Request.ApplicationPath.ToString & \"Files/\"",
+      "PostedDate": "2007-04-25T14:16:17.693-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:16:18.52-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:34.32-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:48.043-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

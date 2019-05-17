@@ -1,0 +1,66 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-05-21T03:37:14.143-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "You are not able to use a WYSIWYG editor with version 2.0 of the Club Starter Kit.\nAny idea how a CSS reference and or theme reference could be added to fix this?\n \nMy web designers found this issue when I passed it to them with version 2.0 release.\nTested in Visual Web Developer & Expression Web.\n \nThis is a show stopper for my team and help would be much appreciated.\nSee the attached file for review.",
+    "LastUpdatedDate": "2013-05-15T23:46:36.81-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-05-20T21:25:05.137-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "You are not able to use a WYSIWYG editor with version 2.0",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2309
+  },
+  "FileAttachments": [
+    {
+      "FileId": 196,
+      "FileName": "WYSIWYG.zip",
+      "DownloadUrl": ".\\196"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "WHAT ARE YOU TALKING ABOUT!!!!!!! WE HAVE FCKEDITOR!!!!! ",
+      "PostedDate": "2007-05-21T03:29:04.353-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-21T03:37:14.143-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:20.437-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:36.81-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

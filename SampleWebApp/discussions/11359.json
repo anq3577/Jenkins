@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "36800",
+    "ThreadId": "11359",
+    "Html": "\r\nThe Contact Details step is missing a validation summary. It appears that even after I added one, the CreateUserFinished routine is being hit without validation occuring. <br /><br />Any ideas?<br />",
+    "PostedDate": "2007-06-13T12:46:53.993-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36810",
+    "ThreadId": "11359",
+    "Html": "\r\nThis discussion has been copied to a work item. Click here to <a href=\"http://www.codeplex.com/ClubStarterKit/WorkItem/View.aspx?WorkItemId=2482\">go to the work item and continue the discussion</a>.<br />",
+    "PostedDate": "2007-06-13T13:46:08.377-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36934",
+    "ThreadId": "11359",
+    "Html": "\r\nI rewrote it to fix the validation and do the contact info in one step. I added fields to break out the address properly so you'll need to do some table changes first. I also added more validation. I had some other fields I needed in there - I think I stripped them all out. It will need a little additional formatting.  <br /><br />I put the code in the issue thread, for anyone interested. <br />",
+    "PostedDate": "2007-06-14T10:45:20.267-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37741",
+    "ThreadId": "11359",
+    "Html": "\r\nI just went ahead and rewrote the member/register.aspx page so that everyone is happy: it has validation, only 1 form to fill out, and no wizard control!<br />",
+    "PostedDate": "2007-06-20T22:10:04.46-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

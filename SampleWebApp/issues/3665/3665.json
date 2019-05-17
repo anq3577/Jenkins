@@ -1,0 +1,80 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-10-17T15:55:16.02-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi All,\n \n I get the foolowing error while trying to printcalendar.aspx in beta 3.1\n \nServer Error in '/' Application.\n--------------------------------------------------------------------------------\n \nUsing themed css files requires a header control on the page. (e.g. <head runat=\"server\" />). \nDescription: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. \n \nException Details: System.InvalidOperationException: Using themed css files requires a header control on the page. (e.g. <head runat=\"server\" />).\n \nSource Error: \n \nAn unhandled exception was generated during the execution of the current web request. Information regarding the origin and location of the exception can be identified using the exception stack trace below.  \n \nStack Trace: \n \n \n[InvalidOperationException: Using themed css files requires a header control on the page. (e.g. <head runat=\"server\" />).]\n   System.Web.UI.PageTheme.SetStyleSheet() +1995718\n   System.Web.UI.Page.OnInit(EventArgs e) +2057552\n   System.Web.UI.Control.InitRecursive(Control namingContainer) +321\n   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +692\n \n \nAnyone experiencing the same issue?",
+    "LastUpdatedDate": "2013-05-15T23:46:28.41-07:00",
+    "PlannedForRelease": "Version 3 Beta 1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-10-06T06:04:16.087-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "PrintCalendar.aspx",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 3665
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Yea... I know about that.\r\n\r\nAt the top where it says <@Page.... put in EnableThemes=False\r\n\r\n(maybe with quotations)\r\n\r\nThat should fix it.",
+      "PostedDate": "2007-10-06T09:56:36.957-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-10-06T09:56:43.457-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-10-16T09:53:32.197-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Resolved with changeset 6490.",
+      "PostedDate": "2007-10-17T15:55:16.02-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I tried your EnableThemes=False fix and it didn't work.  What did I miss?  I tried EnableThemes=\"False\" and \"EnableThemes=False\"  I could get a good build. What file requires the <head runat=\"server\" /> ?  and where should it be placed?",
+      "PostedDate": "2007-11-18T20:26:14.32-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-12-07T22:52:23.613-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:09.73-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:28.41-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

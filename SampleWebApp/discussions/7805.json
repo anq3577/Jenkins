@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "25505",
+    "ThreadId": "7805",
+    "Html": "\r\nI have uploaded the C# version in the ~/CSK-CS.zip. Any fixing would be really a great contribution to the project. If you make some changes, reatach the ZIP file into an issue and I will promptly upload it to TFS.<br /><br />Thanks Everyone!<br /><br />Zack<br />",
+    "PostedDate": "2007-03-03T16:29:27.403-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25727",
+    "ThreadId": "7805",
+    "Html": "\r\nwoops, I think I might have deleted it, please can you check that it is available.<br />",
+    "PostedDate": "2007-03-06T05:00:21.773-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25802",
+    "ThreadId": "7805",
+    "Html": "\r\nStill there.<br /><br />No one has fixed the errors!!!! I can't release the C# version until it at least runs!<br /><br />Sorry C# guys, we need more time!<br />",
+    "PostedDate": "2007-03-06T12:15:17.513-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25907",
+    "ThreadId": "7805",
+    "Html": "\r\nI have created a seperate project file within the solution for C# code   called \"Club Start Kit C\"<br /><br />This way we can all work on the C# version<br />",
+    "PostedDate": "2007-03-07T06:25:59.9-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

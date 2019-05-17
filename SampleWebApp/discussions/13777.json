@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "44909",
+    "ThreadId": "13777",
+    "Html": "\r\nIn version 2, web.config, appsettings, one could input club name, address, etc. where in V3 is this handled? <br /><br />Also which css controls font size for the body font. I changed the size in stlesheet.css at the top under body and this did not change the size. <br /><br />Thank you.<br />",
+    "PostedDate": "2007-08-14T05:27:05.507-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44953",
+    "ThreadId": "13777",
+    "Html": "\r\nThe app settings are in the database.<br /><br />The css needs to be changed in the theme CSS files.<br />",
+    "PostedDate": "2007-08-14T08:48:02.527-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

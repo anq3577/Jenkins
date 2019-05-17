@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Comming atraction....",
+    "ClosedDate": "2007-04-25T14:14:29.38-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I'm new to VB and to CodePlex and am trying to review the documentation on http://www.codeplex.com/ClubStarterKit and there is none. I also get and error when trying to view the link http://club.eagleenvision.net/ .",
+    "LastUpdatedDate": "2013-05-15T23:46:49.397-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T06:44:43.75-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Documentation missing",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 308
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Yea... we're working on it :)",
+      "PostedDate": "2007-04-25T14:14:15.537-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:14:29.38-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:35.913-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:49.397-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

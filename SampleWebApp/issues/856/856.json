@@ -1,0 +1,90 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:22:15.177-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I had a request from one of the admins of my live site to add the ability to add documents to an event.  I don't think this will be too difficult, just adapting the existing code from the send event email page.\n \nSo I am going to assign this to myself (have to have something to work on)",
+    "LastUpdatedDate": "2013-05-15T23:46:44.36-07:00",
+    "PlannedForRelease": "v2 Beta 2",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:22:11.397-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Adding documents to an event",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 3,
+    "Id": 856
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Have you started this yet? If not, I can take it on... I just got an idea on some features.",
+      "PostedDate": "2007-04-25T14:22:12.003-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I haven't started yet.  \r\n\r\nThis probably will not be something that I can put off for long though, as it has been requested that I implement this on my published site.",
+      "PostedDate": "2007-04-25T14:22:12.427-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I will start this and try to get it into Beta 2.",
+      "PostedDate": "2007-04-25T14:22:12.8-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Can we extend it so news items can have documents attached too.\r\n\r\nAre we going to restrict this to a list of document types, e.g.  .doc, .pdf etc?\r\n\r\nShould we be storing the documents in the database?",
+      "PostedDate": "2007-04-25T14:22:13.177-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Can we extend it so news items can have documents attached too.\r\n\r\nAre we going to restrict this to a list of document types, e.g.  .doc, .pdf etc?\r\n\r\nShould we be storing the documents in the database?",
+      "PostedDate": "2007-04-25T14:22:13.537-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Please do not store the documents in the database.  I have a lot more web space than I do database space.  My preference would be to store the documents in \\Files\\, and just have the document name in the database, along with the event/news item it pertains to.\r\n\r\nI think that attaching documents to news would be easy, but I am trying to think of a reason why it would be needed, unless you are attaching a press release?\r\n\r\nAs for document type, I don't believe that we would need to have any restrictions.  Since administrators are the only ones that can edit events, they are the only ones that can add attachments.\r\n\r\nI took a quick look at how hard this would be last night.  Since the event edit page uses a formview, there are a limited # of events to wire into.  Especially for a new event.  I haven't found where you can get the event id # for a new event inserted into the database.  Since I was thinking of having an EventsDocuments table with 3 columns (id identity field, event id, and filename), I would need to have the event id for the new event before I could add it into the database.\r\n\r\nAdding documents to an event being edited is a lot easier, since the event id is in the query string.",
+      "PostedDate": "2007-04-25T14:22:13.973-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "We don't have to use the Event/edit page... we can branch it off since we can have the ability to add it to events too. (id identity field, event id, news id, and filename) Also, it would be best if we kept the docs out of the DB to save server time as well... it can load faster through HTTP than SQL can spit out a file.",
+      "PostedDate": "2007-04-25T14:22:14.35-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:22:15.177-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:29.823-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:44.36-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

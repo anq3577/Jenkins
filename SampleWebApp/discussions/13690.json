@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "44628",
+    "ThreadId": "13690",
+    "Html": "\r\nIs there a way to show which files have changed in each build that fixes a specific bug? Maybe I just don't understand how to use the builds ... If that is the case, are there instructions?<br /><br />However, it would be greatly helpful to know what files I have to add to my site to fix a bug (or even what code or if I have to regenerate the DB). Thanks!<br />",
+    "PostedDate": "2007-08-11T15:56:00.157-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44636",
+    "ThreadId": "13690",
+    "Html": "\r\nThat's really hard to tell. There can be more than 40 files that change at one time. The best way to do this is once the SvnBridge project is production-ready, I would hook it up to the ClubSK project and then you will be able to do an \"Update To Revision\". They you will be able to see a list of updated files.<br />",
+    "PostedDate": "2007-08-11T20:37:59.22-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44671",
+    "ThreadId": "13690",
+    "Html": "<br />If there are only a few files affected, would it be possible to note them? As a user/web master, the builds are not particularly helpful to me (it takes me 3 - 4 days to change everything to the MHRRC version of the site). <br />While I imagine some bugs may have far-reaching effects in many files, I would imagine that others are just a few lines of code or a few files.<br /><br />I don't know about the SvnBridge project ... do you have an approximate time frame?<br /><br />Maybe I am not understanding the purpose of the starter kit: 1) to be used as is with few modifications or 2) to highlight new technologies or 3) to be used the way I use it, as a starting place to build on. If it is (3), I need a reasonable way to fix bugs.<br /><br />This in no way detracts from the work you are doing. I see version 3 as a great improvement over version 2 (even though I am not using the polling or the league tracking).<br />",
+    "PostedDate": "2007-08-12T11:11:29.127-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,100 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "1. Open Album containing photo you want to edit.\n2. Select Thumnail photo from left side. \n3. With photo selected, hit the Edit Photo Button.\n4. The Photo that is brought up for Editing is the first photo in the Album and NOT the photo that was selected you intended to edit when selecting Edit. You have to hit Next> button to get back to the photo in the album you want to edit.",
+    "LastUpdatedDate": "2013-02-13T19:37:05.163-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2008-07-24T06:32:42.84-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Unable to edit currently selected Photo selected in Album",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 7071
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Yes, I'm able to reproduce the issue.\r\nIt looks like it belongs to the SelectImage_Selecting method, which gets called in the moment you hit the edit button.\r\n(photo/Contents.aspx, line 70)\r\nAnd the LoadImage function (image location not in database)\r\n(App_Code/BLL/Photos.vb, line 31)\r\n\r\nDo you have the same behavior if you store the images of a new created album in the database?",
+      "PostedDate": "2008-08-02T05:09:40.99-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-08-02T05:09:45.883-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Thoze - my site is set to store on the filesystem. Is there a way to switch back and fourth? I thought there was but saw nothing under Site Settings without setting up another instance of the app?  Is there a way to resolve the issue for situations where the image is not being stored in the database? Thanks for verifying the bug exists!",
+      "PostedDate": "2008-08-03T06:10:34-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "There is a parameter in the AppSettings-Section in web.config named StoreImagesOnFile. Set the value to false.\r\nThen create a new album and fill it with some pics.\r\nTry the steps from your description again and let's see whether the behaviour is the same or hopefully not  ;-)",
+      "PostedDate": "2008-08-04T01:13:45.213-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Thoze - I can't change this setting without it blowing up my site in regards to the photos currently on there. When I change this setting, any article, album, etc goes empty.  Is there a way for somebody else to test this? I will say that I don't have enough hosted database space to save the file objects. I need to be able to save them on the file system. ",
+      "PostedDate": "2008-08-05T10:37:29.067-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "tt",
+      "PostedDate": "2008-08-11T23:39:20.143-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "  What needs to happen is instead of this line 'Dim pages As Integer = ClubStarterKit.Web.Photos.NumPages(CInt(Request(\"albumid\")))'\r\nLocated in the SelectImage_Selecting procedure we need to update the image. But when I ad the needed args they are not accepted since I don't know the correct syntax. Please help!\r\n Protected Sub SelectImage_Selecting(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.ObjectDataSourceSelectingEventArgs)\r\n        Dim pages As Integer = ClubStarterKit.Web.Photos.UpdateImage(FormView2.TextBox2.Text, thumb1.text, TextBox3.text)\r\n        pn.Count = pages\r\n    End Sub",
+      "PostedDate": "2008-08-11T23:43:35.393-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I believe UpdateImage is looking for ByVal title As String, ByVal notes As String, ByVal id As Integer. I modified mine to include \"notes\" I believe, because I wanted to have the ability to add Notes when the photo is first uploaded.\r\n\r\nLet me know if this works, Rick",
+      "PostedDate": "2008-08-21T09:39:14.34-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "rickdg - I tried your last idea, but ClubStarterKit.Web.Photos.UpdateImage(...) does not return any value, because it isn't a function.\r\nBut to answer your question about the arguments, the correct call is:\r\n\r\nDim UControl As ImageThumbnail = CType(LoadControl(\"~/UserControls/ImageThumbnail.ascx\"), ImageThumbnail)\r\nClubStarterKit.Web.Photos.UpdateImage(CType(FormView2.FindControl(\"TextBox2\"), TextBox).Text, CType(FormView2.FindControl(\"TextBox3\"), TextBox).Text, CType(FormView2.FindControl(\"thumb1\"), ImageThumbnail).PhotoID)",
+      "PostedDate": "2008-08-25T05:06:38.85-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Anybody come up with a solution for this issue? I'm still drawing a blank! \r\n",
+      "PostedDate": "2008-08-31T13:24:10.21-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Anybody come up with a way to resolve this one yet?",
+      "PostedDate": "2008-11-27T19:25:14.293-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:05.163-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

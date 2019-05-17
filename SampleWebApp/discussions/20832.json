@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "69291",
+    "ThreadId": "20832",
+    "Html": "\r\nI installed the CSK 2.0 final source, so far everything is working fine however I CANNOT DELETE single photos although I can delete any album.<br /><br />I'm really new on this type of web project so if anyone can give me an advise what I need to add/remove (please include the codes and which line I need to add/remove) from the PHOTO codes in order to make the DELETE Photo button to work. Greatly appreciate anyones advise.<br /><br />Noel<br />",
+    "PostedDate": "2008-01-22T06:27:31.667-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "935535",
+    "ThreadId": "20832",
+    "Html": "<p>I am having the same problem with the delete photo button not working has anyone got this to work?</p>",
+    "PostedDate": "2012-11-01T20:25:56.713-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

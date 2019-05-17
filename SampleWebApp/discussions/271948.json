@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "669201",
+    "ThreadId": "271948",
+    "Html": "<p>Hi Everyone,</p>\n<p>I have got this project working and running on my local machine, but when I publish it to hosting I get a strange output of symbols and random text.</p>\n<p>I think it maybe because the project runs but no index file is within the root of the ClubStarterKit.Web, also the database has not been created yet, but was expected to see an ASP.NET error, is there a workaround to effectively create an Default Index within root ?</p>\n<p>Any help would be much appreciated, thanks in advance.</p>",
+    "PostedDate": "2011-09-08T09:45:14.303-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "669922",
+    "ThreadId": "271948",
+    "Html": "<p>Problem Solved!!</p>\r\n<p>For anyone else with this issue:<br />This article from <a href=\"http://www.west-wind.com/weblog/posts/2011/May/02/ASPNET-GZip-Encoding-Caveats\">Rick Strahl's Web Log</a> helped.  <br />After using the info from Rick's article, the problem was found to be an incorrect database connection string.</p>\r\n<p>Great Kit here, I am aware it's not active but I am still new to this style of MVC project. I will still be trying to find out more about how it works.</p>\r\n<p>Much thanks goes to Zack Owens and the sponsor <a class=\"externalLink\" href=\"http://www.eagleenvision.net/\">eagleenvision.net</a> for making this available, I am truely grateful.</p>",
+    "PostedDate": "2011-09-09T15:14:25.637-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

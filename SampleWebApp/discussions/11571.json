@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "37562",
+    "ThreadId": "11571",
+    "Html": "\r\nGuys, sorry if this is dumb question: how do I change the username from 'admin' to something else?  The password is easy but the username - can't figure out...<br />Tried to go to the ASP.Net Configuration tool but get the following error:<br /><br />An error was encountered. Please return to the previous page and try again. <br />The following message may help in diagnosing the problem: System.ArgumentException: The parameter 'PhysicalDirectory' is invalid. Parameter name: PhysicalDirectory at System.Web.Configuration.VirtualDirectoryMapping.set_PhysicalDirectory(String value) at System.Web.Configuration.VirtualDirectoryMapping..ctor(String physicalDirectory, Boolean isAppRoot) at System.Web.Administration.WebAdminPage.OpenWebConfiguration(String path, String appPhysPath, Boolean getWebConfigForSubDir) at System.Web.Administration.WebAdminPage.OpenWebConfiguration(String path, Boolean getWebConfigForSubDir) at System.Web.Administration.WebAdminPage.VerifyAppValid() <br /><br />Would very much appreciate your help!  Trying to update our rowing club's page with this great tool kit...<br /><br />Thank you,<br /><br />Delik<br />",
+    "PostedDate": "2007-06-19T18:46:20.223-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37566",
+    "ThreadId": "11571",
+    "Html": "\r\nCan you just create a new user using the CSK site and just assign yourself a new role?<br />",
+    "PostedDate": "2007-06-19T19:37:04.627-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37662",
+    "ThreadId": "11571",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Can you just create a new user using the CSK site and just assign yourself a new role?<br /><br /></div><br />z2bass, thanks a lot! Everything powerful is truly very simple. :)<br />",
+    "PostedDate": "2007-06-20T09:55:50.25-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37721",
+    "ThreadId": "11571",
+    "Html": "\r\nGlad to help.<br />",
+    "PostedDate": "2007-06-20T17:35:04.277-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

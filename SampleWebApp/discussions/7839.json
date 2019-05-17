@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "25621",
+    "ThreadId": "7839",
+    "Html": "\r\nHi I'm New to CodePlex and I have just downloaded the Beta1 Club Starter Kit.  I thought it would load like the Microsoft Clubsite Starter Kit when I selected a new project.  Can  anyone advise me as to what steps I need to do to set up the site and make it work with VS 2005 using SQL 2005 or SQL 2000 standard not express?<br /><br /><br />Thanks,<br />",
+    "PostedDate": "2007-03-05T10:40:02.133-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25654",
+    "ThreadId": "7839",
+    "Html": "\r\nI would wait until Wednesday when we release Beta 2 with the SQL Scripts. We will probably not get the VS plugin until the official 2.0 release.<br /><br />Thanks<br />Zack<br />",
+    "PostedDate": "2007-03-05T14:10:56.203-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25966",
+    "ThreadId": "7839",
+    "Html": "\r\nDo the SQL Script files need to be uploaded in sequence? Srcipt1..Script2..etc?<br /><br />My GoDaddy account just does not like to cooperate when it comes to Uploading the SQL script using their Web Tool...<br />BTW it is an EMPTY DB..no tables, Sproc, etc...<br />It gives me error: Script1<br /><br />Invalid object name 'sys.foreign_keys'.<br /><br />?????<br /><br />Thanks<br />Mike<br />",
+    "PostedDate": "2007-03-07T14:19:49.03-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25974",
+    "ThreadId": "7839",
+    "Html": "\r\nHmmmm.... I can put up a new version. Sorry about this, I totally expected the SQL scripts to run correctly. The correct scripts are on the release page.<br />",
+    "PostedDate": "2007-03-07T15:14:30.697-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25976",
+    "ThreadId": "7839",
+    "Html": "\r\nAnd you'll need to do schema.sql first then data.sql.<br />",
+    "PostedDate": "2007-03-07T15:29:26.263-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

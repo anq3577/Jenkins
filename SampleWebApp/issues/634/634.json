@@ -1,0 +1,80 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:15:16.24-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I am getting a Microsoft JScript runtime error: 'length' is null or not an object whenever I navigate to the edit page for events.  The only way I can make this go away is to comment out the FCK Editor.\n \nThe part that is throwing the error is in FCKeditor/editor/js/fckeditorcode_ie.js:\n \nString.prototype.ReplaceAll=function(A,B){\n    var C=this;\n    for (var i=0;i<A.length;i++){\n        C=C.replace(A[i],B[i]);\n    };\n    return C;\n};\n \nI expanded this to make it more readable.  I don't know why it is calling ReplaceAll when I clicked Add New Event.",
+    "LastUpdatedDate": "2013-05-15T23:46:49.12-07:00",
+    "PlannedForRelease": "v2 Beta 2",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:15:13.067-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Runtime error in Event\\Edit.aspx",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 634
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Here is a screen capture showing you what I mean.",
+      "PostedDate": "2007-04-25T14:15:13.787-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "So it does work... only when the lines are commented out?",
+      "PostedDate": "2007-04-25T14:15:14.21-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Okay, some more information for you.  Apparently, it is a problem in IE7, but the FCKeditor test page that I made opens fine in FF2.  \r\n\r\nNext is to try and track down if it is the .Net component or the editor itself.",
+      "PostedDate": "2007-04-25T14:15:14.66-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I am marking this as fixed.  The problem was with IE7 and Windows Live OneCare (my anti-virus/firewall/etc).  The box that needs to be unchecked is shown on the attached pic.",
+      "PostedDate": "2007-04-25T14:15:15.037-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I see... and Javascript aparently is virus-like. Glad you brought this to my attention. I too am running windows live onecare. (BTW... mispellings are fixed)\r\n\r\nI will send an email to the FCK guys.",
+      "PostedDate": "2007-04-25T14:15:15.41-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:15:16.24-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:35.613-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:49.12-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

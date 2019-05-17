@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "265175",
+    "ThreadId": "77554",
+    "Html": "<p>Grab it while it's hot! We're picking CSK development back up. Join in the new community!</p>",
+    "PostedDate": "2009-12-08T22:08:30.147-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "269328",
+    "ThreadId": "77554",
+    "Html": "<p>Looks good.&nbsp; I'm having trouble with the Admin code however.</p>\r\n<p>&nbsp;</p>\r\n<p>var role = scope.UnitOfWork.RepositoryFor&lt;ClubStarterKit.Domain.User&gt;()<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .First(r =&gt; r.RoleName == Constants.AdminRole);</p>\r\n<p>&nbsp;</p>\r\n<p>gives an error:</p>\r\n<p>Error&nbsp;&nbsp; &nbsp;2&nbsp;&nbsp; &nbsp;'ClubStarterKit.Domain.User' does not contain a definition for 'RoleName' and no extension method 'RoleName' accepting a first argument of type 'ClubStarterKit.Domain.User' could be found (are you missing a using directive or an assembly reference?)&nbsp;&nbsp; &nbsp;C:\\Development\\DotNetLib\\ClubStarterKit\\ClubStarterKit.Web\\Global.asax.cs&nbsp;&nbsp; &nbsp;59&nbsp;&nbsp; &nbsp;58&nbsp;&nbsp; &nbsp;ClubStarterKit.Web</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-12-19T17:56:46.46-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "269334",
+    "ThreadId": "77554",
+    "Html": "<p>Was this copied from the install docs? Looks like a typo. Should be RepositoryFor&lt;ClubStarterKit.Domain.Role&gt;</p>\r\n<p>var role = scope.UnitOfWork.RepositoryFor&lt;ClubStarterKit.Domain.Role&gt;().First(r =&gt; r.RoleName == Constants.AdminRole);</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-12-19T18:26:07.847-08:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "Id": "38261",
+    "ThreadId": "11793",
+    "Html": "\r\nHello.<br /><br />I have the Club Starter Kit 2.0 running on discountASP.NET.  I tried other isp's, but DASP was the only isp that i had zero problems with when installing the CSK.<br /><br />I tested sending email from the website and get an error which is at the end of this post.  I think it's because the email settings are not correct in the web.config.  I need to know what to put in these sections:<br />&lt;appSettings&gt;<br />&lt;add key=\"ClubName\" value=\"The Girgenti Web Site\" /&gt;<br />&lt;add key=\"ClubSlogan\" value=\"The Web Site of the Girgenti Family From Camden, NJ\" /&gt;<br />&lt;add key=\"ClubAddress\" value=\"606 Lakeside Park, Southampton, PA 18966-4000\" /&gt;<br />&lt;add key=\"ClubCopyright\" value=\"Copyright 2007 The Girgenti Web Site. All Rights Reserved.\" /&gt;<br />&lt;add key=\"ClubURL\" value=\"http://www.girgenti.info/\" /&gt;<br />&lt;add key=\"ClubMailServer\" value=\"mail.club.com\" /&gt;<br />&lt;add key=\"ClubMailUsername\" value=\"admin@club.com\" /&gt;<br />&lt;add key=\"ClubMailPassword\" value=\"password\" /&gt;<br />&lt;add key=\"ReportContentUpdate\" value=\"false\" /&gt;<br />&lt;add key=\"WebMaster\" value=\"webmaster@clubsite.com\" /&gt;<br />&lt;add key=\"FCKeditor:UserFilesPath\" value=\"~/Files/\"/&gt;<br />&lt;add key=\"FCKeditor:BasePath\" value=\"~/FCKeditor/editor\"/&gt;<br />&lt;/appSettings&gt;<br /><br />&lt;system.net&gt;<br />&lt;mailSettings&gt;<br />&lt;smtp from=\"club@club.com\"&gt;<br />&lt;network host=\"localhost\" port=\"25\" password=\"clubpassword\" userName=\"club@club.com\" /&gt;<br />&lt;/smtp&gt;<br />&lt;/mailSettings&gt;<br />&lt;/system.net&gt;<br /><br /><br />Do i need to sign up for an email account on DASP?<br /><br />Any help would be gratefully appreciated.<br /><br />Thanks,<br />Tony<br /><br />Server Error in '/GirgentiWebSite' Application.<br />--------------------------------------------------------------------------------<br />A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br />Exception Details: System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond<br />Source Error: <br /><br />Line 76:         smtp.UseDefaultCredentials = False<br />Line 77:         smtp.Credentials = a<br />Line 78:         smtp.Send(msgMail)<br />Line 79:         Response.Redirect(\"~/default.aspx\")<br />Line 80:     End Sub<br /><br />Source File: C:\\Documents and Settings\\Administrator.TONYDELL\\My Documents\\Visual Studio 2005\\WebSites\\GirgentiWebSite\\Admin\\Email.aspx.vb    Line: 78 <br />",
+    "PostedDate": "2007-06-25T13:34:52.147-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38298",
+    "ThreadId": "11793",
+    "Html": "\r\nYea... you need an email account from somewhere. It won't send without a valid SMTP server.<br />",
+    "PostedDate": "2007-06-25T16:10:19.963-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38308",
+    "ThreadId": "11793",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Yea... you need an email account from somewhere. It won't send without a valid SMTP server.<br /><br /></div><br />&gt;&gt;you need an email account from somewhere&lt;&lt;<br /><br />So, does the email account have to be from the SMTP server?<br /><br /><br />&gt;&gt; It won't send without a valid SMTP server&lt;&lt;<br /><br />According to discountASP.NET, 'network host=\"localhost\"' is what should be there if i am using their server.  Is 'network host' considered the SMTP server?<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-25T17:08:15.607-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38328",
+    "ThreadId": "11793",
+    "Html": "\r\nI would just in the SMTP server address... it is probably better that way.<br /><br />You need to be authenticated, which means you need an email address and password with them.<br />",
+    "PostedDate": "2007-06-25T19:30:17.233-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38433",
+    "ThreadId": "11793",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />I would just in the SMTP server address... it is probably better that way.<br /><br />You need to be authenticated, which means you need an email address and password with them.<br /><br /></div><br />Hello again.  I don't know your first name or i would address you as such.  Thanks for all of your replies.<br /><br />I'm not sure of what you mean by your reply.  Are you saying that i should get the ip address of their SMTP server and plug that into 'network host ='?<br /><br />I will set up an email address with DASP and see if that changes things.<br /><br />Thanks again.<br /><br />Tony<br />",
+    "PostedDate": "2007-06-26T08:52:11.71-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38437",
+    "ThreadId": "11793",
+    "Html": "\r\nWell, your SMTP address should be something like mail.something.com. Hosters usually give that information in their documentation. Sometimes it is under \"setup outlook\".<br /><br />Then you will need to setup an email with your hoster.<br /><br />Thanks,<br />Zack <br />",
+    "PostedDate": "2007-06-26T09:04:19.093-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38439",
+    "ThreadId": "11793",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Well, your SMTP address should be something like mail.something.com. Hosters usually give that information in their documentation. Sometimes it is under \"setup outlook\".<br /><br />Then you will need to setup an email with your hoster.<br /><br />Thanks,<br />Zack <br /><br /></div><br />Hello Zack.<br /><br />I will contact DASP again.  I was already told by their tech support that the SMTP setting should be \"&lt;network host=\"localhost\" port=\"25\" .  I've also seen that information posted in many of their forum messages, but i will ask them again.<br /><br />I have already tried setting up a new email address with DASP and tried another test at my website to send out an email.  It still gives the same error.  I even tried it on two different computers.<br /><br />Thank,<br />Tony<br />",
+    "PostedDate": "2007-06-26T09:24:35.4-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38528",
+    "ThreadId": "11793",
+    "Html": "\r\nThat just doesn't seem right. Usually hosters give you an absolute SMTP URL and not \"localhost\". Tell them you want to setup your new email account with outlook and see what the say. I know that requires an absolute SMTP URL.<br />",
+    "PostedDate": "2007-06-26T17:24:20.243-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38612",
+    "ThreadId": "11793",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />That just doesn't seem right. Usually hosters give you an absolute SMTP URL and not \"localhost\". Tell them you want to setup your new email account with outlook and see what the say. I know that requires an absolute SMTP URL.<br /><br /></div><br />Hello Zack.<br /><br />As i explained in my other post, it was the other email settings.<br /><br />Although,  \"&lt;network host=\"localhost\" port=\"25\" \" is the correct setting for discountAsp.net.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-27T05:07:18.367-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38914",
+    "ThreadId": "11793",
+    "Html": "\r\nBut what SMTP adress do they give if you want to use Outlook?<br />",
+    "PostedDate": "2007-06-28T20:49:14.167-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39053",
+    "ThreadId": "11793",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />But what SMTP adress do they give if you want to use Outlook?<br /><br /></div><br />Zack.<br /><br />According to their documentstion: http://kb.discountasp.net/article.aspx?id=10396, For me in Outlook XP, this would be \"smtp.girgenti.info\".<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-29T18:30:28.857-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39070",
+    "ThreadId": "11793",
+    "Html": "\r\nAlas. That's what you should probably use in your web.config.<br />",
+    "PostedDate": "2007-06-30T02:34:25.21-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39077",
+    "ThreadId": "11793",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Alas. That's what you should probably use in your web.config.<br /><br /></div><br />But Zack.  My web site email is working now with \"localhost\" in it.<br /><br />Would there be a particular reason to change it?<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-30T06:00:44.763-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39114",
+    "ThreadId": "11793",
+    "Html": "\r\nThe only reason I would change it is for testing purposes.  What I mean is that even when I am running the project on my dev machine, the web.config has the smtp settings for the host account.  Then when I send emails from my local machine, I can tell that it is working because it is using the host server.<br />",
+    "PostedDate": "2007-06-30T18:02:29.51-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

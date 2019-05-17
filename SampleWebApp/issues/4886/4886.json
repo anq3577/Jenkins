@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2008-03-18T17:24:20.45-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "ISSUE:\nWhen unlimited (i.e. TotalAttendance==-1) the Number of attendees available math did not work. If I put in 3 attendees for my user then the web page would say -4 more attendees can join\n \nBUG:\nNo code to handle when TotalAttendance==Unlimited\n \nSolution:\nIn the Events/View.aspx file in the subroutine ShowRSVP()\n \nI changed lines 90-91 that was:\n \n\tMaxAddToRSVP = total - current\n\tRSVPTTLStatus.Text = \"There are <strong>\" & MaxAddToRSVP.ToString() & \"</strong> more attendees permitted to attend.\"\n \nTo:\n \nif total = -1 then\n\tRSVPTTLStatus.Text = \"Unlimited!! Join the fun\"\nElse \n\tMaxAddToRSVP = total - current\n\tRSVPTTLStatus.Text = \"There are <strong>\" & MaxAddToRSVP.ToString() & \"</strong> more attendees permitted to attend.\"\nEnd if",
+    "LastUpdatedDate": "2013-05-15T23:46:26.783-07:00",
+    "PlannedForRelease": "ClubStarterKit v3 Beta 2",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-12-20T21:32:49.837-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Unlimited Attendees RSVP Issue",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 4886
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 10391.",
+      "PostedDate": "2008-03-18T17:24:20.45-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:08.03-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:26.783-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

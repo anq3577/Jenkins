@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "60608",
+    "ThreadId": "18528",
+    "Html": "\r\nIs there any updated date for the release of version 3 of the club starter kit? I would hope v3 would include fixes on the bugs in v3 beta 1. The additional features and functions (like the photo album) would be gravy.<br /><br />Also, has anyone added a shopping cart to the club starter kit? If so, what shopping cart app seemed to work the simplest and easiest? What were the pitfalls? Where did you get help/support?<br /><br />Thanks in advance for your response(s).<br />",
+    "PostedDate": "2007-11-30T07:48:00.157-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "60687",
+    "ThreadId": "18528",
+    "Html": "\r\nI don't like the idea of ClubStarterKit being a shopping cart app. I guess I can consider coding it out.<br /><br />I think I have decided to do some serious recoding of the ClubStarterKit. Right now, it's not in great shape at all. It might take a while, though. So we will release when we can.<br /><br />(Oh and SubSonic Migrations are soon... so we will start when Migrations are officially put out!)<br />",
+    "PostedDate": "2007-11-30T19:57:41.453-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "60703",
+    "ThreadId": "18528",
+    "Html": "\r\nI merged the v3Beta with the Classifieds kit and I think I worked out all the bugs in v3 and it's running under Medium Trust.  <br /><br />Check it out at <a href=\"http://www.Zebu-Cattle-for-Sale.info\" class=\"externalLink\">http://www.Zebu-Cattle-for-Sale.info<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a>. <br />",
+    "PostedDate": "2007-12-01T02:01:27.873-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "60712",
+    "ThreadId": "18528",
+    "Html": "\r\nI didn't necessarily mean the club starter kit with a shopping kit should be coded by you. In fact, it would be much more helpful just to have a release of the club starter kit that has less bugs than the current release v3 beta 1 (if you are thinking how to allocate your resources). It is always helpful to know your development plans and dates because I have to decide if I should wait for the next release or fix the bugs in the current release ... The last time I asked, the next release date was end of November and I made my plans around that.<br /><br />As a user of the club starter kit, while I like all the new bells and whistles and examples of using leading-edge stuff, I shy away from \"bleeding edge.\" For the codeplex team, it depends on your objectives: showcasing new techniques or developing usable, stable code. <br /><br />I would imagine that most clubs do not need a shopping cart. However, as a running/road runners club, we need the ability for our runners to sign up and pay for races, club membership, and some merchandise. Right now, that is all done via paper. I was wondering if anyone using the club starter kit had found a good starter kit for a shopping kit that could be combined with the club starter kit.<br /><br />I am truly appreciative of all the hard work your team has done and does. I just wanted to add my two cents as to what would help me the most and wondered if other users of the club starter kit have similar needs.<br /><br />Deborah (Mid-Hudson Road Runners Club web master)<br />",
+    "PostedDate": "2007-12-01T03:19:58.88-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "60718",
+    "ThreadId": "18528",
+    "Html": "\r\nI have PayPal setup on my hiking club website to have our club members pay their membership dues online and it works great, we do not sell items online, however we do have club t shirts and maybe would do so if we had the ability.  I am using version 2 rc1., I agree to just have a stable version that works would be nice, I would hope that I will be able to upgrade at some time in the near future. Thank you. <br /><br />http://www.sahcinfo.org<br />",
+    "PostedDate": "2007-12-01T05:11:41.487-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "66286",
+    "ThreadId": "18528",
+    "Html": "\r\nIs the release date of version 3 soon??<br /><br />",
+    "PostedDate": "2008-01-05T12:27:33.587-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

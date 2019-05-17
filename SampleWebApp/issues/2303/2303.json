@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Not a valid work item",
+    "ClosedDate": "2007-06-17T15:11:49.36-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Version 2.0 - CHANGE SET 2606\nError was generated from adding new version FKCeditor.\n \n \nPrevious issue - still can't enter link after checking use link checkbox in events\\edit.aspx\n \nClick add event \nCheck use link checbox\ntry and enter a link in the link field.",
+    "LastUpdatedDate": "2013-05-15T23:46:37.567-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-05-19T18:42:38.853-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Version 2.0 - CS2606 Still cant enter link (Event use link filed)",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2303
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "That makes no sence... I didn't do anyting to FCKEditor. Why is it erroring out. If you are going to add an issue, be descriptive or it will be closed.",
+      "PostedDate": "2007-05-19T19:50:47.057-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "What do you want in the description that I am not providing?  What are you looking for in a description?  I provided what page the error is created from and provided the steps to re-create it.\r\n\r\nHow many pages can you click add event?You only have one link field on the events\\edit.aspx page.\r\n\r\nWhen the update was done to the editor in a previous change set and all the fields were read only, when the fields got fixed one was missed on the events\\edit.aspx page.\r\n\r\n\r\n\r\n",
+      "PostedDate": "2007-05-19T20:57:38.197-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "There are multiple pages that have an add event button are default, events\\list, events\\calendar. I'm sure there are more. \r\n\r\nSo once you click the checkbox it doesn't load the link textbox?\r\n\r\nI'm still not sure what you mean by \"Error was generated from adding new version FKCeditor.\" You have to admit, that isn't very descriptive.",
+      "PostedDate": "2007-05-20T04:49:40.85-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-17T15:11:49.36-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:21.35-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:37.567-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

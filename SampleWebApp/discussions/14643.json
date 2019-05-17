@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "47652",
+    "ThreadId": "14643",
+    "Html": "\r\nThis http://sahcinfo.org/default.aspx displays fine in Firefox but pushes the bottom menu off to the right with IE7, any ideas on how to fix this. I thought perhaps there were too many news items and deleted several old ones. Thanks for your help.<br />",
+    "PostedDate": "2007-09-03T11:30:39.7-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "47667",
+    "ThreadId": "14643",
+    "Html": "\r\nI believe this has something to do with the clearlist and/or clear2column div but do not know how to fix it. Thanks.<br />",
+    "PostedDate": "2007-09-03T14:23:00.543-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "47675",
+    "ThreadId": "14643",
+    "Html": "\r\nDid you recently increase the font size? I notice that the font you use is larger than what my site has, using the same browser settings, and I don't think I made any changes to mine. Also, the Upcoming Events and Recent Blog Posts boxes are wider than the columnright div and there are some text overflow problems with your login box as well. I really don't know much about CSS, but I do know that when you try to stuff something in a box that can't contain it, all sorts of formatting problems show up.<br /><br />Not much help, but might give you something to look at.<br /><br />Ed<br /><br />",
+    "PostedDate": "2007-09-03T19:08:24.98-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "47971",
+    "ThreadId": "14643",
+    "Html": "\r\nYes I did increase the font size and that was the cause of the problem, I set it close to the original size and things are back to normal now. Thanks for your response.<br />",
+    "PostedDate": "2007-09-05T20:41:43.443-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

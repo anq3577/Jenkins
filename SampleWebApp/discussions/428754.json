@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "983712",
+    "ThreadId": "428754",
+    "Html": "\r\n<p>Error&nbsp;&nbsp;&nbsp; 10&nbsp;&nbsp;&nbsp; The type 'ClubStarterKit.Domain.</p>\r\n<div id=\":1ee\">UserInRole' exists in both 'C:\\Users\\Administrator\\Desktop\\clubstarterkit v3 preview\\ClubStarterKit.Domain\\bin\\Debug\\ClubStarterKit.Domain.dll' and 'C:\\Users\\Administrator\\Desktop\\clubstarterkit v3 preview\\ClubStarterKit.Web\\bin\\ClubStarterKit.Web.dll'&nbsp;&nbsp;&nbsp;\r\n C:\\Users\\Administrator\\Desktop\\clubstarterkit v3 preview\\ClubStartKit.Tests\\Web\\Infrastructure\\MembershipProvider\\MembershipServiceTests.cs&nbsp;&nbsp;&nbsp; 191&nbsp;&nbsp;&nbsp; 51&nbsp;&nbsp;&nbsp; ClubStarterKit.Tests</div>\r\n",
+    "PostedDate": "2013-01-07T04:26:07.657-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "38703",
+    "ThreadId": "11922",
+    "Html": "\r\nHello.<br /><br />I'm looking for some practical advice on how to set up roles and access rules.<br /><br />In the CSK 2.0, it looks like if i assign a new user to the Administrator role, they can send emails, create events, create news, create photos, edit and delete users.<br /><br />I'm trying to make this website available to my family.  I want allow them to create events, news and photos, but not edit and delete users.  I assigned them to Editors and Bloggers (not Administrator) roles and that did not change their access.<br /><br />How do i allow somebody to create events, news and photos, but not edit and delete other users?<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-27T13:13:05.553-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38724",
+    "ThreadId": "11922",
+    "Html": "\r\nOur implamentation of roles isn't really modular. You will have to add a new role for user edits and put yourself in that role. You then must go into the web.config and configure the Admin/EditUser.aspx page to that role.<br />",
+    "PostedDate": "2007-06-27T15:39:39.587-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38804",
+    "ThreadId": "11922",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Our implamentation of roles isn't really modular. You will have to add a new role for user edits and put yourself in that role. You then must go into the web.config and configure the Admin/EditUser.aspx page to that role.<br /><br /></div><br />Hello Zack.<br /><br />Can you give me more information about this?<br /><br />I tried something that did not work.  I added a new role to the system named \"UserEdits\".  I then added that role to the Admin member.  In the \"Admin/EditUser.aspx page\" section of the web.config, i added \"&lt;allow role=\"UserEdits\"/&gt;\".  I then added a new user, assigned that new user to the UserEdits role.<br /><br />Nothing changed.  That user still cannot add events, news or photos unless i assign him to the Administrators role.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-28T06:03:12.013-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38821",
+    "ThreadId": "11922",
+    "Html": "\r\nYea... that's the way its supposed to be. Now you can assign everyone the Admin role and only yourself with the UserEdit role. You might need to delete \"&lt;allow role=\"Administrators\" /&gt;\" from your Admin/edituser.aspx section on the web.config.<br />",
+    "PostedDate": "2007-06-28T08:28:51.437-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38909",
+    "ThreadId": "11922",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Yea... that's the way its supposed to be. Now you can assign everyone the Admin role and only yourself with the UserEdit role. You might need to delete \"&lt;allow role=\"Administrators\" /&gt;\" from your Admin/edituser.aspx section on the web.config.<br /><br /></div><br />Hello Zack.<br /><br />That did not work.  The only thing that accomplished, is reversing the Admin rights.  So instead of only Admin having the right to do everything, all other users have those rights and Admin only has view rights.<br /><br />Here is what i did:<br />Assigned the UserEdits role to only Admin.<br />Assigned the Administrators role to all other users.<br />In the web.config, under the \"Admin/EditUser.aspx page\" section, i changed the \"&lt;allow role=\"Administrators\"/&gt;\" to \"&lt;allow role=\"UserEdits\"/&gt;\".<br /><br />Any idea of why this is not working?<br /><br />After looking at the screens in this web site, all i really want to do is only allow one user \"Admin\", to have the \"Manage Users\" button appear.  I think that is the only thing that i want to change.<br /><br />Thanks,<br />Tony <br />",
+    "PostedDate": "2007-06-28T20:15:25.38-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38915",
+    "ThreadId": "11922",
+    "Html": "\r\nThe solution works. Try clicking the button without UserEdit permissions. It doesn't work, right? It shouldn't. That is the expected result.<br /><br />The button is the problem. Change line 44 (I think) of the Default.aspx from <br />manusers.Visible = Page.User.IsInRole(\"Administrators\") <br />to <br />manusers.Visible = Page.User.IsInRole(\"UserEdits\"). <br /><br />You will have to go configure the button. <br />",
+    "PostedDate": "2007-06-28T20:53:05.81-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39051",
+    "ThreadId": "11922",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />The solution works. Try clicking the button without UserEdit permissions. It doesn't work, right? It shouldn't. That is the expected result.<br /><br />The button is the problem. Change line 44 (I think) of the Default.aspx from <br />manusers.Visible = Page.User.IsInRole(\"Administrators\") <br />to <br />manusers.Visible = Page.User.IsInRole(\"UserEdits\"). <br /><br />You will have to go configure the button. <br /><br /></div><br />Hello Zack.<br /><br />I can't agree with you.  The buttons still work.<br /><br />However, changing this \"manusers.Visible = Page.User.IsInRole(\"Administrators\")\" in Default.aspx and Member\\List.aspx removed the buttons and that solves my problem.  The Admin can Manage Users, add to events, photos and news.  UserEdits can do the same except Manage Users.<br /><br />Thanks for all of your help.  Your knowledge is very much appreciated.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-29T18:20:43.07-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

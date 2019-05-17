@@ -1,0 +1,5 @@
+<connectionStrings>
+    <add name="ClubSiteDB" 
+         connectionString="Data Source=.\SQLExpress;Integrated Security=true;AttachDBFileName=|DataDirectory|ClubDB.mdf;User Instance=True"
+         providerName="System.Data.SqlClient"/>
+</connectionStrings>

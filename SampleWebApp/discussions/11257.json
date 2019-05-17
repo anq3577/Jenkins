@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "36425",
+    "ThreadId": "11257",
+    "Html": "\r\nI've tried to upload an entry form to an event but get the following error.<br /><br />Exception Details: System.UnauthorizedAccessException: Access to the path 'e:\\HostingSpaces\\*********\\wwwroot\\Documents\\EntryForm2007.pdf' is denied.<br /><br />I guess I need to set rights somewhere on the server on Ultimahosts, but where?<br /><br />Anyone help?<br /><br />Thanks <br />",
+    "PostedDate": "2007-06-11T12:52:14.37-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36434",
+    "ThreadId": "11257",
+    "Html": "\r\nTry setting \"write\" access from the \"Website\" part of your UltimaHosts account. That should do it.<br />",
+    "PostedDate": "2007-06-11T13:54:25.313-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36438",
+    "ThreadId": "11257",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Try setting \"write\" access from the \"Website\" part of your UltimaHosts account. That should do it.<br /><br /></div><br />got it, thanks<br />",
+    "PostedDate": "2007-06-11T14:23:41.553-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

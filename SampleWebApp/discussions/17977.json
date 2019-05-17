@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "58716",
+    "ThreadId": "17977",
+    "Html": "\r\nHey guys, I've got v3Beta1 of the Club Site up and running at www.Zebu-Cattle-for-Sale.INFO.  I've made a TON of coding changes to get this up and running, including recompiling the Subsonic dll to run in Medium Trust.  I merged it with the Classifieds Starter kit, added mapping to the events view, ad rotators, an xml file for tracking ad hits, and of course changed the theme, including a couple pages with flexible width in the classifieds section.  I still have some tweaking, but I am pretty sure I've got everything working!<br />",
+    "PostedDate": "2007-11-17T18:41:58.973-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "69373",
+    "ThreadId": "17977",
+    "Html": "<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />MarValUS wrote:<br />Hey guys, I've got v3Beta1 of the Club Site up and running at www.Zebu-Cattle-for-Sale.INFO.  I've made a TON of coding changes to get this up and running, including recompiling the Subsonic dll to run in Medium Trust.  I merged it with the Classifieds Starter kit, added mapping to the events view, ad rotators, an xml file for tracking ad hits, and of course changed the theme, including a couple pages with flexible width in the classifieds section.  I still have some tweaking, but I am pretty sure I've got everything working!<br /><br /></div><br />Can you tell me what steps you went through to merge the two sites (club and classified) together?<br /><br />Thanks!<br />",
+    "PostedDate": "2008-01-22T13:22:40.91-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "70275",
+    "ThreadId": "17977",
+    "Html": "\r\nHow is your database configured ? is SQL running 2005 ?<br />",
+    "PostedDate": "2008-01-27T13:26:27.223-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

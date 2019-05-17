@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "51237",
+    "ThreadId": "15784",
+    "Html": "\r\nJust a question, but why did you choose to go with subsonic for a DAL?  I've looked through the site and it looks like you've got a lot of the main features, but the DAL is a little cumbersome.  It would seem that to position yourself for LINQ and other things coming down the pipe, it would have been better to use strongly typed datasets.<br /><br />Anyways, just curious.<br /><br />Thanks,<br />Jon<br />",
+    "PostedDate": "2007-09-29T12:58:39.423-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "51245",
+    "ThreadId": "15784",
+    "Html": "\r\nThat's actually a pretty good question, Jon. Here are a list of the reasons that SubSonic is used instead of LINQ<br /><br />- It works with ASP.NET 2.0<br />- It's Open Source (I can crack into the Source Code)<br />- The entities generated are extendable<br />- Works with SQL 2005, SQL 2000, MySQL, SQL Lite, much more<br /><br />Those are some pretty big reasons, I think. The main one being that you can actually look at the code. With LINQ, you have NO idea what's going on. It does expose the generated code, but you can't crack open the source code with LINQ.<br /><br />When I started 3.0, LINQ was in pretty early stages. I thought it would just be easier to stick with something that goes along with \"regular\" object things (most notably the Query engine is an object and not a language feature). The learning curve would have been even steeper than it is now.<br /><br />SubSonic will eventually play nice with LINQ, so that might be an option in the future (possibly).  (See http://blog.wekeroad.com/2007/09/26/subsonic-whats-happening-now/)<br />",
+    "PostedDate": "2007-09-29T15:08:35.393-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "51487",
+    "ThreadId": "15784",
+    "Html": "\r\nI think you misunderstood my question.  I was actually asking about why strongly typed datasets weren't used.  Those are a native 2.0 feature and have a look and feel very similar to what LINQ is going to be.  Hence a much smoother transition from the strongly typed datasets into LINQ.<br /><br />However, if your real concern was looking at the code, then I can't argue there, other than the code that is generated from the strongly typed datasets can be seen, extended, or even modified.  I'm not sure about LINQ though.<br /><br />Anyways, I was just curious.  Thanks for your response.<br />",
+    "PostedDate": "2007-10-01T18:43:03.717-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "51632",
+    "ThreadId": "15784",
+    "Html": "\r\nI'm not a fan of the wizard stuff for Typed datasets... its not a clean implementation and you still have to write up your own classes to interface between the dataset and your logic. SubSonic does all that stuff for you.<br />",
+    "PostedDate": "2007-10-02T17:02:39.24-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

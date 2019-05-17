@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "29361",
+    "ThreadId": "8997",
+    "Html": "\r\nLogging out from the events page returns this error.<br /><br />Server Error in '/' Application.<br />--------------------------------------------------------------------------------<br /><br />The resource cannot be found. <br />Description: HTTP 404. The resource you are looking for (or one of its dependencies) could have been removed, had its name changed, or is temporarily unavailable.  Please review the following URL and make sure that it is spelled correctly. <br /><br />Requested URL: /calendar.aspx<br /><br />",
+    "PostedDate": "2007-04-09T09:37:35.39-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "29563",
+    "ThreadId": "8997",
+    "Html": "\r\ncheck usercontrols/login.ascx and the function Logoutbtn_Click, you can redirect wherever you want.<br />",
+    "PostedDate": "2007-04-11T00:44:01.61-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "29592",
+    "ThreadId": "8997",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />Plaid wrote:<br />check usercontrols/login.ascx and the function Logoutbtn_Click, you can redirect wherever you want.<br /><br /></div><br />This is the existing code. I believe this error is also on the issue tracker page.<br /><br />&lt;script runat=\"server\"&gt;<br /><br />    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs)<br />        If CStr(Request(\"ReturnURL\")) Is Nothing Then<br />            Dim a As String = \"Login.aspx?ReturnURL=~/default.aspx\"<br />            Response.Redirect(a)<br />        End If<br />    End Sub<br />&lt;/script&gt;<br />",
+    "PostedDate": "2007-04-11T06:19:21.7-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

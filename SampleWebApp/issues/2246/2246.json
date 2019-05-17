@@ -1,0 +1,80 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Duplicate of work item 2305",
+    "ClosedDate": "2007-05-21T03:40:17.93-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When you logout from the LoginBanner control you receive a resource not found error.\n \nLoginBanner Control (\\UserControls\\LoginBanner.ascx) generates error.\nSub Logoutbtn_Click (The resource cannot be found) redirect routine error?",
+    "LastUpdatedDate": "2013-05-15T23:46:37.99-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-05-12T09:18:54.78-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Server Error in '/' Application.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2246
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Thats not very descriptive. How am I supposed to fix an issue when there is no description.",
+      "PostedDate": "2007-05-12T11:56:26.287-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Logout from a page other than the home page and an error like this displays:\r\n\r\nServer Error in '/' Application.--------------------------------------------------------------------------------\r\n\r\nThe resource cannot be found. Description: HTTP 404. The resource you are looking for (or one of its dependencies) could have been removed, had its name changed, or is temporarily unavailable.  Please review the following URL and make sure that it is spelled correctly. \r\n\r\nRequested URL: /list.aspx\r\n\r\n--------------------------------------------------------------------------------Version Information: Microsoft .NET Framework Version:2.0.50727.312; ASP.NET Version:2.0.50727.312 ",
+      "PostedDate": "2007-05-12T13:03:03.52-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Can anyone else logout from pages other than default.aspx?",
+      "PostedDate": "2007-05-17T10:52:48.85-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "What page does it try to take you to?",
+      "PostedDate": "2007-05-19T13:48:02.017-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "It tries to take you to the page that you clicked the logout button from  but it referances \\pagename not \\dir\\pagename.  So the resource cannot be found error is displayed.\r\n\r\nExample:  If you log out from the \\events\\list.aspx page it can not find \\list.aspx",
+      "PostedDate": "2007-05-19T14:33:23.507-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-21T03:40:17.93-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:22.093-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:37.99-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "33589",
+    "ThreadId": "10361",
+    "Html": "\r\nran schema.sql (ultimahosts)<br /><br />Msg 15007, Level 16, State 1, Line 42<br />'zowens' is not a valid login or you do not have permission.<br />Msg 15151, Level 16, State 1, Line 1<br />Cannot find the user 'zowens', because it does not exist or you do not have permission.<br />Msg 2759, Level 16, State 0, Line 1<br />CREATE SCHEMA failed due to previous errors.<br /><br />In case you havent figured it out, this is my first ASP.NET(sql) configuration. <br />",
+    "PostedDate": "2007-05-16T17:44:52.22-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33613",
+    "ThreadId": "10361",
+    "Html": "\r\nWhy would this be in a schema script?<br /><br />If you use ultimahosts please post how you published.  I would greatly appreciate admin access to my web site.<br /><br /><br />",
+    "PostedDate": "2007-05-16T22:06:55.49-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33941",
+    "ThreadId": "10361",
+    "Html": "\r\nHmmm... these are generated using SQL SMO... this shouldn't be an issue.<br /><br />Have you used SQL Publishing wizard before? That will generate scripts for you.<br /><br />Ultima gives you access to EVERYTHING. You can access the dbs through SQL Management and they also allow full trust applications.<br />",
+    "PostedDate": "2007-05-19T13:36:41.397-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

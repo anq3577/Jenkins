@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "40119",
+    "ThreadId": "12324",
+    "Html": "\r\nHello.<br /><br />With Zacks help, I modified CSK2.0 to only allow members in \"UserEdits\" role(basically myself) to \"Manage Users\", \"Manage Forums\" and \"Send Email\".  Administrators cannot do that kind of stuff now.  I assigned all new valid users to the Administrators role.  So they can use all of the adds, edits, deletes of photos, events and news, but Administrators cannot \"Manage Users\", \"Manage Forums\" and \"Send Email\".  <br /><br />Is there an easy way to make it so that only the person who added a photo album and photos can edit and delete the photos or album they created?  The way it is now, any Administrator can edit or delete any body elses photos/albums.<br /><br />Any help would be gratefully appreciated.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-07-08T08:28:37.99-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40161",
+    "ThreadId": "12324",
+    "Html": "\r\nIt's fairly easy. You just need to compare the logged in userid with the userid associated with the photo on page load. Then you show or hide your edit button based on the outcome. <br /><br />I did it for another purpose. I just shut down, but I'll post some pseudo code tomorrow if you want. <br /><br />Why don't you want the admin to have \"god\" powers? I mean, what if one of your users posts a picture of his butt or something? Do you really only want the poster to have the authority to remove his own photo?<br />",
+    "PostedDate": "2007-07-08T17:39:19.78-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40164",
+    "ThreadId": "12324",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />Tina wrote:<br />It's fairly easy. You just need to compare the logged in userid with the userid associated with the photo on page load. Then you show or hide your edit button based on the outcome. <br /><br />I did it for another purpose. I just shut down, but I'll post some pseudo code tomorrow if you want. <br /><br />Why don't you want the admin to have \"god\" powers? I mean, what if one of your users posts a picture of his butt or something? Do you really only want the poster to have the authority to remove his own photo?<br /><br /></div><br />Hello Tina.<br /><br />Sounds pretty easy.  I'll start looking at that method.<br /><br />Well i guess if somebody posted a picture of my butt, i'd want the ability to delete it too.  Are you serious about this?  I never thought of it that way and now i'm not sure if i will really put it into effect even if i do get it to work.<br /><br />What was the idea in desinging the CSK2.0 for the Administrator role?  Should all the approved users get it or are there cases when an approved user gets either the Editors or Bloggers or both?  I never did try to figure that out.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-07-08T18:37:07.983-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40166",
+    "ThreadId": "12324",
+    "Html": "\r\nThe butt part was a joke, but yes, I was serious about retaining the ability to remove inappropriate material. People do stupid, unexpected stuff all the time. <br /><br />I don't know what the original intent was, but I'm using the roles thusly:<br /><br />1. The default for a new member signing up is that he is assigned no role. I didn't change that - it's just how it works. <br />2. If I approve someone to wtite blog content, I can give him the blog role.<br />3, If, for example, I hired someone to write marketing copy, I would grant him/her the Editors role. It really just depends on your usage needs. If it's a Scout site, maybe all leaders get to be bloggers. <br />4. Only I get Admin role. I will also retain all the other roles I've created. I can do anything, because it will be my site. I want to have ultimate veto power. No way would I give that away.<br /><br />But, I didn't realize anyone could modify anyone else's pictures. I'll definitely only allow the owner of the picture or the Admin to manage those. I'll run some tests to see how it behaves.  <br />",
+    "PostedDate": "2007-07-08T19:20:03.927-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40171",
+    "ThreadId": "12324",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />Tina wrote:<br />The butt part was a joke, but yes, I was serious about retaining the ability to remove inappropriate material. People do stupid, unexpected stuff all the time. <br /><br />I don't know what the original intent was, but I'm using the roles thusly:<br /><br />1. The default for a new member signing up is that he is assigned no role. I didn't change that - it's just how it works. <br />2. If I approve someone to wtite blog content, I can give him the blog role.<br />3, If, for example, I hired someone to write marketing copy, I would grant him/her the Editors role. It really just depends on your usage needs. If it's a Scout site, maybe all leaders get to be bloggers. <br />4. Only I get Admin role. I will also retain all the other roles I've created. I can do anything, because it will be my site. I want to have ultimate veto power. No way would I give that away.<br /><br />But, I didn't realize anyone could modify anyone else's pictures. I'll definitely only allow the owner of the picture or the Admin to manage those. I'll run some tests to see how it behaves.  <br /><br /></div><br />If i understand your last sentence correctly, you will try to get it so that only the originator of a photo can edit/delete it. I think that kind of change could be applied to events, news items and forum replie also.<br /><br />I'm going to try it also.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-07-08T20:47:38.197-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40172",
+    "ThreadId": "12324",
+    "Html": "\r\nAbsolutely. I used that logic for some new pages I wrote, which is why I'll have to give you pseudocode and not real code. <br />",
+    "PostedDate": "2007-07-08T20:51:23.44-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40345",
+    "ThreadId": "12324",
+    "Html": "\r\nI think if you set your album to private, other users will not be able to modify it or delete it. If you simply want to use those photos in news articles, then that will work. If you want to show the album, but not allow the other members to edit it, then you have some work to do. For my purposes, I think I can just set it to private so I may not bother. We'll see... <br /><br />Here's the code I wrote for determining whether someone owns a record and whether to allow them to edit it.<br /><br />In the page, I use a form and I call then on databound. I used the DAL and BLL, so this may not be what you're looking for. I think it's a little heavyduty for a simple webapp, but I was following the tutorials on asp.net from fourguysfromrolla so it is what it is.<br /><br />Protected Sub Rec_DataBound(ByVal sender As Object, ByVal e As System.EventArgs) _<br />    Handles FormView1.DataBound<br />        If (FormView1.CurrentMode = FormViewMode.ReadOnly) Then ' make sure the view template is loaded<br /><br />            Dim foundControl As Control = FormView1.FindControl(\"btnEdit\")<br /><br />            If Page.User.Identity.IsAuthenticated = True Then<br />                Dim mem As MembershipUser = Membership.GetUser()<br />                Dim gui As New Guid(mem.ProviderUserKey.ToString())<br /><br />                Dim myrec As Rec.RecRow = _<br />                CType(CType(FormView1.DataItem, System.Data.DataRowView).Row, _<br />                    Recipe.RecipeRow)<br /><br />                If rec.memberid = gui Then<br />                    foundControl.Visible = True<br />                Else : foundControl.Visible = False<br />                End If<br /><br />            Else : foundControl.Visible = False<br />            End If<br />        End If<br />    End Sub<br />",
+    "PostedDate": "2007-07-09T17:09:07.927-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40530",
+    "ThreadId": "12324",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />Tina wrote:<br />I think if you set your album to private, other users will not be able to modify it or delete it. If you simply want to use those photos in news articles, then that will work. If you want to show the album, but not allow the other members to edit it, then you have some work to do. For my purposes, I think I can just set it to private so I may not bother. We'll see... <br /><br />Here's the code I wrote for determining whether someone owns a record and whether to allow them to edit it.<br /><br />In the page, I use a form and I call then on databound. I used the DAL and BLL, so this may not be what you're looking for. I think it's a little heavyduty for a simple webapp, but I was following the tutorials on asp.net from fourguysfromrolla so it is what it is.<br /><br />Protected Sub Rec_DataBound(ByVal sender As Object, ByVal e As System.EventArgs) _<br />    Handles FormView1.DataBound<br />        If (FormView1.CurrentMode = FormViewMode.ReadOnly) Then ' make sure the view template is loaded<br /><br />            Dim foundControl As Control = FormView1.FindControl(\"btnEdit\")<br /><br />            If Page.User.Identity.IsAuthenticated = True Then<br />                Dim mem As MembershipUser = Membership.GetUser()<br />                Dim gui As New Guid(mem.ProviderUserKey.ToString())<br /><br />                Dim myrec As Rec.RecRow = _<br />                CType(CType(FormView1.DataItem, System.Data.DataRowView).Row, _<br />                    Recipe.RecipeRow)<br /><br />                If rec.memberid = gui Then<br />                    foundControl.Visible = True<br />                Else : foundControl.Visible = False<br />                End If<br /><br />            Else : foundControl.Visible = False<br />            End If<br />        End If<br />    End Sub<br /><br /><br /></div><br />Thanks Tina.<br /><br />What do you mean by \"pseudocode\"?<br /><br />I'm working on something else right now, so i probably won't get to this right away.<br /><br />Tony<br />",
+    "PostedDate": "2007-07-10T17:21:41.897-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

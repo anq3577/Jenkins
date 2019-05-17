@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "94815",
+    "ThreadId": "28428",
+    "Html": "<span>\r\n<p align=left><span><span>Hello,</span></span></p>\r\n<p align=left><span><span>&nbsp;</span></span></p>\r\n<p align=left><span><span>I was just wondering what I should do if I need a Mail\r\nServer on my website, but the one I try doesn't work. For instance I am\r\ntrying to use my personal cableone.net email address. I tried setting\r\nthe mail server as &quot;mail.cableone.net&quot; and the username as my username,\r\nand my password as my password. The problem is that when I try to send\r\nan email through the website, it says, &quot;<span><em>No connection could be made because the target machine actively refused it 72.167.82.11:25&quot; </em>and\r\nof course the email is not sent. Can you help me? Is there a certain\r\nmail server that I should use? I think it may be that the mailbox I am\r\ntrying to send it to doesn't accept it, which is its own email address.\r\nI have tried several different email addresses, so I am unsure what the\r\nproblem is..</span></span></span></p>\r\n<p align=left><span><span>&nbsp;</span></span></p>\r\n<p align=left><span><span><span>Thanks tons in advance!</span></span></span></p>\r\n<p align=left><span><span>&nbsp;</span></span></p>\r\n<p align=left><span><span><span>Josh</span></span></span></p>\r\n<p align=left><span><span>PS. I am using the latest build of the Clubsite 3.0</span></span></p>\r\n<p align=left></p>\r\n</span>\r\n<p align=left><span><span><span><strong>UPDATE! </strong>The website does send emails to users on its own, but I am still unable to send an email using the &quot;Send Email&quot; option. </span></span></span></p>\r\n",
+    "PostedDate": "2008-05-26T15:32:25.527-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "94930",
+    "ThreadId": "28428",
+    "Html": "Josh, <br>\r\n<br>\r\nI had a number of issues with getting sendmail to work on my hosted site. I use a my own domain and nothing seemed to work at first. I ended up using &quot;localhost&quot; to resolve the issue you mention. Not sure if it applys to the way you have your site setup, but it's worth a shot. <br>\r\n",
+    "PostedDate": "2008-05-27T07:55:19.23-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "95062",
+    "ThreadId": "28428",
+    "Html": "riscfl, <br>\r\n<br>\r\nWhere did you put &quot;localhost&quot;? Did you put it as your server name or what?<br>\r\n<br>\r\nThanks lots!<br>\r\n<br>\r\nJosh<br>\r\n<br>\r\nPS. Is there anyone else out there that has a suggestion? I would appreciate it!<br>\r\n<br>\r\n<br>\r\n",
+    "PostedDate": "2008-05-27T15:41:15.353-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "99067",
+    "ThreadId": "28428",
+    "Html": "Josh - I entered &quot;localhost&quot; as the &quot;Mail Server&quot; under Site Details to correct the error message you posted about.\r\n",
+    "PostedDate": "2008-06-16T06:28:03.79-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

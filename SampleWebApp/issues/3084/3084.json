@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "not reproducable",
+    "ClosedDate": "2007-09-26T12:35:37.45-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I just performed a clean install of the latest version Ver 3 Beta 1 . I am using Visual Web Developer version not the VS2005 version.  Did I miss something in the doc's ? Find Sourde: C:\\SubSonic 2.0.3\\src\\SubSonic\\DataProviders\\SqlDataProvider.cs  shows up.",
+    "LastUpdatedDate": "2013-05-15T23:46:29.387-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-08-14T18:10:48.257-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "C:\\SubSonic 2.0.3\\src\\SubSonic\\DataProviders\\SqlDataProvider.cs",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 3084
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Hmmm.... try redoing your generation. \r\n\r\nThere is a problem when you loaded a collection, object or tried to execute a query. Do you know what you were doing when that happened?",
+      "PostedDate": "2007-08-14T19:28:30.247-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-09-26T12:35:37.45-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:10.913-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:29.387-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

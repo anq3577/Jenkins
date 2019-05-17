@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "44673",
+    "ThreadId": "13702",
+    "Html": "\r\nI would like to upgrade to Version 3 from Version 2RC1 and use the database I now have. I have SQL Server Management Studio Express that I use to connect remotely to my database. Am I correct in assuming that when I click on the Upgrade v2 to v3 sql file and  it opens up Management Studio Express and run the file it will upgrade my database on the server so I can use my existing data with V3? <br />Exactly what is the procedure in SSMSE that I need to do to run the file and upgrade my database.<br /><br />I understand that I will also need to upgrade the app. config file connection string to what my current v2 config.file is. Is this correct.<br /><br />I then assume that I will need to redo the pages that I created in V2 to work in V3 correctly. <br /><br />I need to get all this straight before I attempt anything as I cannot afford to have my hiking club website go down.<br /><br />Thanks for your help and thanks for all your hard work with this project.<br />",
+    "PostedDate": "2007-08-12T11:48:38.913-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44677",
+    "ThreadId": "13702",
+    "Html": "\r\nDO NOT upgrade on your production database. Back it up and get the database onto a SQLExpress db (or a db on your dev box). <br /><br />Then run the upgrade file against your database and also run the provided alpp. YOU NEED TO READ THE README CAREFULLY OR IT WILL NOT WORK PROPERLY.<br />",
+    "PostedDate": "2007-08-12T13:21:11.213-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44740",
+    "ThreadId": "13702",
+    "Html": "\r\nI backed up my database on the server, and restored it on my computer, ran the upgrade against and received errors and an unsuccessful upgrade. Can I post the errors here or email them to you. Thanks for your help. I can also email you the bak file if you would like to see the database. <br />",
+    "PostedDate": "2007-08-13T06:52:06.22-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,135 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-06-29T16:10:07.997-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I am in the process of adding the WebAdmin Addon I created.\n \nAdditional Features will include.\n \n1. Ability to select Auto, Admin Approval or Email Verification (co-authored by Jeff Harbour(Typhoid)) at sign up.\n \n2. Scalable Delete User, the membership delete user does not delete users from other tables like memberinfo.\n \n3. Ability to search for members, sortby username, lastname or email or filter by unapproved. (this helps when your memberships becomes large.)\n \n4. Single page for changes to User roles, Approvel, Unlock and delete user for members.\n \nI have it working locally, just need to clean up the code.",
+    "LastUpdatedDate": "2013-05-15T23:46:45.357-07:00",
+    "PlannedForRelease": "Version 3 Beta 1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:20:40.473-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "WebAdmin",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 9,
+    "Id": 813
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "That sounds really cool! Thanks for taking the initiative!",
+      "PostedDate": "2007-04-25T14:20:41.397-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "He Frank,\r\n\r\nNice to see you here. \r\n\r\nYour Admin module is cool, I added InvalidCredentials to the Multiview, would have to be looked at though I guess. \r\n\r\n(lex, lexy, lexvis)\r\n\r\n",
+      "PostedDate": "2007-04-25T14:20:41.833-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Hey Frank.  I guess I'm late joining the party, but I guess it's better late than never.\r\n\r\nTyphoid",
+      "PostedDate": "2007-04-25T14:20:42.223-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Great Ideas, Can I throw one into the pot?\r\n\r\nHow about an e-mail user, their userID  button. I thought about making it for the user but I think the ability to have it on a webmin for security might be better for some people.\r\n\r\n",
+      "PostedDate": "2007-04-25T14:20:42.613-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Chriscee - Do you mean a button that a user would click if they forget their userid?  I would think that they would then have to enter their email address to cause the site to email them their password.  I don't see any reason why this would have to be hiddon on an admin page.",
+      "PostedDate": "2007-04-25T14:20:42.99-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Whoops, sorry.  My previous comment should have said \"cause the site to email them their userid\", not their password.  Sometimes I type faster than I think.  And I don't type very fast...",
+      "PostedDate": "2007-04-25T14:20:43.363-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Unless they don't remember what email address they used to register.  It would be a nice option, especially if the club/group is small enough that the admin can go through the userlist to find the right user.",
+      "PostedDate": "2007-04-25T14:20:43.833-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Due to the fact I just had another baby and my current work load is full, Time is something I do not have much of. The code for this add-on is free and anyone willing to implement it is more then welcome.",
+      "PostedDate": "2007-04-25T14:20:44.21-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I hope to have some time next week to start on adding Frank's webadmin package in.  Since I don't have access to what he had working locally I'll have to start from scratch, but I'm fairly well acquanted with his code.\n \nOne question:  The email verification option sends the member a code that they must enter along with their userid on a verification page to complete the registration process.  Frank's original webadmin package included a link to the verification page but required the user to either cut and paste or manually type in their userid and the code.  I enhanced it to have the link include the userid and code as querystrings to the verification page.  However, certain characters mess up querystrings, so I had to add a regex validator to restrict the characters that users can include in their usernames.  Does anyone see this as a problem?  The regex that I'm using on my live site is perhaps more restrictive than it needs to be, but it works great.  I restrict usernames to upper and lower-case alpha, the numbers 0-9, underscore, and dash.  Does anyone have any objections to adding the username restriction?",
+      "PostedDate": "2007-04-25T14:20:44.583-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "any info about this add-on?",
+      "PostedDate": "2007-04-25T14:20:44.973-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I can take this over if someone hasn't started on this yet.",
+      "PostedDate": "2007-04-25T14:20:45.35-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-19T23:07:15.097-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-26T00:51:46.457-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-03T21:09:52.96-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-20T22:22:40.31-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Here is what I will be putting in:\r\n\r\nA. Add/Delete RolesB. Add/Remove users in RolesC. UnApprove UserD. Delete UserE. Approval Settings   a. Auto Approval (is approved once the person signs up)   b. Admin Approval (admin approves and user is approved)   c. Emal Approval (user is sent an email to approve his/her email address)   d. Admin Email Approval (user needs to confirm email, then admin needs to approve)",
+      "PostedDate": "2007-06-29T12:56:03.587-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Resolved with changeset 3400.",
+      "PostedDate": "2007-06-29T16:10:07.997-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:31.443-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:45.357-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

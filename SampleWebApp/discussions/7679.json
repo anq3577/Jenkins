@@ -1,0 +1,138 @@
+[
+  {
+    "Id": "25051",
+    "ThreadId": "7679",
+    "Html": "\r\nHello,<br /><br />is there any chance you could tell me how to fix the problem that is now causing your test site for the club starter kit to not function.  Its caused by not putting in a description when adding a new news item.<br /><br />TIA<br />Trevor<br />",
+    "PostedDate": "2007-02-28T02:59:48.72-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25053",
+    "ThreadId": "7679",
+    "Html": "\r\nYea... go to the DB and delete all the news items. You could also start with a new DB.<br />",
+    "PostedDate": "2007-02-28T03:13:25.1-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25058",
+    "ThreadId": "7679",
+    "Html": "\r\nOk, that gets the system runing again, BUT how can I prevent it from happening in the first place.<br /><br />TIA<br />Trevor<br />",
+    "PostedDate": "2007-02-28T03:53:14.793-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25130",
+    "ThreadId": "7679",
+    "Html": "\r\nEntering a description for the events :) We will add a validation control for you so you don't forget that it is required ;)<br />",
+    "PostedDate": "2007-02-28T12:11:40.363-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25206",
+    "ThreadId": "7679",
+    "Html": "\r\nOk the site works fine locally, but when I deploy to webhost4life I cannot see the error cause of hte custom tag issue...so I put in that tag to the webconfig and it still did not work, any ideas?<br /><br />Runtime Error <br />Description: An application error occurred on the server. The current custom error settings for this application prevent the details of the application error from being viewed remotely (for security reasons). It could, however, be viewed by browsers running on the local server machine. <br /><br />Details: To enable the details of this specific error message to be viewable on remote machines, please create a &lt;customErrors&gt; tag within a \"web.config\" configuration file located in the root directory of the current web application. This &lt;customErrors&gt; tag should then have its \"mode\" attribute set to \"Off\".<br />",
+    "PostedDate": "2007-03-01T06:19:17.503-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25305",
+    "ThreadId": "7679",
+    "Html": "\r\nMake sure that you can have SQL Express... the issue is caused by some sort of database connectivity problem.<br />",
+    "PostedDate": "2007-03-01T13:49:24.257-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25398",
+    "ThreadId": "7679",
+    "Html": "\r\nThe runtime error could be anything.  Do like the details says and put the custom tag in.  That will give you the specific error that you are running into.  My site is hosted on webhost4life.  Some things I had to do:<br /><br />1. Strip out all the Ajax stuff.<br />2. Load the database from the sql2005.sql script in App_Data folder.<br />",
+    "PostedDate": "2007-03-02T08:09:49.17-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25429",
+    "ThreadId": "7679",
+    "Html": "\r\nI would check the connection string first... this error is common with database errors.<br />",
+    "PostedDate": "2007-03-02T12:06:04.113-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25576",
+    "ThreadId": "7679",
+    "Html": "\r\nThe connection string is fine because when I run it from my local dev box the site works perfectly fine.  I am using SQL 2005 and when I deploy to webhost4life I get the above error, even with the custom tag in there.  <br />",
+    "PostedDate": "2007-03-05T05:47:47.223-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25656",
+    "ThreadId": "7679",
+    "Html": "\r\nYour hoster might not support SQL Express, thats probably why.<br />",
+    "PostedDate": "2007-03-05T14:15:32.67-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25671",
+    "ThreadId": "7679",
+    "Html": "\r\nI am using SQL 2005 with a correct string?  what would still be using sql express?<br />",
+    "PostedDate": "2007-03-05T16:54:35.3-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25722",
+    "ThreadId": "7679",
+    "Html": "\r\nHave you checked your trust level. It might have to run in full trust.<br />",
+    "PostedDate": "2007-03-06T03:28:44.717-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25726",
+    "ThreadId": "7679",
+    "Html": "\r\nmnebinger could you give me more information on how you got it running?  I ran the whole SQL script but can you give me more information on how you stripped out the aJax or could I get your web.config?<br />",
+    "PostedDate": "2007-03-06T04:25:39.633-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25806",
+    "ThreadId": "7679",
+    "Html": "\r\nOkay, I will dig it up sometime this evening (the web.config).  I have been crazy busy at work lately and haven't been doing much with the clubsite.<br />",
+    "PostedDate": "2007-03-06T12:42:12.63-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25994",
+    "ThreadId": "7679",
+    "Html": "\r\nHere is my web.config for webhost4life (with unique info cut out of the connection string and email setup at the bootom):<br /><br />&lt;?xml version=\"1.0\"?&gt;<br />&lt;configuration xmlns=\"http://schemas.microsoft.com/.NetConfiguration/v2.0\"&gt;<br />  &lt;configSections&gt;<br />    &lt;sectionGroup name=\"system.web.extensions\" type=\"System.Web.Configuration.SystemWebExtensionsSectionGroup, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\"&gt;<br />      &lt;sectionGroup name=\"scripting\" type=\"System.Web.Configuration.ScriptingSectionGroup, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\"&gt;<br />        &lt;section name=\"scriptResourceHandler\" type=\"System.Web.Configuration.ScriptingScriptResourceHandlerSection, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\" requirePermission=\"false\" allowDefinition=\"MachineToApplication\"/&gt;<br />        &lt;sectionGroup name=\"webServices\" type=\"System.Web.Configuration.ScriptingWebServicesSectionGroup, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\"&gt;<br />          &lt;section name=\"jsonSerialization\" type=\"System.Web.Configuration.ScriptingJsonSerializationSection, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\" requirePermission=\"false\" allowDefinition=\"Everywhere\"/&gt;<br />          &lt;section name=\"profileService\" type=\"System.Web.Configuration.ScriptingProfileServiceSection, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\" requirePermission=\"false\" allowDefinition=\"MachineToApplication\"/&gt;<br />          &lt;section name=\"authenticationService\" type=\"System.Web.Configuration.ScriptingAuthenticationServiceSection, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\" requirePermission=\"false\" allowDefinition=\"MachineToApplication\"/&gt;<br />        &lt;/sectionGroup&gt;<br />      &lt;/sectionGroup&gt;<br />    &lt;/sectionGroup&gt;<br />  &lt;/configSections&gt;<br />  &lt;appSettings&gt;<br />    &lt;add key=\"ClubName\" value=\"Pack934\"/&gt;<br />    &lt;add key=\"ClubSlogan\" value=\"\"/&gt;<br />    &lt;add key=\"ClubURL\" value=\"http://www.pack934.com\"/&gt;<br />    &lt;add key=\"FCKeditor:UserFilesPath\" value=\"~/Files/\"/&gt;<br />    &lt;add key=\"FCKeditor:BasePath\" value=\"~/FCKeditor/editor\"/&gt;<br />    &lt;!-- <br />       Please format the URL like this:<br />       http://www.somesite.com/<br /><br />       **The ends slash is important!<br />       --&gt;<br />  &lt;/appSettings&gt;<br />  &lt;location path=\"admin/ManageUsers.aspx\"&gt;<br />    &lt;system.web&gt;<br />      &lt;authorization&gt;<br />        &lt;allow roles=\"Administrators\"/&gt;<br />        &lt;deny users=\"*\"/&gt;<br />      &lt;/authorization&gt;<br />    &lt;/system.web&gt;<br />  &lt;/location&gt;<br />  &lt;location path=\"admin/edituser.aspx\"&gt;<br />    &lt;system.web&gt;<br />      &lt;authorization&gt;<br />        &lt;allow roles=\"Administrators\"/&gt;<br />        &lt;deny users=\"*\"/&gt;<br />      &lt;/authorization&gt;<br />    &lt;/system.web&gt;<br />  &lt;/location&gt;<br />  &lt;location path=\"Poll/Manage.aspx\"&gt;<br />    &lt;system.web&gt;<br />      &lt;authorization&gt;<br />        &lt;allow roles=\"Administrators\"/&gt;<br />        &lt;deny users=\"*\"/&gt;<br />      &lt;/authorization&gt;<br />    &lt;/system.web&gt;<br />  &lt;/location&gt;<br />  &lt;location path=\"Poll/Answers.aspx\"&gt;<br />    &lt;system.web&gt;<br />      &lt;authorization&gt;<br />        &lt;allow roles=\"Administrators\"/&gt;<br />        &lt;deny users=\"*\"/&gt;<br />      &lt;/authorization&gt;<br />    &lt;/system.web&gt;<br />  &lt;/location&gt;<br />  &lt;location path=\"Poll/AddReaction.aspx\"&gt;<br />    &lt;system.web&gt;<br />      &lt;authorization&gt;<br />        &lt;deny users=\"?\"/&gt;<br />      &lt;/authorization&gt;<br />    &lt;/system.web&gt;<br />  &lt;/location&gt;<br />  &lt;location path=\"events/edit.aspx\"&gt;<br />    &lt;system.web&gt;<br />      &lt;authorization&gt;<br />        &lt;allow roles=\"Administrators\"/&gt;<br />        &lt;deny users=\"*\"/&gt;<br />      &lt;/authorization&gt;<br />    &lt;/system.web&gt;<br />  &lt;/location&gt;<br />  &lt;location path=\"locations/edit.aspx\"&gt;<br />    &lt;system.web&gt;<br />      &lt;authorization&gt;<br />        &lt;allow roles=\"Administrators\"/&gt;<br />        &lt;deny users=\"*\"/&gt;<br />      &lt;/authorization&gt;<br />    &lt;/system.web&gt;<br />  &lt;/location&gt;<br />  &lt;location path=\"news/edit.aspx\"&gt;<br />    &lt;system.web&gt;<br />      &lt;authorization&gt;<br />        &lt;allow roles=\"Administrators\"/&gt;<br />        &lt;deny users=\"*\"/&gt;<br />      &lt;/authorization&gt;<br />    &lt;/system.web&gt;<br />  &lt;/location&gt;<br />  &lt;location path=\"photo/new.aspx\"&gt;<br />    &lt;system.web&gt;<br />      &lt;authorization&gt;<br />        &lt;allow roles=\"Administrators\"/&gt;<br />        &lt;deny users=\"*\"/&gt;<br />      &lt;/authorization&gt;<br />    &lt;/system.web&gt;<br />  &lt;/location&gt;<br />  &lt;location path=\"member/list.aspx\"&gt;<br />    &lt;system.web&gt;<br />      &lt;authorization&gt;<br />        &lt;deny users=\"?\"/&gt;<br />      &lt;/authorization&gt;<br />    &lt;/system.web&gt;<br />  &lt;/location&gt;<br />  &lt;location path=\"member/details.aspx\"&gt;<br />    &lt;system.web&gt;<br />      &lt;authorization&gt;<br />        &lt;deny users=\"?\"/&gt;<br />      &lt;/authorization&gt;<br />    &lt;/system.web&gt;<br />  &lt;/location&gt;<br />  &lt;connectionStrings&gt;<br />    &lt;add name=\"ClubSiteDB\" connectionString=\"Server=;Database=;Uid=;Pwd=;\" providerName=\"System.Data.SqlClient\"/&gt;<br />  &lt;/connectionStrings&gt;<br />  &lt;system.web&gt;<br />    &lt;authentication mode=\"Forms\"&gt;<br />      &lt;forms loginUrl=\"member/login.aspx\" defaultUrl=\"~/default.aspx\" /&gt;<br />    &lt;/authentication&gt;<br />    &lt;compilation debug=\"true\" strict=\"true\"&gt;<br />      &lt;assemblies&gt;<br />        &lt;add assembly=\"System.Management, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A\"/&gt;<br />        &lt;add assembly=\"System.Configuration.Install, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A\"/&gt;<br />        &lt;add assembly=\"System.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089\"/&gt;<br />        &lt;add assembly=\"System.Xml, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=B77A5C561934E089\"/&gt;<br />        &lt;add assembly=\"System.Messaging, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A\"/&gt;<br />        &lt;add assembly=\"System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A\"/&gt;<br />        &lt;add assembly=\"System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A\"/&gt;<br />      &lt;/assemblies&gt;<br />    &lt;/compilation&gt;<br />    &lt;httpHandlers&gt;<br />      &lt;remove verb=\"<b>\" path=\"</b>.asmx\"/&gt;<br />      &lt;add verb=\"<b>\" path=\"</b>.asmx\" validate=\"false\" type=\"System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\"/&gt;<br />      &lt;add verb=\"<b>\" path=\"</b>_AppService.axd\" validate=\"false\" type=\"System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\"/&gt;<br />      &lt;add verb=\"GET,HEAD\" path=\"ScriptResource.axd\" type=\"System.Web.Handlers.ScriptResourceHandler, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\" validate=\"false\"/&gt;<br />    &lt;/httpHandlers&gt;<br />    &lt;membership&gt;<br />      &lt;providers&gt;<br />        &lt;remove name=\"AspNetSqlMembershipProvider\"/&gt;<br />        &lt;add name=\"AspNetSqlMembershipProvider\" type=\"System.Web.Security.SqlMembershipProvider, &amp;#xA;System.Web, Version=2.0.0.0, Culture=neutral, &amp;#xA;PublicKeyToken=b03f5f7f11d50a3a\" connectionStringName=\"ClubSiteDB\" enablePasswordRetrieval=\"false\" enablePasswordReset=\"true\" requiresQuestionAndAnswer=\"true\" applicationName=\"Pack934\" requiresUniqueEmail=\"false\" passwordFormat=\"Hashed\" maxInvalidPasswordAttempts=\"5\" minRequiredPasswordLength=\"4\" minRequiredNonalphanumericCharacters=\"0\" passwordAttemptWindow=\"10\" passwordStrengthRegularExpression=\"\"/&gt;<br />      &lt;/providers&gt;<br />    &lt;/membership&gt;<br />    &lt;profile&gt;<br />      &lt;providers&gt;<br />        &lt;remove name=\"AspNetSqlProfileProvider\"/&gt;<br />        &lt;add name=\"AspNetSqlProfileProvider\" connectionStringName=\"ClubSiteDB\" applicationName=\"Pack934\" type=\"System.Web.Profile.SqlProfileProvider,&amp;#xA;System.Web, Version=2.0.0.0, Culture=neutral, &amp;#xA;PublicKeyToken=b03f5f7f11d50a3a\"/&gt;<br />      &lt;/providers&gt;<br />    &lt;/profile&gt;<br />    &lt;roleManager enabled=\"true\"&gt;<br />      &lt;providers&gt;<br />        &lt;remove name=\"AspNetSqlRoleProvider\"/&gt;<br />        &lt;add connectionStringName=\"ClubSiteDB\" applicationName=\"Pack934\" name=\"AspNetSqlRoleProvider\" type=\"System.Web.Security.SqlRoleProvider, &amp;#xA;System.Web, Version=2.0.0.0, Culture=neutral, &amp;#xA;PublicKeyToken=b03f5f7f11d50a3a\"/&gt;<br />      &lt;/providers&gt;<br />    &lt;/roleManager&gt;<br />    &lt;siteMap defaultProvider=\"AspNetXmlSiteMapProvider\" enabled=\"true\"&gt;<br />      &lt;providers&gt;<br />        &lt;remove name=\"AspNetXmlSiteMapProvider\"/&gt;<br />        &lt;add name=\"AspNetXmlSiteMapProvider\" description=\"SiteMap provider which reads in .sitemap XML files.\" type=\"System.Web.XmlSiteMapProvider\" securityTrimmingEnabled=\"true\" siteMapFile=\"Web.sitemap\"/&gt;<br />      &lt;/providers&gt;<br />    &lt;/siteMap&gt;<br />    &lt;globalization requestEncoding=\"utf-8\" responseEncoding=\"utf-8\"/&gt;<br />    &lt;customErrors mode=\"Off\"/&gt;<br />  &lt;/system.web&gt;<br />  &lt;system.webServer&gt;<br />    &lt;validation validateIntegratedModeConfiguration=\"false\"/&gt;<br />    &lt;modules&gt;<br />      &lt;add name=\"ScriptModule\" preCondition=\"integratedMode\" type=\"System.Web.Handlers.ScriptModule, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\"/&gt;<br />    &lt;/modules&gt;<br />    &lt;handlers&gt;<br />      &lt;remove name=\"WebServiceHandlerFactory-Integrated\"/&gt;<br />      &lt;add name=\"ScriptHandlerFactory\" verb=\"<b>\" path=\"</b>.asmx\" preCondition=\"integratedMode\" type=\"System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\"/&gt;<br />      &lt;add name=\"ScriptHandlerFactoryAppServices\" verb=\"<b>\" path=\"</b>_AppService.axd\" preCondition=\"integratedMode\" type=\"System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\"/&gt;<br />      &lt;add name=\"ScriptResource\" preCondition=\"integratedMode\" verb=\"GET,HEAD\" path=\"ScriptResource.axd\" type=\"System.Web.Handlers.ScriptResourceHandler, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\"/&gt;<br />    &lt;/handlers&gt;<br />  &lt;/system.webServer&gt;<br />  &lt;system.net&gt;<br />    &lt;mailSettings&gt;<br />      &lt;smtp from=\"postmaster@pack934.com\"&gt;<br />        &lt;network host=\"mail.pack934.com\" userName=\"\" password=\"\"/&gt;<br />      &lt;/smtp&gt;<br />    &lt;/mailSettings&gt;<br />  &lt;/system.net&gt;<br />&lt;/configuration&gt;<br />",
+    "PostedDate": "2007-03-07T19:14:56.257-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "69329",
+    "ThreadId": "7679",
+    "Html": "\r\nmnebinger - <br /><br />The astricks screwed up your notes...  would you be able to clarify this for my webhost4life account???<br /><br />&lt;add name=\"ScriptHandlerFactory\" verb=\"<b>\" path=\"</b>.asmx\" preCondition=\"integratedMode\" type=\"System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\"/&gt;<br /><br />I don't see where you made changes specific for wh4l??<br /><br />I am getting the run time error, and don't know how to change the web.config to show the true error remotely.  All I get is:<br />Server Error in '/' Application<br />Runtime Error<br /><br />Thanks for any help!<br />    -Dennis<br />",
+    "PostedDate": "2008-01-22T09:21:45.98-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "69334",
+    "ThreadId": "7679",
+    "Html": "\r\nNever mind.  I just did a cut and paste of your web config, changed the astricks where necessary, and modified the connection string for my server.  Thanks!<br />",
+    "PostedDate": "2008-01-22T09:42:46.803-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

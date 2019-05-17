@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "104316",
+    "ThreadId": "31375",
+    "Html": "Hello there,<br>\r\n<br>\r\nI am fairly new to the Club Site Starter Kit, and unless I am missing something, I can't see a way to use the CMS ability of the Club Site Starter Kit, can someone maybe explain to me how to use it?<br>\r\n<br>\r\nThanks<br>\r\n<br>\r\nGary<br>\r\n<br>\r\n",
+    "PostedDate": "2008-07-12T12:04:50.687-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "104423",
+    "ThreadId": "31375",
+    "Html": "Hi Gary,<br>\r\n<br>\r\nsimpy browse to e.g. www.yourdomain.com/csk/<strong>content/YourCmsPage.aspx<br>\r\n<br>\r\n</strong>The data is stored into the database, don't be affraid that the page does not exists in the folder &quot;content&quot;. We use url-rewriting and load the data from db.<br>\r\n<br>\r\nHope that helps,<br>\r\nThorsten<br>\r\n",
+    "PostedDate": "2008-07-13T15:12:15.553-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "104426",
+    "ThreadId": "31375",
+    "Html": "Hello thoze,<br>\r\n<br>\r\nThanks for your help!!&nbsp; It is much appreciated!!!<br>\r\n<br>\r\nThis worked as expected, very clever!!!<br>\r\n<br>\r\nThanks<br>\r\n<br>\r\nGary<br>\r\n",
+    "PostedDate": "2008-07-13T15:25:50.913-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

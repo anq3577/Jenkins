@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Planned for Version 4",
+    "ClosedDate": "2007-06-17T15:09:44.967-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "It would be handy using resourcefiles for headings, buttons, fixed textblocks not being webcontents etc. This way a site can be multi-language. The most handy about this would be that when updates from the clubstarterkit are released, they can \"easely\" be placed over the current ones without retranslating (in my case to dutch) all fixed textblocks.",
+    "LastUpdatedDate": "2013-05-15T23:46:36.68-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-05-24T14:24:05.917-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Using Resource files",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2349
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

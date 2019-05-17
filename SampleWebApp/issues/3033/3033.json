@@ -1,0 +1,100 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-10-31T10:16:32.223-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Error\t1\t'PollQuestion' is ambiguous, imported from the namespaces or types 'ClubStarterKit.Web, ClubStarterKit.Data'.\tC:\\Documents and Settings\\Deborah S\\My Documents\\Visual Studio 2005\\WebSites\\MHRRCsk3beta1\\Poll\\AddReaction.aspx.vb\t43\t\n \n(I am working to add my files to v3 Beta1 and get this error. How can I fix it? - Thanks in advance)",
+    "LastUpdatedDate": "2013-05-15T23:46:30.11-07:00",
+    "PlannedForRelease": "Version 3 Beta 1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-08-08T23:30:16.973-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "PollQuestion ambiguous error",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 4,
+    "Id": 3033
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Hmm... looks like we need to change some naming arround.",
+      "PostedDate": "2007-08-09T06:25:54.787-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-08-14T18:03:11.15-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I am also seeing the same problem Error\t1\t'PollQuestion' is ambiguous, imported from the namespaces or types 'ClubStarterKit.Web, ClubStarterKit.Data'.\ton a \"fresh\" n stall of the latest release\t",
+      "PostedDate": "2007-08-14T18:04:10.9-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Actually, I got a Warning and an Error message:Warning\t1\tVariable 'd' is used before it has been assigned a value. A null reference exception could result at runtime.\tC:\\Documents and Settings\\mxj1009\\My Documents\\Visual Studio 2005\\WebSites\\ClubStarterKitBeta\\UserControls\\ImageFetch.ashx\t52Error\t2\t'PollQuestion' is ambiguous, imported from the namespaces or types 'ClubStarterKit.Web, ClubStarterKit.Data'.\tC:\\Documents and Settings\\mxj1009\\My Documents\\Visual Studio 2005\\WebSites\\ClubStarterKitBeta\\Poll\\AddReaction.aspx.vb\t43",
+      "PostedDate": "2007-08-17T18:04:05.903-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-08-17T18:07:25.26-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "All you have to do to fix this is specify where \"PollQuestion\" should come from. I'm not quite sure where (off the top of my head) but this is a fairly easy fix.",
+      "PostedDate": "2007-08-20T13:19:09.373-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-08-20T13:19:13.543-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-10-31T09:54:27.053-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Resolved with changeset 7088.",
+      "PostedDate": "2007-10-31T10:16:32.223-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-12-07T22:52:22.733-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:11.773-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:30.11-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

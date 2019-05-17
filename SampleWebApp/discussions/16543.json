@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "53634",
+    "ThreadId": "16543",
+    "Html": "\r\non the event page and if i try to create new content page i cannot add anything to the pages. .<br /> it says:  IsNotAdded. <br />I can get into it and type stuff in but it will not update. some of the pages work for the CMS but these dont. I dont know if its something missing on those pages or something server side. any help would be greatly appreciated<br />",
+    "PostedDate": "2007-10-16T22:45:32.763-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "60249",
+    "ThreadId": "16543",
+    "Html": "\r\nI am getting a similar problem.  What does \"IsNotAdded\" mean and how can it be fixed?<br />",
+    "PostedDate": "2007-11-28T08:14:26.217-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "60744",
+    "ThreadId": "16543",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />ChrisHance wrote:<br />I am getting a similar problem.  What does \"IsNotAdded\" mean and how can it be fixed?<br /><br /></div><br />It means that you haven't added any content to that CMS section. The \"IsNotAdded\" is the original content. Click the pencil to add and then save your content.<br /><br />There were one or two sections that had duplicate \"Section\" names, so be sure you give each content block a unique name.<br />",
+    "PostedDate": "2007-12-01T11:53:15.19-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "64465",
+    "ThreadId": "16543",
+    "Html": "\r\nI had the same problem... there were so many \"IsNotAdded\" everywhere - I just filled them with non-breaking spaces where I did not want content yet.<br /><br />I also had an issue with the Event page not updated - I just went into the code and changed the section name of the cms and then added content... that seemed to fix the problem.<br />",
+    "PostedDate": "2007-12-20T21:59:28.053-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "96784",
+    "ThreadId": "16543",
+    "Html": "I am having problems with this. Could anyone give me a step by step way to resolve this. I am not sure how to change section names or what code to look for, Thank you.<br>\r\n<br>\r\n<br>\r\nNevermind. I figured it out.<br>\r\n",
+    "PostedDate": "2008-06-04T09:39:40.283-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "102363",
+    "ThreadId": "16543",
+    "Html": "While editing a cms page you have the following url:<br>\r\nhttp://www.mydomain/WebContent/Editor.aspx?sectionname=ebbes&amp;ReturnURL=http%3a%2f%2fwww.mydomain%2fcontent%2febbes.aspx%3fpage%3d<strong>ebbes</strong><br>\r\n<br>\r\nAfter saving you return to:&nbsp;http://www.mydomain.de/content/ebbes.aspx?page=<strong>ebbes<br>\r\n</strong>This page contains &quot;IsNotAdded&quot;<br>\r\n<br>\r\nThe bold part is the section name, delete it and call the page&nbsp;http://www.mydomain.de/content/ebbes.aspx instead of&nbsp;http://www.mydomain.de/content/ebbes.aspx?page=<strong>ebbes<br>\r\n<br>\r\n</strong>Then you`ll see your edited page.\r\n",
+    "PostedDate": "2008-07-03T01:54:28.213-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

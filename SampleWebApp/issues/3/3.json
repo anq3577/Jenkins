@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-28T08:16:27.163-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Step 2 (member details)  of the user create form in register.aspx completes without validation. I have also checked this form in all three of the wesites built with 2.0 that are listed on the home page. I think this is an important issue that needs to be addressed. A user is now able to leave the member details first name and last name blank and finish creating a user account. I am trying to build a member registry of club members and some of them have no member details filled in. I would greatly ajppreciate this issue given some consideration. Thank you.",
+    "LastUpdatedDate": "2013-05-15T23:46:49.9-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-17T05:34:20.15-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "register.aspx validation issue",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 3
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

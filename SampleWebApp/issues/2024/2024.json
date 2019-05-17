@@ -1,0 +1,66 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Unable to reproduce",
+    "ClosedDate": "2007-05-20T05:05:09.1-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Multiple version RC1 - 1709\n \nAfter the default opening of the Club starter kit the following line has an anomaly:\n<%@ Register TagPrefix=\"Club\" Namespace=\"ClubSite\" %>\n \nVB Studio 2005 gives error \"Unknown eliment ClubRolloverButton\" [VB Message] (This error can occur if you have a compilation error)\n \nI noticed all the Club class Auto complete list was incomplete SO! \nI copied the same line from Edit.ASPX (Club class auto-complet list was complete) the anomaly goes away?\n \nNot sure if this is just my issue?\n \nRegards,\nHotaling",
+    "LastUpdatedDate": "2013-05-15T23:46:39.537-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-05-08T11:37:20.343-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Default.ASPX anomaly",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2024
+  },
+  "FileAttachments": [
+    {
+      "FileId": 128,
+      "FileName": "Default error.doc",
+      "DownloadUrl": ".\\128"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Hmmm... that is interesting. Close out of VS, open it up WITHOUT using a solution file and then build the site.",
+      "PostedDate": "2007-05-08T13:03:40.07-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-20T05:05:09.1-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:23.937-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:39.537-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

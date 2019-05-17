@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Not an actual bug",
+    "ClosedDate": "2008-03-18T16:46:18.45-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I'm trying to move the login control off of the Default page to either the Default.Master page or into a Web Control, but I cannot get away from this error either way I go.\nName 'User' is not declared, which also throws Name 'delblock' is not declared.\nFrom what I understand these are both controlled by the User.Identity.IsAuthenticated command, but I can't seem to find the missing link to alleviate this problem.\n \nThanks in Advance...",
+    "LastUpdatedDate": "2013-05-15T23:46:26.21-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2008-01-31T12:38:24.84-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Move Login Control",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 5282
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "It's already encapsulated in a usercontrol. It's the LoginBanner control",
+      "PostedDate": "2008-03-18T16:46:48.013-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:07.263-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:26.21-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

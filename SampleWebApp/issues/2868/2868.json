@@ -1,0 +1,86 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "individual problem",
+    "ClosedDate": "2007-09-26T12:37:49.56-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Not sure if this should be called a bug as much as an oversight.  \nWhen the truncated text for an item is displayed, if the clsoing tag for an html element is not included in the truncated text then the rest of the items also inherit the style attributes of the previous item. \nFor example, If I create a 100 word news item and make the entire text red, when the truncated item is displayed on the home page everything following this item is also red including the events and blog posts.",
+    "LastUpdatedDate": "2013-05-15T23:46:31.677-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-07-21T02:41:27.137-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Truncated HTML text items",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 2868
+  },
+  "FileAttachments": [
+    {
+      "FileId": 466,
+      "FileName": "Shared_routines.vb",
+      "DownloadUrl": ".\\466"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Yea... not much we can do in that instance. It would take complex logic to fix that issue. (Or a simple fix would be to manually add in a shorter version of the description.)",
+      "PostedDate": "2007-07-22T00:51:59.86-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-23T00:38:34.42-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Here's a quick and dirty fix that has worked for me, though I can see many pitfalls with it as it stands.  It's not extensively tested nor possibly the best way of doing it, but may help in the short term.Essentailly I have just looked for each opening tag and if it isn't closed within the truncated text, add a closing tag to the end.  ",
+      "PostedDate": "2007-07-23T03:59:17.2-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-23T03:59:17.967-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I would recommend just stripping out the HTML (SubSonic.Sugar.Strings.StripHTML)",
+      "PostedDate": "2007-09-26T12:37:36.297-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-09-26T12:37:49.56-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:13.78-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:31.677-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

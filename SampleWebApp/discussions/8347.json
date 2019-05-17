@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "27206",
+    "ThreadId": "8347",
+    "Html": "\r\nBeen working on the club starter kit but I've had a couple of issues that cropped up when I moved it to a hosted enviroment.  <br /><br />The first was blogging.  I had to get rid of the partial class external to the addblog and allbolg pages and move the code to hide the blog control to the \"load\" event in the page. So I solved that problem.<br /><br />The second is uploading an avatar.  In the development enviroment it works great.  In the hosted enviroment you push upload and nothing happens.  If I refresh the page and say yes to retransmiting the data the avatar is uploaded correctly.  I can't figure out what would be making that happen.<br /><br />The final was I added a role (member) and used that to restrict menu access.  Works great in the development enviroment.  In the hosted enviroment the \"role\" statement in the sitemap file is ignored.<br /><br />I'm definitely new at this so any insight would be welcome.<br /><br />Michele<br />",
+    "PostedDate": "2007-03-19T10:20:54.3-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

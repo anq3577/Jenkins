@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "29059",
+    "ThreadId": "8893",
+    "Html": "\r\n(Originally posted at http://forums.asp.net/thread/1609954.aspx)<br /><br />The additions look great!  I want to convert my existing Club Starter Kit 1.0 to 2.0 but I have done some changes to the colors and images (see www.cwysc.org)  but I can't figure out where to make the cosmetic changes in v2.  I am a WinForms programmer (not ASP) so you may need to talk slowly :)<br /><br />Thanks <br /><br />Dan<br />",
+    "PostedDate": "2007-04-05T10:40:11.87-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "29089",
+    "ThreadId": "8893",
+    "Html": "\r\nUpgrading from 1.0 is going to be a pain... I would create a new theme inside 2.0.<br /><br />1) Download and install 2.0 RC<br />2) Copy App_Themes/ClubSite and paste<br />3) Rename it to what you want.<br />4) Copy in your images<br />5) Copy in your stylesheet<br />6) Change your web.config from &lt;pages theme=\"  .... to &lt;pages theme=\"<a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=Your%20Theme\">Your Theme</a> (I'm not sure what line.)<br />",
+    "PostedDate": "2007-04-05T13:58:54.783-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "31426",
+    "ThreadId": "9679",
+    "Html": "\r\nHi all,<br />Has anyone noticed in RC1 that when you don't upload a photo that you get the red \"x\" next to the username when viewing the /member/list.aspx?<br />In the original Club Starter Kit, a \"No Photo Selected\" icon used to show up next to users who didn't upload a photo.<br />Any ideas on how to fix this?<br /><br />Here how the source looks after the page is rendered:<br /><br />                        &lt;div class=\"membercard\"&gt;<br />                           &lt;div style=\"float: left; padding: 0 5px 0 0;\"&gt;<br />                                &lt;img id=\"ctl00<i>ContentPlaceHolder1</i>DataList1<i>ctl00</i>ImageThumbnail1\" src=\"\" style=\"border-width:0px;\" /&gt;<br /><br />                            &lt;/div&gt;<br />                            &lt;h3&gt;<br />                                &lt;span id=\"ctl00<i>ContentPlaceHolder1</i>DataList1<i>ctl00</i>titleLabel\"&gt;test 123&lt;/span&gt;<br />                            &lt;/h3&gt;<br />",
+    "PostedDate": "2007-04-26T17:56:29.73-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31431",
+    "ThreadId": "9679",
+    "Html": "\r\nThere are a number of those gifs missing from RC1, three or four in the Forum section that I found. I've been getting them from an older version, Version 2-Beta 2 I think. So far I've found them all there. Some need to go in the /images folder and some in whatever theme/images folder that you are using. Just put a copy in both and you should be good to go.<br />",
+    "PostedDate": "2007-04-26T20:09:27.12-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31560",
+    "ThreadId": "9679",
+    "Html": "\r\nefrazier and akabatman2... can you make a list of the images that need to go in the images folder?<br />",
+    "PostedDate": "2007-04-28T08:21:13.917-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31691",
+    "ThreadId": "9679",
+    "Html": "\r\nSo Far,<br /><br />This is what I have.  I can't remember what I had to put in there, but this is a list of what I have in my /images folder:<br /><br />CalendarIcon.png<br />Dropdownbtn.gif<br />images.txt<br />nophoto.gif<br />offline.gif<br />online.gif<br />recent.gif<br />section.gif<br />stickythreadlockedfalse.gif<br />stickythreadlockedtrue.gif<br />threadlockedfalse.gif<br />threadlockedtrue.gif<br />topic.gif<br />unread.gif<br />unwatch.gif<br />",
+    "PostedDate": "2007-04-30T07:50:56.9-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31695",
+    "ThreadId": "9679",
+    "Html": "\r\nI added a function to the top of the page<br /><br />Public Function picit(ByVal content As String) As String<br />        If content Is Nothing Then<br />            Return \"../images/nophoto.gif\"<br />        Else<br />            Return content<br />        End If<br />    End Function<br /><br />then i modified the line that references the picture to use the function<br /><br />&lt;asp:image ID=\"ImageThumbnail1\" runat=\"server\" imageURL='&lt;%# picit(Cstr(Eval(\"PhotoURL\"))) %&gt;' /&gt; <br /><br />there is probably an easier way to do this but I had to do this quickly.<br /><br />As you can see in what you pointed out. The src doesn't point anywhere in RC1. This is because the database is returning a null value. This is in turn getting passed into the page.  My function simply checks if it is null and if it is, it returns ../images/nophoto.gif which will put the image that you are looking for in there as long as you have the nophoto.gif file in your images.<br />",
+    "PostedDate": "2007-04-30T08:15:30.18-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

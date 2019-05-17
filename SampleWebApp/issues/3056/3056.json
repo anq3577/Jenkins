@@ -1,0 +1,120 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-10-17T12:47:53.25-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "In starter kit v3 beta 1, can't add a new photo album. Database is not updated.",
+    "LastUpdatedDate": "2013-05-15T23:46:29.677-07:00",
+    "PlannedForRelease": "Version 3 Beta 1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-08-11T15:45:44.53-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Can't add new album",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 3056
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "OK... that really doesn't say a lot :)",
+      "PostedDate": "2007-08-11T20:36:18.707-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Try to add an album to the starter kit v3 beta 1 - nothing happens. Do you need more information about this? What could I tell you that would help?",
+      "PostedDate": "2007-08-12T11:15:13.097-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I got the \"add album\" function to work by adding my own sqldatasource on the album table and then adding a details view (and, copying and pasting some of the existing code). I then deleted the existing \"add album\" stuff on the page that didn't work. \r\n\r\nThe photo picker seems to work! hooray!\r\n\r\nHowever, I could not get \"bulk\" insert to work - could not select more than one image, and the link to \"upload all selected\" did not work. \r\n\r\nAlso, when trying to edit a picture, when a title or comments are added (photo/contents.aspx), error message: ObjectDataSource 'SelectImage' could not find a non-generic method 'UpdateAlbum' that has parameters title, notes, id.",
+      "PostedDate": "2007-08-13T10:57:05.783-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I have the same problem. Has anybody figured this out?",
+      "PostedDate": "2007-09-25T12:51:57.917-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-10-07T04:25:45.697-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Same problem here. If I make a new album, nothing happens. So I can't upload photos right now. Is there a work around? \r\n\r\nThanks in advance,Steve",
+      "PostedDate": "2007-10-07T04:29:49.453-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I cannot add a album either. i click new album and type it in but nothing is created after i click create. I am running the current release and when even tried the latest changeset pointing to my DB and cannot create anything. Ive got the current V3 database. I currently have Windows Vista with nets. 2.0 and SQL server 2005",
+      "PostedDate": "2007-10-08T20:28:46.22-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Essentially the database schema has changed.  The Albums table in the database used to have the following columns:\r\n\r\nalbumid,title, parentid, ownerid, private\r\n\r\nThe current build of the database extended the schema a bit to give more detailed information (adding a description field).  The new schema looks like:\r\n\r\nalbumid,title, parentid, isprivate, description, ownerid\r\n\r\nSyncing to the latest code I see that this is still and open issue.  In my own usage I have implemented a fix.  I will see about joining the project to check in the fix or pass the fix along to another developer.  If you want the code fix straight from me let me know and I'll e-mail you the appropriate solution.",
+      "PostedDate": "2007-10-12T14:24:00.457-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-10-15T09:21:25.227-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Issue the same as:\r\n\r\nhttp://www.codeplex.com/ClubStarterKit/WorkItem/View.aspx?WorkItemId=2987",
+      "PostedDate": "2007-10-15T09:23:50.583-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Resolved with changeset 6486.",
+      "PostedDate": "2007-10-17T12:47:53.25-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "any update on this??",
+      "PostedDate": "2008-07-22T06:37:05.56-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "It looks like the bug for adding a new album is in Photo/New line 47.\r\nIt reads    ; \"InsertCommand=\"INSERT INTO Albums(title, parentid, ownerid, private) ...\"\r\nShould be; \"InsertCommand=\"INSERT INTO Albums(title, parentid, ownerid, isprivate) ...\"\r\nThe Select statement is also referring to the column [private], but should be [isprivate].\r\n",
+      "PostedDate": "2009-01-21T12:17:37.867-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-12-07T22:52:23.087-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:11.263-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:29.677-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

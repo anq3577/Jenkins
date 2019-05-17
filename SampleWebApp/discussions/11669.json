@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "37881",
+    "ThreadId": "11669",
+    "Html": "\r\nAfter signing into web site as Administrator. I  added a role  (photo )  so members can post photo’s  in a Album. <br />Then went in to manage users and check the role box ( photo ) selected member. <br />When the member signs in and clicks on Photo’s there is no add album. <br />When you create a role how do you get it to work? <br />",
+    "PostedDate": "2007-06-21T13:43:34.67-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37893",
+    "ThreadId": "11669",
+    "Html": "\r\nThey are in the role photo, but the album isn't associated with the photo album. Follow the instructions on <a href=\"http://www.codeplex.com/ClubStarterKit/Thread/View.aspx?ThreadId=11389\" class=\"externalLink\">this post<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a> but replace \"Blogger\" with photo.<br />",
+    "PostedDate": "2007-06-21T15:06:16.757-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37915",
+    "ThreadId": "11669",
+    "Html": "\r\nWhen you create a role how do you get it to work? <br /><br />So a member can they create their own album? Then will they only be able edit and remove their own??<br />",
+    "PostedDate": "2007-06-21T19:11:12.393-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37919",
+    "ThreadId": "11669",
+    "Html": "\r\nThey can if you configure it correctly. Follow the instructions in the post listed above but put this in for the web.config section<br /><br />&lt;location path=\"photo/new.aspx\"&gt;<br />\t\t&lt;system.web&gt;<br />\t\t\t&lt;authorization&gt;<br />\t\t\t\t&lt;deny users=\"?\"/&gt;<br />\t\t\t&lt;/authorization&gt;<br />\t\t&lt;/system.web&gt;<br />\t&lt;/location&gt;<br />",
+    "PostedDate": "2007-06-21T20:30:19.333-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37941",
+    "ThreadId": "11669",
+    "Html": "\r\nI coped and pasted your post in the web.config and photo/contents.aspx <br /><br />IsAdmin = User.IsInRole(\"Administrators\")<br />        If User.IsInRole(\"Blogger\") = True Then<br />            IsAdmin = True<br /><br />&lt;authorization&gt;<br />\t&lt;allow roles=\"Administrators\"/&gt;<br />                &lt;allow roles=\"Blogger\"/&gt;<br />                &lt;deny users=\"?\"/&gt;<br />&lt;/authorization&gt;<br /><br />now after member signs in and clicks on Photos it takes them to<br />http://localhost:XXXXX/New%20Folder/photo/contents.aspx?Albumid=31<br /><br />They can edit or delete anyones album but not delete pictures or add new album?<br /><br /><br /><br /><br /><br />",
+    "PostedDate": "2007-06-22T01:10:04.647-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37997",
+    "ThreadId": "11669",
+    "Html": "\r\nThey can set it to a private album and then other people can't see it.<br />",
+    "PostedDate": "2007-06-22T09:16:17.09-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38104",
+    "ThreadId": "11669",
+    "Html": "\r\nz2bass <br />They can set it to a private album and then other people can't see it.<br />This does not solve my problem.<br /><br />I am a new be to this code an having trouble under standing why put create a role option box  for administrator to check in the /New%20Folder/admin/ManageUsers.aspx if it does not work?  <br />Why do we have to thru all the other post you have gave me? <br /><br />I would like members to be able to:<br />1. create new album<br />2. Up load pictures to it<br />3. Edit &amp; delete their own post<br />",
+    "PostedDate": "2007-06-23T17:03:26.383-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38113",
+    "ThreadId": "11669",
+    "Html": "\r\nThey can, but you have to configure it correctly. To do so, you will have to assign the roles to the specific task. The things I have outlined should work. If they don't want anyone else to see their photos, they can set the album to private. <br />",
+    "PostedDate": "2007-06-23T19:19:16.797-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

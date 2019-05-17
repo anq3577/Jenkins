@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "38222",
+    "ThreadId": "11782",
+    "Html": "\r\nHello.<br /><br />I have CSK 2.0 up and running on discountASP.NET.  Thanks to everyone involved in making this starter kit available.<br /><br />I notice there are patches/fixes in the source code section that are dated after 5/11/2007.<br /><br />Should i/how do i use these changes?  Is there a newer version of CSK that includes these changes?<br /><br />Any help would be gratefully appreciated.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-25T09:07:19.603-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38225",
+    "ThreadId": "11782",
+    "Html": "\r\nIt's not so much fixes as it is building the next version. Its pre-beta, so it is a \"try at your own risk\" sort of thing.<br />",
+    "PostedDate": "2007-06-25T09:40:17.797-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38228",
+    "ThreadId": "11782",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />It's not so much fixes as it is building the next version. Its pre-beta, so it is a \"try at your own risk\" sort of thing.<br /><br /></div><br />So what should i do?  Look at the download file and see if it is something that i would be interested in using?  How do i tell what was changed?  Is there a description of what the changes are?<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-25T09:48:14.32-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38259",
+    "ThreadId": "11782",
+    "Html": "\r\nWell, basically all of the files have changed (or will be changed). The whole architecture for pushing data to and from the database has changed for most of the files. We should be in beta in a few weeks... v2 should hold up until v3 beta.<br />",
+    "PostedDate": "2007-06-25T13:33:29.773-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39067",
+    "ThreadId": "11782",
+    "Html": "\r\nIf you want to see what has changed, here is a good diff-merge tool to use that is free:<br /><br />http://sourcegear.com/diffmerge/index.html<br /><br />Disclaimer: I am a happy vault user, as their license allows single developers to use it free.  :)<br />",
+    "PostedDate": "2007-06-30T00:03:36.42-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39078",
+    "ThreadId": "11782",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />mnebinger wrote:<br />If you want to see what has changed, here is a good diff-merge tool to use that is free:<br /><br />http://sourcegear.com/diffmerge/index.html<br /><br />Disclaimer: I am a happy vault user, as their license allows single developers to use it free.  :)<br /><br /></div><br />Great.  I downloaded it.  I will soon give it a try.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-30T06:03:49.087-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

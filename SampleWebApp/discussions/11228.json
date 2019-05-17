@@ -1,0 +1,162 @@
+[
+  {
+    "Id": "36341",
+    "ThreadId": "11228",
+    "Html": "\r\nHello, I am new to this forum and would like to thank very much the hard work put in by everyone in creating this wonderful resource.<br /><br />The only bug that I seem to be unable to solve thus far is when I go to create or edit an event in the \"events\" section.  When I upload an image I have no problem in having the event description display with the correct image.  However when I try to reference an existing image using the \"Existing Image\" button I am able to access the photo galleries but nothing updates.  I am left with the default image \"f.jpg\" regardless of what I select.<br /><br />Any suggestions would be appreciated.  Thank-you very much for your time; have a great day!<br /><br />EDIT: It is also broken when using the \"News\" section, but for the life of me I can't see the error in PhotoAlbum<i>Picker.acsx or Photos</i>FormPicker.acsx.<br />",
+    "PostedDate": "2007-06-10T19:19:38.283-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36343",
+    "ThreadId": "11228",
+    "Html": "\r\nHi, can you first tell me if you are using 2.0 final or a recent build? If you are using a recent build, which changeset?<br />",
+    "PostedDate": "2007-06-10T19:39:52.79-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36349",
+    "ThreadId": "11228",
+    "Html": "\r\nI'm using the 2.0 final build.  I downloaded the most recent build but I couldn't find any differences thus far, although I am continuing to look.  Thank-you for responding; any help would be appreciated.<br />",
+    "PostedDate": "2007-06-10T22:05:16.527-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36382",
+    "ThreadId": "11228",
+    "Html": "\r\nI will take a look at it and get back to you.<br />",
+    "PostedDate": "2007-06-11T06:57:33.107-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36562",
+    "ThreadId": "11228",
+    "Html": "\r\nZach,<br /><br />I am using 2346 and having the same issues with the events page.  I haven't checked the news yet but will<br />",
+    "PostedDate": "2007-06-12T08:32:56.587-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36811",
+    "ThreadId": "11228",
+    "Html": "\r\nThank-you for taking a look at it Zach, I'll keep searching for the issue myself as well.<br />",
+    "PostedDate": "2007-06-13T14:03:24.71-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36925",
+    "ThreadId": "11228",
+    "Html": "\r\nHaving the same issue in the News page.  <br />",
+    "PostedDate": "2007-06-14T09:54:31.707-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37008",
+    "ThreadId": "11228",
+    "Html": "\r\nHow do we move this to the issues list?<br />",
+    "PostedDate": "2007-06-14T21:00:51.84-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37186",
+    "ThreadId": "11228",
+    "Html": "\r\nI was turning the events stuff over to SubSonic and I realized that the photopicker doesn't work! I'm probably going to just allow someone to use an existing image.<br />",
+    "PostedDate": "2007-06-16T11:47:46.043-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37354",
+    "ThreadId": "11228",
+    "Html": "\r\nZach,  Not sure what you mean by your last post.  Are you planning on limiting the selection of photos from different albums and just going with a stock photo?<br />",
+    "PostedDate": "2007-06-18T12:53:52.847-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37360",
+    "ThreadId": "11228",
+    "Html": "\r\nI've been doing some testing and here is what I have found.<br /><br />I cleared the albums and images tables.  Created two albums and placed 3 images in each album.  Albums are album ID32 and 33.  Images are:<br /><br />18     Album ID 32<br />19     Album ID 32<br />20     Album ID 32<br />21     Album ID 33<br />22     Album ID 33<br />23     Album ID 33<br /><br />I add a new news event and try to use existing images.  I select the image and get the image with a red X in it.  When you look at the properties of the images you get the following:<br /><br />http://localhost:1174/2346ogfutbol/UserControls/imagefetch.ashx?<b>ImageID=32</b>&amp;Size=1<br /><br />It appears it is pulling the AlbumID number instead of the image ID number.  This appears to be code in the imagefetch.ashx but it may be something passed into it.<br /><br />I am continuing to TS.<br />",
+    "PostedDate": "2007-06-18T13:55:20.137-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40062",
+    "ThreadId": "11228",
+    "Html": "\r\nThe fix:<br /><br />In usercontrols/photos<i>formpicker.ascx, modify existingchosen</i>click to the below.<br /><br />    Protected Sub existingChosen_Click(ByVal sender As Object, ByVal e As System.EventArgs)<br />        'ImageId = CInt(\"0\" &amp; AlbumList2.SelectedValue)<br /><br />        ImageId = CInt(\"0\" &amp; selectedimage.Value.ToString())<br />        viewswitch.SetActiveView(main)<br />    End Sub<br /><br /><br />I also changed the imageid() property to be an object so the null value logic works properly, like so:<br />    Property ImageId() As Object<br />        Get<br />            EnsureChildControls()<br />            If viewswitch.ActiveViewIndex = 1 Then<br />                Return CInt(selectedimage.Value)<br />            Else<br />                Dim id As Object = ViewState(\"ImageID\")<br />                If id Is DBNull.Value Then<br />                    Return 0<br />                Else<br />                    Return CInt(id)<br />                End If<br /><br />                'Dim id As Object = ViewState(\"ImageID\")<br />                'If id Is Nothing Then<br />                '    ViewState(\"ImageID\") = 0<br />                '    Return 0<br />                'Else<br />                '    Return CInt(id)<br />                'End If<br />            End If<br /><br />        End Get<br />        Set(ByVal value As Object)<br />            ViewState(\"ImageID\") = value<br />        End Set<br />    End Property<br /><br />You'll have to wrap cint() around imageid references throughout the photos_formpicker.ascx where needed. <br />",
+    "PostedDate": "2007-07-07T12:11:41.793-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40067",
+    "ThreadId": "11228",
+    "Html": "\r\nTina, does that apply to recent builds or only 2.0?<br />",
+    "PostedDate": "2007-07-07T13:17:10.353-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40069",
+    "ThreadId": "11228",
+    "Html": "\r\nSorry, I meant to specify that. I'm using the 2.0 code. :)<br />",
+    "PostedDate": "2007-07-07T13:49:35.237-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40079",
+    "ThreadId": "11228",
+    "Html": "\r\nI can see if it is aplicable for v3 codebase. I will also try it in v2.<br />",
+    "PostedDate": "2007-07-07T17:26:28.693-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40281",
+    "ThreadId": "11228",
+    "Html": "\r\nTina,<br /><br />I am a little confused about the last line of your post.  \"You'll have to wrap cint() around imageid references throughout the photos_formpicker.ascx where needed.\".<br /><br />Could you elaborate and give me an example?<br /><br />Thanks!<br />",
+    "PostedDate": "2007-07-09T12:31:19.88-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40290",
+    "ThreadId": "11228",
+    "Html": "\r\nSure:<br /><br />Protected Sub Page_PreRender(ByVal sender As Object, ByVal e As System.EventArgs)<br />        RenderScript()<br />        If CInt(ImageId) &lt;&gt; 0 Then<br />            imagepreview.ImageUrl = \"imagefetch.ashx?ImageID=\" &amp; CInt(ImageId) &amp; \"&amp;Size=\" &amp; imagesize()<br />        End If<br />    End Sub<br /><br />used to be:<br />Protected Sub Page_PreRender(ByVal sender As Object, ByVal e As System.EventArgs)<br />        RenderScript()<br />        If ImageId &lt;&gt; 0 Then<br />            imagepreview.ImageUrl = \"imagefetch.ashx?ImageID=\" &amp; CInt(ImageId) &amp; \"&amp;Size=\" &amp; imagesize()<br />        End If<br />    End Sub<br />",
+    "PostedDate": "2007-07-09T12:53:46.38-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40297",
+    "ThreadId": "11228",
+    "Html": "\r\nTina<br /><br />Nice work!  That worked great!<br /><br /><br />Bob<br />",
+    "PostedDate": "2007-07-09T13:37:04.59-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40367",
+    "ThreadId": "11228",
+    "Html": "\r\nThis discussion has been copied to a work item. Click here to <a href=\"http://www.codeplex.com/ClubStarterKit/WorkItem/View.aspx?WorkItemId=2757\">go to the work item and continue the discussion</a>.<br />",
+    "PostedDate": "2007-07-09T22:03:21.777-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40369",
+    "ThreadId": "11228",
+    "Html": "\r\nOk... this has been fixed in the latest changeset.<br />",
+    "PostedDate": "2007-07-09T22:29:35.033-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

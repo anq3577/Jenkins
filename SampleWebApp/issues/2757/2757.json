@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-07-09T22:27:02.3-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hello, I am new to this forum and would like to thank very much the hard work put in by everyone in creating this wonderful resource.\n \nThe only bug that I seem to be unable to solve thus far is when I go to create or edit an event in the \"events\" section.  When I upload an image I have no problem in having the event description display with the correct image.  However when I try to reference an existing image using the \"Existing Image\" button I am able to access the photo galleries but nothing updates.  I am left with the default image \"f.jpg\" regardless of what I select.\n \nAny suggestions would be appreciated.  Thank-you very much for your time; have a great day!\n \nEDIT: It is also broken when using the \"News\" section, but for the life of me I can't see the error in PhotoAlbumPicker.acsx or PhotosFormPicker.acsx.",
+    "LastUpdatedDate": "2013-05-15T23:46:32.5-07:00",
+    "PlannedForRelease": "Version 3 Beta 1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-07-09T22:03:21.96-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Selecting an Existing Image in \"Events\" Section Broken",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2757
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 3539.",
+      "PostedDate": "2007-07-09T22:27:02.3-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:14.907-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:32.5-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

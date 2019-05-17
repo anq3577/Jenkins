@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "33448",
+    "ThreadId": "10325",
+    "Html": "<br />Does anyone have a .sql script that will create a new member user account and assign role admin?<br />My go daddy servers are not playing nice with .sql scripts and I cant login with admin access.<br /><br />Just a little fustrated with Go daddy.<br />",
+    "PostedDate": "2007-05-15T20:16:18.387-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33480",
+    "ThreadId": "10325",
+    "Html": "\r\nIt's not really that hard. You put in your connection string into the Web.config. Open the site and create a user. You then open the ASP.NET configuration tool. You then assign the user with the role \"Administrators\" (no quotes). You don't need the .sql file. That makes no difference. It would take longer to generate than it does configuring it yourself.<br />",
+    "PostedDate": "2007-05-16T03:24:53.14-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33497",
+    "ThreadId": "10325",
+    "Html": "<br />The connection string works fine. (not really that hard)<br />Opened the site and created user just fine. (not really that hard)<br /><br />Assign user role Administrators - ASP.NET configuration tool. (here it gets hard)<br />When you run ASP.NET configuration tool it is running against your local database.<br />When I open the website directly from VS the ASP.NET confiuration tool is not available.<br />I wish I could use the ASP.NET configuration tool against my remote web server.<br /><br /><br />Thanks<br />",
+    "PostedDate": "2007-05-16T06:37:01.953-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33595",
+    "ThreadId": "10325",
+    "Html": "\r\nThis is similar to another post here.  Use SQL on your local asp.net member ship and find the user admin as outlined in the Go Daddy Walk Through I posted.  Then insert that into hte GO Daddy production site.<br /><br />I have 2 sites running on Go Daddy with no issues.  One PSK and one CSK.  Getting rready to add a third site but will be using Webhost4life.  The high school doesn't like the message Go Daddy is presenting I guess, so they won't use them.  Would have been nice to keep everyhting in one location.<br /><br />Bob<br />",
+    "PostedDate": "2007-05-16T18:42:55.127-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33610",
+    "ThreadId": "10325",
+    "Html": "<br /><br />Me and directions dont get along well when I work issues longer than 12 hours.  I was trying to find the user admin on the remote machine, somehow thinking that the role id for admin would be in place.  Unfortunalty the godaddy instuctions were created for version 1.0 and while it was great in getting my site deployed, getting into it with admin access always failed for one reason or another and only new users created would show when I qued the database and I was not able to assign them to admin role via script.<br /><br />Every time I tried in load a .sql \"file\" the web interface froze.  So I copied the entries manually out of the scripts and pasted them into the godaddy servers.  Unfortunalty they always had one error or another.  <br /><br />Thanks, you have explained away some of my go daddy issues.<br />Ultimatly go daddy's (2) 200MB sql databases was limiting.  The lack of sql managment tools was a back breaker for this hoster for me.  I opted to change hosting companies, I am evaluating ultimahosts.net, Unlimited sql databses limited by account size (1-2GB) I was not impressed however with e-mail support only but then again go daddy support was worthless as they turn on your account and say \"good luck\".<br /><br />regards,<br />Hotaling.   <br />",
+    "PostedDate": "2007-05-16T21:19:32.503-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33833",
+    "ThreadId": "10325",
+    "Html": "\r\nI certainly can agree.  It is a process.  I also don't like Go Daddy's 200MB limit on SQL.  That is why I am a fan of moving the photos into a file system and out of the DB.  I have done this in my PSK site (thanks to Jeremy) and it works great and performance improved.<br /><br />There are other issues I have with Go Daddy as well, and you hit on many of them.<br /><br />I am going to try webhost4life for a new sie as I mentioned and will let you know how it goes.  Keep us updated on ultimatehosts<br />",
+    "PostedDate": "2007-05-18T07:56:44.007-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

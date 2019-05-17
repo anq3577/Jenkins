@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "41717",
+    "ThreadId": "12771",
+    "Html": "\r\nHi<br /><br />I want to create a node on the menu bar that links to an external link.<br /><br />When I add the node in the web.sitemap file, I address the url as http:\\\\.............<br /><br />By adding the http:\\\\ stops the link showing up,<br /><br />Any ideas?<br />",
+    "PostedDate": "2007-07-19T03:03:58.493-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41771",
+    "ThreadId": "12771",
+    "Html": "\r\nForward slash?<br /><br />Shouldn't it be http://   ?<br />",
+    "PostedDate": "2007-07-19T09:52:28.407-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41780",
+    "ThreadId": "12771",
+    "Html": "\r\nok, http://..... still dont work<br />",
+    "PostedDate": "2007-07-19T11:23:43.373-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41946",
+    "ThreadId": "12771",
+    "Html": "\r\nhmmm... you might need to add it directly to the page.<br />",
+    "PostedDate": "2007-07-20T14:00:21.997-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "42255",
+    "ThreadId": "12771",
+    "Html": "\r\nSolution:<br /><br />create a dummy page say :  dummy.aspx<br /><br />In the page load of that page place the following code:<br /><br />    Response.Redirect(\"http://\"www.codeplex.com/clubstarterkit\");<br /><br />Then you can use the dummy.aspx in the web.sitemap and use the web.config authorization issues on it<br /><br />Robert<br />",
+    "PostedDate": "2007-07-24T00:40:03.083-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

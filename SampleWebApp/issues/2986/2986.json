@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-08-06T07:47:24.55-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Deleting a news-download will return a 404\n--> replacethe navigationUrl in News/download.aspx line 66 with'<%# \"~/news/download.aspx?delref=\" & CStr(Eval(\"ID\")) & \"&articleid=\" & CStr(Request(\"articleid\")) %>'\n--> replace line 40 with Response.Redirect(\"~/news/download.aspx?articleid=\" & CStr(Request(\"articleid\")))",
+    "LastUpdatedDate": "2013-05-15T23:46:31.07-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-08-06T03:45:17.413-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Deleting News-Download fails",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2986
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

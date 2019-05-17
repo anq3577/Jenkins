@@ -1,0 +1,74 @@
+[
+  {
+    "Id": "44588",
+    "ThreadId": "13675",
+    "Html": "\r\nI get the following error when I try to delete a blog post.<br /><br />Server Error in '/' Application.<br />--------------------------------------------------------------------------------<br /><br />Must declare the scalar variable \"@postid0\". <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />Exception Details: System.Data.SqlClient.SqlException: Must declare the scalar variable \"@postid0\".<br /><br />Source Error: <br /><br /><br />Line 42: <br />Line 43:         Dim cmd As New SubSonic.QueryCommand(sql)<br />Line 44:         SubSonic.DataService.ExecuteQuery(cmd)<br />Line 45: <br />Line 46:         Response.Redirect(\"~/blogs/default.aspx\")<br /><br /><br />Source File: C:\\Domains\\rde4s.com\\wwwroot\\blogs\\Post.aspx.vb    Line: 44 <br /><br />Stack Trace: <br /><br /><br /><a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=SqlException%20%280x80131904%29%3a%20Must%20declare%20the%20scalar%20variable%20%22%40postid0%22.\">SqlException (0x80131904): Must declare the scalar variable \"@postid0\".</a><br />   System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection) +857370<br />   System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection) +734982<br />   System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj) +188<br />   System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj) +1838<br />   System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async) +192<br />   System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe) +380<br />   System.Data.SqlClient.SqlCommand.ExecuteNonQuery() +135<br />   SubSonic.SqlDataProvider.ExecuteQuery(QueryCommand qry) in SqlDataProvider.cs:196<br />   SubSonic.DataService.ExecuteQuery(QueryCommand cmd) in DataService.cs:382<br />   Blogs<i>Post.HyperLink2</i>Click(Object sender, EventArgs e) in C:\\Domains\\rde4s.com\\wwwroot\\blogs\\Post.aspx.vb:44<br />   System.Web.UI.WebControls.Button.OnClick(EventArgs e) +105<br />   System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument) +107<br />   System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument) +7<br />   System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument) +11<br />   System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData) +33<br />   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +5102<br /><br /><br /><br /><br />--------------------------------------------------------------------------------<br />Version Information: Microsoft .NET Framework Version:2.0.50727.42; ASP.NET Version:2.0.50727.819 <br />",
+    "PostedDate": "2007-08-10T21:34:37.797-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44608",
+    "ThreadId": "13675",
+    "Html": "\r\nThis was fixed in build 3923<br />",
+    "PostedDate": "2007-08-11T07:25:38.283-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "46180",
+    "ThreadId": "13675",
+    "Html": "\r\nWhen a new build is released is the is the express version updated? I downloaded the newest build and located what seemed to be the same files as those found in the express version but I get errors. I'd try to list the errors but the maximum number of errors has been exceeded.<br />",
+    "PostedDate": "2007-08-22T19:41:31.693-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "46518",
+    "ThreadId": "13675",
+    "Html": "\r\nJust replace the App_Code/BLL/blog.vb file.<br />",
+    "PostedDate": "2007-08-24T14:19:25.553-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "49834",
+    "ThreadId": "13675",
+    "Html": "<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Just replace the App_Code/BLL/blog.vb file.<br /><br /></div><br />I have just installed the starter pack express version today Version 3 beta 1 and Im recieving the same error, I also tried downloading the blog.vb file from the standard version and its still the same. Does anyone have any suggestions? Thanks.<br /><br />Edit: I located the newest build as I wasnt using it before, I now dont get any error but it doesnt delete the blog comment when I click the delete button. Are there any more files I need to delete as the latest patched builds are all for the standard version and im running the express version. cheers.<br />",
+    "PostedDate": "2007-09-18T14:39:32.98-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "58788",
+    "ThreadId": "13675",
+    "Html": "\r\nI am having the same error and I just downloaded the 3.1 beta about 3 days ago.  However, it looked to me as if the problem is in an object that would have been compiled into the SubSonic.dll<br /><br />BTW, where do you get these new downloads such as the blogs.vb?<br />",
+    "PostedDate": "2007-11-18T20:03:53.043-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "61808",
+    "ThreadId": "13675",
+    "Html": "\r\nThere have been 2 \"fixes\" posted and neither one fixed the problem.  Did anyone check to see if maybe there is a new SubSonic dll that should be used.  I mean it looks like that is where the error message is telling us the problem resides.<br /><br />I realize this is a free application and that support is provided on a catch-as-can-catch basis, but if the moderator is not going to moderate can we at least get one who can.  I don't know if there is no response because the problem is too difficult for the moderator to understand or answer, or if the moderator is too busy or if the moderator just doesn't care.  Is there anyone out there who knows?<br />",
+    "PostedDate": "2007-12-08T07:28:59.72-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "71146",
+    "ThreadId": "13675",
+    "Html": "\r\nI found the solution to this, add the following code to the Hyperlink2_Click procedure:<br /><br />replace <br />sql += \"\\r\\n\" <br />with<br /><b>sql += \" \"</b><br /><br /><br />Dim cmd As New SubSonic.QueryCommand(sql)  //this is already in there<br />Insert this:<br /><b>Dim param As New SubSonic.QueryParameter()</b><br /><b>param.ParameterName = \"postid0\"</b><br /><b>param.ParameterValue = Request(\"id\")</b><br /><b>cmd.Parameters.Add(param)</b><br /><br />SubSonic.DataService.ExecuteQuery(cmd)  //this is already in there<br /><br />This worked for me, give it a shot.<br />",
+    "PostedDate": "2008-01-31T15:36:47.31-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "236198",
+    "ThreadId": "13675",
+    "Html": "<p>In VS2005std go to Edit/ Find&amp;Replace/ Find in Files. Find what? = Hyperlin2_Click. Look in? = Entire Solution. Follow intstructions there.</p>",
+    "PostedDate": "2009-09-18T13:03:37.75-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

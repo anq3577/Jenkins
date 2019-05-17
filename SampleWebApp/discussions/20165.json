@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "66893",
+    "ThreadId": "20165",
+    "Html": "\r\nin real world application when a user connect to an application after login and pass word he presses the \"return button\"<br />in CSK you can't you must click with the mouse on the \"login\" button<br />this can be achieved by simple following code line :<br />Page.Form.DefaultButton = LoginButton.UniqueID;<br />i applogy for C#<br />",
+    "PostedDate": "2008-01-09T02:08:45.42-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

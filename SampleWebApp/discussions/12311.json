@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "40043",
+    "ThreadId": "12311",
+    "Html": "\r\nWhat are the chances of getting a Beginners Guide for Visual Studio and Sub Sonic for those who have been using VWD for the CSK?  A basic step by step process would help transition us to VS and SUb Sonic.<br />",
+    "PostedDate": "2007-07-07T07:55:12.21-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40052",
+    "ThreadId": "12311",
+    "Html": "\r\nWhat will happen is once beta 1 is out, the \"Express\" version will have the website as it is now plus a generator in the Dev folder. Basically all you will have to do is open the generator and generate up your DAL classes. I will try to work out something this weekend for a step-by-step for that to work with the TFS source code.<br />",
+    "PostedDate": "2007-07-07T10:20:09.24-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40282",
+    "ThreadId": "12311",
+    "Html": "\r\nThansk Zack.<br /><br />I am making the leap to VS Pro and need a few basics on the pending release and how vs works in conjuncion with Sub Sonic as compared to VWD.<br />",
+    "PostedDate": "2007-07-09T12:37:42.32-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40358",
+    "ThreadId": "12311",
+    "Html": "\r\nThere are 2 basic routes one will be able to take:<br /><br />1) \"Standard\" - DAL Generator in the IDE (2 project)<br /><br />2) \"Express\" - DAL Generator in the browser (1 project/website)<br /><br />It will be personal preference.<br /><br />Also, I will get a good idea of what needs to happen once beta 1 is out and people try it out.<br />",
+    "PostedDate": "2007-07-09T18:52:17.387-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

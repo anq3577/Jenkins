@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "32584",
+    "ThreadId": "10039",
+    "Html": "\r\nTwo Errors<br />App_Code/PageNumberer.vb   Line 48 &lt;<br /><br />Removed           &lt;                      cleared error.<br /><br />Can you help with this <br /><br />SkinId 'unread' is already used by another control skin of the same type.<br /> /ClubStarterKit-2194/App_Themes/ClubSite/Forum.skin    Line: 25 <br /><br />Thanks<br />",
+    "PostedDate": "2007-05-09T02:52:10.497-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32940",
+    "ThreadId": "10039",
+    "Html": "\r\nTry the latest build.<br />",
+    "PostedDate": "2007-05-11T14:55:19.623-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

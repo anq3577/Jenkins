@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "26300",
+    "ThreadId": "8043",
+    "Html": "\r\nHi,<br />I try to install csk on Windows Server 2003 SP1 and Sql2005 Ent. However, i get error messages when i run the sql script.<br /><br />The Error Message;<br /><br />Msg 137, Level 15, State 2, Procedure PagedAlbumList, Line 24<br />Must declare the scalar variable \"@ownerid\".<br />Msg 137, Level 15, State 2, Procedure PagedAlbumList, Line 28<br />Must declare the scalar variable \"@ownerid\".<br />Msg 137, Level 15, State 2, Procedure PagedAlbumList, Line 33<br />Must declare the scalar variable \"@ownerid\".<br />Msg 468, Level 16, State 9, Procedure aspnet<i>UsersInRoles</i>AddUsersToRoles, Line 45<br />Cannot resolve the collation conflict between \"SQL<i>Latin1</i>General<i>CP1</i>CI<i>AS\" and \"Turkish</i>CI_AI\" in the equal to operation.<br />Msg 468, Level 16, State 9, Procedure aspnet<i>UsersInRoles</i>AddUsersToRoles, Line 52<br />Cannot resolve the collation conflict between \"SQL<i>Latin1</i>General<i>CP1</i>CI<i>AS\" and \"Turkish</i>CI_AI\" in the equal to operation.<br />Msg 468, Level 16, State 9, Procedure aspnet<i>UsersInRoles</i>AddUsersToRoles, Line 76<br />Cannot resolve the collation conflict between \"SQL<i>Latin1</i>General<i>CP1</i>CI<i>AS\" and \"Turkish</i>CI_AI\" in the equal to operation.<br />Msg 468, Level 16, State 9, Procedure aspnet<i>UsersInRoles</i>AddUsersToRoles, Line 83<br />Cannot resolve the collation conflict between \"SQL<i>Latin1</i>General<i>CP1</i>CI<i>AS\" and \"Turkish</i>CI_AI\" in the equal to operation.<br />Msg 468, Level 16, State 9, Procedure aspnet<i>UsersInRoles</i>AddUsersToRoles, Line 90<br />Cannot resolve the collation conflict between \"SQL<i>Latin1</i>General<i>CP1</i>CI<i>AS\" and \"Turkish</i>CI_AI\" in the equal to operation.<br />Msg 468, Level 16, State 9, Procedure aspnet<i>UsersInRoles</i>RemoveUsersFromRoles, Line 50<br />Cannot resolve the collation conflict between \"SQL<i>Latin1</i>General<i>CP1</i>CI<i>AS\" and \"Turkish</i>CI_AI\" in the equal to operation.<br />Msg 468, Level 16, State 9, Procedure aspnet<i>UsersInRoles</i>RemoveUsersFromRoles, Line 58<br />Cannot resolve the collation conflict between \"SQL<i>Latin1</i>General<i>CP1</i>CI<i>AS\" and \"Turkish</i>CI_AI\" in the equal to operation.<br />Msg 468, Level 16, State 9, Procedure aspnet<i>UsersInRoles</i>RemoveUsersFromRoles, Line 84<br />Cannot resolve the collation conflict between \"SQL<i>Latin1</i>General<i>CP1</i>CI<i>AS\" and \"Turkish</i>CI_AI\" in the equal to operation.<br />Msg 468, Level 16, State 9, Procedure aspnet<i>UsersInRoles</i>RemoveUsersFromRoles, Line 92<br />Cannot resolve the collation conflict between \"SQL<i>Latin1</i>General<i>CP1</i>CI<i>AS\" and \"Turkish</i>CI_AI\" in the equal to operation.<br />Msg 15151, Level 16, State 1, Line 1<br />Cannot find the object 'aspnet<i>UsersInRoles</i>AddUsersToRoles', because it does not exist or you do not have permission.<br />Msg 15151, Level 16, State 1, Line 1<br />Cannot find the object 'aspnet<i>UsersInRoles</i>RemoveUsersFromRoles', because it does not exist or you do not have permission.<br /><br />Is it something wrong with the script.. or..?<br /><br />Btw, i downloaded the Sql2005 script.<br /><br />Thanks,<br />",
+    "PostedDate": "2007-03-11T03:34:19.32-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "26307",
+    "ThreadId": "8043",
+    "Html": "\r\nIt has always worked for me... is it an empty database?<br />",
+    "PostedDate": "2007-03-11T08:16:48.983-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "26379",
+    "ThreadId": "8043",
+    "Html": "\r\nyes, a brand new system and totally empty database.<br />",
+    "PostedDate": "2007-03-12T00:29:42.583-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "26385",
+    "ThreadId": "8043",
+    "Html": "\r\nok i resolved it manually addin gthe line<br /><br />DECLARE @ownerid UNIQUEIDENTIFIER<br /><br />after line 2566. and then i replaced the collation definitions to Turkish<i>CI</i>AS. now it's ok.<br />",
+    "PostedDate": "2007-03-12T02:02:53.787-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

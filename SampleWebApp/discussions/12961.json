@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "42272",
+    "ThreadId": "12961",
+    "Html": "\r\nIs there anything I can do to  view the changes that have been made with VWD<br /><br />Failing that....<br /><br />Any idea when V3 Beta will be released as I understand that I will be able to use Beta version with VWD<br />",
+    "PostedDate": "2007-07-24T04:08:23.403-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "42296",
+    "ThreadId": "12961",
+    "Html": "\r\nI am hoping within the next week or two v3 beta 1 will be out. I just need to finish up on the League tracker stuff, add the VWD web project, and convert everything to C#.<br />",
+    "PostedDate": "2007-07-24T08:37:09.98-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

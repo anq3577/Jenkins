@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "80848",
+    "ThreadId": "24128",
+    "Html": "\r\njust downloaded the newest, latest and greatest.  I went to delete the default poll and recieved an error.  PollControl.vb:150, the for each loop.  If answertable is nothing, it bombs.  I was tossed in a simple If Not(AnswerTable is Nothing) around those loops (there's two within that method) along with the count around 155.<br /><br />can someone verify this?  I didn't want to add it as a bug until I was sure.<br /><br />re-create conditions -- new install, log in as admin, delete the poll, go back to the main page.<br />",
+    "PostedDate": "2008-03-15T18:13:06.127-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,105 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:21:00.21-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Since we already have people to sign up as a member, maybe we could integrate mailing list functionality to the Club Starter Kit.\n \nWhere the registration screen should have an checkbox for newsletter (yes/no)\n \nAnd an admin screen where it's possible to send an html newsletter to the members that opted in for an e-mail newsletter (since it's a club most of the people would like the newsletter i guess...\n \nGive me your thought's about this, i think it's easy to integrate this into the club starter kit.",
+    "LastUpdatedDate": "2013-05-15T23:46:45.203-07:00",
+    "PlannedForRelease": "v2 RC1",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:20:55.427-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Addition of mailing-list?",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 6,
+    "Id": 819
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "We already have the ability to email all users... is this ok? Download the latest code, login with \"admin\"/\"admin\" and got to members... click email users.",
+      "PostedDate": "2007-04-25T14:20:56.037-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I think it would be nice in these days when you get battered with all sorts of emailjunk to be able to opt out for Newsletter.It would be a useful extra option imho. And...... a nice newsletter module would be great too.Lex",
+      "PostedDate": "2007-04-25T14:20:56.41-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "OK... I see what you mean.",
+      "PostedDate": "2007-04-25T14:20:56.77-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "The Bulk email addon I wrote has instructions (co-authored by Lex) for adding the ability for members to Opt out at sign up or remove themselves at any time.  I am working on the Web Admin now, but if anyone wants to integrate mine with the current it should not be to hard. you can download my version at aspsksolutions.com under Remove from mailing list feature on the downloads page.",
+      "PostedDate": "2007-04-25T14:20:57.147-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "MaineOne - I added a slight addition to your WebAdmin package to automatically append a \"this email is from ...\" to the end of every bulk email that is sent.  This could be further extended to have a \"click here to remove yourself from this email list\".  The only catch would be that every email would have to be unique instead of sending to multiple addressees on each loop through.",
+      "PostedDate": "2007-04-25T14:20:57.52-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "The reason I used bcc is speed.  When my site only had 20-30 members sending each email individually was ok, but when it grew to 60-80 I noticed an increase in time (1-2 min) for the site to finish sending them or even worse get a timed out error. I havent't really seen how the new one works and I will try to merge my sites membership with the new one and see how it handles 100 plus members.",
+      "PostedDate": "2007-04-25T14:20:57.91-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "As the number of user can grow, it is going to take some time to process each e-mail.  I have build an E-Mail scheduler before which over comes the time issue, as the E-mail scheduler runs as a service on the server and you call it by calling a WebService.  However we don't have the luxury of being  able to load services on our machines.\r\n\r\nTherefore what I propose is to build an ASync page that will process the sending of e-mails on the Web Server and provide the end user a screen to view the process.  This means that the End User can go on doing what they want to do on the website without fear of the e-mails failing when they go out or suffer from timeouts.\r\n\r\nWe can do this with using the Async that comes with ASP.NET V2.0, or fireing off a process to run on the Web Server and just watching it's progress.\r\n\r\nI'm happy to start coding, but would welcome peoples comments before I start coding",
+      "PostedDate": "2007-04-25T14:20:58.287-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "MaineOne, can't register on your site to get the download!",
+      "PostedDate": "2007-04-25T14:20:58.66-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I've found a problem with the mailcode, do I exlain it here?",
+      "PostedDate": "2007-04-25T14:20:59.037-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Just go ahead and file another issue, chriscee",
+      "PostedDate": "2007-04-25T14:20:59.41-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:21:00.21-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:31.263-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:45.203-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

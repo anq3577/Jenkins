@@ -1,0 +1,98 @@
+[
+  {
+    "Id": "42060",
+    "ThreadId": "12891",
+    "Html": "\r\nI have created a new folder and pages for a XXXX page by copying the News folder and pages.<br />Converted all News references to XXXX. <br />Created a tables ( DownloadsInXXXX ) &amp; Stored Procedures (DownloadsByXXXX) Converted all News references to XXXX. <br />Everything works like it is suppose to, but When you post in XXXX it also post in News.<br />How do I break the link?<br />",
+    "PostedDate": "2007-07-22T11:19:25.903-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "42220",
+    "ThreadId": "12891",
+    "Html": "\r\nAfter making the changes above post, I created Stored Procedures for Dardanelle that is copy of Announcements,News and all the Tables.<br /><br />I have this code in Dardanelle/list.aspx page. <br /><br />12.    Protected Sub SqlDataSource1_Selected(ByVal sender As Object, ByVal e As                                                                     System.Web.UI.WebControls.SqlDataSourceStatusEventArgs)<br />13.    Dim pages As Integer<br /><br /> 14.   pages = CInt(e.Command.Parameters(\"@pageCount\").Value)<br /><br /> 15.   Pn2.Count = pages<br /> 16.   End Sub<br /><br />The error below refers to line 14 above<br /><br />System.InvalidCastException was unhandled by user code<br />  Message=\"Conversion from type 'DBNull' to type 'Integer' is not valid.\"<br />  Source=\"Microsoft.VisualBasic\"<br />  StackTrace:<br />       at Microsoft.VisualBasic.CompilerServices.Conversions.ToInteger(Object Value)<br />       at ASP.dardanelle<i>list</i>aspx.SqlDataSource1_Selected(Object sender, SqlDataSourceStatusEventArgs e) in C:\\Documents and Settings\\Owner\\My Documents\\Test Web site\\Dardanelle\\List.aspx:line 14<br />       at System.Web.UI.WebControls.SqlDataSourceView.OnSelected(SqlDataSourceStatusEventArgs e)<br />       at System.Web.UI.WebControls.SqlDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)<br />       at System.Web.UI.WebControls.Repeater.GetData()<br />       at System.Web.UI.WebControls.Repeater.CreateControlHierarchy(Boolean useDataSource)<br />       at System.Web.UI.WebControls.Repeater.OnDataBinding(EventArgs e)<br />       at System.Web.UI.WebControls.Repeater.DataBind()<br />       at System.Web.UI.WebControls.Repeater.EnsureDataBound()<br />       at System.Web.UI.WebControls.Repeater.OnPreRender(EventArgs e)<br />       at System.Web.UI.Control.PreRenderRecursiveInternal()<br />       at System.Web.UI.Control.PreRenderRecursiveInternal()<br />       at System.Web.UI.Control.PreRenderRecursiveInternal()<br />       at System.Web.UI.Control.PreRenderRecursiveInternal()<br />       at System.Web.UI.Control.PreRenderRecursiveInternal()<br />       at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)<br /><br /><br />Any ideals on how to correct this? <br />",
+    "PostedDate": "2007-07-23T16:29:16.423-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "42841",
+    "ThreadId": "12891",
+    "Html": "\r\nWell I have made progress with my converted  News folder, pages, Tables and Stored Procedures.<br />Ran new SqlDataSource  query   to connect <br />Now I can open the new pages  and click on the add new Article button and it opens  but when I click save <br />It shows no Article posted?  <br />At a lost.<br />",
+    "PostedDate": "2007-07-27T23:34:10.94-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "42856",
+    "ThreadId": "12891",
+    "Html": "\r\nOn what page does the article not show up on?<br /><br />If you are on the list view, look at \"Recent Events\". It might have been put down there.<br />",
+    "PostedDate": "2007-07-28T08:46:51.57-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43039",
+    "ThreadId": "12891",
+    "Html": "\r\nIt does not show up on any page.<br />",
+    "PostedDate": "2007-07-30T12:39:07.893-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43053",
+    "ThreadId": "12891",
+    "Html": "\r\nIs it broken in v3?<br />",
+    "PostedDate": "2007-07-30T14:37:58.663-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43089",
+    "ThreadId": "12891",
+    "Html": "\r\nNo  ClubStarterKit 2 Final<br /><br />When I click on Dardanelle link, the /Dardanelle/list.aspx opens.<br />When I click on New Article: the /Dardanelle/Edit.aspx opens.<br />When I click on Save Article: the /Dardanelle/list.aspx opens, but there is no Article posted<br />",
+    "PostedDate": "2007-07-30T21:38:24.197-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43237",
+    "ThreadId": "12891",
+    "Html": "\r\nYou need to walk through the process in debug. What I've found is that errors aren't really being trapped effectively in all cases. I'm sure you'll figure out why the record isn't being added to the database in debug mode... <br />",
+    "PostedDate": "2007-07-31T20:55:05.267-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43253",
+    "ThreadId": "12891",
+    "Html": "\r\nI don't know if this is what you are referring to, but I hit the save button (There was no post.)  when I click Log off Button I got this error.<br />Line 38 is the same as News/edit.aspx line 38.<br /><br /><br />System.NullReferenceException was unhandled by user code<br />  Message=\"Object reference not set to an instance of an object.\"<br />  Source=\"App<i>Web_</i>mfpr4ae\"<br />  StackTrace:<br />       at ASP.dardanelle<i>edit</i>aspx.FormView1_DataBound(Object sender, EventArgs e) in C:\\Documents and Settings\\Owner\\My Documents\\Test Web site\\Dardanelle\\Edit.aspx:line 38<br />       at System.Web.UI.WebControls.BaseDataBoundControl.OnDataBound(EventArgs e)<br />       at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)<br />       at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)<br />       at System.Web.UI.WebControls.DataBoundControl.PerformSelect()<br />       at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()<br />       at System.Web.UI.WebControls.FormView.DataBind()<br />       at System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()<br />       at System.Web.UI.WebControls.FormView.EnsureDataBound()<br />       at System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls()<br />       at System.Web.UI.Control.EnsureChildControls()<br />       at System.Web.UI.Control.PreRenderRecursiveInternal()<br />       at System.Web.UI.Control.PreRenderRecursiveInternal()<br />       at System.Web.UI.Control.PreRenderRecursiveInternal()<br />       at System.Web.UI.Control.PreRenderRecursiveInternal()<br />       at System.Web.UI.Control.PreRenderRecursiveInternal()<br />       at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)<br />",
+    "PostedDate": "2007-07-31T23:23:33.41-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43283",
+    "ThreadId": "12891",
+    "Html": "\r\nIn v3 beta 1 I took out the stored proc and it now runs from the business logic. This is (should be...) fixed in v3 beta 1.<br />",
+    "PostedDate": "2007-08-01T05:18:21.78-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43353",
+    "ThreadId": "12891",
+    "Html": "\r\nFor learning purposes how can I fix this error?<br />",
+    "PostedDate": "2007-08-01T12:56:47.877-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43372",
+    "ThreadId": "12891",
+    "Html": "\r\n:) No clue.<br />",
+    "PostedDate": "2007-08-01T14:36:30.93-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

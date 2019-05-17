@@ -1,0 +1,5 @@
+<div class="wikidoc"><h1>Content Management System</h1>
+In the Club Starter Kit, we provide you with a quick an easy content management system.<br /><br />
+<h2>Edit content</h2>To edit content, click the pencil icon if you see it (you must be logged in as an &quot;Editor&quot;). Edit your text using the editor and submit.<br /><br />
+<h2>Put a CMS control on a page</h2>
+First, put this at the top of the page under the page atributes.<br /><br /><span class="codeInline"> &lt;%@ Register Src=&quot;~/UserControls/WebContent.ascx&quot; TagName=&quot;WebContent&quot; TagPrefix=&quot;Club&quot; %&gt; </span><br /><br />Now, put this in the page where you want the CMS area to be.<br /><br /><span class="codeInline"> &lt;Club:WebContent ID=&quot;WebContent1&quot; runat=&quot;server&quot; /&gt; </span><br /><br />I personally like to add a &quot;Section&quot; to the control. If you were to do that, your control would look like this:<br /><br /><span class="codeInline"> &lt;Club:WebContent ID=&quot;WebContent1&quot; runat=&quot;server&quot; Section=&quot;foo&quot; /&gt; </span></div><div class="ClearBoth"></div>

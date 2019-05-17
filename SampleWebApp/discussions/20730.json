@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "68895",
+    "ThreadId": "20730",
+    "Html": "\r\nI can send email to users but when the \"Report CMS Update\" I get the following error.<br />Any help would be appreciated.<br />Thank you,<br />Jim<br />I have two users  1- is an admin (I am logged in as and one verified user.<br /><br /><br />A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 64.202.165.92:25 <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />Exception Details: System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 64.202.165.92:25<br /><br />Source Error: <br /><br /><br />Line 56: <br />Line 57:             Dim smtp As New System.Net.Mail.SmtpClient<br />Line 58:             smtp.Send(mail)<br />Line 59:         End Sub<br />Line 60: <br /><br /><br />Source File: c:\\Inetpub\\vhosts\\balsabashers.com\\httpdocs\\App_Code\\BLL\\CMS.vb    Line: 58 <br /><br />Stack Trace: <br /><br /><br /><br /><br />",
+    "PostedDate": "2008-01-19T18:58:09.44-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

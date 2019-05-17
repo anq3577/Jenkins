@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "66037",
+    "ThreadId": "19933",
+    "Html": "\r\nI am wondering due to the lack of answers to posted discussions if this project is still under development of have we seen the end of it?  I am wondering also of the status of the ability to upgrade from version 2 to version 3, will this be possible at all in the near future?  If these questions are not answered in a timely manner I would assume that the project is not currently being developed any further. Thank you.<br />",
+    "PostedDate": "2008-01-04T05:14:20.12-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "66055",
+    "ThreadId": "19933",
+    "Html": "\r\nI'm kind of in the same place as you. I am not sure if I should use this kit to create our club site or should I use the base MS kit. I do like some of the features that this kit offers but I also have to weigh the options against time to go live. Hopefully we will get a response so we can make an informed decsision.<br /><br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />jerrysdean43 wrote:<br />I am wondering due to the lack of answers to posted discussions if this project is still under development of have we seen the end of it?  I am wondering also of the status of the ability to upgrade from version 2 to version 3, will this be possible at all in the near future?  If these questions are not answered in a timely manner I would assume that the project is not currently being developed any further. Thank you.<br /><br /></div>",
+    "PostedDate": "2008-01-04T06:52:36.67-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "66086",
+    "ThreadId": "19933",
+    "Html": "\r\nTGake a look at this site,  it not perfect but i have used the 3.1 download and visual web developer express,  and it ok for me.  www.norc.org.uk<br /><br />",
+    "PostedDate": "2008-01-04T08:23:37.633-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "66088",
+    "ThreadId": "19933",
+    "Html": "\r\nAre you using VWD 2005 or 2008?<br /><br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />halls wrote:<br />TGake a look at this site,  it not perfect but i have used the 3.1 download and visual web developer express,  and it ok for me.  www.norc.org.uk<br /><br /><br /><br /></div>",
+    "PostedDate": "2008-01-04T08:29:54.353-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "66182",
+    "ThreadId": "19933",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />flickman wrote:<br />Are you using VWD 2005 or 2008?<br /><br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />halls wrote:<br />TGake a look at this site,  it not perfect but i have used the 3.1 download and visual web developer express,  and it ok for me.  www.norc.org.uk<br /><br /><br /><br /></div>I am using vw2008 now, I developed this http:sahcinfo.org with vwd2005 and rc1 version 2 and would like to someday upgrade to version 3, at this time an upgrade is not possible.<br /><br /><br /></div>",
+    "PostedDate": "2008-01-04T16:53:21.657-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "66312",
+    "ThreadId": "19933",
+    "Html": "\r\nYes I am using VWD 2008,  <br />",
+    "PostedDate": "2008-01-05T17:12:14.25-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "70152",
+    "ThreadId": "19933",
+    "Html": "<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />halls wrote:<br />Yes I am using VWD 2008,  <br /><br /></div>Did you also install the SQL tables yourself ?<br />",
+    "PostedDate": "2008-01-26T14:05:43.103-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "70180",
+    "ThreadId": "19933",
+    "Html": "\r\nNot the end of it... just took a little break for a while. We're going to be getting back on track shortly.<br />",
+    "PostedDate": "2008-01-26T21:12:11.717-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

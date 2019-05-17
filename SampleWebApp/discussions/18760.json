@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "61451",
+    "ThreadId": "18760",
+    "Html": "\r\nIs there a way to use fckeditor to create new content pages on the fly from a browser? Our users create essays (with text formatting, pictures, etc.) and now I create a new page for each essay. Is there instructions for fckeditor so a user could create a new essay and it is accessed through some table of contents and then they are displayed on just one page after a user selects the appropriate essay to view? I have looked around for intstuctions for this, but can't seem to find any ... fckeditor works great on a single, already created page.<br /><br />Sorry to be so dense on this ... thanks in advance for your help.<br />",
+    "PostedDate": "2007-12-06T03:50:38.757-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "Id": "33189",
+    "ThreadId": "10248",
+    "Html": "\r\nRan the sql schema script, I can't login,<br />I ran the data sql script (which I would rather not do) and it generates errors.<br /><br />Anyone know an easy way to manually add an Admin user account so I can manage my website?<br /><br /><br />Thanks<br />Hotaling<br />",
+    "PostedDate": "2007-05-14T10:54:28.447-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33199",
+    "ThreadId": "10248",
+    "Html": "\r\nASP.NET Configuration tool.<br />",
+    "PostedDate": "2007-05-14T11:49:21.74-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33211",
+    "ThreadId": "10248",
+    "Html": "\r\nThanks,<br /><br />Does this require Front page Server Extentions?<br /><br />When I connect to the remote server via FTP I do not see the ASP.NET Configuration Tool option on the website menu.<br /><br /><br />",
+    "PostedDate": "2007-05-14T12:44:04.7-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33420",
+    "ThreadId": "10248",
+    "Html": "\r\nasp.net config tool is only available on your local machine I believe.  What host are you using?  There are some directions on the asp,net forums in the csk and psk forums that address a go daddy walk though, which may be similar for your host.  I believe it is step 26.  basically you select the admin account from your local (dev) system and insert into your remote (production) system.  THis keeps the credentials for development and production the same.<br /><br />",
+    "PostedDate": "2007-05-15T14:15:57.34-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33439",
+    "ThreadId": "10248",
+    "Html": "\r\nI use go daddy,<br /><br />let me know if you come accross insert directions.<br />I am looking for them, as it stands I can create a user account, but I dont have admin access.<br /><br /><br />",
+    "PostedDate": "2007-05-15T18:14:04.147-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33440",
+    "ThreadId": "10248",
+    "Html": "\r\nHere you go:<br /><br />Create your site locally.  Include AT LEAST 1 local admin account. <br />Run site using CTRL-F5. <br />Log into your GoDaddy hosting account and open the control panel. <br />Click on ASP.Net runtime and select 2.0 <br />Click Databases &gt; SQL Server &gt; Create New Database. <br />Select <br />Check DSN (optional?) <br />Enter UserName (this will become the database name NOT your hosting login) <br />Enter Password (again, database password NOT hosting password) <br />Check \"Install Schema Features\"<br />Click Continue &gt; Create Database (it WILL take some time for the database to create itself, you can refresh by clicking the SQL button in the left menu) <br />Once setup finishes, Click Pencil icon under actions &gt; print this page. <br />Click Computer icon under actions &gt; record the SQL Connection (.NET) strings <br />Click Open Manager <br />Click Connection &gt; Enter the Username and Password from 6 above. <br />Once connected, expand Tools menu &gt; Click Query Analyzer <br />Cut &amp; Paste all text from club-add.sql into the Query Analyzer window <br />Click Submit (you should see many \"command(s) completed successfully\" below) <br />Go back to VWD and edit default.aspx <br />Go to Edit &gt; Find &amp; Replace &gt; Quick Replace <br />Find dbo. (NOT Dbo. big difference) <br />Replace with &lt;blank&gt; (nothing, nada, zip, zero) <br />Look in: Current Document<br />Click Replace All (should be 12 or more) &gt; Save default.aspx <br />Repeat steps 16 &amp; 17 for: <br />Events_Edit.aspx <br />Events_View.aspx<br />Open web.config <br />Replace original text <br />&lt;add name=\"ClubSiteDB\" connectionString=\"Data Source=.\\SQLExpress;<br /><br />      Integrated Security=true;<br /><br />      AttachDBFileName=|DataDirectory|Club.mdf;<br /><br />      User Instance=True\" providerName=\"System.Data.SqlClient\"/&gt;<br /><br />With new text<br /><br />&lt;add name=\"ClubSiteDB\" providerName=\"System.Data.SqlClient\"<br /><br />      connectionString=\"server=whsql-v04.prod.mesa1.secureserver.net;<br /><br />      database=DB_12345;<br /><br />      uid=myusername;<br /><br />      pwd=mypassword\"/&gt;<br /><br />&lt;remove name=\"LocalSqlServer\"/&gt;<br /><br />&lt;add name=\"LocalSqlServer\" providerName=\"System.Data.SqlClient\"<br /><br />      connectionString=\"server=whsql-v04.prod.mesa1.secureserver.net;<br /><br />      database=DB_12345;<br /><br />      uid=myusername;<br /><br />      pwd=mypassword\"/&gt;<br /><br />Change &lt;customErrors mode=\"Off\" /&gt; (optional)<br /><br />Save!!!<br /><br />Run CTRL-F5 again.  (it will bring up a window with a server error, what you want is to look in the lower left corner of the VWD window for \"Build Successful\")<br /><br />Click Website &gt; Copy Web Site &gt; Connect<br /><br />Input your hosting username and password (NOT you database uid and pwd)<br /><br />Highlight all files from the left side and click right arrow to transfer.<br /><br />Go to your public website and create an account for each admin you created on your local database.  (make sure the usernames and passwords are the same!!!)<br /><br />Log back into Query Analyzer<br /><br />Input<br /><br />SELECT RoleId FROM aspnet_Roles WHERE RoleName=\"Administrators\"<br /><br />Copy bracketed response into a text document and include the brackets<br /><br />Reset QA and Input<br /><br />SELECT UserId FROM aspnet_Users WHERE UserName=\"username\" <br /><br />Copy each bracketed response to your text document.<br /><br />Reset QA again and Input<br /><br />INSERT INTO aspnet_UsersInRoles (RoleId, UserID) VALUES ('copied text from 29', 'copied text from 31')<br /><br />Repeat 28-32 for each admin account.<br /><br />Welcome to your club site on GoDaddy!<br /><br />Thanks to MaineOne and btech_rohit for insight into this problem!<br /><br />",
+    "PostedDate": "2007-05-15T18:47:42.39-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33451",
+    "ThreadId": "10248",
+    "Html": "<br />SELECT RoleId FROM aspnet_Roles WHERE RoleName=\"Administrators\"<br /><br />Error -2147217900 <br />Invalid column name 'Administrators'.<br /><br />",
+    "PostedDate": "2007-05-15T21:15:48.973-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33539",
+    "ThreadId": "10248",
+    "Html": "\r\nDid you try the singular case?<br />",
+    "PostedDate": "2007-05-16T08:52:21.233-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33600",
+    "ThreadId": "10248",
+    "Html": "\r\nWhere is the \"club-add.sql\" file? I downloaded the Data.sql and Schema.sql <br /><br />nonprofit <br />",
+    "PostedDate": "2007-05-16T19:19:34.487-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33609",
+    "ThreadId": "10248",
+    "Html": "\r\nclub-add.sql was from version 1.0. (its not used in version 2.0)<br /><br />Just run the schema.sql to start clean with out test data. <br /><br /><br />",
+    "PostedDate": "2007-05-16T21:02:18.53-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33627",
+    "ThreadId": "10248",
+    "Html": "\r\n{quote} <br />hotaling wrote:<br />club-add.sql was from version 1.0. (its not used in version 2.0)<br /><br />Just run the schema.sql to start clean with out test data. <br /><br />How is the schema.sql run  (within Query Analzyer?) Could you give simple instructions for this newbie? Appreciate your patience <br />",
+    "PostedDate": "2007-05-17T03:11:59.153-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33657",
+    "ThreadId": "10248",
+    "Html": "\r\nYes with query analzyer!<br /><br />open the .sql file with visual web developer or sql managment studio copy and paste it in your sql web server query analyzer.<br /><br />You may be able to use sql managment studio to connect to your sql web server directly and open/run the query.  (i.e. when sql managment studio starts in the connect to server name enter your sql web server ip address)  most likley you will change to sql authentication and enter you sql ID and password).  <br /><br />Hope this helps.<br /><br /><br /><br /><br /><br />",
+    "PostedDate": "2007-05-17T07:11:19.817-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

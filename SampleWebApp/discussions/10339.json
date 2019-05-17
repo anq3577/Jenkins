@@ -1,0 +1,138 @@
+[
+  {
+    "Id": "33499",
+    "ThreadId": "10339",
+    "Html": "\r\nCan we get a list of top five hosting providers that CSK works well with?<br /><br />Godaddy should not be in the top four.<br />Thanks<br />",
+    "PostedDate": "2007-05-16T06:42:04.6-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33522",
+    "ThreadId": "10339",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />hotaling wrote:<br />Can we get a list of top five hosting providers that CSK works well with?<br /><br />Godaddy should not be in the top four.<br />Thanks<br /><br /><br /></div><br />My vote is for ultimahosts.net, the best kept secret on the internet. Great folks na dso easy to get the database up and running.<br />",
+    "PostedDate": "2007-05-16T07:58:59.33-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33562",
+    "ThreadId": "10339",
+    "Html": "\r\n#1 = ultimahosts<br />",
+    "PostedDate": "2007-05-16T11:51:10.087-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33580",
+    "ThreadId": "10339",
+    "Html": "\r\nGreat,<br /><br />I like the ultimahosts offering.<br />When you publish to the web, what steps did you use with this provider?<br />Did you have to run .sql scripts?<br /><br />Thanks<br />",
+    "PostedDate": "2007-05-16T14:19:40.96-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33597",
+    "ThreadId": "10339",
+    "Html": "\r\nI have heard webhost4life is pretty good.  I'll be bringing up a new site on hem soon.  I have two on Go Daddy with no issues.  For cost and ease of use they are good, but they do have some \"interesting hoops\"<br />",
+    "PostedDate": "2007-05-16T18:47:26.19-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33598",
+    "ThreadId": "10339",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />rhhanson wrote:<br />I have heard webhost4life is pretty good.  I'll be bringing up a new site on hem soon.  I have two on Go Daddy with no issues.  For cost and ease of use they are good, but they do have some \"interesting hoops\"<br /><br /><br /></div><br />Could you let me know the steps involved to get the site up and running on go daddy?<br />nonprofit <br />",
+    "PostedDate": "2007-05-16T19:15:36.267-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33608",
+    "ThreadId": "10339",
+    "Html": "\r\nI use Lunarpages.com and have been real happy with the price and service. As for installing the database, I create a local backup using SQL Express. Create an empty database on the server and restore to that database from my .bak file. Works great and you don't have to mess with scripts. My site is <a href=\"http://www.RenegadeSprints.org\" class=\"externalLink\">http://www.RenegadeSprints.org<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a>=RenegadeSprints.org.<br />",
+    "PostedDate": "2007-05-16T20:52:07.413-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33612",
+    "ThreadId": "10339",
+    "Html": "\r\nHow do you create a local backup with SQL Express?  Do you use a script?<br /><br />",
+    "PostedDate": "2007-05-16T22:04:13.677-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33644",
+    "ThreadId": "10339",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />hotaling wrote:<br />How do you create a local backup with SQL Express?  Do you use a script?<br /><br /><br /><br /></div><br />You download the free SQL Server Management Express from Microsoft, launch it, attach your database, back it up and go to your control panel on the server and restore. Simple as that and you may also edit your tables with the same program on the server. Hope this helps, if you need more info, support at Ultimatehosts is great or contackt me for more info.<br />",
+    "PostedDate": "2007-05-17T06:24:38.307-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33684",
+    "ThreadId": "10339",
+    "Html": "<br />SQL Server Management Express (check)<br /><br />attach your database(check)<br /><br />back it up (explain) I dont have a backup menu or script, I must me missing something?<br /><br />go to your control panel on the server and restore (check)<br />",
+    "PostedDate": "2007-05-17T08:29:45.63-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33723",
+    "ThreadId": "10339",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />hotaling wrote:<br /><br />SQL Server Management Express (check)<br /><br />attach your database(check)<br /><br />back it up (explain) I dont have a backup menu or script, I must me missing something?<br /><br />go to your control panel on the server and restore (check)<br /><br /></div><br />You right click on the database , left click tasks, left click on backup<br />",
+    "PostedDate": "2007-05-17T12:13:38.15-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33729",
+    "ThreadId": "10339",
+    "Html": "\r\nThe backup option was not available because I had .net framwork issues.  Once I corrected the \"cant creat key on unstable parent key.  I had to remove SQL ADMIN and repair framework 2 and re-boot then re-install SQL ADMIN. (now I have a backup option)<br /><br />I tried to do a restore from within SQL admin studio connected to web sql server (Failed)<br />I could only do it within the host control panel.<br /><br />I finally have admin access to my website.  <br />I also received some good documents on membership as it relates to starter kits.<br /><br />Thanks for your help.<br />",
+    "PostedDate": "2007-05-17T13:09:13.53-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "34029",
+    "ThreadId": "10339",
+    "Html": "\r\nI had nothing but trouble when using 1and1 so they are certainly not in the top 5.  Based on the recommendations here I tried out ultimahosts.net and they have been great - they would be my #1 pick.<br />",
+    "PostedDate": "2007-05-20T22:40:29.217-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "35302",
+    "ThreadId": "10339",
+    "Html": "\r\nI've had great luck with ASPNIX (aspnix.com). Great control panel (after you get the hang of it). I bought the reseller package and have hosted several sites using the CSK as a baseline (with modifications). It uses ASP.NET 2.0 and MS SQL 2005. The only thing I can't do is backup a database and restore to a separate database. But they say the next version of the Helm control panel will let me do that.<br />",
+    "PostedDate": "2007-06-01T00:08:27.17-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "35369",
+    "ThreadId": "10339",
+    "Html": "\r\nI'd like to put in a good word for Re-invent.com.  Not only did they install the kit for free, they stuck with me until I had it running. The tech support was quicker and more complete than I found with GoDaddy or ipowerweb. Installation involved a couple of reinstalls for the kit whenever I screwed it up, some instructions about not using SQL Express, entering some dummy  data to initiate the events links, and re-attaching the database a couple times. I could not have done any of this by myself, but the site works now and I will be shamelessly mimicking the Troop 14 Scout site for my own scout troop.<br />",
+    "PostedDate": "2007-06-01T09:57:42.483-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37294",
+    "ThreadId": "10339",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />efrazier wrote:<br />I use Lunarpages.com and have been real happy with the price and service. As for installing the database, I create a local backup using SQL Express. Create an empty database on the server and restore to that database from my .bak file. Works great and you don't have to mess with scripts. My site is <a href=\"http://www.RenegadeSprints.org\" class=\"externalLink\">http://www.RenegadeSprints.org<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a>=RenegadeSprints.org.<br /><br /></div><br />Hello efrazier.<br /><br />I saw your site at http://www.RenegadeSprints.org.  I'm trying to create a two line menu like you have.<br /><br />Can you tell me how you accomplished that?<br /><br />Any help would be gratefully appreciated.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-18T06:32:58.137-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37319",
+    "ThreadId": "10339",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />Tonyg wrote:<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />efrazier wrote:<br />I use Lunarpages.com and have been real happy with the price and service. As for installing the database, I create a local backup using SQL Express. Create an empty database on the server and restore to that database from my .bak file. Works great and you don't have to mess with scripts. My site is <a href=\"http://www.RenegadeSprints.org\" class=\"externalLink\">http://www.RenegadeSprints.org<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a>=RenegadeSprints.org.<br /><br /></div><br />Hello efrazier.<br /><br />I saw your site at http://www.RenegadeSprints.org.  I'm trying to create a two line menu like you have.<br /><br />Can you tell me how you accomplished that?<br /><br />Any help would be gratefully appreciated.<br /><br />Thanks,<br />Tony<br /><br /><br /></div>Tony, I had already responded to your other thread on this topic before I saw this one. I hope it helps.<br /><br />Ed<br />",
+    "PostedDate": "2007-06-18T08:30:41.753-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

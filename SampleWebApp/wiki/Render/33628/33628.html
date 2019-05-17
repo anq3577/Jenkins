@@ -1,0 +1,7 @@
+<div class="wikidoc"><h1>Troubleshooting AJAX</h1>
+Here&#39;s the thing, ASP.NET AJAX sometimes doesn&#39;t like to work. The UpdatePanels just don&#39;t want to do their jobs.<br /><br />You might get weird errors talking about JavaScript. This is caused by the ASP.NET UpdatePanels.<br /><br />To fix this, take out the UpdatePanel causing you problems.<br /><br />To do this, remove this line before the content:<br /><br /><pre>&lt;asp:UpdatePanel ID=&quot;UpdatePanel1&quot;  RenderMode=&quot;Inline&quot; runat=&quot;server&quot; &gt;
+&lt;ContentTemplate&gt;
+</pre><br /><br />And these lines after the content.<br /><br /><pre>
+&lt;/ContentTemplate&gt;
+&lt;/asp:UpdatePanel&gt;
+</pre><br /><br />This isn&#39;t a pretty fix, but it makes it work again.</div><div class="ClearBoth"></div>

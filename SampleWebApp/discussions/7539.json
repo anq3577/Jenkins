@@ -1,0 +1,130 @@
+[
+  {
+    "Id": "24508",
+    "ThreadId": "7539",
+    "Html": "\r\nHi,<br /><br />Great at last a group of people to address the issues and take the ClubStarter kit forwards, something I've been wanting to do for some time.<br /><br />I run two sites, and keep to the ClubSite model as much as possible  http://www.bromham.org.uk and http://www.mad-tri.com, both very active with users.<br /><br />I have two additions that I have added, both are UserControls, with very little additions to the database:<br /><br />CMS on everypage, with the ability for Editors to edit the content and stoing the content in the database<br /><br />Page stats, and hit counter<br /><br />I'd love to share these with you all, just wondering how I go about providing these addins?  <br />",
+    "PostedDate": "2007-02-23T06:50:46.49-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24510",
+    "ThreadId": "7539",
+    "Html": "\r\nI like the page stats Idea!<br />",
+    "PostedDate": "2007-02-23T06:53:22.937-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24515",
+    "ThreadId": "7539",
+    "Html": "\r\nYes the hit counter does work well and look good too.<br /><br />However the most powerful addition is the ability to edit any content anywhere on the page, and you can select which roles can edit the content too.  If you which out the Bromham website we have the ability to allow different users to edit their own content without changing anyone elses content.<br />",
+    "PostedDate": "2007-02-23T07:41:18.09-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24521",
+    "ThreadId": "7539",
+    "Html": "\r\nI like the ability of adding/editing content.  My use for it would be to have the links and other static pages not be static.  So that if I am hosting the site, but make someone else an administrator they can make appropriate changes to the site without me having to edit the source.<br />",
+    "PostedDate": "2007-02-23T08:13:38.737-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24522",
+    "ThreadId": "7539",
+    "Html": "\r\nTo provide these addins, please join the project and send an email to Zack so he can approve you.<br />",
+    "PostedDate": "2007-02-23T08:14:36.843-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24557",
+    "ThreadId": "7539",
+    "Html": "\r\nI totally would like to look at your CMS code ;)<br />",
+    "PostedDate": "2007-02-23T12:25:26.767-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24565",
+    "ThreadId": "7539",
+    "Html": "\r\nYiiihhhaaaawwww<br />",
+    "PostedDate": "2007-02-23T13:34:57.963-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24614",
+    "ThreadId": "7539",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />I totally would like to look at your CMS code ;)<br /><br /></div><br />Love too, I'll need to make a few changes as I'm using the Telerik editor at present, but I'll change it to the free one which is currently being used on this site.<br /><br />Also thanks for adding me as a developer.<br /><br />I'm starting with a new client this week, but I'll do my best to upload the code as soon as possible.  It's quite simple code and works very well, with very little changes to the database or system<br />",
+    "PostedDate": "2007-02-24T06:14:35.83-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24618",
+    "ThreadId": "7539",
+    "Html": "\r\nThat would be great, thanks. We need all the devs we can get!<br />",
+    "PostedDate": "2007-02-24T07:24:59.08-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24916",
+    "ThreadId": "7539",
+    "Html": "\r\nSorry to be dumb whats CMS?<br />",
+    "PostedDate": "2007-02-27T05:46:28.353-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24938",
+    "ThreadId": "7539",
+    "Html": "\r\nContent Management System (CMS)<br /><br />It provides a very basic level of CMS, to enable content to be edited and controlled by users<br /><br />http://en.wikipedia.org/wiki/Content<i>management</i>system<br />",
+    "PostedDate": "2007-02-27T08:08:42.407-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24939",
+    "ThreadId": "7539",
+    "Html": "\r\nAha I hoped that's what it meant!<br /><br />I've been trying with not much luck to impliment this myself.<br /><br />If anyone has any examples they could share let me know!<br />",
+    "PostedDate": "2007-02-27T08:29:38.437-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24969",
+    "ThreadId": "7539",
+    "Html": "\r\nI would like to see CMS implemented, but just for Administrators.<br /><br />For example, on each page on the left column, under the title (like Events) in the source is a bunch of latin garbage.  I would like that to be editable by the Admins, rather than static.  But only by Admins, so it doesn't become a wiki-like grafitti area :)<br /><br />I think that the home page (default.aspx) also needs a block above the News Items for some \"static\" site info, but editable by admins.<br /><br />",
+    "PostedDate": "2007-02-27T10:51:35.343-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24981",
+    "ThreadId": "7539",
+    "Html": "\r\nExactly... and info pages can be added if you wish to change later. This is all good stuff... this will probably be the #1 biggest advancement on the CSK 2.0 release... no pressure coppermill :)<br />",
+    "PostedDate": "2007-02-27T12:15:08.077-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25044",
+    "ThreadId": "7539",
+    "Html": "\r\nYes, but to take this further having a role as \"Editors\", to have access to all content.  This gives much more control.<br /><br />Also the ability to allow individual users the ability to change pages based on the roles they are a member of.  All will become clear once I can get the app loaded to CodePlex<br />",
+    "PostedDate": "2007-02-28T01:00:23.85-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25052",
+    "ThreadId": "7539",
+    "Html": "\r\nOK... nice work :)<br />",
+    "PostedDate": "2007-02-28T03:08:44.41-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "279218",
+    "ThreadId": "81361",
+    "Html": "<p>This is a great learning tool. I deeply wish to thank the authors that shared this !</p>\r\n<p>&nbsp;</p>\r\n<p>I just downloaded it and followed the read me but i got stuck on Step 5.&nbsp;</p>\r\n<p>STEPS 1 thru 4 are straightforward and I hydrated the database just fine.</p>\r\n<p>In STEP 5, first of all there is a typo on the line that starts with '<span style=\"color:#ff0000\"><strong><span style=\"color:#ff0000\"><span style=\"font-weight:normal\"><em><span style=\"color:#000000\">var role='</span><span style=\"color:#000000\"><strong>&nbsp;&nbsp;&nbsp;</strong></span></em></span></span></strong></span>&nbsp;<span style=\"color:#ff0000\">&lt;ClubStarterKit.Domain.User&gt;</span> should be <span style=\"color:#ff0000\">&lt;ClubStarterKit.Domain.Role&gt;</span>&nbsp;But despite this, VS 2010 still throws the error that there is no definition for <span style=\"color:#ff0000\">first</span>. I haven't had time to look thru the code and solve the issue (<em>too busy cooking right now.. LO</em>L) but i have a temporary hack that should help newbies like myself:</p>\r\n<p>So, go thru the registration process and create a user and populates the User table in the database like it says in STEP 5.</p>\r\n<p>Then open up tables '<span style=\"color:#000000\"><strong>UserInRole</strong></span>' and '<strong>Role</strong>' using <em>Server Explorer</em> and right clicking to '<em>show table data</em>' and then modify the following 2 tables:</p>\r\n<p><strong>Role</strong>&nbsp;<em>table</em> - Type in <span style=\"color:#ff0000\">Admin</span> for the <em>RoleName</em> column&nbsp;</p>\r\n<p><strong>UserInRole</strong>&nbsp;<em>table</em> - Type in&nbsp;<span style=\"color:#ff0000\">1</span> for the <em>User_id</em> column. &nbsp;Type in&nbsp;<span style=\"color:#ff0000\">1</span> for the <em>Role_id</em> column</p>\r\n<p><em>(<span style=\"color:#ff0000\">the first column in each table is an identity field so it will be auto-populated by the databas</span><span style=\"color:#ff0000\">e</span>)</em></p>\r\n<p>So, fire up the app, create another user and open the other user in another instance of the app on another browser and check out the differences between admin user and non-admin user.</p>\r\n<p><span style=\"color:#ff0000\"><strong>DISCLAIMER</strong></span>: This is a temporary fix that I created 10 mintues after downloading that app, I'm not sure if the code listed in the read me was supposed to hydrate other tables or add more stuff to the database, but I just wanted to share this info so that other users who were stuck can get the admin part working.&nbsp;</p>\r\n<p><span style=\"color:#ff0000\"><strong>DISCLAIMER Number B</strong></span>: If any typos are found, or if the whole message makes no sense blah blah blah ... sowwy ... it's been a long day ! :))</p>",
+    "PostedDate": "2010-01-19T15:45:06.713-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "279239",
+    "ThreadId": "81361",
+    "Html": "<p>Or you could just add the following line to the top of your code.... using System.Linq;</p>\r\n<p>&nbsp;</p>\r\n<p>Sorry about this... I was usually careful to save that using declarative because I KNEW some people were going to ask about it :)</p>",
+    "PostedDate": "2010-01-19T16:39:36.18-08:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "279312",
+    "ThreadId": "81361",
+    "Html": "<p>LOL at myself. One line of code could have saved me some typing huh.. lol</p>\r\n<p>It was nice to have a quick reply... quite unexpected actually. :)</p>\r\n<p>I'm anxiously awaiting the documentation that accompanies this project... any idea of when it will be made available? I realize you're busy with other stuff, but i was just curious.</p>\r\n<p>&nbsp;</p>\r\n<p>Thanks &amp; keep up the great work !</p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2010-01-19T22:23:16.413-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "279431",
+    "ThreadId": "81361",
+    "Html": "<p>I'm definitely not in the documentation phase quite yet... it's stll sort of a play at your own risk kind of deal. I haven't received a lot of feedback... which is troubling considering the number of downloads. I sure hope people are actually playing with CSK.&nbsp;</p>\r\n<p>&nbsp;</p>\r\n<p>Another thing I was hoping would happen, but not guaranteed (of course), is that some people wouldn't mind contributing to the docs. Writing those things can be quite boring :)</p>\r\n<p>&nbsp;</p>\r\n<p>And about the quick reply... if you send your questions by email I can get to them quicker. I have an RSS feed for the discussions and it seems to have not been working for me. If you have some sort of huge problem like that, an email will get you a quick solution :)</p>\r\n<p>&nbsp;</p>\r\n<p>Zack Owens</p>",
+    "PostedDate": "2010-01-20T04:57:56.177-08:00",
+    "UserRole": "Coordinator",
+    "MarkedAsAnswerDate": null
+  }
+]

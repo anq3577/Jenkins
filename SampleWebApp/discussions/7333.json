@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "23640",
+    "ThreadId": "7333",
+    "Html": "\r\nHi,<br /><br />I have implemented a mock up Golf Club site using an extended Personal Starter Kit by J Wadsworth. This site is available at the 2nd link below. I will now install this new beta version and see how it compares.<br /><br />Looks good so far. Is there an Administration login I can use to look at the administration facilities? I cannot see it in the ASP.NET forums or on CodePlex.<br /><br />http://www.mawhitfield.net<br />http://www.worsleypark.mawhitfield.net<br /><br />Cheers<br /><br />NonStopMark.<br />",
+    "PostedDate": "2007-02-16T03:54:19.34-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "23645",
+    "ThreadId": "7333",
+    "Html": "\r\nThe default admin login is username and password 'admin' but you can add your own and then administer the roles via '~/admin/manageusers.aspx'.<br /><br />Sorry I didn't make that clear.<br /><br />Thanks<br /><br />Zack Owens<br />",
+    "PostedDate": "2007-02-16T04:58:14.663-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "23654",
+    "ThreadId": "7333",
+    "Html": "\r\nCheers Zack. All looks good so far. Plenty of work been done to extend it I see. Very impressive. I will put it online at some point and test it further. If I spot any glaring issues I will relay them to you. Had a couple of JavaScript Length errors on trying to remove the news item but this seemed to correct itself eventually. <br /><br />Tried to logout from one of the pages but it left the text to logged in. As such this then gave me an error when I clicked it again. I wonder if this is down to caching. I haven't checked the pages as yet but I had this proble when I was using the OutputCache directive. I can be more specific when I have tried it out further with some of my own database entries.<br /><br />Thanks for the moment.<br /><br />Cheers<br /><br />MARK<br />www.mawhitfield.net <br />",
+    "PostedDate": "2007-02-16T06:11:13.163-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "65013",
+    "ThreadId": "19635",
+    "Html": "\r\nWhen a user goes to the \"Details.aspx\" page and changes their details - this error is being thrown.<br /><br />Invalid cast from 'System.String' to 'System.Guid'.<br /><br />The other sections update - just not the details.<br /><br />What is causing this error?<br /><br />Thanks<br />",
+    "PostedDate": "2007-12-26T13:12:24.997-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "36941",
+    "ThreadId": "11410",
+    "Html": "\r\nI have a problem with renaming my clubDB. My hoster message from their attachment tool indicates that there is already a database name with that name and indictes to try again. I tried to rename the database then it would not run I had to rename it back to the old name for it to work. How can I rename the database so that I don't have to jump through hoops with my hoster.<br />",
+    "PostedDate": "2007-06-14T11:57:39.663-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36946",
+    "ThreadId": "11410",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />dbarselow wrote:<br />I have a problem with renaming my clubDB. My hoster message from their attachment tool indicates that there is already a database name with that name and indictes to try again. I tried to rename the database then it would not run I had to rename it back to the old name for it to work. How can I rename the database so that I don't have to jump through hoops with my hoster.<br /><br /><br /></div><br />BY now I learned that it is not a practicle to change the name of the database file. I have seen a dicussion about creating a empty database in the contro panel of my hoster and then backing it up then usin the CP attachment to load the .bak file I am going to try this method wish me luck. Actually the learning curve for the control panel is incredibly hard.<br />",
+    "PostedDate": "2007-06-14T12:22:53.763-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36952",
+    "ThreadId": "11410",
+    "Html": "\r\nWho is your hoster?<br /><br />Whoever it is, they probably shouldn't allow SQLExpress databases attached the way the kit comes. <br /><br />Tell me, what version of Visual Studio are you using (ie: Express, Standard, Professional, Team Suite). Then tell me if you have SQL Management Express installed.<br /><br />I should probably write something about how to get a db up to a hoster. Maybe for v3.<br />",
+    "PostedDate": "2007-06-14T12:58:35.547-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36968",
+    "ThreadId": "11410",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Who is your hoster?<br /><br />Whoever it is, they probably shouldn't allow SQLExpress databases attached the way the kit comes. <br /><br />Tell me, what version of Visual Studio are you using (ie: Express, Standard, Professional, Team Suite). Then tell me if you have SQL Management Express installed.<br /><br />I should probably write something about how to get a db up to a hoster. Maybe for v3.<br /><br /></div><br />I am using vs 2005 standard I don't think they are using they are using 2000 and 2005 <br />",
+    "PostedDate": "2007-06-14T14:40:10.19-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37739",
+    "ThreadId": "11410",
+    "Html": "\r\nThey probably won't allow SQLExpress databases... its a security hazard of some sort (I don't know the details on that). Look at their docs and see what they say. <br />",
+    "PostedDate": "2007-06-20T22:06:30.093-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37859",
+    "ThreadId": "11410",
+    "Html": "\r\nSQLExpress databases shouldn't be allowed by a hoster.  The problem with SQLExpress databases is everyone thinks they are like Access databases, just a file based database.  What happens with an Express db, when you first try to hit it, it is attached to by SQL Server.  And it will remain attached until someone detaches it.<br /><br />The problem that you ran into is someone previous to you that is on the same web server used the database file as it comes out of the box.  Then you try and get yours to work, but SQL Server Express cannot attach it, because the previous person has theirs attached, and SQL Server Express will not allow duplicate names.<br /><br />If you still want to use SQL Server Express, rename the database file and fix the portions of web.config that say the old name.<br /><br />I haven't looked into the security parts yet, but theoretically you can access the attached db that the previous user has attached.<br />",
+    "PostedDate": "2007-06-21T11:12:53.32-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

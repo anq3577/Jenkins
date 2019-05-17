@@ -1,0 +1,75 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Validation control added to registration page that should take care of this issue.",
+    "ClosedDate": "2007-06-23T19:11:19.15-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I have the following issue sending to all members.  It doesn't appear to be populating the to: field when this check box is selected.\n \nThe parameter 'address' cannot be an empty string.\nParameter name: address \nDescription: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. \n \nException Details: System.ArgumentException: The parameter 'address' cannot be an empty string.\nParameter name: address\n \nSource Error: \n \n \nLine 147:                    name = \"-\"\nLine 148:                End If\nLine 149:                Dim address As New MailAddress(mem.Email, name)\nLine 150:                Dim user As MembershipUser = Membership.GetUser(gui)\nLine 151:                Dim da As New DataSetTableAdapters.MemberInfoTableAdapter\n \n \nSource File: d:\\hosting\\member\\rhhanson\\site1\\Admin\\Email.aspx.vb    Line: 149 \n \nStack Trace: \n \n \n[ArgumentException: The parameter 'address' cannot be an empty string.\nParameter name: address]\n   System.Net.Mail.MailAddress..ctor(String address, String displayName, Encoding displayNameEncoding) +877826\n   System.Net.Mail.MailAddress..ctor(String address, String displayName) +10\n   Admin_Email.GetRecipients() in d:\\hosting\\member\\rhhanson\\site1\\Admin\\Email.aspx.vb:149\n   Admin_Email.btnSend_Click(Object sender, EventArgs e) in d:\\hosting\\member\\rhhanson\\site1\\Admin\\Email.aspx.vb:55\n   System.Web.UI.WebControls.Button.OnClick(EventArgs e) +105\n   System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument) +107\n   System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument) +7\n   System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument) +11\n   System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData) +33\n   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +5102",
+    "LastUpdatedDate": "2013-05-15T23:46:34.76-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-06-22T15:02:20.607-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Sending Email to All Members",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2561
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Is someone's email address not fill out?\r\n\r\nOh, and I assume you are using the latest version (with SubSonic), right?",
+      "PostedDate": "2007-06-22T16:02:40.103-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Not using the subsonic version yet.  Still can't get it to work in VS.  There is one person who does not have an address.  It doesn't appear that the particular field is required.",
+      "PostedDate": "2007-06-22T18:49:20.427-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "It is for the email. You might be able to add some null checking in there to fix.",
+      "PostedDate": "2007-06-22T21:08:27.43-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "For some rreason teh user was able to create an account without an email address.  I will ned to look and see if there is a required field validator there.  I am going to plug somehting into his account and see if it works as well",
+      "PostedDate": "2007-06-23T07:42:22.787-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-23T19:11:19.15-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:17.447-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:34.76-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

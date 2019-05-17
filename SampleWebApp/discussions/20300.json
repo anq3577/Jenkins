@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "67421",
+    "ThreadId": "20300",
+    "Html": "\r\nI've just tried to publish my clubstarterkit(V3beta) to my site and I've received the following error.  I'm at a loss as to what to fix here.   Can anyone help? <br /><br />\"Configuration Error:<br /><br />Parse Error Message:  Unrecognized attribute 'restartOnExternalChanges'<br />Source Error:<br /><br />&lt;configuration&gt;<br />\t&lt;configSections&gt;<br />\t\t&lt;section name=\"SubSonicService\" type=\"SubSonic.SubSonicSection, SubSonic\" allowDefinition=\"MachineToApplication\" restartOnExternalChanges=\"true\" requirePermission=\"false\"/&gt;<br />\t\t&lt;section name=\"urlrewritingnet\" restartOnExternalChanges=\"true\" requirePermission=\"false\" type=\"UrlRewritingNet.Configuration.UrlRewriteSection, UrlRewritingNet.UrlRewriter\"/&gt;<br />\t\t&lt;sectionGroup name=\"system.web.extensions\" type=\"System.Web.Configuration.SystemWebExtensionsSectionGroup, System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\"&gt;<br /><br />Source File:  D:\\TeamHagerman\\web.config   Line: 4\"<br /><br />The connectionstrings.config file looks like this:<br /><br />Source=.\\SQLExpress;Integrated Security=true;AttachDBFileName=\\\\HNCSQLWEB\\d$\\TeamHagerman\\App_Data\\ClubDB.mdf;User Instance=True\"<br />         providerName=\"System.Data.SqlClient\"/&gt;<br /><br />",
+    "PostedDate": "2008-01-11T12:35:59.46-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "85327",
+    "ThreadId": "20300",
+    "Html": "\r\nI ran into this problem as well.<br /><br />To resolve the issue, I had to set the web application in IIS to use ASP.NET v2.0 instead of v1.1.<br />",
+    "PostedDate": "2008-04-06T23:33:37.387-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

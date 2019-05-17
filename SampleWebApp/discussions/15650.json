@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "50817",
+    "ThreadId": "15650",
+    "Html": "\r\nIn looking back through old Issues, I see where the PageNumber Control had a problem as far back as V2-RC1 and seems to still be a problem with V3 (according to another post in Issue Tracker). There was a comment by Zac that he thought he had fixed it, but no follow-up to indicate when or where.<br /><br />The problem is that when you click on Next Page from News List, you are returned to the first page of News. You can get to the older News Articles by selecting an article and then using the Previous and Next links, so I know they exist. My site (<a href=\"http://www.RenegadeSprints.org\" class=\"externalLink\">http://www.RenegadeSprints.org<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a>) is based on V2-RC1 and I would like to get this working properly without going through the problems of upgrading to V3, only to find that the problem might still be there.<br /><br />Ed<br />",
+    "PostedDate": "2007-09-26T05:56:58.237-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "50869",
+    "ThreadId": "15650",
+    "Html": "\r\nActually, the Pager control works... the data logic is flawed. There is something wrong with the SQL in the SQLDataSource.<br />",
+    "PostedDate": "2007-09-26T12:29:45.843-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "50903",
+    "ThreadId": "15650",
+    "Html": "\r\nI'll take that as a NO.<br />",
+    "PostedDate": "2007-09-26T18:42:41.8-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "51251",
+    "ThreadId": "15650",
+    "Html": "\r\nno... you should take it as a yes because it was never broken.<br />",
+    "PostedDate": "2007-09-29T17:15:02.487-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "51308",
+    "ThreadId": "15650",
+    "Html": "\r\nThank you for that clarification. <br /><br />Has the flawed <b>\"data logic\"</b> issue been resolved? This would be the one that causes the <i>Next Page</i> link on the <i>News List</i> page to return to the <i>First Page</i>. <br /><br />This was reported a couple of times in Issue Tracker. Once here - <a href=\"http://www.codeplex.com/ClubStarterKit/WorkItem/View.aspx?WorkItemId=1326\" class=\"externalLink\">http://www.codeplex.com/ClubStarterKit/WorkItem/View.aspx?WorkItemId=1326<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a> opened on April 25 and closed on June 19 with no indication of it being fixed. And again here - <a href=\"http://www.codeplex.com/ClubStarterKit/WorkItem/View.aspx?WorkItemId=3075\" class=\"externalLink\">http://www.codeplex.com/ClubStarterKit/WorkItem/View.aspx?WorkItemId=3075<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a> on August 14.<br />",
+    "PostedDate": "2007-09-30T08:31:03.623-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "51633",
+    "ThreadId": "15650",
+    "Html": "\r\nIt was a SQL DataSource query issue. We stopped using it in v3. So I guess not.<br />",
+    "PostedDate": "2007-10-02T17:03:48.427-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

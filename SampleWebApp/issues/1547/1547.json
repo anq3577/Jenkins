@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-28T08:03:52.837-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When dynamicly a member is created, system does not automatically add the created user into MemberInfo table. So, when the member tries to update its Profile, nothing is changed, since, there's no data in the MemberInfo table.",
+    "LastUpdatedDate": "2013-05-15T23:46:41.07-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:42:28.27-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Dynamic Member Creation and MemberInfo Table",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 1547
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Are you using the register page that is \"in the box\"? You can't just put a CreateUser control on a page. ",
+      "PostedDate": "2007-04-25T14:42:28.85-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Nope, with the invitation system i adopted, when the admin sends invitations, the users are automatically created (MemberShip.CreateUser) on runtime based on their e-mail adresses as their usernames and with random passwords.",
+      "PostedDate": "2007-04-25T14:42:29.24-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "That's the problme... you need to use the register page's CreateUser control.",
+      "PostedDate": "2007-04-25T14:42:29.613-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-28T08:03:52.837-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:25.477-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:41.07-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

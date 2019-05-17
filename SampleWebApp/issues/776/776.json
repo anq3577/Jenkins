@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:19:36.943-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Add Searching to\n \n- Events\n- News\n- Forums\n- Blogs",
+    "LastUpdatedDate": "2013-05-15T23:46:46.353-07:00",
+    "PlannedForRelease": "v2 RC1",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:19:35.1-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Searching",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 5,
+    "Id": 776
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Should we create a Stored Proc. to hand this, and return the results.\r\n\r\nThis will allow for expansion later should we need further searching?\r\n\r\nAny thoughts?",
+      "PostedDate": "2007-04-25T14:19:35.71-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I was going to have it do module searches... so you can select the ones you want to search and the ones you don't want to search and have an ASP.NET AJAX acordian handle it from there.",
+      "PostedDate": "2007-04-25T14:19:36.147-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:19:36.943-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:32.42-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:46.353-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

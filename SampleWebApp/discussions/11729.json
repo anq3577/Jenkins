@@ -1,0 +1,114 @@
+[
+  {
+    "Id": "38074",
+    "ThreadId": "11729",
+    "Html": "\r\nI can login as admin and send an email to administrator ok but receive this error when trying to send an email to all the members.<br /><br />The specified string is not in the form required for an e-mail address. <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />Exception Details: System.FormatException: The specified string is not in the form required for an e-mail address.<br /><br />Source Error: <br /><br /><br /><br />Line 147:                    name = \"-\"<br />Line 148:                End If<br />Line 149:                Dim address As New MailAddress(mem.Email, name)<br />Line 150:                Dim user As MembershipUser = Membership.GetUser(gui)<br />Line 151:                Dim da As New DataSetTableAdapters.MemberInfoTableAdapter<br /><br /><br />Source File: F:\\HostingSpaces\\jerrysdean43@msn.com\\sahcinfo.org\\wwwroot\\Admin\\Email.aspx.vb    Line: 149 <br />",
+    "PostedDate": "2007-06-23T09:40:44.213-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38077",
+    "ThreadId": "11729",
+    "Html": "\r\nIs someone's email address not specified?<br />",
+    "PostedDate": "2007-06-23T10:05:51.557-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38085",
+    "ThreadId": "11729",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Is someone's email address not specified?<br /><br /></div><br />All members have an email address specified.<br />",
+    "PostedDate": "2007-06-23T13:23:41.253-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38099",
+    "ThreadId": "11729",
+    "Html": "\r\nIt looks like someone's email is not entered correctly... \"The specified string is not in the form required for an e-mail address\"<br />",
+    "PostedDate": "2007-06-23T16:20:56.4-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38106",
+    "ThreadId": "11729",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />It looks like someone's email is not entered correctly... \"The specified string is not in the form required for an e-mail address\"<br /><br /></div><br />I found an incorrect email format, corrected it and am now receiving this error:<br /><br />There is no row at position 0. <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />Exception Details: System.IndexOutOfRangeException: There is no row at position 0.<br /><br />Source Error: <br /><br /><br />Line 384:        Public Default ReadOnly Property Item(ByVal index As Integer) As MemberInfoRow<br />Line 385:            Get<br />Line 386:                Return CType(Me.Rows(index),MemberInfoRow)<br />Line 387:            End Get<br />Line 388:        End Property<br /><br /><br />Source File: C:\\WINDOWS\\Microsoft.NET\\Framework\\v2.0.50727\\Temporary ASP.NET Files\\root\\2c13a4fc\\91944b83\\App<i>Code.gtb</i>zj_r.10.vb    Line: 386 <br /><br />Stack Trace: <br /><br /><br /><a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=IndexOutOfRangeException%3a%20There%20is%20no%20row%20at%20position%200.\">IndexOutOfRangeException: There is no row at position 0.</a><br />   System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex) +1880026<br />   System.Data.DataRowCollection.get_Item(Int32 index) +14<br />   MemberInfoDataTable.get<i>Item(Int32 index) in C:\\WINDOWS\\Microsoft.NET\\Framework\\v2.0.50727\\Temporary ASP.NET Files\\root\\2c13a4fc\\91944b83\\App</i>Code.gtb<i>zj</i>r.10.vb:386<br />   Admin_Email.GetRecipients() in F:\\HostingSpaces\\jerrysdean43@msn.com\\sahcinfo.org\\wwwroot\\Admin\\Email.aspx.vb:153<br />   Admin<i>Email.btnSend</i>Click(Object sender, EventArgs e) in F:\\HostingSpaces\\jerrysdean43@msn.com\\sahcinfo.org\\wwwroot\\Admin\\Email.aspx.vb:55<br />   System.Web.UI.WebControls.Button.OnClick(EventArgs e) +105<br />   System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument) +107<br />   System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument) +7<br />   System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument) +11<br />   System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData) +33<br />   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +5102<br /><br /><br />",
+    "PostedDate": "2007-06-23T17:53:43.11-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38114",
+    "ThreadId": "11729",
+    "Html": "\r\nLooks like there is a problem with ASP.NET Membership. <br />",
+    "PostedDate": "2007-06-23T19:19:23.75-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38200",
+    "ThreadId": "11729",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Looks like there is a problem with ASP.NET Membership. <br /><br /></div><br />Do you have any suggestions? Did I mention that the email works fine if I just send to administrator, the problem occurs when trying to send to all members?<br />",
+    "PostedDate": "2007-06-25T06:30:45.62-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "80897",
+    "ThreadId": "11729",
+    "Html": "\r\nWe had the same issue in our site and found out it was a database issue.  From my findings, somehow a user account can be created for the site, populating the <b>dbo.aspnet_Users</b> table in the DB, but for certain users it didn't populate the <b>dbo.MemberInfo</b> table.  This caused the user information to be incomplete and I guess the Send Email function needs something in the dbo.MemberInfo table to send emails.  To fix the issue I deleted the users account and asked them to re-register to the website.  Before doing that I created a <b>Foreign Key Relationship</b> between the two tables in the database.<br /><br />I'm guessing the error stems from perhaps a glitch in network traffic when a user is registering.  If they don't get to the second screen where they enter their name, address, phone, etc... the dbo.MemberInfo table doesn't become populated and that is when you start having issued sending emails to registered users if that account is included in the security\\distribution group you are sending the email to.<br />",
+    "PostedDate": "2008-03-16T09:38:42.777-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "90304",
+    "ThreadId": "11729",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />spatzengr wrote:<br />We had the same issue in our site and found out it was a database issue.  From my findings, somehow a user account can be created for the site, populating the <b>dbo.aspnet_Users</b> table in the DB, but for certain users it didn't populate the <b>dbo.MemberInfo</b> table.  This caused the user information to be incomplete and I guess the Send Email function needs something in the dbo.MemberInfo table to send emails.  To fix the issue I deleted the users account and asked them to re-register to the website.  Before doing that I created a <b>Foreign Key Relationship</b> between the two tables in the database.<br /><br />I'm guessing the error stems from perhaps a glitch in network traffic when a user is registering.  If they don't get to the second screen where they enter their name, address, phone, etc... the dbo.MemberInfo table doesn't become populated and that is when you start having issued sending emails to registered users if that account is included in the security\\distribution group you are sending the email to.<br /><br /><br /></div><br />Thanks for the post. I found it as I was debugging, and it saved me a lot of time.<br />",
+    "PostedDate": "2008-05-02T15:25:08.587-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "110344",
+    "ThreadId": "11729",
+    "Html": "Is there any other way to fix the &quot;<a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=IndexOutOfRangeException: There is no row at position 0.\"><span style=\"color:#3e62a6\">IndexOutOfRangeException: There is no row at position 0.</span></a>&quot; problem without deleting all of the members and having them re-sign up? <br>\r\nHow would one add the necessary data directly into the DB? Do we know what info the send mail function is taking from the memberinfo table that it needs to complete the send?<br>\r\nI have this same problem but would really like to avoid deleting the entire membership.<br>\r\n<br>\r\nThanks\r\n",
+    "PostedDate": "2008-08-11T08:32:49.493-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "110736",
+    "ThreadId": "11729",
+    "Html": "Yeah, you just need to look through the DB and make sure there is a row in the &quot;MemberInfo&quot; table that corresponds with a row in the &quot;aspnet_Users&quot; table for each user.\r\n",
+    "PostedDate": "2008-08-12T18:00:49.02-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "110756",
+    "ThreadId": "11729",
+    "Html": "How exactly did you join the two tables together using Visual Web Developer 2008?<br>\r\n",
+    "PostedDate": "2008-08-12T21:00:03.457-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "110802",
+    "ThreadId": "11729",
+    "Html": "You are not joining the tables. If your site is live I don't think you are using Visual Web Developer (VWD) to edit the live&nbsp;database (DB) anymore.&nbsp;With my provider I use&nbsp;<em><strong>SQL Server Management Studio Express</strong></em> to connect to and edit&nbsp;the live DB.&nbsp; BUT, that said if you are somehow using VDW to edit your live DB rather than you local test DB OR you&nbsp;are using some other program you can do the same thing.&nbsp; I wish we could upload screen shots with this discussion engine but I will do my best to explain.<br>\r\n<br>\r\n1). In VDW (or whatever program) open the &quot;Database Explorer&quot; palette (make sure you are connecting to your live DB.&nbsp; This step may very with use of another program like SQL Sever Management Studio Express)<br>\r\n2). Open your DB (whichever program you are using get your DB open)<br>\r\n3). Open the &quot;Tables&quot; folder<br>\r\n4). Right-Click on the &quot;<em>aspnet_Users</em>&quot; table and CLICK &quot;Show Table Data&quot;<br>\r\n5). For each users that signs-up to the site there is&nbsp;a row created and a corresponding&nbsp;&quot;<em>UserId</em>&quot; number that is generated by ASP.NET for the users.&nbsp; It is some crazy long alpha-numeric number.&nbsp; Try to print a list of this data or just keep open to cross reference.<br>\r\n6). Proceed now to the &quot;<em>MembersInfo</em>&quot; table and Right-Click and SELECT &quot;Show Table Data&quot; as well...<br>\r\n7). Look at the column &quot;<em>memberid</em>&quot;<br>\r\n8). In the &quot;<em>MembersInfo</em>&quot; table there needs to be a corresponding row for each user in the &quot;<em>aspnet_Users</em>&quot; table.&nbsp; The &quot;<em>membersid</em>&quot; column&nbsp;must&nbsp;match the &quot;<em>usersid</em>&quot; column from the &quot;<em>aspnet_Users</em>&quot; table (alpha-numberic numbers must match).<br>\r\n9). Delete or add rows to complete the tables and make them match.&nbsp;This could be dificult but just enter some data if you don't have specifics or delete the users all together and ask them to sign-up again.&nbsp; I think the mismatch happens through deleting users&nbsp;OR if they get an error midway through signing up due to slow internet traffic<br>\r\n<br>\r\nI think there can be more entries in the &quot;<em>MembersInfo&quot; </em>table than in the &quot;<em>aspnet_Users&quot;</em> table and that is OK but not the other way around.<br>\r\n<br>\r\nHope this helps...<br>\r\nmspatz\r\n",
+    "PostedDate": "2008-08-13T03:58:17.647-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "110868",
+    "ThreadId": "11729",
+    "Html": "<p>As an update, I used SQL Management Server Management Studio Express to explore the Users and MembersInfo table and make sure there was an entry for each member of the Users table in the MembersInfo table.</p>\r\n<p>This corrected the problem and everything seems to be working. As mspatz pointed out there can be more entries in Membersinfo table than than in Users table.<br>\r\n<br>\r\nThanks.</p>\r\n",
+    "PostedDate": "2008-08-13T08:20:47.147-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

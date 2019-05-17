@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "77668",
+    "ThreadId": "23205",
+    "Html": "\r\nMy experience is mostly with VS 2003.  In installing a project like this under VS2003, I just created a new website and dragged and dropped the files into the project.  When I try doing this with these files into a VS2005 website, I have over 100 errors.  I am sure there is an easy way to install this.   I did not have any of the codegen files for the variables (.designer.vb files) and it does not seem to recognize the methods in the APP_Code directory.  I added the bin files to the references. Any ideas?<br />",
+    "PostedDate": "2008-03-02T08:40:16.447-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

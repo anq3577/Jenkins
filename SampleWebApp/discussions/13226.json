@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "43215",
+    "ThreadId": "13226",
+    "Html": "\r\nIs there a mapping between the name of the CSS files and where they are used? Viewing the source just shows all the css files included together.<br />",
+    "PostedDate": "2007-07-31T17:29:22.353-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43225",
+    "ThreadId": "13226",
+    "Html": "\r\nThe reason the Designer doesn't reflect the CSS is because we chose to use ASP.NET themes. Inherently, this doesn't allow you to see the style definitions in the designer.<br /><br />On the bright side, you can drop as many stylesheets into the Theme folder as you want and they will be reflected at \"run time\".<br />",
+    "PostedDate": "2007-07-31T18:38:39.663-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43231",
+    "ThreadId": "13226",
+    "Html": "<br />But how do I override the standard CSS settings or add new ones? For example are the Forums.css settings only used by the forums pages?<br />",
+    "PostedDate": "2007-07-31T19:54:27.28-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43282",
+    "ThreadId": "13226",
+    "Html": "\r\nLook at all the CSS files in the App_Themes\\ClubSite folder. ALL those themes are downloaded by EVERY page. ASP.NET enumerates those CSS files at run time and references them for you.<br /><br />To override, just change the CSS files.<br />",
+    "PostedDate": "2007-08-01T05:17:14.97-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43379",
+    "ThreadId": "13226",
+    "Html": "\r\nI understand that. I suupose what I was asking was 2 things<br />a) are the class names unique across the css files<br />b) are the css files effectively joined in alphabetical order of their name e.g. events.cc then forums.css etc<br />",
+    "PostedDate": "2007-08-01T16:16:25.42-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43448",
+    "ThreadId": "13226",
+    "Html": "\r\nThe classes are unique across a particular theme's css files.<br /><br />I think they are joined in alphabetical order... why do you ask?<br />",
+    "PostedDate": "2007-08-02T05:36:13.12-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43539",
+    "ThreadId": "13226",
+    "Html": "\r\n1. Curious as to how they work<br />2. I have a large set of pages (club history etc) that have their own styles and didn't want them affecting the \"default\" styles<br />",
+    "PostedDate": "2007-08-02T15:18:16.963-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43658",
+    "ThreadId": "13226",
+    "Html": "\r\nWhat you can do for number 2 is to put EnableTheming=\"False\" at the top of the page. It should work.<br /><br />Not sure what you mean by number 1. <br /><br />I can tell you that the CSS files in a theme folder all apply to the pages and are all downloaded with the pages as they are loaded in the browser.<br /><br />We also use skin files... but that shouldn't affect much.<br />",
+    "PostedDate": "2007-08-03T13:59:08.81-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

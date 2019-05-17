@@ -1,0 +1,75 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Fixed in v3 beta 1",
+    "ClosedDate": "2007-10-30T18:48:31.35-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "following error message sending to all users:\n \nServer Error in '/' Application.\n--------------------------------------------------------------------------------\n \nThere is no row at position 0. \nDescription: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. \n \nException Details: System.IndexOutOfRangeException: There is no row at position 0.\n \nSource Error: \n \n \nLine 375:        Public Default ReadOnly Property Item(ByVal index As Integer) As MemberInfoRow\nLine 376:            Get\nLine 377:                Return CType(Me.Rows(index),MemberInfoRow)\nLine 378:            End Get\nLine 379:        End Property\n \n \nSource File: C:\\WINDOWS\\Microsoft.NET\\Framework\\V2.0.50727\\Temporary ASP.NET Files\\root\\79b404dc\\88f78746\\App_Code.sbdk15dv.8.vb    Line: 377 \n \nStack Trace: \n \n \n[IndexOutOfRangeException: There is no row at position 0.]\n   System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex) +1868334\n   System.Data.DataRowCollection.get_Item(Int32 index) +14\n   MemberInfoDataTable.get_Item(Int32 index) in C:\\WINDOWS\\Microsoft.NET\\Framework\\V2.0.50727\\Temporary ASP.NET Files\\root\\79b404dc\\88f78746\\App_Code.sbdk15dv.8.vb:377\n   Admin_Email.GetRecipients() in d:\\hosting\\member\\rhhanson\\site1\\admin\\Email.aspx.vb:153\n   Admin_Email.btnSend_Click(Object sender, EventArgs e) in d:\\hosting\\member\\rhhanson\\site1\\admin\\Email.aspx.vb:55\n   System.Web.UI.WebControls.Button.OnClick(EventArgs e) +105\n   System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument) +107\n   System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument) +7\n   System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument) +11\n   System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData) +33\n   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +5102",
+    "LastUpdatedDate": "2013-05-15T23:46:27.773-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-10-30T17:29:39.9-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Sending Email in Version 2",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 4192
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Does this error occur in v3 beta 1?",
+      "PostedDate": "2007-10-30T18:04:26.813-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "dont know.  Havent moved to it yet.  I can send to all other groups with no issues.  But when I send to  all users I get this error.",
+      "PostedDate": "2007-10-30T18:16:22.157-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I'm quite sure this was fixed in v3 beta 1 :)",
+      "PostedDate": "2007-10-30T18:48:21.037-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-10-30T18:48:31.35-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "cant move there yet as I an using vwd.  I would also need to convert my db and I understand that isnt working yet.  need to fix in v2:(",
+      "PostedDate": "2007-10-30T18:59:22.47-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:09.257-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:27.773-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+﻿Imports Microsoft.VisualBasic
+Imports System.Data
+
+
+Public Module Shared_Routines
+
+    Const TRUNCATE_COUNT As Integer = 50
+    Const strWhiteSpace As String = " "
+    Const strClosingBracket As String = ">"
+    Const strClosingSlash As String = "/"
+    Const strSelfClosingBracket As String = "/>"
+
+
+    Private Function CloseTruncatedHTML(ByVal source As String) As String
+        Dim result As String = source
+        Dim strClosingTag As String = String.Empty
+        Dim s() As String = source.Split("<")
+        Dim strClosingString As String = String.Empty
+        Try
+            For i As Integer = 0 To s.Length - 1
+                Dim tmp As String = s(i).ToString
+                Dim strTagName As String = String.Empty
+                Dim iWSPos, iCBPos As Int16
+                'don't process if not a valid html opening tag
+                If Not tmp.Contains(strSelfClosingBracket) And Not tmp = "" And Not InStr(tmp, strClosingSlash) = 1 Then
+                    iWSPos = InStr(tmp, strWhiteSpace)
+                    iCBPos = InStr(tmp, strClosingBracket)
+                    If iWSPos < iCBPos And iWSPos > 0 Then
+                        If iWSPos < 2 Then
+                            Exit For
+                        Else
+                            strTagName = Mid(tmp, 1, iWSPos - 1)
+                        End If
+                    Else
+                        If iCBPos < 2 Then
+                            Exit For
+                        Else
+                            strTagName = Mid(tmp, 1, iCBPos - 1)
+                        End If
+                    End If
+                    'now check to see if the tags gathered have been closed
+                    'and if not, close them
+                    Dim bTagNotFound As Boolean = True
+                    For j As Integer = i To s.Length - 1
+                        If s(j).Contains("/" + strTagName + ">") Then
+                            bTagNotFound = False
+                            Exit For
+                        End If
+                    Next
+                    If bTagNotFound Then
+                        strClosingString = "</" + strTagName + ">" + strClosingString
+                    End If
+                End If
+            Next
+            result += strClosingString
+            Return result
+        Catch ex As Exception
+            Return source
+        End Try
+    End Function
+    Public Function truncate(ByVal originalInput As String) As String
+        Return truncate(originalInput, TRUNCATE_COUNT)
+    End Function
+
+    Public Function truncate(ByVal originalInput As String, ByVal wordsLimit As Integer) As String
+        If Not originalInput Is Nothing AndAlso originalInput <> "" Then
+            Dim output As New Text.StringBuilder(originalInput.Length)
+            Dim input As New Text.StringBuilder(originalInput)
+            Dim words As Integer = 0
+            Dim lastwasWS As Boolean = True
+            Dim count As Integer = 0
+
+            Do
+                If Char.IsWhiteSpace(input.Chars(count)) Then
+                    lastwasWS = True
+                Else
+                    If lastwasWS Then words += 1
+                    lastwasWS = False
+                End If
+                output.Append(input.Chars(count))
+                count += 1
+            Loop While (words < wordsLimit Or lastwasWS = False) And count < (originalInput.Length)
+            Dim s As String = CloseTruncatedHTML(output.ToString)
+            Return s
+            '  Return output.ToString
+        Else
+            Return ""
+        End If
+    End Function
+
+    Public Function Encode(ByVal contents As Object) As String
+        Return HttpUtility.HtmlEncode(Convert.ToString(contents))
+    End Function
+
+    Public Function encodeAndTruncate(ByVal contents As Object) As String
+        Return truncate(Encode(contents))
+    End Function
+
+    Function GetFriendlyDate(ByVal src As Date) As String
+        Dim currdate As Date = Now
+        Dim datediff As Integer = (src - currdate).Days
+        Select Case datediff
+            Case -1 : Return "Yesterday"
+            Case -7 To -2 : Return "Last " & src.DayOfWeek.ToString
+            Case 0 : Return "Today"
+            Case 1 To 7 : Return "This " & src.DayOfWeek.ToString
+            Case Else : Return src.ToString()
+        End Select
+    End Function
+
+End Module

@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "32131",
+    "ThreadId": "9888",
+    "Html": "\r\nI keep getting unknown runtime error on line 1316. When I debug its on this line <br />updatePanelElement.innerHTML = rendering;<br />in the function _destroyTree in ScriptResource.axd<br /><br />I've tried installing the latest asp ajax from microsoft but it is still having issues. Is anyone else having this problem?<br />",
+    "PostedDate": "2007-05-04T03:17:02.54-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32135",
+    "ThreadId": "9888",
+    "Html": "\r\nI haven't seen that error yet. Can you explain how/when you receive the error so we can try to duplicate it?<br />",
+    "PostedDate": "2007-05-04T04:28:34.543-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32202",
+    "ThreadId": "9888",
+    "Html": "\r\nThe most general fix is taking out the update panel.<br />",
+    "PostedDate": "2007-05-04T12:41:05.923-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32204",
+    "ThreadId": "9888",
+    "Html": "\r\nIt happens on member/details.aspx when I click update info. It works fine in firefox. It also does it when I click Change Password. <br />",
+    "PostedDate": "2007-05-04T13:25:16.473-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36447",
+    "ThreadId": "9888",
+    "Html": "\r\nHi, I think I figured this one out.<br />The error comes from the &lt;p&gt; elements just under the table describing the member details. If you move the content IN the table - just create a row and a cell, and move the update button and the rest in the cell, then it should work.<br />The explanation is that the innerHtml method in IE does not like to take some structures in the string. But if you move everything in the table, then it should work. <br />Checkout how it is done in the password change form - the update button there is in the table.<br />Hope this helps!<br />N<br />",
+    "PostedDate": "2007-06-11T15:43:09.23-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36457",
+    "ThreadId": "9888",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />demobau wrote:<br />Hi, I think I figured this one out.<br />The error comes from the &lt;p&gt; elements just under the table describing the member details. If you move the content IN the table - just create a row and a cell, and move the update button and the rest in the cell, then it should work.<br />The explanation is that the innerHtml method in IE does not like to take some structures in the string. But if you move everything in the table, then it should work. <br />Checkout how it is done in the password change form - the update button there is in the table.<br />Hope this helps!<br />N<br /><br /></div><br />Can you put this in a work item for me?<br />",
+    "PostedDate": "2007-06-11T16:09:52.067-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36540",
+    "ThreadId": "9888",
+    "Html": "\r\nthere you go:<br /><a href=\"http://www.codeplex.com/ClubStarterKit/WorkItem/View.aspx?WorkItemId=2475\" class=\"externalLink\">http://www.codeplex.com/ClubStarterKit/WorkItem/View.aspx?WorkItemId=2475<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a><br />I do not have access to the source code now, but can post a code segment it you thing that would help.<br />",
+    "PostedDate": "2007-06-12T06:56:01.017-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

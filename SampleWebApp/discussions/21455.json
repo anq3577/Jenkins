@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "71457",
+    "ThreadId": "21455",
+    "Html": "\r\nI'm working with CSK 2.0 and SQL 2005 on hosted server.  The site is up and running on godaddy, but when registering users the memberinfo table is not updated.  Other tables are populated.  Also, the users are not marked as approved.  Everything worked on my local test site, so I've been leaning towards a permission or database issue.  Any help would be grealy appreciated.  Thanks.<br />",
+    "PostedDate": "2008-02-03T08:09:46.753-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "71897",
+    "ThreadId": "21455",
+    "Html": "\r\nReload of CSK 2.0 site and creating new SQL database resolved the problem.<br />",
+    "PostedDate": "2008-02-05T12:35:39.097-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "71919",
+    "ThreadId": "21455",
+    "Html": "\r\nDo you have any issues with version 2 running on GoDaddy?  Version 3 Beta 1 is giving me errors because of the medium trust environment.  Have you looked at version 3 at all?  I'm curious if the only difference is the sitesettings page...or if there are other major differences between the two.<br /><br />~Kai<br />",
+    "PostedDate": "2008-02-05T14:08:27.37-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "72065",
+    "ThreadId": "21455",
+    "Html": "\r\nAfter the reload everything has worked great on godaddy.  I haven't look at version 3 beta 1 yet.  I probably will in the future.  Good luck with your issue.  <br />",
+    "PostedDate": "2008-02-06T05:30:09.25-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "72073",
+    "ThreadId": "21455",
+    "Html": "\r\nI'm working with version 2 now as it appears to be a better solution.  My only issue with it is that when I load the database in, it says that it can't log in.  It's not finding the admin username...even though when I log in and look at the tables on godaddy they are there and the information is there.<br /><br />I'll probably spend the day reloading the database and see if I can get it.<br /><br />~Kai<br />",
+    "PostedDate": "2008-02-06T06:20:59.903-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

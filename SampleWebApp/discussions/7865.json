@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "25699",
+    "ThreadId": "7865",
+    "Html": "\r\nI don't know if this is where you want general bugs posted... - but here goes. - this one has to do with the source code set dated 3/2/07. - on events/edit.aspx:<br /><br />The ControlToValidate property of 'RequiredFieldValidator3' cannot be blank. <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />Exception Details: System.Web.HttpException: The ControlToValidate property of 'RequiredFieldValidator3' cannot be blank.<br /><br />Source Error: <br /><br />An unhandled exception was generated during the execution of the current web request. Information regarding the origin and location of the exception can be identified using the exception stack trace below.  <br />",
+    "PostedDate": "2007-03-05T21:31:43.253-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25721",
+    "ThreadId": "7865",
+    "Html": "\r\nYea, there is a workitem on that already. I will fix it today. I didn't set the control id for a required field validator.<br />",
+    "PostedDate": "2007-03-06T03:27:45.98-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

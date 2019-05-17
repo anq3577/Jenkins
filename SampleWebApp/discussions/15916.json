@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "51622",
+    "ThreadId": "15916",
+    "Html": "\r\nGot everything uploaded to GoDaddy (I know, didn't read this until too late), got the database loaded and connectionStrings updated.  Any help is greatly appreciated.  Getting the following error:<br /><br />Server Error in '/' Application.<br />--------------------------------------------------------------------------------<br /><br />Security Exception <br />Description: The application attempted to perform an operation not allowed by the security policy.  To grant this application the required permission please contact your system administrator or change the application's trust level in the configuration file. <br /><br />Exception Details: System.Security.SecurityException: Request for the permission of type 'System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089' failed.<br /><br />Source Error: <br /><br /><br />Line 599:            <br />Line 600:\t\t\tIf Not System.Web.HttpContext.Current Is Nothing Then<br />Line 601:\t\t\t\titem.Save(System.Web.HttpContext.Current.User.Identity.Name)<br />Line 602:\t\t\tElse<br />Line 603:\t\t\t\titem.Save(System.Threading.Thread.CurrentPrincipal.Identity.Name)<br /><br /><br />Source File: d:\\hosting\\jlasaz\\App_Code\\DAL\\Generated\\WebSettings.vb    Line: 601 <br /><br />Stack Trace: <br /><br /><br /><a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=SecurityException%3a%20Request%20for%20the%20permission%20of%20type%20%27System.Security.Permissions.SecurityPermission%2c%20mscorlib%2c%20Version%3d2.0.0.0%2c%20Culture%3dneutral%2c%20PublicKeyToken%3db77a5c561934e089%27%20failed.\">SecurityException: Request for the permission of type 'System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089' failed.</a><br />   SubSonic.Utilities.Utility.WriteTrace(String message) in Utility.cs:37<br />   SubSonic.AbstractRecord`1.ValidateColumnSettings() in AbstractRecord.cs:901<br />   SubSonic.ActiveRecord`1.Validate() in ActiveRecord.cs:354<br />   SubSonic.ActiveRecord`1.Save(String userName) in ActiveRecord.cs:366<br />   ClubStarterKit.Data.WebSettings.Insert(String varName, String varSlogan, String varCopyright, String varAddress, String varSiteURL, String varMailServer, String varMailUsername, String varMailPassword, Boolean varEmailVerification, Boolean varAdminVerification, Int32 varPageSize, Boolean varReportCMS, String varWebmaster, Boolean varIsHighestWinner, Int32 varModerationLevel, Int32 varCurrentSeason) in d:\\hosting\\jlasaz\\App_Code\\DAL\\Generated\\WebSettings.vb:601<br />   ClubStarterKit.Web.Settings.PushToSession() in d:\\hosting\\jlasaz\\App_Code\\BLL\\Settings.vb:31<br />   ASP.global<i>asax.Session</i>Start(Object sender, EventArgs e) in d:\\hosting\\jlasaz\\global.asax:24<br />   System.Web.SessionState.SessionStateModule.RaiseOnStart(EventArgs e) +2211278<br />   System.Web.SessionState.SessionStateModule.CompleteAcquireState() +154<br />   System.Web.SessionState.SessionStateModule.BeginAcquireState(Object source, EventArgs e, AsyncCallback cb, Object extraData) +547<br />   System.Web.AsyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute() +90<br />   System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously) +155<br /><br /><br /><br /><br />--------------------------------------------------------------------------------<br />Version Information: Microsoft .NET Framework Version:2.0.50727.832; ASP.NET Version:2.0.50727.832 <br />",
+    "PostedDate": "2007-10-02T16:01:41.747-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "51631",
+    "ThreadId": "15916",
+    "Html": "\r\nAh... it's a medium trust issue. I haven't seen a fix for it. Anyone fix this?<br /><br />Sorry this is happening! If I could help, I would :)<br />",
+    "PostedDate": "2007-10-02T17:01:08.203-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "51650",
+    "ThreadId": "15916",
+    "Html": "\r\nIs there any way to work around this?<br />",
+    "PostedDate": "2007-10-02T21:18:19.303-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "51727",
+    "ThreadId": "15916",
+    "Html": "\r\nI have the same issue i'm working on it.<br />I try to find a solution to configure the starterkit in medium trust level<br /><br /><a href=\"http://msdn2.microsoft.com/en-us/library/ms998341.aspx\" class=\"externalLink\">http://msdn2.microsoft.com/en-us/library/ms998341.aspx<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a><br />",
+    "PostedDate": "2007-10-03T08:57:55.407-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "51810",
+    "ThreadId": "15916",
+    "Html": "\r\nI was working with a different template and, using godaddy, I had to create the App_Data folder using their web application in order to load things into it that worked.  I also saw another post that mentioned creating the directories manually using the host provider web tool.  Do you think this might work in this situation?<br />",
+    "PostedDate": "2007-10-03T21:00:49.597-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "51939",
+    "ThreadId": "15916",
+    "Html": "\r\nI have good news.  I have resolved the security exception mentioned above, at least so far.  My steps were as follows:<br /><br />1.  Create App<i>Data, App</i>Code, and App_Theme using godaddy web tool with each directory permissioned at Read, Web, and Write<br />2.  Create new blank db using godaddy web tool<br />3.  Run scripts found in App_Data (with the exception of the schemaversion lines of code) using godaddy web tool query analyzer<br />4.  Update connectionStrings.config with appropriate godaddy strings<br />5.  Upload with VWD FTP<br />6.  Pages will now load without security exception<br /><br />Things to note:<br />1.  I have not performed a full test, yet<br />2.  All navigation and pages appear to be working thus far, with the exception of Statistics<br /><br />I will begin testing of components this evening to see what happens.<br />",
+    "PostedDate": "2007-10-04T15:37:42.4-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "52375",
+    "ThreadId": "15916",
+    "Html": "\r\nAlas, I spoke too soon.  Manually creating the folders allowed the site to function partially, but anything that used subsonic errored.  Oh well, back to the drawing board.<br />",
+    "PostedDate": "2007-10-08T15:52:44.307-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

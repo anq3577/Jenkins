@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-07-06T13:20:54.157-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When I logged off from the \"~/member/list.aspx\", the page would redirect me to \"~/list.aspx\".  Not sure the intent of the GetFileName() function.\n \nRecommend change to ~/UserControls/LoginBanner.ascx from\n \n    Protected Sub Logoutbtn_Click(ByVal sender As Object, ByVal e As System.EventArgs)\n        FormsAuthentication.SignOut()\n        Response.Redirect(GetFileName(Request.Path.ToString))\n    End Sub\n \nto \n \n    Protected Sub Logoutbtn_Click(ByVal sender As Object, ByVal e As System.EventArgs)\n        FormsAuthentication.SignOut()\n        Response.Redirect(\"~/default.aspx\")\n    End Sub\n \nor modify GetFileName() function to have it do what it is supposed to do.",
+    "LastUpdatedDate": "2013-05-15T23:46:37.15-07:00",
+    "PlannedForRelease": "Version 3 Beta 1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-05-19T23:03:52.327-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Problem logging off with LoginBanner",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 2305
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "This is how to fix this problem - replace the following in /UserControls/LoginBanner.ascx\r\n\r\n    Protected Sub Logoutbtn_Click(ByVal sender As Object, ByVal e As System.EventArgs)        FormsAuthentication.SignOut()        Response.Redirect(GetFileName(Request.Url.PathAndQuery.ToString))    End Sub                Private Function GetFileName(ByVal str As String) As String        Return str    End Function\r\n\r\n    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs)        If Page.User.Identity.IsAuthenticated = False Then            Dim LoginButton As ClubSite.RolloverLink            Dim link As String = \"~/Member/Login.aspx?ReturnURL=\"                        link = link & Server.UrlEncode(Request.Url.PathAndQuery.ToString())            LoginButton = CType(LoginView1.FindControl(\"Logintbtn\"), ClubSite.RolloverLink)            LoginButton.NavigateURL = link        End If    End Sub  Please post if it did work for you!Best regards,N",
+      "PostedDate": "2007-06-12T13:45:01.877-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-19T12:50:21.46-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-06T13:20:41.467-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-06T13:20:54.157-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:20.86-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:37.15-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

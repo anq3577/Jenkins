@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "50443",
+    "ThreadId": "15534",
+    "Html": "\r\nI am using Club Starter Kit 2.0 Final and having a problem with members posting or replying on forums. <br />Anyone had this issue?<br /><br />I ask this before ( above ) and no one answered me. Maybe some one can help me with more information.<br /><br />Went you click on the yellow forums threads it takes you to forums article <br />when you click on new threads it ask you to sign in <br />but after you sign in it keeps asking you to sign<br />Is there a way to fix this?<br /><br />on localhost I get this page error<br /><br />        catch ex as Exception <br />            if ex.Message = \"Invalid object name 'HitCounter'.\" then<br />                throw new Exception(\"The database does not appear to contain HitCounter table, this is a feature of the extended ClubSite, please ensure you have run HitCounter.SQL against the database\")<br />            end if<br /><br />            throw<br /><br />        end try<br /><br /><br />    End Sub<br /><br />&lt;/script&gt;<br />",
+    "PostedDate": "2007-09-23T23:06:54.363-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

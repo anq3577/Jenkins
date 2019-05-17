@@ -1,0 +1,115 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Unbable to reproduce",
+    "ClosedDate": "2007-07-14T13:41:35.463-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I get the following error when I build the site with this release.  I an finally using Visual Studio (ben using visual web developer) and may not have set things up properly.  Any ideas?\n \nError\t52\tFile '~/Default.master' was not found.\tC:\\Documents and Settings\\RH847\\My Documents\\Visual Studio 2005\\WebSites\\3256\\ClubStarterKit\\ClubStarterKit.Web\\Default.aspx\t1\t40\tC:\\...\\3256\\",
+    "LastUpdatedDate": "2013-05-15T23:46:34.897-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-06-22T09:22:09.963-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Build Issue with 3256",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 2553
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Did you unzip the build into My Documents\\Visual Studio 2005\\Websites\\....? Try closing VS and reopening it.",
+      "PostedDate": "2007-06-22T11:09:50.68-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I did.  CLsoed and re opened.  Same Issue",
+      "PostedDate": "2007-06-22T11:45:37.973-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "delete site.  Unzipped new site.  changed db connection strings.  I now receive the following:\r\n\r\nServer Error in '/ClubStarterKit' Application.--------------------------------------------------------------------------------\r\n\r\nConfiguration Error Description: An error occurred during the processing of a configuration file required to service this request. Please review the specific error details below and modify your configuration file appropriately. \r\n\r\nParser Error Message: It is an error to use a section registered as allowDefinition='MachineToApplication' beyond application level.  This error can be caused by a virtual directory not being configured as an application in IIS.\r\n\r\nSource Error: \r\n\r\nLine 165:\t\t\t</controls>Line 166:\t\t</pages>Line 167:\t\t<authentication mode=\"Forms\">Line 168:\t\t\t<forms loginUrl=\"member/login.aspx\" defaultUrl=\"~/default.aspx\"/>Line 169:\t\t</authentication> \r\n\r\nSource File: C:\\Documents and Settings\\RH847\\My Documents\\Visual Studio 2005\\WebSites\\ClubStarterKit\\clubstarterkit.web\\web.config    Line: 167 \r\n\r\n\r\n\r\nShow Additional Configuration Errors:\r\n\r\nIt is an error to use a section registered as allowDefinition='MachineToApplication' beyond application level.  This error can be caused by a virtual directory not being configured as an application in IIS. (C:\\Documents and Settings\\RH847\\My Documents\\Visual Studio 2005\\WebSites\\ClubStarterKit\\clubstarterkit.web\\web.config line 192)It is an error to use a section registered as allowDefinition='MachineToApplication' beyond application level.  This error can be caused by a virtual directory not being configured as an application in IIS. (C:\\Documents and Settings\\RH847\\My Documents\\Visual Studio 2005\\WebSites\\ClubStarterKit\\clubstarterkit.web\\web.config line 198)It is an error to use a section registered as allowDefinition='MachineToApplication' beyond application level.  This error can be caused by a virtual directory not being configured as an application in IIS. (C:\\Documents and Settings\\RH847\\My Documents\\Visual Studio 2005\\WebSites\\ClubStarterKit\\clubstarterkit.web\\web.config line 204)It is an error to use a section registered as allowDefinition='MachineToApplication' beyond application level.  This error can be caused by a virtual directory not being configured as an application in IIS. (C:\\Documents and Settings\\RH847\\My Documents\\Visual Studio 2005\\WebSites\\ClubStarterKit\\clubstarterkit.web\\web.config line 210)It is an error to use a section registered as allowDefinition='MachineToApplication' beyond application level.  This error can be caused by a virtual directory not being configured as an application in IIS. (C:\\Documents and Settings\\RH847\\My Documents\\Visual Studio 2005\\WebSites\\ClubStarterKit\\clubstarterkit.web\\web.config line 242)                       \r\n\r\n--------------------------------------------------------------------------------Version Information: Microsoft .NET Framework Version:2.0.50727.42; ASP.NET Version:2.0.50727.210 ",
+      "PostedDate": "2007-06-22T11:51:39.09-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "So you are using IIS and not the web server in VS?",
+      "PostedDate": "2007-06-22T16:01:38.497-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Nope.  Just the Visual Studio install (pro version) and also Visual Web Developer.  No IIS.",
+      "PostedDate": "2007-06-22T18:48:11.22-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\"Parser Error Message: It is an error to use a section registered as allowDefinition='MachineToApplication' beyond application level. This error can be caused by a virtual directory not being configured as an application in IIS.\"\r\n\r\nThat's interesting.",
+      "PostedDate": "2007-06-22T21:08:52.68-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "yeah.  I definetaly confused me.  I changed the connection string to my DB as outlined in the error, and ran it.  I am not quite sure either.",
+      "PostedDate": "2007-06-23T07:41:00.473-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "So it works now?",
+      "PostedDate": "2007-06-23T10:06:55.947-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I did.  Same issue.  Tried a different install on another computer and have the same issue.  Maybe I'm doing something wrong with Visual Studio.  This is my first attempt at using it.",
+      "PostedDate": "2007-06-23T17:14:57.69-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "sorry, read the posts out of order.  Still not working.  Same eror on two computers. ",
+      "PostedDate": "2007-06-23T17:15:46.38-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "How about the latest build? Open the solution file, change your connection strings ON clubStarterKit.Data AND ClubStarterKit.Web. Then try to run it.",
+      "PostedDate": "2007-06-23T19:10:41.837-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-25T01:44:14.667-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-14T13:41:35.463-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:17.64-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:34.897-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When following the steps in the readme, the code does not compile when step 5 is executed. In step 5 the admin user is created and added to the scope. The readme file states to add several lines in the global.asax file. The following lines produce compilation errors:\n                var user = scope.UnitOfWork.RepositoryFor<ClubStarterKit.Domain.User>() .First(u => u.Username == \"admin\");\n                var role = scope.UnitOfWork.RepositoryFor<ClubStarterKit.Domain.User>() .First(r => r.RoleName == Constants.AdminRole);\n \nThe error is:  'ClubStarterKit.Core.DataAccess.IRepository<ClubStarterKit.Domain.User>' does not contain a definition for 'First' and no extension method 'First' accepting a first argument of type 'ClubStarterKit.Core.DataAccess.IRepository<ClubStarterKit.Domain.User>' could be found (are you missing a using directive or an assembly reference?)\n \nThis goes for both lines. Please update the instructions.",
+    "LastUpdatedDate": "2013-02-13T19:37:04.113-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2010-01-15T15:01:21.663-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Instruction in readme at step 5 creates a compile error",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 11514
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

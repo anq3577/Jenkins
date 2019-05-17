@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "62457",
+    "ThreadId": "18998",
+    "Html": "\r\ni am installing the v2 for the first time and I am getting this error:<br />Server Error in '/' Application.<br />Object reference not set to an instance of an object.<br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.<br /><br />Exception Details: System.NullReferenceException: Object reference not set to an instance of an object.<br /><br />Source Error:<br /><br />Line 59:             end if<br />Line 60:             <br />Line 61:             throw<br />Line 62:             <br />Line 63:         end try<br /><br /><br />Source File: D:\\inetpub\\vhosts\\plugintosparx.com\\httpdocs\\UserControls\\WebContent.ascx    Line: 61<br /><br />Stack Trace:<br /><br /><a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=NullReferenceException%3a%20Object%20reference%20not%20set%20to%20an%20instance%20of%20an%20object.\">NullReferenceException: Object reference not set to an instance of an object.</a><br />   ASP.WebContent.Page_Load(Object sender, EventArgs e) in D:\\inetpub\\vhosts\\plugintosparx.com\\httpdocs\\UserControls\\WebContent.ascx:61<br />   System.Web.UI.Control.OnLoad(EventArgs e) +99<br />   System.Web.UI.Control.LoadRecursive() +47<br />   System.Web.UI.Control.LoadRecursive() +131<br />   System.Web.UI.Control.LoadRecursive() +131<br />   System.Web.UI.Control.LoadRecursive() +131<br />   System.Web.UI.Control.LoadRecursive() +131<br />   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +1061<br /><br /><br />Version Information: Microsoft .NET Framework Version:2.0.50727.832; ASP.NET Version:2.0.50727.832<br /><br />Any ideas?<br />",
+    "PostedDate": "2007-12-11T13:11:13.387-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "62466",
+    "ThreadId": "18998",
+    "Html": "\r\ndisregard...I figured it out.<br />",
+    "PostedDate": "2007-12-11T14:05:19.4-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

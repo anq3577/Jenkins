@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "31493",
+    "ThreadId": "9697",
+    "Html": "\r\nHi all,<br /><br />I was trying to see if I could insert a flash object in the text editor.  I can't seem to get it to work.  Does anyone know how I can upload a .flv file and get it to play when the page opens?<br />",
+    "PostedDate": "2007-04-27T10:18:54.93-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31523",
+    "ThreadId": "9697",
+    "Html": "\r\nNot sure... check the FCKEditor site. They would have support for that sort of thing.<br />",
+    "PostedDate": "2007-04-27T16:13:41.207-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31631",
+    "ThreadId": "9697",
+    "Html": "\r\nI've played with this some and it seems to work well.<br /><br />http://www.flash-control.net/<br /><br />Give it a try<br /><br /><br />Bob<br />",
+    "PostedDate": "2007-04-29T07:46:12.497-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31710",
+    "ThreadId": "9697",
+    "Html": "\r\nThanks Guys!<br /><br />What I ended up doing was to download a converter and converted the .flv file to .swf and then dropped the .swf file into /images folder and then referenced the URL in the flash properties of the FCKEditor, like this:<br /><br />http://localhost/images/file.swf<br /><br />It worked!<br /><br />I'll have to check out the flash-control.net sometime...<br /><br />",
+    "PostedDate": "2007-04-30T09:47:36.013-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2008-03-18T17:32:06.687-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "ISSUE:\nI had a problem trying to input a new user. I would hit submit but nothing would happen.\n \nBUG:\nThe return status of Membership.CreateUser() was not being checked for success before trying to update the user data.\n \nSOLUTION:\nIn the Member\\Register.aspx in the subroutine Button1_Click()\nAdded Dim createStatus As System.Web.Security.MembershipCreateStatus to put into the Membership.CreateUser() call\n \nThen create an If statement around the remainder of the UpdateUser section\n    If createStatus = MembershipCreateStatus.Success Then\n \nAt the bottom put in a SELECT statement to set the error string to the return of the createStatus returned it looks like this:\n \n\t\tIf password.Text = confirmpassword.Text Then\n\t\t\tstatus.Text = \"Error. Your passwords do not match!\"\n\t\tElse\n\t\t\tSelect Case createStatus\n\t\t\t\tCase MembershipCreateStatus.DuplicateProviderUserKey\n\t\t\t\t\tstatus.Text = \"Error. Duplicate ProviderUserKey (See Administrator)\"\n\t\t\t\tCase MembershipCreateStatus.InvalidProviderUserKey\n\t\t\t\t\tstatus.Text = \"Error. Invalid Provider User Key (See Administrator)\"\n\t\t\t\tCase MembershipCreateStatus.ProviderError\n\t\t\t\t\tstatus.Text = \"Error. Provider Error (See Administrator)\"\n\t\t\t\tCase MembershipCreateStatus.UserRejected\n\t\t\t\t\tstatus.Text = \"Error. User Rejected (See Administrator)\"\n\t\t\t\tCase MembershipCreateStatus.DuplicateProviderUserKey\n\t\t\t\t\tstatus.Text = \"Error. Duplicate ProviderUserKey (See Administrator)\"\n\t\t\t\tCase MembershipCreateStatus.DuplicateProviderUserKey\n\t\t\t\t\tstatus.Text = \"Error. Duplicate ProviderUserKey (See Administrator)\"\n\t\t\t\tCase MembershipCreateStatus.DuplicateEmail\n\t\t\t\t\tstatus.Text = \"Error. Duplicate Email\"\n\t\t\t\tCase MembershipCreateStatus.DuplicateUserName\n\t\t\t\t\tstatus.Text = \"Error. Duplicate UserName\"\n\t\t\t\tCase MembershipCreateStatus.InvalidAnswer\n\t\t\t\t\tstatus.Text = \"Error. Invalid Answer\"\n\t\t\t\tCase MembershipCreateStatus.InvalidEmail\n\t\t\t\t\tstatus.Text = \"Error. Invalid Email\"\n\t\t\t\tCase MembershipCreateStatus.InvalidPassword\n\t\t\t\t\tstatus.Text = \"Error. Invalid Password\"\n\t\t\t\tCase MembershipCreateStatus.InvalidQuestion\n\t\t\t\t\tstatus.Text = \"Error. Invalid Question\"\n\t\t\t\tCase MembershipCreateStatus.InvalidUserName\n\t\t\t\t\tstatus.Text = \"Error. Invalid User Name\"\n\t\t\tEnd Select\n\t\tEnd If\n\t\tusername.Enabled = True\n\t\tpassword.Enabled = True\n\t\tconfirmpassword.Enabled = True\n\t\temail.Enabled = True\n\t\tquestion.Enabled = True\n\t\tanswer.Enabled = True\n\t\tAddr.Enabled = True\n\t\tPhone.Enabled = True\n\t\tfname.Enabled = True\n\t\tlname.Enabled = True\n\t\tclubNum.Enabled = True\n\t\tNewsletterCheck.Enabled = True\n \nI have attached the file to make it more readable\n \nThanks, \n \nJim Shelton",
+    "LastUpdatedDate": "2013-05-15T23:46:26.637-07:00",
+    "PlannedForRelease": "ClubStarterKit v3 Beta 2",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-12-20T21:42:54.947-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Login Error Handling",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 4887
+  },
+  "FileAttachments": [
+    {
+      "FileId": 1044,
+      "FileName": "Register.aspx",
+      "DownloadUrl": ".\\1044"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 10392.",
+      "PostedDate": "2008-03-18T17:32:06.687-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:07.847-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:26.637-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

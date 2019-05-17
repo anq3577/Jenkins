@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "66099",
+    "ThreadId": "19941",
+    "Html": "\r\nI downloaded and installed a fresh copy of the Beta 1. Opened and tried to do a build but I am getting the following error...<br /><br />An attempt to attach an auto-named database for file C:\\Users\\Zack\\Desktop\\ClubStarterKit Beta 1\\Standard (VB)\\ClubStarterKit.Web\\App_Data\\ClubDB.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.<br /><br />I am using Visual Studio Pro 2005<br />",
+    "PostedDate": "2008-01-04T09:15:02.847-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "66122",
+    "ThreadId": "19941",
+    "Html": "\r\nNevermind, I forgot to change the settingsconfig file. BrainFart!<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />flickman wrote:<br />I downloaded and installed a fresh copy of the Beta 1. Opened and tried to do a build but I am getting the following error...<br /><br />An attempt to attach an auto-named database for file C:\\Users\\Zack\\Desktop\\ClubStarterKit Beta 1\\Standard (VB)\\ClubStarterKit.Web\\App_Data\\ClubDB.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.<br /><br />I am using Visual Studio Pro 2005<br /><br /></div>",
+    "PostedDate": "2008-01-04T11:15:58.737-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

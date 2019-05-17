@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "27477",
+    "ThreadId": "8429",
+    "Html": "\r\nI get the following error running off sql2005 setup:<br /><br />The 'System.Web.Security.SqlMembershipProvider' requires a database schema compatible with schema version '1'.  However, the current database schema is not compatible with this version.  You may need to either install a compatible schema with aspnet_regsql.exe (available in the framework installation directory), or upgrade the provider to a newer version. <br /><br />Ideas?<br />",
+    "PostedDate": "2007-03-21T08:27:16.767-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

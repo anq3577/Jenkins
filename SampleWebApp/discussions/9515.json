@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "30979",
+    "ThreadId": "9515",
+    "Html": "\r\nI have noticed that there are 3 default roles, Admin, Editor, Blogger. How could you add different levels of users to allow viewing different forum sections?<br /><br />Example:<br /><br />John Q public - Default can not access any forum group<br /><br />User level Low - can only access Forum group 1 can not edit can only read and post<br /><br />User level Medium - can only access Forum group 1 and 2 can not edit can only read and post<br /><br />Admin Level - can access Forum group 1, 2, and 3 plus edit the forums<br />",
+    "PostedDate": "2007-04-24T00:35:20.927-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31568",
+    "ThreadId": "9515",
+    "Html": "\r\nThis isn't really going to be an option in v2. We will try to get this sort of thing to be an option in v3.<br />",
+    "PostedDate": "2007-04-28T08:36:11.693-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31582",
+    "ThreadId": "9515",
+    "Html": "\r\nAfter digging through the code I'm assumming this can be done at the topics.aspx by comparing roles to member id and if user is in a certain role it will make that group of topics and threads visible, but this would require setting up panels and multiple entries in the data base.<br /><br />So...<br /><br />I am still trying to figure out how to save the role to the Table Topics properly and add the edit to the manage.aspx where it can use the current roles in a drop down box to allow visible to topic and threads by simply choosing the members role role that can view the topic etc... from the manage forum page by an admin. <br />",
+    "PostedDate": "2007-04-28T13:44:59.867-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

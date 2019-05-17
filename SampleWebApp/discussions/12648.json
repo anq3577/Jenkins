@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "41296",
+    "ThreadId": "12648",
+    "Html": "\r\nI am using the May 11th release version and when I try to view an individual forum post (accessing thread.aspx) I get the following error:<br /><br />Server Error in '/redhotchilimommas' Application.<br />--------------------------------------------------------------------------------<br /><br />Object reference not set to an instance of an object. <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />Exception Details: System.NullReferenceException: Object reference not set to an instance of an object.<br /><br />Source Error: <br /><br /><br />Line 45:             <i>memberid = New Guid(member</i>id.ToString())<br />Line 46:             Dim memUser As MembershipUser = Membership.GetUser(_memberid)<br />Line 47:             _joined = memUser.CreationDate<br />Line 48:             _online = memUser.IsOnline<br />Line 49:             _email = memUser.Email<br /><br /><br />Source File: C:\\Users\\Jason\\Documents\\Visual Studio 2005\\WebSites\\redhotchilimommas\\App_Code\\ForumUser.vb    Line: 47 <br /><br />Stack Trace: <br /><br /><br /><a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=NullReferenceException%3a%20Object%20reference%20not%20set%20to%20an%20instance%20of%20an%20object.\">NullReferenceException: Object reference not set to an instance of an object.</a><br />   ClubSiteForums.ForumUser.Load(Object member<i>id) in C:\\Users\\Jason\\Documents\\Visual Studio 2005\\WebSites\\redhotchilimommas\\App</i>Code\\ForumUser.vb:47<br />   ClubSiteForums.ForumUser..ctor(Object memberid) in C:\\Users\\Jason\\Documents\\Visual Studio 2005\\WebSites\\redhotchilimommas\\App_Code\\ForumUser.vb:35<br />   ClubSiteForums.ForumUser.GetCachedForumUser(Object memberid) in C:\\Users\\Jason\\Documents\\Visual Studio 2005\\WebSites\\redhotchilimommas\\App_Code\\ForumUser.vb:105<br />   ASP.forum<i>thread</i>aspx.GetSignature(Object memberid) in C:\\Users\\Jason\\Documents\\Visual Studio 2005\\WebSites\\redhotchilimommas\\Forum\\Thread.aspx:138<br />   ASP.forum<i>thread</i>aspx.<i>_DataBinding_</i>control14(Object sender, EventArgs e) in C:\\Users\\Jason\\Documents\\Visual Studio 2005\\WebSites\\redhotchilimommas\\Forum\\Thread.aspx:213<br />   System.Web.UI.Control.OnDataBinding(EventArgs e) +99<br />   System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding) +206<br />   System.Web.UI.Control.DataBind() +12<br />   System.Web.UI.Control.DataBindChildren() +216<br />   System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding) +216<br />   System.Web.UI.Control.DataBind() +12<br />   System.Web.UI.WebControls.Repeater.CreateItem(Int32 itemIndex, ListItemType itemType, Boolean dataBind, Object dataItem) +130<br />   System.Web.UI.WebControls.Repeater.CreateControlHierarchy(Boolean useDataSource) +454<br />   System.Web.UI.WebControls.Repeater.OnDataBinding(EventArgs e) +53<br />   System.Web.UI.WebControls.Repeater.DataBind() +72<br />   System.Web.UI.WebControls.Repeater.EnsureDataBound() +55<br />   System.Web.UI.WebControls.Repeater.OnPreRender(EventArgs e) +12<br />   System.Web.UI.Control.PreRenderRecursiveInternal() +77<br />   System.Web.UI.Control.PreRenderRecursiveInternal() +161<br />   System.Web.UI.Control.PreRenderRecursiveInternal() +161<br />   System.Web.UI.Control.PreRenderRecursiveInternal() +161<br />   System.Web.UI.Control.PreRenderRecursiveInternal() +161<br />   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +1360<br /><br /><br /><br /><br />--------------------------------------------------------------------------------<br />Version Information: Microsoft .NET Framework Version:2.0.50727.1318; ASP.NET Version:2.0.50727.1318 <br /><br /><br /><br />Any ideas what the problem could be? This is the second time I have launched a website with this starter kit and the first time I had no trouble at all with the forums.<br /><br />Thanks in advance.<br />",
+    "PostedDate": "2007-07-16T15:29:52.46-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41297",
+    "ThreadId": "12648",
+    "Html": "\r\nQuick update - After additional testing I realized that the problem was that the original posts in the thread were made by a user that had been subsequently deleted.  <br /><br />New threads from current users seem to work fine.  <br /><br />While my particular problem is solved, it seems like there can certainly be issues down the road in the life of a forum if threads no longer become visible because a person who posted to it has been deleted.<br /><br />Thanks.<br />",
+    "PostedDate": "2007-07-16T15:43:13.047-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41312",
+    "ThreadId": "12648",
+    "Html": "\r\nYea... I knew about that issue. I need to 1) figure out if that still applies and 2) make a fix.<br />",
+    "PostedDate": "2007-07-16T16:52:45.493-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41319",
+    "ThreadId": "12648",
+    "Html": "\r\nI figured it was a known issue.  Thanks for all of the great work, I am putting the sites to good use.  I look forward to version 3 and hope there is an upgrade path from v2 to v3.  Thanks again.<br />",
+    "PostedDate": "2007-07-16T19:24:19.267-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "68496",
+    "ThreadId": "12648",
+    "Html": "\r\nI'm experiencing this same problem - a deleted users forums are no longer accessible.  Is there a fix to this problem?<br />",
+    "PostedDate": "2008-01-17T07:40:18.027-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

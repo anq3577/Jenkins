@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "259399",
+    "ThreadId": "75820",
+    "Html": "<p><span lang=EN>\r\n<p>I am using club starter kit 2.0.&nbsp;<span style=\"font-size:x-small\"> When I use send e-mail to just Editors it send it. </span></p>\r\n<p>When I send e-mail to All Members it goes to my error page.</p>\r\n<p>-----------------------------------------------------------------------------------------------------------------------------</p>\r\n<strong><em><span style=\"font-size:large\">\r\n<p>There is no row at position 0.</p>\r\n</span><span style=\"font-family:Arial\">\r\n<p>Description:</p>\r\n</span>\r\n<p>An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br><br><strong>Exception Details: </strong>System.IndexOutOfRangeException: There is no row at position 0.<br><br><strong>Source Error:</strong></p>\r\n<span style=\"font-family:Courier New;font-size:x-small\"><span style=\"font-family:Courier New;font-size:x-small\">\r\n<p>Line 416: Public Default ReadOnly Property Item(ByVal index As Integer) As MemberInfoRow</p>\r\n<p>Line 417: Get</p>\r\n</span></span><span style=\"font-family:Arial;color:#ff0000;font-size:x-small\"><span style=\"font-family:Arial;color:#ff0000;font-size:x-small\"><span style=\"font-family:Arial;color:#ff0000;font-size:x-small\">\r\n<p>Line 418: Return CType(Me.Rows(index),MemberInfoRow)</p>\r\n</span></span></span><span style=\"font-family:Arial;font-size:x-small\"><span style=\"font-family:Arial;font-size:x-small\">\r\n<p>Line 419: End Get</p>\r\n<p>Line 420: End Property</p>\r\n<p>--------------------------------------------------------------------------------------------------------------------------------</p>\r\n<p>What does this mean?</p>\r\n<p>How can I&nbsp;fix this?</p>\r\n<p>LHR</p>\r\n</span></span></em></strong></span></p>",
+    "PostedDate": "2009-11-21T12:30:48.857-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "265562",
+    "ThreadId": "75820",
+    "Html": "<p><span style=\"font-size:x-small\"><span lang=EN><span lang=EN><span lang=EN>\r\n<p>Apparently you have to check one of the roles boxes for all the members to send an e-mail.</p>\r\n</span></span></span></span></p>",
+    "PostedDate": "2009-12-09T22:46:45.787-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

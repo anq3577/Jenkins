@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Fixed",
+    "ClosedDate": "2007-06-19T13:27:47.27-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Excellent work here!  I've been learning much from watching this project.  I haven't seen this one come up yet, though.\n \nI've run across two issues related to the paging feature for the  /news/list.aspx  Announcements page.  First, the list runs in reverse date order with the oldest news item on top.  Second, the PageNumberer feature itself doesn't appear to be working correctly.  I suspect that the PagedAnnouncementList stored proceedure may be to blame, but I can't say for sure.  Some of the related scripting looks questionable too compared to similar pages like the Events list.  I've managed to tweak the ORDER BY of the stored proceedure to fix the first item, but the paging problem has me stumped.",
+    "LastUpdatedDate": "2013-05-15T23:46:42.39-07:00",
+    "PlannedForRelease": "Version 3 Beta 1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:36:17.927-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Paging in Announcements",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 1326
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I will take a look. I think we should ditch the SP for just changing it to a DataList so paging is automatically integrated.",
+      "PostedDate": "2007-04-25T14:36:18.63-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-17T15:10:48.08-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-19T09:12:11.023-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-19T13:27:47.27-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:27.04-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:42.39-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

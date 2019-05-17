@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "41649",
+    "ThreadId": "12751",
+    "Html": "\r\nAll I'm getting is the below. I added the customerrrors mode=off like it says, but nothing changed. <br /><br />Any ideas? <br /><br />Runtime Error <br />Description: An application error occurred on the server. The current custom error settings for this application prevent the details of the application error from being viewed remotely (for security reasons). It could, however, be viewed by browsers running on the local server machine. <br /><br />Details: To enable the details of this specific error message to be viewable on remote machines, please create a &lt;customErrors&gt; tag within a \"web.config\" configuration file located in the root directory of the current web application. This &lt;customErrors&gt; tag should then have its \"mode\" attribute set to \"Off\".<br /><br /><br />&lt;!-- Web.Config Configuration File --&gt;<br /><br />&lt;configuration&gt;<br />    &lt;system.web&gt;<br />        &lt;customErrors mode=\"Off\"/&gt;<br />    &lt;/system.web&gt;<br />&lt;/configuration&gt;<br /><br /><br />Notes: The current error page you are seeing can be replaced by a custom error page by modifying the \"defaultRedirect\" attribute of the application's &lt;customErrors&gt; configuration tag to point to a custom error page URL.<br /><br /><br />&lt;!-- Web.Config Configuration File --&gt;<br /><br />&lt;configuration&gt;<br />    &lt;system.web&gt;<br />        &lt;customErrors mode=\"RemoteOnly\" defaultRedirect=\"mycustompage.htm\"/&gt;<br />    &lt;/system.web&gt;<br />&lt;/configuration&gt;<br /><br />",
+    "PostedDate": "2007-07-18T14:12:01.473-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

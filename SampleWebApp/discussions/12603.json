@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "41134",
+    "ThreadId": "12603",
+    "Html": "\r\nHave been looking at V2 and can see some great new features that are nice additions to the club starter kit.<br /><br />I've been using V1 for a while now in a live deployment and generally the site is maintenance free but I can see that some of the new features in V2 would be nice to have, <br /><br />Has anyone thought about how to upgrade the database from V1 to V2? This is something I will have a look at but wondered if anyone else has thought about this. I have built up quite a lot of data over the last year and would like to keep it when  moving between versions.<br /><br />In addition has anyone thought about providing any of the new features seperately? So for example if I just wanted to add the Content Management or updates to the News? <br /><br />Anyway, I guess my priority would be to look at upgrading or migrating data across so as to provide a seamless transition between versions. So if anyone has any thoughts they would be greatly appreciated.<br /><br />Keep up the good work guys.<br /><br />Tony <br />",
+    "PostedDate": "2007-07-15T03:50:29.02-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41146",
+    "ThreadId": "12603",
+    "Html": "\r\nIt has been thought about many times, but I just recently discovered a way that this could work. <br /><br />I think I need to do a little experamentation. If you would like me to upgrade your database for you, I would like to see if I can create a script that would help people upgrade from v1 to v2. If you want to do this, just send me an mdf or bak of your database and I will try to 1) upgrade your database and 2) create a script that upgrades everyone's databases.<br />",
+    "PostedDate": "2007-07-15T09:24:18.17-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41159",
+    "ThreadId": "12603",
+    "Html": "\r\nSounds good, I'll be happy to provide you with a backup of my database to see if you can find a way to do this, I'm not quite ready to do the upgrade just yet,  will  need to update pages etc. to cusomise but if the end result is a script that performs the DB upgrade them thats going to be good news going forward for anyone that already has a site deployed using the older version of the club site starter kit.. I'm not sure how big the DB backup will be but will advise you. <br /><br />",
+    "PostedDate": "2007-07-15T13:51:08.937-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41167",
+    "ThreadId": "12603",
+    "Html": "\r\ntonypred,<br /><br />Let me know when you are ready. You can send the database to my email (zowens@eagleenvision.net) or your can email me if that doesn't work.<br />",
+    "PostedDate": "2007-07-15T16:08:00.517-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

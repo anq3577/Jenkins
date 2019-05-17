@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "29354",
+    "ThreadId": "8994",
+    "Html": "\r\nWhen trying to bring up http://sahcinfo.org.ultimahosts.net/Register.aspx I am getting this error message.<br /><br />Compilation Error <br />Description: An error occurred during the compilation of a resource required to service this request. Please review the following specific error details and modify your source code appropriately. <br /><br />Compiler Error Message: BC30455: Argument not specified for parameter 'firstname' of 'Public Overridable Function Insert(memnum As String, newsletter As System.Nullable(Of Boolean), memberid As System.Guid, address As String, phone As String, firstname As String, lastname As String) As Integer'.<br /><br />Source Error:<br /><br /><br /><br />Line 10:             Dim da As New DataSetTableAdapters.MemberInfoTableAdapter<br />Line 11:             Dim user As MembershipUser = Membership.GetUser(CreateUserWizard1.UserName)<br />Line 12:             da.Insert(CType(user.ProviderUserKey, Guid), Addr.Text, Phone.Text, fname.Text, lname.Text)<br />Line 13:             user.IsApproved = True<br />Line 14:             Membership.UpdateUser(user)<br /><br /><br />Source File: F:\\HostingSpaces\\jerrysdean43@msn.com\\sahcinfo.org\\wwwroot\\Register.aspx    Line: 12 <br /><br />",
+    "PostedDate": "2007-04-09T08:59:29.377-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "29355",
+    "ThreadId": "8994",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />jerrysdean43 wrote:<br />When trying to bring up http://sahcinfo.org.ultimahosts.net/Register.aspx I am getting this error message.<br /><br />Compilation Error <br />Description: An error occurred during the compilation of a resource required to service this request. Please review the following specific error details and modify your source code appropriately. <br /><br />Compiler Error Message: BC30455: Argument not specified for parameter 'firstname' of 'Public Overridable Function Insert(memnum As String, newsletter As System.Nullable(Of Boolean), memberid As System.Guid, address As String, phone As String, firstname As String, lastname As String) As Integer'.<br /><br />Source Error:<br /><br /><br /><br />Line 10:             Dim da As New DataSetTableAdapters.MemberInfoTableAdapter<br />Line 11:             Dim user As MembershipUser = Membership.GetUser(CreateUserWizard1.UserName)<br />Line 12:             da.Insert(CType(user.ProviderUserKey, Guid), Addr.Text, Phone.Text, fname.Text, lname.Text)<br />Line 13:             user.IsApproved = True<br />Line 14:             Membership.UpdateUser(user)<br /><br /><br />Source File: F:\\HostingSpaces\\jerrysdean43@msn.com\\sahcinfo.org\\wwwroot\\Register.aspx    Line: 12 <br /><br /><br /><br /></div><br />Sorry, I did it again, wrong link.<br />",
+    "PostedDate": "2007-04-09T09:02:36.827-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

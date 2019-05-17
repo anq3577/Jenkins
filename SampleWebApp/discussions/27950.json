@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "93285",
+    "ThreadId": "27950",
+    "Html": "Is it just me or does the CSK 3.1 not current support Editing of the currently selected photo in the Photo Albums?<br>\r\n<br>\r\n1. Open Album<br>\r\n2. Select Thumnail photo from left side. <br>\r\n3. With photo selected, hit the Edit Photo Button.<br>\r\n4. The Photo that is brought up for Editing is the first photo in the Album. You have to hit Next&gt; until you get to the photo you want.<br>\r\n<br>\r\nAnybody else seeing this behavior? Anyway to make Edit Photo work for the photo that is currently Selected??<br>\r\n<br>\r\n",
+    "PostedDate": "2008-05-18T16:16:00.82-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "102087",
+    "ThreadId": "27950",
+    "Html": "Hi,<br>\r\n<br>\r\nNot only you. I am also having same problem with you. When Editing, brought up the first photo. <br>\r\n<br>\r\nIs there any way to solve?\r\n",
+    "PostedDate": "2008-07-02T01:15:39.84-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "103064",
+    "ThreadId": "27950",
+    "Html": "I haven't found a solution for this yet. Admittedly, I haven't been working on this issue since and I'm not very proficient with ASP yet. I was hoping somebody else in the group would post a bug fix for this.\r\n",
+    "PostedDate": "2008-07-07T07:20:23.14-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "104424",
+    "ThreadId": "27950",
+    "Html": "Please post a bug report into the issue tracker including all information you can get.<br>\r\n<br>\r\nThanks!\r\n",
+    "PostedDate": "2008-07-13T15:14:49.19-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "107359",
+    "ThreadId": "27950",
+    "Html": "Thoze - I created Bug Item&nbsp;#7071. I included basic steps to reproduce.\r\n",
+    "PostedDate": "2008-07-27T11:09:01.267-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

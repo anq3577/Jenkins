@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Check recent build and see if this is still an issue",
+    "ClosedDate": "2007-06-21T12:22:55.2-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "The error can be reproduced if using IE the user attempts to update profile information in member/details.aspx \nIE responds with unspecified error and if debugging for javascript is on, then line similar to this is shown:\nupdatePanelElement.innerHTML = rendering;\nThe same thing seems to work fine in Firefox.\n \nThe error is a result of IE's inability to load html with certain format in the innerHtml method. \nThe error comes from the <p> elements just under the table describing the member details. If you move the content IN the table - just create a row and a cell, and move the update button and the rest in the cell, then it should work.\nThe explanation is that the innerHtml method in IE does not like to take some structures in the string. But if you move everything in the table, then it should work. \n \nCheckout how it is done in the password change form - the update button there is in the table.\n \nHope this helps!\nN",
+    "LastUpdatedDate": "2013-05-15T23:46:36.42-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-06-12T06:54:10.527-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "AJAX Problems in IE",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2475
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

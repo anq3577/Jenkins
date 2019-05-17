@@ -1,0 +1,250 @@
+[
+  {
+    "Id": "24598",
+    "ThreadId": "7566",
+    "Html": "\r\nOkay, I got the email stuff done that I wanted included.  So now I need some ideas of what to work on next.<br /><br />Anyone have a wish list?<br />",
+    "PostedDate": "2007-02-23T21:54:47.593-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24600",
+    "ThreadId": "7566",
+    "Html": "\r\nWell, I saw the list on the home page of what needs to be added.<br /><br />What is everyone working on, as I don't want to step on anyone's toes, so to speak.<br />",
+    "PostedDate": "2007-02-23T22:05:54.853-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24604",
+    "ThreadId": "7566",
+    "Html": "\r\nHi Mnebinger (tonguetwister there)<br /><br />I would like to see all events in Accordion. Currently working on that, but I could use some help.... (understated)<br />Got that working but I also would like to be able to open the correct pane directly from the Calendar. Just like you go from the Calendar with Hyperlink to Events_view.<br /><br /><br />Also with RSVP a msgbox (Ajax modal, or what's that other Ajax control called again?)<br />when you go over the limit or as a Submit-confirmation<br />would be nice.<br /><br />Just some thoughts, trying to help you out here.... :-D<br /><br />Lex<br />",
+    "PostedDate": "2007-02-24T00:11:59.183-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24615",
+    "ThreadId": "7566",
+    "Html": "\r\nI can't seem to get the AJAX stuff to work. I think that might be a nice quick project.<br />",
+    "PostedDate": "2007-02-24T06:30:03.027-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24619",
+    "ThreadId": "7566",
+    "Html": "\r\nHello Everyone,<br /><br />I am going to take a look at the AJAX implementations and see if I can get them ironed out. I will need a little time to get aquainted with the project. Anything about project procedures I should know about?<br /><br />I look forward to working with everyone on this.<br /><br />Thanks,<br /><br />Frank  <br />",
+    "PostedDate": "2007-02-24T07:56:22.923-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24620",
+    "ThreadId": "7566",
+    "Html": "\r\nI like the Email Addon, The version I wrote does not have the ability for attachments, I have over 50 users and I can say that most will want to see the ability for members to have the ability to Remove themselves from the mailing list.<br /><br />I accomplished this using an EmailList Role. A better way would probably be to add an Emaillist column in the Member Info table.<br /><br />If I could figure out this team explorer thing I will try to help.<br /><br />",
+    "PostedDate": "2007-02-24T07:56:56.843-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24622",
+    "ThreadId": "7566",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />CantonFrank wrote:<br />Hello Everyone,<br /><br />I am going to take a look at the AJAX implementations and see if I can get them ironed out. I will need a little time to get aquainted with the project. Anything about project procedures I should know about?<br /><br />I look forward to working with everyone on this.<br /><br />Thanks,<br /><br />Frank  <br /><br /></div><br />Not really any procedures... just tell me when you have AJAX complete and I'll take a look at it and close the Work Item.<br />",
+    "PostedDate": "2007-02-24T08:36:20.193-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24623",
+    "ThreadId": "7566",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />MaineOne wrote:<br />If I could figure out this team explorer thing I will try to help.<br /><br /></div><br />Do you need some assistance with Team Explorer? <a href=\"http://www.codeplex.com/CodePlex/Wiki/View.aspx?title=Visual%20Studio%20Team%20System%20Resources&amp;referringTitle=Home\" class=\"externalLink\">Click here for some info<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a><br />",
+    "PostedDate": "2007-02-24T08:37:32.367-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24642",
+    "ThreadId": "7566",
+    "Html": "\r\nHere is something to look into, CantonFrank... <a href=\"http://www.obout.com/AJAXPage/\" class=\"externalLink\">obout AJAX Page Controls<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a> You might like to put it into the kit.<br />",
+    "PostedDate": "2007-02-24T18:05:15.89-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24644",
+    "ThreadId": "7566",
+    "Html": "\r\nI am working on the event calendar now. The event calendar is comming from a compiled assembly and manages it's own events. I am trying to get into the guts of that assembly now to see if I can break it apart and do a partial page update <br />",
+    "PostedDate": "2007-02-24T19:43:05.393-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24647",
+    "ThreadId": "7566",
+    "Html": "\r\nYou can get the source for the event calendar (C#) here: <br /><a href=\"http://www.asp.net/downloads/starterkits/ClubSite.aspx?tabid=62\" class=\"externalLink\">http://www.asp.net/downloads/starterkits/ClubSite.aspx?tabid=62<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a><br />",
+    "PostedDate": "2007-02-24T21:32:39.333-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24655",
+    "ThreadId": "7566",
+    "Html": "\r\nHi guys,<br /><br />Are you after something really sophisticated or do you just want the months to be ajaxified?<br /><br />For that I added this to the page:<br /><br />&lt;asp:ScriptManager ID=\"SM\" runat=\"Server\" EnableScriptGlobalization=\"true\" /&gt;<br /><br />&lt;asp:UpdatePanel runat=\"server\" ID=\"upd1\"&gt;<br />      &lt;ContentTemplate&gt;<br /><br />      &lt;/ContentTemplate&gt;<br /> &lt;/asp:UpdatePanel&gt;<br /><br /><a href=\"http://site368.mysite4now.com/lexvis/webs/events_calendar.aspx\" class=\"externalLink\">http://site368.mysite4now.com/lexvis/webs/events_calendar.aspx<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a><br /><br /><br />Lex<br />",
+    "PostedDate": "2007-02-25T01:03:59.133-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24662",
+    "ThreadId": "7566",
+    "Html": "\r\nJust ajaxified. Thanks the goal. The only thing I would change is to have the update pannel display a loading image (Using a updateloadingpannel) I don't really know what the problem with my machine is, but I just can't get the AJAX stuff to work! I think I'm going to give it another run.<br />",
+    "PostedDate": "2007-02-25T06:49:26.237-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24667",
+    "ThreadId": "7566",
+    "Html": "\r\nGood idea,<br /><br />This works. Not on your machine?<br /><br /><br />&lt;asp:UpdateProgress Id=\"updpro\" runat=\"server\"&gt;<br />            &lt;Progresstemplate&gt;<br />            Updating...<br />            &lt;img src=\"images/loading.gif\" /&gt; <br />            &lt;/Progresstemplate&gt;<br />            &lt;/asp:UpdateProgress&gt;<br /><br /><br />Now I have to find a good graph<br /><br /><br />",
+    "PostedDate": "2007-02-25T08:26:12.517-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24668",
+    "ThreadId": "7566",
+    "Html": "\r\nHi Guys,<br /><br />The main problem with the ajax implementation is the setup with the web.config I have added the neccesary configuration elements and got calendar working like Lexvis's.<br /><br />Do you want me to check them in? <br />",
+    "PostedDate": "2007-02-25T09:03:41.543-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24669",
+    "ThreadId": "7566",
+    "Html": "\r\nhttp://www.codeplex.com/ClubStarterKit/WorkItem/View.aspx?WorkItemId=509<br />",
+    "PostedDate": "2007-02-25T09:03:44.47-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24670",
+    "ThreadId": "7566",
+    "Html": "\r\nYea, check it in CantonFrank<br />",
+    "PostedDate": "2007-02-25T09:04:04.54-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24671",
+    "ThreadId": "7566",
+    "Html": "\r\nok take a look and see if it works for you now<br />",
+    "PostedDate": "2007-02-25T09:11:06.643-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24672",
+    "ThreadId": "7566",
+    "Html": "\r\nIs there a build version on the web?<br />",
+    "PostedDate": "2007-02-25T09:12:16.063-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24673",
+    "ThreadId": "7566",
+    "Html": "\r\nI set up a version based on Beta 1... I can update it. Is that what you mean?<br />",
+    "PostedDate": "2007-02-25T09:17:06.773-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24675",
+    "ThreadId": "7566",
+    "Html": "\r\nNa I just meant if there was a place to view the current state of the site that is checked in. <br /><br />Also, can I suggest we figure out a way to coordinate our efforts so that people are not working on the same items at the same time. We should be able to maximize our efforts that way<br />",
+    "PostedDate": "2007-02-25T09:21:08.767-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24677",
+    "ThreadId": "7566",
+    "Html": "\r\nThere isn't a place currenly. We can get a free space at vwdhosting.net and everytime we make some changes send the site over via FTP.<br /><br />Well, we can use the forums to coordinate that and also the work items are \"assigned\" so that can also be a way of coordination. Or you can leave a comment saying like \"I'm workin on this!\" <br />",
+    "PostedDate": "2007-02-25T09:28:50.537-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24678",
+    "ThreadId": "7566",
+    "Html": "\r\nBTW... AJAX looks good! Thanks for doing that!<br />",
+    "PostedDate": "2007-02-25T09:29:11.787-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24679",
+    "ThreadId": "7566",
+    "Html": "\r\nWe could also do somthing with the rollovers for each event maybe a gogle like popup of the description of the event?<br /><br /><br />",
+    "PostedDate": "2007-02-25T09:33:03.227-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24680",
+    "ThreadId": "7566",
+    "Html": "\r\nThats a nice idea... they have some of that on the ajax website http://ajax.asp.net<br />",
+    "PostedDate": "2007-02-25T09:33:58.85-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24683",
+    "ThreadId": "7566",
+    "Html": "\r\nI am looking for the ie7 animated icon (new hourglass, you know what i mean? It's a blue spinning circle)<br />Want to see how it looks with Updateprogress.<br />Does anybody know where I can find that?<br />",
+    "PostedDate": "2007-02-25T10:10:31.007-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24684",
+    "ThreadId": "7566",
+    "Html": "\r\nhttp://www.obout.com/AJAXPage/ht_customize.aspx<br /><br />http://www.telerik.com/demos/aspnet/Ajax/Examples/LoadingPanel/LoadingImages/DefaultCS.aspx<br /><br />I personally use this:<br />http://www.telerik.com/demos/aspnet/RadControls/AJAX/Skins/Default/loading.gif<br />",
+    "PostedDate": "2007-02-25T10:14:40.55-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24688",
+    "ThreadId": "7566",
+    "Html": "\r\nThank you,<br />But just for fun it would also be nice to use the exact same thing.<br />BTW<br />The way you  get e-mail feminder from Codeplex:<br />not the complete link but just click <u>here</u> would be an improvement for the reminders from Club<br />For forum and Ical <br />",
+    "PostedDate": "2007-02-25T11:45:04.197-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24695",
+    "ThreadId": "7566",
+    "Html": "\r\nTo be honest I like it better when the page does not move with progress. That's one of the great benefits form Ajax.<br />I put one of your icons up on my testsite. <br /><br /><a href=\"http://site368.mysite4now.com/lexvis/webs/events_calendar.aspx\" class=\"externalLink\">http://site368.mysite4now.com/lexvis/webs/events_calendar.aspx<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a><br /><br />Hope you don't mind me being a pain.<br /><br />BTW, this Ajax stuff is so great you hardly see the icon at all. (though it probably will when the web congests)<br /><br /><br />",
+    "PostedDate": "2007-02-25T13:47:38.4-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24706",
+    "ThreadId": "7566",
+    "Html": "\r\nYea, I know! It's so quick! The only problem I have is it doesn't show right on top of the Calendar... that would be really cool.<br />",
+    "PostedDate": "2007-02-25T16:19:24.69-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24710",
+    "ThreadId": "7566",
+    "Html": "\r\nAJAX is now complete in the latest build. File issues if you would like something else added.<br /><br />Thanks CantonFrank for your web.config changes... where did you get those? Is it in the documentation? I was under the impression that is was just drag'n'drop.<br />",
+    "PostedDate": "2007-02-25T17:42:51.38-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

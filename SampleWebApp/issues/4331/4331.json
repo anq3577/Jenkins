@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Are you able to send mails over this page: Admin/Email.aspx ??\nIf not, check/ change your email settings and try again.\nYour error message is not caused by lazy programming  :)",
+    "ClosedDate": "2007-11-11T07:33:59.49-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Can someone please help...\nI keep getting the following error when trying to recover a password.\nIt asks the user name, then the Security question perfectly. But once you enter the Security Answer and hit Submit, then I get this error.\nAny ideas? I get no other Database errors though out the site and everything connects fine.\nThanks in advance.\n \n \nServer Error in '/' Application.\n--------------------------------------------------------------------------------\n \nA connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond \nDescription: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. \n \nException Details: System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond\n \nSource Error: \n \nAn unhandled exception was generated during the execution of the current web request. Information regarding the origin and location of the exception can be identified using the exception stack trace below.  \n \nStack Trace: \n \n \n[SocketException (0x274c): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond]\n   System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress) +1028066\n   System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP) +33\n   System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception) +431\n \n[WebException: Unable to connect to the remote server]\n   System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6, Int32 timeout) +1475352\n   System.Net.PooledStream.Activate(Object owningObject, Boolean async, Int32 timeout, GeneralAsyncDelegate asyncCallback) +190\n   System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback) +21\n   System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout) +318\n   System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port) +227\n   System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port) +316\n   System.Net.Mail.SmtpClient.GetConnection() +42\n   System.Net.Mail.SmtpClient.Send(MailMessage message) +1485\n \n[SmtpException: Failure sending mail.]\n   System.Net.Mail.SmtpClient.Send(MailMessage message) +2074\n   System.Web.UI.WebControls.LoginUtil.SendPasswordMail(String email, String userName, String password, MailDefinition mailDefinition, String defaultSubject, String defaultBody, OnSendingMailDelegate onSendingMailDelegate, OnSendMailErrorDelegate onSendMailErrorDelegate, Control owner) +341\n   System.Web.UI.WebControls.PasswordRecovery.AttemptSendPasswordQuestionView() +653\n   System.Web.UI.WebControls.PasswordRecovery.AttemptSendPassword() +66\n   System.Web.UI.WebControls.PasswordRecovery.OnBubbleEvent(Object source, EventArgs e) +101\n   System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args) +35\n   System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e) +115\n   System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument) +163\n   System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument) +7\n   System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument) +11\n   System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData) +33\n   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +5102",
+    "LastUpdatedDate": "2013-05-15T23:46:27.63-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-11-08T13:50:53.763-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Password recovery Error",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 4331
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

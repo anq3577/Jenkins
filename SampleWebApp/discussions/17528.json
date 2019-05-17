@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "57198",
+    "ThreadId": "17528",
+    "Html": "<br />I found an issue with the 6490 change set on October 17th.  I'm going to download and merge my code base with the Oct 31 version soon, but here's the issue in case it hasn't been found and repaired yet.<br /><br />When viewing a forum thread  /forum/Thread.aspx?th=nnn I was getting an SQL exception: Divide by zero error encountered. <br /><br />After about two hours of debugging, I traced it down to the GetThreadPage stored procedure.  I couldn't figure out why, but for some reason it was being passed zero for the PageSize parameter.  I'm assuming the user changed something, but I couldn't see where it was.<br /><br />In any event, I added this code to the beginning of the stored procedure so that it won't crash and will display a reasonable result in the event of a bad page size parameter.<br /><br />   IF @PageSize &lt; 1<br />   BEGIN<br />     Set @PageSize = 10<br />   END<br /><br /><br />I still have an open request:<br /><br />How did they set the value to zero in the first place?  That seems like a bug.<br /><br /><br /><br />(Thanks for all the work and the great tool!)<br />",
+    "PostedDate": "2007-11-07T17:03:31.693-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "57207",
+    "ThreadId": "17528",
+    "Html": "\r\nThat might be related to a WebSettings bug. I will check that out. Maybe we just need to pull the setting from the WebSettings table to take out an extra parameter.<br />",
+    "PostedDate": "2007-11-07T19:08:05.88-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Not enough information",
+    "ClosedDate": "2009-10-20T15:05:37.147-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When I run the project all works fine except the members page, when I access this page I get a Object Null Reference error when the MemberCountByLetter Stored Procedure is run.  The strange thing is that if I step through with the debugger it works but when running the project normally it does not.  Anyone got any ideas as I am a bit stumped!",
+    "LastUpdatedDate": "2013-05-15T23:46:23.883-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2009-05-11T00:54:48.253-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "MemberCountByLetter",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 9955
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

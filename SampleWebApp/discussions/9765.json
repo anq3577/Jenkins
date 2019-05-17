@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "31731",
+    "ThreadId": "9765",
+    "Html": "\r\nI changed a part  MemberDetails.vb from<br /><br />'If Not member Is Nothing Then<br />'    If Filter = \"\" OrElse member.lastname.StartsWith(Filter, StringComparison.CurrentCultureIgnoreCase) Then<br />'        l.Add(New MemberDetails(user, member))<br />'    End If<br />'End If<br /><br />to <br />            If Filter = \"\" Then<br />                If Year &lt;&gt; \"\" Then<br />                    If user.UserName.EndsWith(Year, StringComparison.CurrentCulture) Then<br />                        l.Add(New MemberDetails(user, member))<br />                    End If<br />                End If<br />            Else<br />                If member.lastname.StartsWith(Filter, StringComparison.CurrentCultureIgnoreCase) Then<br />                    l.Add(New MemberDetails(user, member))<br />                End If<br />            End If<br /><br />so that I can do a search for members based on a class year (in this case every username ends in the class year).<br /><br />It works great in my development server. When I put it on my live server it errors out with \"Exception has been thrown by the target of an invocation\" on IE6, IE7, and Firefox.<br />",
+    "PostedDate": "2007-04-30T12:19:12.843-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31807",
+    "ThreadId": "9765",
+    "Html": "\r\nNevermind. I rewrote the entire memberdetails.vb and made it work completely different. instead of loading all the members and then filtering them out using filter in the dataset, I run a query every time someone clicks on the letter. This gets rid of the load time it takes to load some ~2000 records and sorting through them.<br /><br />It now looks like this<br /><br />Imports Microsoft.VisualBasic<br /><br />'Note that this class uses the dataset to create the strongly typed access to the data.<br /><br />Public Class MemberDetails<br /><br />    Public Shared Function Getmembers(ByVal Filter As String, ByVal Details As String) As Generic.List(Of MemberDetails)<br />        Dim l As New Generic.List(Of MemberDetails)<br />        Dim da As New DataSetTableAdapters.MemberInfoTableAdapter<br />        Dim members As Data.DataTable<br />        Dim Switcher As Integer<br /><br />        Switcher = Integer.Parse(Filter)<br /><br />        Select Case (Switcher)<br />            Case 0<br />                members = da.GetByLetter(Details)<br />            Case 1<br />                members = da.GetByYear(Details)<br />            Case 2<br />                members = da.GetByState(Details)<br />            Case Else<br />                Return Nothing<br />                Exit Function<br />        End Select<br /><br />        For Each member As Data.DataRow In members.Rows<br />            l.Add(New MemberDetails(member))<br />        Next<br />        Return l<br /><br />    End Function<br /><br />    Private Sub New(ByVal member As Data.DataRow)<br />        If Not member Is Nothing Then<br />            m_UserName = member(\"UserName\").ToString()<br />            m_Email = member(\"Email\").ToString()<br />            m_firstname = member(\"firstname\").ToString()<br />            m_LastName = member(\"lastname\").ToString()<br />            m_address = member(\"address\").ToString()<br />            m_Phone = member(\"phone\").ToString()<br />            m_newsletter = member(\"newsletter\").ToString()<br />            If Not (member(\"AvatarSize\").ToString() = System.DBNull.Value.ToString()) Then<br />                m_PhotoURL = \"~\\UserControls\\AvatarImagefetch.ashx?Memberid=\" &amp; member(\"memberid\").ToString()<br />            End If<br />        End If<br />    End Sub<br /><br /><br />    Private m_newsletter As Boolean<br />    Public ReadOnly Property Newsletter() As Boolean<br />        Get<br />            Return m_newsletter<br />        End Get<br />    End Property<br /><br />    Private m_firstname As String<br />    Public ReadOnly Property FirstName() As String<br />        Get<br />            Return m_firstname<br />        End Get<br />    End Property<br /><br />    Private m_LastName As String<br />    Public ReadOnly Property LastName() As String<br />        Get<br />            Return m_LastName<br />        End Get<br />    End Property<br /><br />    Private m_address As String<br />    Public ReadOnly Property Address() As String<br />        Get<br />            Return m_address<br />        End Get<br />    End Property<br /><br />    Private m_UserName As String<br />    Public ReadOnly Property UserName() As String<br />        Get<br />            Return m_UserName<br />        End Get<br />    End Property<br /><br />    Private m_PhotoURL As String<br />    Public ReadOnly Property PhotoURL() As String<br />        Get<br />            Return m_PhotoURL<br />        End Get<br />    End Property<br /><br />    Private m_Email As String<br />    Public ReadOnly Property Email() As String<br />        Get<br />            Return m_Email<br />        End Get<br />    End Property<br /><br />    Private m_Phone As String<br />    Public ReadOnly Property Phone() As String<br />        Get<br />            Return m_Phone<br />        End Get<br />    End Property<br /><br />End Class<br /><br />",
+    "PostedDate": "2007-05-01T10:21:05.96-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37166",
+    "ThreadId": "9765",
+    "Html": "\r\nI'd be very interested in seeing the rest of this code. How did you do the da.GetByLetter(Details) type code? Obviously it's somewhere in the DataSetTableAdapters.MemberInfoTableAdapter, but how do you do that? <br /><br />I'd also be interested in seeing the front-end web code. <br /><br />",
+    "PostedDate": "2007-06-16T07:12:36.567-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37176",
+    "ThreadId": "9765",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />Tina wrote:<br />I'd be very interested in seeing the rest of this code. How did you do the da.GetByLetter(Details) type code? Obviously it's somewhere in the DataSetTableAdapters.MemberInfoTableAdapter, but how do you do that? <br /><br />I'd also be interested in seeing the front-end web code. <br /><br /><br /><br /></div><br />We will do this same sort of thing once the memberinfo stuff uses SubSonic. We will do a similar thing in the v3 time frame.<br />",
+    "PostedDate": "2007-06-16T09:58:11.327-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37738",
+    "ThreadId": "9765",
+    "Html": "\r\nI lied... its checked in now :) Go take a look.<br />",
+    "PostedDate": "2007-06-20T22:04:09.653-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:20:20.27-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Please make the following changes to UserControls/LoginBanner.ascx:\n \n1. Add the following line to Logoutbtn_click sub\n'This goes right beneath FormsAuthentication.SignOut()\nResponse.Redirect(GetFileName(Request.Path.ToString))\n \n2. Add this function below Logoutbtn_Click:\n \n \n    Private Function GetFileName(ByVal str As String) As String\n        'This function will strip out the parts of the path we don't need.\n        Dim st As String\n        \n        Dim count As Integer\n        'strip off leading /\n        st = str.Remove(0, 1)\n        \n        count = st.IndexOf(\"/\"c)\n        st = st.Remove(0, count)\n        \n        st = \"~\" & st\n        Return st\n    End Function\n \nNow when you click Logout on the banner, the page will reload and display Please login instead of showing that you are still logged in.",
+    "LastUpdatedDate": "2013-05-15T23:46:45.653-07:00",
+    "PlannedForRelease": "v2 Beta 2",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:20:19.253-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Code tweak to make logout button on banner work better",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 801
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

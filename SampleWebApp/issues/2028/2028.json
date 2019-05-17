@@ -1,0 +1,270 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-05-08T18:07:52.87-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Images references broken\n \nReference broken: /images/dropdownbtn.gif (located in /App_Themes/clubsite/images)\nReference broken: /images/calendarIcon.png (located in /App_Themes/clubsite/images)\nCheck for offline.gif\n \nCLUBSITE THEME\nReference broken: /App_Themes/clubsite/images/unread.gif (can’t locate)\n \nMADTRI THEME\n(Buttons have no contrast) \n/App_Code/RolloverButtons.vb (Theme needs button.png, Clubsite is yellow)\n \nCalendar.aspx\nReference broken: /App_Themes/Madtri/images/print.png (located in /App_Themes/clubsite/images)\nReference broken: /App_Themes/Madtri/images/rss.png (located in /App_Themes/clubsite/images)\n \n/Forum/Topics.aspx\nReference broken: /App_Themes/Madtri/images/recent.gif (located in /App_Themes/clubsite/images)\nReference broken: /App_Themes/Madtri/images/unread.gif  (can’t locate)\n \n/NEWS/list.aspx\nReference to a post with smiley don’t work: /FCKeditor/editor/images/smiley/msn/wink_smile.gif (location looks good)",
+    "LastUpdatedDate": "2013-05-15T23:46:39.133-07:00",
+    "PlannedForRelease": "Club Starter Kit 2.0 Final",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-05-08T13:22:09.043-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Image references broken: 1709",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 2028
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "nice... I will take a look at those. Thanks.",
+      "PostedDate": "2007-05-08T15:49:39.713-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-08T15:53:28.45-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-08T15:53:30.543-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Reference broken: /App_Themes/Madtri/images/loading.gif (located in /App_Themes/clubsite/images)",
+      "PostedDate": "2007-05-08T16:19:12.967-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Resolved with changeset 2192.",
+      "PostedDate": "2007-05-08T18:07:52.87-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-07-16T19:28:48-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-07-18T21:08:23.007-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-07-29T12:44:58.743-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-07-29T12:45:03.76-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-07-30T08:59:20.377-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-07-30T08:59:24.517-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-07-31T08:22:00.367-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-07-31T08:22:13.787-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-01T00:33:44.32-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-01T00:47:15.397-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-01T00:47:19.04-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-02T00:32:52.167-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-02T14:51:54.463-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-03T13:48:54.56-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-03T13:49:20.01-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-04T09:48:54.59-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-05T05:27:13.007-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-06T09:39:06.68-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-07T07:12:43.65-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-07T07:13:38.853-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-08T05:54:27.357-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-09T06:25:09.007-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-09T06:25:20.223-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-13T06:44:40.397-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-13T06:45:26.38-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-13T13:32:00.353-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-14T00:13:20.663-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-20T14:12:28.49-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-22T23:24:19.357-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-23T20:07:04.157-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-24T13:03:15.07-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-25T11:26:00.797-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-26T11:03:06.383-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-08-27T08:24:02.497-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-10-22T11:57:58.36-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-10-26T00:39:27.867-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-10-26T00:39:36.023-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-10-29T14:25:38.43-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 5/8/2007 6:07 PM",
+      "PostedDate": "2007-10-29T15:22:02.087-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:23.587-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:39.133-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

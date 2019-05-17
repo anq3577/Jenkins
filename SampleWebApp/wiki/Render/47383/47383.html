@@ -1,0 +1,22 @@
+<div class="wikidoc"><h1>Adding a membership field</h1>
+Sometimes you just want to add a extra membership field users must give to become members. For this example, we will the field FavoriteColor.<br /><br />
+<h2>Step 1: Add to the database</h2><ul><li>Add a field in the MemberInfo Table (For this ex, I will use favoritecolor as a varchar(50)</li>
+<li>Open your memberinfo table and enter some favoritecolor value for the existing names</li></ul>
+<br />
+<h2>Step 2: Configure DAL</h2>Now you need to regenerate your SubSonic DAL classes.<br /><br />
+<h2>Step 3: Make page edits</h2>
+<h3>Member Details</h3><ul><li>Open Member/Details.aspx</li>
+<li>Go into design mode and add a row in the member details table</li>
+<li>Make a textbox and call it fcolor (It is recommended that your add a validator. This field IS required)</li>
+<li>Add a new line AFTER line 51 (line 51 reads qry.AddUpdateSetting(MemberInfo.Columns.Newsletter, NewsletterCheck.Checked))</li>
+<li>On the new line (which should be 52), add this: qry.AddUpdateSetting(MemberInfo.Columns.Favoritecolor, fcolor.Text))</li>
+<li>Make line 57 (which now reads this: MemberInfo.Insert(Addr.Text, Phone.Text, fname.Text, lname.Text, Nothing, user.ProviderUserKey(), NewsletterCheck.Checked)) say this: MemberInfo.Insert(Addr.Text, Phone.Text, fname.Text, lname.Text, Nothing, user.ProviderUserKey(), NewsletterCheck.Checked, fcolor.Text)</li>
+<li>Add a line after line 87. Put the following onto the new line: fcolor = MemInfo.Favoritecolor</li></ul>
+
+<h3>Registration</h3><ul><li>Open Member/register.aspx</li>
+<li>Add a row bellow in the table and make a textbox called fcolor (It is recommended that your add a validator. This field IS required).</li>
+<li>Make line 27 read MemberInfo.Insert(Addr.Text, Phone.Text, fname.Text, lname.Text, Nothing, CType(user.ProviderUserKey, Guid), NewsletterCheck.Checked, fcolor.Text)</li>
+<li>Under line 22, add the following: fcolor.Enabled = False</li>
+<li>Under line 63, add the following: fcolor.Enabled = True</li></ul>
+
+<h2>Step 4: Save and run</h2></div><div class="ClearBoth"></div>

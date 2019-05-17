@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "unable to reproduce",
+    "ClosedDate": "2009-10-20T15:11:18.86-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When clicking add season the NewSeason page fills the screen and I have a javascript error...\n \nObject doesnt support this method or property.\n \nI tried removing the Response.Write(\"<script>window.parent.hidePopWin();</script>\") line thinking I would just show a message and allow the user to click the red cross, but that still loads the NewSeason (or newTeam for that matter) page to fill the screen.",
+    "LastUpdatedDate": "2013-05-15T23:46:25.053-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2008-05-09T14:02:35.547-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "New Season window.parent.hidePopWin()",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6132
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

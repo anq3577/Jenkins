@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "117299",
+    "ThreadId": "35295",
+    "Html": "For some reason, the New/List.aspx isn't paging correctly. When I click to advance forward or backwards through announcements, it doesn't scroll through them at all and the page numberer isn't rendering the pager correctly. Eventually, I have no more links to click on. When I click on the page links, the ObjectDataSource.Selecting event does NOT fire. It only fires when I initially come to the New/List.aspx page.<br>\r\n<br>\r\nI saw a discussion on this earlier, but it was closed and never answered.<br>\r\n<br>\r\nThanks!<br>\r\n",
+    "PostedDate": "2008-09-09T11:25:56.873-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "117885",
+    "ThreadId": "35295",
+    "Html": "Nevermind. I finally figured it out. It was because I didn't link the page numberer object as a controlparameter in the ObjectDataSource object. Once I got that link created, it paged just fine.<br>\r\n<br>\r\nDUH!<br>\r\n",
+    "PostedDate": "2008-09-11T09:54:51.367-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "120489",
+    "ThreadId": "35295",
+    "Html": "isamuelson, I was one of those that reported this problem many months ago and never received a solution. Would it be possible for you to explain how to correct the problem to someone that is not a programmer/developer? I would really like to get paging to work on my News page.<br>\r\n<br>\r\nThanks,<br>\r\nEd\r\n",
+    "PostedDate": "2008-09-23T16:52:29.483-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

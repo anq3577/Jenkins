@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "37106",
+    "ThreadId": "11460",
+    "Html": "\r\nHi,<br /><br />Would anyone know how to display multi-day events in the calendar?  I have created multi-day events, but it only shows up on the first dat and not the following days.<br /><br />Also, is there a way to color code events so that events on the same day(s) would stand out from each other?<br /><br />Thanks<br />",
+    "PostedDate": "2007-06-15T13:23:59.323-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37177",
+    "ThreadId": "11460",
+    "Html": "\r\nSounds like this is a job for Silverlight to take care of. Maybe we will integrate that functionality in v4.<br />",
+    "PostedDate": "2007-06-16T10:00:02.86-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "65205",
+    "ThreadId": "19681",
+    "Html": "\r\nThe downloaded version of Club Starter Kit 2.0 is provided to work with Framework version 2.0.  When you first start the application using Visual Web Developer 2008 it will ask if you want to convert to Framework 3.5.  If you do you get the following error message.<br /> \"The server tag 'asp:ScriptManager' is ambiguous.  Please modify the associated registration that is causing ambiguity and pick a new tag prefix.\"  <br />This reference is to the default.aspx page.<br />Other error messages include the following:<br />'ScriptManger ' is ambiguous in the namespace 'System.Web.UI'<br />'UpdatePanel' is ambiguous in the namespace 'System.Web.UI'<br />'UpdateProgress' is ambiguous in the namespace 'System.Web.UI'<br />These three appear when you open the blogs/post.aspx page.<br /><br />It seems that Framework 3.5 has the Ajax tools built in.  Would that have anything to do with this issue.<br />",
+    "PostedDate": "2007-12-28T06:18:31.937-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "70316",
+    "ThreadId": "19681",
+    "Html": "\r\nDid you ever find a resolution for this issue?<br />",
+    "PostedDate": "2008-01-27T21:12:36.7-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "70321",
+    "ThreadId": "19681",
+    "Html": "\r\nYou need to delete the System.Web.Extensions dll from the bin directory and also add a reference to the new System.Web.Extensions .dll.<br />",
+    "PostedDate": "2008-01-27T21:55:12.343-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "70322",
+    "ThreadId": "19681",
+    "Html": "\r\nUhm... so has anyone successfully gotten this to run under .NET 3.5?  I am getting all sorts of incredibly frustrating errors while compiling that seem to have no cause or resolution... what a complete mess!<br />",
+    "PostedDate": "2008-01-27T21:57:08.163-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "70347",
+    "ThreadId": "19681",
+    "Html": "\r\nYou need to update the reference from the old AJAX and AJAX Control Toolkit to the versions for 3.5. Seems to be just an AJAX reference issue.<br />",
+    "PostedDate": "2008-01-28T03:40:34.963-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "70373",
+    "ThreadId": "19681",
+    "Html": "\r\nz2bass - you are correct, and I found it to be a tedious process.  But I was finally able to get it up and running! :D<br />",
+    "PostedDate": "2008-01-28T06:44:25.847-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "73708",
+    "ThreadId": "19681",
+    "Html": "<i>z2bass - you are correct, and I found it to be a tedious process. But I was finally able to get it up and running! :D</i><br /><br />How do you update the reference from the old AJAX and AJAX Control Toolkit to the versions for 3.5?<br /><br />Thanks in advance.<br />",
+    "PostedDate": "2008-02-13T16:38:47.923-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "246376",
+    "ThreadId": "19681",
+    "Html": "<p>only two steps</p>\r\n<p>1. update Ajax control toolkit</p>\r\n<p>2. remove system.web.extensions from bin. delete all referance of it&nbsp;from all .aspx. one refererance is in control of .config also update</p>\r\n<p>it will work fine</p>",
+    "PostedDate": "2009-10-15T22:42:08.197-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

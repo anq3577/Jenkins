@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "28869",
+    "ThreadId": "8838",
+    "Html": "\r\nIs it possible to just update some files when going from the Beta 2 to the RC1 version instad of redoing my whole website? If so what files would I update. Thank you.<br />",
+    "PostedDate": "2007-04-04T06:36:58.647-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "28913",
+    "ThreadId": "8838",
+    "Html": "\r\nI think all of them have changed, actually... except all the Administration pages (Admin/*.aspx)<br />",
+    "PostedDate": "2007-04-04T12:09:31.967-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "28925",
+    "ThreadId": "8838",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />I think all of them have changed, actually... except all the Administration pages (Admin/*.aspx)<br /><br /></div><br />Will this also be the case from RC1 to 2.0 Final Production? <br /><br />Thank you<br />",
+    "PostedDate": "2007-04-04T13:24:27.2-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "28947",
+    "ThreadId": "8838",
+    "Html": "\r\nI have no clue... we should have it out next week... we might have to change something for a SHOW STOPPER or something critical. In all reality, I was planning on doing cleanup of the code only... so the functionality will be the same but the markup will be different. I especially would like to reorganize the CSS. <br /><br />But I will keep track of the pages changed in this forum post.<br />",
+    "PostedDate": "2007-04-04T17:20:09.453-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

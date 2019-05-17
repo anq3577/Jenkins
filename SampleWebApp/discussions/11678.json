@@ -1,0 +1,170 @@
+[
+  {
+    "Id": "37913",
+    "ThreadId": "11678",
+    "Html": "\r\nHello.<br /><br />Thanks to whoever is responsible for making the CSK 2.0 available in VB and making it so easy for beginners like me to learn ASP and all of the web technologies.<br /><br />I'm trying to get the CSK 2.0 (from here) up and running on a GoDaddy web site.  I modified the CSK, but only mostly verbage and additional menu options.  Did not change the database or the structure of the site.  I followed the instructions in the thread titled \"GoDaddy Installation Walkthrough\" from the ASP.NET web site.<br /><br />I'm at a point where when i open IE and go to my website, it gives the error \"The database does not appear to contain WebContent table, this is a feature of the extended ClubSite, please ensure you have run WebContent.SQL against the database\".  <br /><br />Does anybody know where \"webcontent.sql\" is?  I searched all over this site and ASP.NET site and cannot find it or any mention of it.<br /><br />Any help would be gratefully appreciated.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-21T18:55:37.147-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37918",
+    "ThreadId": "11678",
+    "Html": "\r\nThe error you are recieving is just telling you that the site can't find your database. Look at your connection string and make sure it is acurate. <br />",
+    "PostedDate": "2007-06-21T20:28:24.687-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38031",
+    "ThreadId": "11678",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />The error you are recieving is just telling you that the site can't find your database. Look at your connection string and make sure it is acurate. <br /><br /></div><br />Hello z2bass.<br /><br />I tried several versions of connection strings found on this web site.  Some of them don't match what GoDaddy's knowledge base shows.  They all give me the same error.<br /><br />Does anybody have the CSK 2.0 form here working on GoDaddy.com?<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-22T15:34:33.497-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38032",
+    "ThreadId": "11678",
+    "Html": "\r\nIt should. Maybe you didn't upload the scripts properly.At any rate, try making a new database, uploading the scripts, plug in the connection string. Oh, and put the connection stirng in here, marking out your username and password. Sometimes it is all about formating (like, for example, it can't end with a ; )<br />",
+    "PostedDate": "2007-06-22T16:00:21.61-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38033",
+    "ThreadId": "11678",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />It should. Maybe you didn't upload the scripts properly.At any rate, try making a new database, uploading the scripts, plug in the connection string. Oh, and put the connection stirng in here, marking out your username and password. Sometimes it is all about formating (like, for example, it can't end with a ; )<br /><br /></div><br />You say \"upload the scripts properly\".  I only remember doing one script and i don't remember which one.  That might be the problem.  Following the instructions from \"GoDaddy Installation Walkthrough\" from the ASP.NET web site, it says to use \"club-add.sql\", so i only did one script.<br /><br />If i do both scripts from Scripts.zip, from this site, do i do both the same way? and does the order matter?<br /><br />After hearing from you about the above questions, i will probably try making a new database as you suggest.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-22T16:12:20.603-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38043",
+    "ThreadId": "11678",
+    "Html": "\r\nclub-add was for v1. Which are you using (we can't discuss v1 here... only v2) that might be your problem. <br /><br />First run \"Schema\" and then \"Data\".<br />",
+    "PostedDate": "2007-06-22T18:00:35.743-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38044",
+    "ThreadId": "11678",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />club-add was for v1. Which are you using (we can't discuss v1 here... only v2) that might be your problem. <br /><br />First run \"Schema\" and then \"Data\".<br /><br /></div><br />I deleted my whole website, deleted the database and started this whole thing all over.<br /><br />I tried using Schema.sql first and got error \"Error -2147217900 User does not have permission to perform this action.\"<br /><br />I didn't get this error before.<br /><br />I don't get it.<br /><br />Do you know of anybody that has the CS 2.0 Starter Kit running on GoDaddy?  I would gladly pay for the help to get it up and running.<br /><br />Thanks,<br />Tony<br /><br /><br />",
+    "PostedDate": "2007-06-22T18:10:44.307-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38054",
+    "ThreadId": "11678",
+    "Html": "\r\nGoDaddy seems to be the one hoster that doesn't like those scripts :(. Do you have Express, Standard, or Pro of Visual Studio?<br />",
+    "PostedDate": "2007-06-22T21:10:06.037-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38056",
+    "ThreadId": "11678",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />GoDaddy seems to be the one hoster that doesn't like those scripts :(. Do you have Express, Standard, or Pro of Visual Studio?<br /><br /></div><br />I have VS2005 Pro.<br />",
+    "PostedDate": "2007-06-22T21:33:06.957-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38076",
+    "ThreadId": "11678",
+    "Html": "\r\nOK... download the SQL Publish Wizard and generate your scripts from VS.<br />",
+    "PostedDate": "2007-06-23T10:05:12.683-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38080",
+    "ThreadId": "11678",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />OK... download the SQL Publish Wizard and generate your scripts from VS.<br /><br /></div><br />Thanks for giving me that tool.<br /><br />I generated the script and ran it in the GoDaddy Query Analyzer.  It ran for a while then gave this error \"Error -2147217900 Incorrect syntax near 'addAttendance'.\"<br /><br />I tried it three times from three different computers.<br /><br />Just to let you know, the web site run fine locally on WIN XP Pro, SP2.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-23T12:00:26.96-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38098",
+    "ThreadId": "11678",
+    "Html": "\r\nWow... GoDaddy doesn't like that Stored Procedure! Other people have gotten that same error. I'm not sure what to tell you... other than ask GoDaddy.<br />",
+    "PostedDate": "2007-06-23T16:20:01.853-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38116",
+    "ThreadId": "11678",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Wow... GoDaddy doesn't like that Stored Procedure! Other people have gotten that same error. I'm not sure what to tell you... other than ask GoDaddy.<br /><br /></div><br />Maybe i'll search the internet for an answer, but i'm definitely not calling them.<br /><br />Thanks for all of your help.<br /><br />Tony<br />",
+    "PostedDate": "2007-06-23T20:43:37.79-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38130",
+    "ThreadId": "11678",
+    "Html": "\r\nI had many issues when postin version 1 to go daddy but was able to get it working after some trial and error.  This particular error, if I remember correctly, was caused by a missing comma at the end of a line, or something similar.  Can you post the script here you are trying to run in the query analyzer on Go Daddy?<br />",
+    "PostedDate": "2007-06-24T07:48:03.213-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38137",
+    "ThreadId": "11678",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />rhhanson wrote:<br />I had many issues when postin version 1 to go daddy but was able to get it working after some trial and error.  This particular error, if I remember correctly, was caused by a missing comma at the end of a line, or something similar.  Can you post the script here you are trying to run in the query analyzer on Go Daddy?<br /><br /></div><br />Wow.  I don't think so.  It's a six meg file.  Will this discussion group allow that?<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-24T11:25:30.727-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41676",
+    "ThreadId": "11678",
+    "Html": "\r\nTony I hope this is not too late, but we have found the problems with the GoDaddy Query Analyzer, and the club site database setup script.  <br />There are a number of places in Schema.sql where the comment format is not recognizable in GoDaddy.  <br />For example lines 482 - 485:<br />BEGIN<br />-- SET NOCOUNT ON added to prevent extra result sets from<br />-- interfering with SELECT statements.<br />SET NOCOUNT ON; <br /><br />After you delete the line, the script should be fine.  <br />We did have problems with the lines 41, 42 44, and 45.  It could be a problem with GoDaddy or it could be the poor state of our database.  We'll find out in a little while.  We just deleted those lines for now.  <br />IF NOT EXISTS (SELECT * FROM sys.database_principals WHERE name = N'zowens')<br />CREATE USER <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=zowens\">zowens</a> FOR LOGIN <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=zowens\">zowens</a> WITH DEFAULT_SCHEMA=<a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=zowens\">zowens</a><br />/****** Object:  Schema <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=zowens\">zowens</a>    Script Date: 05/11/2007 21:07:00 ******/<br />IF NOT EXISTS (SELECT * FROM sys.schemas WHERE name = N'zowens')<br />EXEC sys.sp_executesql N'CREATE SCHEMA <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=zowens\">zowens</a> AUTHORIZATION <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=zowens\">zowens</a>'<br /><br />Cpt_caveman  <a href=\"http://www.pangzee.com\" class=\"externalLink\">http://www.pangzee.com<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a><br /><br /><br />",
+    "PostedDate": "2007-07-18T18:37:27.38-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41679",
+    "ThreadId": "11678",
+    "Html": "\r\nReally? SWEET!<br /><br />I will need to look at the upcoming v3 beta 1 script and see if that still applies.<br />",
+    "PostedDate": "2007-07-18T18:59:50.32-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41682",
+    "ThreadId": "11678",
+    "Html": "\r\nHello Pangzee.<br /><br />I have since gone to discountAsp.net.  I had no problems at all loading everything up to their site.<br /><br />I won't even think about using goDaddy again.<br /><br />Thanks for your reply.<br /><br />Tony<br />",
+    "PostedDate": "2007-07-18T19:34:20.24-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41700",
+    "ThreadId": "11678",
+    "Html": "\r\nI think staying away from goDaddy is a good idea.  <br /><br />z2bass, I apreciate the work you have put into this club site.  It is great.  <br />We have the club site up and running on goDaddy.  I've documented the whole procedure and will be happy to provide you with the material if you want to include it in v3.  <br />cpt_caveman<br /><a href=\"http://www.pangzee.com\" class=\"externalLink\">http://www.pangzee.com<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a><br />",
+    "PostedDate": "2007-07-18T23:56:59.793-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41772",
+    "ThreadId": "11678",
+    "Html": "\r\nHopefully we can just fix the problem before release and what hoster someone is using won't be an issue.<br />",
+    "PostedDate": "2007-07-19T09:53:34.717-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41781",
+    "ThreadId": "11678",
+    "Html": "\r\nPangzee, that looks great!<br /><br />Zack, I didn't have nearly the issues I thought I would. I wonder what godaddy;s deal is. I'm glad I didn't use them. <br />",
+    "PostedDate": "2007-07-19T11:39:54.353-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

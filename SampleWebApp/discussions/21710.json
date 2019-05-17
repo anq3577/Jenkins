@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "72336",
+    "ThreadId": "21710",
+    "Html": "\r\nHi,<br /><br />I am trying run the source code by openning the solution file. It shows a dialog box that asks for my username and password to connect to Team foundation server,<br />When I enter my username and password, it just is there and asks again.<br /><br />what is the problem, need help <br /><br />thank you.<br /><br />/Medes<br />",
+    "PostedDate": "2008-02-07T03:41:02.223-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "72495",
+    "ThreadId": "21710",
+    "Html": "\r\nGo ahead and click cancel on that dialog. You don't need to put in your username and password.<br />",
+    "PostedDate": "2008-02-07T18:07:09.223-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

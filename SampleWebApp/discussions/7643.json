@@ -1,0 +1,98 @@
+[
+  {
+    "Id": "24897",
+    "ThreadId": "7643",
+    "Html": "\r\nHi<br /><br />I have the Clubsite running live but want alot of the new features in Clubsite2, my quesion is.<br /><br />If I Execute the 2005.sql script will it just upgrade the db and keep all the data and additional rows in the db or will it wipe it clean?<br /><br />I will of course backup the db before I do anything!<br /><br />or are there any scripts to do specific things, like just adding the RSVP db's and procedures?<br /><br />Thanks<br />",
+    "PostedDate": "2007-02-27T02:19:33.91-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24902",
+    "ThreadId": "7643",
+    "Html": "\r\nIt will do a clean install. I might consider an \"upgrade\" sql script.<br />",
+    "PostedDate": "2007-02-27T03:33:25.823-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24906",
+    "ThreadId": "7643",
+    "Html": "\r\nDamn!<br /><br />Are there any feature only scripts?  like for the RSVP, I'm trying to extract the RSVP only elements but the scrit doesn't look sorted in an element by element way. <br />",
+    "PostedDate": "2007-02-27T04:46:05.5-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24971",
+    "ThreadId": "7643",
+    "Html": "\r\nTake a look at the source for the events to pull out what it uses for RSVP.  <br /><br />I am trying to remember all the parts off the top of my head.  There are I think 3 columns added to the Events table, one of which cannot be null.  It is a bit field, so all your existing events will have to be updated once those columns are added.  I would probable change that column to nullable, so that it doesn't break all your existing events in the database.<br /><br />There are a couple stored procedures that it uses also.  Look at the sprocs that Events\\Edit.aspx, Events\\View.aspx and Admin\\EventEmail.aspx use.<br />",
+    "PostedDate": "2007-02-27T10:55:42.337-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24972",
+    "ThreadId": "7643",
+    "Html": "\r\nZack, in the sql script, what does that huge image actually do in the database?  I mean does that command need to be in the script?  Because it about kills my computer trying to open it (that single command, as it is huge).  If it is just adding data to the database, can it be changed into a temp aspx page to load the images into the database?<br />",
+    "PostedDate": "2007-02-27T10:57:54.963-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24980",
+    "ThreadId": "7643",
+    "Html": "\r\nThe scripts do create and drop scripts. I can break it down into multiple files if you would like me to.<br />",
+    "PostedDate": "2007-02-27T12:12:51.093-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25004",
+    "ThreadId": "7643",
+    "Html": "\r\nDo you have a site schema available?<br />",
+    "PostedDate": "2007-02-27T14:25:21.93-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25007",
+    "ThreadId": "7643",
+    "Html": "\r\nCurrently, no. How do I generate one?<br />",
+    "PostedDate": "2007-02-27T14:39:58.553-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25072",
+    "ThreadId": "7643",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />mnebinger wrote:<br />Take a look at the source for the events to pull out what it uses for RSVP.  <br /><br />I am trying to remember all the parts off the top of my head.  There are I think 3 columns added to the Events table, one of which cannot be null.  It is a bit field, so all your existing events will have to be updated once those columns are added.  I would probable change that column to nullable, so that it doesn't break all your existing events in the database.<br /><br />There are a couple stored procedures that it uses also.  Look at the sprocs that Events\\Edit.aspx, Events\\View.aspx and Admin\\EventEmail.aspx use.<br /><br /></div><br />I'll do that and try to write a little 'how to add RSVP to live site' for anyone that wishes to follow it.<br /><br />Let's see how I get on!<br />",
+    "PostedDate": "2007-02-28T06:38:47.01-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25104",
+    "ThreadId": "7643",
+    "Html": "\r\nHey guys, I posted in a different \"discussion\" early this a.m. on some of the topics you are talking about.  My site is now live - <a href=\"http://www.disciplesondirt.com\" class=\"externalLink\">http://www.disciplesondirt.com<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a> The large image isn't needed - it was just a test upload someone had done.  When I generated my own SQL I did it in two separate files - one for the Schema and one for the data.  That worked like a charm for me - no upload errors in either file and I was able to cut and paste each file in it's entirety to the host query analyzer.  I'm assuming since I had to go back to change set 2069 which was before the AJAX that had something to do with my site crasing &amp; burning.  I will have to go back thru the change sets after that and see if I can figure out what changes were made in each set and then see what pieces I can incorporate.<br /><br />Is there any way that we could also post just the changes that were made.  Like maybe in the description of the change set.  That way it would be easier for those of us wanting to add new elements to do so without shifting thru everything.<br /><br />Anyway, thanks again guys for all your help - I'm sure as I start the tweaking process I will have more questions and hopefully I can provide some help to.<br />",
+    "PostedDate": "2007-02-28T09:05:45.86-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25454",
+    "ThreadId": "7643",
+    "Html": "\r\nNew here.... Sorry for the noob inquiry.<br /><br />I tried uploading the SQL statement to my GoDaddy :( account and i get error or even timed out...<br /><br />I stripped all the DROP statements and the HUGE Image...but still a no go..<br /><br />Is there another Script I can download? Can I upload fragments of the query?<br /><br />Also, do I need to remove everything from my GoDaddy DB BEFORE i upload the script?<br /><br />Again sorry for the newby questions..<br /><br />Mike<br />",
+    "PostedDate": "2007-03-02T19:20:16.767-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25457",
+    "ThreadId": "7643",
+    "Html": "\r\nBasically we script the DB directly. This process makes quite a big image. I recommend that you start with a new database. <br /><br />If you are having touble, wait until next Wednesday when we officially release the next milestone and we can better help you.<br />",
+    "PostedDate": "2007-03-02T20:13:59.75-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

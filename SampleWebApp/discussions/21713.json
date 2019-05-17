@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "72342",
+    "ThreadId": "21713",
+    "Html": "\r\nHi,<br /><br />when I try to run the application it tries to open C:\\SubSonic 2.0.3\\src\\SubSonic\\DataProviders\\SqlDataProvider.cs. and then when I click open it generates following.<br /><br />the file C:\\SubSonic 2.0.3\\src\\SubSonic\\DataProviders\\SqlDataProvider.cs does not exist<br /><br />appriciate any help thank you<br /><br />If I click on close it genereates following:<br /><br />An attempt to attach an auto-named database for file C:\\Users\\Zack\\Documents\\ClubSK\\ClubStarterKit\\ClubStarterKit.Web\\App_Data\\ClubDB.mdf failed. <br />A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.<br />",
+    "PostedDate": "2008-02-07T04:11:00.183-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

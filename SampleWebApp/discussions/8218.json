@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "26811",
+    "ThreadId": "8218",
+    "Html": "\r\nFirst, wonderful job on the starter kit!  I do have a possible issue to report however.  When adding a blog entry you have to click \"add\" twice.  The first time it fails telling you that you \"Please enter blog post text.\".  Second time it suceeds.  This is from the FKeditor wiki<br /><br />With ASP.Net, I need to submit twice when using the RequiredFieldValidator in a FCKeditor instance<br /><br />FCKeditor will not work properly with the Required Field Validator when the \"EnableClientScript\" property of the validator is set to \"true\" (default). Due to a limitation in the default validation system, you must set it to \"false\". <br /><br />If you want to do client side validation, you must use a Custom Validator instead and provide the appropriate validation function, using the FCKeditor JavaScript API. <br /><br />So I changed line 19 of \"adpost.aspx\" to<br /><br />&lt;asp:RequiredFieldValidator ID=\"RequiredFieldValidator2\" EnableClientScript=\"False\" runat=\"server\" ControlToValidate=\"txtEntry\"<br />            ErrorMessage=\"Please enter blog post text.\"&gt;*&lt;/asp:RequiredFieldValidator&gt;&nbsp;",
+    "PostedDate": "2007-03-14T17:16:05.33-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "26819",
+    "ThreadId": "8218",
+    "Html": "\r\nThanks for the fix... I was just too lazy to fix it :)<br />",
+    "PostedDate": "2007-03-14T17:32:40.717-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38852",
+    "ThreadId": "8218",
+    "Html": "\r\nI ran into this problem as well. <br /><br />I found this post on how to fix it: http://dev.fckeditor.net/ticket/294<br /><br />However, I cannot find a fckeditor.cs so I'm not sure it's much help. The problem with the fix proposed by spacegrrl is that it's not informing the user that there was an issue. So the user goes on about her business thinking the record was added successfully. <br /><br />I'm not sure what the \"If you want to do client side validation, you must use a Custom Validator instead and provide the appropriate validation function, using the FCKeditor JavaScript API. \" means. I also saw that listed as a solution on several sites, but since it doesn't provide any excamples, it's not terribly helpful. Anyone have any insight into this? I think this is another one of those obnoxious bugs that will take me a freaking week to fix so I'd appreciate any help.<br /><br />Thanks!<br />",
+    "PostedDate": "2007-06-28T12:41:17.64-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38866",
+    "ThreadId": "8218",
+    "Html": "\r\nServer validation works like client validation once you put it in an update panel. This might be fixed in the latest changeset.<br />",
+    "PostedDate": "2007-06-28T13:45:36.873-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38899",
+    "ThreadId": "8218",
+    "Html": "\r\nI was too frustrated to see the obvious (albeit kind of dirty) solution:<br /><br />I changed the on click to this:<br /><br />        If txtEntry.Value = \"\" Then<br />            RequiredFieldValidator2.IsValid() = \"false\"<br />        Else<br />                   --do the insert code<br />      end if<br /><br />I'm just not prepared to download the new code since I've been making so many changed to V2. <br />",
+    "PostedDate": "2007-06-28T17:29:16.113-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

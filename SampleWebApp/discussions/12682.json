@@ -1,0 +1,138 @@
+[
+  {
+    "Id": "41394",
+    "ThreadId": "12682",
+    "Html": "\r\nI'm trying to see if I can get this to work in a medium trust environment. As far as I can tell, the main things that are causing problems are the ajax stuff and the images stored in the file system. To test it, I simply placed this directive in web.config: &lt;trust level=\"Medium\"/&gt;<br /><br />My research tells me that I should have no problem uploading &amp; displaying any files as long as they're contained within the website space. I'm using the code provided by MNebinger on storing the images in the file system - so I've got a folder called Pictures under my root website directory. No problem, right? <br /><br />Wrong. All I'm getting are little red exes. I'm assuming it has something to do with file permissions on the file I created, but I'm not sure. Has anyone gotten this to work in a medium trust scenario? What am I doing wrong? Any help would be greatly appreciated. <br /><br />The code is in usercontrols/imagefetch.ascx:<br /><br /> fileName = HttpContext.Current.Request.PhysicalApplicationPath &amp; \"Pictures\\\" &amp; fileName<br />        Dim imageFile As New FileStream(fileName, FileMode.Open, FileAccess.Read)<br />        Dim len As Integer = CInt(imageFile.Length)<br />        Dim d(len) As Byte<br />        imageFile.Read(d, 0, len)<br />        imageFile.Close()<br />        output.Write(d, 0, d.Length)<br />",
+    "PostedDate": "2007-07-17T09:28:08.833-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41407",
+    "ThreadId": "12682",
+    "Html": "\r\nUse the latest source and see if that is also the problem. I have done all my image stuff in \"file\" mode, so it should work. Maybe you can't do file oporations in medium trust, I'm not completely sure.<br />",
+    "PostedDate": "2007-07-17T10:46:55.547-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41437",
+    "ThreadId": "12682",
+    "Html": "\r\nAccording to ms documentation you can as long as the folders are contained within your webspace. <br /><br />My code for this is the same as the recent release as far as I can tell. Set your trust to medium and see what happens. <br />",
+    "PostedDate": "2007-07-17T12:34:54.197-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41441",
+    "ThreadId": "12682",
+    "Html": "\r\nOkay, I'm going to have to ask this question and I truly truly mean no offense. Why is this being developed in Full Trust when the bulk of the users of something like this are looking for a shared hosting environment? <br /><br />I didn't even know about the whole medium vs. full trust until about a day ago. I thought I was ready to release this code into a production environment and now I've hit another wall. You can only imagine my level of frustration at this moment. <br /><br />Aren't there only like two web hosts who are willing to open themselves up to Full Trust?  <br /><br />From what I'm reading, web hosts will suddenly change it to Medium Trust with little to no notification to their users. I just don't want to end up hosed down the line. <br /><br />I'm just really frustrated. <br />",
+    "PostedDate": "2007-07-17T12:51:49.423-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41454",
+    "ThreadId": "12682",
+    "Html": "\r\nI had the same \"revelation\" about medium vs full trust when using this starter kit (as well as the CSK which requires Full Trust.) I am sure there are a number of hosts that open themselves to full trust but the two I have used personally are discountasp.net and ultimahosts.net.  I have recently moved all of my sites over to ultimahosts.net because they are more economical for what I am doing and I have been happy with the results.<br />",
+    "PostedDate": "2007-07-17T14:25:23.253-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41460",
+    "ThreadId": "12682",
+    "Html": "\r\nI had a similar issue on a Persoanl Starter Kit I am doing for a photographer.  It is hosted at Go Daddy.  I had to disable front page extension, creaet teh directories using the go daddy admin tool and assign permissions.  That solved the problem.<br />",
+    "PostedDate": "2007-07-17T14:49:43.07-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41467",
+    "ThreadId": "12682",
+    "Html": "\r\nWell, the problem is the file hosting. In a medium trust environment, you cannot pop images up into the file system without manually putting images in there. <br /><br />The work arround is just using the database for your hosting.<br /><br />So, to answer this question, \"Why is this being developed in Full Trust when the bulk of the users of something like this are looking for a shared hosting environment?\", IT IS. The images on file might not work in medium trust, that's why you can still host images on file.<br />",
+    "PostedDate": "2007-07-17T15:22:13.947-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41487",
+    "ThreadId": "12682",
+    "Html": "\r\nI use webhost4life as my shared host.  I know that I had to create the directory manually with their web admin tool, and set the permissions for the aspnet account to be able to read and write before I could get the images to be stored on the file system.<br />",
+    "PostedDate": "2007-07-17T17:32:40.727-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41497",
+    "ThreadId": "12682",
+    "Html": "\r\nSo Michael, do you know if there's any way to recreate this on my local machine? I don't want to spend money on a hosting plan and have nobody be able to access the site. I'm trying to work this stuff out locally. <br /><br />And thanks for all the responses.  <br />",
+    "PostedDate": "2007-07-17T19:18:39.917-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41500",
+    "ThreadId": "12682",
+    "Html": "\r\nThe other issues I'm uncovering include: 1. The calendar doesn't work. 2. None of the Ajax stuff works. <br /><br />It looks like nothing in the bin directory is supported, so it's weird that the fckeditor still works. I don't understand that one... <br />",
+    "PostedDate": "2007-07-17T19:44:30.473-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41507",
+    "ThreadId": "12682",
+    "Html": "<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />Tina wrote:<br />The other issues I'm uncovering include: 1. The calendar doesn't work. 2. None of the Ajax stuff works. <br /><br />It looks like nothing in the bin directory is supported, so it's weird that the fckeditor still works. I don't understand that one... <br /><br /></div><br />http://ajax.asp.net/docs/InstallingASPNETAJAX.aspx<br />",
+    "PostedDate": "2007-07-17T22:32:49.267-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41555",
+    "ThreadId": "12682",
+    "Html": "\r\nThanks, Zach. Sorry for my frustration yesterday. <br /><br />I was angry at myself and it got the better of me. <br />",
+    "PostedDate": "2007-07-18T06:18:17.487-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41596",
+    "ThreadId": "12682",
+    "Html": "\r\nIt's ok... no need to apologize.<br /><br />Did you get everything worked out?<br />",
+    "PostedDate": "2007-07-18T09:11:04.717-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41599",
+    "ThreadId": "12682",
+    "Html": "\r\nNot yet, but I think I'm just going to bite the bullet, buy a hosting package, and see how it behaves. I might be making myself crazy for nothing. <br />",
+    "PostedDate": "2007-07-18T09:37:51.743-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41648",
+    "ThreadId": "12682",
+    "Html": "\r\nYou could trial some hosters. I know of these 2 giving out trials:<br /><br />http://vwdhosting.net<br />http://www.ultimahosts.net/trial/Default.aspx<br />",
+    "PostedDate": "2007-07-18T14:09:11.13-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41747",
+    "ThreadId": "12682",
+    "Html": "\r\nI got it to work in a medium trust environment at edthosting. Yay!<br /><br />So it can be done!<br />",
+    "PostedDate": "2007-07-19T06:52:41.597-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41947",
+    "ThreadId": "12682",
+    "Html": "\r\nGood! Glad to hear that.<br />",
+    "PostedDate": "2007-07-20T14:00:43.48-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

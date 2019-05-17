@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "57352",
+    "ThreadId": "17583",
+    "Html": "\r\nHi All,<br /><br />I'm currently looking for a hosting solution that would be suitable to host the Club Starter Kit web site.<br /><br />Anyone out there using a web hosting solution? any sugestion would be appreciated.<br /><br />Many Thanks<br /><br />Hannibal<br />",
+    "PostedDate": "2007-11-08T11:25:01.783-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "57386",
+    "ThreadId": "17583",
+    "Html": "\r\nThe key is to have a host that provides \"Full Trust\" which is not super common.  <br />I use ultimahosts.net to host a couple of Club Starter Kits and they have been great.  <br />There is a tutorial on how to get a club starter kit up on Ultimahosts.net at <a href=\"http://www.aspstarterkit.com\" class=\"externalLink\">http://www.aspstarterkit.com<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a> if you are interested.<br /><br /><br />",
+    "PostedDate": "2007-11-08T14:07:00.79-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "58712",
+    "ThreadId": "17583",
+    "Html": "\r\nI've just got Version 3 BETA 1 up and running at www.Zebu-Cattle-for-Sale.info, it's running in Medium Trust, and I merged it with the Classifieds Starter Kit.<br /><br />It's hosted with www.Marvalus-Domains-Hosting.com, prices are great and you can publish your local database to your hosted database using the Database Publishing Wizard which provides right-click integration with Visual Studio.  It's wonderful, you right click the database, chose Publish to Provider, and step through it.<br />",
+    "PostedDate": "2007-11-17T17:41:47.67-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "64456",
+    "ThreadId": "17583",
+    "Html": "\r\nThanks for your input. I got a question regarding the SubSonic somponent. Does it need to be install on the hosting web server ? or can I just include it in the bin directory and it will work properly? any input have or how to work with the subsonic on a hosting server would be much appreciated.<br /><br />Many thanks<br /><br />Hannibal<br />",
+    "PostedDate": "2007-12-20T20:05:10.603-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "73722",
+    "ThreadId": "17583",
+    "Html": "<br />Anyone has some input on how to deal with the SubSonic component on a hosting solution?<br /><br />Do I need to have the hosting provider install the subsonic? or there a way to do without any intervention from the hosting solution?<br /><br />many thanks<br /><br />Hannibal<br />",
+    "PostedDate": "2008-02-13T17:53:16.34-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "77820",
+    "ThreadId": "17583",
+    "Html": "\r\nThanks,<br />",
+    "PostedDate": "2008-03-03T07:28:43.137-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

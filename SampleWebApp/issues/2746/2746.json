@@ -1,0 +1,80 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-07-10T12:03:38.653-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Problem description:\n \nWhen admin deletes a user from http://localhost:64314/admin/ManageUsers.aspx then go to http://localhost:64314/member/list.aspx that user still show up in the list.\n \nSeems the user list is pulled from the MemberInfo table and there is no keyed column to link it to the aspnet_Membership table.  So, member deleted there is not automatically updated in the MemberInfo table.\n \nPossible solution:\n \nClear a keyed relationship using the UserId between the aspnet_Membership table and all other user tables such as the MemberInfo table.  Add a constraint that causes auto update if one table changes.",
+    "LastUpdatedDate": "2013-05-15T23:46:32.883-07:00",
+    "PlannedForRelease": "Version 3 Beta 1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-07-08T12:58:14.26-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Deleted users still show up in user list",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 2746
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Oh, forgot one thing.  I checked out the code using the \"cpc checkout ClubStarterKit\" command a week ago.  The problem found is based on this check out.  So, I think this is V3.",
+      "PostedDate": "2007-07-08T13:00:36.417-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-08T13:04:12.873-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "It should delete the user from BOTH tables. Try it again with a different user (or copy and paste the code here for me to look at).",
+      "PostedDate": "2007-07-09T17:48:22.373-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-10T11:31:33.06-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-10T11:31:46.23-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Resolved with changeset 3543.",
+      "PostedDate": "2007-07-10T12:03:38.653-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:15.23-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:32.883-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

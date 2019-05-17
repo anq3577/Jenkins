@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "44680",
+    "ThreadId": "13705",
+    "Html": "\r\nI added 6 membership fields in v3 beta 1 (e.g., gender, birthdate, city, etc.). Everything works fine on the members/registration page, but nothing updates on the member/details page (it works fine in the original starter kit without the added fields). I have checked and rechecked the code after following the procedure on adding membership fields (and done it more than once to be sure). <br /><br />Has anyone tried this to be sure the instructions work? I am considering just using VWDE with a details view allowing editing on the memberInfo table so it will work properly and skipping all this complexity. Any gotchas if I do this?<br /><br />",
+    "PostedDate": "2007-08-12T14:04:15.723-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44686",
+    "ThreadId": "13705",
+    "Html": "\r\nDid you do all these steps?<br /><br />http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=Adding%20a%20membership%20field&amp;referringTitle=Documentation<br />",
+    "PostedDate": "2007-08-12T15:17:33.27-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44689",
+    "ThreadId": "13705",
+    "Html": "<br />I did all of the steps. I assume steps 1 (add to the database) and 2 (configure DAL) worked because the member/register.aspx page works fine. I have checked and triple checked the Step 3 page edits for the detail.aspx page and everything is there.<br /><br />I set a breakpoint at the event handler for the \"update\" button on member/details.aspx - it is almost as if the button does not fire anything, because in debugging mode, the breakpoint is never reached even when I click the \"update\" button. (of course, I am not really sure of what I am doing here.)<br />",
+    "PostedDate": "2007-08-12T16:34:31.153-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

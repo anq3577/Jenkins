@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "75827",
+    "ThreadId": "22693",
+    "Html": "\r\nCompilation Error <br />Description: An error occurred during the compilation of a resource required to service this request. Please review the following specific error details and modify your source code appropriately. <br /><br />Compiler Error Message: BC30007: Reference required to assembly 'SubSonic, Version=2.0.1.0, Culture=neutral, PublicKeyToken=null' containing the base class 'SubSonic.ActiveRecord`1'. Add one to your project.<br /><br />Source Error:<br />-----------------------------<br />Any idea how to solve this prob? <br />",
+    "PostedDate": "2008-02-22T13:15:26.127-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "80891",
+    "ThreadId": "22693",
+    "Html": "\r\nI'm having same issue after moving to latest Set.  How did you resolve this error?<br />",
+    "PostedDate": "2008-03-16T08:05:42.8-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

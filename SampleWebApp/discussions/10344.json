@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "33519",
+    "ThreadId": "10344",
+    "Html": "\r\nWhat exactly is the differance between the two?<br /> I  thought that one had to sign in to use a forum and not a blog, but it seems that is not the case here. They seem simliar to me. <br /><br />Thanks<br />",
+    "PostedDate": "2007-05-16T07:53:52.227-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33523",
+    "ThreadId": "10344",
+    "Html": "\r\nI plan on removing access to the forum as Blogs are the in-thing now.<br />It should be easy to remove access to forums by removing it from the menu.<br />Removing access to blogs could be a little more problematic because of the role bloggers.<br /><br />The club kit when setup for a team would lean torwards blogs, the kit setup as a business may lean to forums.<br />They do appear to be redundant systems and I would not recommend using both unless you have a need.<br /><br />Hotaling<br />",
+    "PostedDate": "2007-05-16T07:59:47.857-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33563",
+    "ThreadId": "10344",
+    "Html": "\r\nI really don't think putting your blog posts in forums are really nice. I think it is kind of nice to have the separation.<br />",
+    "PostedDate": "2007-05-16T11:52:21.38-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

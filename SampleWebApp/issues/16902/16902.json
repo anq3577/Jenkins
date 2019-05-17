@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I have deployed this on visual studio 2010.  I managed to create an admin profile.  I am able to run the project and add stuff.  however for the events whenever I  click on an event I have added it breaks the code and sends me to view.aspx  to the end of the line of \n if (Model.Downloads != null && Model.Downloads.Count < 0)\n \nNHibernate.LazyInitializationException was unhandled by user code\n  Message=Initializing[ClubStarterKit.Domain.Event#2]-failed to lazily initialize a collection of role: ClubStarterKit.Domain.Event.Downloads, no session or session was closed\n  Source=NHibernate\n  EntityName=ClubStarterKit.Domain.Event\n  StackTrace:\n       at NHibernate.Collection.AbstractPersistentCollection.ThrowLazyInitializationException(String message)\n       at NHibernate.Collection.AbstractPersistentCollection.ThrowLazyInitializationExceptionIfNotConnected()\n       at NHibernate.Collection.AbstractPersistentCollection.ReadSize()\n       at NHibernate.Collection.PersistentBag.get_Count()\n       at ASP.views_events_view_aspx.__RenderContent2(HtmlTextWriter __w, Control parameterContainer) in c:\\Users\\.....\\Visual Studio 2010\\StartPages\\clubstarterkit v3 preview\\ClubStarterKit.Web\\Views\\Events\\View.aspx:line 53\n       at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)\n       at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)\n       at System.Web.UI.Control.Render(HtmlTextWriter writer)\n       at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)\n       at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)\n       at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)\n       at ASP.views_shared_site_master.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\\Users\\.....\\Visual Studio 2010\\StartPages\\clubstarterkit v3 preview\\ClubStarterKit.Web\\Views\\Shared\\Site.Master:line 45\n       at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)\n       at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)\n       at System.Web.UI.Control.Render(HtmlTextWriter writer)\n       at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)\n       at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)\n       at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)\n       at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)\n       at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)\n       at System.Web.UI.Page.Render(HtmlTextWriter writer)\n       at System.Web.Mvc.ViewPage.Render(HtmlTextWriter writer)\n       at ClubStarterKit.Infrastructure.View.BaseView`1.Render(HtmlTextWriter writer) in C:\\Users\\....\\Visual Studio 2010\\StartPages\\clubstarterkit v3 preview\\ClubStarterKit.Infrastructure\\View\\BaseView`1.cs:line 70\n       at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)\n       at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)\n       at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)\n       at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)\n  InnerException: \n \nIf anybody can help it will be appreciated\nThanks",
+    "LastUpdatedDate": "2013-02-13T19:37:03.347-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2011-11-13T23:20:02.85-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Error view.aspx",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 16902
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

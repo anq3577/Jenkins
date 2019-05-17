@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "44016",
+    "ThreadId": "13496",
+    "Html": "\r\nI am currently modifying Starter Kit 2.0 for use by our road running club (changed CSS, added tables, added many pages, fixed a few bugs, added fields to profile, etc.). We are not yet in production - planning on testing with club members in a few weeks and then moving our site to the starter kit version.<br /><br />While many of the features in the v3 sound good, I wonder how much trouble I will get in if I upgrade. I currently use VWDE, but I see you recommend upgrading to the standard version (which I would be glad to do, but am also worried about all the \"gotcha's\" with that (I read about in one of my books)).<br /><br />There are also some bugs in the Starter Kit 2.0 that are outstanding (e.g., photo picker, URL link for news stories,  members/details page updates but results in \"error on page\"). <br /><br />I am sorry I am not techie enough to understand how easy/difficult this would be. Anyone have any experience with this or suggestions?<br /><br />Thank you,<br />Deborah<br />",
+    "PostedDate": "2007-08-07T05:24:30.087-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44027",
+    "ThreadId": "13496",
+    "Html": "\r\nA lot of the bugs from v2 have been fixed in v3.<br /><br />How you upgrade is really dependent on what modifications you have made already. If it is just data that you have modified, a database upgrade should do the trick. If not, it will take a little more work for the upgrade.<br />",
+    "PostedDate": "2007-08-07T06:29:57.177-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44093",
+    "ThreadId": "13496",
+    "Html": "\r\nI use winmerge to compare my source with the new files.  This is an easy tool to make sure you highlight only the differences and make the decision on what to change.<br />",
+    "PostedDate": "2007-08-07T13:03:50.18-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44264",
+    "ThreadId": "13496",
+    "Html": "\r\nFrom the Database Upgrade Instructions, I have some questions (and sorry if these are dumb, but I have been \"playing\" and \"studying\" all afternoon and have no clue, still).<br /><br />Step 2: how do you run the upgrade script (I just see a text file)?<br /><br />Step 5: \"Run the app\" - how is this done, specifically? I can open the TableChanger app in VWDE, but don't see how to run it. Is there a specific file I should open to run it?<br /><br />Also, I got the Beta v3 to work, but on the SubSonic DAL Express Version instructions for Generation, what output directory should be used - something specific or will any directory I choose work? Do I really need to do this if I am going the upgrade route?<br /><br />I plan to update the database and then use winmerge to compare my source with the new files. Thanks for the help.<br />",
+    "PostedDate": "2007-08-08T14:13:28.457-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

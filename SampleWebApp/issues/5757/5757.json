@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Fixed in a recent build",
+    "ClosedDate": "2008-03-18T16:45:33.013-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "within beta1 again, in blogs/post.aspx, when you delete a blog, you get an error (logged in)\n \nMust declare the scalar variable \"@postid0\"\n \nI took a look at the code and in a previous project, I used this to delete a record... (replacing the current method \"HyperLink2_Click, starting at line Blogs/Post.aspx.vb:30)\n \n    Protected Sub HyperLink2_Click(ByVal sender As Object, ByVal e As System.EventArgs)\n        Dim id As Integer = Request.QueryString(\"id\")\n \n        If (id > 0) Then\n            Dim qry As New Query(Tables.BlogPosts)\n            qry.WHERE(BlogPosts.Columns.Postid, id)\n            qry.QueryType = QueryType.Delete\n \n            Dim result As New BlogPostsController()\n            result.Delete(id)\n            Response.Redirect(\"~/blogs/default.aspx\")\n        Else\n            'throw some kind of error\n        End If\n \n    End Sub",
+    "LastUpdatedDate": "2013-05-15T23:46:25.63-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2008-03-15T19:28:59.763-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "bug, blog delete",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 5757
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

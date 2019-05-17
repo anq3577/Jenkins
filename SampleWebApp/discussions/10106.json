@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "32767",
+    "ThreadId": "10106",
+    "Html": "<br />I have only been sucessfull depolying Starter kit 1.0 to a web server.<br />It would be great to get up to speed on deploying version 2.0 to a web server.<br />While most of the 2.0 sql scripts generated errors on my godaddy server, I did with out instructions.<br /><br /><br />",
+    "PostedDate": "2007-05-10T08:42:16.77-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32791",
+    "ThreadId": "10106",
+    "Html": "\r\nIf you have not done so you should check out the SQL Server Database Publishing Wizard.<br /><br /><a href=\"http://forums.asp.net/thread/1431636.aspx\" class=\"externalLink\">http://forums.asp.net/thread/1431636.aspx<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a><br />",
+    "PostedDate": "2007-05-10T12:33:00.79-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32832",
+    "ThreadId": "10106",
+    "Html": "<br />The \"Admin\" account is data?<br /><br />I have trouble on what appears to be image data and I though I could just script it with out data? <br /><br />6MB VS 600K<br /><br /><br />",
+    "PostedDate": "2007-05-10T18:06:18.027-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

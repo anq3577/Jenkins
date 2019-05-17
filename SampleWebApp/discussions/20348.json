@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "67560",
+    "ThreadId": "20348",
+    "Html": "\r\nHi All,<br />I am new to all of this.<br />error is below. It is say I have a null value and the code does not handle this. I used scripts to create the DB. Not the data.sql script.<br />I will try that. How do I transfer my data from my local database to the online database?<br />Thank you,<br />Jim<br /><br /><br />System.NullReferenceException was unhandled by user code<br />  Message=\"Object reference not set to an instance of an object.\"<br />  Source=\"App_Code.r-r6zepb\"<br />  StackTrace:<br />       at ClubStarterKit.Web.Controls.PollControl.CreateControls() in C:\\Documents and Settings\\Jim\\Desktop\\Web site info\\Express<i>(VB) 3.1\\App</i>Code\\Controls\\PollControl.vb:line 168    at ClubStarterKit.Web.Controls.PollControl.CreateChildControls() in C:\\Documents and Settings\\Jim\\Desktop\\Web site info\\Express<i>(VB) 3.1\\App</i>Code\\Controls\\PollControl.vb:line 108    at System.Web.UI.Control.EnsureChildControls()    at System.Web.UI.Control.PreRenderRecursiveInternal()    at System.Web.UI.Control.PreRenderRecursiveInternal()    at System.Web.UI.Control.PreRenderRecursiveInternal()    at System.Web.UI.Control.PreRenderRecursiveInternal()    at System.Web.UI.Control.PreRenderRecursiveInternal()    at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)<br />  InnerException: <br /><br /><br /> For Each row In AnswerTable<br />                    Dim percentage As Decimal = ComputePercentage(Poll.NumberOfVotesByAnswer(row.PollAnswerId))<br /><br />                    Me.Controls.Add(New LiteralControl(\"&lt;li&gt;\"))<br /><br />                    Dim answerLabel As Label = New Label()<br />                    answerLabel.Text = String.Format(\"{0}:\", row.Answer)<br />                    Me.Controls.Add(answerLabel)<br /><br />                    Me.Controls.Add(New LiteralControl(\"&lt;br/&gt;\"))<br /><br />                    Dim img As New System.Web.UI.WebControls.Image<br />                    img.ImageUrl = \"~/images/pixel.png\"<br />                    img.Height = New Unit(7)<br />                    img.Width = New Unit(percentage.ToString())<br />                    Me.Controls.Add(img)<br />",
+    "PostedDate": "2008-01-12T16:27:44.917-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "67657",
+    "ThreadId": "20348",
+    "Html": "\r\nWell, that's because you have no data :) Put in a sum data and it should work. Granted, we should have fixed this :)<br />",
+    "PostedDate": "2008-01-13T08:13:07.9-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "67720",
+    "ThreadId": "20348",
+    "Html": "<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Well, that's because you have no data :) Put in a sum data and it should work. Granted, we should have fixed this :)<br /><br /></div>Hi,<br />I am new to this and how would I add data directly to the database? do I have to add the key?<br />Thank you for your patience.<br />Jim<br />",
+    "PostedDate": "2008-01-13T17:19:30.247-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "67722",
+    "ThreadId": "20348",
+    "Html": "\r\nI added data to PollAnswers and PollWuestions and the site came up.<br />Thank you,<br />Jim<br />",
+    "PostedDate": "2008-01-13T17:44:00.897-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "67724",
+    "ThreadId": "20348",
+    "Html": "<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Well, that's because you have no data :) Put in a sum data and it should work. Granted, we should have fixed this :)<br /><br /></div><br />z2bass or anyone,<br />What data is required to run the site so I can edit the other options?<br />Thank you,<br />Jim<br />",
+    "PostedDate": "2008-01-13T18:23:02.037-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

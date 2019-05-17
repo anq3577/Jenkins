@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "now by design",
+    "ClosedDate": "2009-12-08T22:19:04.307-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Bug Photo in /Photo/Contents.aspx \n \nDescription : \n \nYou will wery wery disapointed to see that you can't modify text associate with a photo !\n \nCorrection : \n \naround ligne 100 : replace UpdateAlbum by UpdateImage \n \n<asp:ObjectDataSource ID=\"SelectImage\" runat=\"server\" SelectMethod=\"LoadImage\" DeleteMethod=\"DeleteImage\" TypeName=\"ClubStarterKit.Web.Photos\" UpdateMethod=\"UpdateImage\" OnSelecting=\"SelectImage_Selecting\" OldValuesParameterFormatString=\"{0}\" OnDeleted=\"SelectImage_Deleted\">",
+    "LastUpdatedDate": "2013-05-15T23:46:26.36-07:00",
+    "PlannedForRelease": "ClubStarterKit v3 Beta 2",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2008-01-09T00:15:50.467-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Can't modify text associate with a photo",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 2,
+    "Id": 5024
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

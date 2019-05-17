@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "70494",
+    "ThreadId": "21184",
+    "Html": "\r\nI am trying  to extend the member info class, but I can not find the member class. Essentially, what I need to do is extend the member info and collect more data but for whatever reason, I simply can not find the class defined anywhere. I have extended the the memberinfo table and need to add these new fields to the class.<br />I guess, they are buried somewhere in Subsonic, but how do I modify or Add to them?<br />Specificaly, I am looking for : Public Shared Sub  Insert and Update.<br />",
+    "PostedDate": "2008-01-28T19:39:13.787-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

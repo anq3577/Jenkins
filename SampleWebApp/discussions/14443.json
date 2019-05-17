@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "46968",
+    "ThreadId": "14443",
+    "Html": "\r\ni have been looking and cant seem to find a fix for my problem. when users sign up on my club site and do not upload their own avatar image the system doesnt seem to put a default image i get just a red X for those members. Sorry if this has already been covered i am a newbie<br />",
+    "PostedDate": "2007-08-28T17:21:07.57-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "46973",
+    "ThreadId": "14443",
+    "Html": "\r\nThat SHOULD have been fixed... what build are you using... v3 beta 1??<br />",
+    "PostedDate": "2007-08-28T17:51:13.957-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "46990",
+    "ThreadId": "14443",
+    "Html": "\r\nI am using V2<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />That SHOULD have been fixed... what build are you using... v3 beta 1??<br /><br /></div>",
+    "PostedDate": "2007-08-28T20:04:03.197-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "47799",
+    "ThreadId": "14443",
+    "Html": "\r\nAhhh... this has been fixed in v3<br />",
+    "PostedDate": "2007-09-04T15:09:04.64-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

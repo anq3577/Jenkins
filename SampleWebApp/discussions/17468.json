@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "57032",
+    "ThreadId": "17468",
+    "Html": "\r\nI have got most of the website up and running (left out a few things e.g. forums) (www.anucc.org) on GoDaddy.<br /><br />Main problem was that websettings must have an id = 1 (otherwise new default websettings get created by each user) - is their a way to get the code to use the first websettings record rather than id=1?<br /><br />PS I can send you the code I have got working if you want (refactored to use objectdatasource, tidyed up L&amp;F, fixed bugs etc)<br />",
+    "PostedDate": "2007-11-06T16:56:43.893-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "57184",
+    "ThreadId": "17468",
+    "Html": "<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />foleyp wrote:<br />I have got most of the website up and running (left out a few things e.g. forums) (www.anucc.org) on GoDaddy.<br /><br />Main problem was that websettings must have an id = 1 (otherwise new default websettings get created by each user) - is their a way to get the code to use the first websettings record rather than id=1?<br /><br />PS I can send you the code I have got working if you want (refactored to use objectdatasource, tidyed up L&amp;F, fixed bugs etc)<br /><br /></div><br /><br />Good work!  I had a couple of questions.<br />1.  Are you able to bulk upload photos?<br />2.  Are the photos stored in a file location or the db?<br />3.  I had gotten the site running and processing logins, but I couldn't do anything else that used the db (add events, blog entries, etc).  How did you work around on GoDaddy?<br /><br />Thanks.<br />",
+    "PostedDate": "2007-11-07T14:13:06.897-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "57201",
+    "ThreadId": "17468",
+    "Html": "\r\n1. Still working on bulk upload of photos (to db only)<br />2. Photos etc all going into db<br />3. No problems with db - I chose a sql server 2005 database but did not select any schemas. Ran all the sql to create schemas etc seperately. <br />",
+    "PostedDate": "2007-11-07T17:41:40.697-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "58126",
+    "ThreadId": "17468",
+    "Html": "\r\nI forgot to add that<br />a) I created a documents directory using Godaddy's filemanager so that it had write access<br />b) I changed subsonic code to not do logging (search Google for subsonic &amp; godaddy<br />",
+    "PostedDate": "2007-11-13T18:12:10.273-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "58264",
+    "ThreadId": "17468",
+    "Html": "\r\nalso<br />a) sending mail via godaddy does not require a username and password. So far I have just commented that out but it shuld be handled by a websetting<br />b) retrieving forgotten passwords requires smtp details in web.config<br />",
+    "PostedDate": "2007-11-14T13:44:19.437-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

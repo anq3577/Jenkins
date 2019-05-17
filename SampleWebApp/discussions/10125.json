@@ -1,0 +1,82 @@
+[
+  {
+    "Id": "32825",
+    "ThreadId": "10125",
+    "Html": "\r\nError -2147217900 Change Set 2255 -  Incorrect syntax near 'addAttendance'.<br /><br />Generated SQL line 1996 - 2003<br />",
+    "PostedDate": "2007-05-10T16:52:43.823-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32827",
+    "ThreadId": "10125",
+    "Html": "<br />Error -2147217900 <br />  Incorrect syntax near 'removeattendance'.<br /><br /><br />Error -2147217900 <br />  Incorrect syntax near 'BEGIN'.<br />Generated SQL line 4119-5136<br /><br />Many more errors present, which may be linked to first errors. <br />",
+    "PostedDate": "2007-05-10T17:15:54.72-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32895",
+    "ThreadId": "10125",
+    "Html": "\r\nThese errors are generated when trying to script them into the web server database.<br />Has anyone successfully complete a web server deployment with this Change Set?<br /><br /><br />",
+    "PostedDate": "2007-05-11T08:24:38.053-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38566",
+    "ThreadId": "10125",
+    "Html": "\r\nI am having a problem with the same thing.  Did you find the answer?<br />",
+    "PostedDate": "2007-06-26T21:56:21.47-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38725",
+    "ThreadId": "10125",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />jrarant wrote:<br />I am having a problem with the same thing.  Did you find the answer?<br /><br /></div><br />Hello.<br /><br />I had this same problem also.  I was trying to do it on GoDaddy.com.<br /><br />Sorry to say I don't have an answer.  I resolved it by going to discountAsp.net for hosting.  With them i didn't even need to use a script.<br /><br />Tony<br />",
+    "PostedDate": "2007-06-27T15:44:54.783-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38728",
+    "ThreadId": "10125",
+    "Html": "\r\nDoes someone who has GoDaddy hosting have the documentation? I would love to take a look at it.<br />",
+    "PostedDate": "2007-06-27T16:24:34.097-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38738",
+    "ThreadId": "10125",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Does someone who has GoDaddy hosting have the documentation? I would love to take a look at it.<br /><br /></div><br />Zack.<br /><br />I still have a GoDaddy account.  What documentation do you want?<br /><br />Tony<br />",
+    "PostedDate": "2007-06-27T19:26:03.273-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38744",
+    "ThreadId": "10125",
+    "Html": "\r\nAnything and everything on SQL would be GREAT! I can sift through it all... I just need to figure out why our database doesn't work on GoDaddy accounts!<br />",
+    "PostedDate": "2007-06-27T20:18:18.65-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38802",
+    "ThreadId": "10125",
+    "Html": "\r\nI'll see what i can find.<br />",
+    "PostedDate": "2007-06-28T05:55:39.043-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38822",
+    "ThreadId": "10125",
+    "Html": "\r\nOK, thanks. I really appriciate it!<br />",
+    "PostedDate": "2007-06-28T08:29:18.157-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

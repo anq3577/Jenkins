@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "37804",
+    "ThreadId": "11649",
+    "Html": "\r\nI just switched to Ultima Hosts because godaddy was not working.  Its been much easier so far except when I try to register on the site I get this error:<br /><br />'System.Web.Security.SqlMembershipProvider' requires a database compatible with schema version one. <br /><br />How do I fix this? Can someone direct me on how to get the site working on Ultima Hosts?<br /><br />Thanks in advance. <br />",
+    "PostedDate": "2007-06-21T07:35:52.853-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37824",
+    "ThreadId": "11649",
+    "Html": "\r\nAsk Ultima... they would probably know what that error implies. (All you have to do is send an email to support@ultimahost.net describing your problem.)<br />",
+    "PostedDate": "2007-06-21T08:49:29.867-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37999",
+    "ThreadId": "11649",
+    "Html": "\r\nI have finally worked out many of my errors by running the aspnet_regsql.exe on my server.  <br /><br />However, I am back to square one, my roles table is empty!<br /><br />I am able to register as a user, however I don't know how to become admin with an empty role table. <br /><br />Any help is appreciated! Excited to get this great site working. <br /><br />Thanks. <br />",
+    "PostedDate": "2007-06-22T09:23:59.473-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38042",
+    "ThreadId": "11649",
+    "Html": "\r\nOpen the ASP.NET Configuration tool in visual studio (with your correct connection string) and add the roles \"Administrators\", \"Blogger\", and \"Editor\". Then assign yourself those roles.<br />",
+    "PostedDate": "2007-06-22T17:59:24.183-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-08-07T15:31:42.7-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "For testing reasons I deleted all poll items and requested the home page afterwards.\nThe result was a System.NullReferenceException.\n \nI detected the issue in the code. I`m going to fix it  :)",
+    "LastUpdatedDate": "2013-05-15T23:46:30.417-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-08-07T15:24:23.657-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "PollControl throws ex, when there are no items",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 3018
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 3963.",
+      "PostedDate": "2007-08-07T15:31:42.7-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Yea... I knew about that. Thanks for fixing it. You are doing an excellent job fixing my mistakes :)",
+      "PostedDate": "2007-08-07T16:47:09.923-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:12.347-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:30.417-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

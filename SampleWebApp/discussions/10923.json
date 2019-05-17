@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "35419",
+    "ThreadId": "10923",
+    "Html": "\r\nHere's the story: Hotaling used to be a developer on the CSK project. I revoked his TFS access because he was producing old bugs. Nothing happened for a few weeks.<br /><br />Two days ago, I received notice from a moderator over that the ASP.NET forums that my posts are being \"amended\" because this project is not \"part of Microsoft\". OK, I know that! Thank you very much.<br /><br />Then I start getting these post deletion notifications from the ASP.NET forum user mbanavige. At that point, I was like \"what is going on!?\". So I emailed the feedback people at the ASP.NET site and she said that she agreed with the moderator. Well, this person was from Telligent (makers of Community Server). I think the reason she agreed to that decision was because she works at Telligent.<br /><br />Anyways, so today I went in and saw hotaling had been making some really bad comments about the CSK CodePlex project. So I went in and put in forum posts that said<br /><br />\"<br />For those of you who don't know, Hotaling is mad because he doesn't know how to be a member of an open source team. Disreguard his comments. <br />\"<br /><br />Then they all got deleted by mbanavige! This makes me believe that hotaling knows this mbanavige guy.<br /><br />So then I went in to try to put in a post about how I am not ever going to post on the ASP.NET forums and I get this message that an administrator has locked me out! What is that?!!!!!<br /><br />So you see, hotaling could have accepted the fact that he needed to change his habits. But he didn't and it cost this project.<br /><br />So I have a big decision to make: do I delete the project or move forward? Would just deleting this project be so bad? Seems I don't have any support on the ASP.NET site. Do you think we can survive without their user base? Maybe we can... maybe we can't.<br />",
+    "PostedDate": "2007-06-01T21:02:04.693-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "35421",
+    "ThreadId": "10923",
+    "Html": "\r\nIt is impossible to find a situation where everybody is happy. It's like life... a little giving a little taking.<br />Since there are a lot more people then just the one you mentioned who do appreciate what is happening in this project, I really would be disappointed when this project should end. I just convinced the board of my soccerclub that we should build the site ourself being backupped by this codeplex site instead of paying many thousands of euro's on something we don't want.<br />Although I am a C# \"backend\" programmer of profession, I really like what you're doing with this.<br />I hope to see more and that there are more people like me thinking this way. <br />",
+    "PostedDate": "2007-06-01T23:18:05.053-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "35424",
+    "ThreadId": "10923",
+    "Html": "\r\nI completely support what you are trying to achieve and would encourage you to continue leading this redevelopment.<br /><br />There is definitly something amis here.........<br /><br />I understood that the core reason for  Microsoft  providing the original starter kits was to encourage usage of their software. That being the case then surely this project  is a natural extension of  that goal.<br /><br />The post sent by \"Hotaling\" is out of order and I agree with you that it should be removed immediately. <br />It is just completely unacceptable that posts of that kind are allowed regardless of their validity or otherwise.<br /><br />At the very least the Moderator needs to reverse the decision to disallow your posts.<br /><br />Let me know If I can help you with your conflict with the .Net Forum Moderators ??<br /><br /><br />Regards<br /><br /><br /><br />",
+    "PostedDate": "2007-06-01T23:49:58.917-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "35443",
+    "ThreadId": "10923",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br /><br />There is definitly something amis here.........<br /><br /><br /></div><br />I agree<br /><br />As someone who has a few club sites of my own to take care of, i've been real interested to read about what you guys have been doing over here.  Seems like you were making some nice improvements.  My sites are still based on the old starter kit though so i still follow the forum over at asp.net pretty closely.   Personally, I was shocked at what was posted over there. Not hotalings posts though. If he doesnt like the updated kit, then he doesnt have to use it.  thats his problem. but the posts i found in my inbox this morning are different than what z2bass said they were.  <br /><br />they started out like this<br /><br />-------------<br />\"For those of you who don't know, Hotaling is mad because he doesn't know how to be a member of an open source team. Disregard his comments and the above \"Moderator Edit\".\"<br />-------------<br /><br />there was a bunch of those.  <br />then they turned into this<br /><br />-------------<br />For those of you who don't know, Hotaling is mad because he doesn't know how to be a member of an open source team. Disregard his comments and the \"Moderator Edit\". Check out www.codeplex.com/clubstarterkit <br /><br />(MODORATOR: I will continue to post this message until you delete hotaling's posts. His are disrespectful and are much worse than this post!)<br />--------------<br /><br />How many of those messages did you actually post? Sounds like there was a bit more going on before you got yourself locked out by the administrator.<br /><br />If z2 acted poorly then he needs to fix it.  it's unfair to those of us who were looking at using this new kit that you should delete it over your petty bickering..<br /><br />just my 2 cents<br />Jane<br /><br />",
+    "PostedDate": "2007-06-02T07:16:26.387-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "35448",
+    "ThreadId": "10923",
+    "Html": "\r\nHey... I just thought of something we can do. We need to show that the CSK site at CodePlex is here to stay. If you could fill out this form: http://www.asp.net/forums/feedback.aspx saying that the user hotaling has been trashing the project, making innaproriate comments, and that mbanavige is only swayed by hotaling and is not moderating posts correctly, that would really help.<br /><br />It seems that we should contine. So we may.<br /><br />JaneTweeter, I had to do some damage control. It was rediculous the posts that are up there. They said things like \"This is not a Microsoft kit. I don't recommend it.\" Trashing this project is not cool. So I had to keep posting things because moderators would say \"Oh, this isn't a place for an agrument\". In all reality, he doesn't need to trash a project like that. It's kind of like me going arround on the Microsoft forums and saying \"Hey, Orcas is so dumb. You guys suck.\"<br />",
+    "PostedDate": "2007-06-02T09:15:32.737-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "35449",
+    "ThreadId": "10923",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Hey... I just thought of something we can do. We need to show that the CSK site at CodePlex is here to stay. If you could fill out this form: http://www.asp.net/forums/feedback.aspx saying that the user hotaling has been trashing the project, making innaproriate comments, and that mbanavige is only swayed by hotaling and is not moderating posts correctly, that would really help.<br /><br />It seems that we should contine. So we may.<br /><br />JaneTweeter, I had to do some damage control. It was rediculous the posts that are up there. They said things like \"This is not a Microsoft kit. I don't recommend it.\" Trashing this project is not cool. So I had to keep posting things because moderators would say \"Oh, this isn't a place for an agrument\". In all reality, he doesn't need to trash a project like that. It's kind of like me going arround on the Microsoft forums and saying \"Hey, Orcas is so dumb. You guys suck.\"<br /><br /></div><br />You have a great project going here and I for one appreciate very much what you have accomplished thus far, I would recomend rising above this by ignoring it and continuing your work with this project.<br />",
+    "PostedDate": "2007-06-02T09:20:12.723-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "35453",
+    "ThreadId": "10923",
+    "Html": "\r\nOK, sounds good. Let's keep going. We're not done yet! <br />",
+    "PostedDate": "2007-06-02T10:17:13.107-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,85 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "feature is now in v3 preview",
+    "ClosedDate": "2009-12-08T22:20:55.963-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Download management",
+    "LastUpdatedDate": "2013-05-15T23:46:31.807-07:00",
+    "PlannedForRelease": "ClubStarterKit v3",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-07-17T10:48:30.217-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Download Management",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 3,
+    "Id": 2827
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "There is an extending teh CLub Starter Kit that addresses a fashion of this.  I use it currently for a V1 site I have running",
+      "PostedDate": "2007-07-17T14:57:01.393-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Really?\r\n\r\nv2 came with downloads but you are not able to delete the downloads.",
+      "PostedDate": "2007-07-17T15:23:42-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Zach,\r\n\r\nNot sure what you are trying to get across in your post.  Could you be more specific?",
+      "PostedDate": "2007-07-18T13:18:17.18-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Yea.\r\n\r\nWe have downloads in v2. You can add download, but you can't delete them and reupload. That's where this feature comes in :)",
+      "PostedDate": "2007-07-18T14:08:04.877-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-20T17:15:01.803-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-11-24T14:00:57.71-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-12-08T22:20:55.963-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:14.1-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:31.807-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

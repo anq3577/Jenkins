@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "If an event email is sent, and no members have RSVP'd or event is not flagged for 'online sign-ups'. The following error occurs:\n \nA recipient must be specified. \nDescription: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. \n \nException Details: System.InvalidOperationException: A recipient must be specified.\n \nSource Error: \n \n \nLine 87: \nLine 88:         Dim smtp As New SmtpClient\nLine 89:         smtp.Send(msgMail)\nLine 90: \nLine 91:         Response.Redirect(\"~/Events/View.aspx?eventid=\" & EventID)\n \n \nSource File: d:\\Domains\\mialga.co.uk\\wwwroot\\Admin\\EventEmail.aspx.vb    Line: 89 \n \nStack Trace: \n \n \n[InvalidOperationException: A recipient must be specified.]\n   System.Net.Mail.SmtpClient.Send(MailMessage message) +2209\n   Admin_EventEmail.btnSend_Click(Object sender, EventArgs e) in d:\\Domains\\mialga.co.uk\\wwwroot\\Admin\\EventEmail.aspx.vb:89\n   System.Web.UI.WebControls.Button.OnClick(EventArgs e) +105\n   System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument) +107\n   System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument) +7\n   System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument) +11\n   System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData) +33\n   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +1746\n \nThis is obviously going to happen as the SMTP routing has not got any recipient to send the email to.",
+    "LastUpdatedDate": "2013-02-13T19:37:06.29-08:00",
+    "PlannedForRelease": "ClubStarterKit v3 Preview 2",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2008-04-05T02:04:29.677-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Send Events Email",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 5898
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Does anyone have a fix for this problem?",
+      "PostedDate": "2009-04-05T17:00:58.38-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-10-20T15:15:02.507-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-12-08T22:14:53.857-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:06.29-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

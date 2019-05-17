@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "89484",
+    "ThreadId": "26747",
+    "Html": "\r\nDoes a Web Site hosting company have to do any thing server side to support this SubSonic stuff?<br />",
+    "PostedDate": "2008-04-28T16:58:31.44-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "93621",
+    "ThreadId": "26747",
+    "Html": "Older versions of SubSonic required a server running under full trust. The latest version, however, can run without any problems on a shared server with medium trust. \r\n",
+    "PostedDate": "2008-05-20T05:47:38.843-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

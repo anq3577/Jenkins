@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-08-07T13:34:36.623-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Clicking on the logout-button on the member list returns a 404 (redirects to /list.aspx instead of /member/list.aspx",
+    "LastUpdatedDate": "2013-05-15T23:46:30.69-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-08-06T03:46:36.867-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Logout from member list returns 404",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2989
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Update: It is a general problem ... the logout button always returns to the root folder + filename",
+      "PostedDate": "2007-08-07T13:09:22.533-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Resolved with changeset 3960.",
+      "PostedDate": "2007-08-07T13:34:36.623-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:12.663-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:30.69-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

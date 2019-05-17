@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2008-08-28T05:51:31.597-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi guys\n \nI keep on getting this error [Server Error in '/' Application.\nThe database does not appear to contain WebContent table, this is a feature of the extended ClubSite, please ensure you have run WebContent.SQL against the database ]\nI've tried loading the site to my host which is discountasp.net and it keeps thowing this error...any help out there i'm using the 2.0 final release thanks",
+    "LastUpdatedDate": "2013-05-15T23:46:24.487-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2008-08-26T08:43:26.153-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Server error please help",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 7425
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Closed because of double post",
+      "PostedDate": "2008-08-28T05:51:25.737-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-08-28T05:51:31.597-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:05.007-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:24.487-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

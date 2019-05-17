@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "45560",
+    "ThreadId": "14004",
+    "Html": "\r\nI ran into a problem when using the asp.net config tool I deleted the users and admin account and created a new admin account with the proper credentials and ran into the null reference exception. What can I do to avoid this when I remove the existing project and reinstall it.<br /><br />DKB<br />",
+    "PostedDate": "2007-08-18T12:40:42.633-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "45572",
+    "ThreadId": "14004",
+    "Html": "\r\nYou can either delete the blog posts, or you can add a Try Catch block for the Members class when it tries to find the first name and last name of someone.<br />",
+    "PostedDate": "2007-08-18T20:25:37.147-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "48676",
+    "ThreadId": "14004",
+    "Html": "<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />You can either delete the blog posts, or you can add a Try Catch block for the Members class when it tries to find the first name and last name of someone.<br /><br /></div><br /><br />I unfortunatly did the same thing.  How would I delete the BLOG posts? <br /><br />ASP Noobie, SQL Noobie and mostly non-programmer<br />",
+    "PostedDate": "2007-09-10T20:56:25.51-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

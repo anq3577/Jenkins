@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "60357",
+    "ThreadId": "18464",
+    "Html": "\r\nI downloaded the code and attempted to build and had 200+ errors.  It appears that the issue is SubSonic since the Imports statement errored out.  I attempted to add a reference to the DLL but it did not work.<br /><br />Any ideas why this is happening or anyone else that has this problem?  I also want to customize the Membership Information (the address) and assume that SubSonic will be needed to modify the DAL stuff.<br /><br />Any help would be appreciated.<br /><br />Thanks<br />Tom<br />",
+    "PostedDate": "2007-11-28T19:51:39.85-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "60391",
+    "ThreadId": "18464",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />GeoMarketing wrote:<br />I downloaded the code and attempted to build and had 200+ errors.  It appears that the issue is SubSonic since the Imports statement errored out.  I attempted to add a reference to the DLL but it did not work.<br /><br />Any ideas why this is happening or anyone else that has this problem?  I also want to customize the Membership Information (the address) and assume that SubSonic will be needed to modify the DAL stuff.<br /><br />Any help would be appreciated.<br /><br />Thanks<br />Tom<br /><br /></div><br />Try re-referencing it by deleting the first reference of SubSonic and then adding the new reference.<br />",
+    "PostedDate": "2007-11-29T03:43:16.27-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "60535",
+    "ThreadId": "18464",
+    "Html": "\r\nI think I found the problem.  <br /><br />I tried downloading the SubSonic source and it would not compile either, complaining about mySQL.  So I downloaded mySQL and installed it and everything compiles fine!<br /><br />Looks like a dependency on a dependency.<br /><br />Tom<br />",
+    "PostedDate": "2007-11-29T20:33:03.187-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "60688",
+    "ThreadId": "18464",
+    "Html": "\r\nSweet.<br />",
+    "PostedDate": "2007-11-30T20:07:37.13-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

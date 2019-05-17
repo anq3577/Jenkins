@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Under consideration",
+    "ClosedDate": "2009-10-20T15:12:53.017-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Would be nice to see a Document Library where you can upload various types of files (PDF, Word, Excel, etc) and then classify them and use those classifications in conjunction with the different Roles.  Much like the Extended Version of CSK.  See; http://msdn2.microsoft.com/en-us/library/aa479335.aspx",
+    "LastUpdatedDate": "2013-05-15T23:46:25.34-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2008-04-11T15:42:16.903-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Add a Document Library",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 5941
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

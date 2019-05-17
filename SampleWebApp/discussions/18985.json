@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "62411",
+    "ThreadId": "18985",
+    "Html": "\r\nI just downloaded the version 3 beta 1 kit. I noticed there are many code check-ins and I was wondering if I need to download all of them and apply prior to customizing the kit. If so, do I have to apply them in the order they were uploaded?  Or should I download the latest release under the souce code tab (change set 3923) and just install that? Any help would be appreciated. <br />",
+    "PostedDate": "2007-12-11T09:55:52.077-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "62467",
+    "ThreadId": "18985",
+    "Html": "\r\nDepends... do you use VS Express or VS Standard/Pro/Team Suite?<br />",
+    "PostedDate": "2007-12-11T14:06:14.943-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "62594",
+    "ThreadId": "18985",
+    "Html": "\r\nI am using VWD 2008<br />",
+    "PostedDate": "2007-12-12T06:09:30.957-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "62720",
+    "ThreadId": "18985",
+    "Html": "\r\nThen you probably shouldn't... since there is an external class library we develop on. You could get a trial of Team Suite (that's what I do to not pay the price for it :) )<br />",
+    "PostedDate": "2007-12-12T17:38:59.713-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "62810",
+    "ThreadId": "18985",
+    "Html": "\r\nI probably shouldn't what, use VWD? I can use Team Suite or any other MS product since we are a Certified MS development shop. I'm still not sure what product or change set to download to begin using the Version 3 kit.<br />",
+    "PostedDate": "2007-12-13T06:24:36.14-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "62925",
+    "ThreadId": "18985",
+    "Html": "\r\nYou probably shouldn't try to use the checked in code since you are using express<br />",
+    "PostedDate": "2007-12-13T16:09:54.613-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "63005",
+    "ThreadId": "18985",
+    "Html": "\r\nOk, I am confused. Should I use the released Beta 1 version 3 kit  with VWD or should I download the checked in code using Visual Studio or Team Suite? I can use whatever is the best IDE environment for working with the kit that you believe would make the development and deployment experience best. Thanks for the help!<br />",
+    "PostedDate": "2007-12-14T06:40:25.603-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "64380",
+    "ThreadId": "18985",
+    "Html": "\r\nI have both VS 2005 and VS 2008. I also have Visual Suite. So, should I just start with the Version 3, Beta 1.0 or should I download a different release from the source code area?<br />",
+    "PostedDate": "2007-12-20T11:34:59.33-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

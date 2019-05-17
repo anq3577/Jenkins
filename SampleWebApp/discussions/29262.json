@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "97530",
+    "ThreadId": "29262",
+    "Html": "On my members/list.aspx page I have 3 testreg members listed, but they do not show up on my users page, I already deleted the default users and created my own user and admin user. How do I delete these members from the member list page?<br>\r\n",
+    "PostedDate": "2008-06-08T12:40:01.84-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "99069",
+    "ThreadId": "29262",
+    "Html": "Jaxjon,&nbsp;You'll need to remove them from the ASP related database tables<br>\r\n<br>\r\naspnet_Membership<br>\r\naspnet_Users<br>\r\naspnet_UsersInRoles<br>\r\ndbo.MemberInfo<br>\r\ndbo.MemberProfile<br>\r\n(I think these are the only ones)<br>\r\n<br>\r\nKeep in mind that if any of the users own data like message threads, albums, blogs, etc that it could realy hose your site up.&nbsp; You'll want to delete and data they own as well.<br>\r\n",
+    "PostedDate": "2008-06-16T06:39:08.14-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "99341",
+    "ThreadId": "29262",
+    "Html": "riscfl,<br>\r\nThank you for your input, I will try this.<br>\r\njaxjon<br>\r\n<div style=\"border-style:dotted none;border-color:rgb(170, 170, 170) -moz-use-text-color;border-width:0.1em medium;margin:1em 0em 2.5em 3em;padding:0.2em;font-style:italic\"><br>\r\nriscfl wrote:<br>\r\nJaxjon,&nbsp;You'll need to remove them from the ASP related database tables<br>\r\n<br>\r\naspnet_Membership<br>\r\naspnet_Users<br>\r\naspnet_UsersInRoles<br>\r\ndbo.MemberInfo<br>\r\ndbo.MemberProfile<br>\r\n(I think these are the only ones)<br>\r\n<br>\r\nKeep in mind that if any of the users own data like message threads, albums, blogs, etc that it could realy hose your site up.&nbsp; You'll want to delete and data they own as well.<br>\r\n<br>\r\n<br>\r\n</div>\r\n<br>\r\n",
+    "PostedDate": "2008-06-17T11:07:07.54-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

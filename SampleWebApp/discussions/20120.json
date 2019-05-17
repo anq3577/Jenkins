@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "66721",
+    "ThreadId": "20120",
+    "Html": "\r\nI cannot get the images held in http://www.myweb.com/Files/ to display in the editor. Is anyone else having a similar problem? I have scoured the net and found very little help on the subject. Only a suggestion to create subfolders in the nominated root directory (Files). Have tried tried this (http://www.myweb.com/Files/images) but to no avail. <b>Can anybody help please.</b><br /><br />",
+    "PostedDate": "2008-01-08T07:50:32.443-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "66867",
+    "ThreadId": "20120",
+    "Html": "\r\nI am also looking for the solution it is really disapointing !<br />You can look at the BlogEngine.NET project it's done but in a way i don't tell you about MetaWebLog<br />",
+    "PostedDate": "2008-01-08T23:11:19-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "67639",
+    "ThreadId": "20120",
+    "Html": "\r\nCan you describe your problem in more detail? When you say you can not get the images to display what do you really mean?  Do you get an error or you only get to display a red cross?  Please be more specific.<br /><br />I used to have a similar problem and found the way arround it.  I just want to make sure we had the same problem.<br />",
+    "PostedDate": "2008-01-13T06:55:29.073-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "67656",
+    "ThreadId": "20120",
+    "Html": "\r\nGo ahead and get the latest version of FCKEditor and the FCKEditor control. The latest FCKEditor fully qualifies the image URL. Maybe that'll help you out.<br />",
+    "PostedDate": "2008-01-13T08:11:58.393-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

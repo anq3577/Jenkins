@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:21:19.427-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi,\n \nI could use some help with this.\nI am now so far that I can show the Accordion. But it would be really nice if it would work like this:\nWhen you click on an event in the Events_Calendar or in Events_list, the related items is shown in Events_view.\n \nWhat I am looking for is that the related AccordionPane is opened automatically when you click on an event in Calendar or list.\n \n[url:http://site368.mysite4now.com/lexvis/webs/Events_Accordion.aspx]\n \nIf I am not mistaken the following piece of code should be adapted, and I guess we need some Java.\n \n \n<asp:HyperLink ID=\"HyperLink1\" runat=\"server\" Text='<%#Eval(\"title\") %>' NavigateUrl='<%# \"Events_view.aspx?Eventid=\" &Convert.ToString( Eval(\"ID\"))%>' ToolTip='<%# truncate(Convert.ToString(Eval(\"Bijzperdat\"))) %>' />\n \nThis is beyond my grasp. (for now)\n \nLex",
+    "LastUpdatedDate": "2013-05-15T23:46:44.627-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:21:18.427-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Accordion (ajax) as alternative to Events_list/view",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 826
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

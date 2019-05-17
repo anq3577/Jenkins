@@ -1,0 +1,108 @@
+[
+  {
+    "Id": "0",
+    "Name": "Version 3 Beta 1",
+    "DevelopmentStatus": "None",
+    "Description": "Version 3 Beta 1 offers a brand new approach to data. Version 3 Beta 1 includes SubSonic, a DAL generator. Along with this major change, more features have been added, most notibly the League tracker.\n\nThings to note:\n* Standard Version is only usable in Visual Studio Standard, Professional, or Team Suite.\n* Express Version is specifically optimized for the Visual Web Developer Express product\n* The upgrade from a v2 database to v3 requires more than just running an upgrade script *READ THE README*.\n\n* I am working on the C# version. I should have something ready soo.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2007-12-10T03:00:41.677-08:00",
+    "Files": [
+      {
+        "Id": "ba18cffb-88f9-45e9-bf6c-66f3810f82c5",
+        "FileName": "Standard (VB).zip",
+        "Url": "./0/ba18cffb-88f9-45e9-bf6c-66f3810f82c5",
+        "Type": "Source Code",
+        "UploadDate": "2007-07-27T17:12:44.643-07:00"
+      },
+      {
+        "Id": "d2748c75-9505-46af-bb02-f158b9847e1d",
+        "FileName": "Express (VB).zip",
+        "Url": "./0/d2748c75-9505-46af-bb02-f158b9847e1d",
+        "Type": "Source Code",
+        "UploadDate": "2007-07-27T17:12:44.923-07:00"
+      },
+      {
+        "Id": "44ffa754-1b03-48bb-9cc3-5007a2ac9d00",
+        "FileName": "v2 to v3 Beta 1 Upgrade.zip",
+        "Url": "./0/44ffa754-1b03-48bb-9cc3-5007a2ac9d00",
+        "Type": "Example",
+        "UploadDate": "2007-07-27T17:12:45.173-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "1",
+    "Name": "ClubStarterKit v3",
+    "DevelopmentStatus": "Planning",
+    "Description": "Production-ready version of ClubStarterKit v3",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2009-10-20T14:57:51.483-07:00",
+    "Files": []
+  },
+  {
+    "Id": "2",
+    "Name": "Club Starter Kit 2.0 Final",
+    "DevelopmentStatus": "None",
+    "Description": "After a few months of features and bug fixes, Club Starter Kit 2.0 is finally released.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2007-05-11T18:16:09.413-07:00",
+    "Files": [
+      {
+        "Id": "235429e7-4e4f-43c6-8cc1-9755eb7755f6",
+        "FileName": "Source.zip",
+        "Url": "./2/235429e7-4e4f-43c6-8cc1-9755eb7755f6",
+        "Type": "Source Code",
+        "UploadDate": "2007-05-11T18:16:37.367-07:00"
+      },
+      {
+        "Id": "0ff0aad8-1821-4a3a-835f-4a97d15c3e59",
+        "FileName": "Scripts.zip",
+        "Url": "./2/0ff0aad8-1821-4a3a-835f-4a97d15c3e59",
+        "Type": "Application",
+        "UploadDate": "2007-05-11T18:16:37.46-07:00"
+      },
+      {
+        "Id": "f3b8bcbb-bbc0-4409-af75-85e56099a5cb",
+        "FileName": "Club Starter Kit Documentation.pdf",
+        "Url": "./2/f3b8bcbb-bbc0-4409-af75-85e56099a5cb",
+        "Type": "Documentation",
+        "UploadDate": "2007-05-11T18:16:37.507-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "3",
+    "Name": "ClubStarterKit v3 Beta 2",
+    "DevelopmentStatus": "Planning",
+    "Description": "Complete rewrite from Beta 1 in C#",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2009-10-20T14:56:10.96-07:00",
+    "Files": []
+  },
+  {
+    "Id": "4",
+    "Name": "ClubStarterKit v3 Preview 2",
+    "DevelopmentStatus": "Planning",
+    "Description": "This will be an updated preview that will address any issues in the first preview along with new features. ",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2009-12-08T22:11:23.823-08:00",
+    "Files": []
+  },
+  {
+    "Id": "5",
+    "Name": "ClubStarterKit v3 Preview",
+    "DevelopmentStatus": "Beta",
+    "Description": "This preview is a completely rewritten version of the ClubStarterKit in C# with some new features and some features removed. The final version of ClubStarterKit 3 will contain the removed features that appeared in v2 and v3 beta 1. \n\nThis preview runs ASP.NET MVC 2 Beta with ASP.NET v4 under Visual Studio 2010 Beta 2. The solution will not run under Visual Studio 2008 or .NET Framework 3.5 or lower. All dependencies, other than Visual Studio 2010 Beta 2 and SQL Server, are included with the package. \n\n*+_PLEASE read the readme included in the root of the download package before attempting to run the website. _+*\n\n[url:Blog post about v3 preview|http://weblogs.asp.net/zowens/archive/2009/12/09/clubstartkit-is-reborn-with-a-new-release.aspx]",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2009-12-08T22:10:54.477-08:00",
+    "Files": [
+      {
+        "Id": "2c63e0c7-9264-4f95-bdb5-c2e0cb26e079",
+        "FileName": "clubstarterkit v3 preview.zip",
+        "Url": "./5/2c63e0c7-9264-4f95-bdb5-c2e0cb26e079",
+        "Type": "Source Code",
+        "UploadDate": "2009-12-08T22:02:22.033-08:00"
+      }
+    ]
+  }
+]

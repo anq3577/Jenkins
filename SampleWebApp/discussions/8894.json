@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "29060",
+    "ThreadId": "8894",
+    "Html": "\r\nIs there a c# version?  Sorry if this was asked before.<br /><br />Dan<br />",
+    "PostedDate": "2007-04-05T10:42:02.76-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "29087",
+    "ThreadId": "8894",
+    "Html": "\r\nIt was in the works but no one was really interested in helping with debuging it... a quickly convereted sample is in the source code download. I think we will get a C# release for 3.0 because it will be changed so drastically yet it should be easier to convert.<br />",
+    "PostedDate": "2007-04-05T13:56:38.07-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

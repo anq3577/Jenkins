@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "28868",
+    "ThreadId": "8837",
+    "Html": "\r\nSince no one else has reported this problem, it must be something I've done. But I can't figure it out. Navigation work fine on my local development server, but when hosted, I get the below error whenever navigating from the main menu to a page that is located in a folder. If the page is in the root directory, it works OK. <a href=\"http://version2.renegadesprints.org\" class=\"externalLink\">http://version2.renegadesprints.org<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a> On that site, Results, Photos and Rules are in the root, other pages are in sub-directories.<br /><br />Could this be due to the fact that this site is a sub-site of my primary domain, and if so, how can I fix it?<br /><br />Thanks,<br />Ed<br />----------------------------------------------------<br /><br />Cannot use a leading .. to exit above the top directory. <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />Exception Details: System.Web.HttpException: Cannot use a leading .. to exit above the top directory.<br /><br />Source Error: <br /><br />An unhandled exception was generated during the execution of the current web request. Information regarding the origin and location of the exception can be identified using the exception stack trace below.  <br /><br />Stack Trace: <br /><br /><br /><a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=HttpException%20%280x80004005%29%3a%20Cannot%20use%20a%20leading%20..%20to%20exit%20above%20the%20top%20directory.\">HttpException (0x80004005): Cannot use a leading .. to exit above the top directory.</a><br />   System.Web.Util.UrlPath.ReduceVirtualPath(String path) +3527366<br />   System.Web.Util.UrlPath.Reduce(String path) +84<br />   System.Web.Util.UrlPath.Combine(String appPath, String basepath, String relative) +355<br />   System.Web.XmlSiteMapProvider.GetNodeFromXmlNode(XmlNode xmlNode, Queue queue) +946<br />   System.Web.XmlSiteMapProvider.ConvertFromXmlNode(Queue queue) +299<br />   System.Web.XmlSiteMapProvider.BuildSiteMap() +1161<br />   System.Web.XmlSiteMapProvider.get_RootNode() +12<br />   System.Web.UI.WebControls.SiteMapDataSource.GetNodes() +219<br />   System.Web.UI.WebControls.SiteMapDataSource.GetPathNodeCollection(String viewPath) +35<br />   System.Web.UI.WebControls.SiteMapDataSource.GetView(String viewName) +37<br />   System.Web.UI.WebControls.SiteMapDataSource.System.Web.UI.IDataSource.GetView(String viewName) +7<br />   System.Web.UI.WebControls.Repeater.ConnectToDataSourceView() +329<br />   System.Web.UI.WebControls.Repeater.OnLoad(EventArgs e) +16<br />   System.Web.UI.Control.LoadRecursive() +47<br />   System.Web.UI.Control.LoadRecursive() +131<br />   System.Web.UI.Control.LoadRecursive() +131<br />   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +1061<br /><br /><br /><br />",
+    "PostedDate": "2007-04-04T06:30:57.567-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "28915",
+    "ThreadId": "8837",
+    "Html": "\r\nAre you using RC1? The problem is that you are referencing a style sheet and the ASP.NET themes are now utalized. I suggest taking like 81-83?? from your ASP.NET masterpage. The stylesheet links do not need to be there.<br />",
+    "PostedDate": "2007-04-04T12:12:30.437-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "28930",
+    "ThreadId": "8837",
+    "Html": "\r\nThis site is based on V2.0. I don't think you had implemented themes on that version, had you?<br /><br />Thanks,<br />Ed<br />",
+    "PostedDate": "2007-04-04T14:03:47.853-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "28949",
+    "ThreadId": "8837",
+    "Html": "\r\nAnything Pre-RC1 didn't have themes. I am curious to what version you are using... v2 beta 1 or 2? This is really wierd behavior... I would suggest that you add themes in by adding EnableThemes at the top of the masterpage to true and adding a new theme. You will also need to add a &lt;page theme=\"~~~~~\"&gt; to the web.config.<br /><br />Better yet, you could upgrade to RC1 if you are using beta 2... they are quite similar.<br />",
+    "PostedDate": "2007-04-04T17:22:45.853-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "28961",
+    "ThreadId": "8837",
+    "Html": "\r\nThe site was based on v2 beta 2. I downloaded RC1 today and will try to get it working on my hosted account without making any changes at all. Once that is running, I'll probably add my mods back into that release rather than modify the b2 version.<br /><br />Thanks,<br />Ed<br /><br />",
+    "PostedDate": "2007-04-04T19:12:34.49-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "29054",
+    "ThreadId": "8837",
+    "Html": "\r\nI have upgraded to RC1 and was surprised to see how easy it was, considering all the changes I had made to the Beta 2 release. I have run into a database problem though, and have posted it in the Issue Tracker section. <br /><br />The link in my original post still points to the Beta 2 version with the navigation problem. <a href=\"http://test.renegadesprints.org\" class=\"externalLink\">http://test.renegadesprints.org<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a> is my new version based on RC1. <br /><br />Thanks for the great work on RC1.<br />Ed<br />",
+    "PostedDate": "2007-04-05T10:05:04.957-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

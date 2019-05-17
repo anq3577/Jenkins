@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2008-03-18T17:37:31.17-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Brand new to this, I have been programming for a number of years but am new to ASP.NET.\n \nWhile playing with the kit found a bugs with the RSVP system.\n \nISSUE:\nThere is a place on the RSVP system that tells you how many more attendees permitted to attend. This is initially correct. If my max is 10 and I put in 3 it will say I have 7 left. If I leave the page and come back and check how many attendees can be added it always is decremented by 1, in the example it would now say 9\n \nBUG:\nIn the Events.vb file under the subroutine RSVPSanityCheck() there is a query statement \n\t\t\t\tDim sum As Integer = attnqry.GetCount(Attendance.Columns.Numofguest, where)\nThis does not return the number of attendees for this login, it returns the number of records.\n \nSOLUTION:\nChanged the query from GetCount to GetSum and added a check to make sure there was one record in the database before using the GetSum query. So now the code looks like this:\n \n        Public Shared Sub RSVPSanityCheck(ByVal EventID As Integer)\n            Dim attnqry As New Query(Tables.Attendance)\n            Dim where As New SubSonic.Where\n            where.ColumnName = Attendance.Columns.Eventid\n\t\t\twhere.ParameterValue = EventID\n\t\t\tIf attnqry.GetCount(Attendance.Columns.Numofguest, where) > 0 Then\n\t\t\t\tDim sum As Integer = attnqry.GetSum(Attendance.Columns.Numofguest, where)\n \n\t\t\t\tDim upqry As New Query(Tables.ClubEvent)\n\t\t\t\tupqry.AddWhere(ClubEvent.Columns.Id, EventID)\n\t\t\t\tupqry.AddUpdateSetting(ClubEvent.Columns.CurrentAttendance, sum)\n\t\t\t\tupqry.QueryType = QueryType.Update\n\t\t\t\tupqry.Execute()\n\t\t\tEnd If\n\t\tEnd Sub\n \nLet me know if you agree with this fix. There might be a better way to make sure there are records available before summing.\n \nThanks,\n \nJim Shelton",
+    "LastUpdatedDate": "2013-05-15T23:46:26.913-07:00",
+    "PlannedForRelease": "ClubStarterKit v3 Beta 2",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-12-20T21:19:16.69-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "RSVP Issues",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 4885
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 10393.",
+      "PostedDate": "2008-03-18T17:37:31.17-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:08.207-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:26.913-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:22:50.583-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "The ability to display information about each page the number of hit that page has had",
+    "LastUpdatedDate": "2013-05-15T23:46:44.22-07:00",
+    "PlannedForRelease": "v2 Beta 2",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:22:47.943-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Hit Count",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 880
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "How about also know how many users are currently on the website",
+      "PostedDate": "2007-04-25T14:22:48.567-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Chatmodus?",
+      "PostedDate": "2007-04-25T14:22:48.927-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I don't think that it would be too hard to add how many are currently online (roughly).  It could be as simple as adding it to the bottom of default.master.",
+      "PostedDate": "2007-04-25T14:22:49.38-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "All implemented, and uploaded",
+      "PostedDate": "2007-04-25T14:22:49.753-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:22:50.583-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:29.667-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:44.22-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

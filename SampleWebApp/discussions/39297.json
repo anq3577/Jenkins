@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "130387",
+    "ThreadId": "39297",
+    "Html": "With the latest checkin (<span style=\"border-collapse:collapse;font-family:'segoe ui';font-size:13px\">15760)<span style=\"border-collapse:separate;font-family:'times new roman';font-size:16px\"> when clicking on the edit content button I'm redirected to the login page then the page error's out stating the redirect url is the cause.  Has anyone else had this issue?</span></span>",
+    "PostedDate": "2008-11-05T18:49:03.183-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "132180",
+    "ThreadId": "39297",
+    "Html": "Mystery solved, in the web.config the location for the webcontent editor requires the user to be in the members role which mind you doesn't exist and cannot be found anywhere else in the application.&nbsp; Enjoy!<br>\r\n",
+    "PostedDate": "2008-11-12T18:28:49.633-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "141750",
+    "ThreadId": "39297",
+    "Html": "Thank You very much that helped.\r\n",
+    "PostedDate": "2008-12-18T20:12:41.39-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

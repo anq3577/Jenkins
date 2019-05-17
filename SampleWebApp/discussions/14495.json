@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "47146",
+    "ThreadId": "14495",
+    "Html": "\r\nIs there any easy way to change the location of the pictures from the database to the file system on Final V.2. I do not have time to change to the V.3 yet, but hope to soon. On my current site it says database full and I am in desperate need to post pics. <br /><br />Thanks.<br />",
+    "PostedDate": "2007-08-29T16:12:12.863-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "47152",
+    "ThreadId": "14495",
+    "Html": "\r\nI don't think there is a way. There might be a changeset you can go to. Just look for something like \"initial photos on file system\".<br />",
+    "PostedDate": "2007-08-29T17:21:58.463-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "47306",
+    "ThreadId": "14495",
+    "Html": "\r\nDo you have any other ideas for fixing this problem?<br /><br />thanks. <br />dpr00<br />",
+    "PostedDate": "2007-08-30T15:50:49.9-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

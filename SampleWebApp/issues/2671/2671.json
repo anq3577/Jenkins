@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-06-28T14:40:16.867-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Add a Answers field (boolean/bit) for answer. The user can mark the reply to a post as Answer if they were the origional author. The number of answers will be syndicated for user profile page.",
+    "LastUpdatedDate": "2013-05-15T23:46:34.223-07:00",
+    "PlannedForRelease": "Version 3 Beta 1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-06-27T16:42:52.203-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Forum Thread - Mark As Answer",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 2671
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 3388.",
+      "PostedDate": "2007-06-28T14:40:16.867-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:16.763-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:34.223-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

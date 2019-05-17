@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "37088",
+    "ThreadId": "11452",
+    "Html": "\r\nI'm having an issue uploading an AVATAR on my Member Details page.  I use the browse botton to select an image. Then I click on the upload image botton, but nothing happens.<br /><br />I'm using SQL 2000 and the database is setup as Case Sensitive.<br /><br />I've seen where people have encountered this problem and then seem to have fixed it, but they don't list how it was fixed.<br /><br />Any help would be appreciated.<br /><br />Thanks...<br />",
+    "PostedDate": "2007-06-15T11:13:41.553-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37096",
+    "ThreadId": "11452",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />deforgej wrote:<br />I'm having an issue uploading an AVATAR on my Member Details page.  I use the browse botton to select an image. Then I click on the upload image botton, but nothing happens.<br /><br />I'm using SQL 2000 and the database is setup as Case Sensitive.<br /><br />I've seen where people have encountered this problem and then seem to have fixed it, but they don't list how it was fixed.<br /><br />Any help would be appreciated.<br /><br />Thanks...<br /><br /></div><br />Please disregard....I found the problem.<br /><br />In the AvatarImageFetch.ashx file I had to change 'memberinfo' on the following line from<br /><br />Dim qry As String = \"select avatar from memberinfo where memberid=@memberid\"<br /><br />to<br /><br />Dim qry As String = \"select avatar from MemberInfo where memberid=@memberid\"<br /><br />When you are using a SQL DB configured to be Case Sensitive, case does matter.<br /><br />Thanks...<br />",
+    "PostedDate": "2007-06-15T12:02:09.723-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37098",
+    "ThreadId": "11452",
+    "Html": "\r\nGood thing we will be using SubSonic then... they take care of the case for us.<br />",
+    "PostedDate": "2007-06-15T12:06:59.2-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

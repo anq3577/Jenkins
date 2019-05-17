@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "254538",
+    "ThreadId": "74415",
+    "Html": "<p>I have just started working with the starter kit.&nbsp; When I attempt to add a new Album, it is not added and no indication of the error.&nbsp;</p>\r\n<p>Other parts of the project seem to be working.&nbsp; I did change the attributes of a few of the columns in the Album table to allow nulls but that did nothing.</p>\r\n<p>Is there a way to capture error with Try block?</p>\r\n<p>Bob Storrs</p>",
+    "PostedDate": "2009-11-07T08:59:29.79-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "260080",
+    "ThreadId": "74415",
+    "Html": "<p>I had this same error and found that the issue was with the SQL trying to add the album.&nbsp; This insert is in the Photo/new.aspx page was not correct.&nbsp; the value &quot;private&quot; needed to be &quot;isprivate&quot;</p>\r\n<p><span style=\"color:#ff0000;font-size:x-small\"><span style=\"color:#ff0000;font-size:x-small\">\r\n<p>InsertCommand</p>\r\n</span></span><span style=\"color:#0000ff;font-size:x-small\"><span style=\"color:#0000ff;font-size:x-small\">=&quot;INSERT INTO Albums(title, parentid, ownerid, private) VALUES (@title, @parentid, @ownerid, @private)&quot;</span></span></p>\r\n<p><span style=\"color:#000000\">it should be</span></p>\r\n<p>&nbsp;<span style=\"color:#ff0000;font-size:x-small\"><span style=\"color:#ff0000;font-size:x-small\">InsertCommand</span></span><span style=\"color:#0000ff;font-size:x-small\"><span style=\"color:#0000ff;font-size:x-small\">=&quot;INSERT INTO Albums(title, parentid, ownerid, isprivate) VALUES (@title, @parentid, @ownerid, @private)&quot;</span></span></p>\r\n<p>&nbsp;</p>",
+    "PostedDate": "2009-11-23T20:09:58.93-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

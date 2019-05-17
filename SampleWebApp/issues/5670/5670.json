@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "We already have this ability... we just need it to be better :)",
+    "ClosedDate": "2008-03-18T16:53:47.497-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Have the ability to upload different file types to the News or the Events that can then be linked to from the Article or Event.\n \nThis would allow for PDF, Word, Excel or other file types to be uploaded and then accessable for others to link to",
+    "LastUpdatedDate": "2013-05-15T23:46:25.757-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2008-03-10T05:10:40.997-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Upload to News and Events",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 5670
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Agreed.",
+      "PostedDate": "2008-03-17T05:28:12.857-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I'm new to ASP.Net but found sample code on the 'net to at least get files onto the webserver.  I haven't plugged it into the CSK CSS, etc though.\r\n\r\nhttp://www.15seconds.com/issue/010504.htm",
+      "PostedDate": "2008-03-18T06:06:22.2-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-03-18T16:53:47.497-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:06.777-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:25.757-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

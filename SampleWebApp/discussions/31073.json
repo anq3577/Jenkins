@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "103327",
+    "ThreadId": "31073",
+    "Html": "Am I missing something on how to associate a photo album with a new article under News? I select my Album but it never displays when viewing the article in question.&nbsp;The correct AlbumID is written to the dbo.annoucements table.&nbsp;Has somebody already fixed this or did I break it?<br>\r\n<br>\r\n",
+    "PostedDate": "2008-07-08T05:26:19.453-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "104064",
+    "ThreadId": "31073",
+    "Html": "Hi,<br>\r\n<br>\r\nSorry, but I'm not able to reproduce this issue at the moment.<br>\r\nCan you please post some more information?<br>\r\n<br>\r\nGreets,<br>\r\nThorsten<br>\r\n",
+    "PostedDate": "2008-07-10T23:30:51.48-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "113110",
+    "ThreadId": "31073",
+    "Html": "I noticed in&nbsp;older&nbsp;changesets in App_Code/BLL/News.vb:<br>\r\n<br>\r\nLines 95 and 96 read -&nbsp;<span style=\"font-size:13px;color:#0000ff\"><span style=\"font-size:13px;color:#0000ff\">\r\n<p>Dim </p>\r\n</span>\r\n<p>&nbsp;</p>\r\n</span>\r\n<p>\r\n<p><span style=\"font-size:13px\">qry </span><span style=\"font-size:13px;color:#0000ff\"><span style=\"font-size:13px;color:#0000ff\">As</span></span><span style=\"font-size:13px\"> </span><span style=\"font-size:13px;color:#0000ff\"><span style=\"font-size:13px;color:#0000ff\">New</span></span><span style=\"font-size:13px\"> Query(Tables.Images)\r\n<p>qry.AddWhere(Images.Columns.Album, albumid)</p>\r\n</span>\r\n<p>&nbsp;</p>\r\n<p>They should say Image not Images.<br>\r\n<br>\r\nGetImages() has been reworked it seems in newer changesets.</p>\r\n",
+    "PostedDate": "2008-08-22T18:31:40.8-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "113112",
+    "ThreadId": "31073",
+    "Html": "Robert&nbsp;- you resolved this issue for me!&nbsp; Thanks!!&nbsp; I have no idea what changeset I;m using at this point. Would be nice if each of the files contained some header information about changeset #!&nbsp; :)<br>\r\n<br>\r\n",
+    "PostedDate": "2008-08-22T18:59:05.553-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "113113",
+    "ThreadId": "31073",
+    "Html": "Robert - It looks like the A HREF for each photo was trying to fetch an Album with the ID of each photo. So I changed that line to&nbsp;<br>\r\n<br>\r\n&lt;a href='&lt;%# &quot;../UserControls/imagefetch.ashx?size=2&amp;ImageID=&quot; &amp; CSTR(Eval(&quot;id&quot;)) %&gt;' target=&quot;_blank&quot;&gt;<br>\r\n<br>\r\n",
+    "PostedDate": "2008-08-22T19:07:09.807-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

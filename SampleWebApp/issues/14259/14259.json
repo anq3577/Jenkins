@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Just, after install, got ClubStarterKit (CSK) v3 Preview running, hitting some buttons to test its functionality, on page Photos to add my very first album, the CSK gave me right away the rather general error \"Object reference not set to an instance of an object\" in class ...\\ClubStarterKit.Infrastructure\\UI\\Html\\HiddenForHelper.cs. During debugging this error arises in a piece of Linq code, It seems some mysterious hidden values are not set ??? \n \nerror on line 32 \nvar hiddenValues = from prop in t.GetProperties()\n                    >>>>  let value = prop.GetValue(val, null).ToString() <<<<\n                      where value != prop.PropertyType.ToString()\n                      select string.Format(HiddenInputFormat, name, prop.Name, value);articular part\nI'm yet not that familiar with Linq (however I want to) I guess the prop.GetValue(val, null).ToString() is null / nothing something is missing ???\n \nMessage = \"Method may only be called on a Type for which Type.IsGenericParameter is true.\"\nSource = \"mscorlib\"\n \nFinally I found it! \nAfter setting up several watches on variables a was able to track down that in my case I did not had given a value for the Signature and Bio parameters during setting the first (admin) user. So, these parameters may be left empty, the table Album as well allows nullable values, \"on-the-road-in-the-code\" if one of these parameters are left empty (may be more optional parameters) do arise the nasty error...\nSo-far-So-Good\nNext step trying to delete ...",
+    "LastUpdatedDate": "2013-02-13T19:37:03.917-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2010-09-16T00:30:36.843-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Creating new (very first) album >> error",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 14259
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "Id": "35790",
+    "ThreadId": "11053",
+    "Html": "\r\nWhen I send email to members from CSK , I got this error message:<br /><br /><br /><br />Server Error in '/' Application.<br />--------------------------------------------------------------------------------<br /><br />There is no row at position 0. <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />Exception Details: System.IndexOutOfRangeException: There is no row at position 0.<br /><br />Source Error: <br /><br /><br />Line 375:        Public Default ReadOnly Property Item(ByVal index As Integer) As MemberInfoRow<br />Line 376:            Get<br />Line 377:                Return CType(Me.Rows(index),MemberInfoRow)<br />Line 378:            End Get<br />Line 379:        End Property<br /><br /><br />Source File: C:\\WINDOWS\\Microsoft.NET\\Framework\\v2.0.50727\\Temporary ASP.NET Files\\root\\7c1f888e\\fa7c875e\\App_Code.rtsv-ahg.10.vb    Line: 377 <br /><br />Stack Trace: <br /><br /><br /><a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=IndexOutOfRangeException%3a%20There%20is%20no%20row%20at%20position%200.\">IndexOutOfRangeException: There is no row at position 0.</a><br />   System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex) +1880010<br />   System.Data.DataRowCollection.get_Item(Int32 index) +14<br />   MemberInfoDataTable.get<i>Item(Int32 index) in C:\\WINDOWS\\Microsoft.NET\\Framework\\v2.0.50727\\Temporary ASP.NET Files\\root\\7c1f888e\\fa7c875e\\App</i>Code.rtsv-ahg.10.vb:377<br />   Admin_Email.GetRecipients() in c:\\home\\skoelvig\\www\\Admin\\Email.aspx.vb:139<br />   Admin<i>Email.btnSend</i>Click(Object sender, EventArgs e) in c:\\home\\skoelvig\\www\\Admin\\Email.aspx.vb:50<br />   System.Web.UI.WebControls.Button.OnClick(EventArgs e) +105<br />   System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument) +107<br />   System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument) +7<br />   System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument) +11<br />   System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData) +33<br />   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +5102<br /><br /><br />Can anyone help me<br />",
+    "PostedDate": "2007-06-05T08:25:23.103-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "35879",
+    "ThreadId": "11053",
+    "Html": "\r\nDid you configure it right? Your email settings NEED to appear in 2 placed in the web.config, which is in the docs.<br />",
+    "PostedDate": "2007-06-05T22:57:10.983-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "35902",
+    "ThreadId": "11053",
+    "Html": "\r\nYes I have configured web.config in 2 places, and I still receive this error message<br />",
+    "PostedDate": "2007-06-06T03:18:28.63-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36323",
+    "ThreadId": "11053",
+    "Html": "\r\nCan you send me 3 files:<br /><br />web.config (WITH YOUR PASSWORDS STARED OUT)<br />Email.aspx<br />Email.vb<br />",
+    "PostedDate": "2007-06-10T12:53:14.867-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36351",
+    "ThreadId": "11053",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Can you send me 3 files:<br /><br />web.config (WITH YOUR PASSWORDS STARED OUT)<br />Email.aspx<br />Email.vb<br /><br /></div><br />Looks like it isn't a mailing issue but a database issue. It tries to create a list based on a empty dataset (or some thing like that). Maybe no group has been selected when sending the e-mail<br />",
+    "PostedDate": "2007-06-10T23:32:11.797-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36381",
+    "ThreadId": "11053",
+    "Html": "\r\nSounds like we need to put in a statement in the code if no roles are selected, it is sent to everyone by default.<br />",
+    "PostedDate": "2007-06-11T06:56:52.98-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36404",
+    "ThreadId": "11053",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Can you send me 3 files:<br /><br />web.config (WITH YOUR PASSWORDS STARED OUT)<br />Email.aspx<br />Email.vb<br /><br /></div><br />How can I send you these files?<br />",
+    "PostedDate": "2007-06-11T11:30:56.76-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36411",
+    "ThreadId": "11053",
+    "Html": "\r\nemail... zowens@eagleenvision.net<br />",
+    "PostedDate": "2007-06-11T12:18:31.573-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36421",
+    "ThreadId": "11053",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />email... zowens@eagleenvision.net<br /><br /></div><br />You have Email<br />",
+    "PostedDate": "2007-06-11T12:35:45.167-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37743",
+    "ThreadId": "11053",
+    "Html": "\r\nMarra, download the latest build and see if that fixes it. If not, let me know.<br />",
+    "PostedDate": "2007-06-20T22:12:53.41-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "80898",
+    "ThreadId": "11053",
+    "Html": "\r\nWe had the same issue in our site and found out it was a database issue.  From my findings, somehow a user account can be created for the site, populating the <b>dbo.aspnet_Users</b> table in the DB, but for certain users it didn't populate the <b>dbo.MemberInfo</b> table.  This caused the user information to be incomplete and I guess the Send Email function needs something in the dbo.MemberInfo table to send emails.  To fix the issue I deleted the users account and asked them to re-register to the website.  Before doing that I created a <b>Foreign Key Relationship</b> between the two tables in the database.<br /><br />I'm guessing the error stems from perhaps a glitch in network traffic when a user is registering.  If they don't get to the second screen where they enter their name, address, phone, etc... the dbo.MemberInfo table doesn't become populated and that is when you start having issued sending emails to registered users if that account is included in the security\\distribution group you are sending the email to.<br />",
+    "PostedDate": "2008-03-16T09:39:11.81-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

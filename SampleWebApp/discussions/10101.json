@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "32754",
+    "ThreadId": "10101",
+    "Html": "\r\n/Forum/Topics.aspx<br />Invalid operator exception:<br />The 'SkinId' property can only be set in or before the Page_PreInit event for static controls. <br /><br />/Locations/Edit.aspx<br />Can't edit description or direction fields. (which means you cant save location as description filed is required.)<br />Upload image \"Cancel Selection\" does not fit within button<br /><br />/Events/Edit.aspx<br />Can't edit link field, can't edit description filed.<br /><br />/Blogs/Addpost.aspx<br />Can't edit \"text\" field (I think it was inteded to say description)<br />SQL Exception: Cannot insert the value NULL into column 'Text', table <br /><br />Can't see password field. on default.aspx<br /><br />Can't locate my Broken images issue?<br />image link to wink_smile.gif still broken. see /news/list.aspx<br /><br />Theme MadTri<br />RSS image and print image still broken.<br />CalendarIcon.png still broken<br /><br />Multiple controls with the same ID 'Image2' were found<br /><br /><br />Still receive Default.ASPX anomaly.<br />",
+    "PostedDate": "2007-05-10T07:20:53.177-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32775",
+    "ThreadId": "10101",
+    "Html": "<br />The resource cannot be found (Logout Execution)<br /><br /><br />",
+    "PostedDate": "2007-05-10T09:25:00.863-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32776",
+    "ThreadId": "10101",
+    "Html": "\r\nBlog comments image missing or reference broken.<br /><br />No Photo image missing or reference broken.<br /><br />",
+    "PostedDate": "2007-05-10T09:42:47.517-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32839",
+    "ThreadId": "10101",
+    "Html": "\r\nchanging the Skin ID to  ImageUrl='&lt;%# GetIcon(CType(Eval(\"section\"), boolean), CType(Eval(\"locked\"), boolean)) %&gt;' /&gt; from earlier version allows the page to display, but the image does not show.<br /><br />I will begin to go the the forms.css to see if it is missing there.<br />",
+    "PostedDate": "2007-05-10T19:33:05.04-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32937",
+    "ThreadId": "10101",
+    "Html": "\r\nCHECK THE LATEST BUILDS. I have been working hard to get this issue resolved and I think I have done it in the latest changesets.<br />",
+    "PostedDate": "2007-05-11T14:48:32.933-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

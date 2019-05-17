@@ -1,0 +1,100 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Unable to fix",
+    "ClosedDate": "2007-05-21T03:39:27.507-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Wishlistitem...\n \nWhen you try to post a message in Forum, you get directed to login, and after that you get back to where you were. (which is rather cool imo)\n \nI think it would be nice if that worked for the entire Clubsite.\nWhen you log in with Events or News you now go back to Default if I am not mistaken.",
+    "LastUpdatedDate": "2013-05-15T23:46:42.673-07:00",
+    "PlannedForRelease": "v2 RC1",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:34:07.787-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Redirect back to where you logged in",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 1255
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "That is driven by the ASP.NET membership provider. You can implament this by using the web.config.",
+      "PostedDate": "2007-04-25T14:34:08.397-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I don't completely understand what you mean. Assuming a setting like that is \"sitewide\", when it works with the forum, why doesnt it work in other pages then?Or does a page need some sort of reference for the setting in web.config to kick in?\r\n\r\nDon't you agree it would be nice if all pages in the Starter Kit would act in the same (forumlike) way?",
+      "PostedDate": "2007-04-25T14:34:08.77-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Is this what you mean?If the page is designated for Administrators only, then it goes to ~/member/login.aspx?ReturnURL=[THIS PAGE] and then it kicks over to the page when the admin is logged in. Or is it that every time you click login you be redirected once you are kicked over to that page?",
+      "PostedDate": "2007-04-25T14:34:09.147-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "why not redirect back to the referral page when someone is going to login.aspx so it would work from any page.",
+      "PostedDate": "2007-04-25T14:34:09.52-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I think we all mean the same. English is not my native speech, so I will try to point out my \"problem\" step by step.\r\n\r\nIn Forum:\r\n\r\nWhen a User wants to start a Thread, he gets redirected to Login, after Login he gets back to the Page and he can start that Thread.\r\n\r\nIn News and Events:When Admin wants to Edit, he clicks Login, gets directed to Login page, but he does not return to News or Events.",
+      "PostedDate": "2007-04-25T14:34:09.88-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "yes, me neither could find a solution. my client wanted me change the system, so that the normal site users can also create topics (normally, only admins can). \r\n\r\nI tried to edit the credentials (IsAdmin, IsAuthenticated etc), however, it somehow redirected to login page, when a user wanted to create a new topic.\r\n\r\nI have solved it by adding a new page with only topic adding form and removing the topic editing feature.\r\n\r\nWhere can I edit easily those kind of settings? Or, are there any of them?",
+      "PostedDate": "2007-04-25T14:34:10.27-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "This is in the web.config where the forums/topics.aspx role is stored. What you are saying is needed is that when a user goes to login.aspx, they are directed to the previous page. ",
+      "PostedDate": "2007-04-25T14:34:10.63-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:34:11.38-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:34:12.613-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-21T03:39:27.507-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:27.37-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:42.673-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "34162",
+    "ThreadId": "10553",
+    "Html": "\r\nAnybody know what settings are required in the Web.config file<br />to send mail to Gmail account ?<br /><br />Thanks<br />",
+    "PostedDate": "2007-05-22T05:43:13.507-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "34243",
+    "ThreadId": "10553",
+    "Html": "\r\nNot sure... you will need to look at their documentation for SMTP email. We can't support that sort of thing here.<br />",
+    "PostedDate": "2007-05-22T12:39:51.913-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

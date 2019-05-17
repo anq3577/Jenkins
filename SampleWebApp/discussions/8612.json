@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "28058",
+    "ThreadId": "8612",
+    "Html": "\r\nhi all<br /><br />Thanks for the code great for me so far.<br /><br />I have a small problem in that when I vote I get no error or anything but the vote is not saved to the db?<br /><br />i can add polls and answers and comments etc. all fine but the vote does not work<br /><br />Any ideas?<br /><br />TIA<br /><br />Joe<br />",
+    "PostedDate": "2007-03-27T11:49:21.787-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "28067",
+    "ThreadId": "8612",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />FruitBat wrote:<br />hi all<br /><br />Thanks for the code great for me so far.<br /><br />I have a small problem in that when I vote I get no error or anything but the vote is not saved to the db?<br /><br />i can add polls and answers and comments etc. all fine but the vote does not work<br /><br />Any ideas?<br /><br />TIA<br /><br />Joe<br /><br /></div><br />We are not going to put the poll control in v2. We have had issues with it right after beta 1. We will be, however, puting our own version in v3.<br />",
+    "PostedDate": "2007-03-27T13:56:44.827-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "28386",
+    "ThreadId": "8612",
+    "Html": "\r\nThanks,<br /><br />Any idea on eta for V3. I want to develop some additional functions but if V3 is close then I will wait until after the release. I will of course post up any developments I do if they of interest to others.<br /><br />Joe<br />",
+    "PostedDate": "2007-03-30T03:39:01.63-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "28418",
+    "ThreadId": "8612",
+    "Html": "\r\nRC1 is on Monday and the final build will be on April 8th (hopefully!). Let me know what you are working on... if you have some time, I will give you TFS access.<br />",
+    "PostedDate": "2007-03-30T08:43:21.91-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "30508",
+    "ThreadId": "8612",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />RC1 is on Monday and the final build will be on April 8th (hopefully!). Let me know what you are working on... if you have some time, I will give you TFS access.<br /><br /></div><br />Great I have just download rc1 and will take a look tonight.<br /><br />I am working on a bowling league object to incorperate into the site. Player, Scores, team scores, league table player averages etc. etc.<br />I am well down the road just working on team captian functions and stuff.<br /><br />I would be interested in contributing and I use TFS at work so should be ok with it here.<br /><br />Joe<br />",
+    "PostedDate": "2007-04-19T10:28:30.247-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

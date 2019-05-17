@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "36881",
+    "ThreadId": "11390",
+    "Html": "\r\nHello again, thanks for this site by the way, Ive really made head way with my club site and hope to be going live with it soon.<br /><br />How can I change the date format to that we use in the UK and set the time to British summer time?<br /><br />Thanks Again<br />",
+    "PostedDate": "2007-06-14T03:16:25.673-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36953",
+    "ThreadId": "11390",
+    "Html": "\r\nIt should just work out-of-the-box whatever time zone it is.<br /><br />We will have better support for the whole Time Zone thing once Visual Studio 2008 (and v3.5 of the .NET Framwork) ships.<br />",
+    "PostedDate": "2007-06-14T13:01:13.557-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

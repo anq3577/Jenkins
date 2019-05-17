@@ -1,0 +1,146 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-07-09T22:27:01.91-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "This is not a code issue, but I have a member who has a paricularly long email address and it causes havoc with the margins, etc. on the right div.  Is pushes everything down.  I have attached a word doc the show the issue.\n \nIs there a way to wrap the text in the membership boxes?",
+    "LastUpdatedDate": "2013-05-15T23:46:32.753-07:00",
+    "PlannedForRelease": "Version 3 Beta 1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-07-09T12:07:24.627-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Membership Page Issue",
+    "Type": {
+      "Name": "Task",
+      "Id": 2
+    },
+    "VoteCount": 2,
+    "Id": 2755
+  },
+  "FileAttachments": [
+    {
+      "FileId": 402,
+      "FileName": "membership-page-issue.doc",
+      "DownloadUrl": ".\\402"
+    },
+    {
+      "FileId": 403,
+      "FileName": "odd.doc",
+      "DownloadUrl": ".\\403"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "I get a similar problem, when I add a new news item, and I have seen this when I cut and paste some txt from a e-mail or, in the example attached, I have copied a table from my results section and pasted it in my news item.  It will destroy the formating.",
+      "PostedDate": "2007-07-09T14:17:50.323-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-09T14:17:51.057-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "What you can do is truncate the text.\r\n\r\nShared_Routines.truncate(Eval(\"Email\").ToString(), 22) \r\n\r\n22 is the # caracters... you can customize that.\r\n\r\nTell me the magic # of characters and let me know... I will put it in once you figure out what # fixes your problem.",
+      "PostedDate": "2007-07-09T19:10:01.993-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-09T19:10:08.04-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "For me, it looks like 30 is max, and that leaves no space in the box.  \r\n\r\nI would say 29 to leave a little white space.\r\n\r\n",
+      "PostedDate": "2007-07-09T20:27:32.287-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-09T22:00:44.05-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Resolved with changeset 3539.",
+      "PostedDate": "2007-07-09T22:27:01.91-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "this wont help me with my news formating issue, have a look at my \"odd.doc\", any ideas?",
+      "PostedDate": "2007-07-15T13:40:36.99-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Dazalock, this has carried over to another issue: http://www.codeplex.com/ClubStarterKit/WorkItem/View.aspx?WorkItemId=2790",
+      "PostedDate": "2007-07-15T16:12:07.757-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "No that describes photo's, this issue is where I cut and paste certain txt into a new news item, throws my formating on the home page all over the place.\r\n\r\nFor example, if you want to see it, try pasting this into a news item on your site to see if it happens.\r\n\r\nCongratulations to Poole Runners on a very fine victory in Sussex yesterday. It was a truly memorable event, beating big clubs like Crawley and Belgrave so comprehensively, and the club should be extremely proud of everyone who took part. The individual results are attached.The final match scores were as follows:Poole Runners             206.5 points Crawley                       165 Sutton/Belgrave            155 Horsham                      133.5 Redhill                          96 Istead & Iford                 86 Swale                           62A very big thankyou too to the drivers, Mike Phillips and Pete Moore, and to Pete, Mike and Rex Bale for officialling. It reflects well on the club to have such competent officials, as well as athletes who step in to help out, as Peter Budden and Jon Boyle did yesterday. The final match of the season is at the new track at Crawley on 4 August. This is a very big fixture if we want to get promotion. This time we are up against East Grinstead (the form team), Holland Sports and Serpentine, all of whom are strong clubs. We need to come at least 2nd. Unfortunately I will be away on holiday, and so will James, Mike and Nic. Jon will be at the South of England Combined Events Championships at Bedford. So we really need all the available athletes to be there to support Keith Fraser, who will again step in as acting team captain/manager for the day. Please can everyone e-mail me to say whether or not they can turn out for the team on that day, and also whether they can and are willing to drive. Many thanks, DavidDavid Ozanne",
+      "PostedDate": "2007-07-16T02:57:13.223-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Scrub that, when I pasted that from this site into my club site it was fine, guess there must be some formating being removed, I will investigate further",
+      "PostedDate": "2007-07-16T03:00:16.557-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Z2Bass can I forward you the e-mail, so you can see what happens when you paste the contents into the news section?",
+      "PostedDate": "2007-07-16T09:25:39.28-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Yea... zowens@eagleenvision.net",
+      "PostedDate": "2007-07-16T09:44:11.973-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Zach,\r\n\r\nI am looking at 3560 and trying to find this code change, or something similar.  Can you point out where it is at?\r\n\r\nShared_Routines.truncate(Eval(\"Email\").ToString(), 22) \r\n\r\n",
+      "PostedDate": "2007-07-16T11:21:58.587-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "line 130\r\n\r\nText='<%# Shared_Routines.truncate(ShowEmail(Eval(\"memberid\")), 28) %>' />",
+      "PostedDate": "2007-07-16T17:42:17.16-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 7/9/2007 10:27 PM",
+      "PostedDate": "2007-11-22T04:40:55.02-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 7/9/2007 10:27 PM",
+      "PostedDate": "2007-12-05T07:48:34.99-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:15.077-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:32.753-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "23884",
+    "ThreadId": "7394",
+    "Html": "\r\nHi<br /><br />I have deployed this site at:<br /><br /> www.worsleyparkgolf.mawhitfield.net<br /><br />I will flesh it out over the coming weeks.<br /><br />So far so good. I like what you've done with it......<br /><br />Cheers<br /><br />MARK.<br />",
+    "PostedDate": "2007-02-19T03:47:57.777-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "23975",
+    "ThreadId": "7394",
+    "Html": "\r\nPlease just remember that this is still in Beta, and we are still working on finding all the bugs in it.<br />",
+    "PostedDate": "2007-02-19T14:11:46.94-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24068",
+    "ThreadId": "7394",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />NonStopMark wrote:<br />Please just remember that this is still in Beta, and we are still working on finding all the bugs in it.<br /><br /></div><br />No problems....I did spot a problem with the FCKEDitor on the NEws edit screen but I have fixed this by downloading and installing the latest version. The calendar icons do not appear to display put hovering and clicking over them still invokes the calendar view.<br /><br />Cheers<br /><br />NonStopMark.<br />",
+    "PostedDate": "2007-02-20T00:12:40.38-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24476",
+    "ThreadId": "7394",
+    "Html": "\r\nHow is it now?<br />",
+    "PostedDate": "2007-02-22T16:31:52.67-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24493",
+    "ThreadId": "7394",
+    "Html": "\r\nHi,<br /><br />The Editor is working fine but the calendar icons do not appear for the events screen when specifying date range. I cannot see these images in the images folder?<br /><br />Selecting a picture to use for an event/news item doe not appear to work for exisiting folders or uploaded images. As soon as I assign an image once, refreshed it gives me the usual crossed out white image icon like it can't find it and yet it is in the gallery?<br /><br />Thanks for stopping by...<br /><br />Cheers<br /><br />MARK.<br /><br />http://www.worsleyparkgolf.mawhitfield.net<br />",
+    "PostedDate": "2007-02-23T00:19:49.93-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24585",
+    "ThreadId": "7394",
+    "Html": "\r\nIf you mean the images beside the Select Date and Times on the edit event page, I put an issue and the fix in for that last night.  Zack made those changes in the latest source download.<br />",
+    "PostedDate": "2007-02-23T18:44:31.237-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

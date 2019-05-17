@@ -1,0 +1,80 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2008-03-18T17:03:46.513-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "This sample code is really great.  I have learned a lot of ASP 2.0  from this code.  \n \nWhen  I  click  the \"printer friendly version\" hyperlink in news/view.aspx, I have following error:\nUsing themed css files requires a header control on the page. (e.g. <head runat=\"server\" />). \n \nCan anyone help me how to fix the problem?  Thanks,",
+    "LastUpdatedDate": "2013-05-15T23:46:26.03-07:00",
+    "PlannedForRelease": "ClubStarterKit v3 Beta 2",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2008-02-27T10:27:44.553-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Printer Friendly Version in news/view.aspx",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 5533
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Add the runat=\"server\" to the head tag. I had the same problem.",
+      "PostedDate": "2008-02-27T17:48:44.13-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Thanks,  it works now.",
+      "PostedDate": "2008-03-03T06:37:31.67-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-03-18T16:58:41.84-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-03-18T17:00:06.403-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-03-18T17:00:09.2-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Resolved with changeset 10388.",
+      "PostedDate": "2008-03-18T17:03:46.513-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:07.093-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:26.03-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

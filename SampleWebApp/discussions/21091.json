@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "70177",
+    "ThreadId": "21091",
+    "Html": "\r\nI am using Club Starter Kit 2 final <br />Some how I got two ApplicationNames.<br /><br />ApplicationName  LoweredApplicationName  ApplicationId  Description<br />          /                               /                         XXXXXXX        NULL<br />      Goers\t                       goers\t                     XXXXXXX        NULL<br />       NULL                         NULL \t        NULL\t           NULL<br /><br /><br />My web.config page has:  applicationName=\"Goers<br />How or can I get rid of ApplicationName:  /<br />Is there a way to recompile the website with out losing members (18) members roles? <br /><br />Help!!!<br />",
+    "PostedDate": "2008-01-26T20:23:46.163-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "70181",
+    "ThreadId": "21091",
+    "Html": "\r\nSee my answer on the other forum.<br />",
+    "PostedDate": "2008-01-26T21:12:38.05-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

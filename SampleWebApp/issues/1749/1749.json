@@ -1,0 +1,80 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-28T08:02:52.087-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "After hitting the cancel button when editing a location, I now get the following error when trying to add a new event or location:\n \nSystem.InvalidCastException was unhandled by user code\n  Message=\"Conversion from type 'DBNull' to type 'String' is not valid.\"\n  Source=\"Microsoft.VisualBasic\"\n  StackTrace:\n       at Microsoft.VisualBasic.CompilerServices.Conversions.ToString(Object Value)\n       at ASP.LocationsPicker.__DataBinding__control3(Object sender, EventArgs e) in D:\\MyWebs\\VisualWebDeveloper\\RenegadeSprints_V3\\UserControls\\Locations_Picker.ascx:line 66\n       at System.Web.UI.Control.OnDataBinding(EventArgs e)\n       at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)\n       at System.Web.UI.Control.DataBind()\n       at System.Web.UI.Control.DataBindChildren()",
+    "LastUpdatedDate": "2013-05-15T23:46:40.257-07:00",
+    "PlannedForRelease": "Club Starter Kit 2.0 Final",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:47:04.49-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Database Errors with RC1",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 1749
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Hmmmm... did you add a description... the database is returning DBNull which means a field was Null... I will try this out. We don't really test the location object much... but I will check it out.",
+      "PostedDate": "2007-04-25T14:47:05.223-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I think I was just about to enter a description when I got called away from the computer so I just cancelled the update. Since then I can't seem to get rid of the error.",
+      "PostedDate": "2007-04-25T14:47:05.66-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Try deleting from the database. This does need to be fixed, however. I forgot to put in a validation control for the locations stuff.",
+      "PostedDate": "2007-04-25T14:47:06.02-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I did get rid of the error by deleting records from the database.\r\n\r\nThanks,Ed",
+      "PostedDate": "2007-04-25T14:47:06.397-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-28T08:02:31.193-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Resolved with changeset 1707.",
+      "PostedDate": "2007-04-28T08:02:52.087-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:24.643-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:40.257-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

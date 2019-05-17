@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "127896",
+    "ThreadId": "38557",
+    "Html": "I downloaded the site and I have corrected some connection string issues but I am having a problem that I cannot figure out.  <br>\r\n<br>\r\nHere is the message I get (Please Help):<br>\r\n<br>\r\n<h2><i>Configuration Error</i> </h2>\r\n<span style=\"font-family:arial, helvetica, geneva, sunsans-regular, sans-serif\"><b>Description: </b>An error occurred during the processing of a configuration file required to service this request. Please review the specific error details below and modify your configuration file appropriately. <br>\r\n<br>\r\n<b>Parser Error Message: </b>The connection name 'ClubSiteDB' was not found in the applications configuration or the connection string is empty.<br>\r\n<br>\r\n<b>Source Error:</b> <br>\r\n<br>\r\n<table width=\"100%\" bgcolor=\"#ffffcc\">\r\n    <tbody>\r\n        <tr>\r\n            <td><code>\r\n            <pre>Line 238:\t\t\t&lt;providers&gt;\r\nLine 239:\t\t\t\t&lt;remove name=&quot;AspNetSqlRoleProvider&quot;/&gt;\r\n<span style=\"color:#ff0000\">Line 240: &lt;add connectionStringName=&quot;ClubSiteDB&quot; applicationName=&quot;/&quot; name=&quot;AspNetSqlRoleProvider&quot; type=&quot;System.Web.Security.SqlRoleProvider, &amp;#xA;System.Web, Version=2.0.0.0, Culture=neutral, &amp;#xA;PublicKeyToken=b03f5f7f11d50a3a&quot;/&gt;</span>Line 241:\t\t\t&lt;/providers&gt;\r\nLine 242:\t\t&lt;/roleManager&gt;</pre>\r\n            </code></td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n<br>\r\n<b><span style=\"font-family:verdana\">Source File: </span></b>C:\\Documents and Settings\\Ciaran Ennis\\My Documents\\Visual Studio 2008\\WebSites\\Express (VB)\\web.config<b><span style=\"font-family:verdana\">    Line: </span></b>240 <br>\r\n</span>\r\n",
+    "PostedDate": "2008-10-26T14:32:16.547-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

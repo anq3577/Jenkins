@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "63927",
+    "ThreadId": "19374",
+    "Html": "\r\nHi <br />The issue I have is that I deleted the current photo then attempted to create another album.  The problem is I do'nt get any error at all on the screen just does not add it.<br /><br />I am very new to ASP and thois is my first project , so applogise if I have missed somthing on the instructions but I have spent a number of hours searching the forums for this error.<br /><br />The debug window on visual web developer express does show an error however but not having a huge amount experience I am a bit lost at what it is telling me.  <br />\"An exception of type 'System.Threading.ThreadAbortException' occurred in mscorlib.dll but was not handled in user code<br />A first chance exception of type 'System.Threading.ThreadAbortException' occurred in mscorlib.dll\"<br /><br />Error from debug log window<br /><br />I am using the latest version of the club starter kit (VB express edition)<br /><br /><br />I think it is because I deleted the album before adding a new one but I could be wrong,  I don't want to have to start again with a new db.  The club I am doing this for wants it up and running over xmas.<br /><br />Thanks<br /><br />Spencer <br />",
+    "PostedDate": "2007-12-18T14:42:58.037-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "64210",
+    "ThreadId": "19374",
+    "Html": "\r\nFound the fix,  <br /><br />well i can now add albums,<br /><br />although it's not perfect.<br /><br />updated the photo\\new.aspx to the below,  adding in the description column.<br /><br />         &lt;asp:SqlDataSource ID=\"SqlDataSource1\" runat=\"server\" ConnectionString=\"&lt;%$ ConnectionStrings:ClubsiteDB %&gt;\"<br />                    SelectCommand=\"SELECT title, ownerid, private FROM albums WHERE (albumid = @albumid)\"<br />                    InsertCommand=\"INSERT INTO Albums(title, parentid, isprivate, description, ownerid) VALUES (@title, @parentid, @private, @description, @ownerid)\"<br />                    OldValuesParameterFormatString=\"{0}\" OnInserting=\"SqlDataSource1<i>Inserting\" OnInserted=\"SqlDataSource1</i>Inserted\"&gt;<br />                    &lt;SelectParameters&gt;<br />                        &lt;asp:Parameter Name=\"albumid\" /&gt;<br />                    &lt;/SelectParameters&gt;<br />                    &lt;InsertParameters&gt;<br />                        &lt;asp:Parameter Name=\"title\" /&gt;<br />                        &lt;asp:Parameter Name=\"parentid\" DefaultValue=\"0\" /&gt;<br />                        &lt;asp:Parameter Name=\"ownerid\" /&gt;<br />                        &lt;asp:Parameter Name=\"description\" /&gt;<br />                        &lt;asp:Parameter Name=\"private\" /&gt;<br />                    &lt;/InsertParameters&gt;<br />                &lt;/asp:SqlDataSource&gt;<br />                &lt;asp:FormView ID=\"FormView1\" runat=\"server\" DataSourceID=\"Sqldatasource1\" Width=\"444px\"<br />                    DefaultMode=\"Insert\" Height=\"165px\" OnPageIndexChanging=\"FormView1_PageIndexChanging\"&gt;<br />                    &lt;InsertItemTemplate&gt;<br />                        &lt;table&gt;<br />                            &lt;tr&gt;<br />                                &lt;td&gt;<br />                                    Album Name&lt;/td&gt;<br />                                &lt;td&gt;<br />                                    &lt;asp:TextBox ID=\"TextBox1\" runat=\"server\" Text='&lt;%# Bind(\"title\") %&gt;' /&gt;<br />                                &lt;/td&gt;<br />                            &lt;/tr&gt;<br />                            &lt;tr&gt;<br />                            &lt;td&gt;<br />                                    Description<br />                               &lt;/td&gt;<br />                                    &lt;asp:TextBox ID=\"TextBox2\" runat=\"server\" Text='&lt;%# Bind(\"description\") %&gt;' /&gt;<br />                               &lt;/td&gt;<br /><br />                            &lt;/tr&gt;<br />                            &lt;tr&gt;<br />                                &lt;td&gt;<br />                                &lt;/td&gt;<br />                                &lt;td&gt;<br />                                    &lt;asp:CheckBox ID=\"CheckBox1\" runat=\"server\" Text=\"Album is private and non visible to other users\"<br />                                        Checked='&lt;%#Bind(\"private\") %&gt;' /&gt;&lt;/td&gt;<br />                            &lt;/tr&gt;<br />                        &lt;/table&gt;<br /><br />",
+    "PostedDate": "2007-12-19T16:07:48.633-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "247940",
+    "ThreadId": "19374",
+    "Html": "<p>I know this was forever ago, but I am having the exact same problem. Is there anything else you did? I still can't get it to take. No errors nothing. Just a redirect back to the list. If anyone out here knows how to fix this please help.</p>",
+    "PostedDate": "2009-10-20T19:06:25.953-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

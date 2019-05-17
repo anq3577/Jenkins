@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "77453",
+    "ThreadId": "23143",
+    "Html": "\r\nI uploaded this kit to my IIS server and got it working, so far.. However, there is at least one glitch I cant figure out.  <br /><br />If I go to calendar and try to add an event I can successfully add it if I do not modify a Text font and color in one field.  If I just do 1 change or the other it works fine.<br />",
+    "PostedDate": "2008-02-29T11:15:21.847-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

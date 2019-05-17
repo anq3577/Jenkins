@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "28159",
+    "ThreadId": "8637",
+    "Html": "\r\nIs it only for me or do you also have the same problem, the user avatar is not fetched properly from db. and it's not displayed as a result.<br /><br />i try to edit the AvatarImageFetch.ashx, however, no luck yet.<br />",
+    "PostedDate": "2007-03-28T05:52:20.293-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "28161",
+    "ThreadId": "8637",
+    "Html": "\r\nOk, i resolved it, after several hours of trying !!<br />The reason was the case sensitivity issue. I really do not understand, since my db is already CI_AS, howcome it cannot find the object, when it's coded all in lowercase.<br /><br />P.S: For V3, i strongly recommend the Code and DB Casing issue and clean and understandable Code, too.<br />",
+    "PostedDate": "2007-03-28T06:15:52.633-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36949",
+    "ThreadId": "8637",
+    "Html": "\r\nHi,<br /><br />Can you show how you fixed this?  I'm having the same issue.<br /><br />Thanks<br />",
+    "PostedDate": "2007-06-14T12:36:10.1-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37742",
+    "ThreadId": "8637",
+    "Html": "\r\nThe problem was caused by somewhere ther was memberinfo when it should have been MemberInfo.<br /><br />This is exactly why SubSonic will work WONDERS!<br />",
+    "PostedDate": "2007-06-20T22:11:01.913-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

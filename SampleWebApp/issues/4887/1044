@@ -1,0 +1,131 @@
+﻿<%@ Page Language="VB" MasterPageFile="~/Default.master" Title="New Member Registration" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+
+<%@ Register Src="~/UserControls/Photos_formpicker.ascx" TagName="Photos_formpicker" TagPrefix="Club" %>
+
+<%@ Import Namespace="SubSonic" %>
+<%@ Import Namespace="ClubStarterKit.Data" %>
+
+<script runat="server">
+    Protected Sub Button1_Click(ByVal sender As Object, ByVal e As System.EventArgs)
+        username.Enabled = False
+        password.Enabled = False
+        confirmpassword.Enabled = False
+        email.Enabled = False
+        question.Enabled = False
+        answer.Enabled = False
+        Addr.Enabled = False
+        Phone.Enabled = False
+        fname.Enabled = False
+		lname.Enabled = False
+		clubNum.Enabled = False
+		NewsletterCheck.Enabled = False
+		Dim createStatus As System.Web.Security.MembershipCreateStatus
+		If password.Text = confirmpassword.Text Then
+			Try
+				Membership.CreateUser(username.Text, password.Text, email.Text, question.Text, answer.Text, True, createStatus)
+				If createStatus = MembershipCreateStatus.Success Then
+					Dim user As MembershipUser = Membership.GetUser(username.Text)
+					MemberInfo.Insert(Addr.Text, Phone.Text, fname.Text, lname.Text, Nothing, CType(user.ProviderUserKey, Guid), NewsletterCheck.Checked)
+					Membership.UpdateUser(user)
+					If ClubStarterKit.Web.UserAdministration.NeedsEmailVerification() = True Then
+						user.IsApproved = False
+						Membership.UpdateUser(user)
+						ClubStarterKit.Web.UserAdministration.SendEmailVer(user)
+						status.Text = "We have recieved your request. We have sent an email verification email. Please go to your email inbox and read the instructions from our email to verify your account."
+					Else
+						If ClubStarterKit.Web.UserAdministration.NeedsAdminVerification() = True Then
+							user.IsApproved = False
+							Membership.UpdateUser(user)
+							ClubStarterKit.Web.UserAdministration.SendAdminVer(user)
+							status.Text = "We have recieved your request. Please wait while an administrator approves your membership application. You will recieve an email when your account is verified."
+						Else
+							user.IsApproved = True
+							Membership.UpdateUser(user)
+							FormsAuthentication.SetAuthCookie(user.UserName, False)
+							Response.Redirect("~/default.aspx")
+						End If
+					End If
+				End If
+			Catch ex As Exception
+				status.Text = ex.Message.ToString
+			End Try
+		End If
+		
+		If password.Text = confirmpassword.Text Then
+			status.Text = "Error. Your passwords do not match!"
+		Else
+			Select Case createStatus
+				Case MembershipCreateStatus.DuplicateProviderUserKey
+					status.Text = "Error. Duplicate ProviderUserKey (See Administrator)"
+				Case MembershipCreateStatus.InvalidProviderUserKey
+					status.Text = "Error. Invalid Provider User Key (See Administrator)"
+				Case MembershipCreateStatus.ProviderError
+					status.Text = "Error. Provider Error (See Administrator)"
+				Case MembershipCreateStatus.UserRejected
+					status.Text = "Error. User Rejected (See Administrator)"
+				Case MembershipCreateStatus.DuplicateProviderUserKey
+					status.Text = "Error. Duplicate ProviderUserKey (See Administrator)"
+				Case MembershipCreateStatus.DuplicateProviderUserKey
+					status.Text = "Error. Duplicate ProviderUserKey (See Administrator)"
+				Case MembershipCreateStatus.DuplicateEmail
+					status.Text = "Error. Duplicate Email"
+				Case MembershipCreateStatus.DuplicateUserName
+					status.Text = "Error. Duplicate UserName"
+				Case MembershipCreateStatus.InvalidAnswer
+					status.Text = "Error. Invalid Answer"
+				Case MembershipCreateStatus.InvalidEmail
+					status.Text = "Error. Invalid Email"
+				Case MembershipCreateStatus.InvalidPassword
+					status.Text = "Error. Invalid Password"
+				Case MembershipCreateStatus.InvalidQuestion
+					status.Text = "Error. Invalid Question"
+				Case MembershipCreateStatus.InvalidUserName
+					status.Text = "Error. Invalid User Name"
+			End Select
+		End If
+		username.Enabled = True
+		password.Enabled = True
+		confirmpassword.Enabled = True
+		email.Enabled = True
+		question.Enabled = True
+		answer.Enabled = True
+		Addr.Enabled = True
+		Phone.Enabled = True
+		fname.Enabled = True
+		lname.Enabled = True
+		clubNum.Enabled = True
+		NewsletterCheck.Enabled = True
+			
+	End Sub
+</script>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <div id="body">
+            <div class="fullwidth">
+                <asp:ScriptManager id="ScriptManager1" runat="server">
+                    </asp:ScriptManager><h2>
+                    New user registration
+                </h2>
+                <div class="dashedline">
+                </div>
+                &nbsp;&nbsp;
+                <br />
+                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                <ContentTemplate>
+<TABLE><TBODY><TR><TD style="WIDTH: 145px">Username</TD><TD style="WIDTH: 210px"><asp:TextBox id="username" runat="server" Width="200px"></asp:TextBox></TD><TD style="WIDTH: 40px"><asp:RequiredFieldValidator id="RequiredFieldValidator1" runat="server" ControlToValidate="username" ErrorMessage="Please enter a username." ValidationGroup="reg">*</asp:RequiredFieldValidator></TD></TR><TR><TD style="WIDTH: 145px">Password</TD><TD style="WIDTH: 210px"><asp:TextBox id="password" runat="server" Width="200px" TextMode="Password"></asp:TextBox></TD><TD style="WIDTH: 40px"><asp:RequiredFieldValidator id="RequiredFieldValidator2" runat="server" ControlToValidate="password" ErrorMessage="Please enter a password." ValidationGroup="reg">*</asp:RequiredFieldValidator></TD></TR><TR><TD style="WIDTH: 145px">Confirm Password</TD><TD style="WIDTH: 210px"><asp:TextBox id="confirmpassword" runat="server" Width="200px" TextMode="Password"></asp:TextBox></TD><TD style="WIDTH: 40px"><asp:RequiredFieldValidator id="RequiredFieldValidator3" runat="server" ControlToValidate="confirmpassword" ErrorMessage="Please confirm your password." ValidationGroup="reg">*</asp:RequiredFieldValidator><asp:CompareValidator id="CompareValidator1" runat="server" ControlToValidate="confirmpassword" ErrorMessage="Make sure your password and confirm password match." ValidationGroup="reg" ControlToCompare="password">*</asp:CompareValidator></TD></TR><TR><TD style="WIDTH: 145px">Email</TD><TD style="WIDTH: 210px"><asp:TextBox id="email" runat="server" Width="200px"></asp:TextBox></TD><TD style="WIDTH: 40px"><asp:RequiredFieldValidator id="RequiredFieldValidator4" runat="server" ControlToValidate="email" ErrorMessage="Please enter an email address." ValidationGroup="reg">*</asp:RequiredFieldValidator><asp:RegularExpressionValidator id="RegularExpressionValidator1" runat="server" ControlToValidate="email" ErrorMessage="Please enter a valid email address." ValidationGroup="reg" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">*</asp:RegularExpressionValidator></TD></TR><TR><TD style="WIDTH: 145px">Club #</TD><TD style="WIDTH: 210px"><asp:TextBox id="clubNum" runat="server" Width="200px" __designer:wfdid="w7" ToolTip="Enter Your NPSC Club Number"></asp:TextBox></TD><TD style="WIDTH: 40px"></TD></TR><TR><TD style="WIDTH: 145px">Security Question</TD><TD style="WIDTH: 210px"><asp:TextBox id="question" runat="server" Width="200px"></asp:TextBox></TD><TD style="WIDTH: 40px"><asp:RequiredFieldValidator id="RequiredFieldValidator5" runat="server" ControlToValidate="question" ErrorMessage="Please enter a security question." ValidationGroup="reg">*</asp:RequiredFieldValidator></TD></TR><TR><TD style="WIDTH: 145px">Security Answer</TD><TD style="WIDTH: 210px"><asp:TextBox id="answer" runat="server" Width="200px"></asp:TextBox></TD><TD style="WIDTH: 40px"><asp:RequiredFieldValidator id="RequiredFieldValidator6" runat="server" ControlToValidate="answer" ErrorMessage="Please enter a security answer." ValidationGroup="reg">*</asp:RequiredFieldValidator></TD></TR><TR><TD style="WIDTH: 145px">First Name</TD><TD style="WIDTH: 210px"><asp:TextBox id="fname" runat="server" Width="200px"></asp:TextBox></TD><TD style="WIDTH: 40px"><asp:RequiredFieldValidator id="RequiredFieldValidator7" runat="server" ControlToValidate="fname" ErrorMessage="Please enter your first name." ValidationGroup="reg">*</asp:RequiredFieldValidator></TD></TR><TR><TD style="WIDTH: 145px">Last Name</TD><TD style="WIDTH: 210px"><asp:TextBox id="lname" runat="server" Width="200px"></asp:TextBox></TD><TD style="WIDTH: 40px"><asp:RequiredFieldValidator id="RequiredFieldValidator8" runat="server" ControlToValidate="lname" ErrorMessage="Please enter your last name." ValidationGroup="reg">*</asp:RequiredFieldValidator></TD></TR><TR><TD style="WIDTH: 145px">Address</TD><TD style="WIDTH: 210px"><asp:TextBox id="Addr" runat="server" Width="200px" Height="29px"></asp:TextBox></TD><TD style="WIDTH: 40px"><asp:RequiredFieldValidator id="RequiredFieldValidator9" runat="server" ControlToValidate="Addr" ErrorMessage="Please enter your address." ValidationGroup="reg">*</asp:RequiredFieldValidator></TD></TR><TR><TD style="WIDTH: 145px">Phone</TD><TD style="WIDTH: 210px"><asp:TextBox id="Phone" runat="server" Width="200px" ValidationGroup="reg"></asp:TextBox></TD><TD style="WIDTH: 40px"></TD></TR><TR><TD style="WIDTH: 145px">Would you like to recieve the newsletter?</TD><TD style="WIDTH: 210px"><asp:CheckBox id="NewsletterCheck" runat="server"></asp:CheckBox></TD><TD style="WIDTH: 40px"></TD></TR><TR><TD colSpan=3><asp:ValidationSummary id="ValidationSummary1" runat="server" ValidationGroup="reg"></asp:ValidationSummary> </TD></TR><TR><TD style="WIDTH: 145px"></TD><TD style="WIDTH: 210px"><Club:RolloverButton id="Button1" onclick="Button1_Click" runat="server" ValidationGroup="reg" Text="Submit"></Club:RolloverButton></TD><TD style="WIDTH: 40px"></TD></TR></TBODY></TABLE><asp:Label id="status" runat="server"></asp:Label> 
+</ContentTemplate>
+                </asp:UpdatePanel>
+                <asp:UpdateProgress ID="UpdateProgress1" runat="server" AssociatedUpdatePanelID="UpdatePanel1" DisplayAfter="200">
+                <ProgressTemplate>
+                <asp:Image ID="loadingimg" runat="server" SkinID="loading" />
+                </ProgressTemplate>
+                </asp:UpdateProgress>
+                <br />
+                <br />
+            </div>
+        <div class="clear2column">
+        </div>
+    </div>
+</asp:Content>

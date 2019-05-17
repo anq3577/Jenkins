@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "36313",
+    "ThreadId": "11223",
+    "Html": "\r\nWhat do I change to allow new registerations to become administrators instead of guests - immediately? <br /><br />Thanks<br />",
+    "PostedDate": "2007-06-10T09:02:42.6-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36324",
+    "ThreadId": "11223",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />dpr00 wrote:<br />What do I change to allow new registerations to become administrators instead of guests - immediately? <br /><br />Thanks<br /><br /></div><br />Hi. The best way to do this is in the code. On line 16 of the member/register.aspx page, I would put in the following code:<br /><br />Roles.AddUserToRole(user.UserName.ToString(), \"Administrators\")<br /><br />user was declared earlier in that try statement and you can just pull the username and assign it to the role \"Administrators\" after the user clicks finish.<br /><br />You might look at the ramifications of this, though. It might not be best to assign all users to \"Adminisitrators\" because of the actions an administrator can take such as deleting users. Think about it before you do it.<br />",
+    "PostedDate": "2007-06-10T13:00:18.803-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36334",
+    "ThreadId": "11223",
+    "Html": "\r\nI was wondering how to do this because I can't make myself the administrator - every time I try to upload the schema.sql I get the following error:<br /><br />Msg 15007, Level 16, State 1, Line 42<br />'zowens' is not a valid login or you do not have permission.<br />Msg 15151, Level 16, State 1, Line 1<br />Cannot find the user 'zowens', because it does not exist or you do not have permission.<br />Msg 2759, Level 16, State 0, Line 1<br />CREATE SCHEMA failed due to previous errors.<br /><br />I thought this might be a temporary solution to become administrator. However, it didn't work. Thanks for your help. Do you have any other suggestions? How do I fix these errors?<br />",
+    "PostedDate": "2007-06-10T16:38:56.123-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36383",
+    "ThreadId": "11223",
+    "Html": "\r\nSo you aren't able to upload the scheme? Can you regenerate your database? I would use the SQL Publishing Wizard. Sorry about that... I'm not quite sure why the scripts haven't been working... they were generated using SQL SMO.<br />",
+    "PostedDate": "2007-06-11T06:59:36.13-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36416",
+    "ThreadId": "11223",
+    "Html": "\r\nI used the wizard however I dont think it work - it seemed to delete many of my tables and gave me this new error: The database does not appear to contain WebContent table, this is a feature of the extended ClubSite, please ensure you have run WebContent.SQL against the database. It also says asp_netroles (table) does not exist.<br /><br />Still cannot become admin and now have these errors.<br /><br />Any help is appreciated!<br />Thanks.<br />",
+    "PostedDate": "2007-06-11T12:24:30.53-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36469",
+    "ThreadId": "11223",
+    "Html": "\r\nThese errors seemed to work themselves out - because all tables are back now:<br /><br />when I submitt this (in Godaddy's Query Analyzer to make myself admin):<br />SELECT RoleId FROM aspnet_Roles WHERE RoleName='Administrators'<br />I get:<br />0 record(s) affected. (instead of a set of numbers)<br /><br />This is my only problem. What is wrong?<br />",
+    "PostedDate": "2007-06-11T17:38:01.937-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36660",
+    "ThreadId": "11223",
+    "Html": "\r\nNew update: I now cannot login.<br /><br />Any help is appreciated!<br />Thanks in advance. <br />",
+    "PostedDate": "2007-06-12T16:59:38.373-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37212",
+    "ThreadId": "11223",
+    "Html": "\r\nIt sounds to me like you don't want to make every user that joins an administrator, you just want to make yourself an administrator, and you can't figure out how to do that.<br /><br />You have a couple issues that I can see:<br />1. Your select RoleId from aspnet_Roles should have returned the GUID that is assigned to the Administrators role.  Since it didn't, you probably wiped out the data from the table.<br />2. You probably should wipe your database out, and restart it from scratch.  That will be the only way that you can be sure that the roles and everything is setup correctly.<br /><br />After that is completed, I would probably just put a temp ASPX file on the site.  Something like this:<br /><br />temp.aspx:<br />&lt;%@ Page Language=\"VB\" AutoEventWireup=\"false\" CodeFile=\"temp.aspx.vb\" Inherits=\"temp\" %&gt;<br /><br />&lt;!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"&gt;<br /><br />&lt;html xmlns=\"http://www.w3.org/1999/xhtml\" &gt;<br />&lt;head runat=\"server\"&gt;<br />    &lt;title&gt;Untitled Page&lt;/title&gt;<br />&lt;/head&gt;<br />&lt;body&gt;<br />    &lt;form id=\"form1\" runat=\"server\"&gt;<br />    &lt;div&gt;<br />        &lt;asp:TextBox ID=\"TextBox1\" runat=\"server\"&gt;&lt;/asp:TextBox&gt;<br />        &lt;asp:Button ID=\"Button1\" runat=\"server\" Text=\"Button\" /&gt;&lt;/div&gt;<br />    &lt;/form&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;<br /><br />'temp.aspx.vb<br />Partial Class temp<br />    Inherits System.Web.UI.Page<br /><br />    Protected Sub Button1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button1.Click<br />        Roles.AddUserToRole(TextBox1.Text, \"Administrators\")<br />    End Sub<br />End Class<br /><br />load this page AFTER you create your login.  Then load this page, put your username in the textbox and click the button.  Your username should then be in the Administrators role.<br /><br />After you have one Administrator, delete these pages from the site.<br />",
+    "PostedDate": "2007-06-16T18:57:46.437-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "49733",
+    "ThreadId": "15295",
+    "Html": "\r\nWhat  is status of c# version<br /><br />//BR Mikko<br />",
+    "PostedDate": "2007-09-18T02:19:54.833-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "49932",
+    "ThreadId": "15295",
+    "Html": "\r\nHi, I'm also very interested in a C# version ;)<br />What's the status ? Do you know when you'll achieve it ?<br />Thanks!! /Bod<br />",
+    "PostedDate": "2007-09-19T10:49:08.097-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "51253",
+    "ThreadId": "15295",
+    "Html": "\r\nNot sure... I need some people to help out witht the effort. I can't really tackly a full conversion by myself.<br />",
+    "PostedDate": "2007-09-29T17:16:34.263-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "57211",
+    "ThreadId": "15295",
+    "Html": "\r\nHow about this? http://www.elegancetech.com/CSVB/OpenSource.aspx<br /> It is free!<br />",
+    "PostedDate": "2007-11-07T19:23:55.44-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "57331",
+    "ThreadId": "15295",
+    "Html": "\r\nz2...I'll tackle the c# version through c-sharper<br />",
+    "PostedDate": "2007-11-08T09:58:51.1-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "57357",
+    "ThreadId": "15295",
+    "Html": "\r\nCool...Let me know if you need me to do some testing. I will be forever grateful if you get a c# version out! :)<br />",
+    "PostedDate": "2007-11-08T11:48:33.553-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "73007",
+    "ThreadId": "15295",
+    "Html": "\r\nwhat is the status of this C# version?<br />",
+    "PostedDate": "2008-02-11T01:36:55.597-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "74426",
+    "ThreadId": "15295",
+    "Html": "<b>Hello</b><br /><br />Me three, been hanging out for the the c# version.   Been working quite a bit with subsonic sites, happy to help test c# version if there is one.<br /><br />Love the site, all the stuff just not so keen on VB.<br />",
+    "PostedDate": "2008-02-17T05:47:41.403-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

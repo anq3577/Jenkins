@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "27291",
+    "ThreadId": "8372",
+    "Html": "\r\nMy development environment is W2K3 Server &amp; Sql2005Ent. However, the client's db is Sql2000. So, i need to backup and restore the my DB to client's machine. <br /><br />Well, since these seems not possible; only some suggestions for export &amp; import data's etc., but my concern is, will there be primary &amp; foreign keys problem, if I do it this way.<br /><br />Or is there any other way to move the database?<br /><br />I may try the Sql2000 scripts for CSK, however, i made lots of changes to the DB. And also, if I try to script my db to Sql2000 compatible mode, i give lots of errors (asp.net memberships related). Are there any ways to correct this?<br /><br />Thanks,<br />",
+    "PostedDate": "2007-03-20T03:19:51.263-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27292",
+    "ThreadId": "8372",
+    "Html": "\r\nIf you have VS standard or pro, you can use the <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=29b4ffd8-ac3a-4481-b352-9b185619a901&amp;DisplayLang=en\" class=\"externalLink\">SQL Publish to Hoster<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a> that will generate the SQL 2000/2005 scripts for you.<br />",
+    "PostedDate": "2007-03-20T03:40:02.513-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27297",
+    "ThreadId": "8372",
+    "Html": "\r\ni'm trying,<br />thanks for quick reply<br />",
+    "PostedDate": "2007-03-20T03:56:57.28-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

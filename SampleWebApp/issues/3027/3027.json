@@ -1,0 +1,105 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I`m going to develop an internationalization class, which enables multiple language support.\n \nFeel free to post your ideas!\n \nHelpers are welcome :)",
+    "LastUpdatedDate": "2013-02-13T19:37:12.14-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-08-08T10:10:55.12-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Multiple language support",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 4,
+    "Id": 3027
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Translators would be needed :)",
+      "PostedDate": "2007-08-08T10:24:02.313-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I already translated the Beta 1 into german ;-)",
+      "PostedDate": "2007-08-08T10:28:38.513-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "That's a start :)",
+      "PostedDate": "2007-08-08T11:12:25.67-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-02-02T04:18:59.36-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "What is the status of this internationalization class? I'm wondering since normally i would use resx files to load different texts for other languages.",
+      "PostedDate": "2008-02-05T13:03:26.533-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-02-05T13:29:14.14-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I will probably most likely include this in v4. And we would use our own translation mechanism (not really a fan of resx files).",
+      "PostedDate": "2008-02-05T13:33:53.67-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Sorry Zack, didn't read your comment from february, so I checked in a first internationalization for the start page with resx files (english and german).\r\nIn my opinion resx files provide an easy and fast way to add some more languages to CLK and it is not much work to implement this feature.\r\nPerhaps we could have a short discussion about this?!",
+      "PostedDate": "2008-07-03T01:01:48.547-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "how is this going, we going with resx files or with a special \"other\" meganism what would work less easy i think...",
+      "PostedDate": "2008-09-26T10:02:08.52-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-01-02T11:05:54.697-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-11-24T13:56:51.473-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "OK here's the thing. There's two strategies for multiple languages. Are we talking multiple language for a single site (multi-lingual users) or ability to easily swap out english for something else? Which would everyone like here???",
+      "PostedDate": "2009-11-24T14:05:23.92-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:12.14-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

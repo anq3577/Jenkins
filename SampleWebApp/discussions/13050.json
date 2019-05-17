@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "42603",
+    "ThreadId": "13050",
+    "Html": "\r\nIm getting this error when trying a local preview of change set 3772.  All connection strings are ok.... any ideas?<br /><br />An attempt to attach an auto-named database for file C:\\websites\\3772\\ClubStarterKit.Web\\App_Data\\ClubDB.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share. <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />Exception Details: System.Data.SqlClient.SqlException: An attempt to attach an auto-named database for file C:\\websites\\3772\\ClubStarterKit.Web\\App_Data\\ClubDB.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.<br /><br />Source Error: <br /><br /><br />Line 51: \t\t\tSetSQLProps()<br />Line 52: \t\t\tInitSetDefaults()<br />Line 53: \t\t\tLoadByParam(columnName,columnValue)<br />Line 54: \t\tEnd Sub<br />Line 55: \t\tPrivate Sub InitSetDefaults()<br /><br /><br />Source File: C:\\websites\\3772\\ClubStarterKit\\ClubStarterKit.Data\\Generated\\WebSettings.vb    Line: 53 <br /><br />Stack Trace: <br /><br /><br /><a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=SqlException%20%280x80131904%29%3a%20An%20attempt%20to%20attach%20an%20auto-named%20database%20for%20file%20C%3a%5cwebsites%5c3772%5cClubStarterKit.Web%5cApp_Data%5cClubDB.mdf%20failed.%20A%20database%20with%20the%20same%20name%20exists%2c%20or%20specified%20file%20cannot%20be%20opened%2c%20or%20it%20is%20located%20on%20UNC%20share.\">SqlException (0x80131904): An attempt to attach an auto-named database for file C:\\websites\\3772\\ClubStarterKit.Web\\App_Data\\ClubDB.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share.</a><br />   System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection) +171<br />   System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj) +199<br />   System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj) +2411<br />   System.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK) +34<br />   System.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnection owningObject) +223<br />   System.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(String host, String newPassword, Boolean redirectedUserInstance, SqlConnection owningObject, SqlConnectionString connectionOptions, Int64 timerStart) +371<br />   System.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(SqlConnection owningObject, SqlConnectionString connectionOptions, String newPassword, Boolean redirectedUserInstance) +184<br />   System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, String newPassword, SqlConnection owningObject, Boolean redirectedUserInstance) +193<br />   System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection) +501<br />   System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnection owningConnection, DbConnectionPool pool, DbConnectionOptions options) +28<br />   System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject) +429<br />   System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject) +70<br />   System.Data.ProviderBase.DbConnectionPool.GetConnection(DbConnection owningObject) +512<br />   System.Data.ProviderBase.DbConnectionFactory.GetConnection(DbConnection owningConnection) +85<br />   System.Data.ProviderBase.DbConnectionClosed.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory) +89<br />   System.Data.SqlClient.SqlConnection.Open() +160<br />   SubSonic.SqlDataProvider.CreateConnection(String newConnectionString) in C:\\SubSonic 2.0.3\\src\\SubSonic\\DataProviders\\SqlDataProvider.cs:21<br />   SubSonic.SqlDataProvider.CreateConnection() in C:\\SubSonic 2.0.3\\src\\SubSonic\\DataProviders\\SqlDataProvider.cs:15<br />   SubSonic.AutomaticConnectionScope..ctor(DataProvider provider) in C:\\SubSonic 2.0.3\\src\\SubSonic\\Sql Tools\\Connection.cs:160<br />   SubSonic.SqlDataProvider.GetReader(QueryCommand qry) in C:\\SubSonic 2.0.3\\src\\SubSonic\\DataProviders\\SqlDataProvider.cs:114<br />   SubSonic.AbstractRecord`1.LoadByParam(String columnName, Object paramValue) in C:\\SubSonic 2.0.3\\src\\SubSonic\\ActiveRecord\\AbstractRecord.cs:328<br />   ClubStarterKit.Data.WebSettings..ctor(String columnName, Object columnValue) in C:\\websites\\3772\\ClubStarterKit\\ClubStarterKit.Data\\Generated\\WebSettings.vb:53<br />   ClubStarterKit.Web.Settings.PushToSession() in C:\\websites\\3772\\ClubStarterKit\\ClubStarterKit.Web\\App_Code\\BLL\\Settings.vb:11<br />   ASP.global<i>asax.Session</i>Start(Object sender, EventArgs e) in C:\\websites\\3772\\ClubStarterKit\\ClubStarterKit.Web\\global.asax:24<br />   System.Web.SessionState.SessionStateModule.RaiseOnStart(EventArgs e) +115<br />   System.Web.SessionState.SessionStateModule.CompleteAcquireState() +303<br />   System.Web.SessionState.SessionStateModule.BeginAcquireState(Object source, EventArgs e, AsyncCallback cb, Object extraData) +1003<br />   System.Web.AsyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute() +144<br />   System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously) +146<br /><br /><br />",
+    "PostedDate": "2007-07-26T04:59:06.113-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "42662",
+    "ThreadId": "13050",
+    "Html": "\r\nTry deleting the ClubDB_log file.<br />",
+    "PostedDate": "2007-07-26T10:07:01.9-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "42866",
+    "ThreadId": "13050",
+    "Html": "<br />I also get the same error and don't have a clue how to \"delete the ClubDB_log file.\" I also don't know how to run the script to upgrade from version 2 to version 3 Beta (as shown in the text file instructions).<br /><br />I can't run v3 beta (express version) because of above error. I'd like to examine to understand if there are features we can use ... especially the results.<br /><br />Is there a bug list with solutions other than the builds? I also can't seem to figure out how to use the issue tracker... In version 2, May 11 release, I have at least 3 outstanding bugs and don't know where to find solutions.<br /><br />Thank you.<br />",
+    "PostedDate": "2007-07-28T16:40:32.757-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "42869",
+    "ThreadId": "13050",
+    "Html": "\r\n1) App<i>Data/ClubDB</i>log.ldf.. delete it. Then try to open the database up in the solution explorer<br />2) How you run it is up to you. It depends on how you have your site setup. If it is runing on a hoster, then ping up your hoster's SQL server in SQL Management Studio, open the script file, and run it against your database. REMEMBER to run the upgrade app too. READ THE README<br />3) We can't really provide docs for every changeset... that would be tiring!<br />4) Which bugs? Re-report them or open them again.<br />",
+    "PostedDate": "2007-07-28T17:17:36.11-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "107526",
+    "ThreadId": "13050",
+    "Html": "I am having the same problem. I tried deleting the log file but that did not solve the problem. How did you all fix this?\r\n",
+    "PostedDate": "2008-07-28T11:01:00.627-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "108829",
+    "ThreadId": "13050",
+    "Html": "I setup a new instance of CSK last Saturday and ran into the same exception. I resolved it with these 2 steps:<br>\r\nFirst of all check that your ClubDB.mdf is NOT write-protected, then try to attach it again.<br>\r\nWhen this doesn't work, attach your DB with MS Management Studio (Express) without the log-file, change the connectionstring&nbsp; and try again.<br>\r\n",
+    "PostedDate": "2008-08-04T01:46:08.607-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

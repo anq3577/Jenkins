@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:18:35.193-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I needed to make some slight tweaks to correct very nit-picky things.\n \n1. In Default.aspx, add the following line after Line 27\n \n27        FormsAuthentication.SignOut()\n28        response.Redirect(\"Default.aspx\")\n \nThis will reload the page after someone clicks Logout.\n \n2. Make the following change to App_Code\\TimePicker.vb\nChange line 91 from\nwriter.AddAttribute(\"src\", \"images/dropdownbtn.gif\")\n \nTo:\nwriter.AddAttribute(\"src\", \"../images/dropdownbtn.gif\")\n \n3. Make the same change to App_Code\\DatePicker.vb on line 98.\n \nMaking the changes to those two files will allow the drop-down button image to show up.  I tried ~ instead of .. but that didn't work.",
+    "LastUpdatedDate": "2013-05-15T23:46:47.45-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:18:34.067-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Slight code tweaks",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 742
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

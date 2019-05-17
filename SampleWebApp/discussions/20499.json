@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "68114",
+    "ThreadId": "20499",
+    "Html": "\r\nI am a newbie trying to publish the Clubsite (v3) to an internal hosted webserver which is loaded with IIS6 and SQLServer2005 Enterprise Edition SP1 and Windows 2003 SP2.  I get the error 26 error - error locating server/instance specified.  The source error is this:<br /><br />Line 9:  Public Shared Sub PushToSession()<br />Line 10:   If Current.Session.Item(\"SettingsSet\") Is Nothing Or CBool (Current.Session.Item(\"SettingsSet')) = False Then<br />Line 11:     Dim ws As New WebSettings(WebSettings.Columns.Id, 1)<br />Line 12:<br />Line 13:    If ws.IsLoaded = True Then<br /><br /><br />Source File:  D:\\Teamhagerman\\App_Code\\BLL\\Settings.vb    Line: 11<br /><br />I changed the web.config file to point to the database and I published it through Visual Studio 2005. <br /><br />Can someone help point me in the right direction?!<br /><br />",
+    "PostedDate": "2008-01-15T13:28:38.963-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "68361",
+    "ThreadId": "20499",
+    "Html": "\r\nI figured out it was in the connection string config file.  The default connection string uses a SQLExpress code whereas I have SQL Server 2005 loaded instead.  I found the below string worked for me:<br /><br />  &lt;connectionStrings&gt;<br />    &lt;add name=\"ClubSiteDB\" connectionString=\"Server=localhost;Database=ClubDB;Integrated Security=True;AttachDBFilename=c:\\mydirectpathtodatabasefilename;User Id=admin;Password=admin;\" /&gt;<br />    &lt;remove name=\"LocalSqlServer\"/&gt;<br />    &lt;add name=\"LocalSqlServer\" connectionString=\"Server=localhost;Database=TimeTracker;Integrated Security=True;AttachDBFilename=c:\\mydirectpathtodatabasefilename\\ClubDB.mdf;User Id=admin;Password=admin;\" /&gt;<br />  &lt;/connectionStrings&gt;<br /><br />",
+    "PostedDate": "2008-01-16T13:16:13.53-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

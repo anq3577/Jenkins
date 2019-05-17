@@ -1,0 +1,98 @@
+[
+  {
+    "Id": "37067",
+    "ThreadId": "11446",
+    "Html": "\r\nHi Guys<br /><br />My learning curve has been verticle since I stumbled across this app and thanks for all the Stirling work you are doing.<br /><br />The discussion about League Tracker is slightly wrong for what I want to do, In my case I have a running club site where I simply want to list in gridview all the results from every race from every runner.  This can then be filtered by what ever column the runner wants.<br /><br />That bit is working, and if your interested my test site is taking shape at www.poolerunners.com.ultimahosts.net.<br /><br />The issue is getting the vast amount of results data I recieve at the end of a race and upload it to the database without having to retype it.<br /><br />I have found a app called csvreader which seems to do the job and Im so close to getting it to work.<br /><br />The problem is when I try and merge the csv file to the data base I get a named pipes error, which is transcribed below.<br /><br />Ultimahosts have told me that I need to use TCP/IP instead of named pipes.  Well, I would love to, but how!  I have created a fresh local web site and connected to my club database at my hosting company, dragged a gridview and allowed that to create a freah connection string, but still no banana.<br /><br />Any help would be fantastic and thanks so much for the help so far.<br /><br />Server Error in '/' Application.<br />--------------------------------------------------------------------------------<br /><br />An error has occurred while establishing a connection to the server.  When connecting to SQL Server 2005, this failure may be caused by the fact that under the default settings SQL Server does not allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />Exception Details: System.Data.SqlClient.SqlException: An error has occurred while establishing a connection to the server.  When connecting to SQL Server 2005, this failure may be caused by the fact that under the default settings SQL Server does not allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)<br /><br />Source Error: <br /><br /><br />Line 105:<br />Line 106:                ' call WriteToServer which starts import<br />Line 107:                bulkCopy.WriteToServer(csvData)<br />Line 108:<br />Line 109:            End Using ' dispose of SqlBulkCopy object<br /><br />",
+    "PostedDate": "2007-06-15T08:13:37.58-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37073",
+    "ThreadId": "11446",
+    "Html": "\r\nThat is one of the things that will ship with v3 (to list in gridview all the results from every race from every runner). It just hasn't been put in yet.<br /><br />I can't help you with the csv stuff (I don't know what it is anyways) but I do know that if your UltimaHosts database server is 69.16.210.14 then replace it with 69.16.211.96,937. You will have to ask Ultima what your new connection strig should be if you don't use the 69.16.210.14 database server. (I do, that's why I know that.)<br />",
+    "PostedDate": "2007-06-15T09:30:02.807-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41938",
+    "ThreadId": "11446",
+    "Html": "\r\nI am a newbie and web master of a road running club. How did you get started with uploading race results to the database? Your site is so great ... we need to publish results soon after a race and typically publish data such as name, city, gender, age division, race time. <br /><br />Runners will register on the site and then I need to give the race scorers an excel file of registered runners (including the userID). The scorer adds a bib number and race time for each runner.<br /><br />Our race scorers use an external program connected to our race timer to accumulate results. They send me an excel spreadsheet with the data shown above.<br /><br />Any hint you can give me on how to proceed is greatly appreciated!<br />",
+    "PostedDate": "2007-07-20T13:26:24.657-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41945",
+    "ThreadId": "11446",
+    "Html": "\r\nmhrrcweb... the race resulkts stuff will be in there soon! <br />",
+    "PostedDate": "2007-07-20T13:59:41.077-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41960",
+    "ThreadId": "11446",
+    "Html": "<br />That is great! What is \"soon\"? Are we talking weeks, months or years? Do I just keep checking back here to see when it is ready?<br /><br />Thanks again.<br />Deborah<br />",
+    "PostedDate": "2007-07-20T17:31:27.563-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41967",
+    "ThreadId": "11446",
+    "Html": "\r\nHi <br /><br />I ended up using SQL Manager 2005 for SQL Server, which you can use to upload csv files to your tables.  I never did get the CSV script working.  I need to work on the gridview more, but Ill wait to see what v3 looks like.<br /><br />Im interested in how your race timer works,<br /><br />Many regards<br />Darren<br />",
+    "PostedDate": "2007-07-21T02:18:20.453-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41974",
+    "ThreadId": "11446",
+    "Html": "<br />Darren,<br />Your pool runners site looks great and gives me hope as I learn all of this. For now, I use Expression Web static pages for our site (you can see it at www.mhrrc.org). Thanks for your hint on SQL Manager 2005, which I will pursue.<br /><br />I am not sure what info you want on the race timing, but if you ask a specific question, I'll be glad to answer. We have two club scorers. Once developed his own scoring system in C+, the other purchased a scoring system. We plan to move to a chip system as soon as we have budget. <br /><br />The purchased scoring system keeps tracks of all runners who ever ran a club race, so race registration is easier; the scorer hits a button on his laptop whenever a runner crosses the finish line, then has to add bib numbers to identify runners to the list of finish times. We also write down bib numbers as runners cross and keep a back-up stringer system to catch errors, along with a hand held backup timer with a printout (our runners want their results to be accurate). Our races are typically 5K or greater, so finishers are spread out timewise. The scorer posts overall results and age category (division) results at the race site (which typically does not have Internet access). Scorer sends me the results to publish on our site as an Excel file. <br /><br />From my conversations with scorers, they can take input as an Excel file, too. The chip scoring system (each runner wears a chip on their shoe, time is calculated when they step on a mat, used at big races like Boston or NY), we assume, will also be able to give me an Excel file to publish to the site.<br /><br />Deborah<br />",
+    "PostedDate": "2007-07-21T05:09:16.07-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41980",
+    "ThreadId": "11446",
+    "Html": "\r\nHi Darren,<br />I checked out your site and it's looking real nice. The race results you track are similar to those I post on <a href=\"http://www.RenegadeSprints.org\" class=\"externalLink\">http://www.RenegadeSprints.org<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a> where I chose to display them in a similar fashion. If you find a better way to input the results, rather than retyping or using SQL Server, something simple like importing an Exel Spreadsheet, please post here.<br /><br />One thing I did notice was that you have no way to get back to your home page after checking the various results pages. Why not apply your Default.master page to the results pages to maintain a consistant look and also provide links to other pages. Just a suggestion.<br /><br />Congratulations on a nice implementation of the Club Starter Kit program! <br /><br />Ed<br />",
+    "PostedDate": "2007-07-21T06:10:47.307-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "42058",
+    "ThreadId": "11446",
+    "Html": "\r\nmhrrcweb<br />Thanks glad you like the site,  We use a completely manual system at the moment as the club has been a bit devoid of technical input.  I only joined the club 6 months ago and decided to have a go as webmaster for them, Im not a web developer but a network server engineer, so this give me an opportunity to learn a bit of what goes on my servers.  When you move to the chip timing system I would be interested in what sort of investment you are needing to make, as I maysuggest it  to my club as we host a few races, one of which is the biggest in the area with nearly 2000 runners, so the manual system is a bit lacking!  What is the name of the purchased scoring system you have?  If you need any help let me know, it would be good to keep in touch with other running club webmasters to exchange ideas.<br /><br />efrazier<br />Again, thanks for your comments.  I have looked at your site many times and wish I could come close to what you have, in particular how you link the names back to the profiles.  I guess V3 will comes some way close to doing this but it looks to be very much more team related than running, or driving.  The import tool I was looking at was  http://www.csvreader.com/, but to be honest, I gave up as my skills were lacking :-( so if  you can work it out then let me know.<br />",
+    "PostedDate": "2007-07-22T10:52:30.19-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "42233",
+    "ThreadId": "11446",
+    "Html": "\r\nThe software our scorer uses is called  RaceTrak v5a<br /><br />It cost about $300.00  6 years ago<br /><br />Vendor:   Information Forum<br />              8577 Dark Hawk Circle<br />              Columbia  MD  21045<br />Ph (410) 730-0047<br /><br />I like the idea of us exchanging ideas. I have been learning about asp.net 2.0 with the starter kit. Lots of mistakes and very slow ... but the starter kit is excellent.<br /><br />How do you upload results? What do you know about what will be in the next version?<br /><br />Deborah<br />",
+    "PostedDate": "2007-07-23T18:19:59.42-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "42244",
+    "ThreadId": "11446",
+    "Html": "\r\n$300 is way too much, in my opinion. This is real simple stuff.<br /><br />v3 will hopefully be something that you just configure and you are ready to start plugging away info in. As starter kit should appeal to the developer and the non developer alike. <br />",
+    "PostedDate": "2007-07-23T20:40:19.673-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "42598",
+    "ThreadId": "11446",
+    "Html": "\r\nHi mhrrcweb<br /><br />I upload results through the SQLmanager I mentioned earlier, it allows me to bulk upload a CSV file into the SQL table I created for the results, I can also just cross match the columns without having to manipulate the CSV before I upload (you know how inconsistance results can be)<br /><br />As Zack says, there is a lot of stuff I really like the look of in v3 and Im waiting with baited breath for it to see if the TeamTracker stuff will match what running clubs need.  I should imagine there will be a fair bit of manipulation to get it to fit, but this is a really goo place to get help on that.  We can work close together on that side as we have the same final aims.<br />",
+    "PostedDate": "2007-07-26T03:58:06.173-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

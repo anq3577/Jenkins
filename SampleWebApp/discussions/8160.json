@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "26629",
+    "ThreadId": "8160",
+    "Html": "\r\nAre there any future plans to add language pack/functionality to CSK? It's really tough to convert (reverse engineer) English to another language :)<br />",
+    "PostedDate": "2007-03-13T15:51:36.747-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "26644",
+    "ThreadId": "8160",
+    "Html": "\r\nNot now... we need to get some of the big features of the next release in... we will probably start support for language packs arround the release of 3.0<br /><br />Sorry that we can't help at the moment.<br />",
+    "PostedDate": "2007-03-13T17:14:22.423-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27105",
+    "ThreadId": "8160",
+    "Html": "\r\nI agree, it's very time consuming to create all text in the resource files.<br /><br />I would say that any new features should use the resource files for content.<br /><br />If and when we create the English resource files would Plaid like to convert them another language for us?  Which languages did you have in mind?<br />",
+    "PostedDate": "2007-03-17T11:10:13.8-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27116",
+    "ThreadId": "8160",
+    "Html": "\r\nI would gladly convert it into Turkish (as my native language). Btw, i also want to contribute the project, too.<br /><br />P.S: I am about to implement a document upload (and listing) feature to CSK, just like Photo uploading mechanism.<br />",
+    "PostedDate": "2007-03-17T15:25:38.743-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

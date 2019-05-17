@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "33831",
+    "ThreadId": "10446",
+    "Html": "\r\nDidn't see the need for this on the events edit page, so commented it out<br /> &lt;!-- &lt;Club:RolloverLink ID=\"Logoutbtn\" runat=\"server\" Text=\"New Event\" OnClientClick=\"foo\"<br />                NavigateURL=\"Event_edit.aspx?Action=New\" /&gt; --&gt;<br />",
+    "PostedDate": "2007-05-18T07:51:52.79-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

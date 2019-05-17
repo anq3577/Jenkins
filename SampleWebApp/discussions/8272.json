@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "26975",
+    "ThreadId": "8272",
+    "Html": "\r\nThank you for a wonderful project. I am rebuilding my website with this kit. In the other club kit when I changed the poster image to my header.jpg the image changed on all my pages. In this kit only the default.master and the default page changed images. All the other pages still have the orginal image. Could anyone help me make the changes for all the pages in the kit. Thank you.<br />",
+    "PostedDate": "2007-03-15T23:09:34.843-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27012",
+    "ThreadId": "8272",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />jerrysdean43 wrote:<br />Thank you for a wonderful project. I am rebuilding my website with this kit. In the other club kit when I changed the poster image to my header.jpg the image changed on all my pages. In this kit only the default.master and the default page changed images. All the other pages still have the orginal image. Could anyone help me make the changes for all the pages in the kit. Thank you.<br /><br /></div><br />Well it seems to have fixed itself. I have another question, how does one edit the css for the Clubname and Club slogan? Thank you.<br />",
+    "PostedDate": "2007-03-16T07:20:40.41-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27058",
+    "ThreadId": "8272",
+    "Html": "\r\nClub Name and Club Slogan can be changed on the Webconfig file..<br /><br />Also, the images must be changed on the CSS file on the root folder and the CSS folder.<br /><br />Mike<br />",
+    "PostedDate": "2007-03-16T15:20:13.11-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27093",
+    "ThreadId": "8272",
+    "Html": "\r\nI was asking how to change the styling (css) of the text not the text itself. I wish to change the positioning, size and the color of the text.<br /><br /><br /><br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />Bippu wrote:<br />Club Name and Club Slogan can be changed on the Webconfig file..<br /><br />Also, the images must be changed on the CSS file on the root folder and the CSS folder.<br /><br />Mike<br /><br /></div>",
+    "PostedDate": "2007-03-17T06:49:15.223-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27104",
+    "ThreadId": "8272",
+    "Html": "\r\nYes just change the information in the CSS file, you can change the image, position, all style information in the CSS file.  This file is currently in the Root of the application.<br /><br />I am in the process of transfering and allowing the site to use Themes, which will make the whole process of different styles for sites much easier. <br />",
+    "PostedDate": "2007-03-17T11:07:49.79-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27107",
+    "ThreadId": "8272",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />coppermill wrote:<br />Yes just change the information in the CSS file, you can change the image, position, all style information in the CSS file.  This file is currently in the Root of the application.<br /><br />I am in the process of transfering and allowing the site to use Themes, which will make the whole process of different styles for sites much easier. <br /><br /></div><br />I know how and know where the css file is, what I am asking is where in the css file is the Club name and slogan located. I cannot find the  area to change.<br />",
+    "PostedDate": "2007-03-17T11:42:48.6-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27117",
+    "ThreadId": "8272",
+    "Html": "\r\nthe css file is in the directory \"css\" named Stylesheet.css . All you need to do is changing the styles in it. And then copy all the styles to the other \"Stylesheet.css\" in the root of the project.<br /><br />",
+    "PostedDate": "2007-03-17T15:27:31.877-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27119",
+    "ThreadId": "8272",
+    "Html": "\r\nyou need to edit the id #poster<br />",
+    "PostedDate": "2007-03-17T15:31:13.317-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

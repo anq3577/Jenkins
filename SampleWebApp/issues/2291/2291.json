@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Unable to reproduce",
+    "ClosedDate": "2007-05-20T05:02:47.427-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "The above occurs when loged in as admin and navigating to Membership.\n Line 897 error ??\n \nLine 895:            Get\nLine 896:                Try \nLine 897:                    Return CType(Me(Me.tableMemberInfo.feedateColumn),String)\nLine 898:                Catch e As System.InvalidCastException\nLine 899:                    Throw New System.Data.StrongTypingException(\"The value for column 'feedate' in table 'MemberInfo' is DBNull.\", e)",
+    "LastUpdatedDate": "2013-05-15T23:46:37.7-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-05-18T05:39:51.887-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Conversion from type 'DBNull' to type 'String' is not valid.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2291
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "using 2346",
+      "PostedDate": "2007-05-18T05:57:34.373-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Check all the membership data in the database. It looks like something had a null reference.",
+      "PostedDate": "2007-05-19T13:47:22.547-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-20T05:02:47.427-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:21.603-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:37.7-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

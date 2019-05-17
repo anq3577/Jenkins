@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "57417",
+    "ThreadId": "17603",
+    "Html": "\r\nhi all<br /><br />when I try to add a new forum I get the following error<br /><br />Input string was not in a correct format. <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />Exception Details: System.FormatException: Input string was not in a correct format.<br /><br />Source Error: <br /><br /><br />Line 59: <br />Line 60:     Protected Sub AddTopic_Click(ByVal sender As Object, ByVal e As System.EventArgs)<br />Line 61:         ClubStarterKit.Web.Forum.AddTopic(TopicName.Text, Description.Text, SectionCHECK.Checked, Integer.Parse(Weight.Text), LockedCHECK.Checked, VisibleCHECK.Checked, DropDownList1.SelectedValue)<br />Line 62:         Response.Redirect(\"~/forum/manage.aspx\")<br />Line 63:     End Sub<br /><br /><br />Source File: C:\\inetpub\\wwwroot\\FCU\\Forum\\Manage.aspx    Line: 61 <br /><br /><br />also, I found that there is alot of Input string was not in a correct format error in the statistics section: adding season, adding team, etc...<br /><br />Thanks<br />",
+    "PostedDate": "2007-11-08T18:57:55.937-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "57418",
+    "ThreadId": "17603",
+    "Html": "\r\nI found the problem.... <br /><br />you need to put in the weight of the forum else you will get this error. should probably include a validation procedure here...<br /><br />Hannibal<br />",
+    "PostedDate": "2007-11-08T19:03:20.963-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

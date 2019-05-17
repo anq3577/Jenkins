@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "43165",
+    "ThreadId": "13211",
+    "Html": "\r\nWell done Zack on version 3, lots of work done there and much appreciated.<br /><br />Obviously the league tracker stuff is a huge subject and every type of club has different needs, what we have in version 3 really lends itself to a team sports type club.  The situation I have is really a little simplier (probably).<br /><br />As a running club all we need is to upload the results from our races to a table and then sort and filter them in a gridview.  It would be nice to be able to click on a member in the membership directory and have this query and pull in all of that members results from the table.<br /><br />I think http://www.RenegadeSprints.org have something of what I need.<br /><br />Is there plans to increase the functionality of the league tracker stuff to include this sort of thing?<br />",
+    "PostedDate": "2007-07-31T09:05:56.993-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43189",
+    "ThreadId": "13211",
+    "Html": "\r\nAll I need is a spec  :)<br /><br />I can't write stuff just from an idea. People said \"write a league tracker\". So I did. I did it how I wanted it. But I need to know what you want. <br /><br />If you would write out what the pages need to look like, I can surely judge what needs to happen.<br />",
+    "PostedDate": "2007-07-31T12:17:37.973-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43197",
+    "ThreadId": "13211",
+    "Html": "\r\nok buddy, I will ty and work out how to put my ideas on the page and get back to you.<br /><br />Again, great work with v3<br />",
+    "PostedDate": "2007-07-31T13:37:04.143-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43207",
+    "ThreadId": "13211",
+    "Html": "\r\nDazalock, all the results, stats pages and driver profile data on <a href=\"http://www.RenegadeSprints.org\" class=\"externalLink\">http://www.RenegadeSprints.org<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a> was put in a separate database designed for my particular needs and the pages were created from scratch using the CSK master page as the template. Since there are so many different possible requirements for various types of groups, it might be easier to go that route rather than expect the CSK to fit all situations. <br /><br />If it would help, I would be happy to send you the code I wrote to create the Renegade Sprints site. Please be aware though that I am not in the same league as the talented folks that contribute to the CSK!<br /><br />Ed<br /><br />",
+    "PostedDate": "2007-07-31T15:11:36.467-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43271",
+    "ThreadId": "13211",
+    "Html": "\r\nEd, thanks for the offer, I would really appreciate having a look at that code and believe me, any league is better than the one im in!  By the way, it looks like your home page formating is screwed.  I have this sometimes when I add a news item.  I was trying to recreate it for Zack as I couldnt explain it.  <br /><br />Zack<br /><br />I can only really show you bits and examples of what is out there at the moment for what I am thinking.<br /><br />So.....<br /><br />At the moment my website is www.poolerunners.com.<br /><br />On it I have a results page that is a simple gridview of all the results that our club runners do.  These are drawn from a Results table in the database, which I update using SQLManager.  The filtering is just a code snippet I have stolen from somewhere and doesnt really cut it.  What I would like is what I have now, i.e. a page of results but with much better filtering options, an example would be http://www.sirisaac.co.uk/raceresults07.html, where he can filter on name race, club etc.<br /><br />Secondly, I would like to be able to go into someones BIO, and have any results that are applicable to that runner drawn in from the results database and listed in the BIO.  Efraser has this on http://www.renegadesprints.org where you click on \"drivers\" and then you can see that drivers stats.<br /><br />I hope this is clear, if not ill try better.<br /><br />Thanks Again Zack<br />",
+    "PostedDate": "2007-08-01T04:08:46.75-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

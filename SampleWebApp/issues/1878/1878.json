@@ -1,0 +1,90 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "fixed",
+    "ClosedDate": "2007-07-03T08:25:47.81-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I would like to see a feature added where new registrations have to be activated by email prior to that user being allowed access to any interactive portions of the site. It would be nice to have an option where the activation email be sent either to the registrant or site admin. \n \nAs it is now, registered users that do not have a role assigned, can post in the forum or leave comments in the blog. A simple solution for smaller sites might be to create a new role for those purposes and site admin would have to assign a role prior to interactive access. Probably not practical for larger sites though.\n \nThanks for your consideration,\nEd",
+    "LastUpdatedDate": "2013-05-15T23:46:39.82-07:00",
+    "PlannedForRelease": "Version 3 Beta 1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-26T09:04:46.877-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "New User Activation",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 1878
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I like to conserve with roles... they can be kind of tricky to deal with sometimes. This is currently planned for v3.0, but I have already put it into another site that I was asked to create (http://universalistchristians.org).\r\n\r\nBasically, we will just augment the membership provider to not approve users upon registration. From there, it can be approved when user confirms email. (You could add another step... more to come on that.) Then the user's profile is changed to approved.",
+      "PostedDate": "2007-04-26T14:22:17.64-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-26T14:28:48.72-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-28T07:54:39.24-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-20T05:06:37.71-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Duplicate feature request on itemhttp://www.codeplex.com/ClubStarterKit/WorkItem/View.aspx?WorkItemId=813\r\n\r\n** Closed by z2bass 5/20/2007 5:06 AM",
+      "PostedDate": "2007-07-03T08:25:34.387-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "reopened for release assignment",
+      "PostedDate": "2007-07-03T08:25:34.573-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-03T08:25:40.823-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-03T08:25:47.81-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:24.31-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:39.82-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

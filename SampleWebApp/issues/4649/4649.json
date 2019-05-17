@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "out of scope",
+    "ClosedDate": "2009-12-08T22:19:15.86-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Add in custom membership provider that uses SubSonic (SubSonic providers -- see http://code.google.com/p/subsonicproviders/)",
+    "LastUpdatedDate": "2013-05-15T23:46:27.167-07:00",
+    "PlannedForRelease": "ClubStarterKit v3 Beta 2",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-11-30T20:05:33.693-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Custom Membership Provider",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 4649
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

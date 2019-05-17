@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "66089",
+    "ThreadId": "19938",
+    "Html": "\r\nHi <br />I have used vwd express 3.1 of the download to create our club site and everything seems to be working ok.  But I cannot find how I am suppose to reset a users password if they forget it,  other than deleting there account and recreating it.  Is there a button I could add for the administrator to use to send a password to a user, or is there some sql stored procedure i could use temporarly.<br /><br />Thanks<br /><br />Spencer<br />",
+    "PostedDate": "2008-01-04T08:30:27.96-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "66096",
+    "ThreadId": "19938",
+    "Html": "\r\nOn the login page, there should be a forgot password wizard. ASP.NET is built in with this control. You don't have to write a thing.<br />",
+    "PostedDate": "2008-01-04T08:58:03.45-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "66306",
+    "ThreadId": "19938",
+    "Html": "\r\nyes I understand that there is if you know your password secret.  What i was looking for, is a administrator way to reset someones password.<br />",
+    "PostedDate": "2008-01-05T15:43:36.74-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "66866",
+    "ThreadId": "19938",
+    "Html": "\r\nHi there, <br /><br />So you've got a problem with the standard connexion component !<br />Haaa to do something else from z2bass said you must set the password to \"clear\" instead of \"hashed\" in the web.config.<br />But take care you will loose all the registred member.<br /><br />All about connexion component in the Login.NET module :<br /><a href=\"http://www.codeplex.com/login\" class=\"externalLink\">http://www.codeplex.com/login<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a><br /><br />Hope this can help<br />",
+    "PostedDate": "2008-01-08T23:08:58.19-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

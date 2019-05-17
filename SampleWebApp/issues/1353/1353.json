@@ -1,0 +1,295 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "fixed",
+    "ClosedDate": "2007-07-03T08:25:05.84-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "configurable via one setting in web.config - is there any interest in this being added to the main code base?",
+    "LastUpdatedDate": "2013-05-15T23:46:42.12-07:00",
+    "PlannedForRelease": "Version 3 Beta 1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:37:07.6-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "I have been developing the ability to store the images for galleries off to the file system instead of to the DB",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 8,
+    "Id": 1353
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "would be great, yes.",
+      "PostedDate": "2007-04-25T14:37:08.177-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "What's the advantage... I fail to see it... but I will put it in v3 if you would like.",
+      "PostedDate": "2007-04-25T14:37:08.537-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Advantage from my point of view - I find it easier to backup from the file system than from the DB - I have also added the facility to watermark images with the name of the site via the ASHX handler - and to optionally store only one copy of the image in either the DB or the IO Store - then to store the resized copies in a cache",
+      "PostedDate": "2007-04-25T14:37:08.897-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Oh the other thing I have added is a mootool fueled slideshow option to the main page of an album with a nice opacity transition between images",
+      "PostedDate": "2007-04-25T14:37:09.27-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "can you post the url of the image gallery? also, isn't it possible to use mootools, while the images are in DB?",
+      "PostedDate": "2007-04-25T14:37:09.693-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Plaid - not currently - it is all sitting on my development machine - as I am putting a new face on the whole site for my purposes\r\n\r\nSure you can use the mootools addition with DB stored images - and the Watermarking of images is not limited to IO based images either - they are just \"other\" things that I added at the same time as the main gallery changes",
+      "PostedDate": "2007-04-25T14:37:10.05-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I like the idea now :) Do you need TFS access, DavidMiles?",
+      "PostedDate": "2007-04-25T14:37:10.427-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "z2bass - not yet - let me tie it all off before I deploy it out",
+      "PostedDate": "2007-04-25T14:37:10.787-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "This is great idea..The sql server space unless running on your own box can become very exspensive...Let me know if you need any help or testers....",
+      "PostedDate": "2007-04-25T14:37:11.177-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Throw me the code... I will be releasing RC1 this week and I would love for this to be in it!",
+      "PostedDate": "2007-04-25T14:37:11.55-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Sent you an email yesterday - did you get it - I had a few questions and wanted to get the code to you - did you get it",
+      "PostedDate": "2007-04-25T14:37:11.91-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I didn't get it. You can zip it up and put it in this issue. Or you can send it again (sorry that I didn't get it!)\r\n\r\nzowens@eagleenvision.net",
+      "PostedDate": "2007-04-25T14:37:12.27-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Email sent to you",
+      "PostedDate": "2007-04-25T14:37:12.66-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "How far are you along with this? Care to share what you've done so far? I've been working on the exact same thing, and would like to see what/how you've coded certain things..\r\n\r\nThanks",
+      "PostedDate": "2007-04-25T14:37:13.037-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "He already has the code finished... it will be checked in shortly... right after 2.0 is complete.",
+      "PostedDate": "2007-04-25T14:37:13.41-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I suggest using this too:\r\n\r\n[url:Lightbox2|http://www.huddletogether.com/projects/lightbox2/] for the photo album.",
+      "PostedDate": "2007-04-28T08:51:02.443-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "This would be very useful.  I like the watermark idea as well.  I have a site based on the PK for a photographer and outting the imnages in the file structure instead of teh DB saves DB space, which is limited bt the hosting site,\r\n\r\nWatermark deters downloaders.  After all, the photographer wants to sell them.  Putting this is CSK is a super idea",
+      "PostedDate": "2007-04-29T07:52:36.023-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-02T07:20:24.09-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I could use such a feature already. Is it as simple as one setting in web.config?\r\n\r\nWould you care to share?",
+      "PostedDate": "2007-05-25T11:54:54.11-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Zack,\r\n\r\nAny update on adding this feature?  This is a great tool.  I use a similar setup in the PSK I have hosted at Go Daddy and it really is a benifit.  Saves DB space.",
+      "PostedDate": "2007-06-11T19:34:26.857-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "David hasn't gotten back to me. I will have to take his code and rework it myself.",
+      "PostedDate": "2007-06-14T13:07:49.95-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Where is the code for this? I really don't want to reinvent the wheel, but no way am I storing images in the db. ",
+      "PostedDate": "2007-06-15T20:21:08.633-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I deleted the code David sent me. I will have to just redo the code myself. I am sort of overwhelmed with the things I need to take care of in the kit right now, especially with the whole SubSonic conversion. I will keep you guys posted on my progress with this one.",
+      "PostedDate": "2007-06-17T15:06:34.247-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-21T06:00:02.37-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I am taking ownership of this issue.\r\n\r\nMike",
+      "PostedDate": "2007-06-27T01:46:45.937-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-27T01:46:48.733-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Thanks, Mike! You're the best!",
+      "PostedDate": "2007-06-27T16:23:28.417-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Here are the steps to add file system storage as an option:\r\n\r\nAdd the following line to web.config (around line 29):<add key=\"ImageStoreLocation\" value=\"1\" />  \r\n\r\nExplanation: 0 is database, 1 is filesystem.\r\n\r\nIn UserControls\\Photos_FormPicker, add this line at line 7:Private imageFileLocation As ImageLocation\r\n\r\nand replace Page_Load with this:    Private Sub DetermineStorageLocation()        'Read image storage location from web.config and assign to imageFileLocation.        imageFileLocation = CType(ConfigurationManager.AppSettings(\"ImageStoreLocation\"), ImageLocation)    End Sub        Private Sub AdjustSQLDataSources()        Dim sql As SqlDataSource = CType(pickexistingview.FindControl(\"SQLDataSource2\"), SqlDataSource)        Select Case imageFileLocation            Case ImageLocation.Database                With sql                    .SelectCommand = \"SELECT title, id FROM images WHERE (album = @album)\"                End With            Case ImageLocation.FileSystem                With sql                    .SelectCommand = \"SELECT title, id FROM image WHERE (album = @album)\"                End With        End Select    End Sub        Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs)        If Not IsPostBack Then            viewswitch.SetActiveView(main)        End If        DetermineStorageLocation()        AdjustSQLDataSources()    End Sub\r\n\r\nReplace UploadBtn_Click around line 105 with this new version:    Protected Sub UploadBtn_Click(ByVal sender As Object, ByVal e As System.EventArgs)        Dim newimageid As Integer        If imageFileLocation = ImageLocation.Database Then            newimageid = ImageUtils.uploadImage(Title.Text, CInt(AlbumList2.SelectedValue), FileUpload1.FileContent)        ElseIf imageFileLocation = ImageLocation.FileSystem Then            newimageid = ImageUtils.uploadImage(Title.Text, CInt(AlbumList2.SelectedValue), FileUpload1.FileContent, Server.MapPath(\"~\\Pictures\") & \"\\\")        End If        ImageId = newimageid        viewswitch.SetActiveView(main)    End Sub\r\n\r\nReplace the aspdatasource on lines 136-148 with this:            <asp:SqlDataSource ID=\"SqlDataSource1\" runat=\"server\" SelectCommand=\"SELECT albumid, title FROM Albums WHERE (ownerid = @owner) OR  (private = 0)\"                ConnectionString=\"<%$ ConnectionStrings:ClubSiteDB %>\"  OnSelecting=\"setowner\"></asp:SqlDataSource>\r\n\r\n",
+      "PostedDate": "2007-06-29T23:36:22.84-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "In UserControls\\ImageFetch.ashx, add the following near the top:Imports System.IO\r\n\r\nAdd the following after const BUFFERSIZE    Private imgStore As ImageLocation\r\n\r\nAdd the middle of the three lines following into ProcessRequest:\r\n\r\nresponse.BufferOutput = False        imgStore = ConfigurationManager.AppSettings(\"ImageStoreLocation\")        writeSingleImage(CInt(request.QueryString(\"ImageID\")), CInt(request.QueryString(\"Size\")), response.OutputStream)\r\n\r\nReplace the writeSingleImage sub with the following:\r\n\r\n    Public Sub writeSingleImage(ByVal ImageID As Integer, ByVal size As Integer, ByVal output As IO.Stream)        'todo fix the following line of code                'Get the image based on where it is stored, either filesystem or database.                If imgStore = ImageLocation.Database Then            Dim cxnstr As String = ConfigurationManager.ConnectionStrings(\"ClubSiteDB\").ConnectionString            Dim connection As New SqlConnection(cxnstr)            Dim query As String            Select Case size                Case 0 : query = \"select largeimage from images where id=@item_id\"                Case 1 : query = \"select thumbimage from images where id=@item_id\"                Case 2 : query = \"select origimage from images where id=@item_id\"                Case Else : query = \"select largeimage from images where id=@item_id\"            End Select                    Dim command As New SqlCommand(query, connection)            Dim param0 As New Data.SqlClient.SqlParameter(\"@item_id\", Data.SqlDbType.Int)            param0.Value = ImageID            command.Parameters.Add(param0)            connection.Open()                 Dim d As Byte() = CType(command.ExecuteScalar(), Byte())            output.Write(d, 0, d.Length)                    connection.Close()        ElseIf imgStore = ImageLocation.FileSystem Then            'Get the filename from the database            Dim cxnstr As String = ConfigurationManager.ConnectionStrings(\"ClubSiteDB\").ConnectionString            Dim connection As New SqlConnection(cxnstr)                        Dim query As String            query = \"SELECT imageFileName from image where id=@id\"            Dim command As New SqlCommand(query, connection)            Dim param0 As New Data.SqlClient.SqlParameter(\"@id\", Data.SqlDbType.Int)            param0.Value = ImageID            command.Parameters.Add(param0)            connection.Open()                        Dim fileName As String = CType(command.ExecuteScalar, String)                        Select Case size                Case 0                    'largeImage                    fileName = \"large\" & fileName                Case 1                    'thumbnail                    fileName = \"tmb\" & fileName                Case 2                    'original image                    'fileName already has the original image filename                               End Select                        fileName = httpcontext.Current.Request.PhysicalApplicationPath & \"pictures\\\" & fileName            Dim imageFile As New FileStream(fileName, FileMode.Open, FileAccess.Read)            Dim len As Integer = CInt(imageFile.Length)            Dim d(len) As Byte            imageFile.Read(d, 0, len)            imageFile.Close()            output.Write(d, 0, d.Length)        End If    End Sub",
+      "PostedDate": "2007-06-29T23:40:04.08-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "And last but not least, make the following changes in App_Code\\ImageHandling.vb:\r\n\r\nAdd to the top of the file, below the existing imports statements:Imports System.IO\r\n\r\nPublic Enum ImageLocation As Integer    Database = 0    FileSystem = 1End Enum\r\n\r\nReplace UploadImage with the following:\r\n\r\n    Public Shared Function uploadImage(ByVal title As String, ByVal albumid As Integer, ByVal data As IO.Stream, Optional ByVal path As String = \"\") As Integer        Dim origImageData(CInt(data.Length - 1)) As Byte        data.Read(origImageData, 0, CInt(data.Length))\r\n\r\n        Dim imgStore As ImageLocation = ConfigurationManager.AppSettings(\"ImageStoreLocation\")\r\n\r\n        If imgStore = ImageLocation.Database Then            Dim connection As New SqlConnection(ConfigurationManager.ConnectionStrings(\"ClubSiteDB\").ConnectionString)            Dim command As New SqlCommand(\"INSERT INTO Images (title, origimage, largeimage, thumbimage, album) VALUES ( @title, @origimage, @largeimage, @thumbimage, @albumid); select SCOPE_IDENTITY()\", connection)\r\n\r\n            Dim param0 As New SqlParameter(\"@title\", System.Data.SqlDbType.VarChar, 50)            param0.Value = title            command.Parameters.Add(param0)\r\n\r\n            Dim param1 As New SqlParameter(\"@origimage\", System.Data.SqlDbType.Image)            param1.Value = origImageData            command.Parameters.Add(param1)\r\n\r\n            Dim param2 As New SqlParameter(\"@largeimage\", System.Data.SqlDbType.Image)            param2.Value = MakeThumb(origImageData, 350)            command.Parameters.Add(param2)\r\n\r\n            Dim param3 As New SqlParameter(\"@thumbimage\", System.Data.SqlDbType.Image)            param3.Value = MakeThumb(origImageData, 69, 69)            command.Parameters.Add(param3)\r\n\r\n            Dim param4 As New SqlParameter(\"@albumid\", System.Data.SqlDbType.Int)            param4.Value = albumid            command.Parameters.Add(param4)\r\n\r\n            connection.Open()\r\n\r\n            Dim result As Object = command.ExecuteScalar()            connection.Close()\r\n\r\n            If Not result Is Nothing Then                Return CInt(result)            Else                Return 0            End If        ElseIf imgStore = ImageLocation.FileSystem Then            If Not Directory.Exists(path) Then                Directory.CreateDirectory(path)            End If\r\n\r\n            Dim filename As String = Now.Year & Now.DayOfYear & Now.Hour & Now.Minute & Now.Second & Now.Millisecond & \".jpg\"\r\n\r\n            Dim connection As New SqlConnection(ConfigurationManager.ConnectionStrings(\"ClubSiteDB\").ConnectionString)            Dim command As New SqlCommand(\"INSERT INTO Image (title, imageFileName,  album) VALUES ( @title, @imageFileName, @albumid); select SCOPE_IDENTITY()\", connection)\r\n\r\n            Dim param0 As New SqlParameter(\"@title\", System.Data.SqlDbType.VarChar, 50)            param0.Value = title            command.Parameters.Add(param0)\r\n\r\n            Dim param1 As New SqlParameter(\"@imageFileName\", System.Data.SqlDbType.NVarChar)            param1.Value = filename            param1.Size = 150            command.Parameters.Add(param1)\r\n\r\n            Dim thumbLargeImage As Byte() = MakeThumb(origImageData, 350)            Dim thumbSmallImage As Byte() = MakeThumb(origImageData, 69, 69)\r\n\r\n            Dim param4 As New SqlParameter(\"@albumid\", System.Data.SqlDbType.Int)            param4.Value = albumid            command.Parameters.Add(param4)\r\n\r\n            connection.Open()\r\n\r\n            Dim result As Object = command.ExecuteScalar()            connection.Close()\r\n\r\n            Dim newImageFile As FileStream = New FileStream(path & filename, FileMode.Create)            newImageFile.Write(origImageData, 0, origImageData.Length)            newImageFile.Close()\r\n\r\n            Dim newThumbFile As New FileStream(path & \"large\" & filename, FileMode.Create)            newThumbFile.Write(thumbLargeImage, 0, thumbLargeImage.Length)            newThumbFile.Close()\r\n\r\n            Dim newThumb As New FileStream(path & \"tmb\" & filename, FileMode.Create)            newThumb.Write(thumbSmallImage, 0, thumbSmallImage.Length)            newThumb.Close()\r\n\r\n            If Not result Is Nothing Then                Return CInt(result)            Else                Return 0            End If        End If\r\n\r\n    End Function",
+      "PostedDate": "2007-06-29T23:42:51.63-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Almost forgot, you need to add a table to your database.\r\n\r\nCREATE TABLE [dbo].[image](\t[id] [int] IDENTITY(1,1) NOT NULL,\t[title] [nvarchar](50) NOT NULL,\t[imageFileName] [nvarchar](50) NOT NULL,\t[album] [int] NOT NULL,\t[notes] [varchar](500) NULL, CONSTRAINT [PK_image] PRIMARY KEY CLUSTERED (\t[id] ASC)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]) ON [PRIMARY]\r\n\r\nGO",
+      "PostedDate": "2007-06-29T23:48:10.4-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Almost forgot, you need to add a table to your database.\r\n\r\nCREATE TABLE [dbo].[image](\t[id] [int] IDENTITY(1,1) NOT NULL,\t[title] [nvarchar](50) NOT NULL,\t[imageFileName] [nvarchar](50) NOT NULL,\t[album] [int] NOT NULL,\t[notes] [varchar](500) NULL, CONSTRAINT [PK_image] PRIMARY KEY CLUSTERED (\t[id] ASC)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]) ON [PRIMARY]\r\n\r\nGO",
+      "PostedDate": "2007-06-29T23:48:52.7-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-29T23:49:46.12-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "And create a directory Pictures under the root of the website.",
+      "PostedDate": "2007-06-29T23:50:50.857-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Add the following to Photo\\Contents.aspx:\r\n\r\nAdd this line at the top right below the <script> start tag:Private imageFileLocation As ImageLocation\r\n\r\nChange the line in UploadFile_Click from imageid = ImageUtils.uploadimage(...) to :\r\n\r\n            If imageFileLocation = ImageLocation.Database Then                imageid = ImageUtils.uploadImage(imgTitle.Text, albumid, FileUpload1.FileContent)            ElseIf imageFileLocation = ImageLocation.FileSystem Then                imageid = ImageUtils.uploadImage(imgTitle.Text, albumid, FileUpload1.FileContent, Server.MapPath(\"~\\Pictures\") & \"\\\")            End If\r\n\r\nAdd the following subs:\r\n\r\n    Private Sub DetermineStorageLocation()        'Read image storage location from web.config and assign to imageFileLocation.        imageFileLocation = CType(ConfigurationManager.AppSettings(\"ImageStoreLocation\"), ImageLocation)    End Sub        Private Sub AdjustSQLDataSources()        Select Case imageFileLocation            Case ImageLocation.Database                With SqlDataSource2                    .SelectCommand = \"SELECT id, title, notes FROM images WHERE (album = @albumid)\"                    .DeleteCommand = \"DELETE FROM images WHERE (id = @id)\"                    .UpdateCommand = \"UPDATE images SET title = @title, notes = @notes WHERE (id = @id)\"                End With            Case ImageLocation.FileSystem                With SqlDataSource2                    .SelectCommand = \"SELECT id, title, notes FROM image WHERE (album = @albumid)\"                    .DeleteCommand = \"DELETE FROM image WHERE (id = @id)\"                    .UpdateCommand = \"UPDATE image SET title = @title, notes = @notes WHERE (id = @id)\"                End With        End Select    End Sub        private sub LoadSQLParameters()    'Common SQLParameters        With SqlDataSource2            .SelectParameters.Add(\"albumid\", Request.QueryString(\"albumid\"))            .DeleteParameters.Add(\"id\", \"\")            .UpdateParameters.Add(\"title\", \"\")            .UpdateParameters.Add(\"notes\", \"\")            .UpdateParameters.Add(\"id\", \"\")        End With    end sub\r\n\r\nAdd the following lines to the end of Page_Load:\r\n\r\n        DetermineStorageLocation()            AdjustSQLDataSources()                    If Not Page.IsPostBack Then            loadsqlparameters()        End If        Replace the sqldatasource2 block with this:\r\n\r\n            <asp:SqlDataSource ID=\"SqlDataSource2\" runat=\"server\" ConnectionString=\"<%$ ConnectionStrings:ClubsiteDB %>\">",
+      "PostedDate": "2007-06-30T10:27:10.923-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "In Photo\\List.aspx, make the following changes:\r\n\r\nAdd the following line to the top of the file beneath the opening <script> tag:\r\n\r\n    Private imageFileLocation As ImageLocation\r\n\r\nAdd in the following subs:\r\n\r\n    Private Sub DetermineStorageLocation()        'Read image storage location from web.config and assign to imageFileLocation.        imageFileLocation = CType(ConfigurationManager.AppSettings(\"ImageStoreLocation\"), ImageLocation)    End Sub        Private Sub AdjustSQLDataSources()        Select Case imageFileLocation            Case ImageLocation.Database                With SqlDataSource1                    .SelectCommand = \"PagedAlbumList\"                End With            Case ImageLocation.FileSystem                With SqlDataSource1                    .SelectCommand = \"PagedAlbumList1\"                End With        End Select    End Sub\r\n\r\nAdd the following lines to Page_Load:\r\n\r\n        If Not Page.IsPostBack Then            DetermineStorageLocation()            AdjustSQLDataSources()        End If\r\n\r\nRemove the SelectCommand from the Sqldatasource1 around line 58 SelectCommand=\"PagedAlbumList\"\r\n\r\n",
+      "PostedDate": "2007-06-30T10:33:14.663-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Add the following Stored Procedure:\r\n\r\nCREATE PROCEDURE [dbo].[PagedAlbumList1](\t@ownerID UNIQUEIDENTIFIER,\t@pageNum INT = 1,\t@pageSize INT = 10)\tAS\tDECLARE @rows INT\tDECLARE @keyid INT\tDECLARE @rowCount FLOAT /* yes we need a float for the math */\t\tIF @pageNum = 1\t\tBEGIN\t\t\tSET @keyid=0\t\tEND\tELSE\t\tBEGIN\t\t\t/* get the values for the date and row */\t\t\tSELECT @rows = (@pageNum-1) * @pageSize\t\t\tSET ROWCOUNT  @rows\t\t\tSELECT @keyid=albumid FROM albums \t\t\t\tWHERE(Albums.private = 0) OR (Albums.private = 1) AND (Albums.ownerid = @ownerid)\t\t\t\tORDER BY albumid ASC  \t\tEND\r\n\r\nSELECT @rowCount=COUNT(*) FROM albums WHERE (Albums.private = 0) OR (Albums.private = 1) AND (Albums.ownerid = @ownerid) \r\n\r\nSET  ROWCOUNT @pageSize\tSELECT Albums.albumid, Albums.title, Albums.private, MIN(image.id) AS DisplayImage, count(image.id) as ImageCount \tFROM Albums LEFT OUTER JOIN image ON Albums.albumid = image.album \tWHERE ((Albums.private = 0) OR (Albums.private = 1) AND (Albums.ownerid = @ownerid))\t  AND (albums.albumid > @keyid)\tGROUP BY  albumid, albums.title, albums.private  \tRETURN CEILING(@rowCount/@pageSize)",
+      "PostedDate": "2007-06-30T10:33:59.103-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I think that is it.  It is hard to do a diff-merge comparison since most of the files have had the comments removed.",
+      "PostedDate": "2007-06-30T10:35:46.387-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Does Setowner of UserControls/Photos_ForumPicker.aspx need to be changed? It is kicking back an error when you try to edit an event or news article.",
+      "PostedDate": "2007-06-30T17:09:38.29-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-30T17:09:38.947-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-30T17:28:01.017-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-30T17:28:36.627-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I don't know, as I have the owner stuff stripped out.  I don't need to set an owner for my purposes, so I just deleted that section.\r\n\r\nI have downloaded the latest version of the source and will make the changes to it, then attach them here.",
+      "PostedDate": "2007-06-30T18:04:48.183-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Fixed\r\n\r\n** Closed by z2bass 6/30/2007 5:28 PM",
+      "PostedDate": "2007-07-03T08:24:15.557-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "repoened for release assignment",
+      "PostedDate": "2007-07-03T08:24:15.79-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-03T08:24:29.4-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-03T08:24:49.417-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-03T08:25:05.84-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Needed this for a similar site coded in C#. Thanks for pointers.",
+      "PostedDate": "2008-06-05T03:30:20.103-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:26.727-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:42.12-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

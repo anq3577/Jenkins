@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "54678",
+    "ThreadId": "16862",
+    "Html": "\r\nHow do I go about updating my express version of Version 3 Beta 1 to apply bug fixes etc?<br />Am I right in trying to update the code through using source control?<br />I have tried this but by downloading a repository from the source tab but I haven't a clue what to do with it.  Will this only work if I have a full version of Visual Studio?<br />How do I apply the changes to the SQL database on the host?  Is this supposed to be automatic?<br />Some advice and clarification please.<br /><br />",
+    "PostedDate": "2007-10-23T23:57:18.84-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "54697",
+    "ThreadId": "16862",
+    "Html": "\r\nThe whole package downloaded from source control will only work in VS Standard, Pro, and Team Suite. <br /><br />You should do a file diff to see which files have changed and then replace those.<br /><br />Your DB is not affected when you do an upgrade.<br />",
+    "PostedDate": "2007-10-24T03:31:50.557-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

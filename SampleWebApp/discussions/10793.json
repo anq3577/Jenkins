@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "34988",
+    "ThreadId": "10793",
+    "Html": "\r\nI have created a club site kit for using the madtri themes. When running locally everything works fine. When I published the website I got an \"access denied script error on line 5959 of the script resource.axd\". This error occurs in IE7 but does not in firefox. The section of the .axd file that gets the error is only related to IE. <br /><br />The error does not popup right away. It only occurs after you try to login. After that anytime you click on the page the error pops up.<br /><br />Thanks<br />",
+    "PostedDate": "2007-05-29T19:55:35.947-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "35042",
+    "ThreadId": "10793",
+    "Html": "\r\nWhat is the link to your website?  Also did you say you can login to your website?<br />",
+    "PostedDate": "2007-05-30T06:41:34.49-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "35142",
+    "ThreadId": "10793",
+    "Html": "\r\nThe link is www.dphcycle.info/club I cannot login to the site using IE7 but can however login using firefox.<br /><br />Thanks<br />",
+    "PostedDate": "2007-05-30T18:48:34.877-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36470",
+    "ThreadId": "10793",
+    "Html": "\r\nI have figured out that the issue is with Go Daddy's forwarding of the domain name. If access the site using an ip address or access it using the dns server name. The site works fine. Any ideas how to make it work with the Go Daddy domain name? <br /><br />Thanks<br />",
+    "PostedDate": "2007-06-11T17:53:36.89-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36520",
+    "ThreadId": "10793",
+    "Html": "\r\nYour site seem to be working fine from what i can see, is every part of your website working correctly? When I tried to install the website on GoDaddy I had issues with the forums and blogs. Did you have any issues with it also?<br />",
+    "PostedDate": "2007-06-12T04:03:27.557-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36644",
+    "ThreadId": "10793",
+    "Html": "\r\nI finally got a work around for last night. I had to add my ip address to Go Daddy's DNS. This corrected the problem. I am hosting the website myself. My domain name is registered with Go Daddy. I have not had any isues with the forums or blogs.<br /><br />Thanks<br />",
+    "PostedDate": "2007-06-12T14:05:03.333-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

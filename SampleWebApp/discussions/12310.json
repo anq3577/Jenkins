@@ -1,0 +1,82 @@
+[
+  {
+    "Id": "40042",
+    "ThreadId": "12310",
+    "Html": "\r\nZach,<br /><br />What was the rational behind deleting the locations?<br /><br />\"1) Deleted Locations. We MIGHT put it back in for beta 2... but it is OUT for beta 1\"<br /><br />It is a very integral part of the CSK. <br />",
+    "PostedDate": "2007-07-07T07:52:48.743-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40044",
+    "ThreadId": "12310",
+    "Html": "\r\nI agree, I use Locations for directions and local information and have put a lot of work in adding my locations, needs to be back in before I upgrade<br />",
+    "PostedDate": "2007-07-07T08:20:20.857-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40051",
+    "ThreadId": "12310",
+    "Html": "\r\nSubSonic 2.0.2 doesn't support \"JOINS\" so I was just going to simplify it for beta 1. It will most likely be put back in for beta 2. I need to work out the \"join\" query with SubSonic, first.<br /><br />Unless this is an absolute necessity....?<br />",
+    "PostedDate": "2007-07-07T10:17:17.303-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40058",
+    "ThreadId": "12310",
+    "Html": "\r\nIt is a necessity.  It is how many club sites provide location information and directions to the Events.  Taking this out is a major step in the wrong direction.  We should focus on enhancing the kit not removing modules.<br />",
+    "PostedDate": "2007-07-07T11:59:56.95-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40063",
+    "ThreadId": "12310",
+    "Html": "\r\nI'm surprised subsonic doesn't support multi table selects. <br /><br />Is it just the \"join\" syntax it has issues with? Can you just use where table1.id = t2.id type logic? <br />",
+    "PostedDate": "2007-07-07T12:14:19-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40066",
+    "ThreadId": "12310",
+    "Html": "\r\nI don't think there is a way to write a SubSonic query with 2 tables in mind.<br />",
+    "PostedDate": "2007-07-07T13:15:53.607-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40072",
+    "ThreadId": "12310",
+    "Html": "\r\nLooks like you're right:<br />http://actionpack.wekeroad.com/forums/t/1330.aspx<br /><br />That seems incredibly limiting. Hopefully they'll remedy that fairly quickly.<br />",
+    "PostedDate": "2007-07-07T14:48:19.67-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40078",
+    "ThreadId": "12310",
+    "Html": "\r\nI will file a feature request with them. I do know that they will be starting on a new query engine. I will suggest that better JOIN support be added then.<br /><br />I could do it with an SP... but I like doing it by code MUCH better.<br /><br />(Hey Tina... are you interested in becoming a dev on this project???? You have contributed in the forums lately and I think it has proven that you know your stuff!)<br />",
+    "PostedDate": "2007-07-07T17:25:53.007-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41175",
+    "ThreadId": "12310",
+    "Html": "\r\nOK... I put in a Feature Request over at the SubSonic issue tracker. GO VOTE FOR IT! The faster they implament a \"Join\" feature, the faster we can get location put back in!<br /><br /><a href=\"http://www.codeplex.com/actionpack/WorkItem/View.aspx?WorkItemId=11739\" class=\"externalLink\">http://www.codeplex.com/actionpack/WorkItem/View.aspx?WorkItemId=11739<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a><br />",
+    "PostedDate": "2007-07-15T19:39:23.49-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "57159",
+    "ThreadId": "12310",
+    "Html": "\r\nAny updates on this?  The loss of this feature has gad a significant impact on my ability to upgrade my site to 3.X.  <br /><br />What is Subsonic saying?<br />",
+    "PostedDate": "2007-11-07T12:05:33.24-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

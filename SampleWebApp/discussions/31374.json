@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "104315",
+    "ThreadId": "31374",
+    "Html": "Hello there,<br>\r\n<br>\r\nI have been trying to get familiar with the Forum section of the Club Starter Kit, but I have been running into a few problems.<br>\r\n<br>\r\nWhen I am logged into the website and I try and access a Thread to see the Messages contained within it, I get the following error message:<br>\r\n<br>\r\n&quot;The INSERT statement conflicted with the FOREIGN KEY constraint &quot;FK_MembersThreads_MemberInfo&quot;. The conflict occurred in database &quot;ClubSK&quot;, table &quot;dbo.MemberInfo&quot;, column 'memberid'. The statement has been terminated.&quot;<br>\r\n<br>\r\nAnd when I am not logged in, and I try and access the same Thread, I get the following error message:<br>\r\n<br>\r\n&quot;Object reference not set to an instance of an object.&quot; When it tries to:<br>\r\n<br>\r\nDim CurrentGUID As Guid = Membership.GetUser().ProviderUserKey()<br>\r\n<br>\r\nCan anyone suggest a reason why this would be happening?<br>\r\n<br>\r\nI have downloaded both the most recent source code, and version 3 Beta 1, and it seems to be happening in both.&nbsp; <br>\r\n<br>\r\nAm I doing something wrong?<br>\r\n<br>\r\nThanks<br>\r\n<br>\r\nGary<br>\r\n",
+    "PostedDate": "2008-07-12T11:55:01.937-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "104422",
+    "ThreadId": "31374",
+    "Html": "Hi Gary,<br>\r\n<br>\r\nI tried this with some older sources, when the database name was ClubDB and it went all fine.<br>\r\nSo the database schema must have changed. Can you debug the code and try to find out which information are transmitted inside the SQL-Statement?!<br>\r\nDid you start&nbsp;autoscafold for subsonic after installing csk?<br>\r\n<br>\r\nHope that helps,<br>\r\nThorsten\r\n",
+    "PostedDate": "2008-07-13T15:08:05.32-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "104427",
+    "ThreadId": "31374",
+    "Html": "Hello thoze,<br>\r\n<br>\r\nI was able to get this to work, but I had to make a change to the code as follows:<br>\r\n<br>\r\nDim CurrentGUID As Guid = Membership.GetUser().ProviderUserKey()<br>\r\n<br>\r\nto<br>\r\n<br>\r\nDim CurrentGUID As Guid<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Try<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CurrentGUID = Membership.GetUser().ProviderUserKey()<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Catch<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Return False<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; End Try<br>\r\n<br>\r\nI can understand how this would fix the second problem, but it also seems to have fixed the first one.&nbsp; Very strange!!<br>\r\n<br>\r\nI will continue to look into it, and will report back if I find out anything else.<br>\r\n<br>\r\nThanks<br>\r\n<br>\r\nGary<br>\r\n",
+    "PostedDate": "2008-07-13T15:28:55.47-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

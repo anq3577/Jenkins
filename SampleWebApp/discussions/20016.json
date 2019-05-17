@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "66364",
+    "ThreadId": "20016",
+    "Html": "\r\nDoes anyone have or is there any documentation to use CSK 3.1b with SQL?  I modified the connection string, regenerated the DALs, but still having problems publishing the site.<br />",
+    "PostedDate": "2008-01-06T07:02:58.67-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "66365",
+    "ThreadId": "20016",
+    "Html": "\r\nLine 9:      Public Class Events<br />Line 10:         Public Shared Sub Delete(ByVal Id As String)<br />Line 11:             Dim eventqry As New Query(Tables.ClubEvent)<br />Line 12:             eventqry.QueryType = QueryType.Delete<br />Line 13:             eventqry.AddWhere(ClubEvent.Columns.ID, Id)<br /><br />=========================================<br />connection string<br />&lt;connectionStrings&gt;<br />    &lt;add name=\"ClubSiteDB\" <br />         connectionString=\"Data Source=www.mysite.com;Integrated Security=false;User Id=UID;Password=password\"<br />         providerName=\"System.Data.SqlClient\"/&gt;<br />&lt;/connectionStrings&gt;<br /><br />=========================================<br />Generate DAL (subsonic 2.0.3)<br /><br />sonic.exe generate /override /spStartsWith SP_ /viewStartsWith View /out c:\\DALs /lang vb /server www.mysite.com /db myDb /userid UID /password password /generatedNamespace ClubStarterKit.Data /fixPluralClassNames false /spClassName SPs /provider ClubStarterKitData<br />sonic.exe generateODS /override /out c:\\DALs /lang vb /server www.mysite.com /db myDb /userid UID /password password /generatedNamespace ClubStarterKit.Data /fixPluralClassNames false /spClassName SPs /provider ClubStarterKitData<br />sonic.exe generateviews /override /out c:\\DALs /lang vb /viewStartsWith View /server www.mysite.com /db myDb /userid UID /password password /generatedNamespace ClubStarterKit.Data /fixPluralClassNames false /spClassName SPs /provider ClubStarterKitData<br /><br />",
+    "PostedDate": "2008-01-06T07:28:15.91-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

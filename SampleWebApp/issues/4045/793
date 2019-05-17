@@ -1,0 +1,46 @@
+The data types image and varbinary(max) are incompatible in the equal to operator. 
+Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. 
+
+Exception Details: System.Data.SqlClient.SqlException: The data types image and varbinary(max) are incompatible in the equal to operator.
+
+Source Error: 
+
+
+Line 29:             Images.Insert(title, MakeThumb(origImageData, 350), MakeThumb(origImageData, 69, 69), origImageData, albumid, "")
+Line 30: 
+Line 31:             Dim imgs As New Images(Images.Columns.Origimage, origImageData)
+Line 32:             If imgs.IsLoaded = True Then
+Line 33:                 Return imgs.Id
+ 
+
+Source File: C:\codeplex\ClubStarterKit\ClubStarterKit\ClubStarterKit.Web\App_Code\BLL\ImageHandling.vb    Line: 31 
+
+Stack Trace: 
+
+
+[SqlException (0x80131904): The data types image and varbinary(max) are incompatible in the equal to operator.]
+   System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection) +921162
+   System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection) +800038
+   System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj) +186
+   System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj) +1932
+   System.Data.SqlClient.SqlDataReader.ConsumeMetaData() +31
+   System.Data.SqlClient.SqlDataReader.get_MetaData() +62
+   System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString) +297
+   System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async) +947
+   System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result) +132
+   System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method) +32
+   System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method) +122
+   System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior) +62
+   SubSonic.SqlDataProvider.GetReader(QueryCommand qry) in C:\SubSonic 2.0.3\src\SubSonic\DataProviders\SqlDataProvider.cs:138
+   SubSonic.AbstractRecord`1.LoadByParam(String columnName, Object paramValue) in C:\SubSonic 2.0.3\src\SubSonic\ActiveRecord\AbstractRecord.cs:328
+   ClubStarterKit.Data.Images..ctor(String columnName, Object columnValue) +78
+   ImageUtils.uploadImage(String title, Int32 albumid, Stream data, String path) in C:\codeplex\ClubStarterKit\ClubStarterKit\ClubStarterKit.Web\App_Code\BLL\ImageHandling.vb:31
+   ASP.photo_contents_aspx.UploadFile_Click(Object sender, EventArgs e) in C:\codeplex\ClubStarterKit\ClubStarterKit\ClubStarterKit.Web\photo\Contents.aspx:36
+   System.Web.UI.WebControls.Button.OnClick(EventArgs e) +105
+   System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument) +107
+   System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument) +7
+   System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument) +11
+   System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData) +33
+   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +1746
+
+ 

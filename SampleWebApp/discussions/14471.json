@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "47067",
+    "ThreadId": "14471",
+    "Html": "\r\nHas anyone ever taken a look at the traffic a site based on the V2 version produces on a webserver?<br /><br />I went life 2 days ago. With an average of 400 visitors a day it produces 600MB of traffic a day.<br />The main part of the traffic is produced by the avatarfetch control.<br /><br />I allready set the debug to false in the webconfig then the images should be cached.<br />But images that are retrieved from the database are not cached because there is no url connected to it.<br /><br />In addition to the standard site I only have a left menu extra in de default master. It now produces ie the default page of 110K.<br /><br />Anybody has an idea how to apply some extra caching/optimizing on the V2 pack so I won't get big bills from my provider?<br /><br /><br />I think a lot of optimization can be achied when I can publish the site instead of  copying. But I can't publish in because I get an error on the webcontent user control. That has an public property section that is called from aspx pages. However when compiling an error states thet the property section is not part of the standard UIcontrol.<br /><br />Anybody got an idea on this one?<br />",
+    "PostedDate": "2007-08-29T06:59:14.737-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "51507",
+    "ThreadId": "14471",
+    "Html": "\r\nI was able to get past the publish problem by replacing the webcontent user control with another one that was called webcontent2 and it uses the codebehind model.  For some reason, that seemed to work.  If you'd like further details, I can post them.  Just let me know what you need.<br />",
+    "PostedDate": "2007-10-01T23:35:04.093-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

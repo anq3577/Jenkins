@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:34:06.973-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi,\n \nNot logged in trying to start new thread:\n \nString or binary data would be truncated.\nThe statement has been terminated.",
+    "LastUpdatedDate": "2013-05-15T23:46:42.8-07:00",
+    "PlannedForRelease": "v2 RC1",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:34:05.863-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Forum error reproducable?",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 1254
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

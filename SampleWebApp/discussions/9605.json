@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "31203",
+    "ThreadId": "9605",
+    "Html": "\r\nI have read various posts here regarding problems getting the SQL scripts to run without error. I have never used them to set up my site because I don't know HOW to use them with my host. My host has a shared DB server running SQL 2005 and does not allow remote access. This is the procedure I used to create the DB file. Please tell me if there is a problem using this method.<br /><br />1. Created an empty DB on server using Plesk admin tools provided by host.<br />2. Assigned a user and password to new DB.<br />3. Used SQL Express on local machine to make a backup of ClubDB.<br />4. Logged into remote DB server using DB admin tool provided by host.<br />5. Restored empty DB from .bak file created in step 3.<br /><br />Most things seem to work, but I'm starting to wonder if creating the DB this way rather than using the SQL scripts can create any  problems.<br /><br />Thanks,<br />Ed<br />",
+    "PostedDate": "2007-04-25T08:48:53.313-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31262",
+    "ThreadId": "9605",
+    "Html": "\r\nNope... should be the same. This is probably the better way to do it... some people are having some problems with the generated scripts.<br />",
+    "PostedDate": "2007-04-25T14:13:58.643-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31513",
+    "ThreadId": "9605",
+    "Html": "\r\nI would like to suggest that you take a look at the SQL Server Database Publishing Toolkit for Web Hosting. You can read a little about it here <a href=\"http://weblogs.asp.net/scottgu/archive/2007/04/19/update-of-sql-server-database-publishing-toolkit-for-web-hosting.aspx\" class=\"externalLink\">http://weblogs.asp.net/scottgu/archive/2007/04/19/update-of-sql-server-database-publishing-toolkit-for-web-hosting.aspx<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a><br /><br />This might solve other users problems as well.<br />",
+    "PostedDate": "2007-04-27T13:56:01.05-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31559",
+    "ThreadId": "9605",
+    "Html": "\r\nI am using that... that's the problem. It creates these really long scripts.<br />",
+    "PostedDate": "2007-04-28T08:19:47.153-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

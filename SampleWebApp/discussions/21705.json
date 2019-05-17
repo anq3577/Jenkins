@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "72329",
+    "ThreadId": "21705",
+    "Html": "\r\nThe CSK is great but one request, though. Can Slide.Show <a href=\"http://www.codeplex.com/SlideShow\" class=\"externalLink\">http://www.codeplex.com/SlideShow<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a>be included in CSK ver. 4 ? :) <br />",
+    "PostedDate": "2008-02-07T02:58:39.737-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "72334",
+    "ThreadId": "21705",
+    "Html": "\r\nWe will certainly make improvements to the album features in CSK, but we will not be integrating Slide.Show, unfortunatly.<br />",
+    "PostedDate": "2008-02-07T03:31:53.93-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "72349",
+    "ThreadId": "21705",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />euo wrote:<br />The CSK is great but one request, though. Can Slide.Show <a href=\"http://www.codeplex.com/SlideShow\" class=\"externalLink\">http://www.codeplex.com/SlideShow<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a>be included in CSK ver. 4 ? :) <br /><br /></div><br />I use JAlbum, works great.<br /><br />http://www.sahcinfo.org<br />",
+    "PostedDate": "2008-02-07T04:52:01.773-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "72732",
+    "ThreadId": "21705",
+    "Html": "\r\noic,. :( <br /><br />I'll check JAlbum. <br /><br />Thanks for the response. <br />",
+    "PostedDate": "2008-02-08T18:55:55.29-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "72743",
+    "ThreadId": "21705",
+    "Html": "\r\nDoesn't mean you couldn't put it in yourself... I'm sure there's a way. I might look into it and put in a tutorial. We're open source, after all, and what the community says goes :)<br />",
+    "PostedDate": "2008-02-08T21:31:58.577-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

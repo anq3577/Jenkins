@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "44345",
+    "ThreadId": "13603",
+    "Html": "\r\nOK, Im stuck<br /><br />Im trying to build my own results viewer of a results database I have on my site.  The results database is seperate and I want to be able to view results on it according to criteria in dropdown boxes and text boxes.<br /><br />So, I have, at the moment just 2 dropdown boxes that I have populated with the race name and the club name respectively, these dropdowns are postback and only return unique data.  When someone clicks the drop down they can choose a race name and a club name, the Gridview will return the data according to thier choice.  GREAT!<br /><br />Now, I updated the dropdowns to default to show a --choose a race-- and a --choose a club-- item by default, I append the unique data under these items.  Again works great.<br /><br />However, I want the gridview to return all data if the default --choose a race -- and --choose a club-- is selected.  SO for example if someone chooses a race but not a club, it will return all clubs who have run that race as no club was selected, i.e. it was null (which I will set as the value).<br /><br />Here is my select statement.  <br />SELECT <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=FirstName\">FirstName</a>, <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=LastName\">LastName</a>, <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=Age\">Age</a>, <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=club\">club</a>, <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=race\">race</a>, <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=Position\">Position</a>, <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=Catagory\">Catagory</a>, <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=Time\">Time</a>, <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=date\">date</a> FROM <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=raceresults\">raceresults</a> WHERE ((<a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=club\">club</a> = @club) AND (<a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=race\">race</a> = @race)) ORDER BY <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=Position\">Position</a><br /><br />Anyone have any ideas? I have looked on the internet and think I might have to go down the meathods route but that is going over my head a bit at the moment.<br /><br />Cheers<br /><br />Darren<br />",
+    "PostedDate": "2007-08-09T04:24:12.437-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44367",
+    "ThreadId": "13603",
+    "Html": "\r\nYou have to build a custom select statement.<br />A WHERE clause is a constraint, so if someone chooses a race but not a club you do not need a club-constraint and the select statement should be like this:<br /><br />Select FirstName, LastName, Age, club, race, Position, Category, Time, date FROM raceresults WHERE race = @race ORDER BY Position<br /><br />Or you create a stored procedure and there you handle your parameters.<br />e.g. @club = '0' --&gt; select all clubs, alternatively do not constrain the clubs.<br />I would not transmitt null as a parameter!<br /><br />By the way, perhaps you should store your clubs in a 2nd table and join the tables later. At this point you also can do your constraints with the ON operation.<br />1 race, multiple clubs  --&gt; 1:n relation<br /><br />Hope that helps.<br />Thorsten<br />",
+    "PostedDate": "2007-08-09T07:10:45.613-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44380",
+    "ThreadId": "13603",
+    "Html": "\r\nOK<br /><br />I understand that the where command is a constraint, and that by selecting a value in the dropdown I contrain the data to that subset.  I do want to give my runners the option of constraining the data further by the club name, if they so wish.  I also want to be able to give them the option to constrain the data by Club and not by race, and even by LastName with or with the constraints of Club and Race.<br /><br />So I guess by option is to construct a stored procedure to do this?  Im afraid Im out of my league and would really appreciate any pointers on that one, I am trying to follow some of the lessons in http://www.asp.net/learn/data-access/ but this last bit is a bit over my head.<br /><br />As for Joining tables, I cant see the benefit of putting clubs in another table, I have no way of knowing what clubs may turn up and will use the unique option in the dropdown list to populate those, rather than having to pick them out and update a seperate table.<br /><br />Thanks for your help (my head hurts)<br />",
+    "PostedDate": "2007-08-09T08:26:02.077-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44533",
+    "ThreadId": "13603",
+    "Html": "\r\nDarren, I can't help with your current question, but was just wondering if you received the email I sent several days ago? I sent it through the link on this site but haven't heard back from you.<br /><br />Ed<br />",
+    "PostedDate": "2007-08-10T08:52:27.85-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44597",
+    "ThreadId": "13603",
+    "Html": "\r\nhi Ed<br /><br />No, I didnt see that, probably ended up in my junk mail folder and I didnt notice it. (not suggesting your mail was junk :-))<br /><br />",
+    "PostedDate": "2007-08-11T03:52:40.967-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

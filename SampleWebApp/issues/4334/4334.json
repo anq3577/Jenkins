@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Update version",
+    "ClosedDate": "2007-11-11T07:27:53.86-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi Everyone,\nI am getting this error on the login banner control when you hit Log Out only.\nCan someone help? The login on the home page works perfect, log in & log out. But loginbanner.ascx doesn't let you log out.\nThanks\n \n \n \nServer Error in '/' Application.\n--------------------------------------------------------------------------------\n \nCount cannot be less than zero.\nParameter name: count \nDescription: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. \n \nException Details: System.ArgumentOutOfRangeException: Count cannot be less than zero.\nParameter name: count\n \nSource Error: \n \n \nLine 13:         st = str.Remove(0, 1)\nLine 14:         count = st.IndexOf(\"/\"c)\nLine 15:         st = st.Remove(0, count)\nLine 16:         st = \"~\" & st\nLine 17:         Return st\n \n \nSource File: d:\\hosting\\naturalgolf\\UserControls\\LoginBanner.ascx    Line: 15 \n \nStack Trace: \n \n \n[ArgumentOutOfRangeException: Count cannot be less than zero.\nParameter name: count]\n   System.String.Remove(Int32 startIndex, Int32 count) +0\n   ASP.LoginBanner.GetFileName(String str) in d:\\hosting\\naturalgolf\\UserControls\\LoginBanner.ascx:15\n   ASP.LoginBanner.Logoutbtn_Click(Object sender, EventArgs e) in d:\\hosting\\naturalgolf\\UserControls\\LoginBanner.ascx:7\n   System.Web.UI.WebControls.Button.OnClick(EventArgs e) +105\n   System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument) +107\n   System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument) +7\n   System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument) +11\n   System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData) +33\n   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +5102",
+    "LastUpdatedDate": "2013-05-15T23:46:27.457-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-11-08T14:02:49.12-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Login Banner Control",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 4334
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "The called method is obsolete.\r\n\r\nPlease update your version!",
+      "PostedDate": "2007-11-11T07:25:43.577-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-11-11T07:27:53.86-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:08.883-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:27.457-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

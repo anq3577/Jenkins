@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "111591",
+    "ThreadId": "33674",
+    "Html": "<p>Having trouble with the 'My Details' section...</p>\r\n<p>the required field Messages Per Page is a stumbling block for most of the users that want to change details. If they try to add an avatar or modify details, they don't notice the required field 'messages per page'. They tell me the page isn't working since they don't see anything happen when they hit 'Update' (don't see the red asterisk by msgs per pg). For now, I've removed forums from the sitemap because we're not using them just yet. </p>\r\n<p>If I remove the validation, users can update contact details and add an avatar, but if they update profile, they get an error about Error updating profile: Conversion from string &quot;&quot; to type 'Integer' is not valid. if they don't put an integer value in Messages Per Page.</p>\r\n<p>Fair enough, I figured if I could force a default value, say, 10 for Messages Per Page, bob's my uncle. Er...now how do i do that...hmmm...I see there is a default value for avatars if null? <br>\r\n&nbsp;<br>\r\nIfNot IsDBNull(MemInfo.Avatar) Then avatarimage.ImageUrl = &quot;~\\UserControls\\AvatarImagefetch.ashx?Memberid=&quot; &amp; user.ProviderUserKey.ToString </p>\r\n<p>So I'm not sure how to do this for Messages Per Page...<br>\r\nIf Not IsDBNull(MemProf.MsgsPerPage) Then MsgsPerPageTextBox=&quot;10&quot; <br>\r\n&nbsp;<br>\r\ndon't laugh! I'm trying :) Can someone point me in the right direction? </p>\r\n",
+    "PostedDate": "2008-08-17T00:06:35.597-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "112699",
+    "ThreadId": "33674",
+    "Html": "JaneyDoe, <br>\r\n<br>\r\nI perform a re-direct from the registration (register.aspx)&nbsp;page to the details (details.aspx) page. Since the field is required they shouldn't be able to save changes to details without updating the field. I know this doesn't default it though. Do you have a Required Field Validator for the MsgsPerPage? You should. I believe this was changed in a later changeset. It would create the asterisk and tell the user to supply and input before they can save their page changes.<br>\r\n",
+    "PostedDate": "2008-08-21T09:57:54.173-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "113114",
+    "ThreadId": "33674",
+    "Html": "In&nbsp;the sub routine UpdateProfileButton_Click it has the line:<br>\r\n<br>\r\n<span style=\"font-size:13px\">\r\n<p>Mem.MsgsPerPage = MsgsPerPageTextBox.Text</p>\r\n</span>\r\n<p>Change this to something like:<span style=\"font-size:13px;color:#0000ff\"><span style=\"font-size:13px;color:#0000ff\">\r\n<p>If&nbsp; </p>\r\n</span>\r\n<p>&nbsp;</p>\r\n</span>\r\n<p><span style=\"font-size:13px\">MsgsPerPageTextBox.Text = </span><span style=\"font-size:13px;color:#a31515\"><span style=\"font-size:13px;color:#a31515\">&quot;&quot;</span></span><span style=\"font-size:13px\"> </span><span style=\"font-size:13px;color:#0000ff\"><span style=\"font-size:13px;color:#0000ff\">Then</span></span><span style=\"font-size:13px\">&nbsp;&nbsp;<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;Mem.MsgsPerPage = 10&nbsp;<br>\r\n</span><span style=\"font-size:13px;color:#0000ff\"><span style=\"font-size:13px;color:#0000ff\">Else</span></span><span style=\"font-size:13px\">&nbsp;&nbsp;<br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;Mem.MsgsPerPage = MsgsPerPageTextBox.Text<br>\r\n</span><span style=\"font-size:13px;color:#0000ff\"><span style=\"font-size:13px;color:#0000ff\">End</span></span><span style=\"font-size:13px\"> </span><span style=\"font-size:13px;color:#0000ff\"><span style=\"font-size:13px;color:#0000ff\">If<br>\r\n</span></span><br>\r\nIf&nbsp;you're concerned about&nbsp;your users entering non-numeric characters then you'll need to use&nbsp;OnTextChanged on the MsgsPerPageTextBox control to call a function and validate what they've entered.&nbsp;<br>\r\n<br>\r\nI hope this helps.</p>\r\n<p>&nbsp;</p>\r\n",
+    "PostedDate": "2008-08-22T19:17:03.487-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

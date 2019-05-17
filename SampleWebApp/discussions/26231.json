@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "87704",
+    "ThreadId": "26231",
+    "Html": "\r\nWhenever I log in as an administrator and click on the \"Downloads\" button in in an Event I get the following error:<br /><br />DataBinding: 'System.Char' does not allow indexed access. <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />Exception Details: System.ArgumentException: DataBinding: 'System.Char' does not allow indexed access.<br /><br />Source Error: <br /><br /><br />Line 22: &lt;div id=\"body\"&gt;&lt;div class=\"fullwidth\"&gt;&lt;h2&gt;Downloads for Event: &lt;asp:Repeater id=\"Repeater1\" runat=\"server\" DataSourceID=\"SqlDataSource2\"&gt;<br />Line 23:     &lt;ItemTemplate&gt;<br />Line 24:         &lt;%#DataBinder.Eval(Container.DataItem, \"<a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=Title\">Title</a>\")%&gt;<br />Line 25:     &lt;/ItemTemplate&gt;<br />Line 26: &lt;/asp:Repeater&gt;&nbsp;",
+    "PostedDate": "2008-04-18T19:58:47.013-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

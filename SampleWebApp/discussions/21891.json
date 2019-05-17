@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "73009",
+    "ThreadId": "21891",
+    "Html": "\r\nguys, who got CSK with MySQL as back-end?<br /><br /><br />Instead of making my hands dirty converting each tables and sps into MySQL, maybe I can just ask from you. :)<br /><br />I have not read much of SubSonic yet, but, do you guys think it is easy to use SubSonic to create the DAL layer if my database is MySQL ?<br /><br />Thanks. <br />",
+    "PostedDate": "2008-02-11T01:59:12.403-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

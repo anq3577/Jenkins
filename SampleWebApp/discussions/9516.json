@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "30980",
+    "ThreadId": "9516",
+    "Html": "\r\nKind of like the main information editable area, but lets say you want to add a links box to the default page under the Login box that you can edit manually through the admin pencil edit.<br /><br />And in addition have aligned in the upper left? Via question Layout of Default.aspx<br />",
+    "PostedDate": "2007-04-24T00:40:28.39-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "30983",
+    "ThreadId": "9516",
+    "Html": "\r\nOr a shout out box, Current users box, Whos online, etc...<br />",
+    "PostedDate": "2007-04-24T00:54:03.433-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

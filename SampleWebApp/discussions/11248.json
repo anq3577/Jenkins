@@ -1,0 +1,130 @@
+[
+  {
+    "Id": "36403",
+    "ThreadId": "11248",
+    "Html": "\r\nLet me preface this by saying that my background is in Cold Fusion, so I apologize in advance if this is a \"duh\" question. I downloaded the v2.0 Starter Kit. There's a lot of great functionality included. I was struggling with the bugs of v1.0 and about to throw up my arms and build it myself from scratch. <br /><br />When a user first lands on the site, the leftcolumn is displayed properly, but the news/blogs is waaaaay underneath it rather than displaying next to it on the right. I don't have a live site to show you, but after looking at some examples listed in codeplex I found this one is doing it, too: http://www.disciplesondirt.com/  <br /><br />On my local copy, it fixes itself after the user logs in. Any ideas? I'm using IE 6.2. <br /><br />A few other little questions/comments --<br />1. There's no pk on the locations table.<br />2. I'd like the various pages to display titles other than \"MySite\", ex: \"MySite - Forums\". It seems to have no effect if I change it from \"Untitled Page\" to a more descriptive name. They all say \"MySite\". <br />3. Wouldn't it be better to split out the address fields into address, city, state, zip? Down the road that might help if you want to build a \"download member list\" section. That would make it easier to run mail merge or something like that. <br />3. What about error logging? How are you capturing errors? <br />5. I was planning on just sticking with sqlexpress because I've noticed it's free with most hosting sites. If I run out of space is it fairly easy to convert to full-blown sql server?<br /><br />Thanks in advance!<br />",
+    "PostedDate": "2007-06-11T11:11:44.827-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36413",
+    "ThreadId": "11248",
+    "Html": "\r\nI have experienced this same sort of problem before. The problem is that the kit uses pre-defined column divs. Your screen size is probably something like 15\". The problem is your screen, that's all. I would recommend messing with the lengths of the column right, column left, left block, and right block style definitions.<br />",
+    "PostedDate": "2007-06-11T12:21:41.053-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36418",
+    "ThreadId": "11248",
+    "Html": "\r\nThanks. I'll give it a whirl. The example sites listed (like the scout one) looked fine so i wondered what was up. edit - Thanks for pointing me in the right direction. I made the textboxes on the login control smaller. Easy peasy. <br /><br />What about this one:<br /><br />2. I'd like the various pages to display titles other than \"MySite\", ex: \"MySite - Forums\". It seems to have no effect if I change it from \"Untitled Page\" to a more descriptive name. They all say \"MySite\". <br /><br />Any ideas there? <br />",
+    "PostedDate": "2007-06-11T12:26:16.543-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37214",
+    "ThreadId": "11248",
+    "Html": "\r\nFor #2, that is fairly easy to fix.<br /><br />1st, make sure that in the Default.master that the &lt;head&gt; tag has a runat=\"server\" in it.  I verified that the latest source download has the server directive.<br /><br />2nd, put the main title for your site in the &lt;title&gt; section of Default.master.<br /><br />3rd, delete from each aspx the Title section at the top.<br /><br />4th, in the Page_Load of each aspx file, add the following:<br />     Page.Header.Title &amp;= \" - Forums\" 'or whatever is appropriate for that aspx page.<br />",
+    "PostedDate": "2007-06-16T19:19:49.503-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37215",
+    "ThreadId": "11248",
+    "Html": "\r\nFor #5, If you have access to SQL Server, rather than Express, I would use that.  If you plan on migrating from Express to SqlServer down the road, you are looking at spending a lot of time moving the data over.  Since most parts (maybe all parts now) store images and files in the file system instead of the database, you will not be using a lot of database space anyway.<br /><br />For #4, right now I haven't been doing too intensive error catching.  I have debug set to on so I can see the stack traces.  When I finally go \"live\", I will have to set it up to email me the error messages rather than show them on-screen.<br />",
+    "PostedDate": "2007-06-16T19:23:44.34-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37234",
+    "ThreadId": "11248",
+    "Html": "\r\nThanks for your help. I've done the suggestions in number 4, but it never changes from the title displayed in the master page. I've tried placing the page_load in the code behind page, in the .aspx page... I've tried directly changing the title in the child page itself. Obviously I'm missing something. Does the child page load first, then the master page? It wouldn't make sense, but I'm wondering if that's where the title is being replaced. <br /><br />4 - Yeah I was figuring an email solution would be best as well. Is that something I can put in the master page somehow? Or maybe in an include file? <br /><br />5 - I'd come to a similar conclusion. I haven't moved it over yet, but you're right. Why make more work for myself for later. I've never done this on my own before though, so I don't have any concept of how much space I'll need. I always designed the db and let the dba worry about that. <br /><br />Is the image/file storing code somewhere I can see it? I downloaded v2 earlier in the month and as far as I can tell, they're all stored in the db. I'm assuming it's fairly easy - store the file path in .config, store the photo name in a table, put the two together to display. But I'm all about not reinventing the wheel.  <br /><br /><br />",
+    "PostedDate": "2007-06-17T09:18:58.77-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37235",
+    "ThreadId": "11248",
+    "Html": "\r\nI think I found the file image stuff. In news/edit  Session(\"FCKeditor:UserFilesPath\") = Request.ApplicationPath.ToString &amp; \"Files/\"? Yes?<br /><br />Sorry. It takes a bit of time to learn someone else's code. <br /><br />edit: Nope. It's definitely in the database in the images table. <br />",
+    "PostedDate": "2007-06-17T09:32:23.08-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37243",
+    "ThreadId": "11248",
+    "Html": "\r\nI am using an older version of the CSK.  I changed the head tag of the default.master to have a runat=\"server\" in it.<br /><br />Then, I removed the Title from the individual aspx pages.  In the page_load, I have this:<br /><br />Page.Header.Title &amp;= \" - Add Document\"<br /><br />In Default.master, I have this:<br /><br />&lt;head runat=\"server\"&gt;<br />    &lt;title&gt;Pack9xx.com &lt;/title&gt;<br /><br />So when the page loads, my page title is Pack9xx.com - Add Document.<br />As you can see, the master page goes first, then the aspx page.<br /><br />If you want to replace the title, just use this:<br />Page.Header.Title = \"MySite - Add Document\"<br /><br />After I made these changes, I started to get an error about trying to browse above the root directory (when the aspx file was in a subfolder).  I traced it to a line in the Default.master that was loading the css file (told you I was using an older version).  I had to replace that line with:<br /><br />&lt;script type=\"text/javascript\"&gt;<br />    //&lt;![CDATA[<br />    document.write('&lt;link rel=\"Stylesheet\" type=\"text/css\" href=\"&lt;%= Page.ResolveUrl(\"~/css/Stylesheet.css\") %&gt;\" /&gt;');<br />    //]]&gt;<br />    &lt;/script&gt;<br /><br />What specific images are you looking at?  The photo page, the avatars?  The FCKeditor is the html editor that is used for input rather than just textboxes.<br />",
+    "PostedDate": "2007-06-17T13:36:40.167-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37346",
+    "ThreadId": "11248",
+    "Html": "\r\nI promise I made all those changes. Still the default. I finally traced it to code in the default.master. I commented out both these lines and voila. Suddenly my pages had titles. Why it won't let me over-ride the master title is as of yet an unsolved mystery. <br /><br />If Not (ClubName Is Nothing) Or ClubName &lt;&gt; \"\" Then<br />                Label_ClubName.Text = ClubName<br />                ' masterhead.Title = ClubName<br />            Else<br />                Label_ClubName.Text = \"My club\"<br />                'masterhead.Title = \"my club\"<br />            End If <br /><br />I then used the hardcoded title in default.master - <br />&lt;head id=\"masterhead\" runat=\"server\"&gt;<br />    &lt;title&gt;Club&lt;/title&gt;<br /><br />and did this in the Page_Load of the child pages:<br />Page.Header.Title &amp;= \" - test\"<br /><br />Coincidentally, I've discovered that if you don't add handles me.load to all the page_load functions, they don't always fire (that was another few hours to track down): <br />Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load <br /><br />As far as the photos - I was looking in news/edit.aspx. I modified a rnews ecord by uploading a new picture. It went straight into the images table, much to my disappointment. <br />",
+    "PostedDate": "2007-06-18T11:26:03.357-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37861",
+    "ThreadId": "11248",
+    "Html": "\r\nI have been working to have the images stored in the file system rather than in the db.  What I am using is a setting in web.config that if it is set to 0 it stores in the db, it set to 1 it stores in the file system.<br /><br />Right now, I have the photos from the albums stored in the file system.  Next step is to work on news photos.<br /><br />I probably will not be checking these changes in, as the latest builds use SubSonic, and I am not ready to jump that far.  As it is, I have to strip out all the AJAX stuff because I can't get that to work with webhost4life.  <br /><br />I also have to change the email portions to break the recipients up into blocks of 20.  webhost4life blocks you from sending emails with too many recipients.  They say that is spam prevention.  :(<br /><br />Anyway, if you would like to see these changes, please email me (michael.nebinger@gmail.com) and I can get them to you when I am finished.<br />",
+    "PostedDate": "2007-06-21T11:25:48.92-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37922",
+    "ThreadId": "11248",
+    "Html": "\r\nSo you can take over the \"images on file\" feature, mnebinger? I used to have the files DavidMiles sent me... I must have deleted them when I redid my system :(<br />",
+    "PostedDate": "2007-06-21T20:35:46.073-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38586",
+    "ThreadId": "11248",
+    "Html": "\r\nYes, I will take that on.<br /><br />So far, I have made it so that images can be stored in the db or in the file system based on a setting in web.config.<br /><br />I am working through the issues with adding an existing photo to a new event/news item.  I have it so that it is selecting the albums correctly, but it never populates the box with the pictures from the album.<br /><br />After that is complete, I will email you the changed files/instructions.<br /><br />Then I am going to make the same adaptations for avatars.<br /><br />One thing I am not sure of yet is how this will pertain to blogs/forums, as I usually delete those pieces when I download the source, as I do not use them.  I guess I will redownload the latest source that doesn't have SubSonic and see :)<br /><br />Mike<br />",
+    "PostedDate": "2007-06-27T01:34:50.82-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38701",
+    "ThreadId": "11248",
+    "Html": "\r\nForums and Blogs should not be affected by the photo changes.<br />",
+    "PostedDate": "2007-06-27T13:06:04.55-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38900",
+    "ThreadId": "11248",
+    "Html": "\r\nWouldn't they be impacted by changes to the avatar? <br /><br />And Michael - thanks for the offer of the changed code. I'll be hitting you up for that soon. I'm working on some additions I'm making to the code to fit my own needs. I've already decided I'm going production without the photos. I'll add that down the road a little bit. <br />",
+    "PostedDate": "2007-06-28T17:39:46.873-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38903",
+    "ThreadId": "11248",
+    "Html": "\r\nIt would affect the avatars, but the avatars are fetched from ~/usercontrols/avatarimagefetch.ashx. So no code has to change in the forums or blogs section as long as avatarimagefetch.ashx is the same.<br />",
+    "PostedDate": "2007-06-28T18:36:49.22-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38904",
+    "ThreadId": "11248",
+    "Html": "\r\nAh. That makes it easier then. :)<br />",
+    "PostedDate": "2007-06-28T19:38:08.227-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

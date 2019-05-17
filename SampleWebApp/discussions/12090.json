@@ -1,0 +1,122 @@
+[
+  {
+    "Id": "39268",
+    "ThreadId": "12090",
+    "Html": "\r\nI change the themes to MadTri but the buttons don’t change.<br />The yellow brown button’s look funny in a blue page.<br />IS there a easy way to fix this?<br />",
+    "PostedDate": "2007-07-02T10:14:27.52-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39286",
+    "ThreadId": "12090",
+    "Html": "\r\nPhotoshop and change the image color will do the trick.<br />",
+    "PostedDate": "2007-07-02T12:06:41.59-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39465",
+    "ThreadId": "12090",
+    "Html": "\r\nI change the buttons that I could find in  \\App_Themes\\ Clubsite\\ images <br />and madtri\\images  but they did not change.  <br />Is there some place else?<br />",
+    "PostedDate": "2007-07-03T10:07:22.667-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39476",
+    "ThreadId": "12090",
+    "Html": "\r\nTry app_themes\\madtri\\images\\button.png<br /><br />Worked fine for me. <br /><br />",
+    "PostedDate": "2007-07-03T10:45:25.9-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40162",
+    "ThreadId": "12090",
+    "Html": "\r\nThank you <br />I got them to change it took a couple  times opening the site to  make the change.<br />Looks better. <br /><br />Now the rss-img is not showing only a box with a red X rss-img ? any Ideals? <br />",
+    "PostedDate": "2007-07-08T17:58:57.45-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40167",
+    "ThreadId": "12090",
+    "Html": "\r\nLook in the other theme folders. I found the missing pieces by poking around. <br />",
+    "PostedDate": "2007-07-08T19:22:32.877-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40261",
+    "ThreadId": "12090",
+    "Html": "\r\nThank you Tina<br /><br />I found them in the clubsite folder and move them to MadTri folder.<br />Also had to move print.png image.<br />Everything is working and looking great.<br />",
+    "PostedDate": "2007-07-09T09:43:40.58-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40892",
+    "ThreadId": "12090",
+    "Html": "\r\nWhen I go to switch from source to  design in the enevts\\calendar.aspx page I get this error<br />Cannot switch views: Validation )ASP.Net): Attribute “ruant” can be specified only once in a tag.<br /><br />So I cannot change the buttons.<br /><br />I did get the buttons change in the: events\\edit.aspx &amp; news\\list.aspx.<br /><br />I do not know how to change the edit, remove, save &amp; remove buttons in the  news\\edit.aspx?<br />",
+    "PostedDate": "2007-07-12T16:55:27.75-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41050",
+    "ThreadId": "12090",
+    "Html": "\r\nlhr,<br /><br />The problem with the Designer error is that there is a button (probably the RSS button) that has 2 runat=\"server\" definitions. Just delete one of them. It should run from there.<br />",
+    "PostedDate": "2007-07-13T17:14:31.343-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41071",
+    "ThreadId": "12090",
+    "Html": "\r\nz2bass<br /><br />Thank you for your Patience. But being a novice which button and where? <br />",
+    "PostedDate": "2007-07-13T22:37:43.5-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41087",
+    "ThreadId": "12090",
+    "Html": "\r\nWhat do you mean by \"which button and where\"? Do you mean where is the image stored and how it gets pushed to the page?<br />",
+    "PostedDate": "2007-07-14T10:29:48.163-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41115",
+    "ThreadId": "12090",
+    "Html": "\r\nI asked<br />When I go to switch from source to design in the enevts\\calendar.aspx page I get this error<br />Cannot switch views: Validation )ASP.Net): Attribute “ruant” can be specified only once in a tag.<br /><br />You replyed<br />The problem with the Designer error is that there is a button (probably the RSS button) that has 2 runat=\"server\" definitions. Just delete one of them. It should run from there.<br /><br />I asked  \"which button and where\"? <br />",
+    "PostedDate": "2007-07-14T18:09:13.64-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41119",
+    "ThreadId": "12090",
+    "Html": "\r\nLook in the error list window. It should tell you the line number that contains the error.<br />",
+    "PostedDate": "2007-07-14T19:23:56.41-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41129",
+    "ThreadId": "12090",
+    "Html": "\r\nThank you z2bass<br /><br />I was able to switch from to design and edit the buttons in the events\\calendar.aspx.<br />",
+    "PostedDate": "2007-07-15T00:06:27.203-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41130",
+    "ThreadId": "12090",
+    "Html": "\r\nHow do you edit the buttons (edit &amp; remove) that are connected to Repeater task box?<br />",
+    "PostedDate": "2007-07-15T00:31:25.543-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

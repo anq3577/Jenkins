@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:16:55.55-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Now that I am done with the RSVP part of events, here is what I am proposing that I will work on next:\n \nAdd the following email pages for administrators:\n1. To email everyone registered with the site.\n2. To email users in selected roles.\n3. To email users that have RSVP'd for an event.\n \nLet me know what you think.",
+    "LastUpdatedDate": "2013-05-15T23:46:47.747-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:16:53.817-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Email capabilities to add",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 681
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I have finished the coding, now the bug fixing begins.",
+      "PostedDate": "2007-04-25T14:16:54.41-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "The zip file contains the changed files and the sql stored proc that I added.",
+      "PostedDate": "2007-04-25T14:16:54.77-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:16:55.55-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:33.987-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:47.747-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:29:18.177-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Wishlistitem....\n \nHow about a pop up messagebox or something when you want to delete a record somewhere?",
+    "LastUpdatedDate": "2013-05-15T23:46:43.363-07:00",
+    "PlannedForRelease": "v2 RC1",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:29:14.693-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Confirmation when Deleting item",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 1093
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Thats a good idea. Targeted for RC1 :)",
+      "PostedDate": "2007-04-25T14:29:15.287-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Zack, you can use either js or an ajax button extender to do that.",
+      "PostedDate": "2007-04-25T14:29:15.66-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Yea, I know :) I will get it done but with B2 tomorrow, I will get it in by the weekend. It shouldn't be too hard.",
+      "PostedDate": "2007-04-25T14:29:16.443-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Can we extend this further and only allow the creators, Administrators or the Editors to be able to remove items.\r\n\r\nThis will ensure that if you are allowing for multiple users access to the creation of News or Events that they can only remove their own items and not other peoples.",
+      "PostedDate": "2007-04-25T14:29:16.8-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "This is already the default, coppermill.",
+      "PostedDate": "2007-04-25T14:29:17.177-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:29:18.177-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:28.35-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:43.363-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

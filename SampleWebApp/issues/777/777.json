@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:19:39.427-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "CMS text editing",
+    "LastUpdatedDate": "2013-05-15T23:46:46.17-07:00",
+    "PlannedForRelease": "v2 Beta 2",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:19:37.677-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "CMS text editing",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 2,
+    "Id": 777
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I have the code to do this, just trying to find out how to upload my changes",
+      "PostedDate": "2007-04-25T14:19:38.27-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "You can send them over to me and I can check them in and you can change em in TFS.",
+      "PostedDate": "2007-04-25T14:19:38.647-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:19:39.427-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Now uploaded",
+      "PostedDate": "2007-04-25T14:19:39.88-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:32.267-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:46.17-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:40:14.567-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I can submit before I am logged in. (doing so invokes error (IE msgbox, no object))\nShould not this be a redirect to login? \nWhen I click previous or next max attendees is not updated, nor userinfo.\nTesting, testing.....",
+    "LastUpdatedDate": "2013-05-15T23:46:41.837-07:00",
+    "PlannedForRelease": "v2 RC1",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:40:13.05-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "RSVP issues",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 1469
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "By default this SHOULD be hidden.",
+      "PostedDate": "2007-04-25T14:40:13.8-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:40:14.567-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:26.38-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:41.837-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

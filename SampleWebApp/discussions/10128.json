@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "32838",
+    "ThreadId": "10128",
+    "Html": "\r\nDelete Album button does not delete album<br />",
+    "PostedDate": "2007-05-10T19:21:50.923-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32925",
+    "ThreadId": "10128",
+    "Html": "\r\nTry with the later builds... sorry about that. I realized it after that build.<br />",
+    "PostedDate": "2007-05-11T13:27:30.777-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39046",
+    "ThreadId": "10128",
+    "Html": "\r\nHello.<br /><br />I was looking for a fix to keep unauthenticated visitors from deleting photo albums.  I think the fix is in this change set.  If i am correct, how do i apply those changes to my live web site?<br /><br />I'm on CSK 2.0 5/11/2007.<br /><br />Any help would be gratefully appreciated.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-29T17:21:30.057-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39052",
+    "ThreadId": "10128",
+    "Html": "\r\nIt should work. We have fixed this in later builds. You might wait (2 weeks) until Beta 1 of v3 is out.<br />",
+    "PostedDate": "2007-06-29T18:27:03.103-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39054",
+    "ThreadId": "10128",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />It should work. We have fixed this in later builds. You might wait (2 weeks) until Beta 1 of v3 is out.<br /><br /></div><br />Zack.<br /><br />I'm pretty sure it does work.  I downloaded the Change Set and ran it and it seemed to work.<br /><br />Now, how do i apply those changes to my live web site?<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-29T18:34:25.153-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "Id": "34543",
+    "ThreadId": "10675",
+    "Html": "\r\nI am about to start on development of the league tracker... which seems to be a hot item. Does anyone have a scenario and some examples of how the data would be displayed?<br />",
+    "PostedDate": "2007-05-24T13:27:57.873-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "34550",
+    "ThreadId": "10675",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />I am about to start on development of the league tracker... which seems to be a hot item. Does anyone have a scenario and some examples of how the data would be displayed?<br /><br /></div><br />What I would like to see is for a soccer team site:<br /><br />A club contains a number of teams.<br /><br />Competition containing X teams Where from a competition one team belongs to the club. The rest are teams from other clubs. All teams playing an X number of times (usually 2) against each other.<br />Winning gives ie 3 point, a draw 1 point , loose = 0 point.<br />That would be the competition part.<br /><br />Apart from that there are also team statistics. (for us much more of importance) <br />a Season(Year) consist of Team consist of players. This way it is possible to build a history of the career of the players.<br />For teams gamereports could be written (accually news items with pictures that can be linked te albums all in the context of a season).<br /><br />I am thinking of how it would be displayed on the screen, but it gives an idea of how I want to have it for my club.  <br /><br />",
+    "PostedDate": "2007-05-24T14:18:16.853-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "34561",
+    "ThreadId": "10675",
+    "Html": "\r\nSoccer (football for those outside the US ;)  ) seems to be a popular use. <br /><br />Im thinking this table structure, at this point.<br /><br />Teams<br />--------<br />id<br />Name<br />LeaderMemKey (membership GUID)<br /><br />Players<br />--------<br />id<br />teamid<br />memkey<br /><br />PlayerStats<br />----------<br />id<br />StatName<br />Value (bool, string, int)<br /><br />PayersInStatsByGame<br />---------<br />statid<br />Value<br />gameid<br /><br />GameResults<br />--------<br />gameid<br />team1id<br />team2id<br />Date<br />Winner (int: 1 (team 1), 2 (team 2), 0 (tie), -1 (not played yet)<br /><br /><br />I think the BLL should take care of the dirty work when it comes to stats and such. Is this detailed enough?<br />",
+    "PostedDate": "2007-05-24T16:23:31.007-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "34587",
+    "ThreadId": "10675",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Soccer (football for those outside the US ;)  ) seems to be a popular use. <br /><br />Im thinking this table structure, at this point.<br /><br />Teams<br />--------<br />id<br />Name<br />LeaderMemKey (membership GUID)<br /><br />Players<br />--------<br />id<br />teamid<br />memkey<br /><br />PlayerStats<br />----------<br />id<br />StatName<br />Value (bool, string, int)<br /><br />PayersInStatsByGame<br />---------<br />statid<br />Value<br />gameid<br /><br />GameResults<br />--------<br />gameid<br />team1id<br />team2id<br />Date<br />Winner (int: 1 (team 1), 2 (team 2), 0 (tie), -1 (not played yet)<br /><br /><br />I think the BLL should take care of the dirty work when it comes to stats and such. Is this detailed enough?<br /><br /></div><br />Youre right, outside of the US soccer is the world leading sport.<br />I agree for a large part with the entity model, except I don't know exactly where yoe want to go with the PlayerStats and PlayerStatsByGame. Which data would be the value. A rating or something?<br /><br />A model that I think would help a lot of clubs is the following:<br /><br />Season<br />--------<br />id<br />Name (string)<br />StartDate <br />EndDate<br /><br /><br />Teams<br />--------<br />id<br />Name<br />LeaderMemKey (membership GUID)<br />SeasonID<br />TeamPhoto (Link to a photalbum?)<br /><br />PlayerInTeam<br />---------------<br />PlayerID<br />TeamID<br />PlayerPhoto (link to a photoalbum?)<br /><br />Players<br />--------<br />id<br />memkey<br /><br />PlayerStats<br />----------<br />id<br />StatName<br />Value (bool, string, int)<br /><br />PayersInStatsByGame<br />---------<br />statid<br />Value<br />gameid<br /><br />GameResults<br />--------<br />gameid<br />team1id<br />team2id<br />Season<br />Date<br />Winner (int: 1 (team 1), 2 (team 2), 0 (tie), -1 (not played yet)<br />ResultScore<br />newsID (link to the news entities for storing gamereviews and photo's)<br /><br /><br />****<br />I hope this gives you an idea. This way there can be build a history of the career of players and the accompanied teams they where in. Also it is possible to easely retrieve newsarticles (gameresults) for a given team in a given season.<br />",
+    "PostedDate": "2007-05-24T22:54:32.683-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "34605",
+    "ThreadId": "10675",
+    "Html": "\r\nOk... that works.<br /><br />Basically what happens with the PlayersInStatsByGame table is that a particular stat is dumped into the table every game. The stats can be synopsized by game or by team. This allows people to add their own stats into the database.<br />",
+    "PostedDate": "2007-05-25T03:28:39.5-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "34768",
+    "ThreadId": "10675",
+    "Html": "\r\nhi<br /><br />Im trying to produce a running club web site and would like to be able to upload results to the SQL database and have members look up thier results through a query.  For example http://www.sirisaac.co.uk/raceresults07.html<br /><br />Im a real novice at this, does anyone fancy a go at this, I might even pay a small fee for it to be done if you contact me.<br />",
+    "PostedDate": "2007-05-27T12:42:29.093-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "34771",
+    "ThreadId": "10675",
+    "Html": "\r\nIf you can wait a few weeks, we will have the functionality into the kit.<br />",
+    "PostedDate": "2007-05-27T14:30:32.417-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "34773",
+    "ThreadId": "10675",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />If you can wait a few weeks, we will have the functionality into the kit.<br /><br /></div><br />OK will look forward to it.  Thanks<br />",
+    "PostedDate": "2007-05-27T15:17:36.68-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "34783",
+    "ThreadId": "10675",
+    "Html": "\r\nzack,  one of the sites I have has some examples of what stats are normally tracked for the players.  www.prccsoccer.com.  The statistics page.  For high school and colleg ethey need the ability to track mens and womens stats.<br /><br />Things like games played, minutes played, assists goals shots,etc.  Got keepers, games and minutes played, shots on goal and saves.  Also calculating GAA (Goals Allowed Average).<br /><br />All of the come off of the NJCAA web site for Junior colelges.  Each goal is worth 2 point and assists are 1 point.  As with most sports, the player with the most points is the team leader.<br /><br />I can elaborate more if you would like.<br /><br />Bob<br />",
+    "PostedDate": "2007-05-27T21:50:24.857-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36325",
+    "ThreadId": "10675",
+    "Html": "\r\nTeams<br />--------<br />id<br />Name<br />LeaderMemKey (membership GUID)<br />SeasonID<br /><br />Players<br />--------<br />id<br />teamid<br />memkey<br /><br />PlayerStats<br />----------<br />id<br />StatName<br />Value (bool, string, int)<br /><br />PayersInStatsByGame<br />---------<br />statid<br />Value<br />gameid<br /><br />GameResults<br />--------<br />gameid<br />team1id<br />team2id<br />Date<br />Winner (int: 1 (team 1), 2 (team 2), 0 (tie), -1 (not played yet)<br />team1score<br />team2score<br />newsID<br /><br />Season<br />--------<br />id<br />Name (string)<br />StartDate <br />EndDate<br /><br /><br />This is what I will be going on. The reason I didn't attach the player photo, rvanhoornaar, is because we will just pull the person's avatar. Anything else I need to add?<br />",
+    "PostedDate": "2007-06-10T13:09:48.8-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36350",
+    "ThreadId": "10675",
+    "Html": "\r\nZack,<br /><br />In that case you're making the assumption that the players also have signed in into the site. Ok that's possible. <br />Usually the signing in into the website does not reflect the players that are physically member of the club. The players are all member of the Dutch soccer accociation. <br />It is ok because we just have to add them only once although there are 700 members ;)<br /><br />What I do need is a Team photo season related and a cross table between the team and players also season related because players are changing of team every season.<br /><br />The idea I had for the user interface is:<br /><br />Dropdown menu for selecting the team.<br /><br />Left allocated menu (per team ) for the following items (pages):<br /><br /><ul><li>Teamfoto (default page)</li><li>Selecting year (default from webconfig)</li><li>Playersinfo (form with the picture and possibly some career info/stats. This possible when making the players(career)info season dependant)</li><li>Game reports (copy of newspage in the context of the teams and season) </li><li>Game result (scores and standings (Is this correct English? I mean the possition in the competition related to other team))</li><li>photo gallery (team and season related)</li></ul><br />It looks quite extensive, but I think many clubs (especially the soccer teams in western europe) will benefit from this because they all think in this way.<br /><br /><br />Keep up the good work<br /><br />Robert<br />",
+    "PostedDate": "2007-06-10T23:27:11.857-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36379",
+    "ThreadId": "10675",
+    "Html": "\r\nRobert, the way I have architected it, the teams are sorted by season. Each season, the coordinator or someone will need to put in all the team names. (That reminds me... I need to put in a IsCurrent tag for the season table). But you are right, there needs to be a team photos table.<br /><br />TeamPhotos<br />---------------<br />id<br />teamid<br />photo<br />IsDefault<br /><br />So the IsDefault will just be true if it is just the default photo for that year's team. The game result, game report, player info, and news article is in the architecture already.<br />",
+    "PostedDate": "2007-06-11T06:55:26.387-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36567",
+    "ThreadId": "10675",
+    "Html": "\r\nAny thoughts on Adding a BIO page for the players?  Picture, etc.  All goes to stats.  In addition, a Roster page would tie in nicely.<br /><br />",
+    "PostedDate": "2007-06-12T08:39:59.967-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36593",
+    "ThreadId": "10675",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />rhhanson wrote:<br />Any thoughts on Adding a BIO page for the players?  Picture, etc.  All goes to stats.  In addition, a Roster page would tie in nicely.<br /><br /></div><br />Yeah, we'll pull all that from the database. <br />",
+    "PostedDate": "2007-06-12T10:00:37.647-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38588",
+    "ThreadId": "10675",
+    "Html": "\r\nGreat job!<br />I'm just started making a website for a hockeyteam. And this leaguetable is just I was looking for.<br />Any idea when the beta version is ready? DatabaseTable looks very good.<br /><br />a good example:<br /><a href=\"http://www.vcclub.org/FieldStats.aspx\" class=\"externalLink\">http://www.vcclub.org/FieldStats.aspx<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a><br />also great players statistics.<br /><br />SteveStunt<br />",
+    "PostedDate": "2007-06-27T01:48:49.73-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

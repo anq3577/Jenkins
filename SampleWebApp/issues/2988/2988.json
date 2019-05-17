@@ -1,0 +1,90 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Not descriptive",
+    "ClosedDate": "2009-11-24T13:59:35.85-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I deleted all users without the admin, but there are still some (4) users on the member list left (e.g. testreg1)",
+    "LastUpdatedDate": "2013-05-15T23:46:30.817-07:00",
+    "PlannedForRelease": "ClubStarterKit v3 Beta 2",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-08-06T03:46:12.163-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Deleting members",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 2,
+    "Id": 2988
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Yes, I had the same problem. You have to setup an account and set yourself as admin then sign in and then click manage user in order to delete the account. If you already delete them from the Database with out deleteing them from  the site as much as you try to delete them from the site it will not work so delete the from the site only.",
+      "PostedDate": "2007-08-06T06:33:10.76-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Perhaps we should add a script into the dev folder, which restores all the example data (without the admin account).After a look into the database I think a truncate table would suffice in most cases.When yes, add and call a \"restore\" StoredProcedure or do everything in the aspx file?Another possibility is that you later can restore your ClubSite to the original state (perhaps with an automatic backup).",
+      "PostedDate": "2007-08-07T14:23:46.93-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "We could use SubSonic for this. It would be pretty easy to do. I will take care of this one, if you would like, thoze.",
+      "PostedDate": "2007-08-07T14:25:41.44-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Hi z2bass,\r\nunfortunately I haven't got any experiences with SubSonic so feel free :)",
+      "PostedDate": "2007-11-11T07:57:15.347-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-03-18T17:45:00.89-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "This should be fixed with the addition to the SubSonic provider.",
+      "PostedDate": "2008-03-18T17:45:16.92-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-03-18T17:45:30.2-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-11-24T13:59:35.85-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:12.83-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:30.817-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

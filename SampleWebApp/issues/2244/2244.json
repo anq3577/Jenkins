@@ -1,0 +1,75 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-05-20T08:15:16.413-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Forum post/reply without a memeber photo (nophoto.gif) generates error.\nFileNotFound Exception was unhandled by user code \\images\\nophoto.gif.\n \nnophoto.gif is located in both themes i.e. \\themes\\Clubsite\\nophoto.gif",
+    "LastUpdatedDate": "2013-05-15T23:46:38.25-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-05-12T08:39:06.123-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "FileNotFound Exception was unhandled by user code",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2244
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "An easy solution would be to add nophoto.gif to the \\images folder, but I think the code was intended to look to the new location \\themes\\ ",
+      "PostedDate": "2007-05-12T09:00:17.257-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\\UserControls\\AvatarImageFetch.ashx\r\n\r\nCatch ex As Exception            response.ContentType = \"image\\gif\"            response.TransmitFile(context.Server.MapPath(\"~/images\") & \"\\nophoto.gif\")            Return        Finally",
+      "PostedDate": "2007-05-12T16:53:08.41-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Is this a missing image or an incorrect image referance?  Another words should the code be looking in the themes folder or should we copy the nophoto.gif to the \\images folder?\r\n\r\nNot trying to be picky, just would like to remove duplicate images and or correct image references.\r\n\r\nthanks",
+      "PostedDate": "2007-05-19T14:36:59.01-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-20T05:15:26.66-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Resolved with changeset 2627.",
+      "PostedDate": "2007-05-20T08:15:16.413-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:22.507-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:38.25-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

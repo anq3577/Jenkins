@@ -1,0 +1,100 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:16:03.3-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Just that",
+    "LastUpdatedDate": "2013-05-15T23:46:48.71-07:00",
+    "PlannedForRelease": "v2 Beta 2",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:15:56.35-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Cancel button with incomplete event errors out",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 653
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "within Events/View.aspx, everyplace that it has the line\r\n\r\nIf Not id is Nothing Then\r\n\r\nChange it to read:\r\n\r\nIf Not id is Nothing andalso isNumeric(id) Then\r\n\r\nThat will fix it.",
+      "PostedDate": "2007-04-25T14:15:57.067-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:15:57.88-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Solved",
+      "PostedDate": "2007-04-25T14:15:58.317-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:15:59.113-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:15:59.943-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:16:00.693-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:16:01.49-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "z",
+      "PostedDate": "2007-04-25T14:16:01.96-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "t",
+      "PostedDate": "2007-04-25T14:16:02.52-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:16:03.3-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:35.14-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:48.71-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

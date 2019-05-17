@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "41176",
+    "ThreadId": "12616",
+    "Html": "\r\nI'm still working on my local box, not in a hosting environment, but I'm trying to switch to sql server login/password rather than windows security. <br /><br />I created an admin account with dbo owner role. I also checked off all the aspnet_ roles in the \"schemas owned by this user\" and \"darabase role membership\" sections. <br /><br />I don't see what else i'm supposed to be granting. Any tips?<br />",
+    "PostedDate": "2007-07-15T20:36:40.03-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41179",
+    "ThreadId": "12616",
+    "Html": "\r\nYou shouldn't be added ANY users on the database directly. You need to register on the site and then assign the membership role with the ASP.NET Website Administration tool (Website --&gt; ASP.NET Configuration). There isn't really a need to worry about permissions.<br />",
+    "PostedDate": "2007-07-15T20:56:33.18-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41180",
+    "ThreadId": "12616",
+    "Html": "\r\nI just don't understand why, I guess. In a corporate Cold Fusion environment, we were always given a user and login that the web could use. Why does this not work the same way? One would think that granting super high access would allow it to work. Sorry. I'm having a tough time wrapping my head around it. <br /><br />Is this where the full verses partial trust issue comes in with web hosting? I think I'm going to use a local webhost, but I can't tell if it's what I need...<br /><br />",
+    "PostedDate": "2007-07-15T21:06:44.307-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41182",
+    "ThreadId": "12616",
+    "Html": "\r\nYou could do it, but there are predefined foreign table relationships that you will most likely disrupt. Using the member/register.aspx page does all the heavy lifting for you. If you were to just plug data into the database, somthing is bound to happen.<br /><br />Full trust vs medium trust is a difference of what your web application can execute and where... it doesn't really have anything to do with the database.<br />",
+    "PostedDate": "2007-07-15T21:27:45.613-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41183",
+    "ThreadId": "12616",
+    "Html": "\r\nAh. I see now that I wasn't clear. I meant I'm creating an acct in sql server that the clubsitedb can use in webconfig. I need a user and password since I'm using sql server 2005 instead of express. I've been using the \"use windows security\" option.<br /><br />Sorry for the disconnect. <br />",
+    "PostedDate": "2007-07-15T21:49:34.333-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41187",
+    "ThreadId": "12616",
+    "Html": "\r\nWait so you need to build your connection string? If so, try this site: http://www.connectionstrings.com/<br />",
+    "PostedDate": "2007-07-15T23:07:11.68-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41257",
+    "ThreadId": "12616",
+    "Html": "\r\nThe connection string was fine. It was a sql server permissions issue. I found the answer here:<br />http://mssqltips.com/tip.asp?tip=1203<br /><br />Basically, you need to grant exec permissions to your database user on all stored procs. The sp in the above link helps you to easily accomplish that task. <br />",
+    "PostedDate": "2007-07-16T11:22:50.537-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

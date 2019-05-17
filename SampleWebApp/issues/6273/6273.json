@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Feature under consideration",
+    "ClosedDate": "2009-10-20T15:11:02.25-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I had the problem of not being able to send an email for almost a week through the \"Send Email\" tab. I've finally fixed it, and would like to share the problem with you so you can hopefully repair it. \n \nTo explain the problem, I'll explain my situation to you.\n \nWhenever I would go to send an email, I would have an error. This was because in the site settings, the mail server was mail.mail.com (not really but for this post lets pretend). Well my default email address on my Clubsite account was a cableone account (my personal). Of course mail.mail.com could not send an email from ****@cableone.net. Once I changed my email address to the one indicated in site settings (blank@mail.com, password), I found that the email sent successfully. \n \nI fixed it by adding a table in my database named \"Server Info.\" I then added two columns (\"Server Mail\", and \"Mail Name\"). I then replaced the \"msgFrom\" code in the send an email code with the info from the database (\"Server Mail\", and \"Mail Name\"). I then added a label with the name of the user who was sending the email. So when the email arrives at the desired mailbox, it displays the name of the user that sent the email. \n \nI hope you can use this info to fix a later build, that way when someone has multiple administrators, or has their email address different than the one located in the Site Settings, they will still be able to send an email.\n \nI also hope this will save those of you having this problem! This took me a whole 6 days to figure out!\n \nThanks,\n \nJosh",
+    "LastUpdatedDate": "2013-05-15T23:46:24.917-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2008-05-29T23:38:18.71-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Mail",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 6273
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

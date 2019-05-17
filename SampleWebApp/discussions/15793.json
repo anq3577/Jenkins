@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "51264",
+    "ThreadId": "15793",
+    "Html": "\r\nHi<br />I am a newbie here. I wanted to find out how to install and customise club starter kit from this site. Is there a tutorial written for this??<br />Cheers!<br />",
+    "PostedDate": "2007-09-29T19:13:47-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "51289",
+    "ThreadId": "15793",
+    "Html": "\r\nThere is all kinds of docs <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=Documentation&amp;referringTitle=Home\" class=\"externalLink\">here<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a><br />",
+    "PostedDate": "2007-09-30T05:12:41.61-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "51299",
+    "ThreadId": "15793",
+    "Html": "\r\nHow do I go about installing the starter kit in the first place? I have downloaded the Standard Version (VB) from http://www.codeplex.com/ClubStarterKit/Release/ProjectReleases.aspx?ReleaseId=4356<br />What to do with the zip file???<br />",
+    "PostedDate": "2007-09-30T07:46:40.47-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "51634",
+    "ThreadId": "15793",
+    "Html": "\r\nUnzip it, then open the solution.<br />",
+    "PostedDate": "2007-10-02T17:04:27.6-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

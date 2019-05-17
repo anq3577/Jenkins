@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "38616",
+    "ThreadId": "11901",
+    "Html": "\r\nHello.<br /><br />Without modifying CSK 2.0, i noticed that non-administrators cannot add a new event.  Is that the way it is supposed to be.<br /><br />I noticed that the event link opens the Events\\Calendar.aspx, so i attempted to open that page in designer mode using VS2005 Pro.  When i did that, i got this error message:<br />---------------------------<br />Microsoft Visual Studio<br />---------------------------<br />Can not switch to Design view because of errors in the page. Please correct all errors labeled 'Can not switch:' in the Error List and try again.<br />---------------------------<br />OK   <br />---------------------------<br /><br />After i click OK, there are twelve errors in the error list.  The first one is this:<br />\"Error\t1\tElement 'ScriptManager' is not a known element. This can occur if there is a compilation error in the Web site.\t\"<br /><br />I don't understand how i can build the site without errors, yet opening that page causes those twelve errors.<br /><br />Any help would be gratefully appreciated.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-27T05:25:54.673-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38646",
+    "ThreadId": "11901",
+    "Html": "\r\nYea, that is the way it is supposed to be.<br /><br />That error is caused by ASP.NET AJAX. Do you have that installed on your system?<br />",
+    "PostedDate": "2007-06-27T07:55:29.9-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38695",
+    "ThreadId": "11901",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Yea, that is the way it is supposed to be.<br /><br />That error is caused by ASP.NET AJAX. Do you have that installed on your system?<br /><br /></div><br />Thanks Zack.<br /><br />That was it.  I downloaded the AJAX stuff and everything and that changed things.<br /><br />Tony<br />",
+    "PostedDate": "2007-06-27T12:32:28.163-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38700",
+    "ThreadId": "11901",
+    "Html": "\r\nFinally... some good news! :-)<br />",
+    "PostedDate": "2007-06-27T13:04:32.897-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38707",
+    "ThreadId": "11901",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Finally... some good news! :-)<br /><br /></div><br />Zack.<br /><br />I have to apologize.  You previously asked me if i changed any of the source code and said no.  Well, it turns out that i forgot about the steps i followed to upload this web site to GoDaddy.com.  Since then i went to discountAsp.net and never had any problems uploading my website.<br /><br />The document with the steps i followed from here: http://forums.asp.net/p/970186/1220730.aspx#1220730, showed at step 16 to change all occurences of \"dbo.\" to blank in the source code.  I'm sure that has something to do with the databases.  I followed those instructions because i thought i was going to use GoDaddy as my hoster.<br /><br />Later, when i went to discountAsp.net as a hoster, i forgot about those changes and i'm sorry for misinforming you.<br /><br />I have put all of the \"dbo.\"'s back, uploaded a clean version of the data, reattached it and things seem to be working as they should.<br /><br />Thanks for all of your help.<br /><br />Tony<br />",
+    "PostedDate": "2007-06-27T13:30:02.537-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38723",
+    "ThreadId": "11901",
+    "Html": "\r\nI am VERY glad to hear that it all worked out!<br />",
+    "PostedDate": "2007-06-27T15:35:49.983-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

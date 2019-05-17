@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "40615",
+    "ThreadId": "12465",
+    "Html": "\r\nDo any of the changesets have logic that will allow you to enter a recurring event? So every Tuesday I won't have to enter an event (for instance) that happens throughout the summer. <br /><br />It would be very useful I think. I've tried to search but if someone knows off-hand (Zach?) it would be much appreciated. <br /><br />:-)<br />Thanks!<br />",
+    "PostedDate": "2007-07-11T09:18:35.207-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40635",
+    "ThreadId": "12465",
+    "Html": "\r\nYes, the latest changesets (starting with Changeset 3495) has the reocurring events logic. It should be on the ~/events/addreoc.aspx page.<br />",
+    "PostedDate": "2007-07-11T10:43:45.517-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40639",
+    "ThreadId": "12465",
+    "Html": "\r\nCool. Thank you, sir. I'll download a fresh copy and check it out. <br />",
+    "PostedDate": "2007-07-11T10:57:19.663-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

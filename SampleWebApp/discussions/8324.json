@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "27141",
+    "ThreadId": "8324",
+    "Html": "\r\nI get an error message when trying to open my site that says something about using WEBCONTROL.SQL. Where can I get this or how do I fix this? I am using GODADDY and I also get an error when submitting the SQL Scripts that say Error Foreign Key. What am I having trouble with. <br />This is a great site. <br />Thank you,  <br />dpr<br />",
+    "PostedDate": "2007-03-18T08:20:58.393-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27148",
+    "ThreadId": "8324",
+    "Html": "\r\nDid you upload using the SQL script download? Try reuploading the database and use the SQL scripts that are for download on the Beta 2 release page.<br />",
+    "PostedDate": "2007-03-18T14:28:55.487-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27254",
+    "ThreadId": "8324",
+    "Html": "\r\ni get error when i run the sql script from app_data folder. (this is a blank db). error are as below:<br /><br />Error: Invalid object name 'sys.foreign_keys'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.foreign_keys'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.foreign_keys'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.foreign_keys'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.foreign_keys'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.foreign_keys'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.foreign_keys'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.foreign_keys'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.foreign_keys'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.foreign_keys'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.foreign_keys'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.foreign_keys'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.foreign_keys'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.foreign_keys'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.foreign_keys'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.foreign_keys'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.foreign_keys'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.foreign_keys'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.foreign_keys'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.views'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.views'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.views'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.views'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.views'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.views'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.views'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.views'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.views'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br />Error: Invalid object name 'sys.objects'. (State:S0002, Native Code: D0)<br /><br />The same error also i get if run the sql script from SQL<i>2000</i>Scripts.zip<br /><br />I using WIN SQL Server 2K <br />",
+    "PostedDate": "2007-03-19T17:35:05.027-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27294",
+    "ThreadId": "8324",
+    "Html": "\r\nInteresting... I have no way of debuging SQL 2000 since I don't have access to a SQL 2000 server.<br />",
+    "PostedDate": "2007-03-20T03:42:37.99-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27299",
+    "ThreadId": "8324",
+    "Html": "\r\ncan you pls try the script on a 2K3 server with .net framework 2.0 installed? <br />",
+    "PostedDate": "2007-03-20T04:00:18.1-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27393",
+    "ThreadId": "8324",
+    "Html": "\r\nI don't have access to one.<br />",
+    "PostedDate": "2007-03-20T15:30:06.86-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27575",
+    "ThreadId": "8324",
+    "Html": "\r\nOK, I already manage to installed the sql script i get download from \"source code page\" if i try using the script from \"release\" page i will get that error.<br /><br />thank for your help.<br />",
+    "PostedDate": "2007-03-22T02:55:20.443-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27652",
+    "ThreadId": "8324",
+    "Html": "\r\nThank you for all of your help. I am unclear as to what scripts I am using for my database. I tried and downloaded a site from the source code page and uploaded the scripts that were included. I get such errors as: <br />\"Line 11: Incorrect syntax near '('.\"<br />\"Invalid object name 'sys.objects'.\"<br />\"Invalid object name 'sys.foreign_keys'.\"<br /><br />In addition, every once and a while it says turn custom error to remote only - so I do and it still says the same thing.<br /><br />I am not sure where to go from here...Please advise! <br /><br />Thanks again,<br /><br />dpr00<br /><br /><br />",
+    "PostedDate": "2007-03-22T19:01:57.313-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

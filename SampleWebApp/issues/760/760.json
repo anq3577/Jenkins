@@ -1,0 +1,80 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:19:11.88-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Okay, just fixed another bug with Events\\View.aspx.  The test for -1 has to be first.\n \n'First test to see if _totalAttendance is -1\n        If _totalAttendance = -1 Then\n            'Insert into the database\n            AddToAttendanceDatabase(num)\n            UpdateEventsGuests(newCurrentAttendance)\n            _currentAttendance = newCurrentAttendance\n            _NumGuests = num\n            'Test to see if this will put us over the maximum # of guests for an event.\n        ElseIf newCurrentAttendance > _totalAttendance Then\n            errorMsg.Text = \"Sorry, adding \" & numofguests.Text & \" to the event would put it over the limit!\"\n            errorMsg.Visible = True\n            Return\n        Else\n            'Insert into the database\n            AddToAttendanceDatabase(num)\n            UpdateEventsGuests(newCurrentAttendance)\n            _currentAttendance = newCurrentAttendance\n            _NumGuests = num\n        End If",
+    "LastUpdatedDate": "2013-05-15T23:46:47.3-07:00",
+    "PlannedForRelease": "v2 Beta 2",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:19:08.817-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "RSVP for events",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 760
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Also, add the following If Then around line 28, so instead of line 28 being:\r\n\r\nlblMaximum.Text = _totalAttendance.ToString\r\n\r\nIt will be:\r\n\r\nIf _totalAttendance = -1 Then    lblMaximum.Text = \"No limit set\"Else    lblMaximum.Text = _totalAttendance.ToStringEnd If",
+      "PostedDate": "2007-04-25T14:19:09.427-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "And in Events\\Edit.aspx, change lines 288 and 300 to be as follows:\r\n\r\n<asp:Parameter Name=\"TotalAttendance\" Type=\"Int32\" DefaultValue=\"-1\" />\r\n\r\nI think that will squash all the bugs that I have found so far :)",
+      "PostedDate": "2007-04-25T14:19:09.817-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Where is this edit? Starting at what line?\r\n\r\n'First test to see if _totalAttendance is -1If _totalAttendance = -1 Then'Insert into the databaseAddToAttendanceDatabase(num)UpdateEventsGuests(newCurrentAttendance)_currentAttendance = newCurrentAttendance_NumGuests = num'Test to see if this will put us over the maximum # of guests for an event.ElseIf newCurrentAttendance > _totalAttendance ThenerrorMsg.Text = \"Sorry, adding \" & numofguests.Text & \" to the event would put it over the limit!\"errorMsg.Visible = TrueReturnElse'Insert into the databaseAddToAttendanceDatabase(num)UpdateEventsGuests(newCurrentAttendance)_currentAttendance = newCurrentAttendance_NumGuests = numEnd If \r\n\r\n",
+      "PostedDate": "2007-04-25T14:19:10.177-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Sorry, it is around line 272 in Events\\View.aspx.",
+      "PostedDate": "2007-04-25T14:19:10.647-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Zack, don't worry about this fix.  The correct code is included with the updates for adding email capabilities.",
+      "PostedDate": "2007-04-25T14:19:11.1-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:19:11.88-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:33.5-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:47.3-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

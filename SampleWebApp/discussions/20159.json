@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "66875",
+    "ThreadId": "20159",
+    "Html": "\r\nInstead of :<br />                &lt;allow roles=\"Members\"/&gt;<br /> I would say :<br />               &lt;allow roles=\"Administrators\"/&gt;<br />Otherwise, where come from this new UserRole ? We already have all those :<br />Administrators | Blogger | Editors | GameRecorder | Moderator<br />",
+    "PostedDate": "2008-01-09T00:23:57.25-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

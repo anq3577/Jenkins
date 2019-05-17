@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "71622",
+    "ThreadId": "21497",
+    "Html": "\r\nI have been reading around about setting up the Kit on Godaddy and I know lots of people have issues with this, however I already have a hosting account there with 1 database still free, so I decided to give it a shot.<br /><br />Initially I set it up by Having GoDaddy create a SQL2005 Database with all the ASP stuff in it already.  I suppose this was fine, as the Schema.sql file executed fine on top of that.  However, the Data.Sql file didn't execute because of primary key issues.  I've decided to recreate it trying to only use the schema and data file and I will see how that goes.<br /><br />In the first case however, I instantly ran into the security exception issue.  I've been googling around and trying to figure out how people are successfully running with this being the case, but I can't seem to find anything.  Any help would be great.<br /><br />Thanks<br /><br />~Kai<br /><br /> _Description: The application attempted to perform an operation not allowed by the security policy.  To grant this application the required permission please contact your system administrator or change the application's trust level in the configuration file.<br /><br />Exception Details: System.Security.SecurityException: Request for the permission of type 'System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089' failed.<br /><br />Source Error:<br /><br />Line 599:            <br />Line 600:\t\t\tIf Not System.Web.HttpContext.Current Is Nothing Then<br />Line 601:\t\t\t\titem.Save(System.Web.HttpContext.Current.User.Identity.Name)<br />Line 602:\t\t\tElse<br />Line 603:\t\t\t\titem.Save(System.Threading.Thread.CurrentPrincipal.Identity.Name)<br /><br /><br />Source File: d:\\hosting\\phikai\\VINTAGE\\App_Code\\DAL\\Generated\\WebSettings.vb    Line: 601<br /><br />Stack Trace:<br /><br /><a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=SecurityException%3a%20Request%20for%20the%20permission%20of%20type%20%27System.Security.Permissions.SecurityPermission%2c%20mscorlib%2c%20Version%3d2.0.0.0%2c%20Culture%3dneutral%2c%20PublicKeyToken%3db77a5c561934e089%27%20failed.\">SecurityException: Request for the permission of type 'System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089' failed.</a><br />   SubSonic.Utilities.Utility.WriteTrace(String message) in Utility.cs:37<br />   SubSonic.AbstractRecord`1.ValidateColumnSettings() in AbstractRecord.cs:901<br />   SubSonic.ActiveRecord`1.Validate() in ActiveRecord.cs:354<br />   SubSonic.ActiveRecord`1.Save(String userName) in ActiveRecord.cs:366<br />   ClubStarterKit.Data.WebSettings.Insert(String varName, String varSlogan, String varCopyright, String varAddress, String varSiteURL, String varMailServer, String varMailUsername, String varMailPassword, Boolean varEmailVerification, Boolean varAdminVerification, Int32 varPageSize, Boolean varReportCMS, String varWebmaster, Boolean varIsHighestWinner, Int32 varModerationLevel, Int32 varCurrentSeason) in d:\\hosting\\phikai\\VINTAGE\\App_Code\\DAL\\Generated\\WebSettings.vb:601<br />   ClubStarterKit.Web.Settings.PushToSession() in d:\\hosting\\phikai\\VINTAGE\\App_Code\\BLL\\Settings.vb:31<br />   ASP.global<i>asax.Session</i>Start(Object sender, EventArgs e) in d:\\hosting\\phikai\\VINTAGE\\global.asax:24<br />   System.Web.SessionState.SessionStateModule.RaiseOnStart(EventArgs e) +2211278<br />   System.Web.SessionState.SessionStateModule.CompleteAcquireState() +154<br />   System.Web.SessionState.SessionStateModule.BeginAcquireState(Object source, EventArgs e, AsyncCallback cb, Object extraData) +547<br />   System.Web.AsyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute() +90<br />   System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously) +155_<br />",
+    "PostedDate": "2008-02-04T10:20:16.28-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "71647",
+    "ThreadId": "21497",
+    "Html": "\r\nIt appeared to be an issue with not getting the DATA.SQL script to execute.  I just did it and the site is now up, I haven't tested any of the features yet, but at least I have something that is working.  Hoepfully this will work out and the small issues will be fine.<br /><br />~Kai<br />",
+    "PostedDate": "2008-02-04T11:39:58.093-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "71654",
+    "ThreadId": "21497",
+    "Html": "\r\nVery interesting indeed...I have the site up, however no changes are actually being written.<br /><br />I tried to create a user and clicked ok, and it didn't do anything.  I tried to create a blog, and I get the same security error.<br /><br />There is obviously something wrong with this medium trust requirement...<br /><br />What is the best way (aside from a different host) to solve this problem.<br /><br />Thanks<br /><br />~Kai<br />",
+    "PostedDate": "2008-02-04T11:54:09.27-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "151998",
+    "ThreadId": "21497",
+    "Html": "I am stumbling down the same road... Anyone get this working on GoDaddy?\r\n",
+    "PostedDate": "2009-01-28T16:55:50.507-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "152177",
+    "ThreadId": "21497",
+    "Html": "If you would like further development of CSK please show your interest\r\nhere http://forums.asp.net/p/1376917/2898087.aspx. Would you like\r\ncontinued support for your CSK issues let it be known now. Thank you.\r\n",
+    "PostedDate": "2009-01-29T06:57:53.497-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "152216",
+    "ThreadId": "21497",
+    "Html": " This is a security issue with subsonic tring to wright to a location that does not trust. here is a link that will help u with that issue but depending on the version or build you are using there are plenty other errors in the code itself. <a href=\"http://forums.subsonicproject.com/forums/p/3226/13362.aspx\">http://forums.subsonicproject.com/forums/p/3226/13362.aspx</a>. <br>\r\nSome suggested reading or I found helpful was <a href=\"http://whswebsite.googlepages.com/\">http://whswebsite.googlepages.com/</a>.<br>\r\nAnd here is my work in progress <a href=\"http://www.tcsw.us/\">http://www.tcsw.us/</a><br>\r\n<br>\r\nGood luck,<br>\r\nSteven<br>\r\n<br>\r\nP.S. I host with Mar-val which I believe uses GoDaddy or is alot the same but if I can help I will.\r\n",
+    "PostedDate": "2009-01-29T08:27:24.027-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "157605",
+    "ThreadId": "21497",
+    "Html": "Hey  Steven,  I'm trying to get CSK working on GoDaddy,  I've check out your site and I like to know how you got it working..    Check out <a href=\"http://marburyvolleyball.com\">http://marburyvolleyball.com</a>  try the poll... crashes everytime.  I'll check out the links you provided in your last post.<br>\r\n<br>\r\nThanks,  DJ\r\n",
+    "PostedDate": "2009-02-13T17:25:30.013-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

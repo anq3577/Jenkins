@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "63314",
+    "ThreadId": "19226",
+    "Html": "\r\nI have published my web site to my host, I understand that i need to change a few things in the webconfig file to get it to run, But I dont know what i have to change, there is specific info anywhere to help me with this, and nothing telling me how to do so. does anyone have any ideas???<br /><br />I am using VS2005<br /><br />club starter kit 2.0 final. mainly cause i dont ubderstand how to use the extended version or even upgrade to v3.<br /><br />please help i just can't figure this out...........<br />",
+    "PostedDate": "2007-12-15T22:34:23.423-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "63345",
+    "ThreadId": "19226",
+    "Html": "\r\nThe only thing your really need to change is the connection string. You hoster should be able to tell you what you need to change in that reguard.<br />",
+    "PostedDate": "2007-12-16T06:50:43.39-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "63357",
+    "ThreadId": "19226",
+    "Html": "\r\nI have tried talking to them and for some reason they have no clue what i'm talking about, so im pretty much on my own.......I dont know what needs to be changed in the string, or what it needs to be changed to???????<br /><br />                &lt;connectionStrings&gt;<br />\t\t&lt;add name=\"ClubSiteDB\" connectionString=\"Data Source=.\\SQLExpress;Integrated Security=true;AttachDBFileName=|DataDirectory|Club.mdf;User Instance=True\" providerName=\"System.Data.SqlClient\"/&gt;<br />\t&lt;/connectionStrings&gt;<br /><br /><br /><br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />Blairj101 wrote:<br />I have published my web site to my host, I understand that i need to change a few things in the webconfig file to get it to run, But I dont know what i have to change, there is specific info anywhere to help me with this, and nothing telling me how to do so. does anyone have any ideas???<br /><br />I am using VS2005<br /><br />club starter kit 2.0 final. mainly cause i dont ubderstand how to use the extended version or even upgrade to v3.<br /><br />please help i just can't figure this out...........<br /><br /></div>",
+    "PostedDate": "2007-12-16T09:25:55.137-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "63413",
+    "ThreadId": "19226",
+    "Html": "\r\nIt is definetaly your connection string.  What hoster are you using? You need to change the data source= portion to match your db info from your host.  For go daddy using SQL it is similar to:<br /><br />&lt;connectionStrings&gt;<br />\t\t&lt;add name=\"ClubSiteDB\" connectionString=\"Data Source=\"servername\";Initial Catalog=DB<i>XXXXX;User ID=XXXX;Password='XXXXXXXXXX';Trusted</i>Connection=False\" providerName=\"System.Data.SqlClient\"/&gt;<br />\t\t&lt;remove name=\"LocalSqlServer\"/&gt;<br />\t\t&lt;add name=\"LocalSqlServer\" connectionString=\"Data Source=\"servername\";Initial Catalog=DB<i>XXXXX;User ID=XXXXX;Password='XXXXXX';Trusted</i>Connection=False\" providerName=\"System.Data.SqlClient\"/&gt;<br />\t&lt;/connectionStrings&gt;<br />",
+    "PostedDate": "2007-12-16T16:22:25.263-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "91825",
+    "ThreadId": "19226",
+    "Html": "ive looked everywhere fo a laymans terms on how to get this up and running, with no luck these solutions here i have tried and still they get me nowhere please help!!!!!<br>\r\n<br>\r\n",
+    "PostedDate": "2008-05-11T19:16:07.073-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "91948",
+    "ThreadId": "19226",
+    "Html": "<br>\r\n<div style=\"border-style:dotted none;border-color:rgb(170, 170, 170) -moz-use-text-color;border-width:0.1em medium;margin:1em 0em 2.5em 3em;padding:0.2em;font-style:italic\"><br>\r\nBlairj101 wrote:<br>\r\nive looked everywhere fo a laymans terms on how to get this up and running, with no luck these solutions here i have tried and still they get me nowhere please help!!!!!<br>\r\n<br>\r\n<br>\r\n<br>\r\n</div>\r\nYou may want to consider using this project as all indications seem to convey the project has been abandoned, the support is definitely not here as it was in the past. The developer did a great job in the beginning but since has sort of disappeared. Many of us are in the wings waiting for some indication that this project will move forward. Good luck in your decision.<br>\r\n<div><span><br>\r\n</span></div>\r\n",
+    "PostedDate": "2008-05-12T08:53:52.797-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "92064",
+    "ThreadId": "19226",
+    "Html": "What project?? if you mean V3.... then i don't know how to work with that one, install it i mean.\r\n",
+    "PostedDate": "2008-05-12T19:32:35.58-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

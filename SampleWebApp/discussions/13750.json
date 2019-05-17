@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "44844",
+    "ThreadId": "13750",
+    "Html": "\r\n1. When you hover the mouse over any of the rollover buttons/links on a page they all show the same tooltip and status bar message. Why is this?<br />2. The Cancel button on the edit event page does nothing (the code looks identical to the edit news cancel button).<br /><br />PS When is the next R3 beta coming out<br />",
+    "PostedDate": "2007-08-13T15:55:26.713-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44852",
+    "ThreadId": "13750",
+    "Html": "\r\n1) IDK. It's probably some view state thing. That's easily changed in the code.<br />2) OK... I'll check that. Can you put that in an issue?<br /><br />Whenever we get to it and there are some changes.<br />",
+    "PostedDate": "2007-08-13T19:06:18.377-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

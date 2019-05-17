@@ -1,0 +1,74 @@
+[
+  {
+    "Id": "41157",
+    "ThreadId": "12611",
+    "Html": "\r\nI use downloads in events to post up entry forms and results in pdf format.  They are going to build up a lot without a way to delete old downloads.  Is there any plans to do this?<br />",
+    "PostedDate": "2007-07-15T13:30:26.23-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41166",
+    "ThreadId": "12611",
+    "Html": "\r\nAre you not able to delete downloads?<br />",
+    "PostedDate": "2007-07-15T16:06:24.66-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41197",
+    "ThreadId": "12611",
+    "Html": "\r\nI can delete them from an event, but they remain in the dropdown list.  I presume this means they remain available in the DB somewhere.  I would like to remove them from the dropdown list once I dont need to reference them anymore.<br />",
+    "PostedDate": "2007-07-16T02:44:11.767-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41241",
+    "ThreadId": "12611",
+    "Html": "\r\nYea... there are 3 tables:<br /><br />Downloads<br />DownloadsInEvents<br />DownloadsInNews<br /><br />The download remains in the downloads table.<br />",
+    "PostedDate": "2007-07-16T09:47:03.627-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41291",
+    "ThreadId": "12611",
+    "Html": "\r\nSo I would have to manipulate the table to clean up the db?  Are there plans to incorporate a facility to do this within the site, along with the millions of other things you have got to do :-)<br />",
+    "PostedDate": "2007-07-16T14:39:33.053-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41314",
+    "ThreadId": "12611",
+    "Html": "\r\nIDK... maybe I should put that in... it wouldn't be that hard.<br />",
+    "PostedDate": "2007-07-16T17:39:18.677-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41346",
+    "ThreadId": "12611",
+    "Html": "\r\nBe great if you could, only if you have time!<br />",
+    "PostedDate": "2007-07-17T02:12:03.077-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41408",
+    "ThreadId": "12611",
+    "Html": "\r\nAre you kidding... I have all the time in the world at the moment.<br />",
+    "PostedDate": "2007-07-17T10:47:34.803-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41410",
+    "ThreadId": "12611",
+    "Html": "\r\nThis discussion has been copied to a work item. Click here to <a href=\"http://www.codeplex.com/ClubStarterKit/WorkItem/View.aspx?WorkItemId=2827\">go to the work item and continue the discussion</a>.<br />",
+    "PostedDate": "2007-07-17T10:48:30.58-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

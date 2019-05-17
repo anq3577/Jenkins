@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "38587",
+    "ThreadId": "11890",
+    "Html": "\r\nI am going to be making some changes to the Admin\\Email pages.  The changes that I have to make are required by my host (webhost4life), as an email with too many To addresses is blocked.  They think it is spam.  So I will be breaking up the emails into multiples (probably a max of 20 recipients per mail).<br /><br />Are there any outstanding issues with the email pages?  If I remember correctly, I did a lot of the original coding on them, and this is a good time to fix outstanding issues.<br /><br />As with the other things I am changing, I will probably add a setting to the web.config like MaxRecipients so that the # is not hard-coded.  -1 will be unlimited, for those of you that do not have this problem.<br /><br />Any other suggestions?<br />",
+    "PostedDate": "2007-06-27T01:40:06.533-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38645",
+    "ThreadId": "11890",
+    "Html": "\r\nKeep in mind that I put in SubSonic in there. <br />",
+    "PostedDate": "2007-06-27T07:54:18.027-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38677",
+    "ThreadId": "11890",
+    "Html": "\r\nWell, I will not post the changes to TS then.  I will post them here, and let you integrate them back into the source.  That will fix the SubSonic issue.<br /><br />One of these days I will take the time to wrap my head around SubSonic.<br /><br />In the meantime, I think we need to start thinking about how existing users can upgrade to the latest version of the kit.  What I mean is the SQL scripts usually delete all the tables and then create new ones.  That is unthinkable in a production system.  We need to have a couple versions of the scripts.  One for new installs, and another for upgrades.<br />",
+    "PostedDate": "2007-06-27T10:34:46.437-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38686",
+    "ThreadId": "11890",
+    "Html": "\r\nYea... is there some diff tool out there that can help with that? I agree... it is a problem. Just if there was a way for people to plug in an update script... that would be wonderful.<br />",
+    "PostedDate": "2007-06-27T11:56:00.907-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

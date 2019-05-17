@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "28612",
+    "ThreadId": "8761",
+    "Html": "\r\nI am wondering if anyone could help me usethe MembershipNumber column in the profile table so I amy use it for my hiking club members to insert their club membership number when creating a new account. I am thinking that I need to change a setting in the webconfig as well as setup the membershipnumber textbox on the createuser form. Thank you.<br />",
+    "PostedDate": "2007-04-02T09:57:18.27-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "28626",
+    "ThreadId": "8761",
+    "Html": "\r\nYou can use the MemberInfo table. And by using validation/error controling controls, you can easily make the insertion of membership number as required data.<br />",
+    "PostedDate": "2007-04-02T10:34:17.337-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "28636",
+    "ThreadId": "8761",
+    "Html": "\r\nYou could do a count of the # users in the table and then just add 1.<br />",
+    "PostedDate": "2007-04-02T12:15:42.313-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "28659",
+    "ThreadId": "8761",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />Plaid wrote:<br />You can use the MemberInfo table. And by using validation/error controling controls, you can easily make the insertion of membership number as required data.<br /><br /></div><br />What I am asking is I want to add a field to the create user form, I understand that the easiest way to do this is to use the profile feature, I checked the profile table and found that there is a membershipnumber column already setup, what I need to know is how do I use this field? I assume I need to do something in the webconfig and assume that I add the field to the createuser form. Is this correct? What do I need to include in the webconfig? I need specfic directions. Thanks<br />",
+    "PostedDate": "2007-04-02T16:10:52.793-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "28664",
+    "ThreadId": "8761",
+    "Html": "\r\nI see what you mean... we have a built in extender to the membership provider. It is in the memberinfo table. I can explain how to add to this... it involves some simple coding.<br />",
+    "PostedDate": "2007-04-02T16:49:03.783-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

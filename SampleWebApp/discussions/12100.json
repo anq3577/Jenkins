@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "39300",
+    "ThreadId": "12100",
+    "Html": "\r\nGuys forgive me for asking because I know this question has been asked many times before.  I'm currently using a V1.x of the CSK in C#.  I noticed the latest version and revisions are in VB.  Is C# no longer supported?<br /><br />Thanks,<br />Gio<br />",
+    "PostedDate": "2007-07-02T13:16:08.223-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39319",
+    "ThreadId": "12100",
+    "Html": "\r\nC# will be available. The development language is in VB (since I am fluent in VB and not C#). I will do a conversion and it should be available at our next beta (2 weeks??).<br />",
+    "PostedDate": "2007-07-02T14:37:18.863-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39337",
+    "ThreadId": "12100",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />C# will be available. The development language is in VB (since I am fluent in VB and not C#). I will do a conversion and it should be available at our next beta (2 weeks??).<br /><br /></div><br />Great! Thanks and keep up the good work!<br />",
+    "PostedDate": "2007-07-02T17:29:11.26-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "47487",
+    "ThreadId": "12100",
+    "Html": "\r\nHow is the progress on converting V3 Beta to C#?  I want to help develop CSK but I only know C#.<br />",
+    "PostedDate": "2007-09-01T09:33:06.103-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "51254",
+    "ThreadId": "12100",
+    "Html": "\r\nI know... its still in the plans (I'm taking a Java class so C# won't feel so foreign to me).<br />",
+    "PostedDate": "2007-09-29T17:19:02.433-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "57210",
+    "ThreadId": "12100",
+    "Html": "\r\nHow is the C# version going?  Have you considered taking advantage of this tool? <br />http://www.elegancetech.com/CSVB/OpenSource.aspx <br /><br />They will convert Open Source projects for free.<br />",
+    "PostedDate": "2007-11-07T19:22:58.597-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

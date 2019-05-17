@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "43232",
+    "ThreadId": "13232",
+    "Html": "\r\nI don't know if this is a bug or just bad data but I get an error in albumpicker when editing the test news item with id 1.<br />",
+    "PostedDate": "2007-07-31T19:57:14.52-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43238",
+    "ThreadId": "13232",
+    "Html": "\r\nWhich version? I had to fix a lot of bugs in the photo/album stuff in v2. Those discussions should be easy to find. I posted some of the fixes.<br />",
+    "PostedDate": "2007-07-31T20:59:08.057-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43252",
+    "ThreadId": "13232",
+    "Html": "\r\nVersion 3 rc1<br /><br />The database has an image table and an images table and I am not sure if the albumids and image ids match correctly.<br />",
+    "PostedDate": "2007-07-31T23:23:13.337-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43280",
+    "ThreadId": "13232",
+    "Html": "\r\nv3 beta 1, you mean?<br /><br />I know... the album picker is a mess. I will eventually clean it up before v3 in final.<br />",
+    "PostedDate": "2007-08-01T05:12:51.237-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

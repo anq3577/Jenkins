@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "29911",
+    "ThreadId": "9162",
+    "Html": "\r\nI'm not sure what's going one here, but my test site had been working well, then yesterday I started to notice problems when trying to add a News article. Suspecting something had become corrupted on the server, I reloaded the entire site.<br /><br />Now, some pages that run the LoginBanner user control work, while others return an error ('LoginBanner' is ambiguous in the namespace 'ASP'). I have compared the pages that work and those that don't and can't see any difference, and in fact everything works fine when run on my development server.<br /><br />I have replaced the Default.aspx page with an under construction page, but here is a link to one of the pages that works. If you go to Events, News or Photos from there, you will see the error. Other Main Menu items work, some also have the Login Banner.<br /><br /><a href=\"http://test.renegadesprints.org/Profile_Pages/Profiles.aspx\" class=\"externalLink\">http://test.renegadesprints.org/Profile_Pages/Profiles.aspx<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a><br /><br />Another strange thing is the Under Construction home page (Default.aspx) has no css attached or inline and is not attached to any Master page, yet the background css from the Default.master page is still visible. What's up with that? <br />",
+    "PostedDate": "2007-04-14T06:43:42.777-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "29930",
+    "ThreadId": "9162",
+    "Html": "\r\nI've been working on this most of the day and I'm still stumped. I creaded a new sub-domain and reloaded the whole thing again. Same problem. Events/Results, News and Photos all return the error and Drivers, Forums, Rules and Contact all work. Contact doesn't have the Login Banner on it, but all the other Main Menu pages do.<br /><br />This really doesn't make any sense at all. Any Ideas?<br /><br />Thanks,<br />Ed<br />",
+    "PostedDate": "2007-04-14T14:43:46-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "30129",
+    "ThreadId": "9162",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />efrazier wrote:<br />I've been working on this most of the day and I'm still stumped. I creaded a new sub-domain and reloaded the whole thing again. Same problem. <a href=\"http://version3.renegadesprints.org/\" class=\"externalLink\">http://version3.renegadesprints.org/<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a> Events/Results, News and Photos all return the error and Drivers, Forums, Rules and Contact all work. Contact doesn't have the Login Banner on it, but all the other Main Menu pages do.<br /><br />This really doesn't make any sense at all. Any Ideas?<br /><br />Thanks,<br /><br />Look in your UserControls folder and see if you have more then one file named loginbanner.aspx.<br />Ed<br /><br /></div>",
+    "PostedDate": "2007-04-16T14:27:01.187-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "30378",
+    "ThreadId": "9162",
+    "Html": "\r\nThanks for the suggestion Jerry, but there was only one copy of loginbanner.aspx. I have no clue what is going on with this. I've been out of town for several days, but back now so I'm going to completely delete the sub-directories that have been created to host this site and start from scratch. If I can't get it to work, I'll just drop the effort to use the CSK and go back to coding my own app, as limiting as that option will surely be!<br /><br />Ed <br />",
+    "PostedDate": "2007-04-18T13:26:23.5-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "30469",
+    "ThreadId": "9162",
+    "Html": "\r\nAfter deleting everything from the server and reloading, the site is now working! Still not sure what was causing the problem. The site is back at <a href=\"http://test.renegadesprints.org\" class=\"externalLink\">http://test.renegadesprints.org<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a> and the version3 subdomain referenced in a previous post has been deleted.<br /><br />Ed<br />",
+    "PostedDate": "2007-04-19T07:49:37.983-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

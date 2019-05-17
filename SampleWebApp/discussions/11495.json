@@ -1,0 +1,114 @@
+[
+  {
+    "Id": "37257",
+    "ThreadId": "11495",
+    "Html": "\r\nHello.<br /><br />I'm trying to modify ClubStarteKit 2.0(VB).  I'm able to add additional menu links to the menu bar, but when they start wrapping, they don't skip a line and they're kinda like centered in the menu bar.<br /><br />Does anybody know how to get a decent looking menu with two lines of menu items?<br /><br />Any help would be gratefully appreciated.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-17T20:44:56.467-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37318",
+    "ThreadId": "11495",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />Tonyg wrote:<br />Hello.<br /><br />I'm trying to modify ClubStarteKit 2.0(VB).  I'm able to add additional menu links to the menu bar, but when they start wrapping, they don't skip a line and they're kinda like centered in the menu bar.<br /><br />Does anybody know how to get a decent looking menu with two lines of menu items?<br /><br />Any help would be gratefully appreciated.<br /><br />Thanks,<br />Tony<br /><br /></div>Hi Tony - I ran into similar problems when adding pages to the SiteMap, so on <a href=\"http://www.RenegadeSprints.org\" class=\"externalLink\">http://www.RenegadeSprints.org<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a>, I just used the ASP.net menu control for the second line. This may not be the way you want to go, but it's an option to consider and easy to format.<br /><br />Ed<br />",
+    "PostedDate": "2007-06-18T08:25:10.953-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37331",
+    "ThreadId": "11495",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />efrazier wrote:<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />Tonyg wrote:<br />Hello.<br /><br />I'm trying to modify ClubStarteKit 2.0(VB).  I'm able to add additional menu links to the menu bar, but when they start wrapping, they don't skip a line and they're kinda like centered in the menu bar.<br /><br />Does anybody know how to get a decent looking menu with two lines of menu items?<br /><br />Any help would be gratefully appreciated.<br /><br />Thanks,<br />Tony<br /><br /></div>Hi Tony - I ran into similar problems when adding pages to the SiteMap, so on <a href=\"http://www.RenegadeSprints.org\" class=\"externalLink\">http://www.RenegadeSprints.org<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a>, I just used the ASP.net menu control for the second line. This may not be the way you want to go, but it's an option to consider and easy to format.<br /><br />Ed<br /><br /></div><br />Hello Ed.<br /><br />Thanks for your reply.<br /><br />I have it working.  I just need to know how to format it so that it looks nicer.<br /><br />However, i will try your idea of adding a menu control.  What did you use?  The Toolbox\\Navigation\\Menu control?<br />and where did you put it on the Default.master?  Right after the Repeater?<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-18T09:03:57.307-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37464",
+    "ThreadId": "11495",
+    "Html": "\r\nTony, Glad to hear you got it working.<br /><br />I replaced the Repeater with Toolbox/ASP.NET Controls/Navigation/Menu and used another menu control for the second line of the top menu. It's been awhile since I made those changes and don't remember why I replaced the Repeater, but it probably had something to do with formatting.<br />",
+    "PostedDate": "2007-06-19T07:11:53.477-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37485",
+    "ThreadId": "11495",
+    "Html": "\r\nI'm simply trying to get the repeater to display the child nodes in my websitemap. I'm using this article as a reference: http://www.asp.net/learn/dataaccess/tutorial03vb.aspx?tabid=63<br /><br />It's not going well. I'm not sure what I'm doing wrong. I'm surprised they didn't just include the code for any child nodes in the repeater in the first place. In fact, I can't seem to find an example for using a repater across teh top navigation. They all seem to be down the left side. Even just copying the example in the article without changing anything is resulting in a bunch of dots going down the left side of my screen. If anybody has a solution and would be willing to share, I'd be grateful. <br />",
+    "PostedDate": "2007-06-19T09:16:09.25-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41242",
+    "ThreadId": "11495",
+    "Html": "\r\nTina, did you ever get this working?  I am trying to do the same, I would like a couple of menu items to drop down on my site.  Has anyone got a default master I can take a peek at?<br />",
+    "PostedDate": "2007-07-16T09:48:04.86-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41250",
+    "ThreadId": "11495",
+    "Html": "\r\nI did, but I really didn't like the way it looked, so I pulled it out. I'm sorry - I didn't even save a copy of it. <br />",
+    "PostedDate": "2007-07-16T10:32:36.013-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41251",
+    "ThreadId": "11495",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />Dazalock wrote:<br />Tina, did you ever get this working?  I am trying to do the same, I would like a couple of menu items to drop down on my site.  Has anyone got a default master I can take a peek at?<br /><br /></div><br />here is my default.master.  This and a properly configured web.sitemap does the trick.  Live site at: www.ogfutbol.org<br /><br />&lt;%@ Master Language=\"VB\" %&gt;<br />&lt;%@ Register Src=\"UserControls/UsersOnline.ascx\" TagName=\"UsersOnline\" TagPrefix=\"uc1\" %&gt;<br />&lt;%@ Register TagPrefix=\"ClubSite\" TagName=\"HitCounter\" Src=\"~/UserControls/HitCounter.ascx\" %&gt;<br />&lt;!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"<br /> \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\"&gt;<br /><br />&lt;script runat=\"server\"&gt;<br /><br />    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs)<br /><br />        If Not (IsPostBack) Then<br />            'Display the number of users on the site<br />            'ActivateUsers.Text = Application(\"activeUsers\").ToString<br /><br />            'Configure the screen with web.config information<br />            Dim ClubName As String = ConfigurationManager.AppSettings(\"ClubName\")<br />            Dim ClubSlogan As String = ConfigurationManager.AppSettings(\"ClubSlogan\")<br />            Dim ClubAddress As String = ConfigurationManager.AppSettings(\"ClubAddress\")<br />            Dim ClubCopyright As String = ConfigurationManager.AppSettings(\"ClubCopyright\")<br /><br />            If Not (ClubName Is Nothing) Or ClubName &lt;&gt; \"\" Then<br />                Label_ClubName.Text = ClubName<br />                masterhead.Title = ClubName<br />            Else<br />                Label_ClubName.Text = \"My Club Site\"<br />                masterhead.Title = \"My Club Site\"<br />            End If<br /><br />            If Not (ClubSlogan Is Nothing) Or ClubSlogan &lt;&gt; \"\" Then<br />                Label_ClubSlogan.Text = ClubSlogan<br />            Else<br />                Label_ClubSlogan.Text = \"My Club Site tag line or slogan\"<br />            End If<br /><br />            If Not (ClubAddress Is Nothing) Or ClubAddress &lt;&gt; \"\" Then<br />                Label_ClubAddress.Text = ClubAddress<br />            Else<br />                Label_ClubAddress.Text = \"Club Address here\"<br />            End If<br /><br />            If Not (ClubCopyright Is Nothing) Or ClubCopyright &lt;&gt; \"\" Then<br />                Label_Copyright.Text = ClubCopyright<br />            Else<br />                Label_Copyright.Text = \"Copyright &copy;",
+    "PostedDate": "2007-07-16T10:34:36.447-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41261",
+    "ThreadId": "11495",
+    "Html": "\r\nMine didn't turn out like that, lol. It looked like crap. That's much nicer. <br />",
+    "PostedDate": "2007-07-16T11:28:55.82-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41281",
+    "ThreadId": "11495",
+    "Html": "\r\nThat's a really nice menu, but i'm looking for a menu that extends to the second line.<br /><br />I added an asp menu for the second line, but like Tina, i don't like the way it looks.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-07-16T13:58:53.86-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41290",
+    "ThreadId": "11495",
+    "Html": "\r\nThanks rh, how did you get the drop downs working?<br />",
+    "PostedDate": "2007-07-16T14:36:47.34-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41462",
+    "ThreadId": "11495",
+    "Html": "\r\nDeleted the repeaters.  <br />Drag and drop the asp.net menu control in their place.  <br />Point it to the web.sitemap <br />Spent a great deal of time editting the web.sitemap so get it close to the way I wanted it to layout.  <br /><br />It still isn't perfect, but it works.  I also spent some time tweaking the colors and vertical/horizontal spacing menu control.  Just trial and error to get the lineup you prefer.  I still am not sure about teh bottom menu control.  I am thinking about reducing the number of sub menus displayed on that one.<br /><br />If you need more details, let me know.  I'd be glad to answer any questions.<br />",
+    "PostedDate": "2007-07-17T14:55:18.687-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41488",
+    "ThreadId": "11495",
+    "Html": "\r\nHello RH.<br /><br />Actually that's what i did.  Except that i did tie the first line of the menu to a sitemapdatasource, but i used the Edit Menu items from the menu tasks to get the second line to display correctly.<br /><br />It's still not the way i want it though.  I can't get it to line up with the first line.  Are you able to get yours to line up?<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-07-17T17:39:35.3-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41644",
+    "ThreadId": "11495",
+    "Html": "\r\ntonyg,<br /><br />I guess I am not sure what you did.  Did you use a normal sitemap and manually create the sub menus or did you create them via the web.sitemap?  My web.sitemap looks like:<br /><br />&lt;?xml version=\"1.0\" encoding=\"utf-8\" ?&gt;<br />&lt;siteMap xmlns=\"http://schemas.microsoft.com/AspNet/SiteMap-File-1.0\" &gt;<br />  &lt;siteMapNode url=\"/\" title=\"\"  description=\"\"  roles=\"*\"&gt;<br />    &lt;siteMapNode url=\"default.aspx\" title=\"Home\"  description=\"Welcome page\"  /&gt;<br />    &lt;siteMapNode url=\"####\" title=\"News/Events\" description=\"Club News\" &gt;<br />    &lt;siteMapNode url=\"news/list.aspx\" title=\"News\"  description=\"Recent News\"  /&gt;<br />    &lt;siteMapNode url=\"events/calendar.aspx\" title=\"Events\"  description=\"Calendar of events\"  /&gt;<br />    &lt;!--&lt;siteMapNode url=\"locations/list.aspx\" title=\"Locations\"  description=\"Event Locations\"  /&gt;--&gt;<br />    &lt;/siteMapNode&gt; <br />    &lt;siteMapNode url=\"#\" title=\"Statistics\"   &gt;<br />      &lt;siteMapNode url=\"statistics/LadyWarriors.aspx\" title=\"Lady Warriors\"  description=\"Lady Warrior Stats\"  /&gt;<br />      &lt;siteMapNode url=\"statistics/Warriors.aspx\" title=\"Warriors\"  description=\"Warrior Stats\"  /&gt;<br />    &lt;/siteMapNode&gt;<br />    &lt;siteMapNode url=\"photo/list.aspx\" title=\"Photos\"  description=\"Photo album\"  /&gt;<br />    &lt;siteMapNode url=\"member/redirect.aspx\" title=\"Membership\"  description=\"Member registration\"  /&gt;<br />    &lt;siteMapNode url=\"Forum/Topics.aspx\" title=\"Forums\"  description=\"Discussion Forums\"  /&gt;<br />    &lt;siteMapNode url=\"blogs/default.aspx\" title=\"Blogs\"  description=\"Blog Posts\"  /&gt;<br />    &lt;siteMapNode url=\"links/links.aspx\" title=\"Links\"  description=\"Useful links\"  /&gt;<br />        &lt;siteMapNode url=\"###\" title=\"About Us\" description=\"About Us\" &gt;<br />      &lt;siteMapNode url=\"##\" title=\"Staff\" description=\"Coaching Staff\" &gt;<br />        &lt;siteMapNode url=\"AboutUs/Lang.aspx\" title=\"Coach Lang\"  description=\"Coach Jesse Lang\"  /&gt;<br />        &lt;siteMapNode url=\"AboutUs/Brown.aspx\" title=\"Coach Brown\"  description=\"Coach Buzz Brown\"  /&gt;<br />        &lt;siteMapNode url=\"AboutUs/Smith.aspx\" title=\"Coach Smith\"  description=\"Coach Clay Smith\"  /&gt;<br />        &lt;siteMapNode url=\"AboutUs/Langham.aspx\" title=\"Coach Langham\"  description=\"Coach Paul Langham\"  /&gt;<br />        &lt;siteMapNode url=\"AboutUs/Blackmon.aspx\" title=\"Coach Blackmon\"  description=\"Coach Blackmon\"  /&gt;<br />      &lt;/siteMapNode&gt;<br />      &lt;siteMapNode url=\"contacts/contacts.aspx\" title=\"Contacts\"  description=\"Warrior Contacts\"  /&gt;<br />      &lt;siteMapNode url=\"AboutUs/History.aspx\" title=\"History\"  description=\"Futbol History\"  /&gt;<br />    &lt;/siteMapNode&gt;<br />    &lt;!-- <br />    &lt;siteMapNode url=\"####\" title=\"Admin\" description=\"Site Administration\" roles=\"Administrators\" &gt;<br />      &lt;siteMapNode url=\"admin/adddownload.aspx\" title=\"Downloads\"  description=\"Warrior Downloads\"  /&gt;<br />      &lt;siteMapNode url=\"admin/Email.aspx\" title=\"Email\"  description=\"Email Members\"  /&gt;<br />    &lt;/siteMapNode&gt;<br />    --&gt;<br />  &lt;/siteMapNode&gt;<br />&lt;/siteMap&gt;<br />",
+    "PostedDate": "2007-07-18T13:16:39.537-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

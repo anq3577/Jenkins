@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "68349",
+    "ThreadId": "20582",
+    "Html": "\r\nHi,<br />The event calander is still yellow after theme change to mid-tri . Also in the blog area the blog titles are the same, yellow. What am I missing?? Where do I change thsi? I checked all the images I can find and did not see one that is yellow except the calender.jpg. It is a book though and this does not look like it. I was able to change the button.png though.<br /><br /><br />Thank you for yout help,<br /><br />Jim<br />",
+    "PostedDate": "2008-01-16T12:34:35.04-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "68811",
+    "ThreadId": "20582",
+    "Html": "\r\nthe Calendar control uses the Clubsite.css style sheet.  In the styl sheet look for the \".eventmonth\" class.  This class will give you the url to the image fill for this control.  Hope this helps.<br />",
+    "PostedDate": "2008-01-18T17:38:36.427-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "68822",
+    "ThreadId": "20582",
+    "Html": "\r\nThank you very much for responding!! <br />The clubsite.css points to the file and the image is correct. It is within the calender itself (the data area that the problem lies. The forums thread (subject area) is also a problem. The rest of both pages are the problem?<br />Not sure where to look.<br />Thank you again,<br />Jim<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />FireByNight wrote:<br />the Calendar control uses the Clubsite.css style sheet.  In the styl sheet look for the \".eventmonth\" class.  This class will give you the url to the image fill for this control.  Hope this helps.<br /><br /></div>",
+    "PostedDate": "2008-01-18T21:21:51.337-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

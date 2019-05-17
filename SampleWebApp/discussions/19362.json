@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "63899",
+    "ThreadId": "19362",
+    "Html": "\r\nOk, I am stumped... When a new user clicks register, enters their information, then hits submit - upon submit all the box's become greyed out and the page just sites there - it does not re-direct to the default page. No errors - no nothing. But the site does work locally, just not live, I am using GoDaddy temporarily. Here is the code:<br /><br />&lt;script runat=\"server\"&gt;<br />    Protected Sub Button1_Click(ByVal sender As Object, ByVal e As System.EventArgs)<br />        username.Enabled = False<br />        password.Enabled = False<br />        confirmpassword.Enabled = False<br />        email.Enabled = False<br />        question.Enabled = False<br />        answer.Enabled = False<br />        Addr.Enabled = False<br />        Phone.Enabled = False<br />        fname.Enabled = False<br />        lname.Enabled = False<br />        NewsletterCheck.Enabled = False<br />        If password.Text = confirmpassword.Text Then<br />            Try<br />                Membership.CreateUser(username.Text, password.Text, email.Text, question.Text, answer.Text, True, System.Web.Security.MembershipCreateStatus.Success)<br />                Dim user As MembershipUser = Membership.GetUser(username.Text)<br />                MemberInfo.Insert(Addr.Text, Phone.Text, fname.Text, lname.Text, Nothing, CType(user.ProviderUserKey, Guid), NewsletterCheck.Checked)<br />                Membership.UpdateUser(user)<br />                If ClubStarterKit.Web.UserAdministration.NeedsEmailVerification() = True Then<br />                    user.IsApproved = False<br />                    Membership.UpdateUser(user)<br />                    ClubStarterKit.Web.UserAdministration.SendEmailVer(user)<br />                    status.Text = \"We have recieved your request. We have sent an email verification email. Please go to your email inbox and read the instructions from our email to verify your account.\"<br />                Else<br />                    If ClubStarterKit.Web.UserAdministration.NeedsAdminVerification() = True Then<br />                        user.IsApproved = False<br />                        Membership.UpdateUser(user)<br />                        ClubStarterKit.Web.UserAdministration.SendAdminVer(user)<br />                        status.Text = \"We have recieved your request. Please wait while an administrator approves your membership application. You will recieve an email when your account is verified.\"<br />                    Else<br />                        user.IsApproved = True<br />                        Membership.UpdateUser(user)<br />                        FormsAuthentication.SetAuthCookie(user.UserName, False)<br />                        Response.Redirect(\"~/default.aspx\")<br />                    End If<br />                End If<br />            Catch ex As Exception<br />            End Try<br />        Else<br />            status.Text = \"Error. Your passwords do not match!\"<br />            username.Enabled = True<br />            password.Enabled = True<br />            confirmpassword.Enabled = True<br />            email.Enabled = True<br />            question.Enabled = True<br />            answer.Enabled = True<br />            Addr.Enabled = True<br />            Phone.Enabled = True<br />            fname.Enabled = True<br />            lname.Enabled = True<br />            NewsletterCheck.Enabled = True<br />        End If<br />    End Sub<br /><br />Any help would be appreciated - I have tried re-loading the pages, re-loading the whole project - and once live it freezes. The usernames do come up when you sign in but the Member permissions are not there.<br /><br />The live url: http://www.moenormangolfacademy.org<br />What is suppose to happen is the video's offered require a sign up, once a user signs up it takes them to the proper page or video they selected. But when they are on the register and sign up - it greys out boxes, it does add their name to the db, but the video's do not show up.<br /><br />Here is a username and password that works - when you sign in you will notice a video tab shows up in the menu - <br />Username: lisam<br />Password: noelle!<br /><br />But here is a new user that signs up and gets greyed boxes, it will allow them to sign in but the permissions are not there, the video tag will not show up:<br />Username: adambruce<br />Password: bruceadam<br /><br />Sorry this is so long, but I am so frustrated and heads will roll if I cannot get this fixed.<br />Any help would really, really be appreciated.<br /><br />Thank You<br />Lisa<br />",
+    "PostedDate": "2007-12-18T12:49:05.423-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "64074",
+    "ThreadId": "19362",
+    "Html": "\r\nPlease, no one out there is able to offer any help on why this would be happening? I am not getting any errors so I am lost as to what could be happening. Everything works fine locally. <br />Thanks<br />Lisa<br />",
+    "PostedDate": "2007-12-19T06:18:34.753-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "64341",
+    "ThreadId": "19362",
+    "Html": "\r\nOk this is attempt 3 for some help - I got the page to work - but now I get an object 'Null' error when a user hits submit from the register page. They are registered and have access to the video's, but i am not sure what is causing the object null error. This only happens in IE, not firefox.<br />Can any one help? Or am I just being ignored... <br />",
+    "PostedDate": "2007-12-20T08:24:25.257-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "64373",
+    "ThreadId": "19362",
+    "Html": "\r\nWhat version of the Club Site are you using for the baseline of your site? You may want to post your question here as well...<br /><br />http://forums.asp.net/1134.aspx<br /><br />",
+    "PostedDate": "2007-12-20T11:02:54.5-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "64417",
+    "ThreadId": "19362",
+    "Html": "<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />flickman wrote:<br />What version of the Club Site are you using for the baseline of your site? You may want to post your question here as well...<br /><br />http://forums.asp.net/1134.aspx<br /><br /><br /><br /></div><br />Thank you for the response - I am using Version 3 Beta 1. Everything works flawlessly locally but once made live, errors on pages or pages do not want to show up. Now I am getting an error on the blog page - I am not an expert at this stuff so any help would be appreciated.<br />I will try the other forum also, thank you for your suggestion.<br />",
+    "PostedDate": "2007-12-20T14:01:39.96-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "64458",
+    "ThreadId": "19362",
+    "Html": "<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />flickman wrote:<br />What version of the Club Site are you using for the baseline of your site? You may want to post your question here as well...<br /><br />http://forums.asp.net/1134.aspx<br /><br /><br /><br /></div><br />Hi Flickman,<br />I wrote on the other forum like you suggested but the response I got was \"find your own errors\"...<br />So thank you for trying, but obviously no one is willing to help. <br />",
+    "PostedDate": "2007-12-20T20:41:30.453-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "64467",
+    "ThreadId": "19362",
+    "Html": "\r\nOk I fixed a lot of the errors after doing some research on the issue I was having - but new problems arose. The register.aspx... when a new user goes to sign up - then hits submit - it takes them to the default page, but they are not signed in. Click login to sign in and the new username and password are not found, nor is the info into the database. My connection strings are good I and triple checked them and nothing changed on the page except me uncommenting the address validation control (Which was what caused the previous problem I was having)<br /><br />Anyones Thoughts?<br /><br />",
+    "PostedDate": "2007-12-20T22:05:01.953-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "38918",
+    "ThreadId": "11992",
+    "Html": "\r\nOK... we've been moving VERY agile on v3. Things are moving REALLY fast (mostly thanks to SubSonic DAL). Here is what I think needs to happen before v3 Beta 1:<br /><br /><ol><li>Photos on file (mnebinger is taking care of that one... YOU ROCK MIKE!!!)</li><li>League Tracker (AHHH... that's a big one!)</li><li>Some more WebAdmin stuff</li><li>Reoccuring events needs to be fixed (I welcome any input on that!)</li><li>Some more forum features (THE FORUM WITH BE SO COOL WHEN v3 IS DONE!!!!!)</li></ol><br />Anything else?<br />",
+    "PostedDate": "2007-06-28T20:59:18.11-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39055",
+    "ThreadId": "11992",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />OK... we've been moving VERY agile on v3. Things are moving REALLY fast (mostly thanks to SubSonic DAL). Here is what I think needs to happen before v3 Beta 1:<br /><br /><ol><li>Photos on file (mnebinger is taking care of that one... YOU ROCK MIKE!!!)</li><li>League Tracker (AHHH... that's a big one!)</li><li>Some more WebAdmin stuff</li><li>Reoccuring events needs to be fixed (I welcome any input on that!)</li><li>Some more forum features (THE FORUM WITH BE SO COOL WHEN v3 IS DONE!!!!!)</li></ol><br />Anything else?<br /><br /></div><br />Excellent Zack.<br /><br />I would like to thank everybody involved in making Club Starter Kit such a user friendly, visually appealing, very functional, fast, integral part of communication and the internet.<br /><br />Enough of the corny, trite, boring, dull comments.  You guys did an excellent job.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-29T18:50:22.23-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39066",
+    "ThreadId": "11992",
+    "Html": "\r\nFile system storage of photos has been fixed.  See the work item for the necessary changes.<br /><br />I also have created some pages to upload documents to the site.  This is used to host word docs, pdf files, etc.  Right now, it is admin only upload, member download.  Ie you have to login to be able to download files.<br /><br />Anyone interested in it?<br />",
+    "PostedDate": "2007-06-29T23:55:19.793-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39072",
+    "ThreadId": "11992",
+    "Html": "\r\nI will put it in today. It should be in by tonight at the latest.<br />",
+    "PostedDate": "2007-06-30T02:37:35.433-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39087",
+    "ThreadId": "11992",
+    "Html": "\r\nI added additional changes to the issue tracker for photos.<br /><br />I need to work on item 4, as most of my events are reoccuring on a weekly/monthly basis.  I was thinking of having something like my bank does for reoccuring funds transfers.  Select how often the reoccur (weekly, monthly, first tuesday of the month, the 25th of every month, etc), and have a choice of either it reoccuring x times or until an end date.<br /><br />I think I will also make an option to automatically delete the old events once the date has passed, to keep the db from filling up.<br />",
+    "PostedDate": "2007-06-30T10:45:11.433-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "39287",
+    "ThreadId": "11992",
+    "Html": "\r\nDefinetaly Interested.  I use this in a 1.0 version site I have for directions, maps, rosters, etc.<br /><br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />mnebinger wrote:<br />File system storage of photos has been fixed.  See the work item for the necessary changes.<br /><br />I also have created some pages to upload documents to the site.  This is used to host word docs, pdf files, etc.  Right now, it is admin only upload, member download.  Ie you have to login to be able to download files.<br /><br />Anyone interested in it?<br /><br /></div>",
+    "PostedDate": "2007-07-02T12:09:49.44-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

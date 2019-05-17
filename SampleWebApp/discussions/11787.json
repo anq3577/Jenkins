@@ -1,0 +1,106 @@
+[
+  {
+    "Id": "38247",
+    "ThreadId": "11787",
+    "Html": "\r\nHello.<br /><br />I have my CSK 2.0 up and running.  Thanks to everyone involved for the excellent club site system.  Also, thanks for all of the help from these forums.<br /><br />When i login in as a user with Editor Role and attempt to Modify Contact Details, after clicking the Update Info button, it displays the icon that has a circular arrow and never does anything else.  It does the same thing for an Administrator, but it does update the details.<br /><br />In the source code for the Member/Details.aspx/InitPageData sub routine, i found this paragraph:<br /><br />If dt.Rows.Count = 1 Then<br />            Dim mr As DataSet.MemberInfoRow = dt(0)<br />            UserName.Text = user.UserName<br />            fname.Text = mr.firstname<br />            lname.Text = mr.lastname<br />            Email.Text = user.Email<br />            Addr.Text = mr.address<br />            Phone.Text = mr.phone<br />            If mr.newsletter = True Then<br />                NewsletterCheck.Checked = True<br />            Else<br />                NewsletterCheck.Checked = False<br />            End If<br />            If Not mr.IsAvatarSizeNull Then<br />                avatarimage.ImageUrl = \"~\\UserControls\\AvatarImagefetch.ashx?Memberid=\" &amp; user.ProviderUserKey.ToString<br /><br />            End If<br />        End If<br /><br />Should the first line say \"If dt.Rows.Count &gt; 1 Then\" instead of \"= 1\"?<br /><br />It would make sense to me and i will probably try it, but i wanted to see if i am on the right track or if anybody else had any other ideas.<br /><br />Any help would be gratefully appreciated.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-25T12:47:06.02-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38258",
+    "ThreadId": "11787",
+    "Html": "\r\nNo... it should be = 1. If it is &gt; 1, then 1 wouldn't work.<br /><br />You should be able to edit member details without any role. I'm not sure why it isn't working.<br /><br />This might be fixed in the latest builds (as they use SubSonic instead of the VS DAL).<br />",
+    "PostedDate": "2007-06-25T13:31:39.887-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38272",
+    "ThreadId": "11787",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />No... it should be = 1. If it is &gt; 1, then 1 wouldn't work.<br /><br />You should be able to edit member details without any role. I'm not sure why it isn't working.<br /><br />This might be fixed in the latest builds (as they use SubSonic instead of the VS DAL).<br /><br /></div><br />I guess i meant to say \"&gt;= 1\" or \"&gt; 0\".<br /><br />I set a breakpoint on the line after the If Then line.  It never stops there when users other than the Administrator try to Modify Contact Details.<br /><br />So if it never executes that logic for non Administrators, is that the way it was designed?<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-25T14:11:04.453-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38299",
+    "ThreadId": "11787",
+    "Html": "\r\nNo. All members should be able to update their own contact details. It should work out of the box. Have you made any changes to that? Or have you deleted the dataset in the App_Code folder?<br />",
+    "PostedDate": "2007-06-25T16:12:30.827-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38307",
+    "ThreadId": "11787",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />No. All members should be able to update their own contact details. It should work out of the box. Have you made any changes to that? Or have you deleted the dataset in the App_Code folder?<br /><br /></div><br />The only changes i made were to change the verbage of the pages, web.config, web.sitemap and added some folders and pages.<br /><br />I made no changes to any code and deleted nothing.<br /><br />If i deleted the dataset, would the website allow me to login and add news items?<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-25T17:01:42.837-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38329",
+    "ThreadId": "11787",
+    "Html": "\r\nThe site would still allow you to edit news and login if you deleted the dataset. <br />",
+    "PostedDate": "2007-06-25T19:31:17.293-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38428",
+    "ThreadId": "11787",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />The site would still allow you to edit news and login if you deleted the dataset. <br /><br /></div><br />I just want tothank you for all of your help.  The way that you respond to posts so quickly is very much appreciated.  I have learned so much from your replies to me and others in this discussion group.<br /><br />I'm not sure of why my site is having these problems.  I need to know more about ASP web sites.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-26T08:34:28.927-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "46169",
+    "ThreadId": "11787",
+    "Html": "\r\nTony,<br /><br />Did you ever get this issue resolved?  I'm having the same problem.<br /><br />Thanks,<br />Kevin<br />",
+    "PostedDate": "2007-08-22T17:36:03.443-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "46177",
+    "ThreadId": "11787",
+    "Html": "\r\nHi All,<br /><br />Ditto for me...I've got the same issue and can't figure it out.  Anyone find out what this might be?<br /><br />Thanks!<br />",
+    "PostedDate": "2007-08-22T19:00:09.723-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "49453",
+    "ThreadId": "11787",
+    "Html": "\r\nHi all,<br />Ditto for me and it is on my \"to do\" list to figure out. Anyone figure this out so I can save some thinking time?<br />Thanks in advance.<br />Deborah<br />",
+    "PostedDate": "2007-09-15T18:18:14.253-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "71105",
+    "ThreadId": "11787",
+    "Html": "\r\nI found out that if you add a profile field, it must be assigned a value in the Register.aspx and Details.aspx page, otherwise the update never occurs (i.e., can't accept Null values). We have some profile values that the user should not update, but the StarterKit will not accept a null value for that field, so I simply set programmatically on the Updating event (kluggy, I admit, but I am a novice here and it works.)<br /><br />Protected Sub dvEditMem_ItemUpdating(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.DetailsViewUpdateEventArgs)<br />        e.NewValues(\"<a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=yourVariableName\">yourVariableName</a>\") = <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=some%20value\">some value</a><br />    End Sub<br /><br /><br />Deborah<br />",
+    "PostedDate": "2008-01-31T11:12:43.297-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "72508",
+    "ThreadId": "11787",
+    "Html": "\r\nDeborah,<br /><br />I'm having trouble finding the sub \"dvEditMem_ItemUpdating\" in my site; 2.0RC.  Can you clarify...<br />",
+    "PostedDate": "2008-02-07T19:40:06.85-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "72627",
+    "ThreadId": "11787",
+    "Html": "\r\nI might have changed the details view name on my website, so that is why you can't find it. I'll try to be clearer:<br /><br />1. Add membership field(s)  as shown on the Codeplex documentation <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=http%3a%2f%2fwww.codeplex.com%2fClubStarterKit%2fWiki%2fView.aspx%3ftitle%3dAdding%2520a%2520membership%2520field%26referringTitle%3dDocumentation\">http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=Adding%20a%20membership%20field&amp;referringTitle=Documentation</a> You may also have to look at the SubSonic directions for the Express or Standard editions of Visual Web Developer. (It is not hard - just carefully follow the directions).<br /><br />2. On your details (or register) page, click on the details view table where you placed your new fields for users to enter. Look for the ID name (I must have called mine dvEditMem for DetailsViewEditMember - I may have changed the name from the orginal Codeplex name while I was playing around with it). It could be called simply DetailsView1 or some such thing.)<br /><br />3. In Source View (not Design View), in the upper left of the screen, click on the dropdown list and select the ID name you found in step 2 above.<br /><br />4. Now, click on drop down list just to the right of the selected name and choose \"Item Updating.\" This will add a new event handler to your source code (between the two script tags with the other stuff already there). This is how I got \"Protected Sub dvEditMem_ItemUpdating ...\" and \"End Sub\" statements. This event handler kicks off before the database is updated and after the user clicks \"update.\"<br /><br />5. Then, between these two lines of code, start typing \"e.\"   Intellisense will show you your choices (like NewValues, etc.). Just fill in the rest of the line of code to place something else besides \"Null\" or \"nothing\" in your variable name that you don't want the user to fill out, but that you want to use someplace else. <br /><br />For instance, we want a membership end date because people pay for memberships for a certain amount of time. We don't want our users to upsdate that field, just officers. Because ClubStarter Kit won't update if there is a null value (which happens if it is not filled out by the user), my code puts in some date in the past so everyone is originally expired and then we update elsewhere. <br /><br />Hope this works for you ... I struggled with it for a while ... and there may be better solutions because I am a true novice here. Any experts out there with a better solution?<br /><br />Deborah<br />",
+    "PostedDate": "2008-02-08T08:57:48.733-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

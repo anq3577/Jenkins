@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-28T08:06:56.757-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Logging out from any page other than Default.aspx causes a page not found error. I have tested this on Events, News and Membership pages only, but suspect it is the same if you logout from any page that is in a sub-folder.",
+    "LastUpdatedDate": "2013-05-15T23:46:40.103-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:47:19.85-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "RC1 Logout Error - 404",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 1759
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I should have added that this error only occurs from a Hosted site, I don't get an error when running from the Development Server. \r\n\r\nIf others are not seeing this problem, I suspect it might be related to my earlier Beta 2 Navigation Problem post [url:http://www.codeplex.com/ClubStarterKit/Thread/View.aspx?ThreadId=8837] and be specific to that Host (Lunarpages.com).\r\n\r\nThe Navigation from a sub-folder problem went away when I upgraded to RC1 and I haven't come across any other sub-folder related problems with RC1 except for this one.\r\n\r\nEd",
+      "PostedDate": "2007-04-25T14:47:20.647-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I am having the same problem, I am using RC1",
+      "PostedDate": "2007-04-25T14:47:21.003-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Try it on something without a querystring. The problem is the query string.",
+      "PostedDate": "2007-04-28T07:55:39.897-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-28T08:06:56.757-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:24.47-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:40.103-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

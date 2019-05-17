@@ -1,0 +1,74 @@
+[
+  {
+    "Id": "43441",
+    "ThreadId": "13298",
+    "Html": "\r\nI received the following email from my host (Lunarpages.com). I have no idea what error they are talking about and can't recreate the error myself. Can someone shed some light on this before they shut me down! My site is <a href=\"http://www.RenegadeSprints.org\" class=\"externalLink\">http://www.RenegadeSprints.org<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a> and has been running fine for several weeks. They don't indicate how long they have been seeing the errors.<br /><br />------------------------------------------------------<br />Hello Ed,<br /><br />You are receiving this notice to inform you that there are severe coding issues with your site and those issues are affecting services on the arcturus server. As such your site will likey be disabled if these issues are not dealt with. Here is a copy of one of the errors that is being generated:<br /><br />Event code: 3005 <br />Event message: An unhandled exception has occurred. <br />Event time: 8/1/2007 9:13:08 AM <br />Event time (UTC): 8/1/2007 4:13:08 PM <br />Event ID: 99b45a092ee445c8a2fd3bbecbb9bdb1 <br />Event sequence: 24 <br />Event occurrence: 3 <br />Event detail code: 0 <br /><br />Application information: <br />Application domain: /LM/W3SVC/19965/Root-1-128304576061718750 <br />Trust level: Full <br />Application Virtual Path: / <br />Application Path: D:\\inetpub\\vhosts\\RenegadeSprints.org\\httpdocs\\ <br />Machine name: ARCTURUS <br /><br />Process information: <br />Process ID: 8696 <br />Process name: w3wp.exe <br />Account name: ARCTURUS\\IWPC_201(reneg5) <br /><br />Exception information: <br />Exception type: CryptographicException <br />Exception message: Padding is invalid and cannot be removed. <br /><br />Request information: <br />Request URL: http://www.renegadesprints.org/WebResource.axd?d=oxeSAAOh... <br />Request path: /WebResource.axd <br />User host address: 66.249.70.92 <br />User: <br />Is authenticated: False <br />Authentication Type: <br />Thread account name: ARCTURUS\\IWPC_201(reneg5) <br /><br />Thread information: <br />Thread ID: 7 <br />Thread account name: ARCTURUS\\IWPC_201(reneg5) <br />Is impersonating: False <br />Stack trace: at System.Security.Cryptography.RijndaelManagedTransform.DecryptData(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount, Byte[]&amp; outputBuffer, Int32 outputOffset, PaddingMode paddingMode, Boolean fLast) <br />at System.Security.Cryptography.RijndaelManagedTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount) <br />at System.Security.Cryptography.CryptoStream.FlushFinalBlock() <br />at System.Web.Configuration.MachineKeySection.EncryptOrDecryptData(Boolean fEncrypt, Byte[] buf, Byte[] modifier, Int32 start, Int32 length, Boolean useValidationSymAlgo) <br />at System.Web.UI.Page.DecryptString(String s) <br />at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context) <br />at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute() <br />at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)<br /><br />These coding errors are affecting the asp.net services on Arcturus and are contributing to high memory loads. These errors will need to be corrected or your site will be suspended. No adverse action has been taken at this point but if the errors are not corrected and these issue continue then your account faces suspension as leaving these errors on the server is a violation of the terms of service as it affects the services on the server for other domains.<br /><br />Please advise once you have corrected the errors so that we can monitor the laod and also the error rate.<br /><br />------------------------------------------------------<br /><br />Thanks - Any help is appreciated,<br />Ed <br /><br />",
+    "PostedDate": "2007-08-02T05:21:45.54-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43443",
+    "ThreadId": "13298",
+    "Html": "\r\nI don't know if this might have anything to do with the above problem, but the only thing I have done in the past few days that is different than what has been done in the past is to add a post in the Classified section that included some photos. Could that be causing the problem?<br /><br />Thanks,<br />Ed<br />",
+    "PostedDate": "2007-08-02T05:26:21.757-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43447",
+    "ThreadId": "13298",
+    "Html": "\r\nDo you think that it is just an automated response? Just tell them you cannot recreate the error.<br /><br />If they continue to jerk your chain, I would just switch hosters.<br />",
+    "PostedDate": "2007-08-02T05:35:07.607-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43451",
+    "ThreadId": "13298",
+    "Html": "\r\nLast night I replied to the initial notice with the following:<br /><br />-----------------------------------<br />I have checked the site and can find no problems other than my disk space usage was 557MB and I'm only currently allocated 500MB. Could that be causing the problem? The page you reference above (WebResource.axd) is not a page in my site.<br /><br />To reduce the disk usage, I have deleted two sub-domains that were attached to that webiste. Since I am nowhere near the 5000MB limit, could you please increase the allowed disk space for RenegadeSprints.org?<br /><br />-----------------------------------<br /><br />This morning, I had the following response from Lunarpages Support:<br /><br />----------------------------------<br />Hi, <br />The issue is not because of disk usage but because of the memory usage by the scripts in your home directory. You need to check the integrity of the scripts and ensure that it does not take up too much of memory space. Disk usage has nothing to do with memory usage. Please contact your programmer and request them to check the code. <br />----------------------------------<br /><br />I do not know what  \"too much memory space\" means, and was hoping one of the CSK gurus could figure out what is going on or at least what script is causing the error. <br /><br />Thanks,<br />Ed<br />",
+    "PostedDate": "2007-08-02T05:54:17.157-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43513",
+    "ThreadId": "13298",
+    "Html": "\r\nWebResource.axd is part of the ASP.NET AJAX controls. Looks like that is causing your problem. Just tell them it is the ASP.NET AJAX stuff causing the problem. Then see what they say.<br />",
+    "PostedDate": "2007-08-02T11:53:28.56-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43616",
+    "ThreadId": "13298",
+    "Html": "<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />WebResource.axd is part of the ASP.NET AJAX controls. Looks like that is causing your problem. Just tell them it is the ASP.NET AJAX stuff causing the problem. Then see what they say.<br /><br /></div><br />Are you sure about that? I've been trying to research the problem and it looks like WebResource.axd is part of .Net 2, although I don't doubt that Ajax is making the call. If I could figure out exactly how the call to WebResource.axd is being made or what it is trying to load, I would at least know where to start looking. I didn't think Ajax was even being used on the CSK version that my site is built on. If so, it was one of the first implementations. <br /><br />Along that same line, do you have anything in the code that identifies which version or changeset we might have? I have downloaded later versions, but I'm pretty sure that the current site is built on V2-RC1. Any way to know for sure?<br /><br />Thanks,<br />Ed<br />",
+    "PostedDate": "2007-08-03T08:23:51.12-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "43657",
+    "ThreadId": "13298",
+    "Html": "\r\nIf your site is running on v2 RC1, I'm quite certain that it is running ASP.NET AJAX. WebResource.axd is a file that is generated at runtime with AJAX. I was working with a project and debugging the JavaScript and I deleted the ASP.NET AJAX dll and the WebResource.axd was gone. So, I think the problem is AJAX.<br />",
+    "PostedDate": "2007-08-03T13:56:33.59-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44668",
+    "ThreadId": "13298",
+    "Html": "\r\nSet debug=false in your web.config. <br /><br />http://aspalliance.com/articleViewer.aspx?aId=1341&amp;pId=-1<br /><br />\"Scripts and images downloaded from the WebResources.axd handler (in ASP.NET 2.0 only) are not cached by the browser when debug=true. We have seen quite a few issues lately where the customers complain that the pages are running too slowly. They look at Fiddler traces/Netmon and figure out that WebResources.axd is the culprit and is getting called multiple times, thus reducing the performance of the webpage.  The explanation to this behavior is pretty simple. While developing, you keep debug=true and there are chances that you will be modifying the scripts, validators, treeview images and other client resources handled by webresources.axd. You would really not appreciate it if the script and images downloaded from webresources.axd get cached in the browser’s memory because you will have to clear the browser cache every time to check your application. Thus, what is a perfectly reasonable thing to do in development scenario could turn out to be a very big bottleneck on production websites. \"<br />",
+    "PostedDate": "2007-08-12T10:44:05.69-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44816",
+    "ThreadId": "13298",
+    "Html": "\r\nThanks Tina, for the suggestion. I was hoping that might be the problem, but I already had degug=false in web.config. <br /><br />I made a couple of changes a week or so ago (removed some pictures from a forum post and removed a Google Analytics script) and asked my host to let me know if they were still seeing errors. I haven't heard back from them and the site is still up, so I don't know if the problem is fixed or not.<br /><br />Ed<br />",
+    "PostedDate": "2007-08-13T12:24:38.27-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

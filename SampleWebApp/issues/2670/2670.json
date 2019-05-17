@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-07-11T09:12:49.86-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Add a settings table for:\n \n1) Roles per pre-defined sections (a more of a modular implementation)\n2) SMTP Settings\n3) Naming settings",
+    "LastUpdatedDate": "2013-05-15T23:46:34.353-07:00",
+    "PlannedForRelease": "Version 3 Beta 1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "High",
+      "Severity": 150,
+      "Id": 3
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-06-27T16:27:10.607-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Settings in Database",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 2670
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 3556.",
+      "PostedDate": "2007-07-11T09:12:49.86-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:16.933-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:34.353-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

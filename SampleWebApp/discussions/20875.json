@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "69450",
+    "ThreadId": "20875",
+    "Html": "\r\nClub Starter kit 2.0<br /><br />I created a new role called Users. I want Users able to create/edit News, Forums, Blogs, and Upload Pictures.<br />I configured web.config as the following:<br /><br />&lt;location path=\"photo/new.aspx\"&gt;<br />   &lt;system.web&gt;<br />       &lt;authorization&gt;<br />\t&lt;allow roles=\"Administrators\"/&gt;<br />                &lt;allow roles=\"Users\"/&gt;<br />                &lt;deny users=\"*\"/&gt;<br />        &lt;/authorization&gt;<br />    &lt;/system.web&gt;<br />&lt;/location&gt;<br /><br />and so on....<br /><br />The site load fine but doesn't give any create/edit permissions.<br />I also tried ASP.NET configuration tool and allow Users access permission to folders such as News, Forums, and Photos but it still doesn't work.<br /><br />Can anyone help me with this? Thanks<br /><br />",
+    "PostedDate": "2008-01-23T00:03:25.59-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

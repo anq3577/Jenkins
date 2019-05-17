@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:41:05.71-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Great stuff, buttons update the Event. But when I RSVP when not logged-in, I see the Ajax button and then the object error occurs.",
+    "LastUpdatedDate": "2013-05-15T23:46:41.49-07:00",
+    "PlannedForRelease": "v2 RC1",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:41:03.537-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "RSVP issue",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 1497
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Could you attach a screenshot... the panel is hidden in the Page_Load event",
+      "PostedDate": "2007-04-25T14:41:04.113-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Hereby,I am not logged in here",
+      "PostedDate": "2007-04-25T14:41:04.55-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Hmmmm... this should not be happening. I will add some code to make sure this doesn't occur.",
+      "PostedDate": "2007-04-25T14:41:04.927-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:41:05.71-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:26.03-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:41.49-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

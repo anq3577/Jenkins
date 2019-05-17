@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "23755",
+    "ThreadId": "7367",
+    "Html": "\r\nIs there a SQL 2000 generation script?  I'm interested in running the site in a SQL 2000 environment.<br />",
+    "PostedDate": "2007-02-17T07:16:23.77-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "23757",
+    "ThreadId": "7367",
+    "Html": "\r\nThis discussion has been copied to Work Item 346. You may wish to continue further discussion there.<br />",
+    "PostedDate": "2007-02-17T08:12:37.403-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "23774",
+    "ThreadId": "7367",
+    "Html": "\r\nK.... its in the APP_Data folder :)<br /><br />Happy Clubing<br />",
+    "PostedDate": "2007-02-17T12:15:39.277-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27260",
+    "ThreadId": "7367",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />This discussion has been copied to Work Item 346. You may wish to continue further discussion there.<br /><br /></div><br />Where is Work Item 346 ?<br />",
+    "PostedDate": "2007-03-19T18:04:45.747-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27293",
+    "ThreadId": "7367",
+    "Html": "\r\nIt is currently closed... we already have generated the SQL 2000 scripts. You can generate them also by using the <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=29b4ffd8-ac3a-4481-b352-9b185619a901&amp;DisplayLang=en\" class=\"externalLink\">SQL Publishing Wizard<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a> in Visual Studio.<br />",
+    "PostedDate": "2007-03-20T03:41:25.747-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

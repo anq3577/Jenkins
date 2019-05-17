@@ -1,0 +1,140 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Fixed in most recent checkin",
+    "ClosedDate": "2007-07-26T00:03:14.457-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I have manually added a statistics page that I update via html.  I would like to look into adding an similar page using an xml file for update.\n \nThe file cold be generated from excel (used for tracking stats) and copied up to the website.  The XML data driver would pull the current stats from the file for disply.\n \nI am currently tracking only player stats but would like to track league and club stats as well.\n \nBeing a beginner in development and not knowing any XML data manipulation, but knowing the futbol (soccer) side I would like to see if anyone is interest in working on this.\n \nSample of stats are at: www.prccsoccer.com/Statistics.aspx",
+    "LastUpdatedDate": "2013-05-15T23:46:40.643-07:00",
+    "PlannedForRelease": "Version 3 Beta 1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:44:02.613-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "League, Club and Player Statistics Page",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 7,
+    "Id": 1604
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I would suggest using the database. We will be, however, addressing this feature in the 3.0 timeframe (which starts when 2.0 ships). We will be using a tool called SubSonic and the data manipulation will all be in the code. I will most likely do a webcast demonstrating how to add a stats page.",
+      "PostedDate": "2007-04-25T14:44:03.24-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Sounds great.  I am very interested.  WHere can I find info about SubSonic?",
+      "PostedDate": "2007-04-25T14:44:03.63-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "http://codeplex.com/actionpack",
+      "PostedDate": "2007-04-25T14:44:03.99-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-28T08:17:25.147-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-17T08:24:20.523-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-19T13:48:19-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-24T08:56:04.973-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "As an addition to this topic, there should be a possibility for members to give their preference for there team(s) in the club. A \"teampage\" could then be edited by a teamleader (webcontent) or teamreporter (game reports , see also posting on discussions). From the teampage the team leader could then also send bulk e-mail messages to every member who has set their preference to that team. This is effective when a game is cancelled due to wheaterconditions. The teamleader can give everybody an anouncement the game is cancelled ",
+      "PostedDate": "2007-05-24T14:35:28.943-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-26T00:48:20-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-17T15:09:02.967-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-20T17:31:05.287-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-27T01:57:13.56-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-27T15:56:59.23-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-17T06:55:30.133-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Zack, Hope I'm in the right place, say your request today to \"PLEASE put your feature requests for the league tracker in the issue tracker. How can I build something without knowing what you want? :) \".  I would want the tracker to be able to track by Rider (BarrelRacing), Series, Age Division, Event, Arena Location, time, points, cumulative points, and with the ability to slice/dice by any of the entered data.  Would want to be able to both have a page to manually key results or to import/upload data (CSV or other) to DB and the ability for users to export to Excel would be great.  \r\n\r\nYa'll are just awesome!  Hardly can wait for V3 to be released!",
+      "PostedDate": "2007-07-25T11:54:47.643-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "MarValUS,\r\n\r\nCould you move that to a different issue... with a little bit more specifics?",
+      "PostedDate": "2007-07-25T13:51:56.42-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-26T00:02:58.41-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-26T00:03:14.457-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:24.987-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:40.643-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

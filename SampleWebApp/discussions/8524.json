@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "27762",
+    "ThreadId": "8524",
+    "Html": "\r\nWell, many of us are developing intranet/internet sites based on ClubStartKit. I think, it would be great, if all we write down the add-ons/plug-ins/changes we made to CSK. So we can bring them together and make CSK more powerful (let's join the lions and create Voltron ;)).<br /><br />I added the followings;<br />1.) A basic invitation system; admin automatically adds new users based on the e-mail addresses and sends e-mails (username's and passwords) to whom he/she wants to contribute and. admin just enteres the e-mail subject, addresses and message body. The body also contains a link to the login page.<br /><br />2.) Document management; It is simply a copy of photo albums. The documents are stored in the database for security.<br /><br />So, what are yours..?<br />",
+    "PostedDate": "2007-03-24T05:40:42.067-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27778",
+    "ThreadId": "8524",
+    "Html": "\r\nHi Plaid,<br /><br />Call me stoopid, but isn't putting together all the add-ons what this CSK 2.0 is all about?<br />Document management.... great idea! why not add it?<br />",
+    "PostedDate": "2007-03-24T16:43:14.437-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27803",
+    "ThreadId": "8524",
+    "Html": "\r\nNo lexvis...not stoopid.  And yes, some more tools to help with document management would be great.  A 'delete' function might be a nice starting point.<br /><br />On a related note: I do have problems finding all the little tweaks in the various source code updates from one release to the next.  Is there a 'file compare' function or a simple redline trick that I'm missing that might make keeping up a little easier?  Would appreciate any helpful hints.<br />",
+    "PostedDate": "2007-03-25T07:03:11.203-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27805",
+    "ThreadId": "8524",
+    "Html": "\r\nI would ask that you not put the docs in the db b/c it takes a much longer time to get the docs out of the db.<br />",
+    "PostedDate": "2007-03-25T08:23:23.33-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "27851",
+    "ThreadId": "8524",
+    "Html": "\r\nOk, maybe with a configuration option, i can give the user a choice, whether hold the docs on db or on file system.<br />",
+    "PostedDate": "2007-03-26T00:34:48.86-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

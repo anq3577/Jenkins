@@ -1,0 +1,50 @@
+[
+  {
+    "Id": "40946",
+    "ThreadId": "12559",
+    "Html": "\r\nHallo, <br />is it possible to filter members using a dropdown list and a button instead \"letters\"?<br />Anyone have this problem?<br />",
+    "PostedDate": "2007-07-13T03:59:12.47-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41049",
+    "ThreadId": "12559",
+    "Html": "\r\nFrancessco,<br /><br />It shouldn't be hard to do. I will try to look up the best way to do it and get back to you.<br />",
+    "PostedDate": "2007-07-13T17:13:39.47-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41235",
+    "ThreadId": "12559",
+    "Html": "\r\nHallo z2bass,<br /><br />I'm trying to create different \"Categories\" of members and then filter in the MemberList with 2 DropdownList and a button, with those steps (similar to \"memnum\" example):<br /><br />- add 2 new Tables (example \"TbCity\" and \"TbRegion\") in the ClubDB.mdf, whitin some values<br />- add 2 new fields in MemberInfo table (for example \"City\" and \"Region\")<br />- add the statements in Dataset.xsd and in MemberDetails.vb<br />- add Dropdownlists in Details.aspx and Register.aspx to insert and update values (also add \"City.text\" and \"Region.text\" in the line \"da.update\")<br /><br />If I try to show categories in the list.aspx page, using this code for the ObjectDataSource:<br /><br />&lt;asp:ObjectDataSource ID=\"ObjectDataSource1\" runat=\"server\" DataObjectTypeName=\"System.Guid\"<br />          DeleteMethod=\"Delete\" OldValuesParameterFormatString=\"original_{0}\"<br />          SelectMethod=\"GetMemberList\" TypeName=\"DataSetTableAdapters.MemberInfoTableAdapter\" FilterExpression=\"City = '{0}' AND Region = '{1}' \"&gt;<br />          &lt;FilterParameters&gt;<br />            &lt;asp:ControlParameter Name=\"City\" ControlID=\"DropDownList1\" PropertyName=\"SelectedValue\" /&gt;<br />            &lt;asp:ControlParameter Name=\"Region\" ControlID=\"DropDownList2\" PropertyName=\"SelectedValue\" /&gt;<br />            &lt;/FilterParameters&gt;<br /><br />The Datalist works good (filtering results) with all the fields, execpt the field '&lt;%# Eval(\"PhotoURL\") %&gt;' cause it can't find in the GetMemberList method, so i can't show the photos in the \"Categories\" member list.<br /><br />Could you help me?<br /><br />Thank you very much<br />",
+    "PostedDate": "2007-07-16T09:06:20.173-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41240",
+    "ThreadId": "12559",
+    "Html": "\r\nDo you mind just sending me what you have... its hard to tell how to do this.<br />",
+    "PostedDate": "2007-07-16T09:45:59.41-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41249",
+    "ThreadId": "12559",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Do you mind just sending me what you have... its hard to tell how to do this.<br /><br /></div>How can I send you my project?<br />",
+    "PostedDate": "2007-07-16T10:31:25.04-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41268",
+    "ThreadId": "12559",
+    "Html": "\r\nEmail: zowens@eagleenvision.net<br />",
+    "PostedDate": "2007-07-16T12:14:54.317-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

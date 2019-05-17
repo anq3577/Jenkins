@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "37389",
+    "ThreadId": "11527",
+    "Html": "\r\nDoes anyone know how to fix this:<br /><br />Cannot insert the value NULL into column 'DateTime', table 'DB_1012911.dbo.HitCounter'; column does not allow nulls. INSERT fails.<br />The statement has been terminated. <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />Exception Details: System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'DateTime', table 'DB_1012911.dbo.HitCounter'; column does not allow nulls. INSERT fails.<br />The statement has been terminated.<br /><br />Source Error: <br /><br /><br />Line 29:             end if<br />Line 30:             <br />Line 31:             throw<br />Line 32:             <br />Line 33:         end try<br /><br /><br />Source File: d:\\hosting\\holytrinity1\\UserControls\\HitCounter.ascx    Line: 31 <br /><br />Stack Trace: <br /><br /><br />[SqlException (0x80131904): Cannot insert the value NULL into column 'DateTime', table 'DB_1012911.dbo.HitCounter'; column does not allow nulls. INSERT fails.<br />The statement has been terminated.]<br />   System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection) +857466<br />   System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection) +735078<br />   System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj) +188<br />   System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj) +1838<br />   System.Data.SqlClient.SqlDataReader.ConsumeMetaData() +31<br />   System.Data.SqlClient.SqlDataReader.get_MetaData() +62<br />   System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString) +297<br />   System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async) +886<br />   System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result) +132<br />   System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method) +32<br />   System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method) +122<br />   System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior) +12<br />   System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior) +7<br />   System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior) +141<br />   System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior) +137<br />   System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable) +83<br />   ASP.HitCounter.Page_Load(Object sender, EventArgs e) in d:\\hosting\\holytrinity1\\UserControls\\HitCounter.ascx:31<br />   System.Web.UI.Control.OnLoad(EventArgs e) +99<br />   System.Web.UI.Control.LoadRecursive() +47<br />   System.Web.UI.Control.LoadRecursive() +131<br />   System.Web.UI.Control.LoadRecursive() +131<br />   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +1061<br /><br /><br />Thanks in advance.<br />dpr00<br />",
+    "PostedDate": "2007-06-18T20:38:53.377-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37459",
+    "ThreadId": "11527",
+    "Html": "\r\nTry deleting all the tables in the HitCounter table and try again.<br />",
+    "PostedDate": "2007-06-19T06:49:39.003-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37508",
+    "ThreadId": "11527",
+    "Html": "\r\nI deleted the hitcounter (I think this is a very helpful tool, but if it is creating problems for me then I will use other software). <br /><br />Many of the errors I had I worked out by manually adding tables in the database. <br /><br />My only problem now is that there is nothing in the aspnet_Roles table. I tried to copy application id and role id from local to server however got this error: <br />The INSERT statement conflicted with the FOREIGN KEY constraint \"FK<i>_aspnet</i>Ro<i>_Appli_</i>32E0915F\". The conflict occurred in database \"DB<i>1012911\", table \"dbo.aspnet</i>Applications\", column 'ApplicationId'. The statement has been terminated.<br /><br />Do you have the ID's that will work or do know how to create the proper ones? Need to become an administrator on site. <br /><br />Any help appreciated. <br />dpr00<br />",
+    "PostedDate": "2007-06-19T11:35:51.217-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37526",
+    "ThreadId": "11527",
+    "Html": "\r\nGo in and use the ASP.NET Administration tool. It is sometimes a very bad thing if you mess with the ASP.NET membership stuff more than you have to.<br />",
+    "PostedDate": "2007-06-19T13:30:32.463-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

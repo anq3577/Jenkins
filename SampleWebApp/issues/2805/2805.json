@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Fixed in recent build",
+    "ClosedDate": "2007-07-14T18:30:55.367-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "When my member sign up with no picture, the nophoto.gif dosen't show up. All you see when you go to the member page is a x were the nophoto.gif is suppose to be.",
+    "LastUpdatedDate": "2013-05-15T23:46:32.097-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-07-14T15:50:58.38-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Membership",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2805
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "That has been fixed in the most recent builds.",
+      "PostedDate": "2007-07-14T18:30:40.727-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-07-14T18:30:55.367-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "what the fix number becuase it not fixed on mine and i just download the club kit thursday",
+      "PostedDate": "2007-07-14T18:57:39.727-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Where specifically is the problem? It might be that the image is not properly pinged to \"~/usercontrols/avatarimagefetch.ashx?memberid=.....\"",
+      "PostedDate": "2007-07-14T21:22:04.58-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:14.437-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:32.097-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

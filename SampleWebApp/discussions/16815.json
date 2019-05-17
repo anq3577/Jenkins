@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "54495",
+    "ThreadId": "16815",
+    "Html": "\r\nI have been trying to use the bulk upload feature but I cannot find out where to put the pictures for uploading. Even on the Bulk Upload screen the prompt is only allowing the selection of one file. Am I missing something here? <br />",
+    "PostedDate": "2007-10-23T04:30:02.333-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "55393",
+    "ThreadId": "16815",
+    "Html": "\r\nPlease, can anyone advise me on how this feature is supposed to work.  I can upload pictures individually into the 'holding area' (wherever that is ) and, presumably, the Upload button will take these files and load them into the system.<br /><br />Having to upload the pictures individually into the holding area does not fit with the term 'bulk upload'.  Is there a way that the client user can point to his/her photo album and bulk load the contents?<br /><br />I've set the web site to utiles the file system for photos.  Will the bulk upload respect that setting or will it load into the Db?<br />",
+    "PostedDate": "2007-10-29T05:51:11.11-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "55785",
+    "ThreadId": "16815",
+    "Html": "\r\nAre you storing the photos in the DB or on the file system?<br />",
+    "PostedDate": "2007-10-30T18:03:51.22-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "55825",
+    "ThreadId": "16815",
+    "Html": "\r\nI am storing the photos on the file system<br />",
+    "PostedDate": "2007-10-31T03:00:45.74-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "56412",
+    "ThreadId": "16815",
+    "Html": "\r\nIt should be WEBSITEROOT/TempUpload<br />",
+    "PostedDate": "2007-11-02T14:14:33.993-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

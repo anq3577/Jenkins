@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "37167",
+    "ThreadId": "11477",
+    "Html": "\r\nHello.<br /><br />I'm using VS2005 Pro, SP1 to modify the CSK 2.0.  When i open an aspx page like Default.aspx, in design view, the pages <u>do not</u> display in near-WYSIWYG.  They all display as just plain text.<br /><br />I also have the other Club Web Site starter kit from ASP.NET and it's aspx pages <u>do</u> display as near-WYSIWYG ok.<br /><br />Does anybody know why this is happening with the CSK 2.0?<br /><br />Any help would be gratefully appreciated.<br /><br />Thanks,<br />Tony<br />",
+    "PostedDate": "2007-06-16T07:15:09.657-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37175",
+    "ThreadId": "11477",
+    "Html": "\r\nIt's because we use themes in the ClubStarterKit. v1 didn't use themes. Because of that, you don't see the styles in design-time. It's not our fault... Visual Studio doesn't support themes in design-time. I think they should!<br /><br />What you can do is link the stylesheet from your theme folder to the stylesheet in the masterpage then take it out once you launch.<br />",
+    "PostedDate": "2007-06-16T09:56:13.877-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

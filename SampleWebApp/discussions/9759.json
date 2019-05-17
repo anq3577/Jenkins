@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "31708",
+    "ThreadId": "9759",
+    "Html": "\r\nHi,<br /><br />I am getting a red \"x\" where the thumbnail picture should be.<br /><br />Steps to error:<br /><br />1. Logon to clubsite<br />2. click on the \"news\" link<br />3. click on \"New Article\"<br />4. Under the \"photo\" section, click \"Existing Image\"<br />5. Thumbnail shows up with the correct picture ID=3<br />If I right click and capture the properties the URL = http://localhost:4169/coffee_club/UserControls/imagefetch.ashx?size=1&amp;imageid=3<br />6. Click on \"Use Selection\"<br />7. When the Edit.aspx page renders, the photo is missing and it shows the following URL:<br />http://localhost:4169/coffee_club/UserControls/imagefetch.ashx?ImageID=26&amp;Size=1<br /><br />It changed the ImageID to 26!!!<br /><br />What the heck?<br /><br />Can someone help me fix this?<br /><br />Thanks!<br /><br />http://localhost:4169/coffee_club/UserControls/imagefetch.ashx?ImageID=26&amp;Size=1<br />",
+    "PostedDate": "2007-04-30T09:29:30.753-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31728",
+    "ThreadId": "9759",
+    "Html": "\r\nI think I am getting closer to the issue, but still need some expert help here guys:<br /><br />Whatever procedure loads the Announcements table with the \"Photo\" id number is loading the wrong number into the table.  For my test the Announcement table looks like this:<br /><br />id                  item date                                             title                description                  staticURL   photo          albumid<br />22\t2007-04-30 02:22:00 PM\ttest\t&lt;p&gt;test&lt;/p&gt;\tNULL\t26\tNULL<br /><br />The \"Photo\" number should have been \"3\", the AlbumId for Photo 3 is 26.  Somehow we have the albumid loading into the photo field in the Announcements table.<br /><br />Any ideas on how to fix?<br />",
+    "PostedDate": "2007-04-30T11:46:59.09-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31821",
+    "ThreadId": "9759",
+    "Html": "\r\nOk, Here was the problem:<br /><br />In the Photos_Formpicker.ascx <br /><br />    Protected Sub existingChosen_Click(ByVal sender As Object, ByVal e As System.EventArgs)<br />             'ImageId = CInt(\"0\" &amp; AlbumList2.SelectedValue) <br />                - The commented line above was putting the AlbumID in the Announcement.Photo field<br />        ImageId = CInt(selectedimage.Value)<br />                - After I changed the line of code back to the original Club Kit Code, it worked properly.<br />        viewswitch.SetActiveView(main)<br />    End Sub<br /><br />Can someone explain why they changed this?  Just curious, because it doesn't work. :-)<br />",
+    "PostedDate": "2007-05-01T12:42:39.747-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32240",
+    "ThreadId": "9759",
+    "Html": "\r\nThat was in this post on the ASP.NET forums.<br /><br />http://forums.asp.net/thread/1220394.aspx<br /><br />Put in an issue of what line to change and I will go ahead and change it in the source code.<br />",
+    "PostedDate": "2007-05-05T06:01:57.11-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "28731",
+    "ThreadId": "8795",
+    "Html": "\r\nI am trying to incorporate RC1 into my website which has some forms that are written in C#. Could someone help me get started in converting them to VB. This is the code on one of my form pages. Thank you very much.<br /><br />&lt;script runat=\"server\"&gt;<br /><br /><br />    protected void Button1_Click(object sender, EventArgs e)<br />    {<br />        Date.Text = DateTime.Now.ToString(\"MM/dd/yyyy\");<br />        Date.UpdateAfterCallBack = true;<br /><br />    }<br /><br /><br /><br />    protected void Button2_Click(object sender, EventArgs e)<br />    {<br />        AutoEmail1.Initiate();<br />    }<br />&lt;/script&gt;<br />",
+    "PostedDate": "2007-04-03T08:42:12.55-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "29177",
+    "ThreadId": "8795",
+    "Html": "\r\nTry this. Code translated by http://www.carlosag.net/Tools/CodeTranslator/Default.aspx<br /><br />    Protected Sub Button1_Click(ByVal sender As Object, ByVal e As EventArgs)<br />        Date.Text = DateTime.Now.ToString(\"MM/dd/yyyy\")<br />        Date.UpdateAfterCallBack = true<br />    End Sub<br /><br />    Protected Sub Button2_Click(ByVal sender As Object, ByVal e As EventArgs)<br />        AutoEmail1.Initiate<br />    End Sub<br />",
+    "PostedDate": "2007-04-06T13:18:20.963-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "29362",
+    "ThreadId": "8998",
+    "Html": "\r\nWhen clicking the Printer Friendly link at the bottom of the Events.aspx page and News/View.aspx, the resulting page retains css formatting from the master stylesheet. This worked better in V2-Beta 2 (no background image) so I tried using that Print.master and print.css file, but I got the same results so I'm not sure where that formatting is coming from. I'll continue to work on a fix, but thought I'd pass it along to those much smarter than I.<br />",
+    "PostedDate": "2007-04-09T10:04:19.553-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "29393",
+    "ThreadId": "8998",
+    "Html": "\r\nWe just need to change the Print.master file to inherit the Print.css file or maybe just put the style right into the masterpage.<br />",
+    "PostedDate": "2007-04-09T13:44:06.707-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "81214",
+    "ThreadId": "8998",
+    "Html": "\r\nChange line 1 of /news/print.aspx<br /><br />TO<br /><br />&lt;%@ Page Language=\"VB\" Theme=\"\" EnableTheming=\"false\" MasterPageFile=\"~/Print.master\" Title=\"Untitled Page\" %&gt;<br /><br />...or get later Set.  :)<br />",
+    "PostedDate": "2008-03-17T19:51:51.87-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,95 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:16:53.067-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Here are the changes to the site to add RSVP to events.",
+    "LastUpdatedDate": "2013-05-15T23:46:47.88-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:16:48.91-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "RSVP additions to events",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 680
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Don't worry about the events\\print.aspx \r\n\r\nit is basically Events\\view.aspx just formated differently and many things taken out.\r\n\r\nI will add this to the code Feb 20.\r\n\r\nThanks for your work!It is greatly appriciated!",
+      "PostedDate": "2007-04-25T14:16:49.49-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I changed the View.aspx page that I posted, to add the isNumeric check that solves the issue when clicking Cancel.",
+      "PostedDate": "2007-04-25T14:16:49.91-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Well, I thought I had it working.\r\n\r\nGive me a couple more days.",
+      "PostedDate": "2007-04-25T14:16:50.287-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Send me an email (zowens@eagleenvision.net) when you have it finished.",
+      "PostedDate": "2007-04-25T14:16:50.77-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Okay, I think I finally got it.  Take a look and see what you think.",
+      "PostedDate": "2007-04-25T14:16:51.147-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I got an error when I added and event then went to view it. ",
+      "PostedDate": "2007-04-25T14:16:51.55-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I uploaded the wrong version of CreateGetUserAttendance.sql.  I have uploaded the correct version now.",
+      "PostedDate": "2007-04-25T14:16:51.927-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Here is the database.",
+      "PostedDate": "2007-04-25T14:16:52.287-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:16:53.067-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:34.16-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:47.88-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

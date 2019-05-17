@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "30981",
+    "ThreadId": "9517",
+    "Html": "\r\nKind of like a guestbook, but edited by the admin only.<br /><br />How would you add a new template page that can be edited by the admin with current members? basically a template page with the Pencil edit option like the default page.<br /><br />and add a proper link to the Master Page?<br />",
+    "PostedDate": "2007-04-24T00:47:36.683-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "30982",
+    "ThreadId": "9517",
+    "Html": "\r\nExample:<br /><br />Kind of like your guys People page.<br />",
+    "PostedDate": "2007-04-24T00:50:37.573-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31567",
+    "ThreadId": "9517",
+    "Html": "\r\nTake a look at the latest checkin. Then go to \"~/content/YOURPAGE.aspx\". This will create a new page for you.<br />",
+    "PostedDate": "2007-04-28T08:35:31.5-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31584",
+    "ThreadId": "9517",
+    "Html": "\r\nwhats the latest checkin?<br />",
+    "PostedDate": "2007-04-28T13:55:07.663-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

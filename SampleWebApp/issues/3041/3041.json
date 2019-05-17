@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Fixed in a recent build (3923)\n\nReplace this in the Post.aspx file\n\nProtected Sub HyperLink2_Click(ByVal sender As Object, ByVal e As System.EventArgs)\n       Dim ts As New Transactions.TransactionScope()\n\n       'IF THIS ERRORS OUT, DELETE THE ts DEFINITIONS AND THE USING STATEMENTS\n       Using ts\n           BlogPosts.Delete(BlogPosts.Columns.Postid, Request(\"id\"))\n           BlogComments.Delete(BlogComments.Columns.Postid, Request(\"id\"))\n       End Using\n\n       Response.Redirect(\"~/blogs/default.aspx\")\n   End Sub",
+    "ClosedDate": "2007-08-09T10:34:08.643-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "In blogs/post.aspx, when \"delete blog\" is clicked, get the following error:\n \nMust declare the scalar variable \"@postid0\".",
+    "LastUpdatedDate": "2013-05-15T23:46:29.813-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-08-09T08:06:54.303-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Can't delete blogs",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 3041
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

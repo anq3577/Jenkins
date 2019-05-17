@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "38501",
+    "ThreadId": "11864",
+    "Html": "\r\nHello.<br /><br />I'm not sure that i have the right club starter kit.<br /><br />Is there something i can look for to tell if i downloaded the right files?<br /><br />I see there are other sites that have it up and running, but i'm having all kinds of issues.  I can't change contact details for users other than Administrators.  I can't send emails.  When i look at my details for editors or bloggers, it displays the administrators details.<br /><br />I posed the email sending problem to discountAsp.net tech support, and they said that there must be a programming issue because they can send emails from my web site using a test.aspx file.<br /><br />I must be an idiot.  I can't get any of this stuff to work using CSK 2.0.<br /><br />I didn't change any of the code, just verbage on the web pages and the menu to add new items.<br /><br />I see numerous other web sites that are running based on this CSK.  Either i'm too stupid to use this system or the web sites i see are not really working.<br /><br />Zack has been a tremendous help, but i realize that he can't do everything.  He has tried to help as much as he can.  There is some other issue here that is causing problems and i don't know what to look for.  The only thing i can think of is i downloaded a wrong version or something.<br /><br />I took VB programming and ASP.NET classes at the local college and thought that i had enough knowledge to get something like the CSK to work.<br /><br />I don't get it.<br /><br />Tony<br />",
+    "PostedDate": "2007-06-26T15:23:26.863-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38526",
+    "ThreadId": "11864",
+    "Html": "\r\nDo you think it could be a database issue? Are you able to browse news and events?<br /><br />I recommend just downloading v2 Final, unpacking it, posting it on your site, and see if it works from there.<br /><br />I'm here to help, Tony. (I'm out of school for the summer!)<br />",
+    "PostedDate": "2007-06-26T17:22:32.887-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "38611",
+    "ThreadId": "11864",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Do you think it could be a database issue? Are you able to browse news and events?<br /><br />I recommend just downloading v2 Final, unpacking it, posting it on your site, and see if it works from there.<br /><br />I'm here to help, Tony. (I'm out of school for the summer!)<br /><br /></div><br />Hello Zack.<br /><br />I'm sorry for the rant.<br /><br />I don't think the problems i am having are database.  However, i wil try your idea of uploading an unmodified version of CSK and see if it works any differently.<br /><br />I did figure out why i could not email.  I filled in these fields and that finally allowed me to send an email from my website.<br />    &lt;add key=\"ClubMailServer\" value=\"mail.club.com\" /&gt;<br />    &lt;add key=\"ClubMailUsername\" value=\"admin@club.com\" /&gt;<br />    &lt;add key=\"ClubMailPassword\" value=\"password\" /&gt;<br /><br />I'm sorry, but i didn't think those settings were causing my problem.<br /><br />Another item that i discovered is that non-administrators cannot add events.  Is that the way it is supposed to be?  I tried it with the unmodified CSK and it does the same thing, non-administrators cannot add events.<br /><br />Do you have any ideas on that?<br /><br />Thanks for all of your help and for being so patient.<br /><br />Tony<br />",
+    "PostedDate": "2007-06-27T05:04:42.407-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

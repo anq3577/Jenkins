@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "24714",
+    "ThreadId": "7595",
+    "Html": "\r\nI was just looking over the source code downloads.  We sure have gotten a lot done in a short time.  I have enough functionality that I am putting my site live tonight.  I had to cut out the things I didn't need for this (Blogs, forums), but I am really impressed with how this has turned out.<br /><br />My goal was to create a site for my son's Cub Scout Pack.  I am an assistant cub master there.  One of the big problems that we have is communication from the leadership to the parents.  Especially when parents drop out of the pack when their son bridges over to boy scouts.<br /><br />Now I can tell them that if they want to receive emails, they have to register at our website.  And if they want taken off the list, all they have to do is delete their membership at the website.<br /><br />In case you guys want to take a look, the site is at <a href=\"http://www.pack934.com\" class=\"externalLink\">http://www.pack934.com<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a><br /><br />",
+    "PostedDate": "2007-02-25T18:34:30.503-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24726",
+    "ThreadId": "7595",
+    "Html": "\r\nHi Michael,<br />Nice work.<br />This does not mean your going to lean back now ehhh? ;-))<br />",
+    "PostedDate": "2007-02-26T00:31:44.947-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24864",
+    "ThreadId": "7595",
+    "Html": "\r\nNo, it means I get input from the leaders of the pack :)  And I already had one request, to have attachments added to an event, that are downloadable from all members.<br /><br />Since some of our events require forms to be filled out, on our old site we just had the document there for download.  But if I can make it specific to the event, so much the better!<br /><br />I am going to add this to the Issue Tracker and begin work on it.<br />",
+    "PostedDate": "2007-02-26T18:20:32.217-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24900",
+    "ThreadId": "7595",
+    "Html": "\r\nMichael, your site is looking good.  I see that I am not alone - you haven't been able to get the <b>Forums</b> or <b>Blogs</b> up either and I see that you are <b>crash</b>ing too when you click on the <b>photo album</b>.  I just redid everthing again (used the latest SQL upload &amp; source 2231).  I guess I'm going to have to back track a couple days because at one point my photo albums and <b>membership</b> were actually working.  If you figure out what is wrong please let me know so I can fix mine.  <br /><br />I do see that your <b>events</b> is working and I have yet to be able to get mine live on any version.  <b>What did you do to get the Events Calendar working</b>?   (Of course everything works find until I go the the web, that's when I crash &amp; burn).  All the sql statements did upload but <b>there was one stmt relating to the images table that was so large the system took forever to copy it to clipboard</b>.<br /><br /><b>If I could at least get the photos and membership working again I'd feel like I'm getting somewhere</b>.  I did remove \"Event_\" from the NavigationalURL on Line 84 of Events/edit.aspx.  I replaced Mannage with Manage throughout and changed the Pollcontrol.vb Line 178 to reation from reactie. <br /><br />Again, any help/guidance ya'll can give me to get this up and running will be greatly appreciated. If you want to see site I have everything EXCEPT the default.aspx page up.  <a href=\"http://www.disciplesondirt.com/DOD/news/list.aspx\" class=\"externalLink\">http://www.disciplesondirt.com/DOD/news/list.aspx<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a><br />",
+    "PostedDate": "2007-02-27T03:19:17.6-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24967",
+    "ThreadId": "7595",
+    "Html": "\r\nI didn't try and get forums or blogs working, I removed them because they are not needed for this site.<br /><br />As to the photo album, I didn't realize it was crashing.  I will look at that.<br /><br />Events is pretty much what is in the source releases here.  I haven't made any changes to events that I can recall.  I have some additions to make, but when I do I will also post them here so Zack can fold them into the source tree.<br /><br />For the sql statements, I used the 2005 sql script.  I omitted the images table entry.  That may be what is crashing the photo album.  I will have to check that later.  There were 2 other changes that I had to make, as I was getting errors on 2 lines (something about latin_language.)  If I have time, I will post those changes, but they may be specific to webhost4life.<br /><br />Getting membership to work along with events and everything else just required changing the datasource in web.config for the sql server.  I tried using the sql express database (webhost4life said they support it), but wasn't able to get it to work.  So I uploaded the scripts to the sql server.  I know that for the script, I started on the script where the tables and such were created, since it was a new database and didn't have the tables there to drop.<br />",
+    "PostedDate": "2007-02-27T10:44:53.67-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24968",
+    "ThreadId": "7595",
+    "Html": "\r\nOkay, the problem with the photo album on my site is Ajax related.  I have to cut all the Ajax stuff out of my site, because I can't get it to work on webhost4life.  I didn't realize that the photo albums were \"Ajax enabled\" :)<br /><br />Thanks for pointing that out!<br />",
+    "PostedDate": "2007-02-27T10:46:59.99-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25028",
+    "ThreadId": "7595",
+    "Html": "\r\nOkay, I am scratching my head now.  The only thing that had Ajax in it was one page had the web.extensions listed in the @register at the top of the page.  That is it!<br />",
+    "PostedDate": "2007-02-27T20:18:24.007-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "25039",
+    "ThreadId": "7595",
+    "Html": "\r\nYIPPEE!!!!  I had to go all the back to change set 2069 to get everything to work.  I AM LIVE FINALLY - <a href=\"http://www.disciplesondirt.com\" class=\"externalLink\">http://www.disciplesondirt.com<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a> and everthing seems to be working, calendar, photos, news, membership, and the session hit counter I put in is even working.  (I've got to do some tweaking here and there, but the bulk of it is GREAT!!!)<br /><br />THANK YOU SO MUCH!  To both you and Zack for help.<br /><br />To anyone else who is struggling with getting this up - Zack clued me in about the DB publishing wizard - so much easier than Mgmt Studio.  I scrubbed everything and started from scratch again this morning (Lord am I exhausted, seems like I haven't slept in forever!), pull all the old files off the host, setup a new db, used source change set 2069 to create the SQL in two sets- 1st SQL for just the schema (I moved all the GOTO statements up to the previous row) and the 2nd SQL file for the data (and I didn't upload the images that were in the image table).  <br /><br />Now maybe I can get to work on my own website <a href=\"http://www.mar-val-us.com\" class=\"externalLink\">http://www.mar-val-us.com<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a> it needs a major overhaul and I will be able to use a lot of this for my redo.<br />",
+    "PostedDate": "2007-02-27T23:19:48.773-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

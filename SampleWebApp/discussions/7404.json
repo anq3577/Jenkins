@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "23920",
+    "ThreadId": "7404",
+    "Html": "\r\nWould you people be interested in a guestbook added to the starter kit ?<br />",
+    "PostedDate": "2007-02-19T08:31:27.337-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "23965",
+    "ThreadId": "7404",
+    "Html": "\r\nSounds good! I like the idea!<br />",
+    "PostedDate": "2007-02-19T13:37:22.85-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24102",
+    "ThreadId": "7404",
+    "Html": "\r\ni will work on this when i have time, maybe someone else wants to give a hand to it ;)<br />",
+    "PostedDate": "2007-02-20T06:21:47.817-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "24711",
+    "ThreadId": "7404",
+    "Html": "\r\nIf you want to start on it in the code, I can help with this.<br />",
+    "PostedDate": "2007-02-25T17:43:33.457-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

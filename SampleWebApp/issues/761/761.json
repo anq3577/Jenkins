@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:19:13.74-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Bug: If you click the Upload Image button without first browsing for a file, you get an error.\n \nSolution: Add the following line to the beginning of upload_image_Click on line 60\n \nIf String.IsNullOrEmpty(newavatar.FileName) OrElse newavatar.PostedFile Is Nothing Then Return",
+    "LastUpdatedDate": "2013-05-15T23:46:47.14-07:00",
+    "PlannedForRelease": "v2 Beta 2",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:19:12.74-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Bugfix in Member/Details.aspx",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 761
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

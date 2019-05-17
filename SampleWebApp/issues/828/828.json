@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:21:22.693-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi, another Issue brought this up.\n \nI am not really sure, but i vagely remember thers was one in another ASP kitsite, something to do with beer.\n \nIt would be nice to be able to compose HTML and NonHTML, archivefunction, sendoption (all subscribers to newsletter, and so on)",
+    "LastUpdatedDate": "2013-05-15T23:46:44.493-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:21:21.287-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Newsletter module",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 828
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "We already have some of this... 1) Login (admin/admin)2) Member3) Send Email",
+      "PostedDate": "2007-04-25T14:21:21.88-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:21:22.693-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:29.983-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:44.493-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

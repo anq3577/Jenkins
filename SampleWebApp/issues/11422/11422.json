@@ -1,0 +1,50 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "After creating a new user, the page does not reload properly - entire page loads into the 'regBlock', rather than just the new user registration form.",
+    "LastUpdatedDate": "2013-02-13T19:37:04.48-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2010-01-05T18:07:33.43-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "After registration, the Register DIV displays the whole page",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 11422
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I saw this same behavior with Internet Explorer.  However, it worked fine with Firefox.",
+      "PostedDate": "2010-05-25T09:10:52.98-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:04.48-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

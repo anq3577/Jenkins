@@ -1,0 +1,105 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "The issue was caused because the account I was using to log in to the web site with had me personal email address set in the account Settings and not the clubsite postmaster address.  The site send mail function was some how passing my account email address as the To: address.  Changing the account settings resolved the issue.",
+    "ClosedDate": "2007-06-24T07:40:30.623-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I get the following when sending from the send email from the Membership page:\n \nSource Error: \n \n \nLine 81:         smtp.UseDefaultCredentials = False\nLine 82:         smtp.Credentials = a\nLine 83:         smtp.Send(msgMail)\nLine 84:         Response.Redirect(\"~/default.aspx\")\nLine 85:     End Sub\n \n \nSource File: d:\\hosting\\member\\XXXXXX\\XXXXXX\\Admin\\Email.aspx.vb    Line: 83 \n \nStack Trace: \n \n \n[SmtpFailedRecipientException: Mailbox unavailable. The server response was: <rhhanson63@hotmail.com> No such user here]\n \n[SmtpFailedRecipientsException: Unable to send to all recipients.]\n   System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, SmtpFailedRecipientException& exception) +800227\n   System.Net.Mail.SmtpClient.Send(MailMessage message) +2004\n   Admin_Email.btnSend_Click(Object sender, EventArgs e) in d:\\hosting\\member\\XXXXXXX\\XXXXXX\\Admin\\Email.aspx.vb:83\n   System.Web.UI.WebControls.Button.OnClick(EventArgs e) +105\n   System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument) +107\n   System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument) +7\n   System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument) +11\n   System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData) +33\n   System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint) +5102\n \n Everything appears to be configured correctly, but obviously it isn't.\n \nAny thoughts?\n \nBob",
+    "LastUpdatedDate": "2013-05-15T23:46:36.123-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-06-13T19:16:19.557-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Email Error Sending from site hosted at webhost4life",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2485
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Have you tried using the postmaster username and password in the web.config section?\r\n\r\nI saw your email, but will not be able to check my web.config until later tonight.  I believe that I just use the postmaster username and password (the password is the same as the password for your webhost4life login).",
+      "PostedDate": "2007-06-14T08:37:59.963-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I have,  No avail.  I found an earlier copy of your web config in another thread and used it as a reference.  Still no luck.  I am still searching.",
+      "PostedDate": "2007-06-14T09:52:29.783-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Okay.  \r\n\r\nOn webhost4life, the from address on the email HAS TO BE THE SAME as the username in the web.config.\r\n\r\nHere is the applicable section from my web.config:\r\n\r\n<system.net>    <mailSettings>      <smtp from=\"postmaster@pack934.com\">        <network host=\"mail.pack934.com\" userName=\"postmaster@pack934.com\" password=\"*\"/>      </smtp>    </mailSettings>  </system.net>",
+      "PostedDate": "2007-06-16T17:49:42.723-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "From the error message, it looks like you are using your hotmail address as the from address:\r\n\r\n[SmtpFailedRecipientException: Mailbox unavailable. The server response was: <rhhanson63@hotmail.com> No such user here]\r\n\r\nThis is not the from address on the Admin\\email.aspx.vb Line 62.  The from address in your web.config has to match the username in the web.config.",
+      "PostedDate": "2007-06-16T18:23:54.06-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "mnebinger,\r\n\r\nI have matched everything and compared to your web.config and everything is exact.  Actually changed my email address on my website and tried again and I get the same error message with the new email address. It almost looks like a forwarding issue.",
+      "PostedDate": "2007-06-19T19:48:16.503-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "no luck.  They match but it looks like it may be using the to address in the from field and webhost4life is denying it.",
+      "PostedDate": "2007-06-19T20:37:34.62-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Did you change the Application Settings in the web.config file? All the email functionality is dependent on that for your SMTP settings. The <system.net> stuff is for the ASP.NET Membership provider to do the \"Forgot Password\" function.",
+      "PostedDate": "2007-06-20T11:25:01.32-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I have.  Here they are, with passwords, etc X'd out:\r\n\r\n<appSettings>    <add key=\"ClubName\" value=\"Warrior Futbol\"/>    <add key=\"ClubSlogan\" value=\"Welcome To The Warrior Nation!\"/>    <add key=\"ClubAddress\" value=\"5198 Old Highway 11, Hattiesburg, MS 39402\"/>    <add key=\"ClubCopyright\" value=\"Copyright 2007 ogfutbol.org. All Rights Reserved.\"/>    <add key=\"ClubURL\" value=\"http://www.ogfutbol.org/\"/>    <add key=\"ClubMailServer\" value=\"mail.ogfutbol.org\"/>    <add key=\"ClubMailUsername\" value=\"XXXXXXXXXX@ogfutbol.org\"/>    <add key=\"ClubMailPassword\" value=\"XXXXXXXXXX\"/>    <add key=\"ReportContentUpdate\" value=\"false\"/>    <add key=\"WebMaster\" value=\"XXXXXXXXXX@ogfutbol.org\"/>    <add key=\"FCKeditor:UserFilesPath\" value=\"~/Files/\"/>    <add key=\"FCKeditor:BasePath\" value=\"~/FCKeditor/editor\"/>       <!--        Please format the URL like this:       http://www.somesite.com/              **The ends slash is important!       -->  </appSettings>\r\n\r\n<system.net>    <mailSettings>      <smtp from=\"XXXXXXXXXX@ogfutbol.org\">        <network host=\"mail.ogfutbol.org\" password=\"XXXXXXXXXX\" userName=\"XXXXXXXXXX@ogfutbol.org\"   />      </smtp>    </mailSettings>  </system.net>",
+      "PostedDate": "2007-06-20T14:23:53.917-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "It appears my issue is sending to any email off of the site.  When I changed my email to my site address (webmaster@ogfutbol.org) it worked fine.  I have tried 2 other personal account, a work account, and an email address for another site I do and it throws back the error above, but with the specific error for the email address I send to.",
+      "PostedDate": "2007-06-22T15:10:23.193-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "It might work in the latest build. Wait and see if it works then.",
+      "PostedDate": "2007-06-23T19:12:22.58-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-24T07:40:30.623-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:19.39-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:36.123-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

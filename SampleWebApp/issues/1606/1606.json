@@ -1,0 +1,80 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-05-20T05:02:10.55-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "For the final release, we will be putting in better documentation. Suggestions...",
+    "LastUpdatedDate": "2013-05-15T23:46:40.46-07:00",
+    "PlannedForRelease": "Club Starter Kit 2.0 Final",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:44:06.147-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Better documentation",
+    "Type": {
+      "Name": "Task",
+      "Id": 2
+    },
+    "VoteCount": 2,
+    "Id": 1606
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Theme documentation",
+      "PostedDate": "2007-04-25T14:44:06.74-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-08T10:12:30.417-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Most starter kits include limited documentation for sql setup/connections.  I would recommend adding content that includes directing user to the host provider for specific sql connection information and include a couple of typical host provider examples.    \r\n\r\nSome users like me may not need/want RSS feeds or may like to disable certain pages.  It would be beneficial to include required pages for the site not to have errors.  I.E.  If I disabled the links to the message board will this have undesired results?\r\n\r\nNot everyone is up to speed with Blogs and message boards, it would be nice to have a one liner explaining the differences and more detailed information on use (i.e.) Lock thread, make sticky.\r\n\r\nFor the non-techies I would recommend good documentation on e-mail, including getting it running and trouble-shooting.  I have heard of people (non-techies) that have not used pop-mail client as they filed to get the Outlook client configured.  With advance e-mail capabilities included, I would be interested to know if I send an e-mail to bloggers and editors and some of our members were assigned both roles would they receive multiple e-mails?  Speaking of e-mails I noticed upload files with no size limit indicated.Even if the starter kit does not have a limit document general limitations for uploading would be good. \r\n\r\nEveryone is going to be adding content to this starter kit, some with use FrontPage/Expression web and others will use webdev, I use VS2005 Team Dev.  It would be extremely help to give these professionals recommendations or procedures for updating the published site after making changes to the local version.  Even developers have trouble deploying certain updates when sql is involved.\r\n\r\nI came across some information regarding the web.config sql connection that had you comment out \"local, remote\" respectively.  Interesting/helpful information \r\n\r\nRegards,Hotaling\r\n\r\n   ",
+      "PostedDate": "2007-05-08T10:53:33.23-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-08T15:53:52.873-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-11T23:18:52.76-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Resolved with changeset 2621.",
+      "PostedDate": "2007-05-20T05:02:10.55-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:24.807-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:40.46-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

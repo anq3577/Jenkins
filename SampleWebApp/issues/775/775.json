@@ -1,0 +1,210 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:19:34.35-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Add AJAX into:\n \n- Events/calendar.aspx\n- Events/list.aspx\n- Events/View.aspx\n- Blog/Default.aspx\n- Blog/Post.aspx\n- Member/List.aspx\n- News/list.aspx\n- Photo/Contents.aspx\n \nUse the attached loading image.",
+    "LastUpdatedDate": "2013-05-15T23:46:46.49-07:00",
+    "PlannedForRelease": "v2 Beta 2",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:19:32.147-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "AJAX",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 775
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "cheked in updated web.config and canedar.aspx",
+      "PostedDate": "2007-04-25T14:19:32.833-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I have a question about this.  If you don't have the Ajax download from www.asp.net, the updated code has all kinds of errors.  What will this do if you upload it to a shared hosting, where you can't control if the Ajax is installed?  Can the Ajax components be put in the Bin folder?  Or does it have to be installed on the web server?",
+      "PostedDate": "2007-04-25T14:19:33.193-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I just droped in the controls to the bin.",
+      "PostedDate": "2007-04-25T14:19:33.55-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:19:34.35-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-07-15T10:09:20.9-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-07-15T10:10:13.447-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-07-16T19:47:18.383-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-07-17T13:14:59.48-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-07-17T22:06:41.42-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-07-18T21:20:01.097-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-07-29T13:07:27.55-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-07-30T09:23:47.873-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-08-01T00:51:28.683-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-08-01T01:18:00.167-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-08-01T04:00:38.753-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-08-02T15:18:17.633-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-08-04T10:08:43.207-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-08-04T10:08:45.503-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-08-06T09:58:49.037-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-08-08T06:20:08.337-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-08-12T00:16:07.693-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-08-13T07:08:13.717-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-08-13T13:42:19.563-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-08-20T14:35:13.36-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-08-22T23:45:22.483-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-08-23T00:14:54.897-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-08-24T13:26:16.21-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-08-26T11:23:54.68-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-10-18T13:13:10.43-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-10-26T01:14:56.877-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-10-29T15:54:34.123-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "\r\n\r\n** Closed by z2bass 4/25/2007 2:19 PM",
+      "PostedDate": "2007-12-21T10:30:28.543-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:32.603-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:46.49-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

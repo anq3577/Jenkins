@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "35457",
+    "ThreadId": "10934",
+    "Html": "\r\nI can't seem to get the  autoscaffold page working.<br />I got the latest build (2627) and got the .Data project adjusted to my DB. According to the instructions I created the new Clubstarterkit.data.dll which is placed automatically in the bin of the web during building website.<br />I didn't change the web.config settings for the subsonic provider.<br /><br />Still I am getting the error of <br />&lt;p&gt;SubSonic was unable to load a provider or connect to a database. This is usually caused by a configuration error in Web.Config.&lt;/p&gt;<br /><br />The website runs perfectly so it cannot be a db problem.<br /><br />Does anybody have any pointers for me?<br />",
+    "PostedDate": "2007-06-02T12:36:31.607-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "35459",
+    "ThreadId": "10934",
+    "Html": "\r\nThe auto-scaffold should work. Did you change the references in the web.config to point to your db? You can just copy the info from the app.config to the web.config. Try that.<br />",
+    "PostedDate": "2007-06-02T13:31:14.68-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

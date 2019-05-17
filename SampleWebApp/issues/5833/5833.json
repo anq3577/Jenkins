@@ -1,0 +1,81 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Unable to reproduce",
+    "ClosedDate": "2009-12-08T18:45:09.64-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Please see http://cwysc.org/\n \nNotice that 'Upcoming Events' & 'Recent Blog Posts' are not aligned with 'Recent news'.  I remove one 'Recent news' then it is OK.\nHow can I fix this?\n \nThanks\n \nDan",
+    "LastUpdatedDate": "2013-05-15T23:46:25.487-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2008-03-26T05:41:45.033-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Formatting issue in v2",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 5833
+  },
+  "FileAttachments": [
+    {
+      "FileId": 1463,
+      "FileName": "club-1.jpg",
+      "DownloadUrl": ".\\1463"
+    }
+  ],
+  "Comments": [
+    {
+      "Message": "I am seeing the same effect. The rendered source show that the news, events and blogs blocks are not staying as independent divs inside the wrapper of <div id=\"columnright\">. The second two are being rendered inside the first div and so is the bottom nav. It looks like you saw this to some extent and applied <div class=\"clearlist\"> and <div class=\"clear2column\"> to break out of the wrapper at the end.\r\n\r\nThe repeater class seems to be in some way causing this as the divs render normally if the repeater is taken out. When you add data and the repeater operates is seems to corrupt the div structure.\r\n\r\nI did not notice this happening in the other sites listed as using the v2.\r\n\r\nThis problems seems to happen in IE7 and Firefox 2\r\n\r\nAttached is an image of the home page with this formatting issue.",
+      "PostedDate": "2008-05-06T14:50:47.97-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-05-06T14:50:48.407-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-06-23T12:29:03.527-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Same here: http://www/troop483.com. Does anyone have a fix? FYI: In FireFox 3 it looks fine.",
+      "PostedDate": "2008-06-23T12:30:37.763-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-12-08T18:45:09.64-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:06.46-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:25.487-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

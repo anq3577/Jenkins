@@ -1,0 +1,95 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi,\n \nI tried to secure a cms page like this:\n<location path=\"content/2008.aspx\">\n    <system.web>\n      <authorization>\n        <allow roles=\"Administrators\"/>\n        <deny users=\"*\"/>\n      </authorization>\n    </system.web>\n  </location>\nBut it does not work ...\nMy thought is that the problem results from url rewriting (internal page is /Contentpages/page.aspx?page=2008.aspx)\n \nAny idea to solve this?",
+    "LastUpdatedDate": "2013-02-13T19:37:10.407-08:00",
+    "PlannedForRelease": "ClubStarterKit v3 Preview 2",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-08-21T07:09:11.043-07:00",
+    "Status": {
+      "Name": "Active",
+      "Id": 2
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Securing CMS pages",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 4,
+    "Id": 3152
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Roles could be integrated into the CMS page. It would do a check to see if the requirements are met (Admin, Editor, ETC) and then redirect if they don't check out.",
+      "PostedDate": "2007-08-21T12:07:05.487-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Ok, I`m going to add this feature. But I need some time to take a look on subsonic and its wrapers, to save the selected roles.Perhaps I can publish it on friday. Lets see :)",
+      "PostedDate": "2007-08-22T14:13:43.36-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I have an idea of how to do this... with very minimum coding. Do you want me to take care of this?",
+      "PostedDate": "2007-08-24T14:18:03.623-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-10-30T18:04:54-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Yes, you can take care of this!  :)",
+      "PostedDate": "2007-11-11T07:38:41.763-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-03-18T17:46:23.043-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-07-01T05:31:34.9-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "This will be in the v3 Preview 2",
+      "PostedDate": "2009-12-08T22:17:34.43-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-12-08T22:18:11.71-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2010-01-05T18:03:16.743-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:10.407-08:00",
+      "Id": -2147483648
+    }
+  ]
+}

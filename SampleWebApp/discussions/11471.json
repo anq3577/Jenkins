@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "37147",
+    "ThreadId": "11471",
+    "Html": "\r\nI added a new col in MemberInfo. When I try to bring up the member info, I get a dbnull error. I've been trying various things, but no fix is working. How can I catch this exception?<br />",
+    "PostedDate": "2007-06-15T22:20:15.413-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37165",
+    "ThreadId": "11471",
+    "Html": "\r\nHow are you getting the DBNull error? Did you add a column and then you get a DBNull? You can't really avoid it. All columns in member info need to be filled out.<br />",
+    "PostedDate": "2007-06-16T06:47:55.393-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37182",
+    "ThreadId": "11471",
+    "Html": "\r\nBut they're not all required fields, right? The user doesn't have to provide a name, for example. When the record updates I see it's putting SOMEthing in there, even if it's just a space, whereas the new column actually reads NULL. <br /><br />I would think some kind of null handling would need to occur somewhere or you could never add a new column post-production without updating all the records. <br /><br />I'll fill something in the field and come back to it later. It's a very frustrating issue to resolve. Like I said, my background is Cold Fusion, Oracle (and further back, c++). I've only been looking at vb for about a week. Obviously I haven't figured out its quirks yet, lol.  <br />",
+    "PostedDate": "2007-06-16T11:09:45.6-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37185",
+    "ThreadId": "11471",
+    "Html": "\r\nActually, they are required because of the DAL class that ships with the kit. The DAL class won't take nulls. I'm not sure where null checking could be applied, but you would put this somewhere to check for the null<br /><br />If IsDBNull(STRING) = True Then<br />  'It's null<br />Else<br />  'It isn't null<br />End If<br />",
+    "PostedDate": "2007-06-16T11:45:49.267-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37737",
+    "ThreadId": "11471",
+    "Html": "\r\nOn the most recent builds, you do not have to have them required. Just remember to put in the null statements and output \"\" if they are null.<br />",
+    "PostedDate": "2007-06-20T22:03:34.343-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

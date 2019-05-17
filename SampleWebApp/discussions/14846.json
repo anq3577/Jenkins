@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "48251",
+    "ThreadId": "14846",
+    "Html": "\r\nCan someone explain the proper way to install the changesets. <br /><br />I finally got around to installing V3 Beta 1 Standard on my local machine and had it running. In cleaning up the databases (deleting Events, News, Forums and Blogs), I immediately ran into the error when deleting a blog post. I downloaded changeset 3923, which fixes this particular problem, and finding no instructions on how to install changesets, proceeded to replace all original files with those in the changeset, leaving those original files that were not included in the changeset in place. I seem to remember reading a previous post that this was the process.<br /><br />The website would not build due to numerous errors, so before getting into all the errors, I probably did not install the changeset properly. Any help on how to install these updates would be appreciated.<br /><br />Thanks,<br />Ed<br />",
+    "PostedDate": "2007-09-07T08:41:06.013-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "48299",
+    "ThreadId": "14846",
+    "Html": "\r\nReplace this in the Blog/Post.aspx.vb file<br /><pre style=\"background-color:#ECECEC; border:dashed .1em #3E62A6; font-family:Consolas, Courier New, Courier, Monospace; font-size:1em; margin-top:0; padding:.5em; height:auto; overflow:auto; overflow-x:auto; overflow-y:auto;\">\r\n Protected Sub HyperLink2_Click(ByVal sender As Object, ByVal e As System.EventArgs)\r\n       Dim ts As New Transactions.TransactionScope()\r\n \r\n       'IF THIS ERRORS OUT, DELETE THE ts DEFINITIONS AND THE USING STATEMENTS\r\n       Using ts\r\n           BlogPosts.Delete(BlogPosts.Columns.Postid, Request(\"id\"))\r\n           BlogComments.Delete(BlogComments.Columns.Postid, Request(\"id\"))\r\n       End Using\r\n \r\n       Response.Redirect(\"~/blogs/default.aspx\")\r\n   End Sub\r\n</pre>",
+    "PostedDate": "2007-09-07T13:38:54.023-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "48316",
+    "ThreadId": "14846",
+    "Html": "\r\nThanks Zac, for the information. I will apply the patch and try again.<br /><br />For future reference and maybe to help others too, I'd still like to know just what should be done, with the changesets. Are they there just for informational purposes or solely for use by the development group. As users of the CSK, should we just ignore them and wait for the next official release? I suppose that would be the easiest thing to do, but when we run into a problem, and see that it has been addressed and fixed, it's hard to ignore that and wait.<br /><br />Thanks again for the prompt response and all the work you put into this project. <br />Ed<br />",
+    "PostedDate": "2007-09-07T17:37:57.727-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "49452",
+    "ThreadId": "14846",
+    "Html": "\r\nThank you for this comment. I, too, wonder how to use the change sets. <br /><br />I certainly appreciate all of the work that the team here does on releases and on adding functions to the Club Starter Kit. However, as someone who is trying to use this for an actual site, I am often trying to fix bugs from the starter kit and, like Ed, spend time wondering if I should just ignore change sets, try to fix the bugs myself (difficult) or wait for a new release. <br /><br />With all the work the development team does on this starter kit, it would be wonderfully helpful to us users to know how to make use of all your thinking and fixing in the change sets.<br /><br />Deborah<br />",
+    "PostedDate": "2007-09-15T18:14:52.19-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "Id": "32353",
+    "ThreadId": "9960",
+    "Html": "\r\nI dont know much about the asp:password recovery. I have RC1 and I can send out emails through the admin's send email. My problem is when I try to recover my password via email. It errors out telling me I didn't specify a from address. Where can I specify this? I have looked everywhere on the member/login.aspx file to no avail.<br />",
+    "PostedDate": "2007-05-07T12:24:14.72-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32534",
+    "ThreadId": "9960",
+    "Html": "\r\nWe will have better documentation on this, but you need to set it in the web.config. You can use the ASP.NET Configuration tool to set the email info.<br /><br />1) open the tool<br />2) go to the application tab<br />3) click \"configure SMTP mail settings\"<br />4) enter your info<br />",
+    "PostedDate": "2007-05-08T15:59:16.34-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32910",
+    "ThreadId": "9960",
+    "Html": "\r\nI did that and can send emails from the admin's send mail but I cant do it from the login.aspx<br />",
+    "PostedDate": "2007-05-11T10:53:37.88-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "32936",
+    "ThreadId": "9960",
+    "Html": "\r\nVery interesting... I will read some MembershipProvider docs. Maybe we just need to implament our own provider (I sure hope that isn't the case!!!!!!!!!)<br />",
+    "PostedDate": "2007-05-11T14:47:30.433-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33064",
+    "ThreadId": "9960",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Very interesting... I will read some MembershipProvider docs. Maybe we just need to implament our own provider (I sure hope that isn't the case!!!!!!!!!)<br /><br /></div><br />I am having the exact problem as the above. Admin email works great but password retrieval results in this:<br /><br />Mailbox unavailable. The server response was: Authentication is required for relay <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />Exception Details: System.Net.Mail.SmtpFailedRecipientException: Mailbox unavailable. The server response was: Authentication is required for relay<br /><br />",
+    "PostedDate": "2007-05-13T11:30:30.36-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33130",
+    "ThreadId": "9960",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />jerrysdean43 wrote:<br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />Very interesting... I will read some MembershipProvider docs. Maybe we just need to implament our own provider (I sure hope that isn't the case!!!!!!!!!)<br /><br /></div><br />I am having the exact problem as the above. Admin email works great but password retrieval results in this:<br /><br />Mailbox unavailable. The server response was: Authentication is required for relay <br />Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. <br /><br />Exception Details: System.Net.Mail.SmtpFailedRecipientException: Mailbox unavailable. The server response was: Authentication is required for relay<br /><br /><br /><br /></div><br />I was able to get it working.<br />",
+    "PostedDate": "2007-05-14T06:03:03.95-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33510",
+    "ThreadId": "9960",
+    "Html": "\r\nYou got it working - great, <br /><br />What was the cause of the Exception (Your smtp server required authentication - username and password)?<br />Did the program (website) crash?<br />Should we have an exception handler here?<br /><br />",
+    "PostedDate": "2007-05-16T07:14:33.48-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "33521",
+    "ThreadId": "9960",
+    "Html": "<div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />hotaling wrote:<br />You got it working - great, <br /><br />What was the cause of the Exception (Your smtp server required authentication - username and password)?<br />Did the program (website) crash?<br />Should we have an exception handler here?<br /><br /><br /><br /></div><br />Yes that was the problem ,(Your smtp server required authentication - username and password), it seems that somehow I had conflicting usernames in the web config and the ASP configuration tool, I don't know how this could happen. <br />I just manually edited the web config, published it to the server and everything worked.<br />",
+    "PostedDate": "2007-05-16T07:57:44.207-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

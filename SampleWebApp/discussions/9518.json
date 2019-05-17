@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "30984",
+    "ThreadId": "9518",
+    "Html": "\r\nHow would you add a custom field to the registration of new members.<br /><br />Both required and non required?<br />",
+    "PostedDate": "2007-04-24T01:01:50.583-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "31565",
+    "ThreadId": "9518",
+    "Html": "\r\nTake a look at <a href=\"http://www.codeplex.com/ClubStarterKit/Thread/View.aspx?ThreadId=8934\" class=\"externalLink\">this link<span class=\"externalLinkIcon\" style=\"font-family:Consolas, Courier New, Courier, Monospace;\"></span></a>.<br /><br />All fields are required, I am afraid. You can put in something like <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=None\">None</a> if the user doesn't enter it in.<br />",
+    "PostedDate": "2007-04-28T08:31:33.16-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

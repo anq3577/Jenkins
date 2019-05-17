@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "44838",
+    "ThreadId": "13748",
+    "Html": "\r\n I'm new to Asp so I'm having difficulty's getting this implemented into the site..  I just want to have it so you can click on the members tab, then click on a member in the members list and have it bring you to their forum profile page..  I think this would be a good feature to be included in the kit.. What do you think? If anyone could help me with this or tell me what I need to do to get this working let me know... <br />",
+    "PostedDate": "2007-08-13T14:52:15.35-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "44853",
+    "ThreadId": "13748",
+    "Html": "\r\nThat could easily be done. Give me a day and I'll figure it out for you.<br />",
+    "PostedDate": "2007-08-13T19:06:58.407-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "45038",
+    "ThreadId": "13748",
+    "Html": "\r\nAwesome, thanks allot! Yeah, I'm trying my best to learn asp.net.. I've been working on the video tutorials on asp.net.. I've also gotten tons of tutorials on asp.net and C# that I plan on working on.. Just haven't learned enough yet to make that kind of a change.. <br /><br /><div class=\"quote\" style=\"border: dotted .1em #aaa; border-left: none; border-right: none; font-style: italic; margin: 1em 0em 2.5em 3em;padding: .2em;\"><br />z2bass wrote:<br />That could easily be done. Give me a day and I'll figure it out for you.<br /><br /></div>",
+    "PostedDate": "2007-08-14T19:50:41.503-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "45373",
+    "ThreadId": "13748",
+    "Html": "\r\n Add this under the phone field on the member/list.aspx page<br /><br /><br />&lt;p&gt;<br /><br />                                Forum Profile: &lt;asp:Hyperlink id=\"ForumProf\" runat=\"server\" Text=\"Forum Profile\" NavigateURL='&lt;%# \"~/forum/profile.aspx?id=\" &amp; Eval(\"memberid\").ToString() %&gt;' /&gt;<br /><br />                            &lt;/p&gt;<br /><br /><br />Thank You,<br /><br />Zack Owens, Web Developer &amp; Lead Software Developer<br /><br /><br />",
+    "PostedDate": "2007-08-16T17:54:20.06-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "45487",
+    "ThreadId": "13748",
+    "Html": "\r\nHey, I said that :)<br />",
+    "PostedDate": "2007-08-17T13:20:42.153-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

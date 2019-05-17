@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:40:32.067-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi, \n \nFinally figured out that code below in Login.aspx must be solving the problem of the redirecting.\nIt works fine in itself, but would it also be possible (little tweak perhaps?) that it redirects to the current Event?\nBecause now when you want to start editing as an Admin, and you log in it redirects to Events but it loses the ID of the event, (Page does get referred kind of blanc)\n \nIf CStr(Request(\"ReturnURL\")) Is Nothing Then\nDim a As String\na = \"Login.aspx?ReturnURL=\" & Request.UrlReferrer.AbsolutePath.ToString()\nResponse.Redirect(a)\nEnd If",
+    "LastUpdatedDate": "2013-05-15T23:46:41.68-07:00",
+    "PlannedForRelease": "v2 RC1",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:40:28.613-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Login redirects fine but.......",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 1477
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Yea... I realized this too. Also, it doesn't redirect if you just want to put in ~/member/login.aspx",
+      "PostedDate": "2007-04-25T14:40:29.46-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:40:30.24-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:40:31.21-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:40:32.067-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:26.21-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:41.68-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

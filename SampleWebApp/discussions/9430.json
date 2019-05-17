@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "30752",
+    "ThreadId": "9430",
+    "Html": "\r\n2 weeks ago, TFS3 (the Source Control server that we used to use) broke. From what I understand, it was operator error. This really disappoints me. CodePlex prides itself with no issues... that is not so anymore. <br /><br />I need to not make enemies... we need to continue development. It is imperative that we get v2 out ASAP and that v3 development starts in April as well. So let's keep moving.<br /><br />If you don't see work items in the Issue Tracker that should be there (like the ones you reported before the outage) I ask that you report them again. <br /><br />Thanks,<br /><br />Zack Owens<br />",
+    "PostedDate": "2007-04-21T09:24:37.95-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

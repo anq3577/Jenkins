@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-06-27T11:47:49.637-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Convert forums data to SubSonic",
+    "LastUpdatedDate": "2013-05-15T23:46:35.707-07:00",
+    "PlannedForRelease": "Version 3 Beta 1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Medium",
+      "Severity": 100,
+      "Id": 2
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-06-20T17:30:38.41-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Forums - SubSonic",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 2530
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 3378.",
+      "PostedDate": "2007-06-27T11:47:49.637-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Seeing as you asked, I would like to see the ability to add threads that only administrator/editors can see, this would be handy where there are a number of admins who need to discuss admin type things",
+      "PostedDate": "2007-06-27T14:27:53.82-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Thanks... I put this in an issue.",
+      "PostedDate": "2007-06-27T16:22:20.76-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-12-07T22:53:39.4-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:18.717-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:35.707-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

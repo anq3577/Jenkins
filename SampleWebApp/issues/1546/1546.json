@@ -1,0 +1,100 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Work arround\nhttp://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=AJAX&referringTitle=Documentation",
+    "ClosedDate": "2007-05-20T05:04:27.16-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "On my profile page, ajax control gives JS error.\n \nWhile the data in the background is being updated, the \"uploading\" image sticks on page and gives error.",
+    "LastUpdatedDate": "2013-05-15T23:46:41.203-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:42:26.037-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Ajax Control give JS Error",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 1546
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Are you uploading an avatar... that's probably the error you are recieving.",
+      "PostedDate": "2007-04-25T14:42:26.723-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I get the same error just by clicking the Update Info button (whether I've changed any form data or not.)  The debugger pops up a dialog of \"htmlfile: Unknown runtime error\".  It then takes me to ScriptResource.axd, line 1311, which shows \"updatePanelElement.innerHTML = rendering;\" as the bad line.  Looks like the actual file is MicrosoftAjaxWebForms.js.",
+      "PostedDate": "2007-04-25T14:42:27.177-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "i also get the same error, too. \r\n\r\nCSK Version Beta2",
+      "PostedDate": "2007-04-25T14:42:27.537-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Are you still getting it in RC1?",
+      "PostedDate": "2007-04-28T08:16:12.867-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I also have this problem uploading an avator and also updating member info. I am using RC1",
+      "PostedDate": "2007-04-30T01:55:25.847-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-01T10:10:43.27-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I get the same thing. Its only from IE7 (big surprise huh?)",
+      "PostedDate": "2007-05-01T10:14:42.41-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Hmmm.... I am able to get it. Just take out the UpdatePanels... that should take out the error but on the other hand put in an UGLY postback.",
+      "PostedDate": "2007-05-01T17:57:16.697-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "This sounds exactly like my problem. http://www.codeplex.com/ClubStarterKit/Thread/View.aspx?ThreadId=9888",
+      "PostedDate": "2007-05-04T14:35:12.003-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-20T05:04:27.16-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:25.703-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:41.203-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

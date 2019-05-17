@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "65666",
+    "ThreadId": "19827",
+    "Html": "\r\nIs there a target date for the next beta release or final version of CSK 3.0?<br />",
+    "PostedDate": "2008-01-02T06:05:53.247-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "65691",
+    "ThreadId": "19827",
+    "Html": "\r\nI want to start moving forward as soon as the next version of SubSonic is released with Migrations support.<br />",
+    "PostedDate": "2008-01-02T09:22:32.877-08:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "65692",
+    "ThreadId": "19827",
+    "Html": "\r\nCan you check out my last post about source code down the forum a little ways? I'm still confused as to what IDE and version to use. Also, I dont have to use subsonic do I? I thought I could just use SQL Server.<br />Thx.<br />",
+    "PostedDate": "2008-01-02T09:24:24.17-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

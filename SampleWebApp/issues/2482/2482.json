@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "Fixed on ChangeSet 3242",
+    "ClosedDate": "2007-06-20T17:27:59.55-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "The Contact Details step is missing a validation summary. It appears that even after I added one, the CreateUserFinished routine is being hit without validation occuring.",
+    "LastUpdatedDate": "2013-05-15T23:46:36.273-07:00",
+    "PlannedForRelease": "Version 3 Beta 1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-06-13T13:46:07.723-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Member/register.aspx CreateUser missing validation summary",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2482
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I've tried adding this, but it doesn't work:    Protected Sub CreateUserWizard1_NextButtonClick(ByVal sender As Object, ByVal e As WizardNavigationEventArgs)\r\n\r\n        Validate()        e.Cancel = Not IsValid\r\n\r\n    End Sub",
+      "PostedDate": "2007-06-13T14:11:28.863-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I rewrote it to fix the validation and do the contact info in one step. I added fields to break out the address properly so you'll need to do some table changes first. I also added more validation. I had some other fields I needed in there - I think I stripped them all out. It will need a little additional formatting.  \r\n\r\nI accept paypal. j/k :-)  \r\n\r\n<%@ Page Language=\"VB\" MasterPageFile=\"~/Default.master\" Title=\"New Member Registration\" %>\r\n\r\n<%@ Register Src=\"~/UserControls/Photos_formpicker.ascx\" TagName=\"Photos_formpicker\" TagPrefix=\"Club\" %><%@ Register TagPrefix=\"Club\" Namespace=\"ClubSite\" %>\r\n\r\n<script runat=\"server\">        Protected Sub CreateUserWizard1_CreatedUser(ByVal sender As Object, ByVal e As EventArgs)\r\n\r\n        Dim null As New Nullable(Of Integer)        Dim da As New DataSetTableAdapters.MemberInfoTableAdapter        Dim user As MembershipUser = Membership.GetUser(CreateUserWizard1.UserName)                Dim state_abbr As DropDownList = _            CType(CreateUserWizard1.CreateUserStep.ContentTemplateContainer.FindControl(\"state_abbr\"), DropDownList)        Dim zip As TextBox = _            CType(CreateUserWizard1.CreateUserStep.ContentTemplateContainer.FindControl(\"zip\"), TextBox)        Dim NewsletterCheck As CheckBox = _                    CType(CreateUserWizard1.CreateUserStep.ContentTemplateContainer.FindControl(\"NewsletterCheck\"), CheckBox)        Dim Addr As TextBox = _            CType(CreateUserWizard1.CreateUserStep.ContentTemplateContainer.FindControl(\"Addr\"), TextBox)        Dim Phone As TextBox = _            CType(CreateUserWizard1.CreateUserStep.ContentTemplateContainer.FindControl(\"Phone\"), TextBox)        Dim fname As TextBox = _            CType(CreateUserWizard1.CreateUserStep.ContentTemplateContainer.FindControl(\"fname\"), TextBox)        Dim lname As TextBox = _            CType(CreateUserWizard1.CreateUserStep.ContentTemplateContainer.FindControl(\"lname\"), TextBox)\r\n\r\n                da.Insert(state_abbr.SelectedValue.ToString(), zip.Text.ToString(), _            Convert.ToInt32(csaid.SelectedValue), _            NewsletterCheck.Checked, _            CType(user.ProviderUserKey, Guid), _        Addr.Text.ToString(), _            Phone.Text.ToString(), _            fname.Text.ToString(), _            lname.Text.ToString())                user.IsApproved = True        Membership.UpdateUser(user)        FormsAuthentication.SetAuthCookie(CreateUserWizard1.UserName, False)           End Sub    Protected Sub CompleteWizardStep1_Activate(ByVal sender As Object, ByVal e As System.EventArgs)        Response.Redirect(\"~/default.aspx\")    End Sub\r\n\r\n</script>\r\n\r\n<asp:Content ID=\"Content2\" ContentPlaceHolderID=\"ContentPlaceHolder1\" runat=\"Server\">    <div id=\"body\">        <div id=\"columnleft\">            <a name=\"content_start\" id=\"content_start\"></a>            <div class=\"leftblock\">                <h2>                    New User Registration</h2>                <p>                    <asp:ScriptManager id=\"ScriptManager1\" runat=\"server\">                    </asp:ScriptManager>                    </p>            </div>        </div>                <div id=\"columnright\">            <div class=\"rightblock\">                <h2>                    New user registration                </h2>                <div class=\"dashedline\">                </div>                                <asp:UpdatePanel id=\"UpdatePanel1\" runat=\"server\">                    <contenttemplate><asp:CreateUserWizard id=\"CreateUserWizard1\" runat=\"server\" DisableCreatedUser=\"False\" OnCreatedUser=\"CreateUserWizard1_CreatedUser\"><WizardSteps><asp:CreateUserWizardStep runat=\"server\"><ContentTemplate><P>Contact Info </P><TABLE border=0>    <TBODY>    <TR><TD class=\"formlabel\"><LABEL for=\"fname\">First Name:</LABEL> </TD><TD class=\"formvalue\"><asp:TextBox runat=\"server\" CssClass=\"txtfield\" ID=\"fname\"></asp:TextBox> <asp:RequiredFieldValidator runat=\"server\" ErrorMessage=\"First Name is required.\" ToolTip=\"First Name is required.\" ControlToValidate=\"fname\" ValidationGroup=\"CreateUserWizard1\" ID=\"RequiredFieldValidator1\">*</asp:RequiredFieldValidator> </TD></TR><TR><TD class=\"formlabel\"><LABEL for=\"lname\">Last Name:</LABEL> </TD><TD class=\"formvalue\"><asp:TextBox runat=\"server\" CssClass=\"txtfield\" ID=\"lname\"></asp:TextBox> <asp:RequiredFieldValidator runat=\"server\" ErrorMessage=\"Last Name is required.\" ToolTip=\"Last Name is required.\" ControlToValidate=\"lname\" ValidationGroup=\"CreateUserWizard1\" ID=\"RequiredFieldValidator2\">*</asp:RequiredFieldValidator> </TD></TR><TR><TD class=\"formlabel\"><LABEL for=\"Addr\">Address:</LABEL> </TD><TD class=\"formvalue\"><asp:TextBox runat=\"server\" Rows=\"3\" CssClass=\"txtblock\" ID=\"Addr\" TextMode=\"MultiLine\"></asp:TextBox> </TD></TR>    <tr>        <td class=\"formlabel\">            City:</td>        <td class=\"formvalue\">            <asp:TextBox ID=\"city\" runat=\"server\"></asp:TextBox>        </td>    </tr>    <tr>        <td class=\"formlabel\">            State:</td>        <td class=\"formvalue\">            <asp:DropDownList ID=\"state_abbr\" runat=\"server\" DataSourceID=\"SqlDataSource2\"                DataTextField=\"state_name\" DataValueField=\"state_abbr\">            </asp:DropDownList>            <asp:SqlDataSource ID=\"SqlDataSource2\" runat=\"server\" ConnectionString=\"<%$ ConnectionStrings:ClubSiteDB %>\"                SelectCommand=\"SELECT * FROM [States]\"></asp:SqlDataSource>        </td>    </tr>    <tr>        <td class=\"formlabel\">            Zip:</td>        <td class=\"formvalue\">            <asp:TextBox ID=\"zip\" runat=\"server\" ToolTip=\"40205-1234\"></asp:TextBox>            <asp:RegularExpressionValidator ID=\"RegularExpressionValidator1\" runat=\"server\" ControlToValidate=\"zip\"                ErrorMessage=\"Zip is incorrectly formatted. 40205-1234\" ValidationExpression=\"\\d{5}(-\\d{4})?\"                ValidationGroup=\"CreateUserWizard1\">*</asp:RegularExpressionValidator>        </td>    </tr>    <TR><TD class=\"formlabel\"><LABEL for=\"Phone\">Phone:</LABEL> </TD><TD class=\"formvalue\"><asp:TextBox runat=\"server\" CssClass=\"txtfield\" ID=\"Phone\" ToolTip=\"(502) 555-1234\"></asp:TextBox>    <asp:RegularExpressionValidator ID=\"RegularExpressionValidator2\" runat=\"server\" ControlToValidate=\"Phone\"        ErrorMessage=\"Phone should be in (502) 555-1234 format.\" ValidationGroup=\"CreateUserWizard1\" ValidationExpression=\"((\\(\\d{3}\\) ?)|(\\d{3}-))?\\d{3}-\\d{4}\">*</asp:RegularExpressionValidator> </TD></TR><TR><TD class=\"formlabel\">Recieve Newsletter:</TD><TD class=\"formvalue\"><asp:CheckBox runat=\"server\" ID=\"NewsletterCheck\" Checked=\"True\"></asp:CheckBox> </TD></TR>    <tr>        <td colspan=2 class=\"formlabel\">            Login Info        </td>    </tr>\r\n\r\n    <TR><TD class=\"formlabel\"><LABEL for=\"UserName\">User Name:</LABEL></TD>        <TD><asp:TextBox id=\"UserName\" runat=\"server\"></asp:TextBox>         <asp:RequiredFieldValidator id=\"UserNameRequired\" runat=\"server\" ValidationGroup=\"CreateUserWizard1\" ToolTip=\"User Name is required.\" ErrorMessage=\"User Name is required.\" ControlToValidate=\"UserName\">*</asp:RequiredFieldValidator>         </TD>     </TR>      <TR>        <TD class=\"formlabel\"><LABEL for=\"Password\">Password:</LABEL></TD>        <TD><asp:TextBox id=\"Password\" runat=\"server\" TextMode=\"Password\"></asp:TextBox>             <asp:RequiredFieldValidator id=\"PasswordRequired\" runat=\"server\" ValidationGroup=\"CreateUserWizard1\" ToolTip=\"Password is required.\" ErrorMessage=\"Password is required.\" ControlToValidate=\"Password\">*</asp:RequiredFieldValidator>          </TD>       </TR>       <TR><TD class=\"formlabel\"><LABEL for=\"ConfirmPassword\">Confirm Password:</LABEL></TD>            <TD><asp:TextBox id=\"ConfirmPassword\" runat=\"server\" TextMode=\"Password\">            </asp:TextBox> <asp:RequiredFieldValidator id=\"ConfirmPasswordRequired\" runat=\"server\" ValidationGroup=\"CreateUserWizard1\" ToolTip=\"Confirm Password is required.\" ErrorMessage=\"Confirm Password is required.\" ControlToValidate=\"ConfirmPassword\">*</asp:RequiredFieldValidator> </TD>       </TR>       <TR><TD class=\"formlabel\"><LABEL for=\"Email\">E-mail:</LABEL></TD>            <TD><asp:TextBox id=\"Email\" runat=\"server\"></asp:TextBox>             <asp:RequiredFieldValidator id=\"EmailRequired\" runat=\"server\" ValidationGroup=\"CreateUserWizard1\" ToolTip=\"E-mail is required.\" ErrorMessage=\"E-mail is required.\" ControlToValidate=\"Email\">*</asp:RequiredFieldValidator>            </TD>       </TR>       <TR><TD class=\"formlabel\"><LABEL for=\"Question\">Security Question:</LABEL></TD>            <TD><asp:TextBox id=\"Question\" runat=\"server\"></asp:TextBox>             <asp:RequiredFieldValidator id=\"QuestionRequired\" runat=\"server\" ValidationGroup=\"CreateUserWizard1\" ToolTip=\"Security question is required.\" ErrorMessage=\"Security question is required.\" ControlToValidate=\"Question\">*</asp:RequiredFieldValidator>             </TD>       </TR>       <TR>            <TD class=\"formlabel\"><LABEL for=\"Answer\">Security Answer:</LABEL></TD>            <TD><asp:TextBox id=\"Answer\" runat=\"server\"></asp:TextBox>             <asp:RequiredFieldValidator id=\"AnswerRequired\" runat=\"server\" ValidationGroup=\"CreateUserWizard1\" ToolTip=\"Security answer is required.\" ErrorMessage=\"Security answer is required.\" ControlToValidate=\"Answer\">*</asp:RequiredFieldValidator>             </TD>       </TR>       <TR><TD align=center colSpan=2><asp:CompareValidator id=\"PasswordCompare\" runat=\"server\" ValidationGroup=\"CreateUserWizard1\" ErrorMessage=\"The Password and Confirmation Password must match.\" ControlToValidate=\"ConfirmPassword\" Display=\"Dynamic\" ControlToCompare=\"Password\"></asp:CompareValidator>             </TD>       </TR>       <TR>            <TD style=\"COLOR: red\" align=center colSpan=2><asp:Literal id=\"ErrorMessage\" runat=\"server\" EnableViewState=\"False\"></asp:Literal>                 <br />                <asp:ValidationSummary ID=\"ValidationSummary1\" runat=\"server\" ValidationGroup=\"CreateUserWizard1\" />            </TD>        </TR>              </TBODY></TABLE></ContentTemplate><CustomNavigationTemplate>    <Club:RolloverButton ID=\"cu\" runat=\"server\" CommandName=\"MoveNext\" Text=\"Create User\" />                            </CustomNavigationTemplate></asp:CreateUserWizardStep><asp:CompleteWizardStep runat=\"server\" ID=\"CompleteWizardStep1\" OnActivate=\"CompleteWizardStep1_Activate\"></asp:CompleteWizardStep>\r\n\r\n</WizardSteps></asp:CreateUserWizard> </contenttemplate>                </asp:UpdatePanel>                <asp:UpdateProgress id=\"UpdateProgress1\" runat=\"server\">                    <progresstemplate><asp:Image ID=\"Image2\" runat=\"server\" SkinID=\"loading\" /></progresstemplate>                </asp:UpdateProgress>            </div>        </div>        <div class=\"clear2column\">        </div>    </div></asp:Content>",
+      "PostedDate": "2007-06-14T10:44:28.56-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-20T17:27:20.97-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-06-20T17:27:59.55-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:19.57-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:36.273-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

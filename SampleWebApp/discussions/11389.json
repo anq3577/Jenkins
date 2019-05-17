@@ -1,0 +1,82 @@
+[
+  {
+    "Id": "36879",
+    "ThreadId": "11389",
+    "Html": "\r\nHi<br /><br />How could I cange the permission to post photo's from administrators to Bloggers.  I have people in my club that want to post photo's, and I trust them enough not to abuse that permission, but I dont want them having administrator rights.<br />",
+    "PostedDate": "2007-06-14T03:09:05.603-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36955",
+    "ThreadId": "11389",
+    "Html": "\r\nOn the photos/content.aspx page, I would change the following:<br /><br /><pre style=\"background-color:#ECECEC; border:dashed .1em #3E62A6; font-family:Consolas, Courier New, Courier, Monospace; font-size:1em; margin-top:0; padding:.5em; height:auto; overflow:auto; overflow-x:auto; overflow-y:auto;\">\r\n Private IsAdmin As Boolean\r\n    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs)\r\n        IsAdmin = User.IsInRole(\"Administrators\")\r\n        uploadpanel.Visible = IsAdmin\r\n        deletealbum.Visible = IsAdmin\r\n    End Sub\r\n</pre><br />to<br /><br /><pre style=\"background-color:#ECECEC; border:dashed .1em #3E62A6; font-family:Consolas, Courier New, Courier, Monospace; font-size:1em; margin-top:0; padding:.5em; height:auto; overflow:auto; overflow-x:auto; overflow-y:auto;\">\r\nPrivate IsAdmin As Boolean\r\n    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs)\r\n        IsAdmin = User.IsInRole(\"Administrators\")\r\n        If User.IsInRole(\"Blogger\") = True Then\r\n            IsAdmin = True\r\n        End If\r\n        uploadpanel.Visible = IsAdmin\r\n        deletealbum.Visible = IsAdmin\r\n    End Sub\r\n</pre>",
+    "PostedDate": "2007-06-14T13:05:46.403-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36958",
+    "ThreadId": "11389",
+    "Html": "\r\ncheers z2, your the man, just one thing, my blogger cant create a album, is that easy to change as well?<br /><br />Thanks again<br />",
+    "PostedDate": "2007-06-14T13:16:55.057-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37740",
+    "ThreadId": "11389",
+    "Html": "\r\nYea... go into the web.config and look for this block:<br /><br /><pre style=\"background-color:#ECECEC; border:dashed .1em #3E62A6; font-family:Consolas, Courier New, Courier, Monospace; font-size:1em; margin-top:0; padding:.5em; height:auto; overflow:auto; overflow-x:auto; overflow-y:auto;\">\r\n&lt;location path=\"photo/new.aspx\"&gt;\r\n\t\t&lt;system.web&gt;\r\n\t\t\t&lt;authorization&gt;\r\n\t\t\t\t&lt;allow roles=\"Administrators\"/&gt;\r\n\t\t\t\t&lt;deny users=\"*\"/&gt;\r\n\t\t\t&lt;/authorization&gt;\r\n\t\t&lt;/system.web&gt;\r\n\t&lt;/location&gt;\r\n</pre><br />Replace it with this:<br /><br /><pre style=\"background-color:#ECECEC; border:dashed .1em #3E62A6; font-family:Consolas, Courier New, Courier, Monospace; font-size:1em; margin-top:0; padding:.5em; height:auto; overflow:auto; overflow-x:auto; overflow-y:auto;\">\r\n&lt;location path=\"photo/new.aspx\"&gt;\r\n\t\t&lt;system.web&gt;\r\n\t\t\t&lt;authorization&gt;\r\n\t\t\t\t&lt;allow roles=\"Administrators\"/&gt;\r\n                                                                &lt;allow roles=\"Blogger\"/&gt;\r\n\t\t\t\t&lt;deny users=\"*\"/&gt;\r\n\t\t\t&lt;/authorization&gt;\r\n\t\t&lt;/system.web&gt;\r\n\t&lt;/location&gt;\r\n</pre>",
+    "PostedDate": "2007-06-20T22:08:40.793-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37880",
+    "ThreadId": "11389",
+    "Html": "\r\nI have changed the content in the photos/content.aspx folder to:<br /><br />Private IsAdmin As Boolean<br />    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs)<br />        IsAdmin = User.IsInRole(\"Administrators\")<br />        If User.IsInRole(\"Blogger\") = True Then<br />            IsAdmin = True<br />        End If<br />        uploadpanel.Visible = IsAdmin<br />        deletealbum.Visible = IsAdmin<br />    End Sub<br /><br />And in web. Config page to:<br /><br />&lt;location path=\"photo/new.aspx\"&gt;<br />\t\t&lt;system.web&gt;<br />\t\t\t&lt;authorization&gt;<br />\t\t\t\t&lt;allow roles=\"Administrators\"/&gt;<br />                                &lt;allow roles=\"Blogger\"/&gt;<br />\t\t\t\t&lt;deny users=\"*\"/&gt;<br />\t\t\t&lt;/authorization&gt;<br />\t\t&lt;/system.web&gt;<br />\t&lt;/location&gt;<br /><br /><br />And can not have members post photo's ???<br />",
+    "PostedDate": "2007-06-21T13:30:31.673-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37887",
+    "ThreadId": "11389",
+    "Html": "\r\nHave you have made your members bloggers as they are not bloggers by default?<br />",
+    "PostedDate": "2007-06-21T14:26:56.65-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37894",
+    "ThreadId": "11389",
+    "Html": "\r\nlhr, you set the configuration for the photos to be acessible by Bloggers and Administrators, not all members.<br />",
+    "PostedDate": "2007-06-21T15:07:38.25-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37898",
+    "ThreadId": "11389",
+    "Html": "\r\nDazalock<br /><br />Yes I check the Blogger box for the member.<br />----------------------------------------------------------<br />z2bass<br /><br />I followed the instructions you posted. I coped and pasted  your post to each page<br />I under stand Photos are accessible by Administrators, but by giving BLoggers <br />(   If User.IsInRole(\"Blogger\") = True Then<br />            IsAdmin = True  )  They can edit and delete all pictures and albums?<br />",
+    "PostedDate": "2007-06-21T15:27:24.12-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37901",
+    "ThreadId": "11389",
+    "Html": "\r\nOk<br />When the user clicks Photos, it goes to:  /New%20Folder/photo/list.aspx. <br />Whe they click on piture it goes to:  /New%20Folder/photo/contents.aspx?Albumid=26<br />This is good but they can edit or delete any album.<br /><br />  &lt;location path=\"photo/new.aspx\"&gt;<br />\t\t&lt;system.web&gt;<br />\t\t\t&lt;authorization&gt;<br />\t\t\t\t&lt;allow roles=\"Administrators\"/&gt;<br />                                                                &lt;allow roles=\"Blogger\"/&gt;<br />\t\t\t\t&lt;deny users=\"*\"/&gt;<br />\t\t\t&lt;/authorization&gt;<br />\t\t&lt;/system.web&gt;<br />\t&lt;/location&gt;<br /><br />How can they create their own album? Then will they only be able edit and remove their own??<br /><br />",
+    "PostedDate": "2007-06-21T16:23:38.823-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "37920",
+    "ThreadId": "11389",
+    "Html": "\r\nYou will have to look for User.IsInRole(\"Administrators\") on those pages and replace it with User.Identity.IsAuthenticated<br />",
+    "PostedDate": "2007-06-21T20:31:38.69-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "51410",
+    "ThreadId": "15835",
+    "Html": "\r\nI've a security exception when i want upload a pictures.<br /><br />I've read/write access to web folder, the picture has been upload, but i can't write the record in the database.<br /><br />Have you an idea about this issue, because i can't understand if this issue come from my isp or else ...<br /><br />Regards<br /><br />Server Error in '/' Application.<br />--------------------------------------------------------------------------------<br /><br />Security Exception <br />Description: The application attempted to perform an operation not allowed by the security policy.  To grant this application the required permission please contact your system administrator or change the application's trust level in the configuration file. <br /><br />Exception Details: System.Security.SecurityException: Request for the permission of type 'System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089' failed.<br /><br />Source Error: <br /><br /><br />Line 57:             newThumb.Close()<br />Line 58: <br />Line 59:             Image.Insert(title, filename, albumid, \"\")<br />Line 60: <br />Line 61:             Dim newimg As New Image(Image.Columns.ImageFileName, filename)<br /><br /><br />Source File: .\\App_Code\\BLL\\ImageHandling.vb    Line: 59 <br /><br />",
+    "PostedDate": "2007-10-01T06:35:37.72-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

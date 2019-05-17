@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "49455",
+    "ThreadId": "15196",
+    "Html": "\r\nDoes anyone have any opinions/experiences about ISPs for hosting the club starter kit (with modifications)? I am working with three organizations who need an ISP for this ...<br /><br />discountasp.net charges $10/mo for the site and another $10/mo for the database (and do not recommend using SQL express for security reasons - they have some sort of upgrade process to SQL 2005).<br /><br />",
+    "PostedDate": "2007-09-15T18:30:05.957-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "49457",
+    "ThreadId": "15196",
+    "Html": "\r\nUltima Hosts should be cheaper than $20 a month. Plus you can get 25% off (as detailed on this page: http://www.webhostingunleashed.com/ultima-hosts/coupons)<br />",
+    "PostedDate": "2007-09-15T19:30:57.427-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "50357",
+    "ThreadId": "15196",
+    "Html": "\r\nmarvalus-domains-hosting.com has great rates on hosting.  You can get hosting plus your MSSQL DB for as low as $3.20/mo and coupon code 5NC25 saves 5% at checkout if you spend $25 or more.    I've got the Club and Classifieds hosted with them. <br />",
+    "PostedDate": "2007-09-22T20:50:54.62-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

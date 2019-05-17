@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-07-13T20:20:27.127-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Add in custom poll control!",
+    "LastUpdatedDate": "2013-05-15T23:46:33.02-07:00",
+    "PlannedForRelease": "Version 3 Beta 1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-07-06T23:09:55.483-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Poll Control",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 2,
+    "Id": 2737
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Was just wondering about this last night.  Would like to see it added back in.",
+      "PostedDate": "2007-07-09T12:10:48.46-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "It will be back in.",
+      "PostedDate": "2007-07-09T17:34:26.27-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Resolved with changeset 3585.",
+      "PostedDate": "2007-07-13T20:20:27.127-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:15.387-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:33.02-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

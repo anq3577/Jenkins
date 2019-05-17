@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "36566",
+    "ThreadId": "11297",
+    "Html": "\r\nHas there been any discussion about adding this functionality?  This would make adding photos much easier.<br />",
+    "PostedDate": "2007-06-12T08:36:25.827-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36684",
+    "ThreadId": "11297",
+    "Html": "\r\nI second this request...I'm a little short of time right now but I noticed it was implemented in the MS Visual Web Dev 2005 Express Ed. \"Personal Web Site\" example.  It wasn't perfect since you could not add captions on the fly but it was fast and for getting something online it would be perfect.  Maybe I'll take a look in a few weeks...have a good day all.<br />",
+    "PostedDate": "2007-06-12T19:26:46.12-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36785",
+    "ThreadId": "11297",
+    "Html": "\r\nI think this an excellent idea. It would make the site much more user friendly. Uploading a group of pictures one by one can be painful.<br />",
+    "PostedDate": "2007-06-13T11:09:14.237-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36918",
+    "ThreadId": "11297",
+    "Html": "\r\nJust to echo the thoughts here, I agree that this would be great additional functionality.<br />",
+    "PostedDate": "2007-06-14T09:19:45.833-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "36954",
+    "ThreadId": "11297",
+    "Html": "\r\nThis discussion has been copied to a work item. Click here to <a href=\"http://www.codeplex.com/ClubStarterKit/WorkItem/View.aspx?WorkItemId=2490\">go to the work item and continue the discussion</a>.<br /><br />Go vote for it!<br />",
+    "PostedDate": "2007-06-14T13:02:22.21-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

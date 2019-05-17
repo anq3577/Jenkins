@@ -1,0 +1,110 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-05-20T05:02:12.427-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "non-users can delete photo album?",
+    "LastUpdatedDate": "2013-05-15T23:46:38.12-07:00",
+    "PlannedForRelease": "Version 3 Beta 1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-05-12T09:15:18.51-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Version 2.0 - CS2606 Everyone (Public) can delete photo albums",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 2245
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Acording to what changeset?",
+      "PostedDate": "2007-05-12T11:55:48.397-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Change Set - 2321\r\n\r\n",
+      "PostedDate": "2007-05-12T12:43:33.53-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I implemented this change to the script portion of the photo/contents.aspx page:   Private IsAdmin As Boolean    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs)        IsAdmin = User.IsInRole(\"Administrators\")        uploadpanel.Visible = IsAdmin        panel3.Visible = IsAdmin    End Sub\r\n\r\nalong with adding the correct panel statement at line 193 or so: <asp:Panel ID=\"panel3\" runat=\"server\" CssClass=\"actionbuttons\">                    <Club:RolloverButton ID=\"deletealbum\" runat=\"server\" OnClick=\"deletealbum_Click\"                        Text=\"Delete Album\" />                </asp:Panel>",
+      "PostedDate": "2007-05-15T13:57:23.46-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Is it still like this in v2 final? I thought I fixed it.",
+      "PostedDate": "2007-05-16T03:28:06.787-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "zach I am using 2346.",
+      "PostedDate": "2007-05-16T08:55:25.1-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I need to check this one out. I will make a quick fix available tonight.",
+      "PostedDate": "2007-05-19T13:49:14.61-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I tried the change but received an error.\r\n\r\nCompiler Error Message: BC30451: Name 'panel3' is not declared.\r\n\r\nSource Error:\r\n\r\nLine 54:         IsAdmin = User.IsInRole(\"Administrators\")Line 55:         uploadpanel.Visible = IsAdminLine 56:         panel3.visible = IsAdminLine 57:     End SubLine 58:      ",
+      "PostedDate": "2007-05-19T14:29:10.33-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Perhaps in version 2.0 we should use UpdatePanel1 not panel3?\r\n\r\nStill could delete (non-private) phot albums with out logging in.\r\n\r\n",
+      "PostedDate": "2007-05-19T14:54:00.25-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "put this in the script section:Private IsAdmin As BooleanProtected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs)IsAdmin = User.IsInRole(\"Administrators\")uploadpanel.Visible = IsAdminpanel3.Visible = IsAdminEnd Sub\r\n\r\nand this around line 193 or so:<asp:Panel ID=\"panel3\" runat=\"server\" CssClass=\"actionbuttons\"><Club:RolloverButton ID=\"deletealbum\" runat=\"server\" OnClick=\"deletealbum_Click\"Text=\"Delete Album\" /></asp:Panel>\r\n\r\nmake sure you get it all.  By the looks of your error message you may have missed the lines above IsAdmin=Users.IsInRole...",
+      "PostedDate": "2007-05-19T16:28:00.73-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-19T18:45:25.343-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-05-20T04:52:29.053-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "Resolved with changeset 2621.",
+      "PostedDate": "2007-05-20T05:02:12.427-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:22.34-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:38.12-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

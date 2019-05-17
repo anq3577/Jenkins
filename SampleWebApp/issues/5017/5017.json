@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "fixed in v3 preview",
+    "ClosedDate": "2009-12-08T22:14:10.513-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Is there any code to add to v3 b1 that will allow users to edit blogs?",
+    "LastUpdatedDate": "2013-05-15T23:46:26.5-07:00",
+    "PlannedForRelease": "ClubStarterKit v3 Preview",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2008-01-08T07:34:15.567-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Edit blogs",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 3,
+    "Id": 5017
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "There will be :)",
+      "PostedDate": "2008-03-18T16:56:11.043-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2008-03-18T17:01:24.497-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-12-08T22:13:59.04-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-12-08T22:14:10.513-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:07.647-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:26.5-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-10-31T09:26:17.6-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Issue:\nEditing the EventsIntro segment found at /events/calendar.aspx while logged in as an Admin does not function correctly.  This is done via the link pointing to URL /WebContent/Editor.aspx?sectionname=eventsintro&ReturnURL=%2fcsk%2fevents%2fcalendar.aspx\n \nExpected Results:\nEditing this section results in the data being displayed under the EventsIntro section",
+    "LastUpdatedDate": "2013-05-15T23:46:28.277-07:00",
+    "PlannedForRelease": "Version 3 Beta 1",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-10-17T15:21:27.097-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Events Bug - Editing EventsIntro does not work",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 4044
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 7083.",
+      "PostedDate": "2007-10-31T09:26:17.6-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-12-07T22:52:24.807-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:09.583-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:28.277-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

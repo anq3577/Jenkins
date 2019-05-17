@@ -1,0 +1,65 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2007-04-25T14:33:07.96-07:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi All,\n \nI have been sitting silently back observing what has been going on here for a bit and figure I should comment now that I \"think\" I understand the logistics here and believe that I see an error in the CSK.  I'll apologize from the get-go if this is already a known issue or if I'm entering this issue in the wrong area.  I wish I could do more than raise the issue but to develop the fix is likely outside of my abilities :-)\n \nIn 3254 and now more recently in 3479 I am not able to cleanly delete a user blog entry nor a blog comment entry on the post.aspx page.  When I click on the Delete button (link) nothing was happening at all - well actually the AJAX ConfirmButtonExtender was triggering properly but the subsequent link to DeletePost.aspx was never being triggered as the form validation would trigger first.  \n \nThe problem is apparently in the form validation for the \"Your Email\" and \"Comment\" Text Boxes on the Post.aspx page in the Add Comment section.  If I enter an e-mail address and a comment first I can click on Delete Post and the post or the comment will be deleted successfully.  Logic will need to be added to disregard the input validation when a user is attempting to Delete.\n \nI hope this post was somewhat meaningful and usefull.\n \nRegards\nRWK",
+    "LastUpdatedDate": "2013-05-15T23:46:42.93-07:00",
+    "PlannedForRelease": "v2 RC1",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-04-25T14:33:05.973-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Delete Blog Entry Fails (post & comment) - Form Validation Incomplete",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 1224
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I may have suprised myself and figured this one out on my own...  \r\n\r\nI was able to supress validation by adding CauseValidation=false in the Post.aspx file in the appropriate (I think) spots.\r\n\r\nModify line 35...From:<Club:RolloverLink ID=\"HyperLink2\" NavigateUrl='<%# \"deletepost.aspx?id=\" & Eval(\"postid\").ToString %>' Visible='<%#Isadmin %>' runat=\"server\" Text=\"Delete Post\" />\r\n\r\nTo:<Club:RolloverLink ID=\"HyperLink2\" NavigateUrl='<%# \"deletepost.aspx?id=\" & Eval(\"postid\").ToString %>' Visible='<%#Isadmin %>' runat=\"server\" Text=\"Delete Post\" CausesValidation=\"False\" />\r\n\r\nAlso change Line 63...From:<Club:RolloverLink ID=\"HyperLink2\" NavigateUrl='<%# \"deletepost.aspx?id=\" & Eval(\"postid\").ToString %>' Visible='<%#Isadmin %>' runat=\"server\" Text=\"Delete Post\" />\r\n\r\nTo:<Club:RolloverLink ID=\"HyperLink2\" NavigateUrl='<%# \"deletepost.aspx?id=\" & Eval(\"postid\").ToString %>' Visible='<%#Isadmin %>' runat=\"server\" Text=\"Delete Post\" CausesValidation=\"False\" />\r\n\r\nNot sure if this impacts anything else on the page but it seems to work pretty nicely for me...  I have attached the update post.aspx file.",
+      "PostedDate": "2007-04-25T14:33:06.723-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "I may have suprised myself and figured this one out on my own...  \r\n\r\nI was able to supress validation by adding CauseValidation=false in the Post.aspx file in the appropriate (I think) spots.\r\n\r\nModify line 35...From:<Club:RolloverLink ID=\"HyperLink2\" NavigateUrl='<%# \"deletepost.aspx?id=\" & Eval(\"postid\").ToString %>' Visible='<%#Isadmin %>' runat=\"server\" Text=\"Delete Post\" />\r\n\r\nTo:<Club:RolloverLink ID=\"HyperLink2\" NavigateUrl='<%# \"deletepost.aspx?id=\" & Eval(\"postid\").ToString %>' Visible='<%#Isadmin %>' runat=\"server\" Text=\"Delete Post\" CausesValidation=\"False\" />\r\n\r\nAlso change Line 63...From:<Club:RolloverLink ID=\"HyperLink2\" NavigateUrl='<%# \"deletepost.aspx?id=\" & Eval(\"postid\").ToString %>' Visible='<%#Isadmin %>' runat=\"server\" Text=\"Delete Post\" />\r\n\r\nTo:<Club:RolloverLink ID=\"HyperLink2\" NavigateUrl='<%# \"deletepost.aspx?id=\" & Eval(\"postid\").ToString %>' Visible='<%#Isadmin %>' runat=\"server\" Text=\"Delete Post\" CausesValidation=\"False\" />\r\n\r\nNot sure if this impacts anything else on the page but it seems to work pretty nicely for me... ",
+      "PostedDate": "2007-04-25T14:33:07.16-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-04-25T14:33:07.96-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:27.683-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:42.93-07:00",
+      "Id": -2147483648
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "41016",
+    "ThreadId": "12572",
+    "Html": "\r\nThe current sp sorts locations by ID on the Locations List page.  I modified the SP to sort by Title (Alphabetically).  Makes them easier to find.  I'd like to have the locations list sort alphabetically on the Event Edit Page as well, but can not figure out how to set the order by for the dropdown list.  <br /><br />Any ideas?<br /><br />The SP for the first portion is below.<br /><br />ALTER PROCEDURE PagedLocationsList<br />(<br />\t@pageNum INT = 1,<br />\t@pageSize INT = 10<br />)<br /><br />AS<br />\tDECLARE @rows INT<br />\tDECLARE @keyid INT<br />\tDECLARE @rowCount FLOAT /* yes we need a float for the math */<br /><br />\tIF @pageNum = 1<br />\t\tBEGIN<br />\t\t\tSET @keyid=0<br />\t\tEND<br />\tELSE<br />\t\tBEGIN<br />\t\t\t/* get the values for the date and row */<br />\t\t\tSELECT @rows = (@pageNum-1) * @pageSize<br />\t\t\tSET ROWCOUNT  @rows<br />\t\t\tSELECT @keyid=id FROM locations ORDER BY id ASC  <br />\t\tEND<br /><br />SELECT @rowCount=COUNT(*) FROM locations<br /><br />SET  ROWCOUNT @pageSize<br />\tSELECT id, title, description, linkURL, address, photo, directions<br />\t\tFROM Locations<br />\t\tWHERE id &gt; @keyid<br /><b>ORDER BY title ASC</b><br />RETURN CEILING(@rowCount/@pageSize)<br />",
+    "PostedDate": "2007-07-13T11:03:56.67-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41019",
+    "ThreadId": "12572",
+    "Html": "\r\nFound it.  Locations_picker.ascx.  Change the Data Source Connection String to be:<br /><br />&lt;asp:SqlDataSource ConnectionString=\"&lt;%$ ConnectionStrings:ClubSiteDB %&gt;\" ID=\"LocationList\"<br />    runat=\"server\" SelectCommand=\"SELECT <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=title\">title</a>, <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=id\">id</a>, <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=description\">description</a>, <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=linkURL\">linkURL</a>, <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=directions\">directions</a>, <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=address\">address</a>, <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=photo\">photo</a> FROM <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=Locations\">Locations</a> ORDER BY <a href=\"http://www.codeplex.com/ClubStarterKit/Wiki/View.aspx?title=title\">title</a>\"&gt;<br />&lt;/asp:SqlDataSource&gt;<br />",
+    "PostedDate": "2007-07-13T11:30:49.57-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

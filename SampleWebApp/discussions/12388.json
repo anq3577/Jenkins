@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "40344",
+    "ThreadId": "12388",
+    "Html": "\r\nGroup email function and event email is not working for me. However the password retrieval functions fines and I recieve the email. I am hosting the website myself and am using the smtp settings for my ISP, which is Insight. It does not give me any errors but no one receives the emails. Any help or ideas would be appreciated. <br /><br />Thanks<br />Wayne<br />",
+    "PostedDate": "2007-07-09T17:08:17.457-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40348",
+    "ThreadId": "12388",
+    "Html": "\r\nSomebody else on here was mentioning that their hoster was blocking teh emails as \"spam\" if he sent more than 20 at a time. Do you think that could be it?<br /><br />Just a shot in the dark. I haven't messed with the email stuff at all, myself. <br />",
+    "PostedDate": "2007-07-09T17:15:07.947-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40357",
+    "ThreadId": "12388",
+    "Html": "\r\nmnebinger had the same issue and is working on a fix. What you can do is there is a \"For Each\" statement in the code behind page. What you can do in that for each statement is send the emails individually. It will cause SERIOUS performance issues, but it will work!<br />",
+    "PostedDate": "2007-07-09T18:41:55.497-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40429",
+    "ThreadId": "12388",
+    "Html": "\r\nI only currently have six members so I don't think that would be the issue. I recoded to send individual emails and still did not recieve any mail. I have debugged the code and it appears to be pulling all the proper settings from the web.config. The password reset email sends fine so I don't think it is a settings issues. Thanks for your ideas.<br />",
+    "PostedDate": "2007-07-10T07:20:25.957-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "40434",
+    "ThreadId": "12388",
+    "Html": "\r\nHuh. Well that's just weird. <br /><br />Can you debug the password reset stuff and see what it's doing that's different from the member email sending piece? I think that would be my approach...<br />",
+    "PostedDate": "2007-07-10T07:37:06.19-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "Id": "41032",
+    "ThreadId": "12576",
+    "Html": "\r\nHow do you download the most recent changeset.<br />When I click on the change set 3539 or download the license page comes up and click agree it downloads a html Document.<br />Do you have browse the folder and  download the each file?<br />",
+    "PostedDate": "2007-07-13T12:49:36.353-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41041",
+    "ThreadId": "12576",
+    "Html": "\r\nWorks for me, just click and comes up with save as etc<br /><br />You havent got your mouse buttons reversed per chance?<br />",
+    "PostedDate": "2007-07-13T15:13:37.75-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41046",
+    "ThreadId": "12576",
+    "Html": "\r\nNo I don’t have them reverse.<br /><br /><br />",
+    "PostedDate": "2007-07-13T16:10:04.013-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41055",
+    "ThreadId": "12576",
+    "Html": "\r\nhttp://www.codeplex.com/ClubStarterKit/SourceControl/DownloadSourceCode.aspx?changeSetId=3560<br /><br />Click \"I Agree\" and it should work.<br />",
+    "PostedDate": "2007-07-13T17:17:45.433-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41060",
+    "ThreadId": "12576",
+    "Html": "\r\nz2bass thank you. That worked.<br />Do you have to use the hole web site or is there a way to just upgrade changes?<br />",
+    "PostedDate": "2007-07-13T18:23:55.68-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41064",
+    "ThreadId": "12576",
+    "Html": "\r\nIf you could see what file were changed.<br /><br />I would just use the whole website. All of the files change between releases and even between betas.<br />",
+    "PostedDate": "2007-07-13T20:25:42.99-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41073",
+    "ThreadId": "12576",
+    "Html": "\r\nThis isn't Beta version? Hope chanesets work in Club starter kit 2 final?<br /><br /> I downloaded the whole website and must of the pages have gray screen and box<br />( error creating control-content1  unknown tag  ‘club:Rollover Button’ )  over most of Them.<br />",
+    "PostedDate": "2007-07-13T22:48:05.24-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41082",
+    "ThreadId": "12576",
+    "Html": "\r\nNo... we are close to beta, but it isn't quite \"beta\" quality yet.<br />",
+    "PostedDate": "2007-07-14T09:32:59.613-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41106",
+    "ThreadId": "12576",
+    "Html": "\r\nThank you z2bass<br /><br />I'll stay with the Final verison for now.<br />Can't wait for Photo Bulkupload feature.<br /><br />",
+    "PostedDate": "2007-07-14T15:39:07.783-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "41120",
+    "ThreadId": "12576",
+    "Html": "\r\nThe Bulkupload that I implamented isn't the greatest (mostly because we can't use ASP.NET Ajax with the file upload yet) but it does do a nice job of temporarily storing images.<br />",
+    "PostedDate": "2007-07-14T19:25:01.383-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

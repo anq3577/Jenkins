@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "52314",
+    "ThreadId": "16140",
+    "Html": "\r\nI have a folder on my c:\\ drive called NBHFC<br /><br />error from trying to generate DAL classes<br />Error Message: System.Data.SqlClient.SqlException: An attempt to attach an auto-named database for file C:\\NBHF\\ClubStarterKit.Web\\App_Data\\ClubDB.mdf failed. A database with the same name exists, or specified file cannot be opened, or it is located on UNC share<br /><br />When I try to run the default.aspx, I get \"could not find schema information for the element subsonic service\"<br /><br />any help greatly appreciated for this newbie. I had the old one up and running on godaddy and would like to see if I can get this to work on godaddy. After next year, I will switch to a more customer friendly provider<br /><br />Do you need subsonic to run?<br /><br />Non profit<br />",
+    "PostedDate": "2007-10-08T08:12:23.29-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "52316",
+    "ThreadId": "16140",
+    "Html": "\r\nApoligize for simple grammactical error<br />NBHFC (needed to add the C)<br /><br />Will try to upload to godaddy (I will reply)<br /><br />nonprofit<br />",
+    "PostedDate": "2007-10-08T08:23:31.43-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "52364",
+    "ThreadId": "16140",
+    "Html": "\r\nIn your connection string, you can't use |DataDirectory|. That might cause the error.<br /><br />Maybe when you are going your generation, do you have the website selected?<br /><br />You need the SubSonic generated classes... those are necessary for v3 to run.<br /><br />We can make it work... just keep posting your details on here.<br />",
+    "PostedDate": "2007-10-08T14:35:44.71-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "52371",
+    "ThreadId": "16140",
+    "Html": "\r\nhello z2bass<br /><br />Godaddys connection string is below for the first club starter kit that worked. Will the same type of connection string work for V3 R1?<br /><br />Do I need to paste the updated Database number and regenerate the classes with subsonic before posting to the website. V3 R1 works locally fine with my local path <br /><br />&lt;connectionStrings&gt;<br />    &lt;add name=\"ClubSiteDB\" providerName=\"System.Data.SqlClient\" connectionString=\"server=whsql-v19.prod.mesa1.secureserver.net;database=DB_123456;uid=abcdef;pwd=**********\"/&gt;<br />    &lt;remove name=\"LocalSqlServer\"/&gt;<br />    &lt;add name=\"LocalSqlServer\" providerName=\"System.Data.SqlClient\" connectionString=\"server=whsql-v19.prod.mesa1.secureserver.net;database=DB_123456;uid=abcdef;pwd=**********\"/&gt;<br />  &lt;/connectionStrings&gt;<br /><br /><br />I know that last clubkit I had to go through about 10 or 12 different replacements with the connection string <br />Quote from instructions #21 \"edit default.aspx\" find dbo. replace with &lt;blank&gt;(nothing, nada, zip, zero)<br /><br />I went to get the latest version and there is another folder called ClubStarterKit.CoreDatabase. Will the schema.sql file need to be updated or can I use the one that was distributed with the blog enhancements. I tried to delete the blogs and still it killed the application.<br />",
+    "PostedDate": "2007-10-08T15:25:07.963-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "52562",
+    "ThreadId": "16140",
+    "Html": "\r\nDon't use the scripts from ClubStarterKit.CoreDatabase... those won't work.<br /><br />The Blog fix incorporated works off the same database.<br /><br />Are you tying to do the generation locally or over the web? It should only work locally.<br />",
+    "PostedDate": "2007-10-09T16:28:19.01-07:00",
+    "UserRole": "Owner",
+    "MarkedAsAnswerDate": null
+  }
+]

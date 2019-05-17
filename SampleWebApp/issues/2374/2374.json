@@ -1,0 +1,75 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "By design",
+    "ClosedDate": "2009-11-24T14:02:40.517-08:00",
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Sometimes you don''t want a news item to be visible after a period of time, but you don't want to delete it for history reasons. Therefor it would be handy to have a optional enddate to the newsitems",
+    "LastUpdatedDate": "2013-05-15T23:46:36.56-07:00",
+    "PlannedForRelease": "ClubStarterKit v3",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ClubStarterKit",
+    "ReportedDate": "2007-05-28T07:03:11.653-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "End date on newsitems",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 3,
+    "Id": 2374
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Perhaps you can add an archive page.\r\n\r\nOr you can choose:Delete newsitem on: DateTextBoxArchive newsitem on: DateTextBoxempty textbox = do not delete/archive",
+      "PostedDate": "2007-08-22T14:29:16.13-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-08-22T15:51:09.8-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2007-08-23T12:08:43.21-07:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "This doesn't sound like news then... the idea of \"news\" is like a stack. The newest is shown at the top. The hide news, its a matter of adding more news.... I would say this is \"by design\"",
+      "PostedDate": "2009-11-24T14:02:31.787-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2009-11-24T14:02:40.517-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-02-13T19:37:20.053-08:00",
+      "Id": -2147483648
+    },
+    {
+      "Message": "",
+      "PostedDate": "2013-05-15T23:46:36.56-07:00",
+      "Id": -2147483648
+    }
+  ]
+}
